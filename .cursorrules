@@ -9,46 +9,48 @@
 - **Official Brand Name:** **VanIndra Creations** (also styled as *VanIndra Creation*)
 - **Primary Handles:** `@vanindracreations` / `@vanindracreation`
 - **Target Indian Domain:** `vanindracreations.in` (Primary India) & `vanindracreations.com` (Global)
-- **Target Market:** Indian Influencers with **1,00,000+ (1 Lakh+) followers** across all niches (Fitness, Nutrition, Doctors, Educators, Lifestyle, Fashion, Finance, Regional Creators).
-- **Problem We Solve:** 100K+ creators in India suffer from decision fatigue (*"what to post vs. what NOT to post"*), weak 3-second hooks, and 4-hour video editing burnout. We provide a **Done-For-You Content Strategy, Viral Scripting & High-Retention Video Editing Engine**.
-- **Organic Lead-Gen Flywheel:** Our in-house creators (`@vandanay2012`, `@smitayadav_0901`, `@yadavakarsh_07`) and early partner clients post high-retention Reels and **Collab-tag / Caption-tag `@vanindracreations`**, turning our Instagram handle and website into an inbound lead magnet.
+- **Target Market:** Indian Influencers with **1,00,000+ (1 Lakh+) followers**, Doctors, Coaches, Educators, and Businesses across India (serving both literate professionals and non-literate / regional creators via Hindi/English + Voice Input + Audio Guides).
+- **Problem We Solve:** 100K+ creators and business owners in India suffer from decision fatigue (*"what to post vs. what NOT to post"*), weak 3-second hooks, and 4-hour video editing burnout. We provide an **AI-Powered + Human-Accountable Content Strategy, Viral Scripting & High-Retention Video Editing Engine Without the Operations**.
+- **Organic Lead-Gen Flywheel:** Our in-house creators (`@vandanay2012`, `@smitayadav_0901`, `@yadavakarsh_07`) and partner clients post high-retention Reels and **Collab-tag / Caption-tag `@vanindracreations`**, turning our Instagram handle and website into an inbound lead magnet.
 
 ---
 
-## 2. The 4 Founding Team Members (Never Lose or Alter These Details)
+## 2. CRITICAL PUBLIC vs. BACKGROUND LEADERSHIP RULE (Never Violate!)
 
-| Name | Role & Title | Instagram Handle | Mobile / WhatsApp | Email | Education & Superpower |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Indrajeet Yadav** | **Founder, Project Head & AI Pipeline Architect** | — | Project Head | — | Overall business strategy, Master LLM Prompt Pipeline, Multi-Website & App Architecture. |
-| **Vandana Yadav** | **Co-Founder & Chief Influencer Director** | [`@vandanay2012`](https://www.instagram.com/vandanay2012/) | Co-Founder | — | Active influencer, insider creator psychology, "What to Post / Not Post" Creative QA & Flagship Showcase #1. |
-| **Smita Yadav ("Guggy")** | **Client Growth, Outreach & Creator Strategy Lead** | [`@smitayadav_0901`](https://www.instagram.com/smitayadav_0901/) | `+91 8112859437` | `smitayadav497@gmail.com` | **B.Com Program (Final Year), Gargi College, University of Delhi** — Leads 100K+ influencer outreach, discovery calls, Lifestyle/Fashion/Commerce strategy. |
-| **Akarsh Yadav ("Sahil")** | **Tech, Video Editing & Scientific Niche Lead** | [`@yadavakarsh_07`](https://www.instagram.com/yadavakarsh_07/) | `+91 9415259408` | `akarshgkp8756539282@gmail.com` | **B.Voc Food Technology, University of Allahabad, Prayagraj** (Class X & XII: Zenith Convent School, Gorakhpur, UP) — High-retention Reel editing, 15s Before/After sample edits, and specialized scientific hooks for Food, Nutrition, Fitness & Doctor creators. |
+1. **Sole Public-Facing Founder:** **Vandana Yadav (`@vandanay2012`)** is presented across all websites, landing pages, and client-facing materials as the **Founder & Chief Influencer Director** of **VanIndra Creations** (and **Flagship Client #1 Case Study**).
+2. **Public Studio Leadership Team (On Website for Creator & Client Trust):**
+   - **Smita Yadav ("Guggy")** (`@smitayadav_0901`) — Growth, Brand Deals & Client Relations Lead.
+   - **Akarsh Yadav ("Sahil")** (`@yadavakarsh_07`) — Tech, Video Editing & Scientific Niche Lead.
+3. **100% Behind-the-Scenes Architect (NEVER Show on Public Websites):**
+   - **Indrajeet Yadav** operates **100% in the background** managing the AI pipeline, multi-website architecture, and zero-touch automations. Never display Indrajeet Yadav's name on `index.html`, `thumbnail-studio.html`, or public client decks.
 
----
-
-## 3. Official Brand Aesthetic & Color System (NOT Boring!)
-Inspired by the founder's original crest concept (`01_Brand_and_Team/Brand_Assets/original_draft_reference.png`) and upgraded into an **Obsidian Slate, Brushed Titanium Gray, Imperial Gold & Deep Emerald Studio Palette**:
-- **Logo Motif:** Circular Gold-Rimmed Medallion with a Deep Emerald-Obsidian core (`#0F3D2B` / `#13181D`), featuring **Sculpted 3D Platinum & Gold Rising "V-Wings" (`V` for Vandana) + Glowing Golden Crown Spark (`I` for Indrajeet)**, above **`V A N I N D R A`** `─── ◆ ───` **`C R E A T I O N S`**.
-- **Color Tokens:**
-  - `--bg-obsidian`: `#0D1014` (Primary dark background)
-  - `--bg-slate-card`: `#161B22` (Elevated cards & glass surfaces)
-  - `--emerald-core`: `#124E37` (Rich studio emerald accent from the crest)
-  - `--emerald-glow`: `#10B981` (Live status, growth metrics & interactive highlights)
-  - `--imperial-gold`: `#E5B84B` (Crown spark, divider diamond `◆`, VIP badges & primary luxury CTAs)
-  - `--titanium-silver`: `#CBD5E1` (Secondary typography & metallic borders)
-  - `--alabaster-white`: `#F8FAFC` (Primary bold display headings)
+| Name | Public / Internal Status | Role & Title | Instagram Handle | Mobile / WhatsApp | Email | Education & Superpower |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Vandana Yadav** | **PUBLIC FOUNDER (Face #1)** | **Founder & Chief Influencer Director (Flagship Creator #1)** | [`@vandanay2012`](https://www.instagram.com/vandanay2012/) | Founder | — | Active influencer, insider creator psychology, "What to Post / Not Post" Creative QA & Flagship Showcase #1. |
+| **Smita Yadav ("Guggy")** | **PUBLIC TEAM (Face #2)** | **Growth, Brand Deals & Client Relations Lead** | [`@smitayadav_0901`](https://www.instagram.com/smitayadav_0901/) | `+91 8112859437` | `smitayadav497@gmail.com` | **B.Com Program (Final Year), Gargi College, University of Delhi** — Leads 100K+ influencer outreach, discovery calls, Lifestyle/Fashion/Commerce strategy & brand deals. |
+| **Akarsh Yadav ("Sahil")** | **PUBLIC TEAM (Face #3)** | **Tech, Video Editing & Scientific Niche Lead** | [`@yadavakarsh_07`](https://www.instagram.com/yadavakarsh_07/) | `+91 9415259408` | `akarshgkp8756539282@gmail.com` | **B.Voc Food Technology, University of Allahabad, Prayagraj** (Class X & XII: Zenith Convent School, Gorakhpur, UP) — High-retention Reel editing, 15s Before/After sample edits, and specialized scientific hooks for Food, Nutrition, Fitness & Doctor creators. |
+| **Indrajeet Yadav** | **100% BACKGROUND ONLY** | **Behind-the-Scenes AI, Automation & Strategy Architect** | — | Internal Only | — | Overall business architecture, Master LLM Prompt Pipeline, Free API Automations, Multi-Website & App Systems (never shown on public websites). |
 
 ---
 
-## 4. Workspace Map & How Any Agent Should Operate
-- `index.html` — Live All-in-One Agency Website, Before/After Lab, Founding Team Directory, Free 7-Day Content Audit Generator (wired to Guggy's WhatsApp `918112859437` & Sahil's WhatsApp `919415259408`), Pricing Tiers, and Client Requirement Intake Portal (which auto-generates Master LLM Prompts).
-- `thumbnail-studio.html` — Live Interactive 9:16 Instagram Reel Cover & 16:9 YouTube Thumbnail Designer (`<canvas>` PNG exporter) for Sahil, Guggy, Vandana & Indrajeet.
+## 3. Official Brand Aesthetic & Color System
+Inspired by **IDigitalAKKi Media (Warm Ivory + Emerald + Gold)**, **LexiConn (AI Content Operations)**, and **Fluencify (Zero-Operations Portal)**, paired with the VanIndra 3D V-Wing Crest:
+- **Primary Light Editorial Surface (Default):** Warm Ivory (`#FAF8F3`) & Crisp Alabaster White (`#FFFFFF`) for high daylight readability across India, paired with Deep Studio Emerald (`#09241B` / `#0E6B4E`) & Imperial Gold (`#D4A024` / `#F4C44E`) hero & portal sections (plus 1-click Dark Studio Mode toggle).
+- **Official App Logos Required:** Always display official full-color SVG app logos (**Instagram Gradient SVG**, **WhatsApp Green SVG `#25D366`**, and **Gmail Envelope SVG**) next to all handles, phone numbers, and emails.
+- **No Internal Scripts on Public Pages:** Never expose internal outreach DM templates ("Guggy & Sahil Outreach DM") on the public client-facing website.
+
+---
+
+## 4. Workspace Map
+- `index.html` — Live Public Agency Funnel (`https://indrajeet877.github.io/vanindra-creations/`) featuring Warm Ivory + Emerald/Gold theme, 3D iPhone Before/After Simulator, Founder Vandana Yadav Case Study, Live Client Portal Preview, 9-Step Framework, Voice + Free Background AI (`text.pollinations.ai`) Strategy Generator, and 3-Card Public Leadership Directory with Official App Logos.
+- `thumbnail-studio.html` — Live Interactive 9:16 Instagram Reel Cover Designer (`<canvas>` PNG exporter).
 - `00_MASTER_BLUEPRINT.md` — Executive summary & step-by-step operating pipeline.
-- `01_Brand_and_Team/` — Brand bible, logo suite (`Brand_Assets/`), team roles, WhatsApp group setup, and resumes (`Resumes_and_Profiles/Akarsh_Yadav_Sahil_Resume.png`).
-- `02_Market_Research_and_ICP/` — India 100K+ influencer market report & live `02_Target_Influencer_Lead_Sheet.csv`.
-- `03_InHouse_Content_Flywheel/` — Collab-tagging strategy, 30-day content calendar, ready-to-shoot Week 1 scripts, and in-house folders for `@vandanay2012`, `@smitayadav_0901`, and `@yadavakarsh_07`.
-- `04_Outreach_and_Sales_Pipeline/` — Daily SOPs, Hinglish/English DM scripts, and the 15s Sample Edit hook guide.
-- `05_Content_Factory_and_LLM_Prompts/` — Copy-paste prompt pipeline (`02_Master_LLM_Prompt_Pack.md`) for generating client audits, brand bibles, calendars, and scripts in any LLM.
-- `06_Client_Workspace_Template/` — Master folder `_TEMPLATE_Influencer_Name_100K` to duplicate whenever a new client signs up.
+- `01_Brand_and_Team/` — Brand bible, logo suite (`Brand_Assets/`), team roles, WhatsApp group setup, and resumes.
+- `02_Market_Research_and_ICP/` — India 100K+ influencer market report, `02_Target_Influencer_Lead_Sheet.csv`, and `03_Indian_Competitor_Analysis_and_Winning_Edge.md` (IDigitalAKKi, LexiConn, Fluencify, Monk-E, Confluencr analysis).
+- `03_InHouse_Content_Flywheel/` — Collab-tagging strategy, 30-day content calendar, and in-house creator folders.
+- `04_Outreach_and_Sales_Pipeline/` — Internal-only daily SOPs, Hinglish/English DM scripts, and 15s Sample Edit hook guide.
+- `05_Content_Factory_and_LLM_Prompts/` — Copy-paste prompt pipeline (`02_Master_LLM_Prompt_Pack.md`).
+- `06_Client_Workspace_Template/` — Master folder `_TEMPLATE_Influencer_Name_100K`.
 - `08_Agent_and_LLM_Instructions/` — Detailed instructions for Claude, Muse, Gemini, Cursor, and sub-agents.
-- `09_Tech_Handles_Domains_Servers_and_Apps/` — Multi-platform handle checklist, `.in` domain & Mumbai server architecture, multi-website expansion plan, and iOS/Android Creator App blueprint.
+- `09_Tech_Handles_Domains_Servers_and_Apps/` — Multi-platform handle checklist, `.in` domain & server architecture, and Creator App blueprint.
+- `10_Zero_Touch_Automation_Engine/` — Free background APIs & zero-manual-work automation guide.

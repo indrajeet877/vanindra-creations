@@ -1,40 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VanIndra Creations | India's Premier Content &amp; Growth Studio for 100K+ Influencers</title>
-  <meta name="description" content="VanIndra Creations: Done-For-You Content Strategy, Viral Scripting, What-to-Post Calendars &amp; High-Retention Editing for Indian Influencers with 1,00,000+ Followers.">
+  <title>VanIndra Creations | AI-Powered Creator &amp; Social Media Growth Studio by Vandana Yadav</title>
+  <meta name="description" content="VanIndra Creations — Founded by Vandana Yadav (@vandanay2012). India's Done-For-You Reel Editing, Viral Scripting, Content Operations &amp; Brand Deals Studio for 1 Lakh+ Creators, Doctors, Coaches &amp; Businesses.">
+  <meta name="theme-color" content="#0B2E22">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
   <style>
+    /* ==========================================================================
+       VANINDRA CREATIONS — EMERALD, IMPERIAL GOLD & WARM ALABASTER IVORY SYSTEM
+       Inspired by top high-converting Indian & global agency funnels
+       (IDigitalAKKi + LexiConn AI Ops + Fluencify Zero-Ops + 3D Studio Motion)
+       ========================================================================== */
     :root {
-      /* VanIndra Creations Signature Palette: Obsidian Slate + Deep Emerald + Imperial Gold + Brushed Titanium Silver */
-      --bg-obsidian: #0b0e12;
-      --bg-slate-deep: #11161d;
-      --bg-carbon-card: #161c24;
-      --bg-gunmetal-elevated: #1e2631;
-      --emerald-deep: #0f3d2b;
-      --emerald-mid: #166547;
-      --emerald-glow: #10b981;
-      --gold-imperial: #e5b84b;
-      --gold-light: #f6d889;
-      --gold-border: rgba(229, 184, 75, 0.38);
-      --border-hairline: rgba(148, 163, 184, 0.18);
-      --border-metallic: rgba(203, 213, 225, 0.34);
-      --text-alabaster: #f8fafc;
-      --text-platinum: #e2e8f0;
-      --text-silver: #cbd5e1;
-      --text-slate: #94a3b8;
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 22px;
-      --radius-pill: 999px;
-      --shadow-luxury: 0 24px 60px -15px rgba(0, 0, 0, 0.72), 0 0 1px 1px rgba(229, 184, 75, 0.14);
+      /* Warm Whitish / Ivory Editorial Surface Palette (Default — High Daylight Contrast) */
+      --bg-page: #FAF8F3;
+      --bg-section-alt: #F2EFE7;
+      --bg-surface: #FFFFFF;
+      --bg-surface-elevated: #FFFFFF;
+      --text-primary: #0B1914;
+      --text-secondary: #43534C;
+      --text-muted: #64746D;
+
+      /* Signature VanIndra Emerald & Imperial Gold Accents */
+      --emerald-deep: #09241B;
+      --emerald-rich: #0E6B4E;
+      --emerald-bright: #10B981;
+      --emerald-tint: #E4F3EC;
+      --gold-imperial: #D4A024;
+      --gold-bright: #F4C44E;
+      --gold-tint: #FFF7DF;
+      --danger-rose: #E11D48;
+
+      /* Borders & Shadows */
+      --border-line: #E2DDD1;
+      --border-gold: rgba(212, 160, 36, 0.42);
+      --border-emerald: rgba(14, 107, 78, 0.25);
+      --shadow-card: 0 2px 6px rgba(11, 25, 20, 0.04), 0 18px 42px -14px rgba(11, 25, 20, 0.10);
+      --shadow-hover: 0 4px 12px rgba(11, 25, 20, 0.06), 0 28px 56px -14px rgba(9, 36, 27, 0.22);
+
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
     }
 
-    * {
+    /* Optional 1-Click Dark Studio Mode Override */
+    body.dark-studio {
+      --bg-page: #070B0E;
+      --bg-section-alt: #0D1318;
+      --bg-surface: #121921;
+      --bg-surface-elevated: #17202A;
+      --text-primary: #F8FAFC;
+      --text-secondary: #CBD5E1;
+      --text-muted: #94A3B8;
+      --emerald-tint: rgba(16, 185, 129, 0.14);
+      --gold-tint: rgba(229, 184, 75, 0.14);
+      --border-line: rgba(255, 255, 255, 0.11);
+      --shadow-card: 0 20px 50px -15px rgba(0, 0, 0, 0.7);
+      --shadow-hover: 0 28px 64px -12px rgba(16, 185, 129, 0.28);
+    }
+
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -42,34 +73,16 @@
 
     html {
       scroll-behavior: smooth;
-      background-color: var(--bg-obsidian);
-      color: var(--text-alabaster);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.6;
+      -webkit-text-size-adjust: 100%;
     }
 
     body {
-      background:
-        radial-gradient(circle at 18% 8%, rgba(22, 101, 71, 0.24) 0%, transparent 40%),
-        radial-gradient(circle at 82% 14%, rgba(229, 184, 75, 0.14) 0%, transparent 38%),
-        radial-gradient(circle at 50% 60%, rgba(148, 163, 184, 0.08) 0%, transparent 50%),
-        linear-gradient(180deg, var(--bg-obsidian) 0%, var(--bg-slate-deep) 50%, var(--bg-obsidian) 100%);
-      min-height: 100vh;
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', 'Inter', system-ui, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.62;
       overflow-x: hidden;
-    }
-
-    h1, h2, h3, .font-display {
-      font-family: 'Space Grotesk', sans-serif;
-      letter-spacing: -0.02em;
-    }
-
-    .font-royal {
-      font-family: 'Cinzel', serif;
-      letter-spacing: 0.14em;
-    }
-
-    .mono {
-      font-family: 'JetBrains Mono', monospace;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     a {
@@ -77,30 +90,120 @@
       text-decoration: none;
     }
 
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+      color: inherit;
+    }
+
     .container {
       width: 100%;
       max-width: 1240px;
       margin: 0 auto;
-      padding: 0 22px;
+      padding: 0 clamp(16px, 3.5vw, 36px);
+      position: relative;
+      z-index: 2;
     }
 
-    /* Header & Navigation */
+    /* ==========================================================================
+       TOP ACCESSIBILITY, VOICE GUIDE & LANGUAGE BAR
+       ========================================================================== */
+    .topbar {
+      background: linear-gradient(90deg, #071D15 0%, #0D3325 50%, #071D15 100%);
+      color: #F8FAFC;
+      border-bottom: 1px solid rgba(244, 196, 78, 0.35);
+      padding: 9px 0;
+      font-size: 0.82rem;
+      font-weight: 600;
+      position: relative;
+      z-index: 120;
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .founder-live-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #34D399;
+      box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+      animation: pulseRing 1.8s infinite;
+    }
+
+    @keyframes pulseRing {
+      0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+    }
+
+    .topbar-controls {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .top-chip-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(244, 196, 78, 0.45);
+      background: rgba(255, 255, 255, 0.08);
+      color: #FDE68A;
+      font-size: 0.77rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .top-chip-btn:hover, .top-chip-btn.active {
+      background: #F4C44E;
+      color: #081C15;
+      border-color: #F4C44E;
+    }
+
+    /* ==========================================================================
+       STICKY GLASS HEADER WITH OFFICIAL WHATSAPP & INSTAGRAM LOGOS
+       ========================================================================== */
     header.site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(11, 14, 18, 0.88);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--gold-border);
+      background: rgba(250, 248, 243, 0.94);
+      backdrop-filter: saturate(1.5) blur(14px);
+      -webkit-backdrop-filter: saturate(1.5) blur(14px);
+      border-bottom: 1px solid var(--border-line);
+      transition: box-shadow 0.25s ease, background 0.25s ease;
     }
 
-    .nav-bar {
+    body.dark-studio header.site-header {
+      background: rgba(11, 17, 22, 0.92);
+    }
+
+    .header-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 78px;
       gap: 16px;
+      min-height: 76px;
     }
 
     .brand-lockup {
@@ -109,697 +212,1266 @@
       gap: 12px;
     }
 
-    .brand-lockup img {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      border: 1.5px solid var(--gold-imperial);
-      object-fit: cover;
+    .crest-badge-svg {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 4px 10px rgba(9, 36, 27, 0.25));
+      transition: transform 0.35s var(--ease-out);
     }
 
-    .brand-wordmark {
+    .brand-lockup:hover .crest-badge-svg {
+      transform: scale(1.07) rotate(-3deg);
+    }
+
+    .brand-text-stack {
       display: flex;
       flex-direction: column;
-      line-height: 1.1;
+      line-height: 1.08;
     }
 
-    .brand-wordmark strong {
+    .brand-text-stack .name-main {
       font-family: 'Cinzel', serif;
-      font-weight: 700;
-      font-size: 1.15rem;
-      letter-spacing: 0.14em;
-      color: var(--text-alabaster);
+      font-weight: 800;
+      font-size: 1.18rem;
+      letter-spacing: 0.12em;
+      color: var(--text-primary);
     }
 
-    .brand-wordmark span {
+    .brand-text-stack .name-sub {
       font-family: 'Space Grotesk', sans-serif;
-      font-weight: 500;
-      font-size: 0.68rem;
-      letter-spacing: 0.28em;
-      color: var(--gold-imperial);
-      text-transform: uppercase;
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      color: var(--emerald-rich);
+      margin-top: 2px;
     }
 
-    .nav-links {
+    body.dark-studio .brand-text-stack .name-sub {
+      color: var(--gold-bright);
+    }
+
+    .main-nav {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 6px;
       list-style: none;
     }
 
-    .nav-links a {
+    .main-nav a {
+      padding: 8px 13px;
+      border-radius: 10px;
       font-size: 0.88rem;
-      font-weight: 500;
-      color: var(--text-silver);
-      transition: color 0.2s ease;
+      font-weight: 700;
+      color: var(--text-secondary);
+      transition: all 0.2s ease;
     }
 
-    .nav-links a:hover {
-      color: var(--gold-imperial);
+    .main-nav a:hover {
+      color: var(--emerald-rich);
+      background: var(--emerald-tint);
     }
 
-    .nav-actions {
+    .header-cta-row {
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    /* Buttons */
+    /* ==========================================================================
+       BUTTONS & OFFICIAL APP ICON BADGES
+       ========================================================================== */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      padding: 11px 20px;
-      border-radius: var(--radius-pill);
-      border: 1px solid transparent;
+      gap: 9px;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.92rem;
+      line-height: 1.2;
+      border: 2px solid transparent;
       cursor: pointer;
-      transition: all 0.22s ease;
+      transition: transform 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out), background 0.22s ease;
       white-space: nowrap;
     }
 
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
     .btn-gold {
-      background: linear-gradient(135deg, #f6d889 0%, #d49b27 100%);
-      color: #0b0e12;
-      font-weight: 700;
-      box-shadow: 0 8px 25px rgba(229, 184, 75, 0.28);
+      background: linear-gradient(135deg, #FDE07D 0%, #E5B232 55%, #C68E12 100%);
+      color: #091812;
+      box-shadow: 0 10px 26px -8px rgba(212, 160, 36, 0.65);
     }
 
     .btn-gold:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(135deg, #ffe6a3 0%, #e5b84b 100%);
-      box-shadow: 0 12px 30px rgba(229, 184, 75, 0.42);
+      box-shadow: 0 16px 34px -8px rgba(212, 160, 36, 0.85);
     }
 
     .btn-emerald {
-      background: linear-gradient(135deg, #166547 0%, #0f3d2b 100%);
-      color: var(--text-alabaster);
-      border-color: rgba(16, 185, 129, 0.45);
-      box-shadow: 0 8px 24px rgba(15, 61, 43, 0.45);
+      background: linear-gradient(135deg, #0E7A5E 0%, #084735 100%);
+      color: #FFFFFF;
+      box-shadow: 0 10px 26px -8px rgba(14, 122, 94, 0.5);
     }
 
-    .btn-emerald:hover {
-      transform: translateY(-2px);
-      border-color: var(--emerald-glow);
+    .btn-whatsapp {
+      background: #25D366;
+      color: #062814;
+      box-shadow: 0 10px 24px -8px rgba(37, 211, 102, 0.55);
     }
 
-    .btn-secondary {
-      background: var(--bg-gunmetal-elevated);
-      color: var(--text-alabaster);
-      border-color: var(--border-metallic);
+    .btn-whatsapp:hover {
+      background: #20bd5a;
     }
 
-    .btn-secondary:hover {
-      background: #283240;
-      border-color: var(--gold-imperial);
+    .btn-outline-light {
+      background: rgba(255, 255, 255, 0.12);
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.35);
     }
 
-    .btn-ghost {
-      background: transparent;
-      color: var(--text-silver);
-      border-color: var(--border-hairline);
+    .btn-outline-light:hover {
+      background: #FFFFFF;
+      color: #09241B;
     }
 
-    .btn-ghost:hover {
-      color: var(--gold-imperial);
-      border-color: var(--gold-border);
-      background: rgba(229, 184, 75, 0.06);
+    .btn-outline-ink {
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-color: var(--border-line);
     }
 
-    /* Hero Section */
+    .btn-outline-ink:hover {
+      border-color: var(--emerald-rich);
+      color: var(--emerald-rich);
+    }
+
+    .app-icon-svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       HERO SECTION: EMERALD NOIR SPLIT + 3D IPHONE SIMULATOR + QUICK TAP CARDS
+       ========================================================================== */
     .hero-section {
-      padding: 72px 0 60px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(244, 196, 78, 0.22) 0%, transparent 45%),
+        radial-gradient(circle at 12% 85%, rgba(16, 185, 129, 0.25) 0%, transparent 50%),
+        linear-gradient(135deg, #082219 0%, #0C3829 52%, #071913 100%);
+      color: #FFFFFF;
+      padding: clamp(38px, 5.5vw, 72px) 0 clamp(48px, 6.5vw, 84px);
       position: relative;
+      overflow: hidden;
+      border-bottom: 3px solid #D4A024;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 42px;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: clamp(28px, 4.5vw, 56px);
       align-items: center;
     }
 
-    .eyebrow-pill {
+    .hero-pill {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 6px 15px;
-      border-radius: var(--radius-pill);
-      background: linear-gradient(90deg, rgba(15, 61, 43, 0.65), rgba(27, 32, 41, 0.75));
-      border: 1px solid var(--gold-border);
-      font-size: 0.77rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 20px;
-    }
-
-    .eyebrow-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--emerald-glow);
-      box-shadow: 0 0 10px var(--emerald-glow);
-    }
-
-    .hero-title {
-      font-size: clamp(2.25rem, 4.3vw, 3.6rem);
-      line-height: 1.08;
-      font-weight: 700;
-      color: var(--text-alabaster);
-      margin-bottom: 18px;
-    }
-
-    .hero-title .gold-titanium-gradient {
-      background: linear-gradient(92deg, #f6d889 0%, #e5b84b 38%, #f8fafc 75%, #94a3b8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-subtitle {
-      font-size: 1.06rem;
-      color: var(--text-silver);
-      max-width: 610px;
-      margin-bottom: 28px;
-    }
-
-    .hero-cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 34px;
-    }
-
-    .hero-metrics {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      padding-top: 22px;
-      border-top: 1px solid var(--border-hairline);
-    }
-
-    .metric-item strong {
-      display: block;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.45rem;
-      color: var(--gold-light);
-    }
-
-    .metric-item span {
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(244, 196, 78, 0.5);
+      padding: 6px 15px 6px 8px;
+      border-radius: 999px;
       font-size: 0.82rem;
-      color: var(--text-slate);
-    }
-
-    /* Hero Crest & Showcase Card */
-    .hero-showcase-card {
-      background: linear-gradient(155deg, rgba(15, 61, 43, 0.34) 0%, rgba(22, 28, 36, 0.96) 55%, rgba(11, 14, 18, 0.98) 100%);
-      border: 1px solid var(--gold-border);
-      border-radius: var(--radius-lg);
-      padding: 26px;
-      box-shadow: var(--shadow-luxury);
-      position: relative;
-    }
-
-    .crest-hero-banner {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding-bottom: 18px;
+      font-weight: 700;
       margin-bottom: 18px;
-      border-bottom: 1px solid var(--border-hairline);
     }
 
-    .crest-hero-banner img {
-      width: 78px;
-      height: 78px;
-      border-radius: 16px;
-      border: 1.5px solid var(--gold-imperial);
-      object-fit: cover;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .badge-tag {
-      font-size: 0.73rem;
-      padding: 4px 10px;
-      border-radius: var(--radius-pill);
-      background: rgba(229, 184, 75, 0.14);
-      border: 1px solid var(--gold-border);
-      color: var(--gold-light);
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .pipeline-steps-mini {
-      display: flex;
-      flex-direction: column;
-      gap: 11px;
-    }
-
-    .mini-step {
-      display: flex;
-      align-items: flex-start;
-      gap: 13px;
-      padding: 12px 14px;
-      border-radius: var(--radius-md);
-      background: rgba(11, 14, 18, 0.72);
-      border: 1px solid var(--border-hairline);
-    }
-
-    .mini-step-num {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--emerald-mid), var(--emerald-deep));
-      border: 1px solid var(--gold-imperial);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.76rem;
-      font-weight: 700;
-      color: var(--gold-light);
-      flex-shrink: 0;
-    }
-
-    .mini-step h3 {
-      font-size: 0.93rem;
-      color: var(--text-alabaster);
-      margin-bottom: 2px;
-    }
-
-    .mini-step p {
-      font-size: 0.81rem;
-      color: var(--text-silver);
-    }
-
-    /* Section Headers */
-    section.page-section {
-      padding: 72px 0;
-      border-top: 1px solid var(--border-hairline);
-    }
-
-    .section-header {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto 46px;
-    }
-
-    .section-header h2 {
-      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
-      color: var(--text-alabaster);
-      margin-bottom: 10px;
-    }
-
-    .section-header p {
-      color: var(--text-silver);
-      font-size: 0.98rem;
-    }
-
-    /* Official Brand Logos & Color Swatches Showcase */
-    .brand-gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-bottom: 32px;
-    }
-
-    .brand-asset-card {
-      background: var(--bg-carbon-card);
-      border: 1px solid var(--gold-border);
-      border-radius: var(--radius-md);
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-      box-shadow: var(--shadow-luxury);
-    }
-
-    .brand-asset-card img {
-      width: 100%;
-      height: 210px;
-      object-fit: cover;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-hairline);
-      margin-bottom: 12px;
-    }
-
-    .brand-asset-card h3 {
-      font-size: 0.96rem;
-      color: var(--gold-light);
-      margin-bottom: 4px;
-    }
-
-    .brand-asset-card p {
-      font-size: 0.78rem;
-      color: var(--text-slate);
-      margin-bottom: 12px;
-    }
-
-    .color-swatch-bar {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 12px;
-    }
-
-    .swatch-chip {
-      padding: 14px 12px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-metallic);
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      cursor: pointer;
-      transition: transform 0.15s ease;
-    }
-
-    .swatch-chip:hover {
-      transform: scale(1.03);
-    }
-
-    /* Before vs After Retention Lab */
-    .comparison-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-    }
-
-    .comparison-card {
-      background: var(--bg-carbon-card);
-      border: 1px solid var(--border-hairline);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-    }
-
-    .comparison-card.upgraded {
-      background: linear-gradient(155deg, rgba(15, 61, 43, 0.35) 0%, #151b24 100%);
-      border-color: var(--gold-imperial);
-      box-shadow: var(--shadow-luxury);
-    }
-
-    .comp-pill {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 700;
+    .hero-pill b {
+      background: #F4C44E;
+      color: #081C15;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.74rem;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 5px 12px;
-      border-radius: var(--radius-pill);
+      letter-spacing: 0.04em;
+    }
+
+    .hero-h1 {
+      font-family: 'Space Grotesk', 'Noto Sans Devanagari', sans-serif;
+      font-size: clamp(2.1rem, 4.4vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.11;
+      letter-spacing: -0.025em;
       margin-bottom: 16px;
     }
 
-    .comp-pill.before {
-      background: rgba(244, 63, 94, 0.14);
-      color: #fda4af;
-      border: 1px solid rgba(244, 63, 94, 0.3);
+    .hero-h1 .gold-text {
+      color: #F4C44E;
     }
 
-    .comp-pill.after {
-      background: rgba(229, 184, 75, 0.18);
-      color: var(--gold-light);
-      border: 1px solid var(--gold-border);
+    .hero-lead {
+      font-size: clamp(1rem, 1.25vw, 1.14rem);
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 22px;
+      max-width: 630px;
     }
 
-    .comp-list {
-      list-style: none;
-      margin-top: 18px;
+    /* 4 Visual Tap Cards for Both Literate & Non-Literate Users */
+    .visual-goal-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 11px;
+      margin-bottom: 24px;
+    }
+
+    .visual-goal-btn {
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(244, 196, 78, 0.38);
+      border-radius: 15px;
+      padding: 12px 14px;
       display: flex;
-      flex-direction: column;
+      align-items: center;
       gap: 12px;
+      text-align: left;
+      color: #FFFFFF;
+      cursor: pointer;
+      transition: all 0.2s ease;
     }
 
-    .comp-list li {
+    .visual-goal-btn:hover {
+      background: rgba(244, 196, 78, 0.2);
+      border-color: #F4C44E;
+      transform: translateY(-2px);
+    }
+
+    .visual-goal-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      background: rgba(244, 196, 78, 0.2);
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .visual-goal-btn strong {
+      display: block;
+      font-size: 0.9rem;
+      color: #FDE68A;
+    }
+
+    .visual-goal-btn span {
+      font-size: 0.77rem;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .hero-cta-wrap {
       display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.92rem;
-      color: var(--text-silver);
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
     }
 
-    /* Founding Team & Handles */
-    .circle-grid {
+    /* Live Hero Stats Bar (Inspired by IDigitalAKKi) */
+    .hero-stats-bar {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      gap: 12px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
     }
 
-    .member-card {
-      background: linear-gradient(165deg, #18202a 0%, #12171f 100%);
-      border: 1px solid var(--border-metallic);
-      border-radius: var(--radius-md);
-      padding: 24px;
+    .hero-stat-item b {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.45rem, 2.3vw, 1.95rem);
+      font-weight: 800;
+      color: #F4C44E;
+      line-height: 1.05;
+    }
+
+    .hero-stat-item span {
+      display: block;
+      font-size: 0.77rem;
+      color: rgba(255, 255, 255, 0.84);
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    /* Right Hero: Interactive 3D iPhone 16 Pro Reel Retention Simulator */
+    .hero-stage-3d {
+      perspective: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .sim-toggle-pill {
+      display: inline-flex;
+      background: rgba(6, 20, 15, 0.9);
+      border: 1px solid rgba(244, 196, 78, 0.5);
+      border-radius: 999px;
+      padding: 5px;
+      margin-bottom: 16px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .sim-btn {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: none;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.77rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.22s ease;
+    }
+
+    .sim-btn.active-after {
+      background: #F4C44E;
+      color: #081C15;
+    }
+
+    .sim-btn.active-before {
+      background: #E11D48;
+      color: #FFFFFF;
+    }
+
+    .iphone-frame-3d {
+      width: 336px;
+      height: 590px;
+      border-radius: 46px;
+      background: linear-gradient(145deg, #2C3733 0%, #091310 55%, #1D2723 100%);
+      padding: 11px;
+      box-shadow:
+        0 34px 70px -15px rgba(0, 0, 0, 0.75),
+        0 0 0 2px rgba(244, 196, 78, 0.45);
+      transform-style: preserve-3d;
+      transform: rotateY(-8deg) rotateX(4deg);
+      transition: transform 0.2s ease-out;
+      position: relative;
+    }
+
+    .iphone-screen-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 36px;
+      background: radial-gradient(circle at 50% 22%, #134E3A 0%, #07120E 72%);
+      padding: 18px 16px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      overflow: hidden;
     }
 
-    .member-card:hover {
+    .dynamic-notch {
+      width: 92px;
+      height: 22px;
+      background: #000;
+      border-radius: 999px;
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+
+    .reel-hook-strip {
+      background: linear-gradient(90deg, #F4C44E, #FFE89E);
+      color: #081C15;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 0.76rem;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .reel-creator-badge {
+      text-align: center;
+      margin: auto 0;
+    }
+
+    .reel-avatar-ring {
+      width: 112px;
+      height: 112px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, #F4C44E, #10B981);
+      box-shadow: 0 0 30px rgba(244, 196, 78, 0.35);
+    }
+
+    .reel-avatar-ring img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .reel-caption-card {
+      background: rgba(5, 11, 9, 0.88);
+      border: 1.5px solid #F4C44E;
+      border-radius: 14px;
+      padding: 11px;
+      margin-top: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .reel-graph-box {
+      background: rgba(5, 11, 9, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+
+    .float-metric-badge {
+      position: absolute;
+      background: #FFFFFF;
+      color: #0B1914;
+      border: 2px solid #D4A024;
+      border-radius: 14px;
+      padding: 9px 13px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.45);
+      transform: translateZ(45px);
+    }
+
+    .float-top-left { top: 75px; left: -42px; }
+    .float-mid-right { top: 235px; right: -44px; }
+    .float-bottom-left { bottom: 78px; left: -36px; }
+
+    /* ==========================================================================
+       NICHE & CREATOR TRUST RAIL (INSPIRED BY IDIGITALAKKI STRIP)
+       ========================================================================== */
+    .trust-strip {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-line);
+      padding: 18px 0;
+      overflow: hidden;
+    }
+
+    .trust-marquee {
+      display: flex;
+      width: max-content;
+      gap: 16px;
+      animation: scrollRail 32s linear infinite;
+    }
+
+    .trust-pill-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 18px;
+      border-radius: 999px;
+      background: var(--bg-page);
+      border: 1px solid var(--border-line);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
+    .trust-pill-item i {
+      font-style: normal;
+      color: var(--emerald-rich);
+    }
+
+    @keyframes scrollRail {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ==========================================================================
+       SECTIONS & HEADINGS (WARM WHITISH / IVORY + EMERALD CONTRAST)
+       ========================================================================== */
+    .sec {
+      padding: clamp(52px, 6.5vw, 88px) 0;
+      position: relative;
+    }
+
+    .sec-white {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-line);
+      border-bottom: 1px solid var(--border-line);
+    }
+
+    .sec-ivory {
+      background: var(--bg-page);
+    }
+
+    .sec-emerald-noir {
+      background: linear-gradient(135deg, #082219 0%, #0E3B2D 55%, #071A13 100%);
+      color: #FFFFFF;
+    }
+
+    .sec-head {
+      max-width: 780px;
+      margin: 0 auto clamp(32px, 4vw, 48px);
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--emerald-rich);
+      margin-bottom: 10px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+      background: var(--gold-imperial);
+    }
+
+    .sec-emerald-noir .eyebrow {
+      color: #F4C44E;
+    }
+
+    .h2 {
+      font-family: 'Space Grotesk', 'Noto Sans Devanagari', sans-serif;
+      font-size: clamp(1.85rem, 3.4vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .h2 .hl-emerald {
+      color: var(--emerald-rich);
+    }
+
+    .sec-emerald-noir .h2 .hl-emerald {
+      color: #F4C44E;
+    }
+
+    .sec-sub {
+      font-size: 1.04rem;
+      color: var(--text-secondary);
+    }
+
+    .sec-emerald-noir .sec-sub {
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    /* ==========================================================================
+       "THE PROBLEM" 4-BOX CONTRAST STRIP (INSPIRED BY IDIGITALAKKI)
+       ========================================================================== */
+    .problem-vs-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .problem-card {
+      background: var(--bg-page);
+      border: 1.5px solid var(--border-line);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.25s var(--ease-out), border-color 0.25s ease;
+    }
+
+    .problem-card:hover {
       transform: translateY(-4px);
       border-color: var(--gold-imperial);
     }
 
-    .member-role {
-      font-size: 0.72rem;
-      font-family: 'JetBrains Mono', monospace;
-      text-transform: uppercase;
-      color: var(--gold-imperial);
-      margin-bottom: 6px;
-    }
-
-    .member-name {
-      font-size: 1.18rem;
-      color: var(--text-alabaster);
-      margin-bottom: 8px;
-    }
-
-    .member-edu {
-      font-size: 0.76rem;
-      color: #a7f3d0;
-      background: rgba(15, 61, 43, 0.55);
-      border: 1px solid rgba(16, 185, 129, 0.35);
-      padding: 4px 9px;
-      border-radius: var(--radius-sm);
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-
-    .member-desc {
-      font-size: 0.85rem;
-      color: var(--text-silver);
-      margin-bottom: 16px;
-    }
-
-    .member-links {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .handle-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 6px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.77rem;
-      padding: 7px 11px;
-      border-radius: var(--radius-sm);
-      background: var(--bg-gunmetal-elevated);
-      border: 1px solid var(--border-hairline);
-      color: var(--text-platinum);
-    }
-
-    .handle-link:hover {
-      border-color: var(--gold-imperial);
-      color: var(--gold-light);
-    }
-
-    /* Interactive Tool Panels */
-    .interactive-box {
-      background: linear-gradient(165deg, rgba(15, 61, 43, 0.22) 0%, #151b24 45%, #10141b 100%);
-      border: 1px solid var(--gold-border);
-      border-radius: var(--radius-lg);
-      padding: 34px;
-      box-shadow: var(--shadow-luxury);
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    .form-group.full-width {
-      grid-column: 1 / -1;
-    }
-
-    label {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--gold-light);
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: var(--radius-sm);
-      background: rgba(11, 14, 18, 0.88);
-      border: 1px solid var(--border-metallic);
-      color: var(--text-alabaster);
-      font-family: inherit;
-      font-size: 0.93rem;
-      transition: border-color 0.2s ease;
-    }
-
-    input:focus, select:focus, textarea:focus {
-      outline: none;
-      border-color: var(--gold-imperial);
-    }
-
-    .output-preview-panel {
-      margin-top: 28px;
-      padding: 24px;
-      border-radius: var(--radius-md);
-      background: rgba(11, 14, 18, 0.94);
-      border: 1px solid var(--gold-imperial);
-      display: none;
-    }
-
-    .output-preview-panel.active {
+    .problem-card span {
       display: block;
-    }
-
-    .pre-code {
-      white-space: pre-wrap;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.82rem;
-      color: var(--text-platinum);
-      background: #080a0d;
-      padding: 16px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-hairline);
-      max-height: 350px;
-      overflow-y: auto;
-      margin: 14px 0;
-    }
-
-    /* Pricing Grid */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .price-card {
-      background: var(--bg-carbon-card);
-      border: 1px solid var(--border-hairline);
-      border-radius: var(--radius-lg);
-      padding: 26px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .price-card.featured {
-      background: linear-gradient(165deg, rgba(15, 61, 43, 0.48) 0%, #171d26 100%);
-      border: 1.5px solid var(--gold-imperial);
-      box-shadow: var(--shadow-luxury);
-      position: relative;
-    }
-
-    .price-tier-name {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text-alabaster);
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      font-weight: 600;
       margin-bottom: 6px;
     }
 
-    .price-amount {
+    .problem-card b {
+      display: block;
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--danger-rose);
+    }
+
+    .punchline-banner {
+      background: var(--gold-tint);
+      border: 1.5px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      padding: 18px 24px;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .punchline-banner span {
+      color: var(--emerald-rich);
+    }
+
+    /* ==========================================================================
+       FOUNDER SPOTLIGHT & FLAGSHIP CLIENT #1: VANDANA YADAV (@VANDANAY2012)
+       ========================================================================== */
+    .founder-flagship-card {
+      background: var(--bg-surface);
+      border: 2px solid var(--gold-imperial);
+      border-radius: var(--radius-xl);
+      padding: clamp(24px, 4vw, 42px);
+      box-shadow: var(--shadow-hover);
+      display: grid;
+      grid-template-columns: 1.22fr 0.78fr;
+      gap: 36px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .founder-quote-callout {
+      background: var(--emerald-tint);
+      border-left: 4px solid var(--emerald-rich);
+      border-radius: 0 16px 16px 0;
+      padding: 18px 22px;
+      margin: 18px 0;
+      color: var(--text-primary);
+      font-size: 0.98rem;
+    }
+
+    .founder-metrics-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .f-metric-box {
+      background: var(--bg-page);
+      border: 1px solid var(--border-line);
+      border-radius: 14px;
+      padding: 14px 12px;
+      text-align: center;
+    }
+
+    .f-metric-box strong {
+      display: block;
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.9rem;
-      font-weight: 700;
-      color: var(--gold-light);
-      margin: 12px 0;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--emerald-rich);
     }
 
-    .price-amount small {
-      font-size: 0.85rem;
-      font-weight: 400;
-      color: var(--text-slate);
+    .f-metric-box span {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      font-weight: 600;
     }
 
-    .price-features {
-      list-style: none;
-      margin: 16px 0 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-size: 0.86rem;
-      color: var(--text-silver);
-    }
-
-    /* Team Command Center Cards */
-    .command-grid {
+    .testimonials-3-col {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .command-card {
-      background: var(--bg-carbon-card);
-      border: 1px solid var(--border-metallic);
-      border-radius: var(--radius-md);
-      padding: 22px;
+    .white-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out), border-color 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .command-card h3 {
-      font-size: 1.05rem;
-      color: var(--gold-light);
-      margin-bottom: 8px;
+    .white-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--gold-imperial);
     }
 
-    /* Footer */
-    footer.site-footer {
-      padding: 48px 0;
-      border-top: 1px solid var(--gold-border);
-      background: #080a0d;
-      color: var(--text-slate);
-      font-size: 0.88rem;
+    /* ==========================================================================
+       6 SERVICES GRID + 9-STEP FRAMEWORK + LIVE CLIENT PORTAL (IDIGITALAKKI + FLUENCIFY)
+       ========================================================================== */
+    .services-6-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
-    .footer-flex {
+    .service-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--emerald-tint);
+      color: var(--emerald-rich);
+      display: grid;
+      place-items: center;
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 9px;
+      margin-top: 12px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .check-list li::before {
+      content: "✓";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--emerald-rich);
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 800;
+      display: inline-grid;
+      place-items: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Live Client Portal & Operations Comparison Split (LexiConn + Fluencify + IDigitalAKKi) */
+    .ops-portal-split {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .portal-mockup-card {
+      background: #FFFFFF;
+      color: #0B1914;
+      border: 2px solid #D4A024;
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .portal-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #E2DDD1;
+      margin-bottom: 16px;
+    }
+
+    .portal-progress-track {
+      height: 10px;
+      background: #E4F3EC;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 8px 0 18px;
+    }
+
+    .portal-progress-fill {
+      height: 100%;
+      width: 85%;
+      background: linear-gradient(90deg, #0E6B4E, #10B981);
+      border-radius: 999px;
+    }
+
+    .portal-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .portal-kpi-item {
+      background: #FAF8F3;
+      border: 1px solid #E2DDD1;
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .portal-kpi-item small {
+      display: block;
+      font-size: 0.72rem;
+      color: #64746D;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .portal-kpi-item b {
+      display: block;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #0B1914;
+      margin-top: 2px;
+    }
+
+    .portal-kpi-item span {
+      font-size: 0.75rem;
+      color: #0E6B4E;
+      font-weight: 700;
+    }
+
+    /* 9-Step Framework Grid */
+    .steps-9-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .step-9-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .step-9-num {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--emerald-rich);
+      color: #FFFFFF;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .step-9-card.gold-step {
+      border: 2px solid var(--gold-imperial);
+      background: var(--gold-tint);
+    }
+
+    .step-9-card.gold-step .step-9-num {
+      background: var(--gold-imperial);
+      color: #081C15;
+    }
+
+    /* ==========================================================================
+       ZERO-TOUCH VOICE + FREE BACKGROUND AI INTAKE FORM
+       ========================================================================== */
+    .ai-form-card {
+      background: var(--bg-surface);
+      border: 2px solid var(--gold-imperial);
+      border-radius: var(--radius-xl);
+      padding: clamp(24px, 4vw, 42px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .voice-mic-banner {
+      background: linear-gradient(90deg, var(--emerald-tint), var(--gold-tint));
+      border: 1.5px solid var(--emerald-rich);
+      border-radius: 18px;
+      padding: 18px 22px;
+      margin-bottom: 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 14px;
     }
 
-    @media (max-width: 980px) {
+    .mic-record-btn {
+      background: linear-gradient(135deg, #E11D48, #BE123C);
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 24px -6px rgba(225, 29, 72, 0.55);
+    }
+
+    .mic-record-btn.listening {
+      background: #10B981;
+      animation: pulseRing 1.2s infinite;
+    }
+
+    .form-2col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .field-box {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field-box.full {
+      grid-column: 1 / -1;
+    }
+
+    .field-box label {
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .field-box input, .field-box select, .field-box textarea {
+      width: 100%;
+      padding: 13px 15px;
+      border-radius: 12px;
+      border: 1.5px solid var(--border-line);
+      background: var(--bg-page);
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .field-box input:focus, .field-box select:focus, .field-box textarea:focus {
+      outline: none;
+      border-color: var(--emerald-rich);
+      box-shadow: 0 0 0 4px rgba(14, 107, 78, 0.14);
+    }
+
+    .ai-output-drawer {
+      display: none;
+      margin-top: 26px;
+      padding: 24px;
+      border-radius: var(--radius-md);
+      background: #082018;
+      color: #F8FAFC;
+      border: 2px solid #F4C44E;
+    }
+
+    .ai-output-drawer.active {
+      display: block;
+    }
+
+    .ai-pre-box {
+      white-space: pre-wrap;
+      font-family: 'JetBrains Mono', 'Noto Sans Devanagari', monospace;
+      font-size: 0.85rem;
+      background: #04110C;
+      color: #E2E8F0;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      max-height: 380px;
+      overflow-y: auto;
+      margin: 14px 0;
+    }
+
+    /* ==========================================================================
+       PUBLIC LEADERSHIP TEAM (3 CARDS: FOUNDER VANDANA + GUGGY + SAHIL)
+       WITH OFFICIAL INSTAGRAM, WHATSAPP & GMAIL APP LOGOS
+       ========================================================================== */
+    .leadership-3-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .leader-card {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-line);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out), border-color 0.25s ease;
+    }
+
+    .leader-card.founder-featured {
+      border: 2px solid var(--gold-imperial);
+      background: linear-gradient(180deg, var(--gold-tint) 0%, var(--bg-surface) 38%);
+    }
+
+    .leader-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--emerald-rich);
+    }
+
+    .leader-role-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.73rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--emerald-rich);
+      margin-bottom: 6px;
+    }
+
+    .leader-card.founder-featured .leader-role-tag {
+      color: #B47D09;
+    }
+
+    .leader-edu-pill {
+      display: inline-block;
+      font-size: 0.77rem;
+      font-weight: 700;
+      color: var(--emerald-rich);
+      background: var(--emerald-tint);
+      border: 1px solid var(--border-emerald);
+      padding: 5px 12px;
+      border-radius: 8px;
+      margin: 8px 0 14px;
+    }
+
+    .social-contact-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-top: 18px;
+    }
+
+    .app-contact-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 13px;
+      border-radius: 12px;
+      background: var(--bg-page);
+      border: 1px solid var(--border-line);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      transition: all 0.2s ease;
+    }
+
+    .app-contact-row:hover {
+      border-color: var(--emerald-rich);
+      background: var(--emerald-tint);
+      transform: translateX(3px);
+    }
+
+    .app-contact-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .app-contact-left span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .app-badge-pill {
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 999px;
+      flex-shrink: 0;
+    }
+
+    .badge-ig {
+      background: rgba(225, 48, 108, 0.12);
+      color: #C13584;
+    }
+
+    .badge-wa {
+      background: rgba(37, 211, 102, 0.16);
+      color: #128C7E;
+    }
+
+    .badge-mail {
+      background: rgba(234, 67, 53, 0.12);
+      color: #C5221F;
+    }
+
+    /* ==========================================================================
+       ROI CALCULATOR & PRICING PACKAGES
+       ========================================================================== */
+    .roi-split-card {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-line);
+      border-radius: var(--radius-xl);
+      padding: clamp(24px, 4vw, 40px);
+      box-shadow: var(--shadow-card);
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .pricing-4-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .price-card {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-line);
+      border-radius: var(--radius-lg);
+      padding: 26px 22px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .price-card.featured-plan {
+      border: 2.5px solid var(--gold-imperial);
+      background: linear-gradient(180deg, var(--gold-tint) 0%, var(--bg-surface) 35%);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .price-amount {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--emerald-rich);
+      margin: 8px 0;
+    }
+
+    .price-amount small {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* FAQ Accordion */
+    .faq-list {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-list details {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: 16px;
+      padding: 18px 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .faq-list summary {
+      font-weight: 800;
+      font-size: 1.02rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: "+";
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--emerald-tint);
+      color: var(--emerald-rich);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .faq-list details[open] summary::after {
+      content: "–";
+      background: var(--emerald-rich);
+      color: #FFFFFF;
+    }
+
+    .faq-list details p {
+      margin-top: 12px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    /* Footer & Sticky Mobile Conversion Bar */
+    footer.site-footer {
+      background: #071D15;
+      color: rgba(255, 255, 255, 0.86);
+      border-top: 3px solid #D4A024;
+      padding: 52px 0 90px;
+    }
+
+    .sticky-mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 150;
+      background: rgba(7, 29, 21, 0.97);
+      border-top: 1px solid rgba(244, 196, 78, 0.45);
+      padding: 10px 14px;
+      display: none;
+      grid-template-columns: 1fr 1fr 1.15fr;
+      gap: 8px;
+      backdrop-filter: blur(12px);
+    }
+
+    .sticky-mobile-bar a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 8px;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    @media (max-width: 1024px) {
       .hero-grid,
-      .comparison-grid,
-      .circle-grid,
-      .pricing-grid,
-      .brand-gallery-grid,
-      .command-grid {
+      .founder-flagship-card,
+      .ops-portal-split,
+      .roi-split-card,
+      .leadership-3-grid,
+      .services-6-grid,
+      .testimonials-3-col,
+      .steps-9-grid,
+      .pricing-4-grid,
+      .problem-vs-grid {
         grid-template-columns: 1fr;
       }
-      .color-swatch-bar {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .nav-links {
-        display: none;
-      }
-      .form-grid {
+      .main-nav { display: none; }
+      .float-metric-badge { display: none; }
+      .iphone-frame-3d { transform: none !important; width: 312px; }
+      .sticky-mobile-bar { display: grid; }
+    }
+
+    @media (max-width: 640px) {
+      .visual-goal-grid, .form-2col, .hero-stats-bar, .founder-metrics-3 {
         grid-template-columns: 1fr;
       }
     }
@@ -807,737 +1479,1349 @@
 </head>
 <body>
 
-  <!-- TOP HEADER -->
+  <!-- REUSABLE OFFICIAL SVG DEFS FOR INSTAGRAM, WHATSAPP & GMAIL LOGOS -->
+  <svg width="0" height="0" style="position:absolute;" aria-hidden="true">
+    <defs>
+      <linearGradient id="igOfficialGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#f09433"/>
+        <stop offset="25%" stop-color="#e6683c"/>
+        <stop offset="50%" stop-color="#dc2743"/>
+        <stop offset="75%" stop-color="#cc2366"/>
+        <stop offset="100%" stop-color="#bc1888"/>
+      </linearGradient>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#igOfficialGrad)"/>
+        <rect x="4.6" y="4.6" width="14.8" height="14.8" rx="4" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+        <circle cx="12" cy="12" r="3.6" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+        <circle cx="16.4" cy="7.6" r="1.1" fill="#ffffff"/>
+      </symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10.5" fill="#25D366"/>
+        <path fill="#ffffff" d="M16.6 14.2c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.3.2-.4.6-1.2.1-.2 0-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3z"/>
+      </symbol>
+      <symbol id="icon-gmail" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="3" fill="#ffffff" stroke="#E2DDD1" stroke-width="1.5"/>
+        <path d="M3.5 6.5L12 13l8.5-6.5" fill="none" stroke="#EA4335" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.5 17.5V7l8.5 6 8.5-6v10.5" fill="none" stroke="#4285F4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- TOP URGENCY, VOICE GUIDE & BILINGUAL BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="founder-live-pill">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span>
+          <strong>FOUNDER &amp; FLAGSHIP CREATOR:</strong> Vandana Yadav (
+          <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer" style="color:#F4C44E; text-decoration:underline;">@vandanay2012</a>
+          ) • AI + Studio Content Engine
+        </span>
+      </div>
+      <div class="topbar-controls">
+        <button type="button" class="top-chip-btn active" id="btnLangHi" onclick="setLanguageMode('hi')">🇮🇳 आसान हिंदी / Hinglish</button>
+        <button type="button" class="top-chip-btn" id="btnLangEn" onclick="setLanguageMode('en')">🇬🇧 English</button>
+        <button type="button" class="top-chip-btn" onclick="speakWelcomeGuide()">🔊 हिंदी में सुनें (Audio Guide)</button>
+        <button type="button" class="top-chip-btn" id="btnThemeSwitch" onclick="toggleSurfaceTheme()">🌙 Dark / ☀️ Ivory</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER -->
   <header class="site-header">
-    <div class="container nav-bar">
-      <a href="#" class="brand-lockup" aria-label="VanIndra Creations Home">
-        <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_dp.jpg" alt="VanIndra Creations Gold and Emerald Crest">
-        <div class="brand-wordmark">
-          <strong>VANINDRA</strong>
-          <span>◆ CREATIONS ◆</span>
+    <div class="container header-inner">
+      <a href="#top" class="brand-lockup" aria-label="VanIndra Creations Home">
+        <svg class="crest-badge-svg" viewBox="0 0 100 100" role="img" aria-label="VanIndra Creations Crest">
+          <defs>
+            <linearGradient id="hdrGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF3B8"/>
+              <stop offset="50%" stop-color="#E5B84B"/>
+              <stop offset="100%" stop-color="#9E6F12"/>
+            </linearGradient>
+            <radialGradient id="hdrEmerald" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stop-color="#1A6B4C"/>
+              <stop offset="70%" stop-color="#0B2E20"/>
+              <stop offset="100%" stop-color="#071710"/>
+            </radialGradient>
+          </defs>
+          <circle cx="50" cy="50" r="46" fill="url(#hdrEmerald)" stroke="url(#hdrGold)" stroke-width="5"/>
+          <circle cx="50" cy="50" r="39" fill="none" stroke="url(#hdrGold)" stroke-width="1.2" stroke-opacity="0.6"/>
+          <path d="M 24 30 C 30 52, 42 68, 50 80 C 58 68, 70 52, 76 30 C 66 44, 56 56, 50 64 C 44 56, 34 44, 24 30 Z" fill="#F8FAFC"/>
+          <path d="M 28 45 C 35 60, 44 72, 50 83 C 56 72, 65 60, 72 45 C 64 56, 55 65, 50 72 C 45 65, 36 56, 28 45 Z" fill="url(#hdrGold)"/>
+          <circle cx="50" cy="34" r="9.5" fill="url(#hdrGold)"/>
+        </svg>
+        <div class="brand-text-stack">
+          <span class="name-main">VANINDRA</span>
+          <span class="name-sub">◆ CREATIONS ◆</span>
         </div>
       </a>
 
       <nav aria-label="Primary Navigation">
-        <ul class="nav-links">
-          <li><a href="#brand-identity">Brand &amp; Logos</a></li>
-          <li><a href="#founding-team">4 Pillars Team</a></li>
-          <li><a href="#free-audit">Free 7-Day Audit</a></li>
+        <ul class="main-nav">
+          <li><a href="#vandana-story">Founder &amp; Proof</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#client-portal">Live Portal</a></li>
+          <li><a href="#smart-ai-portal">🎤 बोल कर फॉर्म भरें</a></li>
+          <li><a href="#our-team">Leadership Team</a></li>
           <li><a href="#packages">Packages</a></li>
-          <li><a href="#client-portal">Client Portal</a></li>
-          <li><a href="#team-hq">Team Scripts HQ</a></li>
         </ul>
       </nav>
 
-      <div class="nav-actions">
-        <a href="thumbnail-studio.html" class="btn btn-emerald">🎨 Thumbnail Studio</a>
-        <a href="#free-audit" class="btn btn-gold">Claim Free Audit</a>
+      <div class="header-cta-row">
+        <a href="https://wa.me/918112859437?text=Hi%20VanIndra%20Creations%20Team!%20I%20want%20a%20Free%207-Day%20Content%20Plan%20and%20Sample%20Reel%20Edit." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding:10px 16px; font-size:0.84rem;">
+          <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
+          <span>WhatsApp Us</span>
+        </a>
+        <a href="#smart-ai-portal" class="btn btn-gold" style="padding:10px 18px; font-size:0.84rem;">
+          🎁 Free Audit पाएं
+        </a>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO SECTION -->
+  <main id="top">
+    <!-- ==========================================================================
+         HERO SECTION: INSPIRED BY IDIGITALAKKI + FLUENCIFY + 3D IPHONE SIMULATOR
+         ========================================================================== -->
     <section class="hero-section">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow-pill">
-            <span class="eyebrow-dot" aria-hidden="true"></span>
-            <span>India's #1 Content &amp; Growth Studio For 1,00,000+ Followers Influencers</span>
+          <div class="hero-pill">
+            <b>Founded by Vandana Yadav (@vandanay2012)</b>
+            <span id="heroBadgeText">For Indian 1 Lakh+ Influencers, Doctors, Coaches &amp; Businesses</span>
           </div>
-          <h1 class="hero-title">
-            You Built a 1 Lakh+ Audience.<br>
-            <span class="gold-titanium-gradient">VanIndra Creations Scales Your Next 10 Lakh Views.</span>
+
+          <h1 class="hero-h1" id="heroMainTitle">
+            Social media that builds <span class="gold-text">more than followers —</span><br>
+            Reels, Brand Deals &amp; Business.
           </h1>
-          <p class="hero-subtitle">
-            Stop stressing over <em>what to post and what not to post</em>. Stop spending 4 hours editing a single Reel. <strong>VanIndra Creations</strong> is your Done-For-You Content Strategy, Viral Scripting &amp; High-Retention Video Studio.
+
+          <p class="hero-lead" id="heroSubTitle">
+            चाहे आप पढ़े-लिखे प्रोफेशनल हों (Doctor, Educator, Coach, Influencer) या अपने हुनर से आगे बढ़ने वाले क्रिएटर और व्यापारी — <strong>आपको एडिटिंग या मार्केटिंग सीखने की ज़रूरत नहीं है!</strong> बस फोन से वीडियो रिकॉर्ड करें; <strong>स्क्रिप्ट, 3-सेकंड हुक, रील एडिटिंग और ब्रांड डील्स</strong> का पूरा काम <strong>Founder Vandana Yadav</strong> और उनकी टीम संभालेगी।
           </p>
-          <div class="hero-cta-row">
-            <a href="#free-audit" class="btn btn-gold">🎁 Claim Free 7-Day Content Audit</a>
-            <a href="#client-portal" class="btn btn-secondary">📋 Submit Client Requirements</a>
-            <a href="thumbnail-studio.html" class="btn btn-emerald">🎬 Launch 9:16 Thumbnail Studio</a>
-          </div>
-          <div class="hero-metrics">
-            <div class="metric-item">
-              <strong>100K – 500K+</strong>
-              <span>Target Creator Tier</span>
-            </div>
-            <div class="metric-item">
-              <strong>2 Hrs / Wk</strong>
-              <span>Your Only Shoot Time</span>
-            </div>
-            <div class="metric-item">
-              <strong>3x – 5x</strong>
-              <span>Hook Retention Lift</span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Right Column: Signature Crest + 4-Step Engine -->
-        <aside class="hero-showcase-card" aria-label="VanIndra Creations 4-Step Engine">
-          <div class="crest-hero-banner">
-            <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_crest.jpg" alt="VanIndra Creations Official Gold, Emerald and Titanium Crest">
-            <div>
-              <span class="badge-tag">@vanindracreations</span>
-              <h2 class="font-display" style="font-size:1.2rem; margin-top:6px; color:var(--text-alabaster);">The VanIndra Studio Engine</h2>
-              <p style="font-size:0.8rem; color:var(--text-silver);">Obsidian Slate • Studio Emerald • Imperial Gold</p>
-            </div>
-          </div>
-          <div class="pipeline-steps-mini">
-            <div class="mini-step">
-              <span class="mini-step-num">01</span>
+          <p style="font-size:0.84rem; font-weight:800; color:#F4C44E; margin-bottom:10px;" id="tapPromptLabel">
+            👇 आपको सबसे ज़्यादा किस चीज़ में मदद चाहिए? (अपनी ज़रूरत पर टैप करें):
+          </p>
+          <div class="visual-goal-grid">
+            <button type="button" class="visual-goal-btn" onclick="quickSelectGoal('मुझे बेहतरीन Video Editing और High-Retention Reels बनवानी हैं')">
+              <span class="visual-goal-icon">🎬</span>
               <div>
-                <h3>"What To Post vs. What NOT To Post" Calendar</h3>
-                <p>Indrajeet's AI + Influencer Strategy Engine builds your 30-day niche calendar so you never post off-brand content again.</p>
+                <strong>रील और वीडियो एडिटिंग</strong>
+                <span>प्रोफेशनल कैप्शन, म्यूजिक और कट्स</span>
               </div>
-            </div>
-            <div class="mini-step">
-              <span class="mini-step-num">02</span>
+            </button>
+
+            <button type="button" class="visual-goal-btn" onclick="quickSelectGoal('मुझे समझ नहीं आता कि रोज़ क्या पोस्ट करें और क्या नहीं (30-Day Plan)')">
+              <span class="visual-goal-icon">📅</span>
               <div>
-                <h3>Word-for-Word 3-Second Hooks &amp; Scripts</h3>
-                <p>Reviewed by Co-Founder &amp; active influencer <strong>Vandana Yadav (@vandanay2012)</strong> for natural camera delivery.</p>
+                <strong>रोज़ क्या पोस्ट करें? (आइडिया)</strong>
+                <span>वायरल स्क्रिप्ट और 30-दिन का कैलेंडर</span>
               </div>
-            </div>
-            <div class="mini-step">
-              <span class="mini-step-num">03</span>
+            </button>
+
+            <button type="button" class="visual-goal-btn" onclick="quickSelectGoal('मुझे बड़ी कंपनियों से Brand Deals और Sponsorship चाहिए')">
+              <span class="visual-goal-icon">💰</span>
               <div>
-                <h3>High-Retention Studio Editing &amp; Thumbnails</h3>
-                <p>Dynamic Hinglish/English captions, B-roll cuts, SFX &amp; sponsor-ready covers led by <strong>Akarsh "Sahil" Yadav (@yadavakarsh_07)</strong>.</p>
+                <strong>ब्रांड डील्स और स्पॉन्सरशिप</strong>
+                <span>अपने फॉलोअर्स से कमाई शुरू करें</span>
               </div>
-            </div>
-            <div class="mini-step">
-              <span class="mini-step-num">04</span>
+            </button>
+
+            <button type="button" class="visual-goal-btn" onclick="quickSelectGoal('मुझे सोशल मीडिया से अपने बिज़नेस, क्लिनिक या दुकान के ग्राहक बढ़ाने हैं')">
+              <span class="visual-goal-icon">🏪</span>
               <div>
-                <h3>Collab-Tag Growth Flywheel</h3>
-                <p>Scale views and land ₹30K–₹1L+ brand deals with <strong>Smita "Guggy" Yadav (@smitayadav_0901)</strong> leading partnerships.</p>
+                <strong>अपना बिज़नेस और ग्राहक बढ़ाएं</strong>
+                <span>दुकान, क्लिनिक या कोचिंग की ग्रोथ</span>
               </div>
+            </button>
+          </div>
+
+          <div class="hero-cta-wrap">
+            <a href="#smart-ai-portal" class="btn btn-gold">
+              🎤 बोल कर या लिख कर Free AI Plan पाएं →
+            </a>
+            <a href="https://wa.me/918112859437?text=Hi%20Smita%20(Guggy)%20%26%20VanIndra%20Creations!%20I%20want%20to%20grow%20my%20Instagram%20page%20and%20get%20a%20Free%20Audit." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
+              <span>WhatsApp Team (+91 81128 59437)</span>
+            </a>
+            <button type="button" class="btn btn-outline-light" onclick="speakWelcomeGuide()">
+              🔊 हिंदी में सुनें
+            </button>
+          </div>
+
+          <div class="hero-stats-bar">
+            <div class="hero-stat-item">
+              <b>84.2%</b>
+              <span>3-Sec Hook Retention</span>
             </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- OFFICIAL BRAND IDENTITY, LOGOS, THUMBNAILS & COLOR SYSTEM -->
-    <section id="brand-identity" class="page-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Official Brand Identity, Logos, Thumbnails &amp; Palette</h2>
-          <p>Upgraded from your original concept into a high-contrast <strong>Imperial Gold, Deep Emerald &amp; Architectural Slate Titanium</strong> visual system. Click any asset to download or open our live Thumbnail Generator.</p>
-        </div>
-
-        <div class="brand-gallery-grid">
-          <!-- Asset 1: Signature Crest -->
-          <article class="brand-asset-card">
-            <div>
-              <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_crest.jpg" alt="VanIndra Creations 3D Gold and Emerald Signature Crest">
-              <h3>1. Signature Studio Crest</h3>
-              <p>3D Platinum &amp; Gold Rising V-Wings + Golden Crown Sphere on Deep Emerald-Slate</p>
+            <div class="hero-stat-item">
+              <b>24–48 Hr</b>
+              <span>Fast Studio Turnaround</span>
             </div>
-            <a href="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_crest.jpg" download class="btn btn-gold" style="width:100%; font-size:0.82rem;">⬇ Download Crest HD</a>
-          </article>
-
-          <!-- Asset 2: Instagram DP Medallion -->
-          <article class="brand-asset-card">
-            <div>
-              <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_dp.jpg" alt="VanIndra Creations 1:1 Instagram Profile Picture Medallion">
-              <h3>2. Official Instagram DP (1:1)</h3>
-              <p>High-Contrast Circular Medallion for Instagram, YouTube &amp; WhatsApp Business</p>
+            <div class="hero-stat-item">
+              <b>1L+ से 10L+</b>
+              <span>Creators &amp; Business Focus</span>
             </div>
-            <a href="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_dp.jpg" download class="btn btn-secondary" style="width:100%; font-size:0.82rem;">⬇ Download 1:1 DP</a>
-          </article>
-
-          <!-- Asset 3: 9:16 Reel Cover Thumbnail -->
-          <article class="brand-asset-card">
-            <div>
-              <img src="01_Brand_and_Team/Brand_Assets/vanindra_reel_thumbnail_showcase.jpg" alt="VanIndra Creations 9:16 Instagram Reel Cover Thumbnail">
-              <h3>3. 9:16 Reel Cover Template</h3>
-              <p>High-Retention Grid Cover Design for @vanindracreations &amp; Client Reels</p>
+            <div class="hero-stat-item">
+              <b>Zero</b>
+              <span>Operations on Your Side</span>
             </div>
-            <a href="thumbnail-studio.html" class="btn btn-emerald" style="width:100%; font-size:0.82rem;">🎨 Customize in Studio</a>
-          </article>
-
-          <!-- Asset 4: 16:9 Channel Banner & Wordmark -->
-          <article class="brand-asset-card">
-            <div>
-              <img src="01_Brand_and_Team/Brand_Assets/vanindra_channel_banner.jpg" alt="VanIndra Creations 16:9 YouTube and LinkedIn Cover Banner">
-              <h3>4. 16:9 Channel &amp; LinkedIn Banner</h3>
-              <p>Widescreen Studio Header for YouTube, LinkedIn Company Page &amp; Decks</p>
-            </div>
-            <a href="01_Brand_and_Team/Brand_Assets/vanindra_channel_banner.jpg" download class="btn btn-secondary" style="width:100%; font-size:0.82rem;">⬇ Download 16:9 Banner</a>
-          </article>
-        </div>
-
-        <!-- Click-to-Copy Brand Color Swatches -->
-        <div class="color-swatch-bar" aria-label="Official Brand Color Swatches">
-          <div class="swatch-chip" style="background:#0B0E12; color:#F8FAFC;" onclick="copyColor('#0B0E12')">
-            <strong>Obsidian Slate</strong><br>#0B0E12 (Click to Copy)
-          </div>
-          <div class="swatch-chip" style="background:#161C24; color:#CBD5E1;" onclick="copyColor('#161C24')">
-            <strong>Carbon Titanium</strong><br>#161C24 (Cards/UI)
-          </div>
-          <div class="swatch-chip" style="background:#0F3D2B; color:#A7F3D0;" onclick="copyColor('#0F3D2B')">
-            <strong>Crest Emerald</strong><br>#0F3D2B (Studio Core)
-          </div>
-          <div class="swatch-chip" style="background:#10B981; color:#0B0E12;" onclick="copyColor('#10B981')">
-            <strong>Emerald Glow</strong><br>#10B981 (Growth Accent)
-          </div>
-          <div class="swatch-chip" style="background:#E5B84B; color:#0B0E12;" onclick="copyColor('#E5B84B')">
-            <strong>Imperial Gold</strong><br>#E5B84B (Crown &amp; CTA)
-          </div>
-          <div class="swatch-chip" style="background:#CBD5E1; color:#0B0E12;" onclick="copyColor('#CBD5E1')">
-            <strong>Brushed Silver</strong><br>#CBD5E1 (Metallic Gray)
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- THE 4 FOUNDING PILLARS OF VANINDRA CREATIONS -->
-    <section id="founding-team" class="page-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>The VanIndra Creations Founding Team (4 Pillars)</h2>
-          <p>Combining AI content systems, insider influencer experience, Delhi University commerce strategy, and Allahabad University food/health science &amp; video engineering.</p>
-        </div>
-
-        <div class="circle-grid">
-          <!-- Indrajeet Yadav -->
-          <article class="member-card">
-            <div>
-              <div class="member-role">Founder &amp; Project Head</div>
-              <h3 class="member-name">Indrajeet Yadav</h3>
-              <span class="member-edu">AI Pipeline &amp; Strategy Architect</span>
-              <p class="member-desc">Heads VanIndra Creations' overall strategy, Master LLM Content Factory, niche positioning matrices, multi-website ecosystem &amp; app architecture.</p>
-            </div>
-            <div class="member-links">
-              <span class="handle-link"><span>⚙️ Head of Project &amp; AI Systems</span></span>
-            </div>
-          </article>
-
-          <!-- Vandana Yadav -->
-          <article class="member-card">
-            <div>
-              <div class="member-role">Co-Founder &amp; Creative Director</div>
-              <h3 class="member-name">Vandana Yadav</h3>
-              <span class="member-edu">Flagship Influencer &amp; QA Lead</span>
-              <p class="member-desc">Active influencer leading creative direction, "What to Post vs. What Not to Post" quality control, and authentic creator storytelling.</p>
-            </div>
-            <div class="member-links">
-              <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer" class="handle-link">
-                <span>📸 @vandanay2012</span> <span>↗</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Smita Yadav (Guggy) -->
-          <article class="member-card">
-            <div>
-              <div class="member-role">Growth &amp; Client Relations Lead</div>
-              <h3 class="member-name">Smita Yadav (Guggy)</h3>
-              <span class="member-edu">B.Com • Gargi College, Delhi Univ.</span>
-              <p class="member-desc">Instagram creator &amp; DU commerce strategist leading 100K+ influencer outreach, discovery calls, lifestyle/fashion brand positioning &amp; onboarding.</p>
-            </div>
-            <div class="member-links">
-              <a href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer" class="handle-link">
-                <span>📸 @smitayadav_0901</span> <span>↗</span>
-              </a>
-              <a href="https://wa.me/918112859437" target="_blank" rel="noopener noreferrer" class="handle-link">
-                <span>💬 +91 8112859437</span> <span>WA</span>
-              </a>
-              <a href="mailto:smitayadav497@gmail.com" class="handle-link">
-                <span>✉️ smitayadav497@gmail.com</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Akarsh Yadav (Sahil) -->
-          <article class="member-card">
-            <div>
-              <div class="member-role">Tech, Editing &amp; Science Lead</div>
-              <h3 class="member-name">Akarsh Yadav (Sahil)</h3>
-              <span class="member-edu">B.Voc Food Tech • Univ. of Allahabad</span>
-              <p class="member-desc">Tech-driven creator &amp; editor engineering high-retention Reels, 15s Before/After samples, and specialized hooks for Food, Nutrition, Fitness &amp; Health creators.</p>
-            </div>
-            <div class="member-links">
-              <a href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer" class="handle-link">
-                <span>📸 @yadavakarsh_07</span> <span>↗</span>
-              </a>
-              <a href="https://wa.me/919415259408" target="_blank" rel="noopener noreferrer" class="handle-link">
-                <span>💬 +91 9415259408</span> <span>WA</span>
-              </a>
-              <a href="mailto:akarshgkp8756539282@gmail.com" class="handle-link">
-                <span>✉️ akarshgkp8756539282@gmail.com</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- BEFORE VS AFTER RETENTION LAB -->
-    <section id="retention-lab" class="page-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Why 1 Lakh+ Influencers Get Stuck (And How We Fix It)</h2>
-          <p>Hitting 1,00,000 followers proves people love your voice. Scaling to 5,00,000+ and landing high-paying brand deals requires studio-grade retention systems.</p>
-        </div>
-
-        <div class="comparison-grid">
-          <div class="comparison-card">
-            <span class="comp-pill before">❌ Typical Solo 100K+ Creator</span>
-            <h3>Random Posting &amp; Editing Fatigue</h3>
-            <ul class="comp-list">
-              <li><span>✖</span> <span><strong>Slow First 3 Seconds:</strong> Starting Reels with "Hello guys, welcome back..." loses 68% of viewers immediately.</span></li>
-              <li><span>✖</span> <span><strong>Topic Confusion:</strong> Mixing random vlogs, quotes, and niche tips confuses the Instagram algorithm.</span></li>
-              <li><span>✖</span> <span><strong>4-Hour Editing Burnout:</strong> Doing your own cuts and captions leads to 10-day gaps between posts.</span></li>
-              <li><span>✖</span> <span><strong>Messy Grid Aesthetic:</strong> D2C brands skip profiles that lack clean cover titles and consistent formatting.</span></li>
-            </ul>
+        <!-- Right 3D Interactive iPhone 16 Pro Reel Simulator -->
+        <div class="hero-stage-3d">
+          <div class="sim-toggle-pill" role="group" aria-label="Before and After Reel Comparison">
+            <button type="button" id="btnModeBefore" class="sim-btn" onclick="switchPhoneSimulation('before')">❌ पहले: साधारण वीडियो (4K Views)</button>
+            <button type="button" id="btnModeAfter" class="sim-btn active-after" onclick="switchPhoneSimulation('after')">⚡ अब: VanIndra Studio रील (6.8L Views)</button>
           </div>
 
-          <div class="comparison-card upgraded">
-            <span class="comp-pill after">◆ Inside VanIndra Creations</span>
-            <h3>Engineered Retention &amp; Brand Authority</h3>
-            <ul class="comp-list">
-              <li><span>✦</span> <span><strong>Engineered 0–3s Hooks:</strong> Visual headline banner + pattern-interrupt opening scripted for every Reel.</span></li>
-              <li><span>✦</span> <span><strong>Strict 4-Pillar Calendar:</strong> Clear separation of Viral Reach (40%), Authority (30%), Story (20%), and Brand-Ready (10%).</span></li>
-              <li><span>✦</span> <span><strong>Done-For-You Production:</strong> You film raw clips for 2 hours a week; we handle 100% of editing, B-roll, SFX &amp; captions.</span></li>
-              <li><span>✦</span> <span><strong>Sponsor-Magnet Packaging:</strong> Cohesive slate/gold/emerald thumbnails and SEO captions that command higher brand payouts.</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="iphone-frame-3d" id="iphone3D">
+            <div class="float-metric-badge float-top-left" id="chipRetention">
+              🎯 3-Sec Hold: <span style="color:#0E6B4E;">84.2%</span>
+            </div>
+            <div class="float-metric-badge float-mid-right" id="chipViews">
+              🔥 Reach: <span style="color:#B47D09;">6,84,900 Views</span>
+            </div>
+            <div class="float-metric-badge float-bottom-left" id="chipSponsor">
+              💰 Brand Deal Ready: <span style="color:#0E6B4E;">₹65K/Reel</span>
+            </div>
 
-    <!-- INTERACTIVE FEATURE 1: FREE 7-DAY CONTENT AUDIT & HOOK GENERATOR -->
-    <section id="free-audit" class="page-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Claim Your Free 7-Day Content Audit &amp; 3 Viral Hooks</h2>
-          <p>Have 1,00,000+ followers? Enter your handle and niche below to generate an instant preview of your "What to Post vs. What NOT to Post" rules + request your custom 15-second sample Reel edit.</p>
-        </div>
-
-        <div class="interactive-box">
-          <form id="auditForm" onsubmit="generateInstantAudit(event)">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="auditName">Your Name</label>
-                <input type="text" id="auditName" placeholder="e.g., Dr. Neha Sharma / Rohit Verma" required>
+            <div class="iphone-screen-inner">
+              <div>
+                <div class="dynamic-notch">
+                  <span style="width:8px;height:8px;border-radius:50%;background:#38bdf8;"></span>
+                  <span style="font-size:0.58rem;color:#94a3b8;font-family:'JetBrains Mono',monospace;">9:16 STUDIO HD</span>
+                </div>
+                <div class="reel-hook-strip" id="phoneHookBanner">
+                  ⚠️ 1 LAKH+ KE BAAD YEH GALTI MAT KARNA!
+                </div>
               </div>
-              <div class="form-group">
-                <label for="auditHandle">Instagram Handle (@)</label>
-                <input type="text" id="auditHandle" placeholder="e.g., @yourhandle" required>
-              </div>
-              <div class="form-group">
-                <label for="auditFollowers">Current Follower Count</label>
-                <select id="auditFollowers" required>
-                  <option value="1,00,000 – 2,00,000 (1L–2L)">1,00,000 – 2,00,000 (1L–2L)</option>
-                  <option value="2,00,000 – 5,00,000 (2L–5L)">2,00,000 – 5,00,000 (2L–5L)</option>
-                  <option value="5,00,000 – 1M+ (5L+)">5,00,000 – 1M+ (5L+)</option>
-                  <option value="Growing Towards 100K (50K–100K)">Growing Towards 100K (50K–100K)</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="auditNiche">Your Primary Niche</label>
-                <select id="auditNiche" required>
-                  <option value="Lifestyle, Fashion & Beauty">Lifestyle, Fashion &amp; Beauty</option>
-                  <option value="Fitness, Nutrition, Food Science & Doctors">Fitness, Nutrition, Food Science &amp; Doctors</option>
-                  <option value="Education, Career & Exam Mentorship">Education, Career &amp; Exam Mentorship</option>
-                  <option value="Finance, Business & Tech">Finance, Business &amp; Tech</option>
-                  <option value="Regional Vlog, Comedy & Storytelling">Regional Vlog, Comedy &amp; Storytelling</option>
-                  <option value="Astrology, Spirituality & Motivation">Astrology, Spirituality &amp; Motivation</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="auditLang">Content Language</label>
-                <select id="auditLang" required>
-                  <option value="Hinglish (Hindi + English Mix)">Hinglish (Hindi + English Mix)</option>
-                  <option value="Pure Hindi">Pure Hindi</option>
-                  <option value="English">English</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="auditPain">Biggest Bottleneck Right Now</label>
-                <select id="auditPain" required>
-                  <option value="Don't know what to post / inconsistent calendar">Don't know what to post / inconsistent calendar</option>
-                  <option value="Need high-retention video editing & captions">Need high-retention video editing &amp; captions</option>
-                  <option value="Views dropped below 10K despite 100K+ followers">Views dropped below 10K despite 100K+ followers</option>
-                  <option value="Want full Done-For-You Scripting + Editing">Want full Done-For-You Scripting + Editing</option>
-                </select>
-              </div>
-            </div>
-            <div style="margin-top: 24px; display:flex; gap:14px; flex-wrap:wrap;">
-              <button type="submit" class="btn btn-gold">⚡ Generate Instant 7-Day Roadmap Preview</button>
-            </div>
-          </form>
 
-          <!-- Instant Audit Output Panel -->
-          <div id="auditOutputPanel" class="output-preview-panel" aria-live="polite">
-            <h3 style="color:var(--gold-light); margin-bottom:6px;">✨ Your VanIndra Creations Diagnosis Is Ready</h3>
-            <p style="font-size:0.88rem; color:var(--text-silver);">Review your tailored hook preview below, then click to send directly to <strong>Smita (Guggy)</strong> or <strong>Akarsh (Sahil)</strong> on WhatsApp to claim your full 7-day script pack &amp; 15-second sample Reel edit.</p>
-            <pre id="auditOutputText" class="pre-code"></pre>
-            <div style="display:flex; gap:12px; flex-wrap:wrap;">
-              <button type="button" class="btn btn-gold" onclick="sendAuditViaWhatsApp('918112859437')">💬 WhatsApp Smita / Guggy (Outreach Lead)</button>
-              <button type="button" class="btn btn-emerald" onclick="sendAuditViaWhatsApp('919415259408')">🎬 WhatsApp Akarsh / Sahil (Production Lead)</button>
-              <button type="button" class="btn btn-ghost" onclick="copyTextById('auditOutputText')">📋 Copy Roadmap Text</button>
+              <div class="reel-creator-badge">
+                <div class="reel-avatar-ring">
+                  <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_dp.jpg" alt="Vandana Yadav VanIndra Creations">
+                </div>
+                <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);padding:4px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;color:#F4C44E;">
+                  <svg style="width:15px;height:15px;"><use href="#icon-instagram"></use></svg>
+                  <span>Founder &amp; Flagship: @vandanay2012</span>
+                </div>
+
+                <div class="reel-caption-card">
+                  <p id="kineticCaptionText">
+                    "अगर आपका <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">बिज़नेस या पेज</span> रुका हुआ है, तो बस <span style="color:#F4C44E;">यह 3 बदलाव</span> करें..."
+                  </p>
+                </div>
+              </div>
+
+              <div class="reel-graph-box">
+                <div style="display:flex;justify-content:space-between;font-size:0.71rem;font-family:'JetBrains Mono',monospace;margin-bottom:5px;">
+                  <span id="graphLabelLeft" style="color:#34D399;">▲ लोग पूरा वीडियो देखते हैं (84%)</span>
+                  <span id="graphLabelRight" style="color:#F4C44E;">+410% ग्रोथ</span>
+                </div>
+                <svg viewBox="0 0 260 42" width="100%" height="42" aria-hidden="true">
+                  <path id="retentionCurvePath" d="M 0 8 Q 65 9, 130 12 T 260 16" fill="none" stroke="#10B981" stroke-width="3.5" stroke-linecap="round"/>
+                  <path d="M 0 18 Q 60 36, 130 39 T 260 41" fill="none" stroke="rgba(244,63,94,0.4)" stroke-width="2" stroke-dasharray="4 4"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PACKAGES & PRICING SECTION -->
-    <section id="packages" class="page-section">
+    <!-- ==========================================================================
+         TRUST RAIL: NICHES & CREATOR CATEGORIES WE SERVE ACROSS INDIA
+         ========================================================================== -->
+    <div class="trust-strip" aria-label="Creator and Business Categories We Serve">
+      <div class="trust-marquee">
+        <span class="trust-pill-item"><i>◆</i> Fashion, Lifestyle &amp; Beauty Influencers (1L–10L+)</span>
+        <span class="trust-pill-item"><i>◆</i> Doctors, Nutritionists &amp; Health Clinics</span>
+        <span class="trust-pill-item"><i>◆</i> Fitness Coaches, Gyms &amp; Sports Creators</span>
+        <span class="trust-pill-item"><i>◆</i> Educators, Teachers &amp; Coaching Institutes</span>
+        <span class="trust-pill-item"><i>◆</i> Regional Vloggers &amp; Family Creators</span>
+        <span class="trust-pill-item"><i>◆</i> Showrooms, Boutiques, Jewellery &amp; Local Businesses</span>
+        <span class="trust-pill-item"><i>◆</i> Finance, Astrology &amp; Business Consultants</span>
+        <span class="trust-pill-item"><i>◆</i> Fashion, Lifestyle &amp; Beauty Influencers (1L–10L+)</span>
+        <span class="trust-pill-item"><i>◆</i> Doctors, Nutritionists &amp; Health Clinics</span>
+        <span class="trust-pill-item"><i>◆</i> Fitness Coaches, Gyms &amp; Sports Creators</span>
+        <span class="trust-pill-item"><i>◆</i> Educators, Teachers &amp; Coaching Institutes</span>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         THE PROBLEM SECTION (INSPIRED BY IDIGITALAKKI WHITISH CONTRAST STRIP)
+         ========================================================================== -->
+    <section class="sec sec-white">
       <div class="container">
-        <div class="section-header">
-          <h2>Transparent Packages for 100K+ Creators</h2>
-          <p>Just 1 additional brand sponsorship per month pays for your entire VanIndra Creations production team.</p>
+        <div class="sec-head">
+          <span class="eyebrow">The Real Problem (असली समस्या)</span>
+          <h2 class="h2">सिर्फ वीडियो डालना काफी नहीं है — <span class="hl-emerald">भरोसेमंद ब्रांड बनाना ज़रूरी है।</span></h2>
+          <p class="sec-sub">Being active online isn't the same as building a profitable creator brand or business.</p>
         </div>
 
-        <div class="pricing-grid">
-          <!-- Trial Pack -->
-          <article class="price-card">
-            <div>
-              <span class="badge-tag">Zero-Risk Test Drive</span>
-              <h3 class="price-tier-name" style="margin-top:10px;">3-Reel Trial Pack</h3>
-              <div class="price-amount">₹2,999 <small>/ one-time</small></div>
-              <p style="font-size:0.84rem; color:var(--text-slate);">Test our scripting &amp; Sahil's high-retention editing on 3 Reels before committing monthly.</p>
-              <ul class="price-features">
-                <li>✦ 7-Day "What to Post" Mini-Audit</li>
-                <li>✦ 3 Viral Scripts + 3-Sec Hooks</li>
-                <li>✦ 3 High-Retention Edited Reels</li>
-                <li>✦ Custom Captions &amp; Cover Titles</li>
-              </ul>
-            </div>
-            <a href="#client-portal" onclick="selectPackageInForm('3-Reel Trial Pack (₹2,999)')" class="btn btn-secondary" style="width:100%;">Start 3-Reel Trial</a>
-          </article>
+        <div class="problem-vs-grid">
+          <div class="problem-card">
+            <span>रोज़ वीडियो डाल रहे हैं (Posting daily)</span>
+            <b>फिर भी व्यूज 4K–5K पर अटके हैं।</b>
+          </div>
+          <div class="problem-card">
+            <span>1 लाख+ फॉलोअर्स हैं (100K+ Followers)</span>
+            <b>फिर भी ब्रांड डील्स नहीं आ रहीं।</b>
+          </div>
+          <div class="problem-card">
+            <span>4 घंटे एडिटिंग में लगते हैं (4 Hrs Editing)</span>
+            <b>फिर भी रील प्रोफेशनल नहीं दिखती।</b>
+          </div>
+          <div class="problem-card">
+            <span>शानदार हुनर या बिज़नेस है (Great Business)</span>
+            <b>फिर भी ऑनलाइन ग्राहक नहीं जुड़ रहे।</b>
+          </div>
+        </div>
 
-          <!-- VanIndra Starter -->
-          <article class="price-card">
-            <div>
-              <span class="badge-tag">3 Reels / Week</span>
-              <h3 class="price-tier-name" style="margin-top:10px;">VanIndra Starter</h3>
-              <div class="price-amount">₹14,999 <small>/ month</small></div>
-              <p style="font-size:0.84rem; color:var(--text-slate);">Consistent weekly structure and pro editing for creators building steady momentum.</p>
-              <ul class="price-features">
-                <li>✦ Monthly "What to Post / Not Post" Bible</li>
-                <li>✦ 12 Word-for-Word Viral Scripts</li>
-                <li>✦ 12 High-Retention Edited Reels</li>
-                <li>✦ SEO Captions, Hashtags &amp; Covers</li>
-              </ul>
-            </div>
-            <a href="#client-portal" onclick="selectPackageInForm('VanIndra Starter - 12 Reels/Mo (₹14,999)')" class="btn btn-secondary" style="width:100%;">Select Starter</a>
-          </article>
-
-          <!-- VanIndra Pro (Featured) -->
-          <article class="price-card featured">
-            <div>
-              <span class="badge-tag" style="background:var(--gold-imperial); color:#0b0e12; font-weight:700;">MOST POPULAR • 100K+ CLUB</span>
-              <h3 class="price-tier-name" style="margin-top:10px;">VanIndra Pro Growth</h3>
-              <div class="price-amount">₹24,999 <small>/ month</small></div>
-              <p style="font-size:0.84rem; color:var(--text-silver);">Complete 5-Reels/week growth machine reviewed by Vandana Yadav (@vandanay2012).</p>
-              <ul class="price-features">
-                <li>✦ Full 30-Day Content Calendar</li>
-                <li>✦ 20 Viral Scripts + Visual B-Roll Cues</li>
-                <li>✦ 20 Studio-Edited Reels + Grid Covers</li>
-                <li>✦ Vandana's Creative QA &amp; Bio Upgrade</li>
-                <li>✦ Bi-Weekly Growth &amp; Analytics Call</li>
-              </ul>
-            </div>
-            <a href="#client-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Mo (₹24,999)')" class="btn btn-gold" style="width:100%;">Select Pro Growth</a>
-          </article>
-
-          <!-- VanIndra 360 VIP -->
-          <article class="price-card">
-            <div>
-              <span class="badge-tag">Daily Posting Engine</span>
-              <h3 class="price-tier-name" style="margin-top:10px;">VanIndra 360° VIP</h3>
-              <div class="price-amount">₹39,999 <small>/ month</small></div>
-              <p style="font-size:0.84rem; color:var(--text-slate);">For busy doctors, coaches, educators &amp; top creators who want 100% hands-off scale.</p>
-              <ul class="price-features">
-                <li>✦ 30 Daily Reels (Scripted &amp; Edited)</li>
-                <li>✦ Complete Scheduling &amp; Posting</li>
-                <li>✦ ManyChat Comment-to-DM Setup</li>
-                <li>✦ Brand Sponsorship Media Kit PDF</li>
-              </ul>
-            </div>
-            <a href="#client-portal" onclick="selectPackageInForm('VanIndra 360 VIP - 30 Reels/Mo (₹39,999)')" class="btn btn-secondary" style="width:100%;">Select 360° VIP</a>
-          </article>
+        <div class="punchline-banner">
+          आपका काम सिर्फ कैमरे के सामने बोलना है — <span>स्क्रिप्ट, एडिटिंग, रील्स और ब्रांड बनाने की पूरी ज़िम्मेदारी हमारी है।</span>
         </div>
       </div>
     </section>
 
-    <!-- INTERACTIVE FEATURE 2: FULL CLIENT REQUIREMENT INTAKE PORTAL (+ AUTO LLM PROMPT BUILDER) -->
-    <section id="client-portal" class="page-section">
+    <!-- ==========================================================================
+         FOUNDER & FLAGSHIP CLIENT #1 SHOWCASE: VANDANA YADAV (@VANDANAY2012)
+         ========================================================================== -->
+    <section id="vandana-story" class="sec sec-ivory">
       <div class="container">
-        <div class="section-header">
-          <h2>Client Requirement Intake Portal</h2>
-          <p>Ready to onboard with VanIndra Creations? Fill out your creator profile and boundaries below. Our system immediately structures your workspace and generates your Month-1 Content Engine.</p>
+        <div class="sec-head">
+          <span class="eyebrow">Founder &amp; Flagship Creator Proof</span>
+          <h2 class="h2">एक क्रिएटर द्वारा, क्रिएटर्स और बिज़नेस के लिए बनाया गया स्टूडियो</h2>
+          <p class="sec-sub">Founded &amp; Led by Active Indian Influencer <strong>Vandana Yadav (@vandanay2012)</strong> — so your page is managed by someone who actually understands the creator journey.</p>
         </div>
 
-        <div class="interactive-box">
-          <form id="clientIntakeForm" onsubmit="handleClientIntakeSubmit(event)">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="clientName">Creator Full Name</label>
-                <input type="text" id="clientName" placeholder="e.g., Priya Rathore" required>
-              </div>
-              <div class="form-group">
-                <label for="clientHandle">Instagram Handle &amp; URL</label>
-                <input type="text" id="clientHandle" placeholder="e.g., @priyarathore_official" required>
-              </div>
-              <div class="form-group">
-                <label for="clientPhone">WhatsApp Number (For Weekly Shoot Packs)</label>
-                <input type="tel" id="clientPhone" placeholder="e.g., +91 98XXXXXXXX" required>
-              </div>
-              <div class="form-group">
-                <label for="clientPackage">Selected Package</label>
-                <select id="clientPackage" required>
-                  <option value="VanIndra Pro Growth - 20 Reels/Mo (₹24,999)">VanIndra Pro Growth - 20 Reels/Mo (₹24,999)</option>
-                  <option value="3-Reel Trial Pack (₹2,999)">3-Reel Trial Pack (₹2,999)</option>
-                  <option value="VanIndra Starter - 12 Reels/Mo (₹14,999)">VanIndra Starter - 12 Reels/Mo (₹14,999)</option>
-                  <option value="VanIndra 360 VIP - 30 Reels/Mo (₹39,999)">VanIndra 360° VIP - 30 Reels/Mo (₹39,999)</option>
-                  <option value="Founding Creator Partner (Collab-Tag Tier)">Founding Creator Partner (Collab-Tag Tier)</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="clientNicheDetail">Your Niche &amp; Target Audience</label>
-                <input type="text" id="clientNicheDetail" placeholder="e.g., Skincare, Nutrition, Fitness or Education for Indian audiences" required>
-              </div>
-              <div class="form-group">
-                <label for="clientEditStyle">Preferred Editing &amp; Visual Vibe</label>
-                <select id="clientEditStyle" required>
-                  <option value="Fast High-Retention (Bold Hooks, B-Roll Cuts, Pop Captions)">Fast High-Retention (Bold Hooks, B-Roll Cuts, Pop Captions)</option>
-                  <option value="Clean Aesthetic Editorial (Minimal Slate/Gold Subtitles, Smooth Cuts)">Clean Aesthetic Editorial (Minimal Slate/Gold Subtitles, Smooth Cuts)</option>
-                  <option value="Warm Storyteller / Educator (Clear Diagrams, Highlighted Keywords)">Warm Storyteller / Educator (Clear Diagrams, Highlighted Keywords)</option>
-                </select>
-              </div>
-              <div class="form-group full-width">
-                <label for="clientDosDonts">Strict Boundaries: What Do You Want to POST vs. NEVER POST?</label>
-                <textarea id="clientDosDonts" rows="3" placeholder="e.g., WANT: Myth-busters, product comparisons, 30s routines. NEVER POST: Dance trends, controversial politics, or unscripted rants." required></textarea>
-              </div>
-              <div class="form-group full-width">
-                <label for="clientTopReels">Links to Your Top 2–3 Best Performing Reels OR Creators You Admire</label>
-                <textarea id="clientTopReels" rows="2" placeholder="Paste Instagram Reel URLs or @handles you love..."></textarea>
-              </div>
+        <div class="founder-flagship-card">
+          <div>
+            <div style="display:inline-flex;align-items:center;gap:8px;background:var(--gold-tint);border:1px solid var(--border-gold);padding:6px 14px;border-radius:999px;font-size:0.78rem;font-weight:800;color:#9A6B07;margin-bottom:12px;">
+              👑 FOUNDER &amp; FLAGSHIP CLIENT #1 CASE STUDY
             </div>
 
-            <div style="margin-top:24px; display:flex; gap:14px; flex-wrap:wrap;">
-              <button type="submit" class="btn btn-gold">🚀 Submit Requirements &amp; Generate Workspace</button>
-            </div>
-          </form>
-
-          <!-- Output for Client + Indrajeet's LLM Pipeline -->
-          <div id="intakeOutputPanel" class="output-preview-panel" aria-live="polite">
-            <h3 style="color:var(--gold-light); margin-bottom:6px;">✅ Client Requirement File &amp; Master LLM Prompt Ready!</h3>
-            <p style="font-size:0.88rem; color:var(--text-silver);">
-              1️⃣ <strong>Influencers:</strong> Click below to send your requirements directly to VanIndra Creations on WhatsApp.<br>
-              2️⃣ <strong>Indrajeet (LLM Pipeline):</strong> Copy or download the auto-formatted prompt below and paste it into Claude, Muse, or Gemini to generate their entire 30-day calendar &amp; scripts in 60 seconds!
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.55rem,2.6vw,2.1rem);font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+              <span>Vandana Yadav</span>
+              <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;font-size:0.9rem;background:var(--bg-page);border:1px solid var(--border-line);padding:5px 12px;border-radius:999px;color:var(--emerald-rich);">
+                <svg class="app-icon-svg"><use href="#icon-instagram"></use></svg>
+                <span>@vandanay2012 ↗</span>
+              </a>
+            </h3>
+            <p style="font-size:0.92rem;color:var(--text-secondary);font-weight:600;">
+              Founder &amp; Chief Influencer Director, VanIndra Creations • Lifestyle, Creator Strategy &amp; Brand Collaborations
             </p>
-            <pre id="intakeOutputText" class="pre-code"></pre>
-            <div style="display:flex; gap:12px; flex-wrap:wrap;">
-              <button type="button" class="btn btn-gold" onclick="sendIntakeViaWhatsApp('918112859437')">💬 Send to Smita / Guggy (WhatsApp)</button>
-              <button type="button" class="btn btn-emerald" onclick="sendIntakeViaWhatsApp('919415259408')">🎬 Send to Akarsh / Sahil (WhatsApp)</button>
-              <button type="button" class="btn btn-secondary" onclick="copyTextById('intakeOutputText')">🤖 Copy Master LLM Prompt (For Indrajeet)</button>
-              <button type="button" class="btn btn-ghost" onclick="downloadClientMarkdown()">📥 Download Client .md File</button>
+
+            <div class="founder-quote-callout">
+              <div style="color:#D4A024;font-weight:800;font-size:0.9rem;margin-bottom:6px;">★★★★★ Founder's Promise &amp; Personal Experience</div>
+              <p style="font-style:italic;margin-bottom:12px;">
+                "एक इन्फ्लुएंसर और क्रिएटर होने के नाते मैंने खुद यह महसूस किया है कि रोज़ <strong>'आज क्या पोस्ट करें और क्या नहीं'</strong> सोचना और घंटों वीडियो एडिट करना कितना थकाने वाला होता है। इसीलिए मैंने अपनी कोर टीम (<strong>Smita 'Guggy' Yadav</strong> और <strong>Akarsh 'Sahil' Yadav</strong>) के साथ <strong>VanIndra Creations</strong> शुरू किया। हमने सबसे पहले यह सिस्टम मेरे अपने पेज <strong>@vandanay2012</strong> पर लगाया—और आज हम भारत के हर क्रिएटर, डॉक्टर, कोच और व्यापारी को बिना किसी झंझट के वही स्टूडियो ग्रोथ दे रहे हैं!"
+              </p>
+              <button type="button" class="top-chip-btn" style="background:var(--emerald-rich);color:#fff;border:none;padding:8px 15px;" onclick="speakVandanaTestimonial()">
+                🔊 वंदना यादव जी का संदेश हिंदी में सुनें
+              </button>
+            </div>
+
+            <div class="founder-metrics-3">
+              <div class="f-metric-box">
+                <strong>4 Hrs → 15 Mins</strong>
+                <span>हर रील पर समय की बचत</span>
+              </div>
+              <div class="f-metric-box">
+                <strong>3.8x Retention</strong>
+                <span>वीडियो पूरा देखने वाले लोग</span>
+              </div>
+              <div class="f-metric-box">
+                <strong>100% Brand-Ready</strong>
+                <span>30-दिन का कंटेंट कैलेंडर</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align:center;">
+            <img src="01_Brand_and_Team/Brand_Assets/vanindra_reel_thumbnail_showcase.jpg" alt="Founder Vandana Yadav @vandanay2012 Reel Showcase" style="width:100%;max-width:310px;margin:0 auto;border-radius:22px;border:3px solid var(--gold-imperial);box-shadow:var(--shadow-hover);">
+            <div style="margin-top:14px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
+              <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-ink" style="padding:10px 18px;font-size:0.84rem;">
+                <svg class="app-icon-svg"><use href="#icon-instagram"></use></svg>
+                <span>View @vandanay2012 on Instagram ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Verified Creator & Business Owner Testimonials -->
+        <div class="testimonials-3-col">
+          <article class="white-card">
+            <div>
+              <div style="color:#D4A024;font-size:1rem;margin-bottom:8px;">★★★★★</div>
+              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;">"मुझे एडिटिंग या अंग्रेजी बिल्कुल नहीं आती थी..."</h3>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
+                "मेरे पास 1.4 लाख फॉलोअर्स थे पर मुझे कंप्यूटर एडिटिंग नहीं आती। मैं बस फोन से वीडियो बनाकर भेज देता हूँ और वंदना मैम की टीम (Sahil भाई) उसे एकदम टीवी शो जैसा शानदार बना देते हैं!"
+              </p>
+            </div>
+            <div style="font-size:0.82rem;font-weight:800;color:var(--emerald-rich);border-top:1px solid var(--border-line);padding-top:10px;">
+              — Regional Creator &amp; Vlogger (1.4L+ Followers, UP)
+            </div>
+          </article>
+
+          <article class="white-card">
+            <div>
+              <div style="color:#D4A024;font-size:1rem;margin-bottom:8px;">★★★★★</div>
+              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;">"क्लिनिक के साथ रोज़ रील्स बनाना आसान हुआ"</h3>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
+                "मरीज़ों को देखने के बाद स्क्रिप्ट लिखने का समय ही नहीं मिलता था। VanIndra Creations मुझे हर हफ्ते तैयार साइंटिफिक हुक्स और स्क्रिप्ट देता है और मेरे पेज पर दोगुनी इंक्वायरी आ रही है।"
+              </p>
+            </div>
+            <div style="font-size:0.82rem;font-weight:800;color:var(--emerald-rich);border-top:1px solid var(--border-line);padding-top:10px;">
+              — Health &amp; Nutrition Specialist (1.8L+ Followers, Delhi NCR)
+            </div>
+          </article>
+
+          <article class="white-card">
+            <div>
+              <div style="color:#D4A024;font-size:1rem;margin-bottom:8px;">★★★★★</div>
+              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;">"पहली बार ब्रांड्स खुद सामने से मैसेज कर रहे हैं"</h3>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
+                "पहले मेरा इंस्टाग्राम पेज बहुत बिखरा हुआ लगता था। जब से Vandana मैम और Guggy ने मेरा प्रोफाइल, बायो और रील कवर्स सेट किए हैं, मुझे हर महीने ब्रांड कोलैब मिल रहे हैं।"
+              </p>
+            </div>
+            <div style="font-size:0.82rem;font-weight:800;color:var(--emerald-rich);border-top:1px solid var(--border-line);padding-top:10px;">
+              — Fashion &amp; Lifestyle Creator (2.1L+ Followers)
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHAT YOU GET: 6-PILLAR DONE-FOR-YOU SYSTEM (IDIGITALAKKI + LEXICONN + FLUENCIFY)
+         ========================================================================== -->
+    <section id="services" class="sec sec-white">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">What You Get Under One Roof</span>
+          <h2 class="h2">Everything your page &amp; business needs — <span class="hl-emerald">without the operations.</span></h2>
+          <p class="sec-sub">हम सिर्फ "वीडियो कट" नहीं करते — हम आपकी स्क्रिप्ट से लेकर ब्रांड डील्स और ग्राहकों तक पूरा सिस्टम चलाते हैं।</p>
+        </div>
+
+        <div class="services-6-grid">
+          <div class="white-card">
+            <div>
+              <div class="service-icon-box">🧭</div>
+              <h3 style="font-size:1.18rem;font-weight:800;">1. "What to Post" Strategy &amp; Calendar</h3>
+              <ul class="check-list">
+                <li>Account audit &amp; competitor hook research</li>
+                <li>Clear "What to Post vs. What NOT to Post" filter</li>
+                <li>30-Day structured content calendar</li>
+                <li>Personal brand voice led by Vandana Yadav</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="white-card">
+            <div>
+              <div class="service-icon-box">✍️</div>
+              <h3 style="font-size:1.18rem;font-weight:800;">2. Viral 3-Second Hooks &amp; Scripts</h3>
+              <ul class="check-list">
+                <li>Word-for-word scripts in Hindi, Hinglish or English</li>
+                <li>Psychological 3-second scroll-stopping hooks</li>
+                <li>Scientific &amp; fact-checked hooks for Doctors/Health</li>
+                <li>15-minute easy phone shoot guide</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="white-card">
+            <div>
+              <div class="service-icon-box">🎬</div>
+              <h3 style="font-size:1.18rem;font-weight:800;">3. High-Retention Studio Reel Editing</h3>
+              <ul class="check-list">
+                <li>Dynamic bilingual captions &amp; B-roll punch-ins</li>
+                <li>Sound design, colour grading &amp; pattern interrupts</li>
+                <li>Custom 9:16 Instagram Reel cover thumbnails</li>
+                <li>24–48 hour fast turnaround by Sahil's editing pod</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="white-card">
+            <div>
+              <div class="service-icon-box">💰</div>
+              <h3 style="font-size:1.18rem;font-weight:800;">4. Brand Deals &amp; Monetization Setup</h3>
+              <ul class="check-list">
+                <li>Sponsor-ready Instagram bio &amp; highlight covers</li>
+                <li>Professional Creator Media Kit &amp; Rate Card</li>
+                <li>Inbound &amp; outbound brand collaboration positioning</li>
+                <li>Guided by Guggy (Gargi College, DU Commerce Lead)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="white-card">
+            <div>
+              <div class="service-icon-box">🏪</div>
+              <h3 style="font-size:1.18rem;font-weight:800;">5. Local Business &amp; Clinic Lead Engine</h3>
+              <ul class="check-list">
+                <li>Convert Reel views into WhatsApp customer enquiries</li>
+                <li>Automated comment-to-DM keyword funnels</li>
+                <li>Trust-building customer review &amp; showcase Reels</li>
+                <li>Zero technical knowledge required from you</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="white-card">
+            <div>
+              <div class="service-icon-box">📊</div>
+              <h3 style="font-size:1.18rem;font-weight:800;">6. AI + Human Quality Control</h3>
+              <ul class="check-list">
+                <li>Every video scored against 4 retention rules</li>
+                <li>Hook in first 3 seconds + safe-zone captions</li>
+                <li>Collab-tag flywheel with @vanindracreations</li>
+                <li>Monthly growth report &amp; strategy review call</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TEAM SCRIPTS & QUICK-COPY HQ (FOR INDRAJEET, VANDANA, GUGGY & SAHIL) -->
-    <section id="team-hq" class="page-section">
+    <!-- ==========================================================================
+         LIVE CLIENT PORTAL & WHY VANINDRA BEATS FREELANCERS / DIY AI
+         (INSPIRED BY FLUENCIFY + LEXICONN + IDIGITALAKKI PORTAL)
+         ========================================================================== -->
+    <section id="client-portal" class="sec sec-emerald-noir">
       <div class="container">
-        <div class="section-header">
-          <h2>Founding Team Quick-Copy Command Center</h2>
-          <p>For <strong>Indrajeet, Vandana, Guggy &amp; Sahil</strong>: 1-tap copy of our official caption tags, outreach DM scripts, and Instagram bio setup right from your phone.</p>
+        <div class="sec-head">
+          <span class="eyebrow">Content Operations Without the Headache</span>
+          <h2 class="h2">One Studio Engine. <span class="hl-emerald">Complete Visibility. Zero Stress.</span></h2>
+          <p class="sec-sub">आपको न तो फ्रीलांस एडिटर्स के पीछे भागना पड़ेगा, और न ही खुद बैठकर AI चलाना पड़ेगा।</p>
         </div>
 
-        <div class="command-grid">
-          <!-- Box 1: Official Caption Tag -->
-          <div class="command-card">
-            <h3>1. Official Reel Caption Sign-Off</h3>
-            <p style="font-size:0.82rem; color:var(--text-slate); margin-bottom:10px;">Paste at the bottom of every Reel on @vandanay2012, @smitayadav_0901, @yadavakarsh_07 &amp; client posts:</p>
-            <pre id="hqCaptionTag" class="pre-code" style="height:120px;">————————————————
-✨ Content Strategy &amp; Edit: @vanindracreations
-🚀 100K+ Creator? Get your next 20 Reels scripted &amp; edited -> @vanindracreations</pre>
-            <button type="button" class="btn btn-gold" style="width:100%;" onclick="copyTextById('hqCaptionTag')">📋 Copy Caption Tag</button>
+        <div class="ops-portal-split">
+          <!-- Left: LexiConn + Fluencify Style Comparison -->
+          <div style="display:flex;flex-direction:column;gap:16px;justify-content:center;">
+            <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(244,196,78,0.35);border-radius:18px;padding:22px;">
+              <span style="font-size:0.76rem;font-weight:800;color:#F4C44E;text-transform:uppercase;">❌ Why Cheap Editors &amp; DIY ChatGPT Fail</span>
+              <h3 style="font-size:1.22rem;margin:6px 0 8px;">"हम खुद ChatGPT या ₹500 वाले एडिटर से काम क्यों न करा लें?"</h3>
+              <p style="font-size:0.92rem;color:rgba(255,255,255,0.84);">
+                सस्ते फ्रीलांस एडिटर को यह नहीं पता होता कि <strong>1 लाख+ ऑडियंस पर कौन सा हुक चलेगा</strong> या ब्रांड्स किस तरह की रील्स को स्पॉन्सर करते हैं। और खुद AI चलाने में आपका रोज़ 3 घंटा बर्बाद होता है।
+              </p>
+            </div>
+
+            <div style="background:rgba(16,185,129,0.14);border:1.5px solid #F4C44E;border-radius:18px;padding:22px;">
+              <span style="font-size:0.76rem;font-weight:800;color:#6EE7B7;text-transform:uppercase;">✅ The VanIndra AI + Human Studio Model</span>
+              <h3 style="font-size:1.22rem;margin:6px 0 8px;">AI की रफ़्तार + Founder Vandana Yadav और टीम की निगरानी</h3>
+              <ul class="check-list" style="margin-top:8px;">
+                <li style="color:#FFFFFF;"><strong>Your Only Job:</strong> हफ्ते में 1 बार फोन से रॉ वीडियो रिकॉर्ड करके WhatsApp पर भेजें।</li>
+                <li style="color:#FFFFFF;"><strong>Our Studio's Job:</strong> रिसर्च, स्क्रिप्टिंग, सबटाइटल एडिटिंग, थंबनेल और ग्रोथ।</li>
+                <li style="color:#FFFFFF;"><strong>Enforced Quality Bar:</strong> हर रील पर 3-सेकंड हुक और ब्रांड-सेफ क्वालिटी चेक।</li>
+              </ul>
+            </div>
           </div>
 
-          <!-- Box 2: Guggy & Sahil Hinglish Outreach DM -->
-          <div class="command-card">
-            <h3>2. Guggy &amp; Sahil Outreach DM (Hinglish)</h3>
-            <p style="font-size:0.82rem; color:var(--text-slate); margin-bottom:10px;">Send to 100K+ influencers after warming up their latest Reel &amp; Story:</p>
-            <pre id="hqOutreachDM" class="pre-code" style="height:120px;">Hey [Name] ji! 🙌 Aapki recent Reel "[Topic]" dekhi—super genuine value!
+          <!-- Right: Interactive Client Portal Mockup (Inspired by IDigitalAKKi & Fluencify) -->
+          <div class="portal-mockup-card">
+            <div class="portal-header-bar">
+              <div>
+                <span style="font-size:0.72rem;font-weight:800;color:#0E6B4E;text-transform:uppercase;letter-spacing:0.08em;">Live Client Tracker</span>
+                <h3 style="font-size:1.25rem;font-weight:800;">VanIndra Client Workspace</h3>
+              </div>
+              <span style="background:#E4F3EC;color:#0E6B4E;padding:5px 12px;border-radius:999px;font-size:0.76rem;font-weight:800;">● Active Studio Pod</span>
+            </div>
 
-Actually humari studio team (@vanindracreations, jahan hum @vandanay2012 aur 100K+ creators ka content strategy &amp; editing manage karte hain) notice kar rahi thi ki aapke 1L+ audience ke hisaab se agar starting ke 3-sec hooks aur retention editing thodi aur sharp ho jaye, toh views easily 3x-5x jump kar sakte hain.
+            <div style="display:flex;justify-content:space-between;font-size:0.86rem;font-weight:700;">
+              <span>Monthly Reel &amp; Growth Progress</span>
+              <b style="color:#0E6B4E;">85% Completed</b>
+            </div>
+            <div class="portal-progress-track">
+              <div class="portal-progress-fill"></div>
+            </div>
 
-Humne aapke page ke liye 3 Custom Viral Reel Hooks + 15-sec Sample Edit prepare kiya hai (bilkul free). Kya main yahan share karun ya WhatsApp par bhejun? 😊</pre>
-            <button type="button" class="btn btn-emerald" style="width:100%;" onclick="copyTextById('hqOutreachDM')">📋 Copy Hinglish DM Script</button>
+            <div class="portal-kpi-grid">
+              <div class="portal-kpi-item">
+                <small>Viral Scripts</small>
+                <b>20 / 20</b>
+                <span>Approved ✓</span>
+              </div>
+              <div class="portal-kpi-item">
+                <small>Studio Reels</small>
+                <b>17 / 20</b>
+                <span>Delivered ✓</span>
+              </div>
+              <div class="portal-kpi-item">
+                <small>Avg 3-Sec Hold</small>
+                <b>84.2%</b>
+                <span>+41% Lift ▲</span>
+              </div>
+              <div class="portal-kpi-item">
+                <small>9:16 Covers</small>
+                <b>Ready</b>
+                <span>Brand Grid ✓</span>
+              </div>
+              <div class="portal-kpi-item">
+                <small>Brand Pitch Kit</small>
+                <b>Active</b>
+                <span>Live Bio Link</span>
+              </div>
+              <div class="portal-kpi-item" style="background:#FFF7DF;border-color:#D4A024;">
+                <small style="color:#9A6B07;">WhatsApp Desk</small>
+                <b>Direct</b>
+                <span style="color:#9A6B07;">Guggy &amp; Sahil</span>
+              </div>
+            </div>
+
+            <div style="background:#FAF8F3;border:1px solid #E2DDD1;border-radius:12px;padding:12px 14px;font-size:0.83rem;color:#43534C;font-weight:600;">
+              <strong>Zero Black Boxes:</strong> हर स्क्रिप्ट, रील ड्राफ्ट और मंथली रिपोर्ट आपको सीधे आपके समर्पित WhatsApp ग्रुप और क्लाइंट फोल्डर में रियल-टाइम मिलती है।
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9-STEP FRAMEWORK (INSPIRED BY IDIGITALAKKI "NINE STEPS. ONE DIRECTION.")
+         ========================================================================== -->
+    <section class="sec sec-ivory">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Our 9-Step Growth Framework</span>
+          <h2 class="h2">Nine Steps. <span class="hl-emerald">One Clear Direction.</span></h2>
+          <p class="sec-sub">ज़्यादातर एडिटर्स सिर्फ वीडियो काटकर छोड़ देते हैं — हमारा 9-स्टेप सिस्टम आपके पेज को एक कमाऊ ब्रांड बनाता है।</p>
+        </div>
+
+        <div class="steps-9-grid">
+          <div class="step-9-card"><span class="step-9-num">01</span><div><h3 style="font-size:1.05rem;font-weight:800;">7-Day Page Audit</h3><p style="font-size:0.86rem;color:var(--text-secondary);">आपके पिछले 15 पोस्ट और व्यूज की जांच</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">02</span><div><h3 style="font-size:1.05rem;font-weight:800;">What-to-Post Filter</h3><p style="font-size:0.86rem;color:var(--text-secondary);">क्या पोस्ट करें और क्या तुरंत बंद करें</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">03</span><div><h3 style="font-size:1.05rem;font-weight:800;">30-Day Content Calendar</h3><p style="font-size:0.86rem;color:var(--text-secondary);">पूरे महीने का स्पष्ट टॉपिक प्लान</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">04</span><div><h3 style="font-size:1.05rem;font-weight:800;">3-Sec Viral Scripting</h3><p style="font-size:0.86rem;color:var(--text-secondary);">हिंदी/अंग्रेजी में बोलने के लिए तैयार लाइनें</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">05</span><div><h3 style="font-size:1.05rem;font-weight:800;">Easy Phone Shoot</h3><p style="font-size:0.86rem;color:var(--text-secondary);">बिना महंगे कैमरे के 15 मिनट में रिकॉर्डिंग</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">06</span><div><h3 style="font-size:1.05rem;font-weight:800;">Studio Reel Editing</h3><p style="font-size:0.86rem;color:var(--text-secondary);">कैप्शन, ज़ूम कट्स, B-Roll और साउंड डिज़ाइन</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">07</span><div><h3 style="font-size:1.05rem;font-weight:800;">9:16 Cover &amp; Grid Setup</h3><p style="font-size:0.86rem;color:var(--text-secondary);">प्रोफाइल को प्रीमियम ब्रांड जैसा दिखाना</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">08</span><div><h3 style="font-size:1.05rem;font-weight:800;">Collab &amp; Reach Flywheel</h3><p style="font-size:0.86rem;color:var(--text-secondary);">ऑर्गेनिक रीच और नए फॉलोअर्स बढ़ाना</p></div></div>
+          <div class="step-9-card gold-step"><span class="step-9-num">09</span><div><h3 style="font-size:1.05rem;font-weight:800;">Brand Deals &amp; Customers</h3><p style="font-size:0.86rem;color:var(--text-secondary);">स्पॉन्सरशिप और बिज़नेस इंक्वायरी लाना</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ZERO-TOUCH VOICE + FREE BACKGROUND AI INTAKE ENGINE
+         ========================================================================== -->
+    <section id="smart-ai-portal" class="sec sec-white">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">100% Automated Voice + Free AI Strategy Desk</span>
+          <h2 class="h2">🎤 बोल कर या लिख कर बताएं — <span class="hl-emerald">5 सेकंड में अपना Free Plan पाएं!</span></h2>
+          <p class="sec-sub">आपको लंबा फॉर्म टाइप करने की ज़रूरत नहीं है। बस नीचे माइक दबाकर हिंदी या अंग्रेजी में बोलें, और हमारा ऑटोमैटिक बैकग्राउंड AI तुरंत आपकी 3 वायरल स्क्रिप्ट और ग्रोथ प्लान बना देगा!</p>
+        </div>
+
+        <div class="ai-form-card">
+          <div class="voice-mic-banner">
+            <div>
+              <strong style="font-size:1.05rem;display:block;color:var(--text-primary);">🎤 टाइप नहीं करना चाहते? बोल कर फॉर्म भरें! (Voice Input for Everyone)</strong>
+              <span style="font-size:0.86rem;color:var(--text-secondary);" id="voiceStatusText">माइक बटन दबाएं और बोलें: "मेरा नाम ... है, मेरा पेज किस बारे में है और मुझे क्या मदद चाहिए"</span>
+            </div>
+            <button type="button" id="btnVoiceMic" class="mic-record-btn" onclick="startHindiVoiceInput()">
+              🎤 यहाँ दबाकर बोलें (Speak in Hindi/English)
+            </button>
           </div>
 
-          <!-- Box 3: Official @vanindracreations Bio -->
-          <div class="command-card">
-            <h3>3. Official @vanindracreations IG Bio</h3>
-            <p style="font-size:0.82rem; color:var(--text-slate); margin-bottom:10px;">Use when creating the Instagram, YouTube &amp; LinkedIn pages today:</p>
-            <pre id="hqBioCopy" class="pre-code" style="height:120px;">VanIndra Creations | 100K+ Creator Studio 🇮🇳
-The Content &amp; Growth Engine for 1 Lakh+ Influencers ✨🎬
-✦ Viral Hooks • Scripting • High-Retention Edits • What To Post
-✦ Led by @vandanay2012 • @smitayadav_0901 • @yadavakarsh_07
-👇 Claim Free 7-Day Content Audit:</pre>
-            <button type="button" class="btn btn-secondary" style="width:100%;" onclick="copyTextById('hqBioCopy')">📋 Copy Official Bio</button>
+          <form id="zeroTouchForm" onsubmit="runZeroTouchBackgroundAI(event)">
+            <div class="form-2col">
+              <div class="field-box">
+                <label for="ztName">1. आपका नाम (Your Name) *</label>
+                <input type="text" id="ztName" placeholder="उदा. प्रिया शर्मा / Dr. Rajesh Verma" required>
+              </div>
+              <div class="field-box">
+                <label for="ztHandle">2. इंस्टाग्राम आईडी या बिज़नेस का नाम (@handle) *</label>
+                <input type="text" id="ztHandle" placeholder="उदा. @my_instagram_page" required>
+              </div>
+              <div class="field-box">
+                <label for="ztPhone">3. आपका WhatsApp नंबर *</label>
+                <input type="tel" id="ztPhone" placeholder="उदा. +91 98XXXXXXXX" required>
+              </div>
+              <div class="field-box">
+                <label for="ztCategory">4. आपका काम / कैटेगरी क्या है?</label>
+                <select id="ztCategory" required>
+                  <option value="Lifestyle, Fashion, Beauty & Vlogging">Lifestyle, Fashion, Beauty &amp; Vlogging (लाइफस्टाइल / व्लॉग)</option>
+                  <option value="Fitness, Food, Nutrition, Doctor & Health">Fitness, Food, Nutrition &amp; Health (हेल्थ / फिटनेस / डॉक्टर)</option>
+                  <option value="Local Business, Shop, Showroom or Service">Local Business, Shop or Showroom (दुकान / बिज़नेस / शोरूम)</option>
+                  <option value="Education, Teacher, Coaching & Motivation">Education, Teacher &amp; Coaching (शिक्षा / कोचिंग / मोटिवेशन)</option>
+                  <option value="Regional Creator, Comedy, Music & Entertainment">Regional Creator, Comedy &amp; Entertainment (मनोरंजन / कॉमेडी)</option>
+                </select>
+              </div>
+              <div class="field-box">
+                <label for="ztLanguage">5. आप किस भाषा में वीडियो बनाते हैं?</label>
+                <select id="ztLanguage" required>
+                  <option value="Hindi / Hinglish (आसान बोलचाल की हिंदी)">Hindi / Hinglish (आसान बोलचाल की हिंदी)</option>
+                  <option value="English">English (अंग्रेजी)</option>
+                  <option value="Bhojpuri / Regional Hindi">Bhojpuri / Regional Dialect (भोजपुरी / क्षेत्रीय भाषा)</option>
+                </select>
+              </div>
+              <div class="field-box">
+                <label for="ztPackage">6. आप किस सर्विस से शुरुआत करना चाहते हैं?</label>
+                <select id="ztPackage" required>
+                  <option value="Free 7-Day Content Plan + 15s Sample Reel Edit">🎁 पहले Free 7-Day Plan + 15s Sample Edit देखना है</option>
+                  <option value="3-Reel Trial Pack (₹2,999 One-Time)">⚡ 3-Reel Trial Pack (₹2,999 — 3 रील्स स्क्रिप्ट + एडिटिंग)</option>
+                  <option value="VanIndra Starter - 12 Reels/Month (₹14,999)">🚀 Starter Plan — 12 Reels/Month + Brand Ready (₹14,999)</option>
+                  <option value="VanIndra Pro Growth - 20 Reels/Month (₹24,999)">👑 Pro Growth — 20 Reels/Month + Full Management (₹24,999)</option>
+                </select>
+              </div>
+              <div class="field-box full">
+                <label for="ztVoiceNotes">7. आपकी मुख्य समस्या या ज़रूरत (यहाँ लिखें या ऊपर माइक दबाकर बोलें) *</label>
+                <textarea id="ztVoiceNotes" rows="3" placeholder="उदा. मेरे 1 लाख+ फॉलोअर्स हैं पर व्यूज कम आते हैं, मुझे रील एडिटिंग और ब्रांड डील्स चाहिए..." required></textarea>
+              </div>
+            </div>
+
+            <div style="margin-top:22px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+              <button type="submit" id="btnRunAI" class="btn btn-gold">
+                🤖 अभी मेरा Free Growth Plan और 3 वायरल स्क्रिप्ट बनाएं →
+              </button>
+              <span id="aiLoadingIndicator" style="display:none;color:var(--emerald-rich);font-weight:800;font-size:0.92rem;">
+                ⏳ हमारा बैकग्राउंड AI आपके पेज के लिए 3 वायरल स्क्रिप्ट और प्लान तैयार कर रहा है (5 सेकंड रुकें)...
+              </span>
+            </div>
+          </form>
+
+          <!-- Real-Time AI Output Drawer -->
+          <div id="ztOutputPanel" class="ai-output-drawer" aria-live="polite">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:8px;">
+              <h3 style="color:#F4C44E;font-size:1.25rem;">🎉 आपका कस्टम ग्रोथ प्लान और 3 वायरल स्क्रिप्ट तैयार हैं!</h3>
+              <button type="button" class="top-chip-btn" onclick="speakGeneratedPlan()">🔊 इस प्लान को हिंदी में सुनें</button>
+            </div>
+            <p style="font-size:0.88rem;color:rgba(255,255,255,0.85);">
+              अब नीचे <strong>WhatsApp बटन दबाएं</strong>—आपकी तैयार फाइल सीधे हमारी टीम (<strong>Smita/Guggy</strong> या <strong>Akarsh/Sahil</strong>) के पास पहुँच जाएगी और हम आपका 15-सेकंड का फ्री सैंपल एडिट शुरू कर देंगे!
+            </p>
+            <pre id="ztOutputText" class="ai-pre-box"></pre>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <button type="button" class="btn btn-whatsapp" onclick="sendZeroTouchWhatsApp('918112859437')">
+                <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
+                <span>Smita (Guggy) को WhatsApp भेजें (+91 81128 59437)</span>
+              </button>
+              <button type="button" class="btn btn-gold" onclick="sendZeroTouchWhatsApp('919415259408')">
+                <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
+                <span>Akarsh (Sahil) को WhatsApp भेजें (+91 94152 59408)</span>
+              </button>
+              <button type="button" class="btn btn-outline-light" onclick="copyTextById('ztOutputText')">📋 कॉपी करें</button>
+              <button type="button" class="btn btn-outline-light" onclick="downloadZeroTouchFile()">📥 फाइल डाउनलोड करें (.md)</button>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MEET FOUNDER VANDANA YADAV & HER STUDIO LEADERSHIP TEAM (3 CARDS)
+         WITH OFFICIAL INSTAGRAM, WHATSAPP & GMAIL LOGOS
+         ========================================================================== -->
+    <section id="our-team" class="sec sec-ivory">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Founder &amp; Core Studio Leadership</span>
+          <h2 class="h2">Meet Founder <span class="hl-emerald">Vandana Yadav</span> &amp; Her Core Studio Team</h2>
+          <p class="sec-sub">हमारी टीम आपके पूरे कंटेंट, एडिटिंग और ब्रांड डील्स को पूरी ईमानदारी और अपने परिवार के बिज़नेस की तरह संभालती है।</p>
+        </div>
+
+        <div class="leadership-3-grid">
+          <!-- Card 1: Sole Public Founder Vandana Yadav -->
+          <article class="leader-card founder-featured">
+            <div>
+              <div class="leader-role-tag">👑 FOUNDER &amp; CHIEF INFLUENCER DIRECTOR</div>
+              <h3 style="font-size:1.38rem;font-weight:800;">Vandana Yadav</h3>
+              <span class="leader-edu-pill">Founder &amp; Flagship Creator #1</span>
+              <p style="font-size:0.92rem;color:var(--text-secondary);">
+                VanIndra Creations की फाउंडर और सक्रिय भारतीय इन्फ्लुएंसर — हर क्लाइंट के पेज पर <strong>"क्या पोस्ट होना चाहिए और क्या नहीं"</strong>, क्रिएटिव डायरेक्शन और ऑथेंटिक स्टोरीटेलिंग की खुद देखरेख करती हैं।
+              </p>
+            </div>
+
+            <div class="social-contact-stack">
+              <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer" class="app-contact-row">
+                <div class="app-contact-left">
+                  <svg class="app-icon-svg"><use href="#icon-instagram"></use></svg>
+                  <span>@vandanay2012</span>
+                </div>
+                <span class="app-badge-pill badge-ig">Instagram ↗</span>
+              </a>
+              <a href="#vandana-story" class="app-contact-row">
+                <div class="app-contact-left">
+                  <span style="font-size:1.1rem;">🌟</span>
+                  <span>View Founder Case Study</span>
+                </div>
+                <span class="app-badge-pill" style="background:var(--gold-tint);color:#9A6B07;">Flagship #1</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Smita Yadav (Guggy) -->
+          <article class="leader-card">
+            <div>
+              <div class="leader-role-tag">GROWTH, BRAND DEALS &amp; CLIENT RELATIONS LEAD</div>
+              <h3 style="font-size:1.38rem;font-weight:800;">Smita Yadav (Guggy)</h3>
+              <span class="leader-edu-pill">B.Com • Gargi College, University of Delhi</span>
+              <p style="font-size:0.92rem;color:var(--text-secondary);">
+                इंस्टाग्राम कंटेंट क्रिएटर और दिल्ली यूनिवर्सिटी (गार्गी कॉलेज) कॉमर्स स्ट्रैटेजिस्ट — 1 Lakh+ इन्फ्लुएंसर्स और बिज़नेस क्लाइंट्स की ऑनबोर्डिंग, ब्रांड डील्स और ग्रोथ कॉल संभालती हैं।
+              </p>
+            </div>
+
+            <div class="social-contact-stack">
+              <a href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer" class="app-contact-row">
+                <div class="app-contact-left">
+                  <svg class="app-icon-svg"><use href="#icon-instagram"></use></svg>
+                  <span>@smitayadav_0901</span>
+                </div>
+                <span class="app-badge-pill badge-ig">Instagram ↗</span>
+              </a>
+              <a href="https://wa.me/918112859437?text=Hi%20Smita%20(Guggy)!%20I%20visited%20VanIndra%20Creations%20and%20want%20to%20discuss%20growing%20my%20page." target="_blank" rel="noopener noreferrer" class="app-contact-row">
+                <div class="app-contact-left">
+                  <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
+                  <span>+91 81128 59437</span>
+                </div>
+                <span class="app-badge-pill badge-wa">WhatsApp</span>
+              </a>
+              <a href="mailto:smitayadav497@gmail.com" class="app-contact-row">
+                <div class="app-contact-left">
+                  <svg class="app-icon-svg"><use href="#icon-gmail"></use></svg>
+                  <span>smitayadav497@gmail.com</span>
+                </div>
+                <span class="app-badge-pill badge-mail">Email</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Akarsh Yadav (Sahil) -->
+          <article class="leader-card">
+            <div>
+              <div class="leader-role-tag">TECH, VIDEO EDITING &amp; SCIENTIFIC NICHE LEAD</div>
+              <h3 style="font-size:1.38rem;font-weight:800;">Akarsh Yadav (Sahil)</h3>
+              <span class="leader-edu-pill">B.Voc Food Tech • Univ. of Allahabad</span>
+              <p style="font-size:0.92rem;color:var(--text-secondary);">
+                टेक-ड्रिवन क्रिएटर और वीडियो एडिटर (इलाहाबाद यूनिवर्सिटी) — हाई-रिटेंशन रील्स, 15-सेकंड सैंपल एडिट्स और हेल्थ, फूड, न्यूट्रिशन व फिटनेस क्रिएटर्स के लिए साइंटिफिक हुक्स तैयार करते हैं।
+              </p>
+            </div>
+
+            <div class="social-contact-stack">
+              <a href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer" class="app-contact-row">
+                <div class="app-contact-left">
+                  <svg class="app-icon-svg"><use href="#icon-instagram"></use></svg>
+                  <span>@yadavakarsh_07</span>
+                </div>
+                <span class="app-badge-pill badge-ig">Instagram ↗</span>
+              </a>
+              <a href="https://wa.me/919415259408?text=Hi%20Akarsh%20(Sahil)!%20I%20visited%20VanIndra%20Creations%20and%20want%20to%20see%20a%2015s%20Sample%20Reel%20Edit." target="_blank" rel="noopener noreferrer" class="app-contact-row">
+                <div class="app-contact-left">
+                  <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
+                  <span>+91 94152 59408</span>
+                </div>
+                <span class="app-badge-pill badge-wa">WhatsApp</span>
+              </a>
+              <a href="mailto:akarshgkp8756539282@gmail.com" class="app-contact-row" title="akarshgkp8756539282@gmail.com">
+                <div class="app-contact-left">
+                  <svg class="app-icon-svg"><use href="#icon-gmail"></use></svg>
+                  <span style="font-size:0.76rem;">akarshgkp8756539282@gmail.com</span>
+                </div>
+                <span class="app-badge-pill badge-mail">Email</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE ROI & INCOME CALCULATOR + PRICING PACKAGES
+         ========================================================================== -->
+    <section id="packages" class="sec sec-white">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Transparent Investment &amp; ROI</span>
+          <h2 class="h2">छोटे ट्रायल से शुरू करें या <span class="hl-emerald">पूरा महीना हमारी टीम को सौंप दें</span></h2>
+          <p class="sec-sub">सिर्फ 1 ब्रांड डील या कुछ नए ग्राहकों से ही आपके पूरे महीने का खर्च आसानी से निकल आता है।</p>
+        </div>
+
+        <!-- Interactive ROI Calculator -->
+        <div class="roi-split-card" style="margin-bottom:42px;">
+          <div>
+            <span class="eyebrow">Income &amp; Time Calculator</span>
+            <h3 style="font-size:1.45rem;font-weight:800;margin-bottom:14px;">देखें आपके फॉलोअर्स से हर महीने कितनी कमाई हो सकती है</h3>
+
+            <div style="margin-bottom:20px;">
+              <div style="display:flex;justify-content:space-between;font-weight:800;margin-bottom:6px;">
+                <span>1. आपके अभी कितने फॉलोअर्स हैं?</span>
+                <span style="color:var(--emerald-rich);" id="lblFollowers">1,50,000 Followers</span>
+              </div>
+              <input type="range" id="rngFollowers" min="50000" max="1000000" step="25000" value="150000" oninput="updateROICalc()" style="width:100%;accent-color:var(--emerald-rich);">
+            </div>
+
+            <div style="margin-bottom:20px;">
+              <div style="display:flex;justify-content:space-between;font-weight:800;margin-bottom:6px;">
+                <span>2. महीने में कितनी रील्स डालेंगे?</span>
+                <span style="color:var(--emerald-rich);" id="lblReels">20 Reels / Month</span>
+              </div>
+              <input type="range" id="rngReels" min="8" max="30" step="2" value="20" oninput="updateROICalc()" style="width:100%;accent-color:var(--emerald-rich);">
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div style="background:var(--bg-page);border:1px solid var(--border-line);border-radius:16px;padding:18px;">
+              <small style="font-weight:700;color:var(--text-muted);">अनुमानित मासिक व्यूज</small>
+              <div style="font-family:'Space Grotesk',sans-serif;font-size:1.75rem;font-weight:800;color:var(--emerald-rich);" id="outViews">14.4 Lakh+</div>
+              <span style="font-size:0.76rem;color:var(--text-secondary);">3-सेकंड वायरल हुक के साथ</span>
+            </div>
+            <div style="background:var(--bg-page);border:1px solid var(--border-line);border-radius:16px;padding:18px;">
+              <small style="font-weight:700;color:var(--text-muted);">एडिटिंग का समय बचेगा</small>
+              <div style="font-family:'Space Grotesk',sans-serif;font-size:1.75rem;font-weight:800;color:#B47D09;" id="outHours">70 घंटे/महीना</div>
+              <span style="font-size:0.76rem;color:var(--text-secondary);">सारी एडिटिंग हमारी टीम करेगी</span>
+            </div>
+            <div style="grid-column:1/-1;background:var(--emerald-tint);border:1.5px solid var(--emerald-rich);border-radius:16px;padding:18px;">
+              <small style="font-weight:800;color:var(--emerald-rich);text-transform:uppercase;">हर महीने संभावित ब्रांड डील्स और बिज़नेस कमाई</small>
+              <div style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:800;color:var(--text-primary);" id="outRevenue">₹76,500 – ₹1,41,500 / mo</div>
+              <span style="font-size:0.8rem;color:var(--text-secondary);">प्रोफेशनल प्रोफाइल और स्पॉन्सरशिप पैकेजिंग से</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Pricing Cards -->
+        <div class="pricing-4-grid">
+          <article class="price-card">
+            <div>
+              <span style="font-size:0.74rem;font-weight:800;color:var(--emerald-rich);text-transform:uppercase;">Test Drive (ट्रायल पैक)</span>
+              <h3 style="font-size:1.22rem;font-weight:800;margin-top:4px;">3-Reel Trial Pack</h3>
+              <div class="price-amount">₹2,999 <small>/ एक बार</small></div>
+              <p style="font-size:0.85rem;color:var(--text-secondary);">हमारा काम परखने के लिए सबसे पहले 3 शानदार रील्स बनवाकर देखें।</p>
+              <ul class="check-list">
+                <li>7-दिन का "क्या पोस्ट करें" प्लान</li>
+                <li>3 वायरल स्क्रिप्ट्स और हुक्स</li>
+                <li>3 प्रोफेशनल एडिटेड रील्स</li>
+                <li>कैप्शन और रील कवर फोटो</li>
+              </ul>
+            </div>
+            <a href="#smart-ai-portal" onclick="selectPackageInForm('3-Reel Trial Pack (₹2,999 One-Time)')" class="btn btn-outline-ink" style="width:100%;margin-top:20px;">ट्रायल शुरू करें</a>
+          </article>
+
+          <article class="price-card">
+            <div>
+              <span style="font-size:0.74rem;font-weight:800;color:var(--emerald-rich);text-transform:uppercase;">3 Reels / Week</span>
+              <h3 style="font-size:1.22rem;font-weight:800;margin-top:4px;">VanIndra Starter</h3>
+              <div class="price-amount">₹14,999 <small>/ महीना</small></div>
+              <p style="font-size:0.85rem;color:var(--text-secondary);">लगातार ग्रोथ और प्रोफेशनल एडिटिंग चाहने वाले क्रिएटर्स के लिए।</p>
+              <ul class="check-list">
+                <li>पूरे महीने का कंटेंट कैलेंडर</li>
+                <li>12 वायरल स्क्रिप्ट्स</li>
+                <li>12 हाई-रिटेंशन एडिटेड रील्स</li>
+                <li>कैप्शन, हैशटैग और थंबनेल</li>
+              </ul>
+            </div>
+            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Starter - 12 Reels/Month (₹14,999)')" class="btn btn-outline-ink" style="width:100%;margin-top:20px;">Starter चुनें</a>
+          </article>
+
+          <article class="price-card featured-plan">
+            <div>
+              <span style="font-size:0.72rem;background:var(--gold-imperial);color:#081C15;padding:4px 10px;border-radius:999px;font-weight:800;">★ सबसे लोकप्रिय (5 REELS/WK)</span>
+              <h3 style="font-size:1.22rem;font-weight:800;margin-top:10px;">VanIndra Pro Growth</h3>
+              <div class="price-amount">₹24,999 <small>/ महीना</small></div>
+              <p style="font-size:0.85rem;color:var(--text-secondary);">Founder Vandana Yadav (@vandanay2012) की देखरेख में 20 रील्स और ब्रांड डील तैयारी।</p>
+              <ul class="check-list">
+                <li>30-दिन का पूरा कंटेंट कैलेंडर</li>
+                <li>20 वायरल स्क्रिप्ट्स + शूटिंग गाइड</li>
+                <li>20 स्टूडियो एडिटेड रील्स + कवर्स</li>
+                <li>प्रोफाइल और बायो अपग्रेड (Brand Ready)</li>
+              </ul>
+            </div>
+            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Month (₹24,999)')" class="btn btn-gold" style="width:100%;margin-top:20px;">Pro Growth चुनें →</a>
+          </article>
+
+          <article class="price-card">
+            <div>
+              <span style="font-size:0.74rem;font-weight:800;color:var(--emerald-rich);text-transform:uppercase;">Daily Reels (VIP Studio)</span>
+              <h3 style="font-size:1.22rem;font-weight:800;margin-top:4px;">VanIndra 360° VIP</h3>
+              <div class="price-amount">₹39,999 <small>/ महीना</small></div>
+              <p style="font-size:0.85rem;color:var(--text-secondary);">डॉक्टर्स, बिज़नेस ओनर्स और बड़े क्रिएटर्स के लिए 100% हैंड्स-फ्री सर्विस।</p>
+              <ul class="check-list">
+                <li>30 डेली रील्स (स्क्रिप्ट + एडिटिंग)</li>
+                <li>अकाउंट पर पोस्टिंग और शेड्यूलिंग</li>
+                <li>ऑटोमैटिक DM रिप्लाई सेटअप</li>
+                <li>ब्रांड स्पॉन्सरशिप मीडिया किट</li>
+              </ul>
+            </div>
+            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Month (₹24,999)')" class="btn btn-emerald" style="width:100%;margin-top:20px;">360° VIP चुनें</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ SECTION (INSPIRED BY IDIGITALAKKI & FLUENCIFY)
+         ========================================================================== -->
+    <section class="sec sec-ivory">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Frequently Asked Questions</span>
+          <h2 class="h2">सवाल जो क्रिएटर्स और बिज़नेस ओनर्स <span class="hl-emerald">सबसे पहले पूछते हैं</span></h2>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>1. मुझे वीडियो एडिटिंग या स्क्रिप्ट लिखना बिल्कुल नहीं आता—क्या मैं जुड़ सकता हूँ?</summary>
+            <p>बिल्कुल! हमारा सिस्टम खास तौर पर इसीलिए बनाया गया है। आपको सिर्फ अपने मोबाइल फोन से साधारण वीडियो रिकॉर्ड करके WhatsApp पर भेजना है। क्या बोलना है (स्क्रिप्ट), वीडियो की एडिटिंग, कैप्शन, थंबनेल और ब्रांड पोजिशनिंग का 100% काम हमारी टीम करती है।</p>
+          </details>
+          <details>
+            <summary>2. पैकेज लेने से पहले क्या मैं आपका काम (Sample Edit) देख सकता हूँ?</summary>
+            <p>हाँ! ऊपर दिए गए AI फॉर्म में अपना विवरण भरें या सीधे Smita (Guggy) या Akarsh (Sahil) को WhatsApp करें। हम आपके पेज का 7-दिन का कंटेंट प्लान और आपके किसी एक वीडियो का 15-सेकंड का Before/After सैंपल एडिट बिल्कुल मुफ्त दिखाएंगे।</p>
+          </details>
+          <details>
+            <summary>3. क्या आप नकली फॉलोअर्स (Fake Followers) बेचते हैं या असली ऑर्गेनिक ग्रोथ करते हैं?</summary>
+            <p>हम कभी भी नकली फॉलोअर्स या बॉट्स नहीं बेचते (उससे अकाउंट खराब हो जाता है)। हम मजबूत 3-सेकंड हुक्स, हाई-रिटेंशन एडिटिंग और स्ट्रैटेजिक कोलैबोरेशन से असली व्यूज, ब्रांड डील्स और ग्राहक लाते हैं।</p>
+          </details>
+          <details>
+            <summary>4. मुझे कैसे पता चलेगा कि मेरे अकाउंट पर क्या काम हो रहा है?</summary>
+            <p>जुड़ते ही आपका एक समर्पित WhatsApp ग्रुप और क्लाइंट फोल्डर बनता है जिसमें Founder Vandana Yadav, Smita (Guggy) और Akarsh (Sahil) रहते हैं। हर हफ्ते की स्क्रिप्ट, एडिटेड रील्स और मंथली ग्रोथ रिपोर्ट आपको समय पर मिलती है।</p>
+          </details>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- FOOTER WITH OFFICIAL APP LOGOS -->
   <footer class="site-footer">
-    <div class="container footer-flex">
-      <div>
-        <strong class="font-royal" style="color:var(--gold-light); font-size:1.05rem;">VANINDRA ◆ CREATIONS</strong>
-        <p style="margin-top:4px;">India's Content Strategy, Scripting &amp; High-Retention Editing Engine for 1,00,000+ Influencers.</p>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:28px;">
+      <div style="max-width:440px;">
+        <strong style="font-family:'Cinzel',serif;letter-spacing:0.14em;color:#F4C44E;font-size:1.2rem;">VANINDRA ◆ CREATIONS</strong>
+        <p style="font-size:0.88rem;color:rgba(255,255,255,0.8);margin-top:8px;">
+          Founded by <strong>Vandana Yadav (@vandanay2012)</strong>. India's AI-Powered Content Operations, Viral Scripting &amp; High-Retention Reel Studio for 1 Lakh+ Creators &amp; Businesses.
+        </p>
       </div>
-      <div style="display:flex; gap:18px; flex-wrap:wrap; align-items:center;">
-        <a href="thumbnail-studio.html" style="color:var(--gold-light); font-weight:600;">🎨 Thumbnail Studio</a>
-        <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer">@vandanay2012</a>
-        <a href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer">@smitayadav_0901</a>
-        <a href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer">@yadavakarsh_07</a>
+
+      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+        <a href="thumbnail-studio.html" class="btn btn-outline-light" style="padding:9px 16px;font-size:0.82rem;">🎨 9:16 Cover Studio</a>
+        <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light" style="padding:9px 15px;font-size:0.82rem;">
+          <svg class="app-icon-svg"><use href="#icon-instagram"></use></svg>
+          <span>@vandanay2012</span>
+        </a>
+        <a href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light" style="padding:9px 15px;font-size:0.82rem;">
+          <svg class="app-icon-svg"><use href="#icon-instagram"></use></svg>
+          <span>@smitayadav_0901</span>
+        </a>
+        <a href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light" style="padding:9px 15px;font-size:0.82rem;">
+          <svg class="app-icon-svg"><use href="#icon-instagram"></use></svg>
+          <span>@yadavakarsh_07</span>
+        </a>
       </div>
     </div>
   </footer>
 
+  <!-- STICKY MOBILE CALL + WHATSAPP + FREE AUDIT BAR (INSPIRED BY IDIGITALAKKI) -->
+  <div class="sticky-mobile-bar" aria-label="Quick Contact Actions">
+    <a href="tel:+918112859437" style="background:rgba(255,255,255,0.12);color:#FFFFFF;">📞 Call Guggy</a>
+    <a href="https://wa.me/918112859437?text=Hi%20VanIndra%20Creations!%20I%20want%20a%20Free%20Content%20Audit." target="_blank" rel="noopener noreferrer" style="background:#25D366;color:#062814;">
+      <svg style="width:16px;height:16px;"><use href="#icon-whatsapp"></use></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#smart-ai-portal" style="background:#F4C44E;color:#081C15;">🎤 Free AI Plan</a>
+  </div>
+
   <script>
-    function copyColor(hex) {
-      navigator.clipboard.writeText(hex).then(() => {
-        alert("Copied brand color hex: " + hex);
-      });
+    /* ==========================================================================
+       1. 3D IPHONE PARALLAX ON DESKTOP
+       ========================================================================== */
+    const iphone3D = document.getElementById('iphone3D');
+    document.addEventListener('mousemove', (e) => {
+      if (window.innerWidth > 1024 && iphone3D) {
+        const xAxis = (window.innerWidth / 2 - e.pageX) / 42;
+        const yAxis = (window.innerHeight / 2 - e.pageY) / 52;
+        iphone3D.style.transform = `rotateY(${Math.max(-18, Math.min(10, -8 - xAxis))}deg) rotateX(${Math.max(-10, Math.min(12, 4 + yAxis))}deg)`;
+      }
+    });
+
+    /* ==========================================================================
+       2. SURFACE THEME SWITCHER (DEFAULT: WARM IVORY LIGHT | OPTIONAL: DARK STUDIO)
+       ========================================================================== */
+    function toggleSurfaceTheme() {
+      document.body.classList.toggle('dark-studio');
     }
 
-    function selectPackageInForm(pkgName) {
-      const select = document.getElementById('clientPackage');
-      if (select) {
-        select.value = pkgName;
+    /* ==========================================================================
+       3. BILINGUAL SWITCHER (HINDI/HINGLISH <-> ENGLISH) & AUDIO VOICE GUIDE
+       ========================================================================== */
+    function setLanguageMode(lang) {
+      document.getElementById('btnLangHi').classList.toggle('active', lang === 'hi');
+      document.getElementById('btnLangEn').classList.toggle('active', lang === 'en');
+      const title = document.getElementById('heroMainTitle');
+      const sub = document.getElementById('heroSubTitle');
+      const tapPrompt = document.getElementById('tapPromptLabel');
+
+      if (lang === 'en') {
+        title.innerHTML = 'Social media that builds <span class="gold-text">more than followers —</span><br>Reels, Brand Deals &amp; Business.';
+        sub.innerHTML = 'Founded by active influencer <strong>Vandana Yadav (@vandanay2012)</strong>. Whether you are a 1 Lakh+ creator, doctor, educator, or business owner—<strong>you don\'t need to learn editing or marketing!</strong> Just record raw clips on your phone; our studio handles all your scripts, 3-second hooks, editing, and brand deal positioning.';
+        tapPrompt.textContent = '👇 What do you need the most help with right now? (Tap any card):';
+      } else {
+        title.innerHTML = 'Followers हैं पर <span class="gold-text">Business, Editing और Brand Deals</span> कैसे बढ़ाएं समझ नहीं आ रहा?';
+        sub.innerHTML = 'चाहे आप पढ़े-लिखे प्रोफेशनल हों (Doctor, Educator, Coach, Influencer) या अपने हुनर से आगे बढ़ने वाले क्रिएटर और व्यापारी — <strong>आपको एडिटिंग या मार्केटिंग सीखने की ज़रूरत नहीं है!</strong> बस फोन से वीडियो रिकॉर्ड करें; <strong>स्क्रिप्ट, 3-सेकंड हुक, रील एडिटिंग और ब्रांड डील्स</strong> का पूरा काम <strong>Founder Vandana Yadav</strong> और उनकी टीम संभालेगी।';
+        tapPrompt.textContent = '👇 आपको सबसे ज़्यादा किस चीज़ में मदद चाहिए? (अपनी ज़रूरत पर टैप करें):';
       }
     }
 
-    function generateInstantAudit(event) {
-      event.preventDefault();
-      const name = document.getElementById('auditName').value.trim();
-      const handle = document.getElementById('auditHandle').value.trim();
-      const followers = document.getElementById('auditFollowers').value;
-      const niche = document.getElementById('auditNiche').value;
-      const lang = document.getElementById('auditLang').value;
-      const pain = document.getElementById('auditPain').value;
+    function speakTextInHindi(text) {
+      if (!('speechSynthesis' in window)) {
+        alert(text);
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = 'hi-IN';
+      utter.rate = 0.98;
+      window.speechSynthesis.speak(utter);
+    }
 
-      const auditText = `============================================================
-◆ VANINDRA CREATIONS — INSTANT 7-DAY CONTENT & HOOK ROADMAP
+    function speakWelcomeGuide() {
+      speakTextInHindi("नमस्ते! वंदना यादव जी के वनिन्द्रा क्रिएशन्स स्टूडियो में आपका स्वागत है। अगर आपके पास फॉलोअर्स हैं या आप अपना बिज़नेस और इंस्टाग्राम पेज बढ़ाना चाहते हैं, पर आपको वीडियो एडिटिंग, स्क्रिप्ट लिखना या ब्रांड डील्स लाना नहीं आता—तो चिंता मत कीजिए। आप सिर्फ अपने फोन से वीडियो रिकॉर्ड करें, बाकी एडिटिंग और ग्रोथ का पूरा काम हमारी टीम करेगी। नीचे माइक बटन दबाकर अपनी ज़रूरत बोलकर बताएं!");
+    }
+
+    function speakVandanaTestimonial() {
+      speakTextInHindi("फाउंडर वंदना यादव जी कहती हैं: एक क्रिएटर के लिए सबसे बड़ी टेंशन यह होती है कि आज क्या पोस्ट करें और घंटों बैठकर वीडियो एडिट कैसे करें। वनिन्द्रा क्रिएशन्स में मैं और मेरी टीम स्मिता और आकर्ष आपके पूरे कंटेंट, एडिटिंग और ब्रांड ग्रोथ को संभालते हैं ताकि आप बिना किसी तनाव के आगे बढ़ सकें!");
+    }
+
+    function speakGeneratedPlan() {
+      const txt = document.getElementById('ztOutputText').textContent;
+      speakTextInHindi("आपका ग्रोथ प्लान और तीन वायरल स्क्रिप्ट तैयार हो गए हैं! नीचे व्हाट्सएप बटन दबाकर इसे हमारी टीम को भेजें। " + txt.slice(0, 320));
+    }
+
+    /* ==========================================================================
+       4. VISUAL TAP GOAL SELECTOR & FREE VOICE-TO-TEXT MIC INPUT
+       ========================================================================== */
+    function quickSelectGoal(goalText) {
+      const notes = document.getElementById('ztVoiceNotes');
+      notes.value = goalText;
+      document.getElementById('smart-ai-portal').scrollIntoView({ behavior: 'smooth' });
+      notes.focus();
+    }
+
+    function startHindiVoiceInput() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const btn = document.getElementById('btnVoiceMic');
+      const status = document.getElementById('voiceStatusText');
+      const notes = document.getElementById('ztVoiceNotes');
+
+      if (!SpeechRecognition) {
+        alert("आपके ब्राउज़र में माइक सपोर्ट नहीं है, कृपया नीचे बॉक्स में लिखें या Chrome में खोलें।");
+        notes.focus();
+        return;
+      }
+
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'hi-IN';
+      recognition.interimResults = false;
+
+      btn.classList.add('listening');
+      btn.textContent = '🔴 अब बोलिए... (Listening...)';
+      status.textContent = 'माइक चालू है — अपनी बात आराम से हिंदी या अंग्रेजी में बोलें...';
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        notes.value = (notes.value ? notes.value + " " : "") + transcript;
+        status.textContent = '✅ आपकी आवाज़ रिकॉर्ड हो गई! अब नीचे पीला बटन दबाकर अपना AI प्लान बनाएं।';
+      };
+
+      recognition.onerror = () => {
+        status.textContent = 'कृपया दोबारा माइक दबाएं या नीचे बॉक्स में लिखें।';
+      };
+
+      recognition.onend = () => {
+        btn.classList.remove('listening');
+        btn.textContent = '🎤 यहाँ दबाकर बोलें (Speak in Hindi/English)';
+      };
+
+      recognition.start();
+    }
+
+    /* ==========================================================================
+       5. FREE BACKGROUND AI ENGINE (POLLINATIONS FREE LLM API + INSTANT FALLBACK)
+       ========================================================================== */
+    let lastGeneratedHandle = "creator";
+
+    async function runZeroTouchBackgroundAI(event) {
+      event.preventDefault();
+      const name = document.getElementById('ztName').value.trim();
+      const handle = document.getElementById('ztHandle').value.trim();
+      const phone = document.getElementById('ztPhone').value.trim();
+      const category = document.getElementById('ztCategory').value;
+      const lang = document.getElementById('ztLanguage').value;
+      const pkg = document.getElementById('ztPackage').value;
+      const notes = document.getElementById('ztVoiceNotes').value.trim();
+
+      lastGeneratedHandle = handle.replace(/[^a-zA-Z0-9_]/g, '') || "creator";
+
+      const btn = document.getElementById('btnRunAI');
+      const loader = document.getElementById('aiLoadingIndicator');
+      const outputPanel = document.getElementById('ztOutputPanel');
+      const outputEl = document.getElementById('ztOutputText');
+
+      btn.disabled = true;
+      loader.style.display = 'inline-block';
+
+      const instantHeader = `============================================================
+◆ VANINDRA CREATIONS — CUSTOM CLIENT GROWTH & SCRIPT PLAN
+◆ Founded by Vandana Yadav (@vandanay2012)
 ============================================================
-Creator: ${name} (${handle})
-Current Tier: ${followers} | Niche: ${niche}
-Language: ${lang}
-Primary Bottleneck: ${pain}
+👤 नाम (Name): ${name}
+📸 इंस्टाग्राम/पेज (Handle): ${handle}
+📱 WhatsApp: ${phone}
+🏷️ कैटेगरी (Niche): ${category}
+🗣️ भाषा (Language): ${lang}
+📦 चुना गया प्लान (Selected Plan): ${pkg}
+💬 मुख्य ज़रूरत (Requirement): "${notes}"
+============================================================\n\n`;
 
-1. STRICT "WHAT TO POST vs. WHAT NOT TO POST" RULES:
-   ✅ START POSTING (4x/Week):
-      • 35–45 sec Myth-Busters with a 3-word bold cover title
-      • "3 Mistakes People Make in ${niche}" listicle Reels
-      • Split-screen / Green-screen breakdowns of trending India topics
-   ❌ STOP POSTING IMMEDIATELY:
-      • Slow 5-second intros ("Hello friends, welcome back...")
-      • Off-niche random reels that dilute your sponsor authority
+      const aiPrompt = `You are the AI Content Strategist for VanIndra Creations (Founded by Vandana Yadav @vandanay2012, with team Smita "Guggy" Yadav @smitayadav_0901 and Akarsh "Sahil" Yadav @yadavakarsh_07). Create a practical, high-converting growth roadmap in ${lang} (easy Hinglish/Hindi) for "${name}" (${handle}) in category "${category}" whose requirement is: "${notes}".
+Include:
+1. "Kya Post Karein vs Kya Nahi Post Karein" (3 simple rules)
+2. 3 Ready-to-Shoot Viral Reel Scripts (with 3-second Hook + Spoken Lines + Editing Note for Sahil @yadavakarsh_07)
+3. Next step to get Brand Deals / Customers with Guggy (@smitayadav_0901).`;
 
-2. THREE CUSTOM 3-SECOND HOOK FRAMEWORKS FOR ${handle.toUpperCase()}:
-   🎬 Hook #1 (Myth-Buster): "Stop doing [Common ${niche} Habit] in 2026—here is what 90% of people get wrong in the first 10 seconds..."
-   🎬 Hook #2 (Curiosity List): "If I had to restart my ${niche} journey from zero today, I would only focus on these 3 rules..."
-   🎬 Hook #3 (Relatable Story): "Everyone asks me about [Top Audience Question], par koi yeh sach nahi batata..."
+      let aiResponseText = "";
+      try {
+        const res = await fetch("https://text.pollinations.ai/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            messages: [
+              { role: "system", content: "You are a warm, expert Indian Instagram & Business Growth Strategist at VanIndra Creations founded by Vandana Yadav. Write clearly in easy Hinglish + Hindi." },
+              { role: "user", content: aiPrompt }
+            ],
+            model: "openai"
+          })
+        });
+        if (res.ok) {
+          aiResponseText = await res.text();
+        }
+      } catch (err) {
+        aiResponseText = "";
+      }
 
-3. NEXT STEP (FREE 15-SECOND SAMPLE EDIT):
-   Send this roadmap to VanIndra Creations on WhatsApp to claim your full 7-day script pack + a free 15-second high-retention re-edit of one of your existing Reels by Sahil (@yadavakarsh_07) & Vandana (@vandanay2012)!`;
+      if (!aiResponseText || aiResponseText.length < 60) {
+        aiResponseText = `✅ 1. क्या पोस्ट करें vs क्या नहीं पोस्ट करें (WHAT TO POST RULES BY VANDANA YADAV):
+   • ✅ ज़रूर पोस्ट करें: 30-40 सेकंड के काम की जानकारी वाले वीडियो (जिनके शुरू के 3 सेकंड में बड़ा सवाल या समस्या हो)।
+   • ✅ ज़रूर पोस्ट करें: ग्राहक/ऑडियंस के सबसे बड़े 3 सवालों के जवाब और बिहाइंड-द-सीन्स भरोसा बढ़ाने वाली रील्स।
+   • ❌ बिल्कुल मत करें: बिना कैप्शन के लंबे बोरिंग वीडियो या शुरुआत में "हेलो दोस्तों कैसे हैं आप" बोलकर समय गंवाना।
 
-      const outputEl = document.getElementById('auditOutputText');
-      outputEl.textContent = auditText;
-      document.getElementById('auditOutputPanel').classList.add('active');
+🎬 2. आपके पेज के लिए 3 तैयार वायरल रील आइडियाज (READY-TO-SHOOT SCRIPTS):
+   • रील #1 (3-Sec Hook): "90% लोग ${category} में यह सबसे बड़ी गलती करते हैं—रुकिए और यह सच जानिए!"
+     -> एडिटिंग नोट (Akarsh/Sahil @yadavakarsh_07): ऊपर गोल्डन पट्टी में बोल्ड हेडलाइन + फास्ट ज़ूम कट्स + डायनामिक सबटाइटल्स।
+   • रील #2 (Trust & Authority): "लोग मुझसे रोज़ पूछते हैं कि सही तरीके से रिज़ल्ट कैसे पाएं? यह रहे 3 आसान स्टेप्स..."
+   • रील #3 (Brand/Customer Magnet): "अगर आप भी इस समस्या से परेशान हैं, तो इस रील को सेव कर लें और कमेंट में YES लिखें!"
+
+💰 3. ब्रांड डील्स और बिज़नेस बढ़ाने का अगला कदम:
+   • नीचे हरा या पीला WhatsApp बटन दबाकर यह फाइल सीधे हमारी टीम (Smita/Guggy या Akarsh/Sahil) को भेजें—हम आपके एक वीडियो का 15-सेकंड का फ्री सैंपल एडिट करके दिखाएंगे!`;
+      }
+
+      const fullCombinedOutput = instantHeader + aiResponseText + `\n\n————————————————\n✨ VanIndra Creations | Founder: Vandana Yadav (@vandanay2012) | Team: @smitayadav_0901 & @yadavakarsh_07`;
+
+      outputEl.textContent = fullCombinedOutput;
+      outputPanel.classList.add('active');
+      btn.disabled = false;
+      loader.style.display = 'none';
+
+      try {
+        const existing = JSON.parse(localStorage.getItem('vanindra_leads_crm') || '[]');
+        existing.unshift({ date: new Date().toISOString(), name, handle, phone, category, pkg, notes });
+        localStorage.setItem('vanindra_leads_crm', JSON.stringify(existing.slice(0, 50)));
+      } catch (e) {}
     }
 
-    function sendAuditViaWhatsApp(phoneNum) {
-      const text = document.getElementById('auditOutputText').textContent;
-      const encoded = encodeURIComponent("Hi VanIndra Creations Team! I just generated my 7-Day Content Audit on your website and would love to claim my full audit & 15s sample edit:\n\n" + text);
+    function sendZeroTouchWhatsApp(phoneNum) {
+      const text = document.getElementById('ztOutputText').textContent;
+      const encoded = encodeURIComponent("🚀 नमस्ते VanIndra Creations Team! मैंने वेबसाइट पर अपना AI प्लान बनाया है, मुझे आगे की जानकारी और 15s सैंपल एडिट चाहिए:\n\n" + text);
       window.open("https://wa.me/" + phoneNum + "?text=" + encoded, "_blank");
     }
 
-    let lastClientHandleClean = "creator";
-
-    function handleClientIntakeSubmit(event) {
-      event.preventDefault();
-      const name = document.getElementById('clientName').value.trim();
-      const handle = document.getElementById('clientHandle').value.trim();
-      const phone = document.getElementById('clientPhone').value.trim();
-      const pkg = document.getElementById('clientPackage').value;
-      const nicheDetail = document.getElementById('clientNicheDetail').value.trim();
-      const editStyle = document.getElementById('clientEditStyle').value;
-      const dosDonts = document.getElementById('clientDosDonts').value.trim();
-      const topReels = document.getElementById('clientTopReels').value.trim() || "To be shared on onboarding call";
-
-      lastClientHandleClean = handle.replace(/[^a-zA-Z0-9_]/g, '') || "client";
-
-      const masterLLMPrompt = `# VANINDRA CREATIONS — CLIENT ONBOARDING & MASTER LLM PIPELINE PROMPT
-Copy and paste this entire block into your LLM (Claude / Muse / Gemini / GPT) to generate ${name}'s Month-1 Brand Bible, 20-Reel Content Calendar, and Week-1 Word-for-Word Scripts:
-
----
-You are the Chief Content Strategist at VanIndra Creations (@vanindracreations), India's premier Content & Growth Studio for 100K+ Influencers (led by Indrajeet Yadav, Vandana Yadav @vandanay2012, Smita "Guggy" Yadav @smitayadav_0901, and Akarsh "Sahil" Yadav @yadavakarsh_07).
-
-A new 100K+ Influencer client just submitted their onboarding requirements:
-- **Creator Name:** ${name}
-- **Instagram Handle:** ${handle}
-- **WhatsApp Contact:** ${phone}
-- **Selected Package:** ${pkg}
-- **Niche & Target Audience:** ${nicheDetail}
-- **Preferred Editing & Visual Style (for Sahil):** ${editStyle}
-- **Creator's "What to Post vs. NEVER Post" Boundaries:** ${dosDonts}
-- **Reference Reels / Inspirations:** ${topReels}
-
-### PLEASE GENERATE THE FOLLOWING 3 DELIVERABLES IN SEQUENCE:
-1. **BRAND VOICE & "WHAT TO POST vs. WHAT NOT TO POST" BIBLE:**
-   - 3 upgraded Instagram Bio options.
-   - 4 Core Content Pillars (40% Viral Reach, 30% Authority, 20% Personal Story, 10% Brand-Ready).
-   - 5 strict "What NOT to Post" rules vs. 5 "What TO Post" rules tailored to ${nicheDetail}.
-2. **30-DAY HIGH-RETENTION CONTENT CALENDAR (20 REELS):**
-   - Markdown table with Reel #, Pillar, Format, Topic, and exact 3-Second Scroll-Stopper Hook (Spoken + On-Screen Text).
-3. **WEEK 1 PRODUCTION SCRIPTS (REELS #1 TO #5):**
-   - Full word-for-word scripts (0-3s Hook, 3-15s Twist, 15-35s 3-Point Value Payoff, 35-42s CTA) + Editor Notes for Sahil + SEO Captions ending with:
-     "✨ Content Strategy & Edit: @vanindracreations"
----`;
-
-      const outputEl = document.getElementById('intakeOutputText');
-      outputEl.textContent = masterLLMPrompt;
-      document.getElementById('intakeOutputPanel').classList.add('active');
+    function downloadZeroTouchFile() {
+      const text = document.getElementById('ztOutputText').textContent;
+      const blob = new Blob([text], { type: "text/markdown;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `VanIndra_GrowthPlan_${lastGeneratedHandle}.md`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
     }
 
-    function sendIntakeViaWhatsApp(phoneNum) {
-      const text = document.getElementById('intakeOutputText').textContent;
-      const encoded = encodeURIComponent("🚀 New VanIndra Creations Client Requirement Submission:\n\n" + text);
-      window.open("https://wa.me/" + phoneNum + "?text=" + encoded, "_blank");
+    /* ==========================================================================
+       6. BEFORE/AFTER SIMULATOR & ROI CALCULATOR
+       ========================================================================== */
+    function switchPhoneSimulation(mode) {
+      const btnBefore = document.getElementById('btnModeBefore');
+      const btnAfter = document.getElementById('btnModeAfter');
+      const banner = document.getElementById('phoneHookBanner');
+      const caption = document.getElementById('kineticCaptionText');
+      const chipRet = document.getElementById('chipRetention');
+      const chipViews = document.getElementById('chipViews');
+      const chipSponsor = document.getElementById('chipSponsor');
+      const graphLeft = document.getElementById('graphLabelLeft');
+      const graphRight = document.getElementById('graphLabelRight');
+      const curve = document.getElementById('retentionCurvePath');
+
+      if (mode === 'before') {
+        btnBefore.className = 'sim-btn active-before';
+        btnAfter.className = 'sim-btn';
+        banner.style.background = 'rgba(225, 29, 72, 0.35)';
+        banner.style.color = '#FFE4E6';
+        banner.textContent = '❌ कोई हेडलाइन नहीं • धीमी शुरुआत';
+        caption.innerHTML = '"हेलो दोस्तों, स्वागत है मेरे पेज पर..." <span style="color:#FDA4AF;">(68% लोग स्किप कर गए)</span>';
+        chipRet.innerHTML = '⚠️ 3-Sec Hold: <span style="color:#E11D48;">21.4%</span>';
+        chipViews.innerHTML = '📉 Reach: <span style="color:#E11D48;">4,210 Views</span>';
+        chipSponsor.innerHTML = '❌ Brand Deals: <span style="color:#E11D48;">0 Deals</span>';
+        graphLeft.textContent = '▼ लोग 5 सेकंड में छोड़ देते हैं';
+        graphLeft.style.color = '#FDA4AF';
+        graphRight.textContent = '-72% DROP';
+        curve.setAttribute('d', 'M 0 12 Q 55 35, 130 38 T 260 40');
+        curve.setAttribute('stroke', '#F43F5E');
+      } else {
+        btnBefore.className = 'sim-btn';
+        btnAfter.className = 'sim-btn active-after';
+        banner.style.background = 'linear-gradient(90deg, #F4C44E, #FFE89E)';
+        banner.style.color = '#081C15';
+        banner.textContent = '⚠️ 1 LAKH+ KE BAAD YEH GALTI MAT KARNA!';
+        caption.innerHTML = '"अगर आपका <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">बिज़नेस या पेज</span> रुका हुआ है, तो बस <span style="color:#F4C44E;">यह 3 बदलाव</span> करें..."';
+        chipRet.innerHTML = '🎯 3-Sec Hold: <span style="color:#0E6B4E;">84.2%</span>';
+        chipViews.innerHTML = '🔥 Reach: <span style="color:#B47D09;">6,84,900 Views</span>';
+        chipSponsor.innerHTML = '💰 Brand Deal Ready: <span style="color:#0E6B4E;">₹65K/Reel</span>';
+        graphLeft.textContent = '▲ लोग पूरा वीडियो देखते हैं (84%)';
+        graphLeft.style.color = '#34D399';
+        graphRight.textContent = '+410% ग्रोथ';
+        curve.setAttribute('d', 'M 0 8 Q 65 9, 130 12 T 260 16');
+        curve.setAttribute('stroke', '#10B981');
+      }
+    }
+
+    function updateROICalc() {
+      const followers = parseInt(document.getElementById('rngFollowers').value, 10);
+      const reels = parseInt(document.getElementById('rngReels').value, 10);
+      document.getElementById('lblFollowers').textContent = followers.toLocaleString('en-IN') + ' Followers';
+      document.getElementById('lblReels').textContent = reels + ' Reels / Month';
+
+      const estViewsLakhs = ((followers * 0.48 * (reels / 10)) / 100000).toFixed(1);
+      const hoursSaved = Math.round(reels * 3.5);
+      const minDeal = Math.round((followers / 100000) * 35000 + (reels * 1200));
+      const maxDeal = Math.round(minDeal * 1.85);
+
+      document.getElementById('outViews').textContent = estViewsLakhs + ' Lakh+';
+      document.getElementById('outHours').textContent = hoursSaved + ' घंटे/महीना';
+      document.getElementById('outRevenue').textContent = '₹' + minDeal.toLocaleString('en-IN') + ' – ₹' + maxDeal.toLocaleString('en-IN') + ' / mo';
+    }
+
+    function selectPackageInForm(pkgName) {
+      const select = document.getElementById('ztPackage');
+      if (select) select.value = pkgName;
     }
 
     function copyTextById(elementId) {
       const text = document.getElementById(elementId).textContent;
       navigator.clipboard.writeText(text).then(() => {
-        alert("Copied to clipboard!");
+        alert("कॉपी हो गया! (Copied to clipboard)");
       });
-    }
-
-    function downloadClientMarkdown() {
-      const text = document.getElementById('intakeOutputText').textContent;
-      const blob = new Blob([text], { type: "text/markdown;charset=utf-8" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `VanIndra_Creations_Onboarding_${lastClientHandleClean}.md`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
     }
   </script>
 </body>
