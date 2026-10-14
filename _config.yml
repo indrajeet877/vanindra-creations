@@ -1,5 +1,5 @@
-# Legacy GitHub Pages settings (GitHub Pages is OFF: the repository is private and the site is on Cloudflare Pages,
-# built by scripts/build_public_site.sh). Kept only as a safety net if Pages is ever re-enabled.
+# GitHub Pages settings. Status (14 Oct 2026): the repository is public again and the live site runs on
+# GitHub Pages (owner's decision). scripts/build_public_site.sh is for the planned Cloudflare / custom-domain move.
 # Only the public pages (index.html, login.html, pitch-deck.html, thumbnail-studio.html) and
 # assets/ are published. Internal docs, SOPs, outreach scripts, lead sheets and agent
 # instructions are kept off the live site. Add any new internal folder to this list.
