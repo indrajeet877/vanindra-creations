@@ -17,3 +17,10 @@ This repository (`VanIndra Creations`) is architected so that the workspace owne
    - **"Check the WhatsApp group":** Query `~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/ChatStorage.sqlite` (read-only) for `ZPARTNERNAME LIKE '%Vanindra%'` (`Z_PK = 1336`, JID `120363431153443358@g.us`).
    - **"Onboard a new client named [X]":** Duplicate `06_Client_Workspace_Template/_TEMPLATE_Influencer_Name_100K` and run `05_Content_Factory_and_LLM_Prompts/02_Master_LLM_Prompt_Pack.md`.
    - **"Generate a Free 7-Day Audit for prospect [@handle]":** Run Prompt #1 from `05_Content_Factory_and_LLM_Prompts/02_Master_LLM_Prompt_Pack.md` and save to `04_Outreach_and_Sales_Pipeline/Prospect_Audits/Audit_[@handle].md`.
+
+## 4. Approval-First Rule, Public URL & New Workspaces (Oct 2026)
+- **Approval first:** brand changes (logo, colours, public copy, pricing) are prepared as proposals and shown to the owner and team before anything goes live. Current proposals: `01_Brand_and_Team/Brand_Assets/Logo_Proposals_2026-10/` (logo A/B/C, not yet approved).
+- **Public URL leak:** the current site address `indrajeet877.github.io` contains a background team member's name. Never paste it into client, brand or prospect messages; use Instagram links until the custom domain (`vanindracreations.in` / `.com`) is live.
+- **GitHub Pages:** `_config.yml` publishes only `index.html`, `login.html`, `pitch-deck.html`, `thumbnail-studio.html` and `assets/`. Add every new internal folder to its `exclude` list.
+- **Global (USD) business:** `12_Global_Abroad_Workspace_USD/` is a separate business for English-speaking markets ($500 / $1,000 / $2,000 monthly plans). Akarsh Yadav leads global lead generation. Never mix India (₹) and global ($) offers on the same page.
+- **Delivery readiness:** `13_India_Delivery_and_Fulfillment_Backend/` maps every promise on the public site to who delivers it and how. Check it before adding any new offer to the website.

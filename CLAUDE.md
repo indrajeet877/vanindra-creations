@@ -54,3 +54,8 @@ Inspired by **IDigitalAKKi Media (Warm Ivory + Emerald + Gold)**, **LexiConn (AI
 - `08_Agent_and_LLM_Instructions/` — Detailed instructions for Claude, Muse, Gemini, Cursor, and sub-agents.
 - `09_Tech_Handles_Domains_Servers_and_Apps/` — Multi-platform handle checklist, `.in` domain & server architecture, and Creator App blueprint.
 - `10_Zero_Touch_Automation_Engine/` — Free background APIs & zero-manual-work automation guide.
+- `11_Magnific_AI_and_Social_Automation/` — Magnific AI 4K asset pipeline, daily social automation SOP, client login & payment rules.
+- `12_Global_Abroad_Workspace_USD/` — Separate global (English-speaking markets) business: USD offer ladder ($500 / $1,000 / $2,000 per month), ICP by country, Akarsh Yadav's lead-gen SOP, delivery, payments checklist and team brief. Completely separate audience from India.
+- `13_India_Delivery_and_Fulfillment_Backend/` — Promise-to-delivery map for every offer on the public site, order-to-delivery workflow, capacity check, risky-claims list and launch checklist.
+- `01_Brand_and_Team/Brand_Assets/Logo_Proposals_2026-10/` — New logo directions A/B/C **awaiting approval**; do not put them on public pages until approved.
+- `_config.yml` — GitHub Pages publishes only the 4 public HTML pages + `assets/`. Add every new internal folder to its `exclude` list.
