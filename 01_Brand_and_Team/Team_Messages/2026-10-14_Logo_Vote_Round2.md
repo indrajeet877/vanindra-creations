@@ -1,7 +1,7 @@
 # Logo Vote — Round 2 (14 Oct 2026)
 
 > **Where to see the options:** the Magnific Space "VanIndra Logo Options — Team Vote (Oct 2026)". The owner has the view-only invite link. Opening it needs a free Magnific sign-in. The link is not stored here because this repository is public.
-> **Status:** 50 AI-generated options are ready now. 7 hand-built geometry ("maths") concepts are still being drawn and judged; they will be added as **M1–M7**.
+> **Status:** 50 AI-generated options are ready now. The 7 hand-built geometry ("maths") concepts **M1–M7 are ready too**: see `01_Brand_and_Team/Brand_Assets/Logo_Proposals_2026-10/Round2_Geometry_M1-M7/` (start with `00_Overview_M1-M7.jpg`). All 3 judges picked **M5 Shirorekha**; a Round 3 polish of M5 plus 3 new directions is running, and the best 2 will join this vote.
 > **Note:** AI images can misspell words. Check the spelling "VanIndra" / "VANINDRA" / "Creations" on every option before voting.
 
 ## Which AI model made what (and why that model)
@@ -25,7 +25,7 @@
 | 45–48 | **Mughal-arch emblem** (palace doorway = 9:16 frame) with VI | **Flux 2 Max** | Detailed emblems |
 | 49 | Interlocking **VI monogram**: true vector file | **Recraft Vector** | Native SVG, ready to use |
 | 50 | **Emerald-cut V**: true vector file | **Recraft Vector** | Native SVG, ready to use |
-| M1–M7 | Hand-built **geometry** concepts (coming): Emerald Cut, Indra's Net, Maison Monogram, Jaali, Shirorekha, Founder Signature, Hook Mark | Drawn with maths (grids, golden ratio, exact curves) by 7 AI design agents and scored by 3 judges | Exact, crisp vectors that work from favicon to billboard |
+| M1–M7 | Hand-built **geometry** concepts: M1 Emerald Cut, M2 Indra's Net, M3 Threaded VI, M4 Jaali, **M5 Shirorekha (judges' winner, 6.5 / 7 / 7)**, M6 Signature, M7 Hook + Tick | Drawn with maths (grids, exact angles, measured strokes) by 7 AI design agents and scored by 3 AI judges | Exact, crisp vectors that work from favicon to billboard |
 
 Meta's image model is not available through Magnific, so it was not used.
 
