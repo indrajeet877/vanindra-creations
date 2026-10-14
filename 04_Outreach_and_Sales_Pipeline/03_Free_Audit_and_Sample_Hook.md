@@ -29,6 +29,6 @@ For our top 10 prospects every week:
    - Dynamic word-by-word highlighted captions
    - 2 clean B-roll overlays + whoosh/pop sound effects
 3. Send the 15-second video directly in WhatsApp/DM:
-   > *"Hey [Name], our tech & editing lead Sahil (`@yadavakarsh_07`) took the first 15 seconds of your recent Reel and upgraded the hook & pacing just to show you what your content looks like inside our pipeline. Watch the difference!"*
+   > *"Hey [Name], our tech & editing lead Akarsh Yadav (`@yadavakarsh_07`) took the first 15 seconds of your recent Reel and upgraded the hook & pacing just to show you what your content looks like inside our pipeline. Watch the difference!"*
 
 **Conversion Rate of this method:** Typically **30% to 50% positive reply rate** because no influencer can ignore seeing their own face edited to look like a 1M+ creator!

@@ -58,7 +58,7 @@ You are the Chief Content Strategist at our Influencer Growth Agency. A new 100K
 3. **Strict "What To Post vs. What NOT To Post" Rules:**
    - 5 specific topics/formats to NEVER post on the main grid (and why they hurt reach).
    - 5 high-retention formats to post every week.
-4. **Visual & Editing Style Guide (for our editor Sahil):** Pacing, caption style, color vibe, B-roll types, and thumbnail rules.
+4. **Visual & Editing Style Guide (for our editor Akarsh Yadav):** Pacing, caption style, color vibe, B-roll types, and thumbnail rules.
 ```
 
 ---
@@ -88,7 +88,7 @@ Make sure the topics are hyper-relevant to India in 2026, avoid generic textbook
 ```markdown
 Now write the complete **Production-Ready Shoot & Edit Pack** for Reels {{e.g., #1 to #5}} from the calendar above for {{Name_and_Handle}} in natural {{Hinglish / Hindi / English}}.
 
-For EACH Reel, use this exact template so the Creator knows exactly how to shoot it in 10 minutes, and our Editor (Sahil) knows exactly how to edit it:
+For EACH Reel, use this exact template so the Creator knows exactly how to shoot it in 10 minutes, and our Editor (Akarsh Yadav) knows exactly how to edit it:
 
 ---
 ### 🎬 REEL #[X]: [Topic Name]
@@ -100,13 +100,13 @@ For EACH Reel, use this exact template so the Creator knows exactly how to shoot
 - **[0:00 – 0:03 | THE HOOK]**
   - *Spoken Line:* "..."
   - *Visual / Camera Action:* [e.g., Start mid-action holding X / Close-up zoom]
-  - *Editor Note (Sahil):* [On-screen hook banner + sound effect]
+  - *Editor Note (Akarsh):* [On-screen hook banner + sound effect]
 - **[0:03 – 0:15 | THE AGITATION / TWIST]**
   - *Spoken Line:* "..."
-  - *Editor Note (Sahil):* [B-roll overlay or split-screen graphic]
+  - *Editor Note (Akarsh):* [B-roll overlay or split-screen graphic]
 - **[0:15 – 0:35 | THE VALUE PAYOFF (3 Crisp Points)]**
   - *Spoken Line:* "..."
-  - *Editor Note (Sahil):* [Pop-up numbered list 1, 2, 3]
+  - *Editor Note (Akarsh):* [Pop-up numbered list 1, 2, 3]
 - **[0:35 – 0:42 | CALL TO ACTION / LOOP]**
   - *Spoken Line:* "..."
 

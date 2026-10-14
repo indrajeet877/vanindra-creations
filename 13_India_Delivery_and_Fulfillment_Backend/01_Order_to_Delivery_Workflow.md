@@ -128,7 +128,7 @@ Templates are numbered T-01 to T-28. Each has an English and a Roman Hinglish ve
 
 ### Stage 2 — Free 15s Sample + 1-Page Plan
 
-**Who qualifies (to protect editing time):** Instagram creators/businesses with roughly 50K+ followers *or* a clinic/coaching/business with a real budget; clear interest in Trial/Starter/Pro; we have fewer than 10 samples in progress this week. Others get T-06 (polite plans + waitlist).
+**Who qualifies (to protect editing time):** Instagram creators/businesses with roughly 50K+ followers *or* a clinic/coaching/business with a real budget; clear interest in Trial/Starter/Pro; we have done fewer than 10 samples this week (fewer than 5 once 2 monthly clients are active — see `02` A6). Others get T-06 (polite plans + waitlist).
 
 **Steps**
 1. Smita sends T-04 and logs the lead as `Qualified`.

@@ -47,7 +47,7 @@
 | Doing it themselves | Takes hours per video; inconsistent | "Get your evenings back." |
 | Cheap freelance marketplace editors | Inconsistent, no strategy, disappear | "A named team, a schedule, a QA pass, and a contract." |
 | AI clipping tools | Generic picks, caption errors, no brand sense | "We use AI for speed; humans decide what goes out." |
-| Local agencies at $2,500–$5,000+/month *(typical range quoted by owner; verify on 10 competitor pricing pages)* | Expensive; often slower; long contracts | "Same deliverables, next-day turnaround, month-to-month." |
+| Local agencies / account managers *(owner's market read: ~$2,000/month for one account; verify on 10 competitor pricing pages)* | Higher cost; often slower; longer contracts | "Same deliverables, next-day turnaround, month-to-month." |
 
 ---
 

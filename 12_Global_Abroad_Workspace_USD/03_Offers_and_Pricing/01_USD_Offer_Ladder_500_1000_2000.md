@@ -177,7 +177,7 @@ Use these exact lines. Do not improvise new promises.
 | :--- | :--- | :--- |
 | 3 × Spark | 51h | $1,500 |
 | 1 × Momentum + 1 × Spark | 50h | $1,500 |
-| 1 × Full Studio | 53h | $2,000 |
+| ~~1 × Full Studio~~ — not until a freelance editor is live (53h leaves no room for revisions, pilots or samples) | 53h | ($2,000) |
 
 **Hiring trigger:** Start recruiting a freelance editor (paid test) when **signed editing load reaches 40h/month**. Have them trained and live **before** signing the 3rd retainer or any Full Studio client. Full process in `05_Delivery_and_Fulfillment/01_Global_Delivery_SOP.md` §9.
 

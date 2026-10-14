@@ -54,10 +54,37 @@ Is hafte ka kaam:
 Har naye client ke liye backend checklist ready ho rahi hai (kaun kya karega, kitne din mein delivery). Woh aate hi share karta/karti hoon.
 ```
 
-## Message 4 — Global launch (fill in after the global plan is reviewed)
+## Message 4 — Global launch (send only after the owner approves the USD prices in `12_Global_Abroad_Workspace_USD/00_GLOBAL_MASTER_PLAN.md` §9)
 
 ```text
-[To be completed from 12_Global_Abroad_Workspace_USD/09_Team_Briefing/01_Global_Team_Brief.md once the owner approves the global plan.]
+*VanIndra Creations — GLOBAL LAUNCH (USD)*
+
+Namaste team! Aaj se hum officially abroad clients ke liye bhi kaam shuru kar rahe hain — US, Canada, Australia, UK aur baaki English-speaking countries. Pricing dollars mein hogi:
+- $149 ka 3-video Pilot (first month mein poora adjust ho jayega)
+- *Spark* $500/month — 12 videos
+- *Momentum* $1,000/month — 20 videos + plan + scripts
+- *Full Studio* $2,000/month — 30 videos + posting + account handling
+
+Hamari USP: *"Your videos, edited while you sleep."* Client raat ko footage upload karega, hum India ke din mein edit karenge, aur unki subah tak videos ready hongi.
+
+*Kaun kya karega:*
+*Vandana Yadav* — Founder & creative head. Har video ka final QA (kya post karna hai, kya nahi), monthly plans & scripts, aur har naye client ke liye 30-sec welcome video.
+*Smita Yadav* — Discovery calls (US calls shaam 7:30–10:30 baje), proposals, closing, billing aur client relations. Clients ko WhatsApp sirf +91 81128 59437 diya jayega.
+*Akarsh Yadav* — Global lead generation ka lead + editing head. Roz ~30 naye leads, 40–50 personal messages, max 2 free sample edits, aur har hafte 3–5 calls book karna.
+
+*Is hafte ke tasks:*
+Vandana: 3 reels choose karo (English subtitles ke liye), 30-sec English intro record karo, 30 hooks ka bank banao, Friday tak Akarsh ke 10 portfolio edits ka QA.
+Smita: LinkedIn profile English mein, CA meeting book karo, 2 payment options ke liye apply karo, booking page set karo, call script ki 3 practice, aur apni exam dates + evening availability batao.
+Akarsh: Lead tracker Google Sheet mein, LinkedIn profile English mein, 10 English portfolio edits, 150 leads research (podcasters + health), Day 3 se roz 15 LinkedIn + 15 Insta DMs.
+
+*Rules yaad rakhna:*
+1. Clients se sirf proper English — Hinglish ya "kindly revert" nahi.
+2. Views/followers ki guarantee kabhi nahi dena.
+3. Sirf official full names use karo.
+4. Password kabhi mat maangna.
+
+Saari details folder mein hain: 12_Global_Abroad_Workspace_USD/
+Monday subah 10 baje 30-min kickoff call. Chalo, VanIndra Creations ko global banate hain!
 ```
 
 ---

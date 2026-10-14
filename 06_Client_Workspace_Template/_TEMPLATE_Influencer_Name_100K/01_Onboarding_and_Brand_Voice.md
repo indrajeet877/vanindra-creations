@@ -11,9 +11,9 @@
 - **Niche / Category:** `[e.g., Fitness / Skincare / Education / Lifestyle]`
 - **Primary Language:** `[Hindi / Hinglish / English]`
 - **Package Selected:** `[Starter 12 Reels / Pro 20 Reels / VIP 30 Reels]`
-- **Account Manager (Outreach/Comms):** `[Guggy / Sahil]`
+- **Account Manager (Outreach/Comms):** `[Smita Yadav / Akarsh Yadav]`
 - **Creative Review:** `Vandana Yadav (@vandanay2012)`
-- **Lead Editor:** `Akarsh "Sahil" Yadav (@yadavakarsh_07)`
+- **Lead Editor:** `Akarsh Yadav (@yadavakarsh_07)`
 
 ---
 
@@ -36,7 +36,7 @@
 
 ---
 
-## 4. Editing & Packaging Preferences (For Sahil)
+## 4. Editing & Packaging Preferences (For Akarsh Yadav)
 - **Caption Font & Colors:** `[e.g., Bold Montserrat / Yellow & White highlight]`
 - **Pacing:** `[Fast cuts every 2.5s / Smooth lifestyle transitions]`
 - **Agency Attribution Mode:** `[Invite Collaborator on 2 Reels/week + Caption tag on all Reels]`

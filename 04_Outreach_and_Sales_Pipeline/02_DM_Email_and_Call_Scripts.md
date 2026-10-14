@@ -32,7 +32,7 @@ Once they reply "Yes / Send it":
 >
 > Notice how we separated **"What to Post"** vs **"What NOT to Post"** for your audience so your engagement stays high for brand deals.
 >
-> Agar aapko yeh approach pasand aayi, let's do a quick **10-minute Google Meet / call** tomorrow with our founder Indrajeet & Vandana (`@vandanay2012`) — hum aapko dikhayenge ki kaise aap mahine mein sirf 2 ghante shoot karke poore 20–30 high-retention Reels humpe chhod sakte ho.
+> Agar aapko yeh approach pasand aayi, let's do a quick **10-minute Google Meet / call** tomorrow with our founder Vandana Yadav (`@vandanay2012`) and Smita Yadav — hum aapko dikhayenge ki kaise aap mahine mein sirf 2 ghante shoot karke poore 20–30 high-retention Reels humpe chhod sakte ho.
 > Kal evening 5 PM ya 7 PM mein se kya suit karega aapko?
 
 ---
@@ -46,15 +46,15 @@ Once they reply "Yes / Send it":
 
 ---
 
-## 4. The 15-Minute Discovery Call Script (Indrajeet + Vandana + Guggy/Sahil)
+## 4. The 15-Minute Discovery Call Script (Vandana Yadav + Smita Yadav + Akarsh Yadav)
 
-1. **Minutes 0–3: Warm Connection (Vandana & Guggy)**
+1. **Minutes 0–3: Warm Connection (Vandana & Smita)**
    - Compliment their journey to 100K+ followers.
    - Vandana shares relatable creator empathy: *"As a creator myself (`@vandanay2012`), I know the hardest part isn't talking to the camera — it's deciding what to post every day and sitting for 3 hours editing."*
-2. **Minutes 3–7: Diagnose Their Bottleneck (Indrajeet)**
+2. **Minutes 3–7: Diagnose Their Bottleneck (Smita)**
    - Ask: *"Right now, how do you decide what to shoot each week? And who edits your videos?"*
    - Ask: *"What happens when you get busy — does posting stop for 1–2 weeks?"*
-3. **Minutes 7–12: Present Our "Done-For-You Content Engine" (Indrajeet & Sahil)**
+3. **Minutes 7–12: Present Our "Done-For-You Content Engine" (Vandana & Akarsh)**
    - Show them their custom audit + a sample Client Folder (`06_Client_Workspace_Template/`).
    - Explain the 3-step workflow:
      1. **We plan & script everything** ("What to post & what NOT to post" + word-for-word hooks).
