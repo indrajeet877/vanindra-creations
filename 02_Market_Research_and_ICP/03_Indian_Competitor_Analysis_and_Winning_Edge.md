@@ -63,5 +63,5 @@
 1. **Sole Public Founder:** **Vandana Yadav (`@vandanay2012`)** — *Founder & Chief Influencer Director, VanIndra Creations* (and Flagship Creator Case Study #1). Having an active female Indian influencer as the public Founder immediately builds 10x higher trust with fellow creators, female influencers, doctors, and business families across India.
 2. **Public Studio Leadership Team:**
    - **Smita Yadav ("Guggy") (`@smitayadav_0901` | `+91 8112859437` | `smitayadav497@gmail.com`)** — *Head of Creator Growth, Brand Deals & Client Relations (B.Com, Gargi College, University of Delhi)*.
-   - **Akarsh Yadav ("Sahil") (`@yadavakarsh_07` | `+91 9415259408` | `akarshgkp8756539282@gmail.com`)** — *Head of High-Retention Video Editing, Reels & Technical Production (B.Voc Food Tech, University of Allahabad)*.
+   - **Akarsh Yadav ("Sahil") (`@yadavakarsh_07` | `[private — internal only]` | `akarshgkp8756539282@gmail.com`)** — *Head of High-Retention Video Editing, Reels & Technical Production (B.Voc Food Tech, University of Allahabad)*.
 3. **100% Behind-the-Scenes Architect (Never Shown on Public Websites):** **Indrajeet Yadav** — Operates strictly in the background running the AI pipeline, multi-site architecture, and automation engines.
