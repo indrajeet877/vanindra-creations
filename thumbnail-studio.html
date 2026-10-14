@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VanIndra Creations | Live 9:16 Reel Cover &amp; YouTube Thumbnail Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-obsidian: #0b0e12;
+      --bg-card: #161c24;
+      --gold-imperial: #e5b84b;
+      --emerald-deep: #0f3d2b;
+      --text-white: #f8fafc;
+      --text-silver: #cbd5e1;
+      --border-gold: rgba(229, 184, 75, 0.35);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at 20% 10%, rgba(15, 61, 43, 0.3), transparent 45%), var(--bg-obsidian);
+      color: var(--text-white);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      padding: 18px 28px;
+      border-bottom: 1px solid var(--border-gold);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(11, 14, 18, 0.9);
+    }
+    .studio-layout {
+      max-width: 1200px;
+      margin: 32px auto;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 32px;
+      align-items: start;
+    }
+    .controls-card, .preview-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 18px;
+      padding: 26px;
+    }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; margin-bottom: 6px; }
+    .form-group { margin-bottom: 16px; }
+    label { display: block; font-size: 0.84rem; font-weight: 600; color: var(--gold-imperial); margin-bottom: 6px; }
+    input, select {
+      width: 100%;
+      padding: 11px 13px;
+      border-radius: 8px;
+      background: #0b0e12;
+      border: 1px solid rgba(203, 213, 225, 0.25);
+      color: #fff;
+      font-size: 0.92rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      font-size: 0.92rem;
+    }
+    .btn-gold { background: linear-gradient(135deg, #f6d889, #d49b27); color: #0b0e12; }
+    .btn-outline { background: transparent; color: var(--text-silver); border: 1px solid var(--border-gold); }
+    canvas {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border-gold);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.65);
+    }
+    @media (max-width: 900px) {
+      .studio-layout { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <strong style="font-family:'Cinzel', serif; letter-spacing:0.12em; color:var(--gold-imperial);">VANINDRA ◆ CREATIONS</strong>
+      <span style="font-size:0.85rem; color:var(--text-silver);">| Live 9:16 Reel Cover &amp; Thumbnail Studio</span>
+    </div>
+    <a href="index.html" class="btn btn-outline">← Back to Main Website</a>
+  </header>
+
+  <main class="studio-layout">
+    <section class="controls-card">
+      <h1>Design High-Retention 9:16 Reel Covers in 10 Seconds</h1>
+      <p style="font-size:0.88rem; color:var(--text-silver); margin-bottom:20px;">
+        Built for <strong>Sahil (@yadavakarsh_07)</strong>, <strong>Guggy (@smitayadav_0901)</strong>, and <strong>Vandana (@vandanay2012)</strong> to generate cohesive, sponsor-ready Reel grid thumbnails.
+      </p>
+
+      <div class="form-group">
+        <label for="themeSelect">1. Select VanIndra Brand Theme</label>
+        <select id="themeSelect" onchange="renderThumbnail()">
+          <option value="emerald_gold">Imperial Emerald, Gold &amp; Obsidian Slate (Signature Crest Vibe)</option>
+          <option value="titanium_slate">Architectural Titanium Gray &amp; Brushed Silver</option>
+          <option value="obsidian_gold">Royal Obsidian Black &amp; Electric Gold</option>
+          <option value="creator_crimson">High-Alert Myth-Buster (Slate + Crimson Hook Pill)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="topBadge">2. Top Creator / Niche Pill Badge</label>
+        <input type="text" id="topBadge" value="@VANINDRACREATIONS • 100K+ STUDIO" oninput="renderThumbnail()">
+      </div>
+
+      <div class="form-group">
+        <label for="hookLine1">3. Main 3-Word Hook Line 1 (Big Bold)</label>
+        <input type="text" id="hookLine1" value="WHY 100K+ CREATORS" oninput="renderThumbnail()">
+      </div>
+
+      <div class="form-group">
+        <label for="hookLine2">4. Main Hook Line 2 (Accent Highlight)</label>
+        <input type="text" id="hookLine2" value="GET STUCK IN INDIA" oninput="renderThumbnail()">
+      </div>
+
+      <div class="form-group">
+        <label for="pillSubtitle">5. Highlight Box / Payoff Subtitle</label>
+        <input type="text" id="pillSubtitle" value="AND HOW WE FIX IT IN 7 DAYS" oninput="renderThumbnail()">
+      </div>
+
+      <div class="form-group">
+        <label for="creatorFooter">6. Bottom Creator Attribution</label>
+        <select id="creatorFooter" onchange="renderThumbnail()">
+          <option value="VANINDRA CREATIONS • @vanindracreations">VANINDRA CREATIONS • @vanindracreations</option>
+          <option value="VANDANA YADAV • @vandanay2012">VANDANA YADAV • @vandanay2012</option>
+          <option value="SMITA YADAV (GUGGY) • @smitayadav_0901">SMITA YADAV (GUGGY) • @smitayadav_0901</option>
+          <option value="AKARSH YADAV (SAHIL) • @yadavakarsh_07">AKARSH YADAV (SAHIL) • @yadavakarsh_07</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="bgUpload">7. Optional: Upload Creator Photo Background</label>
+        <input type="file" id="bgUpload" accept="image/*" onchange="handleImageUpload(event)">
+      </div>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:22px;">
+        <button type="button" class="btn btn-gold" onclick="downloadThumbnail()">⬇ Download 1080×1920 HD Reel Cover (.PNG)</button>
+        <button type="button" class="btn btn-outline" onclick="clearPhoto()">Reset Photo</button>
+      </div>
+    </section>
+
+    <aside class="preview-card">
+      <div style="text-align:center; margin-bottom:10px; font-size:0.82rem; color:var(--text-silver);">Live 9:16 Instagram Reel Cover Preview (1080×1920)</div>
+      <canvas id="thumbCanvas" width="1080" height="1920"></canvas>
+    </aside>
+  </main>
+
+  <script>
+    let uploadedImg = null;
+
+    function handleImageUpload(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(evt) {
+        const img = new Image();
+        img.onload = function() {
+          uploadedImg = img;
+          renderThumbnail();
+        };
+        img.src = evt.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function clearPhoto() {
+      uploadedImg = null;
+      document.getElementById('bgUpload').value = "";
+      renderThumbnail();
+    }
+
+    function renderThumbnail() {
+      const canvas = document.getElementById('thumbCanvas');
+      const ctx = canvas.getContext('2d');
+      const theme = document.getElementById('themeSelect').value;
+      const topBadge = document.getElementById('topBadge').value.toUpperCase();
+      const line1 = document.getElementById('hookLine1').value.toUpperCase();
+      const line2 = document.getElementById('hookLine2').value.toUpperCase();
+      const sub = document.getElementById('pillSubtitle').value.toUpperCase();
+      const footer = document.getElementById('creatorFooter').value;
+
+      // Theme Palettes
+      const themes = {
+        emerald_gold: { bg1: '#091410', bg2: '#0f3d2b', bg3: '#0b0e12', accent: '#e5b84b', pillText: '#0b0e12' },
+        titanium_slate: { bg1: '#0f1319', bg2: '#232b38', bg3: '#0b0e12', accent: '#cbd5e1', pillText: '#0b0e12' },
+        obsidian_gold: { bg1: '#08090c', bg2: '#1c1810', bg3: '#08090c', accent: '#f6d889', pillText: '#0b0e12' },
+        creator_crimson: { bg1: '#12151e', bg2: '#2b1219', bg3: '#0b0e12', accent: '#f43f5e', pillText: '#ffffff' }
+      };
+      const pal = themes[theme] || themes.emerald_gold;
+
+      // 1. Background
+      const grad = ctx.createLinearGradient(0, 0, 1080, 1920);
+      grad.addColorStop(0, pal.bg1);
+      grad.addColorStop(0.5, pal.bg2);
+      grad.addColorStop(1, pal.bg3);
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, 1080, 1920);
+
+      // If user uploaded a creator photo, draw it with a luxury dark gradient vignette
+      if (uploadedImg) {
+        const scale = Math.max(1080 / uploadedImg.width, 1920 / uploadedImg.height);
+        const w = uploadedImg.width * scale;
+        const h = uploadedImg.height * scale;
+        ctx.drawImage(uploadedImg, (1080 - w) / 2, (1920 - h) / 2, w, h);
+
+        const overlay = ctx.createLinearGradient(0, 0, 0, 1920);
+        overlay.addColorStop(0, 'rgba(11, 14, 18, 0.55)');
+        overlay.addColorStop(0.55, 'rgba(11, 14, 18, 0.72)');
+        overlay.addColorStop(1, 'rgba(11, 14, 18, 0.95)');
+        ctx.fillStyle = overlay;
+        ctx.fillRect(0, 0, 1080, 1920);
+      } else {
+        // Subtle architectural studio grid lines
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
+        ctx.lineWidth = 2;
+        for (let x = 120; x < 1080; x += 120) {
+          ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, 1920); ctx.stroke();
+        }
+        for (let y = 120; y < 1920; y += 120) {
+          ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(1080, y); ctx.stroke();
+        }
+      }
+
+      // Outer Luxury Gold/Metallic Frame Border
+      ctx.strokeStyle = pal.accent;
+      ctx.lineWidth = 4;
+      ctx.strokeRect(48, 48, 984, 1824);
+
+      // 2. Top Pill Badge
+      ctx.fillStyle = 'rgba(11, 14, 18, 0.85)';
+      ctx.fillRect(140, 260, 800, 74);
+      ctx.strokeStyle = pal.accent;
+      ctx.lineWidth = 2.5;
+      ctx.strokeRect(140, 260, 800, 74);
+
+      ctx.fillStyle = pal.accent;
+      ctx.font = '700 30px "Space Grotesk", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(topBadge, 540, 308);
+
+      // 3. Center Rising V-Wing + Crown Dot Emblem
+      ctx.save();
+      ctx.translate(540, 680);
+      ctx.beginPath();
+      ctx.arc(0, 0, 110, 0, Math.PI * 2);
+      ctx.fillStyle = '#0f3d2b';
+      ctx.fill();
+      ctx.lineWidth = 8;
+      ctx.strokeStyle = pal.accent;
+      ctx.stroke();
+
+      // V-Wings
+      ctx.beginPath();
+      ctx.moveTo(-55, -35);
+      ctx.lineTo(0, 62);
+      ctx.lineTo(55, -35);
+      ctx.strokeStyle = '#f8fafc';
+      ctx.lineWidth = 16;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.stroke();
+
+      // Golden Crown Sphere
+      ctx.beginPath();
+      ctx.arc(0, -32, 20, 0, Math.PI * 2);
+      ctx.fillStyle = '#e5b84b';
+      ctx.fill();
+      ctx.restore();
+
+      // 4. Main Hook Typography (Center Safe Zone for Instagram 4:5 & 9:16 Grid)
+      ctx.fillStyle = '#f8fafc';
+      ctx.font = '800 84px "Space Grotesk", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(line1, 540, 960);
+
+      ctx.fillStyle = pal.accent;
+      ctx.font = '800 88px "Space Grotesk", sans-serif';
+      ctx.fillText(line2, 540, 1070);
+
+      // 5. Subtitle Pill Box
+      ctx.fillStyle = pal.accent;
+      ctx.fillRect(110, 1140, 860, 96);
+      ctx.fillStyle = pal.pillText;
+      ctx.font = '800 42px "Space Grotesk", sans-serif';
+      ctx.fillText(sub, 540, 1203);
+
+      // 6. Divider Diamond (─── ◆ ───)
+      ctx.strokeStyle = pal.accent;
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(260, 1480); ctx.lineTo(490, 1480);
+      ctx.moveTo(590, 1480); ctx.lineTo(820, 1480);
+      ctx.stroke();
+      ctx.fillStyle = pal.accent;
+      ctx.font = '700 38px serif';
+      ctx.fillText('◆', 540, 1493);
+
+      // 7. Bottom Brand Lockup
+      ctx.fillStyle = '#f8fafc';
+      ctx.font = '700 44px "Cinzel", serif';
+      ctx.fillText('V A N I N D R A   C R E A T I O N S', 540, 1580);
+
+      ctx.fillStyle = '#cbd5e1';
+      ctx.font = '600 30px "Inter", sans-serif';
+      ctx.fillText(footer, 540, 1650);
+    }
+
+    function downloadThumbnail() {
+      const canvas = document.getElementById('thumbCanvas');
+      const url = canvas.toDataURL('image/png');
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'VanIndra_Creations_Reel_Cover_1080x1920.png';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    window.onload = () => {
+      document.fonts.ready.then(renderThumbnail);
+      renderThumbnail();
+    };
+  </script>
+</body>
+</html>

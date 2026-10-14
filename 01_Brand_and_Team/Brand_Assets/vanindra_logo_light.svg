@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 140" width="740" height="140" role="img" aria-label="VanIndra Creation Official Logo (Light Gray Editorial Edition)">
+  <defs>
+    <linearGradient id="bgLightVI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="darkMetalVI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Light Gray Editorial Background -->
+  <rect width="740" height="140" rx="16" fill="url(#bgLightVI)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Minimal Icon Badge -->
+  <g transform="translate(80, 70)">
+    <circle cx="0" cy="0" r="43" fill="#FFFFFF" stroke="url(#darkMetalVI)" stroke-width="4.5"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#CBD5E1" stroke-width="1.2"/>
+    <path d="M -21 -16 L -8 17 L 5 -16" fill="none" stroke="url(#darkMetalVI)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="16" y1="-16" x2="16" y2="16" stroke="url(#darkMetalVI)" stroke-width="6.5" stroke-linecap="round"/>
+    <polygon points="24,-6 32,0 24,6" fill="#334155"/>
+  </g>
+
+  <!-- Bold Agency Wordmark: VANINDRA CREATION -->
+  <text x="146" y="84" font-family="'Space Grotesk', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="40" letter-spacing="2.5">
+    <tspan fill="#0F172A" font-weight="800">VANINDRA</tspan><tspan fill="#475569" font-weight="300"> CREATION</tspan>
+  </text>
+</svg>

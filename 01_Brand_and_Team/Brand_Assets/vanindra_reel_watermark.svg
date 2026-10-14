@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 64" width="390" height="64" role="img" aria-label="VanIndra Creation Reel Watermark Badge">
+  <!-- Semi-transparent pill for Reel video overlay -->
+  <rect x="2" y="2" width="386" height="60" rx="30" fill="#111419" fill-opacity="0.74" stroke="#94A3B8" stroke-opacity="0.38" stroke-width="1.5"/>
+  <g transform="translate(36, 32) scale(0.46)">
+    <circle cx="0" cy="0" r="42" fill="#14181F" stroke="#CBD5E1" stroke-width="5"/>
+    <path d="M -20 -15 L -7 16 L 6 -15" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="17" y1="-15" x2="17" y2="15" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="68" y="38" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="18" letter-spacing="1.6">
+    <tspan fill="#FFFFFF" font-weight="800">VANINDRA</tspan><tspan fill="#CBD5E1" font-weight="400"> CREATION</tspan>
+  </text>
+  <text x="305" y="37" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8" font-weight="600" letter-spacing="1">100K+ STUDIO</text>
+</svg>

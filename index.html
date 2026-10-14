@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VanIndra Creations | India's Premier Content &amp; Growth Studio for 100K+ Influencers</title>
+  <meta name="description" content="VanIndra Creations: Done-For-You Content Strategy, Viral Scripting, What-to-Post Calendars &amp; High-Retention Editing for Indian Influencers with 1,00,000+ Followers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* VanIndra Creations Signature Palette: Obsidian Slate + Deep Emerald + Imperial Gold + Brushed Titanium Silver */
+      --bg-obsidian: #0b0e12;
+      --bg-slate-deep: #11161d;
+      --bg-carbon-card: #161c24;
+      --bg-gunmetal-elevated: #1e2631;
+      --emerald-deep: #0f3d2b;
+      --emerald-mid: #166547;
+      --emerald-glow: #10b981;
+      --gold-imperial: #e5b84b;
+      --gold-light: #f6d889;
+      --gold-border: rgba(229, 184, 75, 0.38);
+      --border-hairline: rgba(148, 163, 184, 0.18);
+      --border-metallic: rgba(203, 213, 225, 0.34);
+      --text-alabaster: #f8fafc;
+      --text-platinum: #e2e8f0;
+      --text-silver: #cbd5e1;
+      --text-slate: #94a3b8;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-pill: 999px;
+      --shadow-luxury: 0 24px 60px -15px rgba(0, 0, 0, 0.72), 0 0 1px 1px rgba(229, 184, 75, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-obsidian);
+      color: var(--text-alabaster);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 18% 8%, rgba(22, 101, 71, 0.24) 0%, transparent 40%),
+        radial-gradient(circle at 82% 14%, rgba(229, 184, 75, 0.14) 0%, transparent 38%),
+        radial-gradient(circle at 50% 60%, rgba(148, 163, 184, 0.08) 0%, transparent 50%),
+        linear-gradient(180deg, var(--bg-obsidian) 0%, var(--bg-slate-deep) 50%, var(--bg-obsidian) 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    .font-royal {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.14em;
+    }
+
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    /* Header & Navigation */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 14, 18, 0.88);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--gold-border);
+    }
+
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 78px;
+      gap: 16px;
+    }
+
+    .brand-lockup {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-lockup img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1.5px solid var(--gold-imperial);
+      object-fit: cover;
+    }
+
+    .brand-wordmark {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-wordmark strong {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: 0.14em;
+      color: var(--text-alabaster);
+    }
+
+    .brand-wordmark span {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 500;
+      font-size: 0.68rem;
+      letter-spacing: 0.28em;
+      color: var(--gold-imperial);
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-silver);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-imperial);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 11px 20px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      white-space: nowrap;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #f6d889 0%, #d49b27 100%);
+      color: #0b0e12;
+      font-weight: 700;
+      box-shadow: 0 8px 25px rgba(229, 184, 75, 0.28);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #ffe6a3 0%, #e5b84b 100%);
+      box-shadow: 0 12px 30px rgba(229, 184, 75, 0.42);
+    }
+
+    .btn-emerald {
+      background: linear-gradient(135deg, #166547 0%, #0f3d2b 100%);
+      color: var(--text-alabaster);
+      border-color: rgba(16, 185, 129, 0.45);
+      box-shadow: 0 8px 24px rgba(15, 61, 43, 0.45);
+    }
+
+    .btn-emerald:hover {
+      transform: translateY(-2px);
+      border-color: var(--emerald-glow);
+    }
+
+    .btn-secondary {
+      background: var(--bg-gunmetal-elevated);
+      color: var(--text-alabaster);
+      border-color: var(--border-metallic);
+    }
+
+    .btn-secondary:hover {
+      background: #283240;
+      border-color: var(--gold-imperial);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-silver);
+      border-color: var(--border-hairline);
+    }
+
+    .btn-ghost:hover {
+      color: var(--gold-imperial);
+      border-color: var(--gold-border);
+      background: rgba(229, 184, 75, 0.06);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 72px 0 60px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 15px;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(90deg, rgba(15, 61, 43, 0.65), rgba(27, 32, 41, 0.75));
+      border: 1px solid var(--gold-border);
+      font-size: 0.77rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--emerald-glow);
+      box-shadow: 0 0 10px var(--emerald-glow);
+    }
+
+    .hero-title {
+      font-size: clamp(2.25rem, 4.3vw, 3.6rem);
+      line-height: 1.08;
+      font-weight: 700;
+      color: var(--text-alabaster);
+      margin-bottom: 18px;
+    }
+
+    .hero-title .gold-titanium-gradient {
+      background: linear-gradient(92deg, #f6d889 0%, #e5b84b 38%, #f8fafc 75%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.06rem;
+      color: var(--text-silver);
+      max-width: 610px;
+      margin-bottom: 28px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 34px;
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    .metric-item strong {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.45rem;
+      color: var(--gold-light);
+    }
+
+    .metric-item span {
+      font-size: 0.82rem;
+      color: var(--text-slate);
+    }
+
+    /* Hero Crest & Showcase Card */
+    .hero-showcase-card {
+      background: linear-gradient(155deg, rgba(15, 61, 43, 0.34) 0%, rgba(22, 28, 36, 0.96) 55%, rgba(11, 14, 18, 0.98) 100%);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      box-shadow: var(--shadow-luxury);
+      position: relative;
+    }
+
+    .crest-hero-banner {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .crest-hero-banner img {
+      width: 78px;
+      height: 78px;
+      border-radius: 16px;
+      border: 1.5px solid var(--gold-imperial);
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .badge-tag {
+      font-size: 0.73rem;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: rgba(229, 184, 75, 0.14);
+      border: 1px solid var(--gold-border);
+      color: var(--gold-light);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .pipeline-steps-mini {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .mini-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      background: rgba(11, 14, 18, 0.72);
+      border: 1px solid var(--border-hairline);
+    }
+
+    .mini-step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--emerald-mid), var(--emerald-deep));
+      border: 1px solid var(--gold-imperial);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      flex-shrink: 0;
+    }
+
+    .mini-step h3 {
+      font-size: 0.93rem;
+      color: var(--text-alabaster);
+      margin-bottom: 2px;
+    }
+
+    .mini-step p {
+      font-size: 0.81rem;
+      color: var(--text-silver);
+    }
+
+    /* Section Headers */
+    section.page-section {
+      padding: 72px 0;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 46px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      color: var(--text-alabaster);
+      margin-bottom: 10px;
+    }
+
+    .section-header p {
+      color: var(--text-silver);
+      font-size: 0.98rem;
+    }
+
+    /* Official Brand Logos & Color Swatches Showcase */
+    .brand-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+
+    .brand-asset-card {
+      background: var(--bg-carbon-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: var(--shadow-luxury);
+    }
+
+    .brand-asset-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-hairline);
+      margin-bottom: 12px;
+    }
+
+    .brand-asset-card h3 {
+      font-size: 0.96rem;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+
+    .brand-asset-card p {
+      font-size: 0.78rem;
+      color: var(--text-slate);
+      margin-bottom: 12px;
+    }
+
+    .color-swatch-bar {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+    }
+
+    .swatch-chip {
+      padding: 14px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-metallic);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    .swatch-chip:hover {
+      transform: scale(1.03);
+    }
+
+    /* Before vs After Retention Lab */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .comparison-card {
+      background: var(--bg-carbon-card);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+
+    .comparison-card.upgraded {
+      background: linear-gradient(155deg, rgba(15, 61, 43, 0.35) 0%, #151b24 100%);
+      border-color: var(--gold-imperial);
+      box-shadow: var(--shadow-luxury);
+    }
+
+    .comp-pill {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 16px;
+    }
+
+    .comp-pill.before {
+      background: rgba(244, 63, 94, 0.14);
+      color: #fda4af;
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
+    .comp-pill.after {
+      background: rgba(229, 184, 75, 0.18);
+      color: var(--gold-light);
+      border: 1px solid var(--gold-border);
+    }
+
+    .comp-list {
+      list-style: none;
+      margin-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .comp-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: var(--text-silver);
+    }
+
+    /* Founding Team & Handles */
+    .circle-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .member-card {
+      background: linear-gradient(165deg, #18202a 0%, #12171f 100%);
+      border: 1px solid var(--border-metallic);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .member-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-imperial);
+    }
+
+    .member-role {
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+      color: var(--gold-imperial);
+      margin-bottom: 6px;
+    }
+
+    .member-name {
+      font-size: 1.18rem;
+      color: var(--text-alabaster);
+      margin-bottom: 8px;
+    }
+
+    .member-edu {
+      font-size: 0.76rem;
+      color: #a7f3d0;
+      background: rgba(15, 61, 43, 0.55);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      padding: 4px 9px;
+      border-radius: var(--radius-sm);
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .member-desc {
+      font-size: 0.85rem;
+      color: var(--text-silver);
+      margin-bottom: 16px;
+    }
+
+    .member-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .handle-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.77rem;
+      padding: 7px 11px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-gunmetal-elevated);
+      border: 1px solid var(--border-hairline);
+      color: var(--text-platinum);
+    }
+
+    .handle-link:hover {
+      border-color: var(--gold-imperial);
+      color: var(--gold-light);
+    }
+
+    /* Interactive Tool Panels */
+    .interactive-box {
+      background: linear-gradient(165deg, rgba(15, 61, 43, 0.22) 0%, #151b24 45%, #10141b 100%);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      box-shadow: var(--shadow-luxury);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold-light);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      background: rgba(11, 14, 18, 0.88);
+      border: 1px solid var(--border-metallic);
+      color: var(--text-alabaster);
+      font-family: inherit;
+      font-size: 0.93rem;
+      transition: border-color 0.2s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--gold-imperial);
+    }
+
+    .output-preview-panel {
+      margin-top: 28px;
+      padding: 24px;
+      border-radius: var(--radius-md);
+      background: rgba(11, 14, 18, 0.94);
+      border: 1px solid var(--gold-imperial);
+      display: none;
+    }
+
+    .output-preview-panel.active {
+      display: block;
+    }
+
+    .pre-code {
+      white-space: pre-wrap;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--text-platinum);
+      background: #080a0d;
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-hairline);
+      max-height: 350px;
+      overflow-y: auto;
+      margin: 14px 0;
+    }
+
+    /* Pricing Grid */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .price-card {
+      background: var(--bg-carbon-card);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .price-card.featured {
+      background: linear-gradient(165deg, rgba(15, 61, 43, 0.48) 0%, #171d26 100%);
+      border: 1.5px solid var(--gold-imperial);
+      box-shadow: var(--shadow-luxury);
+      position: relative;
+    }
+
+    .price-tier-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-alabaster);
+      margin-bottom: 6px;
+    }
+
+    .price-amount {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin: 12px 0;
+    }
+
+    .price-amount small {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--text-slate);
+    }
+
+    .price-features {
+      list-style: none;
+      margin: 16px 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 0.86rem;
+      color: var(--text-silver);
+    }
+
+    /* Team Command Center Cards */
+    .command-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .command-card {
+      background: var(--bg-carbon-card);
+      border: 1px solid var(--border-metallic);
+      border-radius: var(--radius-md);
+      padding: 22px;
+    }
+
+    .command-card h3 {
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      padding: 48px 0;
+      border-top: 1px solid var(--gold-border);
+      background: #080a0d;
+      color: var(--text-slate);
+      font-size: 0.88rem;
+    }
+
+    .footer-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .comparison-grid,
+      .circle-grid,
+      .pricing-grid,
+      .brand-gallery-grid,
+      .command-grid {
+        grid-template-columns: 1fr;
+      }
+      .color-swatch-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .nav-links {
+        display: none;
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="#" class="brand-lockup" aria-label="VanIndra Creations Home">
+        <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_dp.jpg" alt="VanIndra Creations Gold and Emerald Crest">
+        <div class="brand-wordmark">
+          <strong>VANINDRA</strong>
+          <span>◆ CREATIONS ◆</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#brand-identity">Brand &amp; Logos</a></li>
+          <li><a href="#founding-team">4 Pillars Team</a></li>
+          <li><a href="#free-audit">Free 7-Day Audit</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#client-portal">Client Portal</a></li>
+          <li><a href="#team-hq">Team Scripts HQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="thumbnail-studio.html" class="btn btn-emerald">🎨 Thumbnail Studio</a>
+        <a href="#free-audit" class="btn btn-gold">Claim Free Audit</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow-pill">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>India's #1 Content &amp; Growth Studio For 1,00,000+ Followers Influencers</span>
+          </div>
+          <h1 class="hero-title">
+            You Built a 1 Lakh+ Audience.<br>
+            <span class="gold-titanium-gradient">VanIndra Creations Scales Your Next 10 Lakh Views.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Stop stressing over <em>what to post and what not to post</em>. Stop spending 4 hours editing a single Reel. <strong>VanIndra Creations</strong> is your Done-For-You Content Strategy, Viral Scripting &amp; High-Retention Video Studio.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#free-audit" class="btn btn-gold">🎁 Claim Free 7-Day Content Audit</a>
+            <a href="#client-portal" class="btn btn-secondary">📋 Submit Client Requirements</a>
+            <a href="thumbnail-studio.html" class="btn btn-emerald">🎬 Launch 9:16 Thumbnail Studio</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong>100K – 500K+</strong>
+              <span>Target Creator Tier</span>
+            </div>
+            <div class="metric-item">
+              <strong>2 Hrs / Wk</strong>
+              <span>Your Only Shoot Time</span>
+            </div>
+            <div class="metric-item">
+              <strong>3x – 5x</strong>
+              <span>Hook Retention Lift</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Signature Crest + 4-Step Engine -->
+        <aside class="hero-showcase-card" aria-label="VanIndra Creations 4-Step Engine">
+          <div class="crest-hero-banner">
+            <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_crest.jpg" alt="VanIndra Creations Official Gold, Emerald and Titanium Crest">
+            <div>
+              <span class="badge-tag">@vanindracreations</span>
+              <h2 class="font-display" style="font-size:1.2rem; margin-top:6px; color:var(--text-alabaster);">The VanIndra Studio Engine</h2>
+              <p style="font-size:0.8rem; color:var(--text-silver);">Obsidian Slate • Studio Emerald • Imperial Gold</p>
+            </div>
+          </div>
+          <div class="pipeline-steps-mini">
+            <div class="mini-step">
+              <span class="mini-step-num">01</span>
+              <div>
+                <h3>"What To Post vs. What NOT To Post" Calendar</h3>
+                <p>Indrajeet's AI + Influencer Strategy Engine builds your 30-day niche calendar so you never post off-brand content again.</p>
+              </div>
+            </div>
+            <div class="mini-step">
+              <span class="mini-step-num">02</span>
+              <div>
+                <h3>Word-for-Word 3-Second Hooks &amp; Scripts</h3>
+                <p>Reviewed by Co-Founder &amp; active influencer <strong>Vandana Yadav (@vandanay2012)</strong> for natural camera delivery.</p>
+              </div>
+            </div>
+            <div class="mini-step">
+              <span class="mini-step-num">03</span>
+              <div>
+                <h3>High-Retention Studio Editing &amp; Thumbnails</h3>
+                <p>Dynamic Hinglish/English captions, B-roll cuts, SFX &amp; sponsor-ready covers led by <strong>Akarsh "Sahil" Yadav (@yadavakarsh_07)</strong>.</p>
+              </div>
+            </div>
+            <div class="mini-step">
+              <span class="mini-step-num">04</span>
+              <div>
+                <h3>Collab-Tag Growth Flywheel</h3>
+                <p>Scale views and land ₹30K–₹1L+ brand deals with <strong>Smita "Guggy" Yadav (@smitayadav_0901)</strong> leading partnerships.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- OFFICIAL BRAND IDENTITY, LOGOS, THUMBNAILS & COLOR SYSTEM -->
+    <section id="brand-identity" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Official Brand Identity, Logos, Thumbnails &amp; Palette</h2>
+          <p>Upgraded from your original concept into a high-contrast <strong>Imperial Gold, Deep Emerald &amp; Architectural Slate Titanium</strong> visual system. Click any asset to download or open our live Thumbnail Generator.</p>
+        </div>
+
+        <div class="brand-gallery-grid">
+          <!-- Asset 1: Signature Crest -->
+          <article class="brand-asset-card">
+            <div>
+              <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_crest.jpg" alt="VanIndra Creations 3D Gold and Emerald Signature Crest">
+              <h3>1. Signature Studio Crest</h3>
+              <p>3D Platinum &amp; Gold Rising V-Wings + Golden Crown Sphere on Deep Emerald-Slate</p>
+            </div>
+            <a href="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_crest.jpg" download class="btn btn-gold" style="width:100%; font-size:0.82rem;">⬇ Download Crest HD</a>
+          </article>
+
+          <!-- Asset 2: Instagram DP Medallion -->
+          <article class="brand-asset-card">
+            <div>
+              <img src="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_dp.jpg" alt="VanIndra Creations 1:1 Instagram Profile Picture Medallion">
+              <h3>2. Official Instagram DP (1:1)</h3>
+              <p>High-Contrast Circular Medallion for Instagram, YouTube &amp; WhatsApp Business</p>
+            </div>
+            <a href="01_Brand_and_Team/Brand_Assets/vanindra_creations_signature_dp.jpg" download class="btn btn-secondary" style="width:100%; font-size:0.82rem;">⬇ Download 1:1 DP</a>
+          </article>
+
+          <!-- Asset 3: 9:16 Reel Cover Thumbnail -->
+          <article class="brand-asset-card">
+            <div>
+              <img src="01_Brand_and_Team/Brand_Assets/vanindra_reel_thumbnail_showcase.jpg" alt="VanIndra Creations 9:16 Instagram Reel Cover Thumbnail">
+              <h3>3. 9:16 Reel Cover Template</h3>
+              <p>High-Retention Grid Cover Design for @vanindracreations &amp; Client Reels</p>
+            </div>
+            <a href="thumbnail-studio.html" class="btn btn-emerald" style="width:100%; font-size:0.82rem;">🎨 Customize in Studio</a>
+          </article>
+
+          <!-- Asset 4: 16:9 Channel Banner & Wordmark -->
+          <article class="brand-asset-card">
+            <div>
+              <img src="01_Brand_and_Team/Brand_Assets/vanindra_channel_banner.jpg" alt="VanIndra Creations 16:9 YouTube and LinkedIn Cover Banner">
+              <h3>4. 16:9 Channel &amp; LinkedIn Banner</h3>
+              <p>Widescreen Studio Header for YouTube, LinkedIn Company Page &amp; Decks</p>
+            </div>
+            <a href="01_Brand_and_Team/Brand_Assets/vanindra_channel_banner.jpg" download class="btn btn-secondary" style="width:100%; font-size:0.82rem;">⬇ Download 16:9 Banner</a>
+          </article>
+        </div>
+
+        <!-- Click-to-Copy Brand Color Swatches -->
+        <div class="color-swatch-bar" aria-label="Official Brand Color Swatches">
+          <div class="swatch-chip" style="background:#0B0E12; color:#F8FAFC;" onclick="copyColor('#0B0E12')">
+            <strong>Obsidian Slate</strong><br>#0B0E12 (Click to Copy)
+          </div>
+          <div class="swatch-chip" style="background:#161C24; color:#CBD5E1;" onclick="copyColor('#161C24')">
+            <strong>Carbon Titanium</strong><br>#161C24 (Cards/UI)
+          </div>
+          <div class="swatch-chip" style="background:#0F3D2B; color:#A7F3D0;" onclick="copyColor('#0F3D2B')">
+            <strong>Crest Emerald</strong><br>#0F3D2B (Studio Core)
+          </div>
+          <div class="swatch-chip" style="background:#10B981; color:#0B0E12;" onclick="copyColor('#10B981')">
+            <strong>Emerald Glow</strong><br>#10B981 (Growth Accent)
+          </div>
+          <div class="swatch-chip" style="background:#E5B84B; color:#0B0E12;" onclick="copyColor('#E5B84B')">
+            <strong>Imperial Gold</strong><br>#E5B84B (Crown &amp; CTA)
+          </div>
+          <div class="swatch-chip" style="background:#CBD5E1; color:#0B0E12;" onclick="copyColor('#CBD5E1')">
+            <strong>Brushed Silver</strong><br>#CBD5E1 (Metallic Gray)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE 4 FOUNDING PILLARS OF VANINDRA CREATIONS -->
+    <section id="founding-team" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>The VanIndra Creations Founding Team (4 Pillars)</h2>
+          <p>Combining AI content systems, insider influencer experience, Delhi University commerce strategy, and Allahabad University food/health science &amp; video engineering.</p>
+        </div>
+
+        <div class="circle-grid">
+          <!-- Indrajeet Yadav -->
+          <article class="member-card">
+            <div>
+              <div class="member-role">Founder &amp; Project Head</div>
+              <h3 class="member-name">Indrajeet Yadav</h3>
+              <span class="member-edu">AI Pipeline &amp; Strategy Architect</span>
+              <p class="member-desc">Heads VanIndra Creations' overall strategy, Master LLM Content Factory, niche positioning matrices, multi-website ecosystem &amp; app architecture.</p>
+            </div>
+            <div class="member-links">
+              <span class="handle-link"><span>⚙️ Head of Project &amp; AI Systems</span></span>
+            </div>
+          </article>
+
+          <!-- Vandana Yadav -->
+          <article class="member-card">
+            <div>
+              <div class="member-role">Co-Founder &amp; Creative Director</div>
+              <h3 class="member-name">Vandana Yadav</h3>
+              <span class="member-edu">Flagship Influencer &amp; QA Lead</span>
+              <p class="member-desc">Active influencer leading creative direction, "What to Post vs. What Not to Post" quality control, and authentic creator storytelling.</p>
+            </div>
+            <div class="member-links">
+              <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer" class="handle-link">
+                <span>📸 @vandanay2012</span> <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Smita Yadav (Guggy) -->
+          <article class="member-card">
+            <div>
+              <div class="member-role">Growth &amp; Client Relations Lead</div>
+              <h3 class="member-name">Smita Yadav (Guggy)</h3>
+              <span class="member-edu">B.Com • Gargi College, Delhi Univ.</span>
+              <p class="member-desc">Instagram creator &amp; DU commerce strategist leading 100K+ influencer outreach, discovery calls, lifestyle/fashion brand positioning &amp; onboarding.</p>
+            </div>
+            <div class="member-links">
+              <a href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer" class="handle-link">
+                <span>📸 @smitayadav_0901</span> <span>↗</span>
+              </a>
+              <a href="https://wa.me/918112859437" target="_blank" rel="noopener noreferrer" class="handle-link">
+                <span>💬 +91 8112859437</span> <span>WA</span>
+              </a>
+              <a href="mailto:smitayadav497@gmail.com" class="handle-link">
+                <span>✉️ smitayadav497@gmail.com</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Akarsh Yadav (Sahil) -->
+          <article class="member-card">
+            <div>
+              <div class="member-role">Tech, Editing &amp; Science Lead</div>
+              <h3 class="member-name">Akarsh Yadav (Sahil)</h3>
+              <span class="member-edu">B.Voc Food Tech • Univ. of Allahabad</span>
+              <p class="member-desc">Tech-driven creator &amp; editor engineering high-retention Reels, 15s Before/After samples, and specialized hooks for Food, Nutrition, Fitness &amp; Health creators.</p>
+            </div>
+            <div class="member-links">
+              <a href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer" class="handle-link">
+                <span>📸 @yadavakarsh_07</span> <span>↗</span>
+              </a>
+              <a href="https://wa.me/919415259408" target="_blank" rel="noopener noreferrer" class="handle-link">
+                <span>💬 +91 9415259408</span> <span>WA</span>
+              </a>
+              <a href="mailto:akarshgkp8756539282@gmail.com" class="handle-link">
+                <span>✉️ akarshgkp8756539282@gmail.com</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE VS AFTER RETENTION LAB -->
+    <section id="retention-lab" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why 1 Lakh+ Influencers Get Stuck (And How We Fix It)</h2>
+          <p>Hitting 1,00,000 followers proves people love your voice. Scaling to 5,00,000+ and landing high-paying brand deals requires studio-grade retention systems.</p>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <span class="comp-pill before">❌ Typical Solo 100K+ Creator</span>
+            <h3>Random Posting &amp; Editing Fatigue</h3>
+            <ul class="comp-list">
+              <li><span>✖</span> <span><strong>Slow First 3 Seconds:</strong> Starting Reels with "Hello guys, welcome back..." loses 68% of viewers immediately.</span></li>
+              <li><span>✖</span> <span><strong>Topic Confusion:</strong> Mixing random vlogs, quotes, and niche tips confuses the Instagram algorithm.</span></li>
+              <li><span>✖</span> <span><strong>4-Hour Editing Burnout:</strong> Doing your own cuts and captions leads to 10-day gaps between posts.</span></li>
+              <li><span>✖</span> <span><strong>Messy Grid Aesthetic:</strong> D2C brands skip profiles that lack clean cover titles and consistent formatting.</span></li>
+            </ul>
+          </div>
+
+          <div class="comparison-card upgraded">
+            <span class="comp-pill after">◆ Inside VanIndra Creations</span>
+            <h3>Engineered Retention &amp; Brand Authority</h3>
+            <ul class="comp-list">
+              <li><span>✦</span> <span><strong>Engineered 0–3s Hooks:</strong> Visual headline banner + pattern-interrupt opening scripted for every Reel.</span></li>
+              <li><span>✦</span> <span><strong>Strict 4-Pillar Calendar:</strong> Clear separation of Viral Reach (40%), Authority (30%), Story (20%), and Brand-Ready (10%).</span></li>
+              <li><span>✦</span> <span><strong>Done-For-You Production:</strong> You film raw clips for 2 hours a week; we handle 100% of editing, B-roll, SFX &amp; captions.</span></li>
+              <li><span>✦</span> <span><strong>Sponsor-Magnet Packaging:</strong> Cohesive slate/gold/emerald thumbnails and SEO captions that command higher brand payouts.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE FEATURE 1: FREE 7-DAY CONTENT AUDIT & HOOK GENERATOR -->
+    <section id="free-audit" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Claim Your Free 7-Day Content Audit &amp; 3 Viral Hooks</h2>
+          <p>Have 1,00,000+ followers? Enter your handle and niche below to generate an instant preview of your "What to Post vs. What NOT to Post" rules + request your custom 15-second sample Reel edit.</p>
+        </div>
+
+        <div class="interactive-box">
+          <form id="auditForm" onsubmit="generateInstantAudit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="auditName">Your Name</label>
+                <input type="text" id="auditName" placeholder="e.g., Dr. Neha Sharma / Rohit Verma" required>
+              </div>
+              <div class="form-group">
+                <label for="auditHandle">Instagram Handle (@)</label>
+                <input type="text" id="auditHandle" placeholder="e.g., @yourhandle" required>
+              </div>
+              <div class="form-group">
+                <label for="auditFollowers">Current Follower Count</label>
+                <select id="auditFollowers" required>
+                  <option value="1,00,000 – 2,00,000 (1L–2L)">1,00,000 – 2,00,000 (1L–2L)</option>
+                  <option value="2,00,000 – 5,00,000 (2L–5L)">2,00,000 – 5,00,000 (2L–5L)</option>
+                  <option value="5,00,000 – 1M+ (5L+)">5,00,000 – 1M+ (5L+)</option>
+                  <option value="Growing Towards 100K (50K–100K)">Growing Towards 100K (50K–100K)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="auditNiche">Your Primary Niche</label>
+                <select id="auditNiche" required>
+                  <option value="Lifestyle, Fashion & Beauty">Lifestyle, Fashion &amp; Beauty</option>
+                  <option value="Fitness, Nutrition, Food Science & Doctors">Fitness, Nutrition, Food Science &amp; Doctors</option>
+                  <option value="Education, Career & Exam Mentorship">Education, Career &amp; Exam Mentorship</option>
+                  <option value="Finance, Business & Tech">Finance, Business &amp; Tech</option>
+                  <option value="Regional Vlog, Comedy & Storytelling">Regional Vlog, Comedy &amp; Storytelling</option>
+                  <option value="Astrology, Spirituality & Motivation">Astrology, Spirituality &amp; Motivation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="auditLang">Content Language</label>
+                <select id="auditLang" required>
+                  <option value="Hinglish (Hindi + English Mix)">Hinglish (Hindi + English Mix)</option>
+                  <option value="Pure Hindi">Pure Hindi</option>
+                  <option value="English">English</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="auditPain">Biggest Bottleneck Right Now</label>
+                <select id="auditPain" required>
+                  <option value="Don't know what to post / inconsistent calendar">Don't know what to post / inconsistent calendar</option>
+                  <option value="Need high-retention video editing & captions">Need high-retention video editing &amp; captions</option>
+                  <option value="Views dropped below 10K despite 100K+ followers">Views dropped below 10K despite 100K+ followers</option>
+                  <option value="Want full Done-For-You Scripting + Editing">Want full Done-For-You Scripting + Editing</option>
+                </select>
+              </div>
+            </div>
+            <div style="margin-top: 24px; display:flex; gap:14px; flex-wrap:wrap;">
+              <button type="submit" class="btn btn-gold">⚡ Generate Instant 7-Day Roadmap Preview</button>
+            </div>
+          </form>
+
+          <!-- Instant Audit Output Panel -->
+          <div id="auditOutputPanel" class="output-preview-panel" aria-live="polite">
+            <h3 style="color:var(--gold-light); margin-bottom:6px;">✨ Your VanIndra Creations Diagnosis Is Ready</h3>
+            <p style="font-size:0.88rem; color:var(--text-silver);">Review your tailored hook preview below, then click to send directly to <strong>Smita (Guggy)</strong> or <strong>Akarsh (Sahil)</strong> on WhatsApp to claim your full 7-day script pack &amp; 15-second sample Reel edit.</p>
+            <pre id="auditOutputText" class="pre-code"></pre>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button type="button" class="btn btn-gold" onclick="sendAuditViaWhatsApp('918112859437')">💬 WhatsApp Smita / Guggy (Outreach Lead)</button>
+              <button type="button" class="btn btn-emerald" onclick="sendAuditViaWhatsApp('919415259408')">🎬 WhatsApp Akarsh / Sahil (Production Lead)</button>
+              <button type="button" class="btn btn-ghost" onclick="copyTextById('auditOutputText')">📋 Copy Roadmap Text</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES & PRICING SECTION -->
+    <section id="packages" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Transparent Packages for 100K+ Creators</h2>
+          <p>Just 1 additional brand sponsorship per month pays for your entire VanIndra Creations production team.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Trial Pack -->
+          <article class="price-card">
+            <div>
+              <span class="badge-tag">Zero-Risk Test Drive</span>
+              <h3 class="price-tier-name" style="margin-top:10px;">3-Reel Trial Pack</h3>
+              <div class="price-amount">₹2,999 <small>/ one-time</small></div>
+              <p style="font-size:0.84rem; color:var(--text-slate);">Test our scripting &amp; Sahil's high-retention editing on 3 Reels before committing monthly.</p>
+              <ul class="price-features">
+                <li>✦ 7-Day "What to Post" Mini-Audit</li>
+                <li>✦ 3 Viral Scripts + 3-Sec Hooks</li>
+                <li>✦ 3 High-Retention Edited Reels</li>
+                <li>✦ Custom Captions &amp; Cover Titles</li>
+              </ul>
+            </div>
+            <a href="#client-portal" onclick="selectPackageInForm('3-Reel Trial Pack (₹2,999)')" class="btn btn-secondary" style="width:100%;">Start 3-Reel Trial</a>
+          </article>
+
+          <!-- VanIndra Starter -->
+          <article class="price-card">
+            <div>
+              <span class="badge-tag">3 Reels / Week</span>
+              <h3 class="price-tier-name" style="margin-top:10px;">VanIndra Starter</h3>
+              <div class="price-amount">₹14,999 <small>/ month</small></div>
+              <p style="font-size:0.84rem; color:var(--text-slate);">Consistent weekly structure and pro editing for creators building steady momentum.</p>
+              <ul class="price-features">
+                <li>✦ Monthly "What to Post / Not Post" Bible</li>
+                <li>✦ 12 Word-for-Word Viral Scripts</li>
+                <li>✦ 12 High-Retention Edited Reels</li>
+                <li>✦ SEO Captions, Hashtags &amp; Covers</li>
+              </ul>
+            </div>
+            <a href="#client-portal" onclick="selectPackageInForm('VanIndra Starter - 12 Reels/Mo (₹14,999)')" class="btn btn-secondary" style="width:100%;">Select Starter</a>
+          </article>
+
+          <!-- VanIndra Pro (Featured) -->
+          <article class="price-card featured">
+            <div>
+              <span class="badge-tag" style="background:var(--gold-imperial); color:#0b0e12; font-weight:700;">MOST POPULAR • 100K+ CLUB</span>
+              <h3 class="price-tier-name" style="margin-top:10px;">VanIndra Pro Growth</h3>
+              <div class="price-amount">₹24,999 <small>/ month</small></div>
+              <p style="font-size:0.84rem; color:var(--text-silver);">Complete 5-Reels/week growth machine reviewed by Vandana Yadav (@vandanay2012).</p>
+              <ul class="price-features">
+                <li>✦ Full 30-Day Content Calendar</li>
+                <li>✦ 20 Viral Scripts + Visual B-Roll Cues</li>
+                <li>✦ 20 Studio-Edited Reels + Grid Covers</li>
+                <li>✦ Vandana's Creative QA &amp; Bio Upgrade</li>
+                <li>✦ Bi-Weekly Growth &amp; Analytics Call</li>
+              </ul>
+            </div>
+            <a href="#client-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Mo (₹24,999)')" class="btn btn-gold" style="width:100%;">Select Pro Growth</a>
+          </article>
+
+          <!-- VanIndra 360 VIP -->
+          <article class="price-card">
+            <div>
+              <span class="badge-tag">Daily Posting Engine</span>
+              <h3 class="price-tier-name" style="margin-top:10px;">VanIndra 360° VIP</h3>
+              <div class="price-amount">₹39,999 <small>/ month</small></div>
+              <p style="font-size:0.84rem; color:var(--text-slate);">For busy doctors, coaches, educators &amp; top creators who want 100% hands-off scale.</p>
+              <ul class="price-features">
+                <li>✦ 30 Daily Reels (Scripted &amp; Edited)</li>
+                <li>✦ Complete Scheduling &amp; Posting</li>
+                <li>✦ ManyChat Comment-to-DM Setup</li>
+                <li>✦ Brand Sponsorship Media Kit PDF</li>
+              </ul>
+            </div>
+            <a href="#client-portal" onclick="selectPackageInForm('VanIndra 360 VIP - 30 Reels/Mo (₹39,999)')" class="btn btn-secondary" style="width:100%;">Select 360° VIP</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE FEATURE 2: FULL CLIENT REQUIREMENT INTAKE PORTAL (+ AUTO LLM PROMPT BUILDER) -->
+    <section id="client-portal" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Client Requirement Intake Portal</h2>
+          <p>Ready to onboard with VanIndra Creations? Fill out your creator profile and boundaries below. Our system immediately structures your workspace and generates your Month-1 Content Engine.</p>
+        </div>
+
+        <div class="interactive-box">
+          <form id="clientIntakeForm" onsubmit="handleClientIntakeSubmit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="clientName">Creator Full Name</label>
+                <input type="text" id="clientName" placeholder="e.g., Priya Rathore" required>
+              </div>
+              <div class="form-group">
+                <label for="clientHandle">Instagram Handle &amp; URL</label>
+                <input type="text" id="clientHandle" placeholder="e.g., @priyarathore_official" required>
+              </div>
+              <div class="form-group">
+                <label for="clientPhone">WhatsApp Number (For Weekly Shoot Packs)</label>
+                <input type="tel" id="clientPhone" placeholder="e.g., +91 98XXXXXXXX" required>
+              </div>
+              <div class="form-group">
+                <label for="clientPackage">Selected Package</label>
+                <select id="clientPackage" required>
+                  <option value="VanIndra Pro Growth - 20 Reels/Mo (₹24,999)">VanIndra Pro Growth - 20 Reels/Mo (₹24,999)</option>
+                  <option value="3-Reel Trial Pack (₹2,999)">3-Reel Trial Pack (₹2,999)</option>
+                  <option value="VanIndra Starter - 12 Reels/Mo (₹14,999)">VanIndra Starter - 12 Reels/Mo (₹14,999)</option>
+                  <option value="VanIndra 360 VIP - 30 Reels/Mo (₹39,999)">VanIndra 360° VIP - 30 Reels/Mo (₹39,999)</option>
+                  <option value="Founding Creator Partner (Collab-Tag Tier)">Founding Creator Partner (Collab-Tag Tier)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="clientNicheDetail">Your Niche &amp; Target Audience</label>
+                <input type="text" id="clientNicheDetail" placeholder="e.g., Skincare, Nutrition, Fitness or Education for Indian audiences" required>
+              </div>
+              <div class="form-group">
+                <label for="clientEditStyle">Preferred Editing &amp; Visual Vibe</label>
+                <select id="clientEditStyle" required>
+                  <option value="Fast High-Retention (Bold Hooks, B-Roll Cuts, Pop Captions)">Fast High-Retention (Bold Hooks, B-Roll Cuts, Pop Captions)</option>
+                  <option value="Clean Aesthetic Editorial (Minimal Slate/Gold Subtitles, Smooth Cuts)">Clean Aesthetic Editorial (Minimal Slate/Gold Subtitles, Smooth Cuts)</option>
+                  <option value="Warm Storyteller / Educator (Clear Diagrams, Highlighted Keywords)">Warm Storyteller / Educator (Clear Diagrams, Highlighted Keywords)</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="clientDosDonts">Strict Boundaries: What Do You Want to POST vs. NEVER POST?</label>
+                <textarea id="clientDosDonts" rows="3" placeholder="e.g., WANT: Myth-busters, product comparisons, 30s routines. NEVER POST: Dance trends, controversial politics, or unscripted rants." required></textarea>
+              </div>
+              <div class="form-group full-width">
+                <label for="clientTopReels">Links to Your Top 2–3 Best Performing Reels OR Creators You Admire</label>
+                <textarea id="clientTopReels" rows="2" placeholder="Paste Instagram Reel URLs or @handles you love..."></textarea>
+              </div>
+            </div>
+
+            <div style="margin-top:24px; display:flex; gap:14px; flex-wrap:wrap;">
+              <button type="submit" class="btn btn-gold">🚀 Submit Requirements &amp; Generate Workspace</button>
+            </div>
+          </form>
+
+          <!-- Output for Client + Indrajeet's LLM Pipeline -->
+          <div id="intakeOutputPanel" class="output-preview-panel" aria-live="polite">
+            <h3 style="color:var(--gold-light); margin-bottom:6px;">✅ Client Requirement File &amp; Master LLM Prompt Ready!</h3>
+            <p style="font-size:0.88rem; color:var(--text-silver);">
+              1️⃣ <strong>Influencers:</strong> Click below to send your requirements directly to VanIndra Creations on WhatsApp.<br>
+              2️⃣ <strong>Indrajeet (LLM Pipeline):</strong> Copy or download the auto-formatted prompt below and paste it into Claude, Muse, or Gemini to generate their entire 30-day calendar &amp; scripts in 60 seconds!
+            </p>
+            <pre id="intakeOutputText" class="pre-code"></pre>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button type="button" class="btn btn-gold" onclick="sendIntakeViaWhatsApp('918112859437')">💬 Send to Smita / Guggy (WhatsApp)</button>
+              <button type="button" class="btn btn-emerald" onclick="sendIntakeViaWhatsApp('919415259408')">🎬 Send to Akarsh / Sahil (WhatsApp)</button>
+              <button type="button" class="btn btn-secondary" onclick="copyTextById('intakeOutputText')">🤖 Copy Master LLM Prompt (For Indrajeet)</button>
+              <button type="button" class="btn btn-ghost" onclick="downloadClientMarkdown()">📥 Download Client .md File</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SCRIPTS & QUICK-COPY HQ (FOR INDRAJEET, VANDANA, GUGGY & SAHIL) -->
+    <section id="team-hq" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Founding Team Quick-Copy Command Center</h2>
+          <p>For <strong>Indrajeet, Vandana, Guggy &amp; Sahil</strong>: 1-tap copy of our official caption tags, outreach DM scripts, and Instagram bio setup right from your phone.</p>
+        </div>
+
+        <div class="command-grid">
+          <!-- Box 1: Official Caption Tag -->
+          <div class="command-card">
+            <h3>1. Official Reel Caption Sign-Off</h3>
+            <p style="font-size:0.82rem; color:var(--text-slate); margin-bottom:10px;">Paste at the bottom of every Reel on @vandanay2012, @smitayadav_0901, @yadavakarsh_07 &amp; client posts:</p>
+            <pre id="hqCaptionTag" class="pre-code" style="height:120px;">————————————————
+✨ Content Strategy &amp; Edit: @vanindracreations
+🚀 100K+ Creator? Get your next 20 Reels scripted &amp; edited -> @vanindracreations</pre>
+            <button type="button" class="btn btn-gold" style="width:100%;" onclick="copyTextById('hqCaptionTag')">📋 Copy Caption Tag</button>
+          </div>
+
+          <!-- Box 2: Guggy & Sahil Hinglish Outreach DM -->
+          <div class="command-card">
+            <h3>2. Guggy &amp; Sahil Outreach DM (Hinglish)</h3>
+            <p style="font-size:0.82rem; color:var(--text-slate); margin-bottom:10px;">Send to 100K+ influencers after warming up their latest Reel &amp; Story:</p>
+            <pre id="hqOutreachDM" class="pre-code" style="height:120px;">Hey [Name] ji! 🙌 Aapki recent Reel "[Topic]" dekhi—super genuine value!
+
+Actually humari studio team (@vanindracreations, jahan hum @vandanay2012 aur 100K+ creators ka content strategy &amp; editing manage karte hain) notice kar rahi thi ki aapke 1L+ audience ke hisaab se agar starting ke 3-sec hooks aur retention editing thodi aur sharp ho jaye, toh views easily 3x-5x jump kar sakte hain.
+
+Humne aapke page ke liye 3 Custom Viral Reel Hooks + 15-sec Sample Edit prepare kiya hai (bilkul free). Kya main yahan share karun ya WhatsApp par bhejun? 😊</pre>
+            <button type="button" class="btn btn-emerald" style="width:100%;" onclick="copyTextById('hqOutreachDM')">📋 Copy Hinglish DM Script</button>
+          </div>
+
+          <!-- Box 3: Official @vanindracreations Bio -->
+          <div class="command-card">
+            <h3>3. Official @vanindracreations IG Bio</h3>
+            <p style="font-size:0.82rem; color:var(--text-slate); margin-bottom:10px;">Use when creating the Instagram, YouTube &amp; LinkedIn pages today:</p>
+            <pre id="hqBioCopy" class="pre-code" style="height:120px;">VanIndra Creations | 100K+ Creator Studio 🇮🇳
+The Content &amp; Growth Engine for 1 Lakh+ Influencers ✨🎬
+✦ Viral Hooks • Scripting • High-Retention Edits • What To Post
+✦ Led by @vandanay2012 • @smitayadav_0901 • @yadavakarsh_07
+👇 Claim Free 7-Day Content Audit:</pre>
+            <button type="button" class="btn btn-secondary" style="width:100%;" onclick="copyTextById('hqBioCopy')">📋 Copy Official Bio</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div>
+        <strong class="font-royal" style="color:var(--gold-light); font-size:1.05rem;">VANINDRA ◆ CREATIONS</strong>
+        <p style="margin-top:4px;">India's Content Strategy, Scripting &amp; High-Retention Editing Engine for 1,00,000+ Influencers.</p>
+      </div>
+      <div style="display:flex; gap:18px; flex-wrap:wrap; align-items:center;">
+        <a href="thumbnail-studio.html" style="color:var(--gold-light); font-weight:600;">🎨 Thumbnail Studio</a>
+        <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer">@vandanay2012</a>
+        <a href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer">@smitayadav_0901</a>
+        <a href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer">@yadavakarsh_07</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function copyColor(hex) {
+      navigator.clipboard.writeText(hex).then(() => {
+        alert("Copied brand color hex: " + hex);
+      });
+    }
+
+    function selectPackageInForm(pkgName) {
+      const select = document.getElementById('clientPackage');
+      if (select) {
+        select.value = pkgName;
+      }
+    }
+
+    function generateInstantAudit(event) {
+      event.preventDefault();
+      const name = document.getElementById('auditName').value.trim();
+      const handle = document.getElementById('auditHandle').value.trim();
+      const followers = document.getElementById('auditFollowers').value;
+      const niche = document.getElementById('auditNiche').value;
+      const lang = document.getElementById('auditLang').value;
+      const pain = document.getElementById('auditPain').value;
+
+      const auditText = `============================================================
+◆ VANINDRA CREATIONS — INSTANT 7-DAY CONTENT & HOOK ROADMAP
+============================================================
+Creator: ${name} (${handle})
+Current Tier: ${followers} | Niche: ${niche}
+Language: ${lang}
+Primary Bottleneck: ${pain}
+
+1. STRICT "WHAT TO POST vs. WHAT NOT TO POST" RULES:
+   ✅ START POSTING (4x/Week):
+      • 35–45 sec Myth-Busters with a 3-word bold cover title
+      • "3 Mistakes People Make in ${niche}" listicle Reels
+      • Split-screen / Green-screen breakdowns of trending India topics
+   ❌ STOP POSTING IMMEDIATELY:
+      • Slow 5-second intros ("Hello friends, welcome back...")
+      • Off-niche random reels that dilute your sponsor authority
+
+2. THREE CUSTOM 3-SECOND HOOK FRAMEWORKS FOR ${handle.toUpperCase()}:
+   🎬 Hook #1 (Myth-Buster): "Stop doing [Common ${niche} Habit] in 2026—here is what 90% of people get wrong in the first 10 seconds..."
+   🎬 Hook #2 (Curiosity List): "If I had to restart my ${niche} journey from zero today, I would only focus on these 3 rules..."
+   🎬 Hook #3 (Relatable Story): "Everyone asks me about [Top Audience Question], par koi yeh sach nahi batata..."
+
+3. NEXT STEP (FREE 15-SECOND SAMPLE EDIT):
+   Send this roadmap to VanIndra Creations on WhatsApp to claim your full 7-day script pack + a free 15-second high-retention re-edit of one of your existing Reels by Sahil (@yadavakarsh_07) & Vandana (@vandanay2012)!`;
+
+      const outputEl = document.getElementById('auditOutputText');
+      outputEl.textContent = auditText;
+      document.getElementById('auditOutputPanel').classList.add('active');
+    }
+
+    function sendAuditViaWhatsApp(phoneNum) {
+      const text = document.getElementById('auditOutputText').textContent;
+      const encoded = encodeURIComponent("Hi VanIndra Creations Team! I just generated my 7-Day Content Audit on your website and would love to claim my full audit & 15s sample edit:\n\n" + text);
+      window.open("https://wa.me/" + phoneNum + "?text=" + encoded, "_blank");
+    }
+
+    let lastClientHandleClean = "creator";
+
+    function handleClientIntakeSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('clientName').value.trim();
+      const handle = document.getElementById('clientHandle').value.trim();
+      const phone = document.getElementById('clientPhone').value.trim();
+      const pkg = document.getElementById('clientPackage').value;
+      const nicheDetail = document.getElementById('clientNicheDetail').value.trim();
+      const editStyle = document.getElementById('clientEditStyle').value;
+      const dosDonts = document.getElementById('clientDosDonts').value.trim();
+      const topReels = document.getElementById('clientTopReels').value.trim() || "To be shared on onboarding call";
+
+      lastClientHandleClean = handle.replace(/[^a-zA-Z0-9_]/g, '') || "client";
+
+      const masterLLMPrompt = `# VANINDRA CREATIONS — CLIENT ONBOARDING & MASTER LLM PIPELINE PROMPT
+Copy and paste this entire block into your LLM (Claude / Muse / Gemini / GPT) to generate ${name}'s Month-1 Brand Bible, 20-Reel Content Calendar, and Week-1 Word-for-Word Scripts:
+
+---
+You are the Chief Content Strategist at VanIndra Creations (@vanindracreations), India's premier Content & Growth Studio for 100K+ Influencers (led by Indrajeet Yadav, Vandana Yadav @vandanay2012, Smita "Guggy" Yadav @smitayadav_0901, and Akarsh "Sahil" Yadav @yadavakarsh_07).
+
+A new 100K+ Influencer client just submitted their onboarding requirements:
+- **Creator Name:** ${name}
+- **Instagram Handle:** ${handle}
+- **WhatsApp Contact:** ${phone}
+- **Selected Package:** ${pkg}
+- **Niche & Target Audience:** ${nicheDetail}
+- **Preferred Editing & Visual Style (for Sahil):** ${editStyle}
+- **Creator's "What to Post vs. NEVER Post" Boundaries:** ${dosDonts}
+- **Reference Reels / Inspirations:** ${topReels}
+
+### PLEASE GENERATE THE FOLLOWING 3 DELIVERABLES IN SEQUENCE:
+1. **BRAND VOICE & "WHAT TO POST vs. WHAT NOT TO POST" BIBLE:**
+   - 3 upgraded Instagram Bio options.
+   - 4 Core Content Pillars (40% Viral Reach, 30% Authority, 20% Personal Story, 10% Brand-Ready).
+   - 5 strict "What NOT to Post" rules vs. 5 "What TO Post" rules tailored to ${nicheDetail}.
+2. **30-DAY HIGH-RETENTION CONTENT CALENDAR (20 REELS):**
+   - Markdown table with Reel #, Pillar, Format, Topic, and exact 3-Second Scroll-Stopper Hook (Spoken + On-Screen Text).
+3. **WEEK 1 PRODUCTION SCRIPTS (REELS #1 TO #5):**
+   - Full word-for-word scripts (0-3s Hook, 3-15s Twist, 15-35s 3-Point Value Payoff, 35-42s CTA) + Editor Notes for Sahil + SEO Captions ending with:
+     "✨ Content Strategy & Edit: @vanindracreations"
+---`;
+
+      const outputEl = document.getElementById('intakeOutputText');
+      outputEl.textContent = masterLLMPrompt;
+      document.getElementById('intakeOutputPanel').classList.add('active');
+    }
+
+    function sendIntakeViaWhatsApp(phoneNum) {
+      const text = document.getElementById('intakeOutputText').textContent;
+      const encoded = encodeURIComponent("🚀 New VanIndra Creations Client Requirement Submission:\n\n" + text);
+      window.open("https://wa.me/" + phoneNum + "?text=" + encoded, "_blank");
+    }
+
+    function copyTextById(elementId) {
+      const text = document.getElementById(elementId).textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard!");
+      });
+    }
+
+    function downloadClientMarkdown() {
+      const text = document.getElementById('intakeOutputText').textContent;
+      const blob = new Blob([text], { type: "text/markdown;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `VanIndra_Creations_Onboarding_${lastClientHandleClean}.md`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
