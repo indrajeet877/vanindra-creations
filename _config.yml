@@ -1,0 +1,23 @@
+# GitHub Pages build settings for the public site (indrajeet877.github.io/vanindra-creations).
+# Only the public pages (index.html, login.html, pitch-deck.html, thumbnail-studio.html) and
+# assets/ are published. Internal docs, SOPs, outreach scripts, lead sheets and agent
+# instructions are kept off the live site. Add any new internal folder to this list.
+# NOTE: this does not hide these files on github.com — the repository itself is still public.
+exclude:
+  - "*.md"
+  - "*.csv"
+  - 00_MASTER_BLUEPRINT.md
+  - AGENTS.md
+  - CLAUDE.md
+  - GEMINI.md
+  - 01_Brand_and_Team
+  - 02_Market_Research_and_ICP
+  - 03_InHouse_Content_Flywheel
+  - 04_Outreach_and_Sales_Pipeline
+  - 05_Content_Factory_and_LLM_Prompts
+  - 06_Client_Workspace_Template
+  - 07_Website_and_Client_Portal_Spec
+  - 08_Agent_and_LLM_Instructions
+  - 09_Tech_Handles_Domains_Servers_and_Apps
+  - 10_Zero_Touch_Automation_Engine
+  - 11_Magnific_AI_and_Social_Automation

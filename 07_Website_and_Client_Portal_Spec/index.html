@@ -1299,7 +1299,7 @@
 
     .portal-kpi-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 10px;
       margin-bottom: 16px;
     }
@@ -1763,15 +1763,42 @@
         grid-template-columns: 1fr;
       }
       .main-nav { display: none; }
-      .float-metric-badge { display: none; }
       .iphone-frame-3d { transform: none !important; width: 312px; }
       .sticky-mobile-bar { display: grid; }
+    }
+
+    /* Keep the single-line sticky header inside the viewport on laptops */
+    @media (max-width: 1280px) {
+      .header-login-btn { display: none; }
+      .main-nav a { padding: 7px 8px; font-size: 0.79rem; }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1140px) {
+      .brand-text-stack { display: none; }
     }
 
     @media (max-width: 640px) {
       .visual-goal-grid, .form-2col, .hero-stats-bar, .founder-metrics-3 {
         grid-template-columns: 1fr;
       }
+      /* Long CTA labels wrap instead of pushing the page sideways */
+      .btn { white-space: normal; text-align: center; }
+      /* Client Login + WhatsApp are already in the sticky bottom bar on phones */
+      .header-cta-row { display: none; }
+    }
+
+    /* Let grid columns shrink below their content width so long text wraps or ellipsizes */
+    .hero-grid > *,
+    .founder-flagship-card > *,
+    .ops-portal-split > *,
+    .roi-split-card > *,
+    .leadership-3-grid > *,
+    .services-6-grid > *,
+    .testimonials-3-col > *,
+    .steps-9-grid > *,
+    .pricing-4-grid > *,
+    .problem-vs-grid > * {
+      min-width: 0;
     }
   </style>
 </head>
@@ -1863,7 +1890,7 @@
       <nav aria-label="Primary Navigation">
         <ul class="main-nav">
           <li><a href="#vandana-story">Live Portfolio</a></li>
-          <li><a href="#viral-reels-showcase">🔥 12 Viral Reels</a></li>
+          <li><a href="#viral-reels-showcase">🔥 Viral Reels</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#client-portal">Client Portal</a></li>
           <li><a href="pitch-deck.html">📊 Pitch Deck</a></li>
@@ -1873,12 +1900,12 @@
       </nav>
 
       <div class="header-cta-row">
-        <a href="login.html" class="btn btn-outline-light" style="padding:9px 14px; font-size:0.8rem;">
+        <a href="login.html" class="btn btn-outline-light header-login-btn" style="padding:9px 14px; font-size:0.8rem;">
           🔐 Client Login
         </a>
-        <button type="button" onclick="openElegantWhatsAppDirect()" class="btn btn-whatsapp" style="padding:9px 16px; font-size:0.82rem;">
+        <button type="button" onclick="openElegantWhatsAppDirect()" class="btn btn-whatsapp" style="padding:9px 16px; font-size:0.82rem;" title="WhatsApp Smita Yadav: +91 81128 59437" aria-label="WhatsApp Smita Yadav at +91 81128 59437">
           <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
-          <span>WhatsApp Smita (+91 81128 59437)</span>
+          <span>WhatsApp Smita</span>
         </button>
       </div>
     </div>
@@ -2018,7 +2045,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 <div class="reel-avatar-ring">
                   <img src="assets/portfolio/dp_vandanay2012.jpg" alt="Vandana Yadav @vandanay2012 50K Followers">
                 </div>
-                <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.14);padding:4px 12px;border-radius:999px;font-size:0.73rem;font-weight:800;color:#F4C44E;border:1px solid rgba(244,196,78,0.4);white-space:nowrap;">
+                <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.14);padding:4px 12px;border-radius:999px;font-size:0.73rem;font-weight:800;color:#F4C44E;border:1px solid rgba(244,196,78,0.4);max-width:100%;text-align:center;line-height:1.3;">
                   <svg style="width:13px;height:13px;flex-shrink:0;"><use href="#icon-instagram"></use></svg>
                   <span>@vandanay2012 • 50K+ Followers • 467 Posts</span>
                 </div>
@@ -2030,7 +2057,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 </div>
 
                 <a href="#viral-reels-showcase" onclick="playVandanaViralReel('DZSZW2ey529', 'Ye 5 mins kaam karte hi automatically mere haath mein mobile kahan se aa jaata hai?? 🤔', 'Relatable Habit Hook from @vandanay2012 (50K+ Followers)');" style="margin-top:8px;display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#F4C44E,#D4A024);color:#061A12;padding:7px 14px;border-radius:999px;font-size:0.73rem;font-weight:800;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.35);white-space:nowrap;" data-hi="▶ वंदना की 12 असली वायरल रील्स देखें ↓">
-                  ▶ Watch Vandana's 12 Real Viral Reels ↓
+                  ▶ Watch Our 6 Flagship Viral Reels ↓
                 </a>
               </div>
 
@@ -2048,9 +2075,9 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               </div>
 
               <div class="reel-graph-box">
-                <div style="display:flex;justify-content:space-between;font-size:0.69rem;font-family:'JetBrains Mono',monospace;margin-bottom:5px;white-space:nowrap;">
-                  <span id="graphLabelLeft" style="color:#34D399;">▲ High Audience Retention (84%)</span>
-                  <span id="graphLabelRight" style="color:#F4C44E;">0 → 50K+ Proof</span>
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;font-size:0.69rem;font-family:'JetBrains Mono',monospace;margin-bottom:5px;">
+                  <span id="graphLabelLeft" style="color:#34D399;min-width:0;">▲ High Audience Retention (84%)</span>
+                  <span id="graphLabelRight" style="color:#F4C44E;white-space:nowrap;flex-shrink:0;">0 → 50K+ Proof</span>
                 </div>
                 <svg viewBox="0 0 260 42" width="100%" height="42" aria-hidden="true">
                   <path id="retentionCurvePath" d="M 0 8 Q 65 9, 130 12 T 260 16" fill="none" stroke="#10B981" stroke-width="3.5" stroke-linecap="round"/>
@@ -3067,10 +3094,10 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
             </div>
           </div>
 
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;">
             <div style="background:var(--bg-page);border:1px solid var(--border-line);border-radius:16px;padding:18px;">
               <small style="font-weight:700;color:var(--text-muted);" data-hi="अनुमानित मासिक व्यूज">Projected Monthly Reach</small>
-              <div style="font-family:'Space Grotesk',sans-serif;font-size:1.75rem;font-weight:800;color:var(--emerald-rich);" id="outViews">14.4 Lakh+</div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-size:1.75rem;font-weight:800;color:var(--emerald-rich);" id="outViews">1.4 Lakh+</div>
               <span style="font-size:0.76rem;color:var(--text-secondary);" data-hi="3-सेकंड वायरल हुक के साथ">With 3-second retention hooks</span>
             </div>
             <div style="background:var(--bg-page);border:1px solid var(--border-line);border-radius:16px;padding:18px;">
@@ -3080,7 +3107,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
             </div>
             <div style="grid-column:1/-1;background:var(--emerald-tint);border:1.5px solid var(--emerald-rich);border-radius:16px;padding:18px;">
               <small style="font-weight:800;color:var(--emerald-rich);text-transform:uppercase;" data-hi="हर महीने संभावित ब्रांड डील्स और बिज़नेस कमाई">Estimated Monthly Brand Deal &amp; Business Revenue Potential</small>
-              <div style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:800;color:var(--text-primary);" id="outRevenue">₹76,500 – ₹1,41,500 / mo</div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:800;color:var(--text-primary);" id="outRevenue">₹76,500 – ₹1,41,525 / mo</div>
               <span style="font-size:0.8rem;color:var(--text-secondary);" data-hi="प्रोफेशनल प्रोफाइल और स्पॉन्सरशिप पैकेजिंग से">Powered by sponsor-ready profile positioning &amp; outbound brand pitching</span>
             </div>
           </div>
@@ -3570,16 +3597,16 @@ Include:
         banner.style.color = '#081C15';
         banner.textContent = isHi
           ? '⚠️ 1 लाख+ फॉलोअर्स के बाद यह गलती मत करना!'
-          : '⚠️ STOP MAKING THIS MISTAKE AFTER 100K!';
+          : "⚠️ 3-SEC HOOK: DON'T MAKE THIS MISTAKE AT 100K+!";
         caption.innerHTML = isHi
           ? '"अगर आपका <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">बिज़नेस या पेज</span> रुका हुआ है, तो बस <span style="color:#F4C44E;">यह 3 बदलाव</span> करें..."'
           : '"If your <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">reach or income</span> has plateaued, fix these <span style="color:#F4C44E;">3 retention hooks</span>..."';
         chipRet.innerHTML = '🎯 3-Sec Hold<br><span style="color:#0E6B4E;">84.2%</span>';
         chipViews.innerHTML = '🔥 Reach<br><span style="color:#B47D09;">6.8L+ Views</span>';
-        chipSponsor.innerHTML = '💰 Brand Deal<br><span style="color:#0E6B4E;">₹65K/Reel</span>';
-        graphLeft.textContent = isHi ? '▲ 84% दर्शक वीडियो पर रुकते हैं' : '▲ 84.2% 3-Second Hold & Watch Time';
+        chipSponsor.innerHTML = '💰 Brand Ready<br><span style="color:#0E6B4E;">₹65K/Reel</span>';
+        graphLeft.textContent = isHi ? '▲ 84% दर्शक वीडियो पर रुकते हैं' : '▲ High Audience Retention (84%)';
         graphLeft.style.color = '#34D399';
-        graphRight.textContent = isHi ? '+410% ग्रोथ' : '+410% LIFT';
+        graphRight.textContent = isHi ? '0 → 50K+ प्रूफ' : '0 → 50K+ Proof';
         curve.setAttribute('d', 'M 0 8 Q 65 9, 130 12 T 260 16');
         curve.setAttribute('stroke', '#10B981');
       }
