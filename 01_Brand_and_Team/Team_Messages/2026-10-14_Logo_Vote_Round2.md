@@ -87,3 +87,13 @@ Top 3 votes ke baad final polish karke 2–3 options phir dikhaunga/dikhaungi. W
 | Vandana Yadav | | | | |
 | Smita Yadav | | | | |
 | Akarsh Yadav | | | | |
+
+---
+
+## Email log
+| Sent (UTC) | To | Subject | Content |
+| :--- | :--- | :--- | :--- |
+| 2026-10-14 18:36 | Smita Yadav, Akarsh Yadav | VanIndra logo — 50 new options, please vote your top 3 by 10 PM tonight | Model-by-option list, checklist, reply format, Magnific invite link |
+| 2026-10-14 (follow-up, same thread) | Smita Yadav, Akarsh Yadav | Re: same | How to sign in and open the logos; what each person must reply (votes; Smita's US-call availability and exam dates; Akarsh's phone check of the new site); full recap of the day: logo rounds, website fixes, repo now private + move to Cloudflare (old github.io link off), leads & delivery readiness (VIP not sellable yet, hire 2 editors), global USD plan ($500/$1,000/$2,000 + $149 trial), client rules |
+
+Replies come to the connected Gmail inbox; a check-in is scheduled for 15 Oct, 10:30 PM IST to tally votes into the feedback log above.
