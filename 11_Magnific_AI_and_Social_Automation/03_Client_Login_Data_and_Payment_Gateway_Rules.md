@@ -1,6 +1,6 @@
 # Post-Login Client Rules, Lightweight Data Storage & Payment Gateway Architecture
 
-> **Live Client Portal URL:** [`login.html`](../login.html) (`https://indrajeet877.github.io/vanindra-creations/login.html`)
+> **Live Client Portal URL:** [`login.html`](../login.html) (`https://vanindracreations.pages.dev/login.html`)
 > **Single Official WhatsApp Desk:** **Smita Yadav (`+91 81128 59437`)**
 
 ---

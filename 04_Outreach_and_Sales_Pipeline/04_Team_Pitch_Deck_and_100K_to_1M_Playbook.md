@@ -1,6 +1,6 @@
 # VanIndra Creations — Master Team Pitch Playbook & 100K to 1M+ Persuasion Guide
 
-> **Live Web Presentation Deck:** [`pitch-deck.html`](../pitch-deck.html) (`https://indrajeet877.github.io/vanindra-creations/pitch-deck.html`)
+> **Live Web Presentation Deck:** [`pitch-deck.html`](../pitch-deck.html) (`https://vanindracreations.pages.dev/pitch-deck.html`)
 > **Single Official WhatsApp Concierge:** **Smita Yadav (`+91 81128 59437` • `@smitayadav_0901`)**
 > **Public Studio Leadership:** **Vandana Yadav** (Founder & Client Portfolio #01 `@vandanay2012`), **Smita Yadav** (Growth, Brand Deals & Client Portfolio #02 `@smitayadav_0901`), **Akarsh Yadav** (Tech, Video Editing & Scientific Hook Lead `@yadavakarsh_07`).
 
@@ -67,6 +67,6 @@ Instead of listing names merely as team members, we present **two live, studio-m
 3. **Channel #3 — Daily In-House Collab Flywheel (`@vanindracreations`):**
    - Every Reel posted on `@vandanay2012`, `@smitayadav_0901`, and `@yadavakarsh_07` invites `@vanindracreations` as Collaborator.
 4. **Channel #4 — Direct WhatsApp Outreach to Doctors, Clinics, Coaches & Regional Founders:**
-   - Doctors, dermatologists, fitness coaches, and boutique brands publish their WhatsApp numbers on Instagram and Google Maps. Send them our website's Free AI Growth Plan link (`https://indrajeet877.github.io/vanindra-creations/#smart-ai-portal`).
+   - Doctors, dermatologists, fitness coaches, and boutique brands publish their WhatsApp numbers on Instagram and Google Maps. Send them our website's Free AI Growth Plan link (`https://vanindracreations.pages.dev/#smart-ai-portal`).
 5. **Channel #5 — Magnific AI 4K Cover Upgrade Gift:**
    - Take a creator's blurry Reel cover, upscale and redesign it in 4K using our Magnific AI workflow + `thumbnail-studio.html`, and send it as a free gift!

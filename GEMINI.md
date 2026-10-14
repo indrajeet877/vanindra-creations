@@ -42,7 +42,7 @@ Inspired by **IDigitalAKKi Media (Warm Ivory + Emerald + Gold)**, **LexiConn (AI
 ---
 
 ## 4. Workspace Map
-- `index.html` — Live Public Agency Funnel (`https://indrajeet877.github.io/vanindra-creations/`) featuring Warm Ivory + Emerald/Gold theme, 3D iPhone Before/After Simulator, Founder Vandana Yadav Case Study, Live Client Portal Preview, 9-Step Framework, Voice + Free Background AI (`text.pollinations.ai`) Strategy Generator, and 3-Card Public Leadership Directory with Official App Logos.
+- `index.html` — Live Public Agency Funnel (`https://vanindracreations.pages.dev/`) featuring Warm Ivory + Emerald/Gold theme, 3D iPhone Before/After Simulator, Founder Vandana Yadav Case Study, Live Client Portal Preview, 9-Step Framework, Voice + Free Background AI (`text.pollinations.ai`) Strategy Generator, and 3-Card Public Leadership Directory with Official App Logos.
 - `thumbnail-studio.html` — Live Interactive 9:16 Instagram Reel Cover Designer (`<canvas>` PNG exporter).
 - `00_MASTER_BLUEPRINT.md` — Executive summary & step-by-step operating pipeline.
 - `01_Brand_and_Team/` — Brand bible, logo suite (`Brand_Assets/`), team roles, WhatsApp group setup, and resumes.
@@ -58,4 +58,4 @@ Inspired by **IDigitalAKKi Media (Warm Ivory + Emerald + Gold)**, **LexiConn (AI
 - `12_Global_Abroad_Workspace_USD/` — Separate global (English-speaking markets) business: USD offer ladder ($500 / $1,000 / $2,000 per month), ICP by country, Akarsh Yadav's lead-gen SOP, delivery, payments checklist and team brief. Completely separate audience from India.
 - `13_India_Delivery_and_Fulfillment_Backend/` — Promise-to-delivery map for every offer on the public site, order-to-delivery workflow, capacity check, risky-claims list and launch checklist.
 - `01_Brand_and_Team/Brand_Assets/Logo_Proposals_2026-10/` — New logo directions A/B/C **awaiting approval**; do not put them on public pages until approved.
-- `_config.yml` — GitHub Pages publishes only the 4 public HTML pages + `assets/`. Add every new internal folder to its `exclude` list.
+- `scripts/build_public_site.sh` + `site_config/` — builds the public website (only the 4 public HTML pages + `assets/`) into `dist/` for **Cloudflare Pages** (repo is private; GitHub Pages is off). The build blocks any deploy containing nicknames, background names, a second phone number, internal files or broken links. Setup guide: `09_Tech_Handles_Domains_Servers_and_Apps/02_Cloudflare_Pages_Private_Hosting_Setup.md`.

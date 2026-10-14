@@ -1,0 +1,4 @@
+# Netlify (backup host). Publishes only the allowlisted public files; see scripts/build_public_site.sh
+[build]
+  command = "bash scripts/build_public_site.sh"
+  publish = "dist"

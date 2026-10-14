@@ -2,7 +2,7 @@
 ## For Claude Code (Opus 5.5), Gemini CLI (Gemini 4 Argon High + Free Credits) & Meta Muse
 
 > **Workspace Path:** `/Users/vanindra/Downloads/Influencer  Agency`
-> **Live Production URL:** `https://indrajeet877.github.io/vanindra-creations/`
+> **Live Production URL:** `https://vanindracreations.pages.dev/`
 > **GitHub Repository:** `https://github.com/indrajeet877/vanindra-creations.git` (`main` branch)
 
 ---

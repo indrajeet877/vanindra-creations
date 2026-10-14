@@ -4,7 +4,7 @@
 > **Official WhatsApp (only number to use):** `+91 81128 59437` • **Email:** `smitayadav497@gmail.com`
 > **Talent:** Vandana Yadav (`@vandanay2012` — 50,000+ followers • 467+ posts) • Smita Yadav (`@smitayadav_0901`) • Studio edits by Akarsh Yadav (`@yadavakarsh_07`)
 > **Portfolio link for every pitch:** link the Instagram Reels directly (below), or the profile https://www.instagram.com/vandanay2012/
-> ⚠️ **Do NOT paste the current `…github.io` website address into brand pitches.** It contains a background team member's name. Use the website link only after the custom domain (`vanindracreations.in` / `.com`) is live.
+> 🌐 **Website link for pitches:** `https://vanindracreations.pages.dev/#viral-reels-showcase` (switch to `https://vanindracreations.in` once the domain is connected). Never use the old `…github.io` address.
 > **Prices:** taken from the official rate card in `03_InHouse_Content_Flywheel/04_Aggressive_Viral_Growth_and_Brand_Deals_Playbook.md` (Section 4).
 
 ---

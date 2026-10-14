@@ -149,7 +149,7 @@ Smita Yadav should complete free creator registration for `@vandanay2012` (50K+ 
 > Vandana's recent **4-Grid Royal Silk Saree & Relatable Family Reels** are averaging **84%+ 3-second retention** with strong female purchase inquiries in comments:
 > 🔗 **Live 4-Grid Saree Reel:** https://www.instagram.com/vandanay2012/reel/DbaynqrSiIo/
 > 🔗 **Live Viral Comedy Hook Reel:** https://www.instagram.com/vandanay2012/reel/DZSZW2ey529/
-> 🔗 **Portfolio & Media Kit:** https://indrajeet877.github.io/vanindra-creations/#viral-reels-showcase
+> 🔗 **Portfolio & Media Kit:** https://vanindracreations.pages.dev/#viral-reels-showcase
 >
 > We would love to shoot a **High-Retention Brand Reel + Automated `'Comment LINK'` DM Campaign** (or a **Mother-Daughter Festive Combo Reel** with `@vandanay2012` + `@smitayadav_0901`) for **[Brand Name]** this week.
 >

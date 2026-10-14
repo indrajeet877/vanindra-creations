@@ -18,7 +18,7 @@ Create and link these 4 official social pages today using our **VanIndra 3D V-Wi
      🎬 Viral Scripts, High-Retention Reel Editing & Brand Deals for 50K–1M+ Creators
      ✨ Live Portfolios: @vandanay2012 & @smitayadav_0901
      👇 Free 7-Day AI Content Plan & 15s Sample Edit:
-     https://indrajeet877.github.io/vanindra-creations/
+     https://vanindracreations.pages.dev/
      ```
    - **Action Button:** WhatsApp Business (`+91 81128 59437` — Smita Yadav)
 2. **YouTube Channel (Shorts + Before/After Showreel):** `@VanIndraCreations`
@@ -33,7 +33,7 @@ Create and link these 4 official social pages today using our **VanIndra 3D V-Wi
 - **Meta Business Suite (100% Free):** Batch-schedule 7 days of Instagram Reels + Story frames every Sunday so posts go live automatically at **11:30 AM IST** and **7:30 PM IST** every day.
 - **ManyChat (Free Tier Automation):**
   - **Trigger Keyword 1:** When anyone comments `AUDIT` or `GROWTH` on a Reel → Automatically DM them:
-    *"Hi! ✨ Here is your direct link to generate your Free 7-Day Content Plan + claim a 15-Second Sample Edit from our studio: https://indrajeet877.github.io/vanindra-creations/ — or message Smita Yadav directly on WhatsApp (+91 81128 59437)!"*
+    *"Hi! ✨ Here is your direct link to generate your Free 7-Day Content Plan + claim a 15-Second Sample Edit from our studio: https://vanindracreations.pages.dev/ — or message Smita Yadav directly on WhatsApp (+91 81128 59437)!"*
   - **Trigger Keyword 2:** When anyone sends a first DM → Automatically send Smita Yadav's warm executive greeting and ask for their `@handle`.
 
 ### B. The 3-Account Collab Flywheel Rule
