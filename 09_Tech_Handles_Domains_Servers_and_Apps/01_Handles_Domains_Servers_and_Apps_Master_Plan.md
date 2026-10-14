@@ -18,7 +18,7 @@ Our web search confirmed that **`vanindracreations` / `vanindracreation` is clea
 | **1. Instagram** | **`@vanindracreations`** | `@vanindracreation` | Vandana, Guggy & Sahil | Main Collab-Tag Portfolio Grid, Before/After Reels & DM Outreach |
 | **2. YouTube** | **`@VanIndraCreations`** | `@VanIndraStudio` | Sahil & Indrajeet | YouTube Shorts Showcases, Creator Case Studies & Long-Form Breakdowns |
 | **3. LinkedIn (Company Page)** | **`linkedin.com/company/vanindra-creations`** | `vanindra-creation` | Guggy & Indrajeet | B2B Authority, D2C Brand Partnerships & High-Ticket Coach/Doctor Clients |
-| **4. WhatsApp Business** | **`+91 8112859437` (Guggy)** & **`+91 9415259408` (Sahil)** | Dedicated SIM | Guggy & Sahil | Instant Audit Delivery, Catalog of Packages (₹2,999 / ₹14,999 / ₹24,999) |
+| **4. WhatsApp Business** | **`+91 8112859437` (Guggy)** & **`[private — internal only]` (Sahil)** | Dedicated SIM | Guggy & Sahil | Instant Audit Delivery, Catalog of Packages (₹2,999 / ₹14,999 / ₹24,999) |
 | **5. X (Twitter) & Threads** | **`@vanindracreate`** / **`@vanindracreations`** | `@vanindrastudio` | Guggy | Viral Threads on Indian Creator Economy & Hook Breakdowns |
 | **6. Facebook Page** | **`facebook.com/vanindracreations`** | — | Vandana & Sahil | Required for linking Instagram Professional Account & Meta Business Suite |
 
