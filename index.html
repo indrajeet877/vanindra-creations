@@ -184,43 +184,49 @@
     }
 
     /* ==========================================================================
-       STICKY GLASS HEADER WITH OFFICIAL WHATSAPP CONCIERGE
+       STICKY GLASS HEADER WITH SMART AUTO-HIDE & EMERALD-GOLD LUXURY FINISH
        ========================================================================== */
     header.site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(250, 248, 243, 0.95);
-      backdrop-filter: saturate(1.8) blur(18px);
-      -webkit-backdrop-filter: saturate(1.8) blur(18px);
-      border-bottom: 1px solid rgba(212, 160, 36, 0.28);
-      box-shadow: 0 10px 30px -18px rgba(9, 36, 27, 0.14);
-      transition: box-shadow 0.25s ease, background 0.25s ease;
+      background: rgba(5, 22, 16, 0.94);
+      backdrop-filter: saturate(1.8) blur(20px);
+      -webkit-backdrop-filter: saturate(1.8) blur(20px);
+      border-bottom: 1px solid rgba(244, 196, 78, 0.32);
+      box-shadow: 0 12px 32px -14px rgba(0, 0, 0, 0.45);
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease, background 0.25s ease;
+    }
+
+    header.site-header.header-hidden {
+      transform: translateY(-105%);
     }
 
     body.dark-studio header.site-header {
-      background: rgba(9, 15, 19, 0.94);
+      background: rgba(6, 14, 11, 0.96);
     }
 
     .header-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      min-height: 78px;
+      gap: 14px;
+      min-height: 68px;
+      flex-wrap: nowrap;
     }
 
     .brand-lockup {
       display: inline-flex;
       align-items: center;
-      gap: 13px;
+      gap: 11px;
+      flex-shrink: 0;
     }
 
     .crest-badge-svg {
-      width: 46px;
-      height: 46px;
+      width: 42px;
+      height: 42px;
       flex-shrink: 0;
-      filter: drop-shadow(0 4px 10px rgba(9, 36, 27, 0.25));
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
       transition: transform 0.35s var(--ease-out);
     }
 
@@ -232,54 +238,55 @@
       display: flex;
       flex-direction: column;
       line-height: 1.08;
+      white-space: nowrap;
     }
 
     .brand-text-stack .name-main {
       font-family: 'Cinzel', serif;
       font-weight: 800;
-      font-size: 1.18rem;
+      font-size: 1.12rem;
       letter-spacing: 0.12em;
-      color: var(--text-primary);
+      color: #FFFFFF;
     }
 
     .brand-text-stack .name-sub {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.66rem;
+      font-size: 0.62rem;
       font-weight: 700;
       letter-spacing: 0.24em;
-      color: var(--emerald-rich);
+      color: #F4C44E;
       margin-top: 2px;
-    }
-
-    body.dark-studio .brand-text-stack .name-sub {
-      color: var(--gold-bright);
     }
 
     .main-nav {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 4px;
       list-style: none;
+      flex-wrap: nowrap;
     }
 
     .main-nav a {
-      padding: 8px 13px;
-      border-radius: 10px;
-      font-size: 0.88rem;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 0.82rem;
       font-weight: 700;
-      color: var(--text-secondary);
+      color: rgba(255, 255, 255, 0.86);
+      white-space: nowrap;
       transition: all 0.2s ease;
     }
 
     .main-nav a:hover {
-      color: var(--emerald-rich);
-      background: var(--emerald-tint);
+      color: #061811;
+      background: linear-gradient(135deg, #FDE07D, #D4A024);
     }
 
     .header-cta-row {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      flex-shrink: 0;
+      white-space: nowrap;
     }
 
     /* ==========================================================================
@@ -654,8 +661,8 @@
     }
 
     .iphone-frame-3d {
-      width: 336px;
-      height: 590px;
+      width: 356px;
+      min-height: 610px;
       border-radius: 46px;
       background: linear-gradient(145deg, #2C3733 0%, #091310 55%, #1D2723 100%);
       padding: 11px;
@@ -663,7 +670,7 @@
         0 34px 70px -15px rgba(0, 0, 0, 0.75),
         0 0 0 2px rgba(244, 196, 78, 0.45);
       transform-style: preserve-3d;
-      transform: rotateY(-8deg) rotateX(4deg);
+      transform: rotateY(-6deg) rotateX(3deg);
       transition: transform 0.2s ease-out;
       position: relative;
     }
@@ -671,26 +678,30 @@
     .iphone-screen-inner {
       width: 100%;
       height: 100%;
+      min-height: 588px;
       border-radius: 36px;
       background: radial-gradient(circle at 50% 22%, #134E3A 0%, #07120E 72%);
-      padding: 18px 16px;
+      padding: 16px 15px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 10px;
       position: relative;
       overflow: hidden;
     }
 
     .dynamic-notch {
-      width: 92px;
-      height: 22px;
+      width: 136px;
+      height: 24px;
       background: #000;
       border-radius: 999px;
       margin: 0 auto 10px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 0 10px;
+      justify-content: center;
+      gap: 7px;
+      padding: 0 12px;
+      white-space: nowrap;
     }
 
     .reel-hook-strip {
@@ -699,24 +710,24 @@
       padding: 8px 10px;
       border-radius: 10px;
       font-weight: 800;
-      font-size: 0.76rem;
+      font-size: 0.75rem;
       text-align: center;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
 
     .reel-creator-badge {
       text-align: center;
-      margin: auto 0;
+      margin: 4px 0;
     }
 
     .reel-avatar-ring {
-      width: 112px;
-      height: 112px;
-      margin: 0 auto 10px;
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 8px;
       border-radius: 50%;
-      padding: 4px;
+      padding: 3.5px;
       background: linear-gradient(135deg, #F4C44E, #10B981);
-      box-shadow: 0 0 30px rgba(244, 196, 78, 0.35);
+      box-shadow: 0 0 26px rgba(244, 196, 78, 0.35);
     }
 
     .reel-avatar-ring img {
@@ -730,36 +741,39 @@
       background: rgba(5, 11, 9, 0.88);
       border: 1.5px solid #F4C44E;
       border-radius: 14px;
-      padding: 11px;
-      margin-top: 10px;
-      font-size: 0.85rem;
+      padding: 10px;
+      margin-top: 8px;
+      font-size: 0.82rem;
       font-weight: 700;
       color: #FFFFFF;
+    }
+
+    .phone-kpi-dock {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .float-metric-badge {
+      background: rgba(255, 255, 255, 0.96);
+      color: #0B1914;
+      border: 1.5px solid #D4A024;
+      border-radius: 10px;
+      padding: 6px 6px;
+      font-size: 0.67rem;
+      font-weight: 800;
+      text-align: center;
+      line-height: 1.25;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
     }
 
     .reel-graph-box {
       background: rgba(5, 11, 9, 0.9);
       border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 12px;
-      padding: 10px 12px;
+      padding: 9px 11px;
     }
-
-    .float-metric-badge {
-      position: absolute;
-      background: #FFFFFF;
-      color: #0B1914;
-      border: 2px solid #D4A024;
-      border-radius: 14px;
-      padding: 9px 13px;
-      font-size: 0.78rem;
-      font-weight: 800;
-      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.45);
-      transform: translateZ(45px);
-    }
-
-    .float-top-left { top: 75px; left: -42px; }
-    .float-mid-right { top: 235px; right: -44px; }
-    .float-bottom-left { bottom: 78px; left: -36px; }
 
     /* ==========================================================================
        NICHE & CREATOR TRUST RAIL (INSPIRED BY IDIGITALAKKI STRIP)
@@ -1809,8 +1823,8 @@
           <svg style="width:13px;height:13px;"><use href="#icon-whatsapp"></use></svg>
           <span>Official WhatsApp Desk: +91 81128 59437 (Smita Yadav)</span>
         </a>
-        <button type="button" class="top-chip-btn active" id="btnLangHi" onclick="setLanguageMode('hi')">हिंदी / Hinglish</button>
-        <button type="button" class="top-chip-btn" id="btnLangEn" onclick="setLanguageMode('en')">English</button>
+        <button type="button" class="top-chip-btn active" id="btnLangEn" onclick="setLanguageMode('en')">English</button>
+        <button type="button" class="top-chip-btn" id="btnLangHi" onclick="setLanguageMode('hi')">हिंदी / Hinglish</button>
         <button type="button" class="top-chip-btn" onclick="speakWelcomeGuide()">🔊 Audio Guide</button>
         <button type="button" class="top-chip-btn" id="btnThemeSwitch" onclick="toggleSurfaceTheme()">☀️ / 🌙</button>
       </div>
@@ -1818,7 +1832,7 @@
   </div>
 
   <!-- STICKY ARCHITECTURAL GLASS HEADER -->
-  <header class="site-header">
+  <header class="site-header" id="stickySiteHeader">
     <div class="container header-inner">
       <a href="#top" class="brand-lockup" aria-label="VanIndra Creations Home">
         <svg class="crest-badge-svg" viewBox="0 0 100 100" role="img" aria-label="VanIndra Creations Crest">
@@ -1848,7 +1862,8 @@
 
       <nav aria-label="Primary Navigation">
         <ul class="main-nav">
-          <li><a href="#vandana-story">Live Client Portfolio</a></li>
+          <li><a href="#vandana-story">Live Portfolio</a></li>
+          <li><a href="#viral-reels-showcase">🔥 12 Viral Reels</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#client-portal">Client Portal</a></li>
           <li><a href="pitch-deck.html">📊 Pitch Deck</a></li>
@@ -1858,10 +1873,10 @@
       </nav>
 
       <div class="header-cta-row">
-        <a href="login.html" class="btn btn-outline-ink" style="padding:10px 15px; font-size:0.83rem;">
+        <a href="login.html" class="btn btn-outline-light" style="padding:9px 14px; font-size:0.8rem;">
           🔐 Client Login
         </a>
-        <button type="button" onclick="openElegantWhatsAppDirect()" class="btn btn-whatsapp" style="padding:10px 18px; font-size:0.84rem;">
+        <button type="button" onclick="openElegantWhatsAppDirect()" class="btn btn-whatsapp" style="padding:9px 16px; font-size:0.82rem;">
           <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
           <span>WhatsApp Smita (+91 81128 59437)</span>
         </button>
@@ -1887,7 +1902,7 @@
           </h1>
 
           <p class="hero-lead" id="heroSubTitle">
-            चाहे आपके पास <strong>50K, 1 लाख, 5 लाख या 10 लाख+ (1M+) फॉलोअर्स</strong> हों या आप एक डॉक्टर, कोच और बिज़नेस ओनर हों — <strong>आपको घंटों एडिटिंग या स्क्रिप्टिंग करने की ज़रूरत नहीं है।</strong> हमारे पहले 2 लाइव क्लाइंट पोर्टफोलियो (<strong>@vandanay2012</strong> और <strong>@smitayadav_0901</strong>) की तरह अपनी पूरी ग्रोथ, 3-सेकंड वायरल रील्स और ब्रांड डील्स हमारे स्टूडियो को सौंप दें।
+            Founded by active influencer <strong>Vandana Yadav (@vandanay2012 • 50,000+ Followers • 467+ Posts)</strong>. Whether you are a <strong>50K, 100K, 500K, or 1M+ creator</strong>, doctor, coach, or D2C brand—<strong>you never have to spend 4 hours editing or guessing what to post again.</strong> Just record raw clips on your phone; our studio handles your viral 3-second hooks, 9:16 editing, and paid brand deal positioning.
           </p>
 
           <!-- LUXURY EDITABLE WHATSAPP CONCIERGE COMPOSER (SINGLE NUMBER: +91 81128 59437) -->
@@ -1988,24 +2003,14 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           </div>
 
           <div class="iphone-frame-3d" id="iphone3D">
-            <div class="float-metric-badge float-top-left" id="chipRetention">
-              🎯 3-Sec Hold: <span style="color:#0E6B4E;">84.2%</span>
-            </div>
-            <div class="float-metric-badge float-mid-right" id="chipViews">
-              🔥 Reach: <span style="color:#B47D09;">6,84,900 Views</span>
-            </div>
-            <div class="float-metric-badge float-bottom-left" id="chipSponsor">
-              💰 Brand Deal Ready: <span style="color:#0E6B4E;">₹65K/Reel</span>
-            </div>
-
             <div class="iphone-screen-inner">
               <div>
                 <div class="dynamic-notch">
-                  <span style="width:8px;height:8px;border-radius:50%;background:#38bdf8;"></span>
-                  <span style="font-size:0.58rem;color:#94a3b8;font-family:'JetBrains Mono',monospace;">9:16 STUDIO HD</span>
+                  <span style="width:8px;height:8px;border-radius:50%;background:#38bdf8;flex-shrink:0;"></span>
+                  <span style="font-size:0.6rem;color:#cbd5e1;font-family:'JetBrains Mono',monospace;letter-spacing:0.04em;">9:16 STUDIO HD</span>
                 </div>
                 <div class="reel-hook-strip" id="phoneHookBanner">
-                  ⚠️ 1 LAKH+ KE BAAD YEH GALTI MAT KARNA!
+                  ⚠️ 3-SEC HOOK: DON'T MAKE THIS MISTAKE AT 100K+!
                 </div>
               </div>
 
@@ -2013,24 +2018,37 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 <div class="reel-avatar-ring">
                   <img src="assets/portfolio/dp_vandanay2012.jpg" alt="Vandana Yadav @vandanay2012 50K Followers">
                 </div>
-                <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.14);padding:4px 11px;border-radius:999px;font-size:0.75rem;font-weight:800;color:#F4C44E;border:1px solid rgba(244,196,78,0.4);">
-                  <svg style="width:14px;height:14px;"><use href="#icon-instagram"></use></svg>
+                <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.14);padding:4px 12px;border-radius:999px;font-size:0.73rem;font-weight:800;color:#F4C44E;border:1px solid rgba(244,196,78,0.4);white-space:nowrap;">
+                  <svg style="width:13px;height:13px;flex-shrink:0;"><use href="#icon-instagram"></use></svg>
                   <span>@vandanay2012 • 50K+ Followers • 467 Posts</span>
                 </div>
 
                 <div class="reel-caption-card">
                   <p id="kineticCaptionText">
-                    "Ye 5 mins काम करते ही <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">मेरे हाथ में mobile</span> कहाँ से आ जाता है?? <span style="color:#F4C44E;">🤔🔥</span>"
+                    "If your <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">reach or income</span> has plateaued, fix these <span style="color:#F4C44E;">3 retention hooks</span>..."
                   </p>
                 </div>
 
-                <a href="#viral-reels-showcase" onclick="playVandanaViralReel('DZSZW2ey529', 'Ye 5 mins काम करते ही automatically मेरे हाथ में mobile कहाँ से आ जाता है?? 🤔', 'Relatable Habit Hook from @vandanay2012 (50K+ Followers)');" style="margin-top:8px;display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#F4C44E,#D4A024);color:#061A12;padding:7px 14px;border-radius:999px;font-size:0.74rem;font-weight:800;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.35);">
+                <a href="#viral-reels-showcase" onclick="playVandanaViralReel('DZSZW2ey529', 'Ye 5 mins kaam karte hi automatically mere haath mein mobile kahan se aa jaata hai?? 🤔', 'Relatable Habit Hook from @vandanay2012 (50K+ Followers)');" style="margin-top:8px;display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#F4C44E,#D4A024);color:#061A12;padding:7px 14px;border-radius:999px;font-size:0.73rem;font-weight:800;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.35);white-space:nowrap;" data-hi="▶ वंदना की 12 असली वायरल रील्स देखें ↓">
                   ▶ Watch Vandana's 12 Real Viral Reels ↓
                 </a>
               </div>
 
+              <!-- Clean Non-Overlapping 3-Chip KPI Dock Inside Screen -->
+              <div class="phone-kpi-dock">
+                <div class="float-metric-badge" id="chipRetention">
+                  🎯 3-Sec Hold<br><span style="color:#0E6B4E;">84.2%</span>
+                </div>
+                <div class="float-metric-badge" id="chipViews">
+                  🔥 Reach<br><span style="color:#B47D09;">6.8L+ Views</span>
+                </div>
+                <div class="float-metric-badge" id="chipSponsor">
+                  💰 Brand Ready<br><span style="color:#0E6B4E;">₹65K/Reel</span>
+                </div>
+              </div>
+
               <div class="reel-graph-box">
-                <div style="display:flex;justify-content:space-between;font-size:0.71rem;font-family:'JetBrains Mono',monospace;margin-bottom:5px;">
+                <div style="display:flex;justify-content:space-between;font-size:0.69rem;font-family:'JetBrains Mono',monospace;margin-bottom:5px;white-space:nowrap;">
                   <span id="graphLabelLeft" style="color:#34D399;">▲ High Audience Retention (84%)</span>
                   <span id="graphLabelRight" style="color:#F4C44E;">0 → 50K+ Proof</span>
                 </div>
@@ -2070,8 +2088,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       <div class="container">
         <div class="sec-head">
           <span class="eyebrow">Live Managed Creator &amp; Brand Portfolio</span>
-          <h2 class="h2">See Our Live Creator Accounts in Action — <span class="hl-emerald">From 0 → 50K+ Trajectory to 100K–1M+ Scale</span></h2>
-          <p class="sec-sub">हम कोरी बातें नहीं करते — हमारे अपने इन-हाउस और फ्लैगशिप क्रिएटर अकाउंट्स (<strong>@vandanay2012</strong> और <strong>@smitayadav_0901</strong>) पर लाइव देखें कि हम किस तरह प्रोफाइल, रील्स और ब्रांड ग्रोथ बनाते हैं।</p>
+          <h2 class="h2" data-hi="हमारे लाइव क्रिएटर अकाउंट्स देखें — &lt;span class='hl-emerald'&gt;0 → 50K+ से लेकर 100K–1M+ स्केल तक&lt;/span&gt;">See Our Live Creator Accounts in Action — <span class="hl-emerald">From 0 → 50K+ Trajectory to 100K–1M+ Scale</span></h2>
+          <p class="sec-sub" data-hi="हम कोरी बातें नहीं करते — हमारे अपने इन-हाउस और फ्लैगशिप क्रिएटर अकाउंट्स (&lt;strong&gt;@vandanay2012&lt;/strong&gt; और &lt;strong&gt;@smitayadav_0901&lt;/strong&gt;) पर लाइव देखें कि हम किस तरह प्रोफाइल, रील्स और ब्रांड ग्रोथ बनाते हैं।">We don't pitch empty theory—inspect our live flagship studio accounts (<strong>@vandanay2012</strong> with 50,000+ Followers &amp; 467+ Posts and <strong>@smitayadav_0901</strong>) to see how we engineer 3-second hooks, 9:16 grids, and brand-ready authority.</p>
         </div>
 
         <!-- 2 Live Flagship Client Portfolio Cards + Slot #3 for New Clients -->
@@ -2081,7 +2099,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px;">
                 <span style="background:var(--gold-imperial);color:#081C15;padding:4px 12px;border-radius:999px;font-size:0.72rem;font-weight:800;letter-spacing:0.05em;">👑 LIVE CLIENT PORTFOLIO #01</span>
-                <span style="font-size:0.75rem;font-weight:800;color:#0E6B4E;">● 0 → 50K+ Trajectory</span>
+                <span style="font-size:0.75rem;font-weight:800;color:#0E6B4E;">● 50,000+ Followers • 467 Posts</span>
               </div>
 
               <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.42rem;font-weight:800;margin-bottom:4px;">
@@ -2091,8 +2109,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 Flagship Creator #1 &amp; Founder • Lifestyle, Family &amp; Brand Storytelling
               </p>
 
-              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
-                0 से शुरू करके <strong>50K+ ऑर्गेनिक कम्युनिटी ट्रैजेक्टरी</strong> — बिना किसी पेड ऐड्स के, सिर्फ <strong>"क्या पोस्ट करें vs क्या नहीं"</strong> फिल्टर, 3-सेकंड हुक और कोहेसिव 9:16 रील कवर्स के साथ।
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;" data-hi="0 से शुरू करके 50,000+ ऑर्गेनिक फॉलोअर्स और 467+ पोस्ट्स — बिना किसी पेड ऐड्स के, सिर्फ 'क्या पोस्ट करें vs क्या नहीं' फिल्टर, 3-सेकंड हुक और कोहेसिव 9:16 रील कवर्स के साथ।">
+                Scaled from <strong>0 to 50,000+ organic followers across 467+ tested posts</strong> with zero paid ads—powered by our strict <strong>"What to Post vs. What NOT to Post"</strong> filter, 3-second visual hooks, and 4-grid brand lookbooks.
               </p>
 
               <div class="founder-metrics-3" style="margin-bottom:14px;">
@@ -2101,12 +2119,12 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                   <span>3-Sec Hook Hold</span>
                 </div>
                 <div class="f-metric-box">
-                  <strong>3.8x</strong>
-                  <span>Watch-Time Lift</span>
+                  <strong>467+</strong>
+                  <span>Tested Posts</span>
                 </div>
                 <div class="f-metric-box">
-                  <strong>0 → 50K+</strong>
-                  <span>Organic Scale</span>
+                  <strong>50K+</strong>
+                  <span>Organic Followers</span>
                 </div>
               </div>
             </div>
@@ -2119,8 +2137,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 </div>
                 <span class="app-badge-pill badge-ig">Live Grid ↗</span>
               </a>
-              <button type="button" class="top-chip-btn" style="background:var(--emerald-rich);color:#fff;border:none;padding:9px 14px;justify-content:center;" onclick="speakVandanaTestimonial()">
-                🔊 वंदना यादव जी का अनुभव सुनें
+              <button type="button" class="top-chip-btn" style="background:var(--emerald-rich);color:#fff;border:none;padding:9px 14px;justify-content:center;" onclick="speakVandanaTestimonial()" data-hi="🔊 वंदना यादव जी का अनुभव सुनें">
+                🔊 Listen to Founder Audio Overview
               </button>
             </div>
           </article>
@@ -2140,8 +2158,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 Flagship Creator #2 • Fashion, DU Campus Lifestyle &amp; Brand Collab Engine
               </p>
 
-              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
-                गार्गी कॉलेज (दिल्ली यूनिवर्सिटी) क्रिएटर शोकेस — प्रीमियम इंस्टाग्राम बायो, एस्थेटिक रील थंबनेल्स, ट्रेंडिंग ऑडियो सिंक और <strong>@vanindracreations Collab-Tag Flywheel</strong> का लाइव उदाहरण।
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;" data-hi="गार्गी कॉलेज (दिल्ली यूनिवर्सिटी) क्रिएटर शोकेस — प्रीमियम इंस्टाग्राम बायो, एस्थेटिक रील थंबनेल्स, ट्रेंडिंग ऑडियो सिंक और @vanindracreations Collab-Tag Flywheel का लाइव उदाहरण।">
+                Gargi College (University of Delhi) creator showcase—built with a sponsor-ready bio, aesthetic 9:16 Reel covers, trending transition hooks, and our <strong>@vanindracreations Collab-Tag Flywheel</strong>.
               </p>
 
               <div class="founder-metrics-3" style="margin-bottom:14px;">
@@ -2193,8 +2211,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 For 100K+ • 200K+ • 500K+ • 1M+ Influencers, Doctors &amp; Businesses
               </p>
 
-              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
-                चाहे आप 1 लाख फॉलोअर्स पर अटके हों या 10 लाख (1M+) पर — हम पहले आपके किसी 1 वीडियो का <strong>15-सेकंड का Free Sample Edit</strong> और <strong>7-Day Audit</strong> बनाकर दिखाते हैं, और जुड़ते ही आपका प्रोफाइल यहाँ फीचर होता है!
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;" data-hi="चाहे आप 1 लाख फॉलोअर्स पर अटके हों या 10 लाख (1M+) पर — हम पहले आपके किसी 1 वीडियो का 15-सेकंड का Free Sample Edit और 7-Day Audit बनाकर दिखाते हैं, और जुड़ते ही आपका प्रोफाइल यहाँ फीचर होता है!">
+                Whether you are plateaued at 100K followers or scaling past 1M+—we first deliver a <strong>Free 15-Second Sample Re-Edit</strong> of your existing video plus a custom <strong>7-Day Content &amp; Brand Deal Audit</strong> before you pay a rupee.
               </p>
 
               <div class="founder-metrics-3" style="margin-bottom:14px;">
@@ -2240,8 +2258,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.55rem,2.6vw,2.15rem);font-weight:700;color:#FFFFFF;line-height:1.15;">
                   Watch How Founder <span style="color:#F4C44E;font-style:italic;">Vandana Yadav (@vandanay2012)</span> Turns Simple Phone Clips into Viral Reels
                 </h3>
-                <p style="font-size:0.84rem;color:rgba(255,255,255,0.82);margin-top:3px;">
-                  नीचे किसी भी रील पर <strong>"▶ Play Here"</strong> दबाकर यहीं वीडियो देखें या सीधे Instagram पर खोलें — हर वीडियो में देखें कि कैसे <strong>3-सेकंड ऑन-स्क्रीन हुक पट्टी (Hook Banner)</strong> और रिलेटेबल स्टोरीटेलिंग से व्यूज और शेयर्स आते हैं:
+                <p style="font-size:0.84rem;color:rgba(255,255,255,0.82);margin-top:3px;" data-hi="नीचे किसी भी रील पर '▶ Play Here' दबाकर यहीं वीडियो देखें या सीधे Instagram पर खोलें — हर वीडियो में देखें कि कैसे 3-सेकंड ऑन-स्क्रीन हुक पट्टी (Hook Banner) और रिलेटेबल स्टोरीटेलिंग से व्यूज और शेयर्स आते हैं:">
+                  Click <strong>"▶ Play Here"</strong> on any card below to watch the live Reel inside our studio player or open it on Instagram—observe how our <strong>3-Second On-Screen Hook Banners</strong> and relatable storytelling drive shares and brand inquiries:
                 </p>
               </div>
             </div>
@@ -2253,7 +2271,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               </a>
               <button type="button" onclick="openElegantWhatsAppDirect('Viral Reels Showcase — Want Similar Hooks for My Page')" class="btn btn-whatsapp" style="padding:10px 16px;font-size:0.8rem;">
                 <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
-                <span>ऐसी ही वायरल रील्स अपने पेज के लिए बनवाएं</span>
+                <span data-hi="ऐसी ही वायरल रील्स अपने पेज के लिए बनवाएं">Get Viral Reels Like This for Your Page</span>
               </button>
             </div>
           </div>
@@ -2262,19 +2280,19 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:22px;">
             <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(244,196,78,0.32);border-radius:14px;padding:12px 14px;">
               <div style="font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:800;color:#F4C44E;">50,000+ Followers</div>
-              <div style="font-size:0.76rem;color:rgba(255,255,255,0.85);">असली ऑर्गेनिक भारतीय ऑडियंस—बिना किसी पेड ऐड या बॉट्स के।</div>
+              <div style="font-size:0.76rem;color:rgba(255,255,255,0.85);" data-hi="असली ऑर्गेनिक भारतीय ऑडियंस—बिना किसी पेड ऐड या बॉट्स के।">100% organic Indian audience built with zero paid ads or bots.</div>
             </div>
             <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(244,196,78,0.32);border-radius:14px;padding:12px 14px;">
               <div style="font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:800;color:#6EE7B7;">467+ Tested Posts</div>
-              <div style="font-size:0.76rem;color:rgba(255,255,255,0.85);">हमने खुद 467+ रील्स और पोस्ट्स से मार्केट का एल्गोरिदम सिद्ध किया है।</div>
+              <div style="font-size:0.76rem;color:rgba(255,255,255,0.85);" data-hi="हमने खुद 467+ रील्स और पोस्ट्स से मार्केट का एल्गोरिदम सिद्ध किया है।">Battle-tested algorithm hooks proven across 467+ real Reels &amp; posts.</div>
             </div>
             <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(244,196,78,0.32);border-radius:14px;padding:12px 14px;">
               <div style="font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:800;color:#F4C44E;">Real Fan Tributes ❤️</div>
-              <div style="font-size:0.76rem;color:rgba(255,255,255,0.85);">ऑडियंस का ऐसा भरोसा कि फैंस खुद स्केच बनाकर @vandanay2012 को टैग करते हैं।</div>
+              <div style="font-size:0.76rem;color:rgba(255,255,255,0.85);" data-hi="ऑडियंस का ऐसा भरोसा कि फैंस खुद स्केच बनाकर @vandanay2012 को टैग करते हैं।">Deep audience trust—followers draw hand-sketched portraits for @vandanay2012.</div>
             </div>
             <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(244,196,78,0.32);border-radius:14px;padding:12px 14px;">
               <div style="font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:800;color:#6EE7B7;">Multi-Niche Proof</div>
-              <div style="font-size:0.76rem;color:rgba(255,255,255,0.85);">Lifestyle, Fashion, Family, English &amp; Hinglish Hooks—हर कैटेगरी में वायरल।</div>
+              <div style="font-size:0.76rem;color:rgba(255,255,255,0.85);" data-hi="Lifestyle, Fashion, Family, English &amp; Hinglish Hooks—हर कैटेगरी में वायरल।">Proven across 4-Grid Saree Lookbooks, Family Series, English &amp; Hinglish Hooks.</div>
             </div>
           </div>
 
@@ -2303,7 +2321,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <div class="viral-reels-4-grid">
             <!-- Viral Reel 1: DZSZW2ey529 -->
             <article class="viral-reel-card">
-              <div class="viral-thumb-wrap" onclick="playVandanaViralReel('DZSZW2ey529', 'Ye 5 mins काम करते ही automatically मेरे हाथ में mobile कहाँ से आ जाता है?? 🤔', 'Relatable Habit Hook: Viewers immediately share this Reel on WhatsApp & DM because everyone relates to picking up their phone after 5 minutes of work.')">
+              <div class="viral-thumb-wrap" onclick="playVandanaViralReel('DZSZW2ey529', 'Ye 5 mins kaam karte hi automatically mere haath mein mobile kahan se aa jaata hai?? 🤔', 'Relatable Habit Hook: Viewers immediately share this Reel on WhatsApp & DM because everyone relates to picking up their phone after 5 minutes of work.')">
                 <div class="viral-hook-pill">
                   <span class="viral-tag-badge">🔥 Relatable Share Hook</span>
                   <span class="viral-tag-badge">▶ Watch</span>
@@ -2312,11 +2330,11 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               </div>
               <div class="viral-body">
                 <div>
-                  <h4>"Ye 5 mins काम करते ही हाथ में mobile कहाँ से आ जाता है?? 🤔"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> ऑन-स्क्रीन हिंदी+इंग्लिश हुक पट्टी जो पहले 2 सेकंड में ही दर्शकों को मुस्कुराने और शेयर करने पर मजबूर कर देती है।</p>
+                  <h4 data-hi="&quot;Ye 5 mins काम करते ही हाथ में mobile कहाँ से आ जाता है?? 🤔&quot;">"Ye 5 mins kaam karte hi haath mein mobile kahan se aa jaata hai?? 🤔"</h4>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; ऑन-स्क्रीन हिंदी+इंग्लिश हुक पट्टी जो पहले 2 सेकंड में ही दर्शकों को मुस्कुराने और शेयर करने पर मजबूर कर देती है।"><strong>Why It Went Viral:</strong> High-contrast bilingual hook banner in the first 1.5 seconds that triggers instant WhatsApp &amp; DM shares across India.</p>
                 </div>
                 <div class="viral-action-row">
-                  <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DZSZW2ey529', 'Ye 5 mins काम करते ही automatically मेरे हाथ में mobile कहाँ से आ जाता है?? 🤔', 'Relatable Habit Hook: High Share & DM Velocity across family & creator audiences.')">▶ Play Here</button>
+                  <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DZSZW2ey529', 'Ye 5 mins kaam karte hi automatically mere haath mein mobile kahan se aa jaata hai?? 🤔', 'Relatable Habit Hook: High Share & DM Velocity across family & creator audiences.')">▶ Play Here</button>
                   <a href="https://www.instagram.com/vandanay2012/reel/DZSZW2ey529/" target="_blank" rel="noopener noreferrer" class="btn-reel-ig">Instagram ↗</a>
                 </div>
               </div>
@@ -2334,7 +2352,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Moon ❌. Jalta hua Suraj 🔥🔥😂"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> "❌ vs ✅" कॉन्ट्रास्ट हुक और चेहरे के एक्सप्रेसिव फ्रेम से 84%+ दर्शक पहले 3 सेकंड तक रुकते हैं।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; '❌ vs ✅' कॉन्ट्रास्ट हुक और चेहरे के एक्सप्रेसिव फ्रेम से 84%+ दर्शक पहले 3 सेकंड तक रुकते हैं।"><strong>Why It Went Viral:</strong> Uses the "❌ vs 🔥" visual contrast hook and expressive framing to hold 84.8% of viewers past the 3-second mark.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DScFp3ZkYDW', 'Moon ❌. Jalta hua Suraj 🔥🔥😂', 'Pattern-Interrupt Contrast Hook: Uses ❌ vs ✅ visual contrast to lock 3-second retention.')">▶ Play Here</button>
@@ -2355,7 +2373,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Naya saal ❌. Naya janam ✅"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> वायरलेस माइक के साथ साफ आवाज़ और सीधा आई-कॉन्टैक्ट—जिससे साधारण रील भी प्रीमियम और भरोसेमंद लगती है।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; वायरलेस माइक के साथ साफ आवाज़ और सीधा आई-कॉन्टैक्ट—जिससे साधारण रील भी प्रीमियम और भरोसेमंद लगती है।"><strong>Why It Went Viral:</strong> Studio wireless lapel-mic audio + direct eye-contact delivery that elevates a simple phone shoot into broadcast-grade content.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DSZ8VilkrA8', 'Naya saal ❌. Naya janam ✅', 'Direct-to-Camera Studio Mic Hook: Clear lapel mic delivery with zero wasted intro seconds.')">▶ Play Here</button>
@@ -2376,7 +2394,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Subah uthna kisi jang ladne se kam nahi 😂"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> हर भारतीय घर की सुबह की कहानी—बिना किसी "हेलो दोस्तों" के सीधे पहले सेकंड से मुद्दे की बात।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; हर भारतीय घर की सुबह की कहानी—बिना किसी 'हेलो दोस्तों' के सीधे पहले सेकंड से मुद्दे की बात।"><strong>Why It Went Viral:</strong> Zero wasted intro—starts straight on a universal morning struggle that drives instant saves and tag-a-friend comments.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DSfRlWikcvQ', 'Subah uthna kisi jang ladne se kam nahi 😂', 'Universal Daily Struggle Hook: Zero intro fluff—starts straight on the punchline.')">▶ Play Here</button>
@@ -2397,7 +2415,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Photo mast aayi hai — Post kar deti hu 😊"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> सिनेमैटिक पोर्ट्रेट लुक के साथ बीच में साफ ऑन-स्क्रीन टेक्स्ट पट्टी जो ग्रिड को मैगज़ीन जैसा प्रीमियम बनाती है।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; सिनेमैटिक पोर्ट्रेट लुक के साथ बीच में साफ ऑन-स्क्रीन टेक्स्ट पट्टी जो ग्रिड को मैगज़ीन जैसा प्रीमियम बनाती है।"><strong>Why It Went Viral:</strong> Combines an aesthetic ethnic look with a clean center-screen text pill that makes the Instagram grid look like a luxury magazine.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DT5JApbkVB1', 'Photo mast aayi hai — Post kar deti hu 😊', 'Creator Relatability & Aesthetic Saree Look: Combines high-fashion cover framing with relatable text.')">▶ Play Here</button>
@@ -2418,7 +2436,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Bahut busy hu mai 😂😂"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> शॉर्ट लूपिंग फॉर्मेट—जब दर्शक कैप्शन पढ़ते हैं तब तक वीडियो दोबारा प्ले हो जाता है (Algorithm Boost)।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; शॉर्ट लूपिंग फॉर्मेट—जब दर्शक कैप्शन पढ़ते हैं तब तक वीडियो दोबारा प्ले हो जाता है (Algorithm Boost)।"><strong>Why It Went Viral:</strong> High-retention loop engineering—by the time the viewer finishes reading the hook, the Reel replays automatically (180% watch time).</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DSo0ikHkVkb', 'Bahut busy hu mai 😂😂', 'Visual Irony Loop Hook: Engineered for 150%+ watch-time completion on Instagram Reels.')">▶ Play Here</button>
@@ -2439,7 +2457,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Ye aaj kal k bacche bhi na 😂"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> बच्चों की पढ़ाई और घर के माहौल पर बना यह पिलर हर माता-पिता को तुरंत कमेंट और शेयर करने पर प्रेरित करता है।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; बच्चों की पढ़ाई और घर के माहौल पर बना यह पिलर हर माता-पिता को तुरंत कमेंट और शेयर करने पर प्रेरित करता है।"><strong>Why It Went Viral:</strong> Relatable Indian parenting &amp; family storytelling that gets forwarded across thousands of family WhatsApp groups.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DSkdjgxEg9R', 'Ye aaj kal k bacche bhi na 😂', 'Family & Parenting Viral Pillar: Drives organic shares into WhatsApp family groups.')">▶ Play Here</button>
@@ -2460,7 +2478,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Ye kya ho raha h 😬 • Music Beat Sync"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> "ये क्या हो रहा है?" क्यूरियोसिटी हुक + ट्रेंडिंग ऑडियो बीट सिंक जो दर्शकों को आखिरी सेकंड तक बांधे रखता है।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; 'ये क्या हो रहा है?' क्यूरियोसिटी हुक + ट्रेंडिंग ऑडियो बीट सिंक जो दर्शकों को आखिरी सेकंड तक बांधे रखता है।"><strong>Why It Went Viral:</strong> Open-loop curiosity gap ("Ye kya ho raha h 😬") paired with a sharp beat-synced cut that locks 91% completion.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DSm864Dkc-X', 'Ye kya ho raha h 😬 (High-Energy Beat Sync)', 'Curiosity Gap + Beat-Drop Transition: Keeps retention flat through the entire clip.')">▶ Play Here</button>
@@ -2481,7 +2499,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"4-Grid Royal Silk Saree &amp; Brand Aesthetic ✨"</h4>
-                  <p style="margin-top:4px;"><strong>Why Brands Love It:</strong> 4-फ्रेम कोलाज शोकेस जो बुटीक, ज्वेलरी और फैशन ब्रांड्स को तुरंत स्पॉन्सरशिप के लिए आकर्षित करता है।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why Brands Love It:&lt;/strong&gt; 4-फ्रेम कोलाज शोकेस जो बुटीक, ज्वेलरी और फैशन ब्रांड्स को तुरंत स्पॉन्सरशिप के लिए आकर्षित करता है।"><strong>Why Brands Love It:</strong> 4-angle split-grid commercial format that D2C saree, ethnic wear &amp; jewellery brands immediately sponsor and whitelist.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DbaynqrSiIo', '4-Grid Royal Silk Saree & Ethnic Brand Showcase ✨', 'D2C Brand & Fashion Collab Pillar: Shows how we package creators for paid fashion/lifestyle sponsorships.')">▶ Play Here</button>
@@ -2502,7 +2520,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Whenever I look myself into the mirror ❤️🙈"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Went Viral:</strong> मेट्रो और लाइफस्टाइल ऑडियंस के लिए क्लीन इंग्लिश ऑन-स्क्रीन हुक + मिरर ट्रांजिशन।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Went Viral:&lt;/strong&gt; मेट्रो और लाइफस्टाइल ऑडियंस के लिए क्लीन इंग्लिश ऑन-स्क्रीन हुक + मिरर ट्रांजिशन।"><strong>Why It Went Viral:</strong> Clean English lifestyle hook + mirror transition that captures urban metro audiences and beauty/skincare sponsors.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DTANmk8ERab', 'Whenever I look myself into the mirror ❤️🙈 (Self-Obsessed Hook)', 'English Lifestyle & Fashion Hook: Expands creator reach to metro lifestyle & beauty brands.')">▶ Play Here</button>
@@ -2523,7 +2541,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Banku bhaiya 🥰🥰 • Family Series Pillar"</h4>
-                  <p style="margin-top:4px;"><strong>Why It Builds Loyalty:</strong> एपिसोडिक फैमिली सीरीज़ जिससे दर्शक सिर्फ 1 वीडियो नहीं देखते, बल्किमानो परिवार का हिस्सा बन जाते हैं।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Why It Builds Loyalty:&lt;/strong&gt; एपिसोडिक फैमिली सीरीज़ जिससे दर्शक सिर्फ 1 वीडियो नहीं देखते, बल्कि परिवार का हिस्सा बन जाते हैं।"><strong>Why It Builds Loyalty:</strong> Recurring family character IP that turns casual scrollers into loyal followers who return for every new episode.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DSuwzgrEiwt', 'Banku bhaiya 🥰🥰 (Recurring Family Character Series)', 'Episodic Character Storytelling: Turns one-time viewers into loyal 50K+ community members.')">▶ Play Here</button>
@@ -2544,7 +2562,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="viral-body">
                 <div>
                   <h4>"Real Fan-Art Sketch Tribute for @vandanay2012 🎨❤️"</h4>
-                  <p style="margin-top:4px;"><strong>Market Authority Proof:</strong> नकली फॉलोअर्स कभी स्केच नहीं बनाते! जब आपकी ऑडियंस असली होती है, तो फैंस खुद आपके पोर्ट्रेट बनाकर टैग करते हैं।</p>
+                  <p style="margin-top:4px;" data-hi="&lt;strong&gt;Market Authority Proof:&lt;/strong&gt; नकली फॉलोअर्स कभी स्केच नहीं बनाते! जब आपकी ऑडियंस असली होती है, तो फैंस खुद आपके पोर्ट्रेट बनाकर टैग करते हैं।"><strong>Market Authority Proof:</strong> Bots never draw pencil portraits! Real fans (@sketch_art__001_) create hand-drawn art tributes for Vandana Yadav.</p>
                 </div>
                 <div class="viral-action-row">
                   <button type="button" class="btn-reel-play" onclick="playVandanaViralReel('DSZot76kly5', 'Real Fan Sketch Tribute for @vandanay2012 by @sketch_art__001_ ❤️', 'Undeniable Market Trust Proof: Real community love that proves @vandanay2012 has a genuine 50K+ market.')">▶ View Post</button>
@@ -2567,8 +2585,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
                 <h4 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.4rem,2.3vw,1.9rem);color:#FFFFFF;font-weight:700;line-height:1.15;">
                   6 Viral Formats That Unlock <span style="color:#F4C44E;font-style:italic;">Paid Brand Sponsorships, Auto-DM Sales &amp; 10x Reach</span>
                 </h4>
-                <p style="font-size:0.83rem;color:rgba(255,255,255,0.82);margin-top:4px;">
-                  सिर्फ व्यूज से पैसा नहीं आता — हम ऐसी <strong>"Deal-Magnet Viral Formats"</strong> बनाते हैं जिन्हें देखकर <strong>Myntra, Nykaa, Karagiri, GIVA, Mamaearth और D2C ब्रांड्स</strong> तुरंत पेड स्पॉन्सरशिप देते हैं:
+                <p style="font-size:0.83rem;color:rgba(255,255,255,0.82);margin-top:4px;" data-hi="सिर्फ व्यूज से पैसा नहीं आता — हम ऐसी 'Deal-Magnet Viral Formats' बनाते हैं जिन्हें देखकर Myntra, Nykaa, Karagiri, GIVA, Mamaearth और D2C ब्रांड्स तुरंत पेड स्पॉन्सरशिप देते हैं:">
+                  Views alone don't pay the bills—we engineer <strong>"Deal-Magnet Viral Formats"</strong> that compel <strong>Myntra, Nykaa, Karagiri, GIVA, Mamaearth &amp; D2C brands</strong> to book paid sponsorships and whitelisted ads:
                 </p>
               </div>
               <div style="display:flex;gap:10px;flex-wrap:wrap;">
@@ -2587,8 +2605,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.28);border-radius:16px;padding:16px;">
                 <div style="font-size:0.7rem;font-weight:800;color:#F4C44E;letter-spacing:0.08em;margin-bottom:4px;">01 • TROJAN-HORSE COMEDY → PRODUCT HERO</div>
                 <div style="font-size:0.98rem;font-weight:800;color:#FFFFFF;margin-bottom:6px;">3s Comedy Hook + Seamless Brand Integration</div>
-                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;">
-                  पहले 4 सेकंड रिलेटेबल कॉमेडी से 1 लाख+ दर्शकों को रोकते हैं और अगले 8 सेकंड में बिना बोरिंग ऐड लगे साड़ी, स्किनकेयर या किचन प्रोडक्ट दिखाते हैं।
+                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;" data-hi="पहले 4 सेकंड रिलेटेबल कॉमेडी से 1 लाख+ दर्शकों को रोकते हैं और अगले 8 सेकंड में बिना बोरिंग ऐड लगे साड़ी, स्किनकेयर या किचन प्रोडक्ट दिखाते हैं।">
+                  Hooks 100K+ viewers in the first 4 seconds with relatable comedy, then seamlessly integrates a saree, skincare, or kitchen product in the final 8 seconds.
                 </p>
                 <span style="font-size:0.72rem;font-weight:800;color:#6EE7B7;">✅ Paid Deal Rate: ₹15,000–₹35,000/Reel</span>
               </div>
@@ -2597,8 +2615,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.28);border-radius:16px;padding:16px;">
                 <div style="font-size:0.7rem;font-weight:800;color:#F4C44E;letter-spacing:0.08em;margin-bottom:4px;">02 • 4-GRID SAREE &amp; "COMMENT LINK" AUTO-DM</div>
                 <div style="font-size:0.98rem;font-weight:800;color:#FFFFFF;margin-bottom:6px;">Split-Screen Lookbook + 24/7 Affiliate Cash</div>
-                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;">
-                  4-एंगल साड़ी/ज्वेलरी शोकेस + <em>"Comment 'SAREE' for Direct Link"</em> — जिससे 500+ कमेंट्स से रील एक्सप्लोर पर जाती है और हर सेल पर 15–25% कमीशन मिलता है।
+                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;" data-hi="4-एंगल साड़ी/ज्वेलरी शोकेस + 'Comment SAREE for Direct Link' — जिससे 500+ कमेंट्स से रील एक्सप्लोर पर जाती है और हर सेल पर 15–25% कमीशन मिलता है।">
+                  4-angle Saree/Jewellery showcase + <em>"Comment 'SAREE' for Direct Link"</em>—triggers 500+ Explore-boosting comments and 15–25% passive affiliate commissions.
                 </p>
                 <span style="font-size:0.72rem;font-weight:800;color:#6EE7B7;">✅ Wishlink / Hypd / Amazon Storefront Ready</span>
               </div>
@@ -2607,8 +2625,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.28);border-radius:16px;padding:16px;">
                 <div style="font-size:0.7rem;font-weight:800;color:#F4C44E;letter-spacing:0.08em;margin-bottom:4px;">03 • DUAL-GENERATION COMBO (@vandanay2012 + @smitayadav_0901)</div>
                 <div style="font-size:0.98rem;font-weight:800;color:#FFFFFF;margin-bottom:6px;">Family + Gen-Z DU Campus 3-Account Collab</div>
-                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;">
-                  एक ही रील में Family ICP (Vandana Yadav) + Gen-Z College ICP (Smita Yadav) — 3 इंस्टाग्राम अकाउंट्स पर एक साथ Collab Post होकर 2x ब्रांड फीस दिलाती है।
+                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;" data-hi="एक ही रील में Family ICP (Vandana Yadav) + Gen-Z College ICP (Smita Yadav) — 3 इंस्टाग्राम अकाउंट्स पर एक साथ Collab Post होकर 2x ब्रांड फीस दिलाती है।">
+                  Combines Family ICP (Vandana Yadav) + Gen-Z DU College ICP (Smita Yadav) in one Collab Reel across 3 accounts—commanding 2x brand sponsorship fees.
                 </p>
                 <span style="font-size:0.72rem;font-weight:800;color:#6EE7B7;">✅ 2x Brand Sponsorship Value + Meta Ad Whitelisting</span>
               </div>
@@ -2617,8 +2635,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.28);border-radius:16px;padding:16px;">
                 <div style="font-size:0.7rem;font-weight:800;color:#F4C44E;letter-spacing:0.08em;margin-bottom:4px;">04 • INDIAN KITCHEN FOOD-TECH TRUTH BOMB</div>
                 <div style="font-size:0.98rem;font-weight:800;color:#FFFFFF;margin-bottom:6px;">Ingredient Label Exposed (WhatsApp Share Magnet)</div>
-                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;">
-                  Vandana Yadav + Akarsh Yadav (B.Voc Food Tech) द्वारा रोज़मर्रा के फूड लेबल्स का विश्लेषण — जो फैमिली WhatsApp ग्रुप्स में सबसे तेज़ वायरल होता है।
+                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;" data-hi="Vandana Yadav + Akarsh Yadav (B.Voc Food Tech) द्वारा रोज़मर्रा के फूड लेबल्स का विश्लेषण — जो फैमिली WhatsApp ग्रुप्स में सबसे तेज़ वायरल होता है।">
+                  Vandana Yadav + Akarsh Yadav (B.Voc Food Tech) expose everyday grocery &amp; nutrition labels—the #1 most forwarded viral format in Indian family WhatsApp groups.
                 </p>
                 <span style="font-size:0.72rem;font-weight:800;color:#6EE7B7;">✅ Attracts Health, Doctor &amp; Organic D2C Clients</span>
               </div>
@@ -2627,8 +2645,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.28);border-radius:16px;padding:16px;">
                 <div style="font-size:0.7rem;font-weight:800;color:#F4C44E;letter-spacing:0.08em;margin-bottom:4px;">05 • D2C PERFORMANCE UGC AD STUDIO PACK</div>
                 <div style="font-size:0.98rem;font-weight:800;color:#FFFFFF;margin-bottom:6px;">3 High-Converting Meta Video Ads in 5 Days</div>
-                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;">
-                  D2C ब्रांड्स के Facebook/Instagram Ads के लिए 3 अलग-अलग 3-सेकंड हुक्स के साथ तैयार कमर्शियल रील्स — जो ब्रांड का ROAS दोगुना करती हैं।
+                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;" data-hi="D2C ब्रांड्स के Facebook/Instagram Ads के लिए 3 अलग-अलग 3-सेकंड हुक्स के साथ तैयार कमर्शियल रील्स — जो ब्रांड का ROAS दोगुना करती हैं।">
+                  We script, shoot, and edit 3 commercial 9:16 video ads with 3 distinct 3-second hooks for D2C brands running Facebook &amp; Instagram performance ads.
                 </p>
                 <span style="font-size:0.72rem;font-weight:800;color:#6EE7B7;">✅ Flat ₹19,999 for 3 Studio UGC Video Ads</span>
               </div>
@@ -2637,8 +2655,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.28);border-radius:16px;padding:16px;">
                 <div style="font-size:0.7rem;font-weight:800;color:#F4C44E;letter-spacing:0.08em;margin-bottom:4px;">06 • 1 REEL → 5 PLATFORMS SYNDICATION ENGINE</div>
                 <div style="font-size:0.98rem;font-weight:800;color:#FFFFFF;margin-bottom:6px;">IG Reels + FB Monetization + YT Shorts + Amazon</div>
-                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;">
-                  एक ही रील को Instagram, Facebook Professional Mode (In-Stream Bonus), YouTube Shorts और Amazon Influencer Storefront पर सिंडिकेट करके 5x कमाई।
+                <p style="font-size:0.78rem;color:rgba(255,255,255,0.8);margin-bottom:10px;" data-hi="एक ही रील को Instagram, Facebook Professional Mode (In-Stream Bonus), YouTube Shorts और Amazon Influencer Storefront पर सिंडिकेट करके 5x कमाई।">
+                  Syndicates every Reel across Instagram, Facebook Professional Mode (In-Stream Ad Payouts), YouTube Shorts, and Amazon Influencer Storefronts for 5x revenue.
                 </p>
                 <span style="font-size:0.72rem;font-weight:800;color:#6EE7B7;">✅ 467+ Back-Catalog Multi-Platform Monetization</span>
               </div>
@@ -2649,20 +2667,20 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
         <!-- THE PROBLEM CONTRAST STRIP -->
         <div class="problem-vs-grid" style="margin-bottom:28px;">
           <div class="problem-card">
-            <span>रोज़ वीडियो डाल रहे हैं (Posting daily)</span>
-            <b>फिर भी व्यूज 4K–5K पर अटके हैं।</b>
+            <span data-hi="रोज़ वीडियो डाल रहे हैं (Posting daily)">Posting videos consistently</span>
+            <b data-hi="फिर भी व्यूज 4K–5K पर अटके हैं।">Yet views stay stuck at 3K–8K.</b>
           </div>
           <div class="problem-card">
-            <span>1 लाख से 10 लाख फॉलोअर्स हैं (100K–1M+)</span>
-            <b>फिर भी रेगुलर ब्रांड डील्स नहीं आ रहीं।</b>
+            <span data-hi="1 लाख से 10 लाख फॉलोअर्स हैं (100K–1M+)">Have 50K to 1M+ followers</span>
+            <b data-hi="फिर भी रेगुलर ब्रांड डील्स नहीं आ रहीं।">Yet no consistent paid brand deals.</b>
           </div>
           <div class="problem-card">
-            <span>4 घंटे एडिटिंग में लगते हैं (4 Hrs Editing)</span>
-            <b>फिर भी रील प्रीमियम नहीं दिखती।</b>
+            <span data-hi="4 घंटे एडिटिंग में लगते हैं (4 Hrs Editing)">Spending 4 hours editing daily</span>
+            <b data-hi="फिर भी रील प्रीमियम नहीं दिखती।">Yet Reels lack studio retention.</b>
           </div>
           <div class="problem-card">
-            <span>शानदार हुनर या क्लिनिक/बिज़नेस है</span>
-            <b>फिर भी ऑनलाइन ग्राहक नहीं जुड़ रहे।</b>
+            <span data-hi="शानदार हुनर या क्लिनिक/बिज़नेस है">Great clinic, coaching or brand</span>
+            <b data-hi="फिर भी ऑनलाइन ग्राहक नहीं जुड़ रहे।">Yet views don't convert into clients.</b>
           </div>
         </div>
 
@@ -2671,9 +2689,9 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <article class="white-card">
             <div>
               <div style="color:#D4A024;font-size:1rem;margin-bottom:8px;">★★★★★</div>
-              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;">"मुझे एडिटिंग या अंग्रेजी बिल्कुल नहीं आती थी..."</h3>
-              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
-                "मेरे पास 1.4 लाख फॉलोअर्स थे पर मुझे कंप्यूटर एडिटिंग नहीं आती। मैं बस फोन से वीडियो बनाकर भेज देता हूँ और वंदना मैम व Akarsh भाई की टीम उसे एकदम टीवी शो जैसा शानदार बना देती है!"
+              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;" data-hi="&quot;मुझे एडिटिंग या स्क्रिप्टिंग बिल्कुल नहीं आती थी...&quot;">"I just record raw clips on my phone—they handle everything."</h3>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;" data-hi="&quot;मेरे पास 1.4 लाख फॉलोअर्स थे पर मुझे कंप्यूटर एडिटिंग नहीं आती। मैं बस फोन से वीडियो बनाकर भेज देता हूँ और वंदना मैम व Akarsh की टीम उसे एकदम टीवी शो जैसा शानदार बना देती है!&quot;">
+                "I had 1.4L followers but zero time for complex editing. Now I just send raw phone clips on WhatsApp, and Vandana Ma'am and Akarsh's editing pod turn them into high-retention Reels."
               </p>
             </div>
             <div style="font-size:0.82rem;font-weight:800;color:var(--emerald-rich);border-top:1px solid var(--border-line);padding-top:10px;">
@@ -2684,9 +2702,9 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <article class="white-card">
             <div>
               <div style="color:#D4A024;font-size:1rem;margin-bottom:8px;">★★★★★</div>
-              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;">"क्लिनिक के साथ रोज़ रील्स बनाना आसान हुआ"</h3>
-              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
-                "मरीज़ों को देखने के बाद स्क्रिप्ट लिखने का समय ही नहीं मिलता था। VanIndra Creations मुझे हर हफ्ते तैयार साइंटिफिक हुक्स और स्क्रिप्ट देता है और मेरे पेज पर दोगुनी इंक्वायरी आ रही है।"
+              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;" data-hi="&quot;क्लिनिक के साथ रोज़ रील्स बनाना आसान हुआ&quot;">"Doubled my clinic inquiries without spending hours scripting."</h3>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;" data-hi="&quot;मरीज़ों को देखने के बाद स्क्रिप्ट लिखने का समय ही नहीं मिलता था। VanIndra Creations मुझे हर हफ्ते तैयार साइंटिफिक हुक्स और स्क्रिप्ट देता है और मेरे पेज पर दोगुनी इंक्वायरी आ रही है।&quot;">
+                "After consulting patients all day, I had no energy to research hooks. VanIndra Creations sends me fact-checked 3-second scripts every week and our inbound consultation DMs have doubled."
               </p>
             </div>
             <div style="font-size:0.82rem;font-weight:800;color:var(--emerald-rich);border-top:1px solid var(--border-line);padding-top:10px;">
@@ -2697,9 +2715,9 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <article class="white-card">
             <div>
               <div style="color:#D4A024;font-size:1rem;margin-bottom:8px;">★★★★★</div>
-              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;">"पहली बार ब्रांड्स खुद सामने से मैसेज कर रहे हैं"</h3>
-              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;">
-                "पहले मेरा इंस्टाग्राम पेज बहुत बिखरा हुआ लगता था। जब से Vandana मैम और Smita ने मेरा प्रोफाइल, बायो और रील कवर्स सेट किए हैं, मुझे हर महीने ब्रांड कोलैब मिल रहे हैं।"
+              <h3 style="font-size:1.08rem;font-weight:800;margin-bottom:8px;" data-hi="&quot;पहली बार ब्रांड्स खुद सामने से मैसेज कर रहे हैं&quot;">"D2C brands now message us directly for paid collaborations."</h3>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:14px;" data-hi="&quot;पहले मेरा इंस्टाग्राम पेज बहुत बिखरा हुआ लगता था। जब से Vandana मैम और Smita ने मेरा प्रोफाइल, बायो और रील कवर्स सेट किए हैं, मुझे हर महीने ब्रांड कोलैब मिल रहे हैं।&quot;">
+                "My Instagram grid used to look messy and brands only offered barter. Once Vandana Ma'am and Smita upgraded my bio, media kit, and 9:16 Reel covers, we started closing paid retainers monthly."
               </p>
             </div>
             <div style="font-size:0.82rem;font-weight:800;color:var(--emerald-rich);border-top:1px solid var(--border-line);padding-top:10px;">
@@ -2717,15 +2735,15 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       <div class="container">
         <div class="sec-head">
           <span class="eyebrow">What You Get Under One Roof</span>
-          <h2 class="h2">Everything your page &amp; business needs — <span class="hl-emerald">without the operations.</span></h2>
-          <p class="sec-sub">हम सिर्फ "वीडियो कट" नहीं करते — हम आपकी स्क्रिप्ट से लेकर ब्रांड डील्स और ग्राहकों तक पूरा सिस्टम चलाते हैं।</p>
+          <h2 class="h2" data-hi="आपके पेज और बिज़नेस की पूरी ग्रोथ — &lt;span class='hl-emerald'&gt;बिना किसी सिरदर्द के।&lt;/span&gt;">Everything your page &amp; business needs — <span class="hl-emerald">without the operations.</span></h2>
+          <p class="sec-sub" data-hi="हम सिर्फ 'वीडियो कट' नहीं करते — हम आपकी स्क्रिप्ट से लेकर ब्रांड डील्स और ग्राहकों तक पूरा सिस्टम चलाते हैं।">We don't just "cut videos" — we run your entire growth engine from viral scripting and retention editing to brand deals and customer enquiries.</p>
         </div>
 
         <div class="services-6-grid">
           <div class="white-card">
             <div>
               <div class="service-icon-box">🧭</div>
-              <h3 style="font-size:1.18rem;font-weight:800;">1. "What to Post" Strategy &amp; Calendar</h3>
+              <h3 style="font-size:1.18rem;font-weight:800;" data-hi="1. 'क्या पोस्ट करें' स्ट्रैटेजी और कैलेंडर">1. "What to Post" Strategy &amp; Calendar</h3>
               <ul class="check-list">
                 <li>Account audit &amp; competitor hook research</li>
                 <li>Clear "What to Post vs. What NOT to Post" filter</li>
@@ -2738,7 +2756,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <div class="white-card">
             <div>
               <div class="service-icon-box">✍️</div>
-              <h3 style="font-size:1.18rem;font-weight:800;">2. Viral 3-Second Hooks &amp; Scripts</h3>
+              <h3 style="font-size:1.18rem;font-weight:800;" data-hi="2. वायरल 3-सेकंड हुक्स और स्क्रिप्ट्स">2. Viral 3-Second Hooks &amp; Scripts</h3>
               <ul class="check-list">
                 <li>Word-for-word scripts in Hindi, Hinglish or English</li>
                 <li>Psychological 3-second scroll-stopping hooks</li>
@@ -2751,7 +2769,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <div class="white-card">
             <div>
               <div class="service-icon-box">🎬</div>
-              <h3 style="font-size:1.18rem;font-weight:800;">3. High-Retention Studio Reel Editing</h3>
+              <h3 style="font-size:1.18rem;font-weight:800;" data-hi="3. हाई-रिटेंशन स्टूडियो रील एडिटिंग">3. High-Retention Studio Reel Editing</h3>
               <ul class="check-list">
                 <li>Dynamic bilingual captions &amp; B-roll punch-ins</li>
                 <li>Sound design, colour grading &amp; pattern interrupts</li>
@@ -2764,7 +2782,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <div class="white-card">
             <div>
               <div class="service-icon-box">💰</div>
-              <h3 style="font-size:1.18rem;font-weight:800;">4. Brand Deals &amp; Monetization Setup</h3>
+              <h3 style="font-size:1.18rem;font-weight:800;" data-hi="4. ब्रांड डील्स और मोनेटाइजेशन सेटअप">4. Brand Deals &amp; Monetization Setup</h3>
               <ul class="check-list">
                 <li>Sponsor-ready Instagram bio &amp; highlight covers</li>
                 <li>Professional Creator Media Kit &amp; Rate Card</li>
@@ -2777,7 +2795,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <div class="white-card">
             <div>
               <div class="service-icon-box">🏪</div>
-              <h3 style="font-size:1.18rem;font-weight:800;">5. Local Business &amp; Clinic Lead Engine</h3>
+              <h3 style="font-size:1.18rem;font-weight:800;" data-hi="5. लोकल बिज़नेस और क्लिनिक लीड इंजन">5. Local Business &amp; Clinic Lead Engine</h3>
               <ul class="check-list">
                 <li>Convert Reel views into WhatsApp customer enquiries</li>
                 <li>Automated comment-to-DM keyword funnels</li>
@@ -2790,7 +2808,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <div class="white-card">
             <div>
               <div class="service-icon-box">📊</div>
-              <h3 style="font-size:1.18rem;font-weight:800;">6. AI + Human Quality Control</h3>
+              <h3 style="font-size:1.18rem;font-weight:800;" data-hi="6. AI + इंसानी क्वालिटी कंट्रोल">6. AI + Human Quality Control</h3>
               <ul class="check-list">
                 <li>Every video scored against 4 retention rules</li>
                 <li>Hook in first 3 seconds + safe-zone captions</li>
@@ -2811,8 +2829,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       <div class="container">
         <div class="sec-head">
           <span class="eyebrow">Content Operations Without the Headache</span>
-          <h2 class="h2">One Studio Engine. <span class="hl-emerald">Complete Visibility. Zero Stress.</span></h2>
-          <p class="sec-sub">आपको न तो फ्रीलांस एडिटर्स के पीछे भागना पड़ेगा, और न ही खुद बैठकर AI चलाना पड़ेगा।</p>
+          <h2 class="h2" data-hi="एक स्टूडियो सिस्टम। &lt;span class='hl-emerald'&gt;पूरी पारदर्शिता। शून्य तनाव।&lt;/span&gt;">One Studio Engine. <span class="hl-emerald">Complete Visibility. Zero Stress.</span></h2>
+          <p class="sec-sub" data-hi="आपको न तो फ्रीलांस एडिटर्स के पीछे भागना पड़ेगा, और न ही खुद बैठकर AI चलाना पड़ेगा।">You never have to chase unreliable freelance editors or spend hours figuring out AI prompts yourself.</p>
         </div>
 
         <div class="ops-portal-split">
@@ -2820,19 +2838,19 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <div style="display:flex;flex-direction:column;gap:16px;justify-content:center;">
             <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(244,196,78,0.35);border-radius:18px;padding:22px;">
               <span style="font-size:0.76rem;font-weight:800;color:#F4C44E;text-transform:uppercase;">❌ Why Cheap Editors &amp; DIY ChatGPT Fail</span>
-              <h3 style="font-size:1.22rem;margin:6px 0 8px;">"हम खुद ChatGPT या ₹500 वाले एडिटर से काम क्यों न करा लें?"</h3>
-              <p style="font-size:0.92rem;color:rgba(255,255,255,0.84);">
-                सस्ते फ्रीलांस एडिटर को यह नहीं पता होता कि <strong>1 लाख+ ऑडियंस पर कौन सा हुक चलेगा</strong> या ब्रांड्स किस तरह की रील्स को स्पॉन्सर करते हैं। और खुद AI चलाने में आपका रोज़ 3 घंटा बर्बाद होता है।
+              <h3 style="font-size:1.22rem;margin:6px 0 8px;" data-hi="&quot;हम खुद ChatGPT या ₹500 वाले एडिटर से काम क्यों न करा लें?&quot;">"Why shouldn't I just use ChatGPT or a ₹500 freelance video editor?"</h3>
+              <p style="font-size:0.92rem;color:rgba(255,255,255,0.84);" data-hi="सस्ते फ्रीलांस एडिटर को यह नहीं पता होता कि &lt;strong&gt;1 लाख+ ऑडियंस पर कौन सा हुक चलेगा&lt;/strong&gt; या ब्रांड्स किस तरह की रील्स को स्पॉन्सर करते हैं। और खुद AI चलाने में आपका रोज़ 3 घंटा बर्बाद होता है।">
+                Cheap freelance editors don't understand <strong>what 3-second hook retains a 100K+ audience</strong> or what D2C brands look for before sponsoring a creator. And prompting AI tools yourself still wastes 3 hours of your day.
               </p>
             </div>
 
             <div style="background:rgba(16,185,129,0.14);border:1.5px solid #F4C44E;border-radius:18px;padding:22px;">
               <span style="font-size:0.76rem;font-weight:800;color:#6EE7B7;text-transform:uppercase;">✅ The VanIndra AI + Human Studio Model</span>
-              <h3 style="font-size:1.22rem;margin:6px 0 8px;">AI की रफ़्तार + Founder Vandana Yadav और टीम की निगरानी</h3>
+              <h3 style="font-size:1.22rem;margin:6px 0 8px;" data-hi="AI की रफ़्तार + Founder Vandana Yadav और टीम की निगरानी">AI Speed + Human Accountability Led by Founder Vandana Yadav</h3>
               <ul class="check-list" style="margin-top:8px;">
-                <li style="color:#FFFFFF;"><strong>Your Only Job:</strong> हफ्ते में 1 बार फोन से रॉ वीडियो रिकॉर्ड करके WhatsApp पर भेजें।</li>
-                <li style="color:#FFFFFF;"><strong>Our Studio's Job:</strong> रिसर्च, स्क्रिप्टिंग, सबटाइटल एडिटिंग, थंबनेल और ग्रोथ।</li>
-                <li style="color:#FFFFFF;"><strong>Enforced Quality Bar:</strong> हर रील पर 3-सेकंड हुक और ब्रांड-सेफ क्वालिटी चेक।</li>
+                <li style="color:#FFFFFF;" data-hi="&lt;strong&gt;Your Only Job:&lt;/strong&gt; हफ्ते में 1 बार फोन से रॉ वीडियो रिकॉर्ड करके WhatsApp पर भेजें।"><strong>Your Only Job:</strong> Record raw clips on your phone once a week and send them over WhatsApp.</li>
+                <li style="color:#FFFFFF;" data-hi="&lt;strong&gt;Our Studio's Job:&lt;/strong&gt; रिसर्च, स्क्रिप्टिंग, सबटाइटल एडिटिंग, थंबनेल और ग्रोथ।"><strong>Our Studio's Job:</strong> Trend research, viral scripting, subtitle editing, 9:16 covers &amp; brand positioning.</li>
+                <li style="color:#FFFFFF;" data-hi="&lt;strong&gt;Enforced Quality Bar:&lt;/strong&gt; हर रील पर 3-सेकंड हुक और ब्रांड-सेफ क्वालिटी चेक।"><strong>Enforced Quality Bar:</strong> Every Reel passes a 3-second hook &amp; sponsor-safety check before delivery.</li>
               </ul>
             </div>
           </div>
@@ -2889,7 +2907,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
             </div>
 
             <div style="background:#FAF8F3;border:1px solid #E2DDD1;border-radius:12px;padding:12px 14px;font-size:0.83rem;color:#43534C;font-weight:600;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
-              <span><strong>Zero Black Boxes:</strong> हर स्क्रिप्ट, रील ड्राफ्ट और मंथली रिपोर्ट अपने क्लाइंट अकाउंट में लाइव ट्रैक करें।</span>
+              <span data-hi="&lt;strong&gt;Zero Black Boxes:&lt;/strong&gt; हर स्क्रिप्ट, रील ड्राफ्ट और मंथली रिपोर्ट अपने क्लाइंट अकाउंट में लाइव ट्रैक करें।"><strong>Zero Black Boxes:</strong> Track every script, Reel draft, and monthly growth report live inside your client account.</span>
               <a href="login.html" class="btn btn-gold" style="padding:8px 16px;font-size:0.82rem;">🔐 Client Login / Create Account →</a>
             </div>
           </div>
@@ -2904,20 +2922,20 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       <div class="container">
         <div class="sec-head">
           <span class="eyebrow">Our 9-Step Growth Framework</span>
-          <h2 class="h2">Nine Steps. <span class="hl-emerald">One Clear Direction.</span></h2>
-          <p class="sec-sub">ज़्यादातर एडिटर्स सिर्फ वीडियो काटकर छोड़ देते हैं — हमारा 9-स्टेप सिस्टम आपके पेज को एक कमाऊ ब्रांड बनाता है।</p>
+          <h2 class="h2" data-hi="नौ स्पष्ट कदम। &lt;span class='hl-emerald'&gt;एक सटीक दिशा।&lt;/span&gt;">Nine Steps. <span class="hl-emerald">One Clear Direction.</span></h2>
+          <p class="sec-sub" data-hi="ज़्यादातर एडिटर्स सिर्फ वीडियो काटकर छोड़ देते हैं — हमारा 9-स्टेप सिस्टम आपके पेज को एक कमाऊ ब्रांड बनाता है।">Most editors just trim footage and disappear — our 9-step studio pipeline transforms your profile into a high-earning media asset.</p>
         </div>
 
         <div class="steps-9-grid">
-          <div class="step-9-card"><span class="step-9-num">01</span><div><h3 style="font-size:1.05rem;font-weight:800;">7-Day Page Audit</h3><p style="font-size:0.86rem;color:var(--text-secondary);">आपके पिछले 15 पोस्ट और व्यूज की जांच</p></div></div>
-          <div class="step-9-card"><span class="step-9-num">02</span><div><h3 style="font-size:1.05rem;font-weight:800;">What-to-Post Filter</h3><p style="font-size:0.86rem;color:var(--text-secondary);">क्या पोस्ट करें और क्या तुरंत बंद करें</p></div></div>
-          <div class="step-9-card"><span class="step-9-num">03</span><div><h3 style="font-size:1.05rem;font-weight:800;">30-Day Content Calendar</h3><p style="font-size:0.86rem;color:var(--text-secondary);">पूरे महीने का स्पष्ट टॉपिक प्लान</p></div></div>
-          <div class="step-9-card"><span class="step-9-num">04</span><div><h3 style="font-size:1.05rem;font-weight:800;">3-Sec Viral Scripting</h3><p style="font-size:0.86rem;color:var(--text-secondary);">हिंदी/अंग्रेजी में बोलने के लिए तैयार लाइनें</p></div></div>
-          <div class="step-9-card"><span class="step-9-num">05</span><div><h3 style="font-size:1.05rem;font-weight:800;">Easy Phone Shoot</h3><p style="font-size:0.86rem;color:var(--text-secondary);">बिना महंगे कैमरे के 15 मिनट में रिकॉर्डिंग</p></div></div>
-          <div class="step-9-card"><span class="step-9-num">06</span><div><h3 style="font-size:1.05rem;font-weight:800;">Studio Reel Editing</h3><p style="font-size:0.86rem;color:var(--text-secondary);">कैप्शन, ज़ूम कट्स, B-Roll और साउंड डिज़ाइन</p></div></div>
-          <div class="step-9-card"><span class="step-9-num">07</span><div><h3 style="font-size:1.05rem;font-weight:800;">9:16 Cover &amp; Grid Setup</h3><p style="font-size:0.86rem;color:var(--text-secondary);">प्रोफाइल को प्रीमियम ब्रांड जैसा दिखाना</p></div></div>
-          <div class="step-9-card"><span class="step-9-num">08</span><div><h3 style="font-size:1.05rem;font-weight:800;">Collab &amp; Reach Flywheel</h3><p style="font-size:0.86rem;color:var(--text-secondary);">ऑर्गेनिक रीच और नए फॉलोअर्स बढ़ाना</p></div></div>
-          <div class="step-9-card gold-step"><span class="step-9-num">09</span><div><h3 style="font-size:1.05rem;font-weight:800;">Brand Deals &amp; Customers</h3><p style="font-size:0.86rem;color:var(--text-secondary);">स्पॉन्सरशिप और बिज़नेस इंक्वायरी लाना</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">01</span><div><h3 style="font-size:1.05rem;font-weight:800;">7-Day Page Audit</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="आपके पिछले 15 पोस्ट और व्यूज की जांच">Deep audit of your last 15 posts &amp; retention drop-offs</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">02</span><div><h3 style="font-size:1.05rem;font-weight:800;">What-to-Post Filter</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="क्या पोस्ट करें और क्या तुरंत बंद करें">Clear rules on what to double down on vs. stop posting</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">03</span><div><h3 style="font-size:1.05rem;font-weight:800;">30-Day Content Calendar</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="पूरे महीने का स्पष्ट टॉपिक प्लान">Full monthly topic roadmap mapped to viral formats</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">04</span><div><h3 style="font-size:1.05rem;font-weight:800;">3-Sec Viral Scripting</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="हिंदी/अंग्रेजी में बोलने के लिए तैयार लाइनें">Ready-to-speak scripts in English, Hinglish, or Hindi</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">05</span><div><h3 style="font-size:1.05rem;font-weight:800;">Easy Phone Shoot</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="बिना महंगे कैमरे के 15 मिनट में रिकॉर्डिंग">Simple 15-minute phone recording guide — no studio needed</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">06</span><div><h3 style="font-size:1.05rem;font-weight:800;">Studio Reel Editing</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="कैप्शन, ज़ूम कट्स, B-Roll और साउंड डिज़ाइन">Kinetic captions, punch-ins, B-roll &amp; sound design</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">07</span><div><h3 style="font-size:1.05rem;font-weight:800;">9:16 Cover &amp; Grid Setup</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="प्रोफाइल को प्रीमियम ब्रांड जैसा दिखाना">Cohesive magazine-style Reel covers &amp; bio optimization</p></div></div>
+          <div class="step-9-card"><span class="step-9-num">08</span><div><h3 style="font-size:1.05rem;font-weight:800;">Collab &amp; Reach Flywheel</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="ऑर्गेनिक रीच और नए फॉलोअर्स बढ़ाना">Algorithmic cross-promotion &amp; non-follower reach expansion</p></div></div>
+          <div class="step-9-card gold-step"><span class="step-9-num">09</span><div><h3 style="font-size:1.05rem;font-weight:800;">Brand Deals &amp; Customers</h3><p style="font-size:0.86rem;color:var(--text-secondary);" data-hi="स्पॉन्सरशिप और बिज़नेस इंक्वायरी लाना">Convert viral attention into D2C sponsorships &amp; leads</p></div></div>
         </div>
       </div>
     </section>
@@ -2929,74 +2947,74 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       <div class="container">
         <div class="sec-head">
           <span class="eyebrow">100% Automated Voice + Free AI Strategy Desk</span>
-          <h2 class="h2">🎤 बोल कर या लिख कर बताएं — <span class="hl-emerald">5 सेकंड में अपना Free Plan पाएं!</span></h2>
-          <p class="sec-sub">आपको लंबा फॉर्म टाइप करने की ज़रूरत नहीं है। बस नीचे माइक दबाकर हिंदी या अंग्रेजी में बोलें, और हमारा ऑटोमैटिक बैकग्राउंड AI तुरंत आपकी 3 वायरल स्क्रिप्ट और ग्रोथ प्लान बना देगा!</p>
+          <h2 class="h2" data-hi="🎤 बोल कर या लिख कर बताएं — &lt;span class='hl-emerald'&gt;5 सेकंड में अपना Free Plan पाएं!&lt;/span&gt;">🎤 Speak or Type Your Goal — <span class="hl-emerald">Get Your Free Growth Plan in 5 Seconds!</span></h2>
+          <p class="sec-sub" data-hi="आपको लंबा फॉर्म टाइप करने की ज़रूरत नहीं है। बस नीचे माइक दबाकर हिंदी या अंग्रेजी में बोलें, और हमारा ऑटोमैटिक बैकग्राउंड AI तुरंत आपकी 3 वायरल स्क्रिप्ट और ग्रोथ प्लान बना देगा!">No need to type long forms. Tap the microphone below to speak in English or Hindi, and our background AI will instantly generate 3 custom viral Reel scripts and a 7-day roadmap for your page.</p>
         </div>
 
         <div class="ai-form-card">
           <div class="voice-mic-banner">
             <div>
-              <strong style="font-size:1.05rem;display:block;color:var(--text-primary);">🎤 टाइप नहीं करना चाहते? बोल कर फॉर्म भरें! (Voice Input for Everyone)</strong>
-              <span style="font-size:0.86rem;color:var(--text-secondary);" id="voiceStatusText">माइक बटन दबाएं और बोलें: "मेरा नाम ... है, मेरा पेज किस बारे में है और मुझे क्या मदद चाहिए"</span>
+              <strong style="font-size:1.05rem;display:block;color:var(--text-primary);" data-hi="🎤 टाइप नहीं करना चाहते? बोल कर फॉर्म भरें! (Voice Input for Everyone)">🎤 Prefer Speaking Over Typing? Use Instant Voice Input!</strong>
+              <span style="font-size:0.86rem;color:var(--text-secondary);" id="voiceStatusText" data-hi="माइक बटन दबाएं और बोलें: 'मेरा नाम ... है, मेरा पेज किस बारे में है और मुझे क्या मदद चाहिए'">Tap the mic button and tell us your niche, follower count, and what help you need (English or Hindi).</span>
             </div>
-            <button type="button" id="btnVoiceMic" class="mic-record-btn" onclick="startHindiVoiceInput()">
-              🎤 यहाँ दबाकर बोलें (Speak in Hindi/English)
+            <button type="button" id="btnVoiceMic" class="mic-record-btn" onclick="startHindiVoiceInput()" data-hi="🎤 यहाँ दबाकर बोलें (Speak in Hindi/English)">
+              🎤 Tap to Speak (English / Hindi)
             </button>
           </div>
 
           <form id="zeroTouchForm" onsubmit="runZeroTouchBackgroundAI(event)">
             <div class="form-2col">
               <div class="field-box">
-                <label for="ztName">1. आपका नाम (Your Name) *</label>
-                <input type="text" id="ztName" placeholder="उदा. प्रिया शर्मा / Dr. Rajesh Verma" required>
+                <label for="ztName" data-hi="1. आपका नाम (Your Name) *">1. Your Full Name *</label>
+                <input type="text" id="ztName" placeholder="e.g. Priya Sharma / Dr. Rajesh Verma" data-placeholder-hi="उदा. प्रिया शर्मा / Dr. Rajesh Verma" required>
               </div>
               <div class="field-box">
-                <label for="ztHandle">2. इंस्टाग्राम आईडी या बिज़नेस का नाम (@handle) *</label>
-                <input type="text" id="ztHandle" placeholder="उदा. @my_instagram_page" required>
+                <label for="ztHandle" data-hi="2. इंस्टाग्राम आईडी या बिज़नेस का नाम (@handle) *">2. Instagram Handle or Brand Name (@handle) *</label>
+                <input type="text" id="ztHandle" placeholder="e.g. @my_instagram_page" data-placeholder-hi="उदा. @my_instagram_page" required>
               </div>
               <div class="field-box">
-                <label for="ztPhone">3. आपका WhatsApp नंबर *</label>
-                <input type="tel" id="ztPhone" placeholder="उदा. +91 98XXXXXXXX" required>
+                <label for="ztPhone" data-hi="3. आपका WhatsApp नंबर *">3. Your WhatsApp Number *</label>
+                <input type="tel" id="ztPhone" placeholder="e.g. +91 98XXXXXXXX" data-placeholder-hi="उदा. +91 98XXXXXXXX" required>
               </div>
               <div class="field-box">
-                <label for="ztCategory">4. आपका काम / कैटेगरी क्या है?</label>
+                <label for="ztCategory" data-hi="4. आपका काम / कैटेगरी क्या है?">4. Your Niche / Business Category</label>
                 <select id="ztCategory" required>
-                  <option value="Lifestyle, Fashion, Beauty & Vlogging">Lifestyle, Fashion, Beauty &amp; Vlogging (लाइफस्टाइल / व्लॉग)</option>
-                  <option value="Fitness, Food, Nutrition, Doctor & Health">Fitness, Food, Nutrition &amp; Health (हेल्थ / फिटनेस / डॉक्टर)</option>
-                  <option value="Local Business, Shop, Showroom or Service">Local Business, Shop or Showroom (दुकान / बिज़नेस / शोरूम)</option>
-                  <option value="Education, Teacher, Coaching & Motivation">Education, Teacher &amp; Coaching (शिक्षा / कोचिंग / मोटिवेशन)</option>
-                  <option value="Regional Creator, Comedy, Music & Entertainment">Regional Creator, Comedy &amp; Entertainment (मनोरंजन / कॉमेडी)</option>
+                  <option value="Lifestyle, Fashion, Beauty & Vlogging">Lifestyle, Fashion, Beauty &amp; Vlogging</option>
+                  <option value="Fitness, Food, Nutrition, Doctor & Health">Fitness, Food, Nutrition, Doctor &amp; Health</option>
+                  <option value="Local Business, Shop, Showroom or Service">Local Business, Clinic, Showroom or Service</option>
+                  <option value="Education, Teacher, Coaching & Motivation">Education, Teacher, Coaching &amp; Finance</option>
+                  <option value="Regional Creator, Comedy, Music & Entertainment">Regional Creator, Comedy &amp; Entertainment</option>
                 </select>
               </div>
               <div class="field-box">
-                <label for="ztLanguage">5. आप किस भाषा में वीडियो बनाते हैं?</label>
+                <label for="ztLanguage" data-hi="5. आप किस भाषा में वीडियो बनाते हैं?">5. Preferred Content Language</label>
                 <select id="ztLanguage" required>
-                  <option value="Hindi / Hinglish (आसान बोलचाल की हिंदी)">Hindi / Hinglish (आसान बोलचाल की हिंदी)</option>
-                  <option value="English">English (अंग्रेजी)</option>
-                  <option value="Bhojpuri / Regional Hindi">Bhojpuri / Regional Dialect (भोजपुरी / क्षेत्रीय भाषा)</option>
+                  <option value="English">English</option>
+                  <option value="Hindi / Hinglish">Hindi / Hinglish (Conversational)</option>
+                  <option value="Bhojpuri / Regional Hindi">Regional Dialect / Bilingual</option>
                 </select>
               </div>
               <div class="field-box">
-                <label for="ztPackage">6. आप किस सर्विस से शुरुआत करना चाहते हैं?</label>
+                <label for="ztPackage" data-hi="6. आप किस सर्विस से शुरुआत करना चाहते हैं?">6. How Would You Like to Start?</label>
                 <select id="ztPackage" required>
-                  <option value="Free 7-Day Content Plan + 15s Sample Reel Edit">🎁 पहले Free 7-Day Plan + 15s Sample Edit देखना है</option>
-                  <option value="3-Reel Trial Pack (₹2,999 One-Time)">⚡ 3-Reel Trial Pack (₹2,999 — 3 रील्स स्क्रिप्ट + एडिटिंग)</option>
+                  <option value="Free 7-Day Content Plan + 15s Sample Reel Edit">🎁 Start with Free 7-Day Content Plan + 15s Sample Edit</option>
+                  <option value="3-Reel Trial Pack (₹2,999 One-Time)">⚡ 3-Reel Trial Pack (₹2,999 — 3 Scripts + Studio Edits)</option>
                   <option value="VanIndra Starter - 12 Reels/Month (₹14,999)">🚀 Starter Plan — 12 Reels/Month + Brand Ready (₹14,999)</option>
                   <option value="VanIndra Pro Growth - 20 Reels/Month (₹24,999)">👑 Pro Growth — 20 Reels/Month + Full Management (₹24,999)</option>
                 </select>
               </div>
               <div class="field-box full">
-                <label for="ztVoiceNotes">7. आपकी मुख्य समस्या या ज़रूरत (यहाँ लिखें या ऊपर माइक दबाकर बोलें) *</label>
-                <textarea id="ztVoiceNotes" rows="3" placeholder="उदा. मेरे 1 लाख+ फॉलोअर्स हैं पर व्यूज कम आते हैं, मुझे रील एडिटिंग और ब्रांड डील्स चाहिए..." required></textarea>
+                <label for="ztVoiceNotes" data-hi="7. आपकी मुख्य समस्या या ज़रूरत (यहाँ लिखें या ऊपर माइक दबाकर बोलें) *">7. Your Primary Goal or Challenge (Type below or use the Voice Mic above) *</label>
+                <textarea id="ztVoiceNotes" rows="3" placeholder="e.g. I have 100K+ followers on Instagram but views have plateaued. I need high-retention Reel editing, viral hooks, and brand deal positioning..." data-placeholder-hi="उदा. मेरे 1 लाख+ फॉलोअर्स हैं पर व्यूज कम आते हैं, मुझे रील एडिटिंग और ब्रांड डील्स चाहिए..." required></textarea>
               </div>
             </div>
 
             <div style="margin-top:22px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
-              <button type="submit" id="btnRunAI" class="btn btn-gold">
-                🤖 अभी मेरा Free Growth Plan और 3 वायरल स्क्रिप्ट बनाएं →
+              <button type="submit" id="btnRunAI" class="btn btn-gold" data-hi="🤖 अभी मेरा Free Growth Plan और 3 वायरल स्क्रिप्ट बनाएं →">
+                🤖 Generate My Free Growth Plan &amp; 3 Viral Scripts Now →
               </button>
-              <span id="aiLoadingIndicator" style="display:none;color:var(--emerald-rich);font-weight:800;font-size:0.92rem;">
-                ⏳ हमारा बैकग्राउंड AI आपके पेज के लिए 3 वायरल स्क्रिप्ट और प्लान तैयार कर रहा है (5 सेकंड रुकें)...
+              <span id="aiLoadingIndicator" style="display:none;color:var(--emerald-rich);font-weight:800;font-size:0.92rem;" data-hi="⏳ हमारा बैकग्राउंड AI आपके पेज के लिए 3 वायरल स्क्रिप्ट और प्लान तैयार कर रहा है (5 सेकंड रुकें)...">
+                ⏳ Our background AI is crafting 3 custom viral scripts &amp; growth roadmap for your page (takes ~5 seconds)...
               </span>
             </div>
           </form>
@@ -3004,20 +3022,20 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
           <!-- Real-Time AI Output Drawer -->
           <div id="ztOutputPanel" class="ai-output-drawer" aria-live="polite">
             <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:8px;">
-              <h3 style="color:#F4C44E;font-size:1.25rem;">🎉 आपका कस्टम ग्रोथ प्लान और 3 वायरल स्क्रिप्ट तैयार हैं!</h3>
-              <button type="button" class="top-chip-btn" onclick="speakGeneratedPlan()">🔊 इस प्लान को हिंदी में सुनें</button>
+              <h3 style="color:#F4C44E;font-size:1.25rem;" data-hi="🎉 आपका कस्टम ग्रोथ प्लान और 3 वायरल स्क्रिप्ट तैयार हैं!">🎉 Your Custom Growth Plan &amp; 3 Viral Reel Scripts Are Ready!</h3>
+              <button type="button" class="top-chip-btn" onclick="speakGeneratedPlan()" data-hi="🔊 इस प्लान को हिंदी में सुनें">🔊 Listen to Audio Summary</button>
             </div>
-            <p style="font-size:0.88rem;color:rgba(255,255,255,0.85);">
-              अब नीचे <strong>WhatsApp बटन दबाएं</strong>—आपकी तैयार फाइल सीधे हमारी <strong>Official WhatsApp Concierge (Smita Yadav • +91 81128 59437)</strong> के पास पहुँच जाएगी और हम आपका 15-सेकंड का फ्री सैंपल एडिट शुरू कर देंगे!
+            <p style="font-size:0.88rem;color:rgba(255,255,255,0.85);" data-hi="अब नीचे &lt;strong&gt;WhatsApp बटन दबाएं&lt;/strong&gt;—आपकी तैयार फाइल सीधे हमारी &lt;strong&gt;Official WhatsApp Concierge (Smita Yadav • +91 81128 59437)&lt;/strong&gt; के पास पहुँच जाएगी और हम आपका 15-सेकंड का फ्री सैंपल एडिट शुरू कर देंगे!">
+              Click the <strong>WhatsApp button below</strong> to send this strategy brief directly to our <strong>Official WhatsApp Concierge (Smita Yadav • +91 81128 59437)</strong> so we can start your complimentary 15-second sample Reel edit!
             </p>
             <pre id="ztOutputText" class="ai-pre-box"></pre>
             <div style="display:flex;gap:12px;flex-wrap:wrap;">
               <button type="button" class="btn btn-whatsapp" onclick="sendZeroTouchWhatsApp('918112859437')">
                 <svg class="app-icon-svg"><use href="#icon-whatsapp"></use></svg>
-                <span>Official WhatsApp Desk (Smita Yadav • +91 81128 59437) पर भेजें</span>
+                <span data-hi="Official WhatsApp Desk (Smita Yadav • +91 81128 59437) पर भेजें">Send to Official WhatsApp Desk (Smita Yadav • +91 81128 59437)</span>
               </button>
-              <button type="button" class="btn btn-outline-light" onclick="copyTextById('ztOutputText')">📋 कॉपी करें</button>
-              <button type="button" class="btn btn-outline-light" onclick="downloadZeroTouchFile()">📥 फाइल डाउनलोड करें (.md)</button>
+              <button type="button" class="btn btn-outline-light" onclick="copyTextById('ztOutputText')" data-hi="📋 कॉपी करें">📋 Copy Plan</button>
+              <button type="button" class="btn btn-outline-light" onclick="downloadZeroTouchFile()" data-hi="📥 फाइल डाउनलोड करें (.md)">📥 Download Brief (.md)</button>
             </div>
           </div>
         </div>
@@ -3032,8 +3050,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       <div class="container">
         <div class="sec-head">
           <span class="eyebrow">Founder &amp; Core Studio Leadership</span>
-          <h2 class="h2">Meet Founder <span class="hl-emerald">Vandana Yadav</span> &amp; Her Core Studio Team</h2>
-          <p class="sec-sub">हमारी टीम आपके पूरे कंटेंट, एडिटिंग और ब्रांड डील्स को पूरी ईमानदारी और अपने परिवार के बिज़नेस की तरह संभालती है।</p>
+          <h2 class="h2" data-hi="मिलिए फाउंडर &lt;span class='hl-emerald'&gt;Vandana Yadav&lt;/span&gt; और उनकी कोर स्टूडियो टीम से">Meet Founder <span class="hl-emerald">Vandana Yadav</span> &amp; Her Core Studio Team</h2>
+          <p class="sec-sub" data-hi="हमारी टीम आपके पूरे कंटेंट, एडिटिंग और ब्रांड डील्स को पूरी ईमानदारी और अपने परिवार के बिज़नेस की तरह संभालती है।">Our studio leadership manages your content calendar, high-retention editing, and brand deal pipeline with complete accountability.</p>
         </div>
 
         <div class="leadership-3-grid">
@@ -3043,8 +3061,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="leader-role-tag">👑 FOUNDER &amp; CHIEF INFLUENCER DIRECTOR</div>
               <h3 style="font-size:1.38rem;font-weight:800;">Vandana Yadav</h3>
               <span class="leader-edu-pill">Founder &amp; Flagship Client Portfolio #01</span>
-              <p style="font-size:0.92rem;color:var(--text-secondary);">
-                VanIndra Creations की फाउंडर और सक्रिय भारतीय इन्फ्लुएंसर — हर क्लाइंट के पेज पर <strong>"क्या पोस्ट होना चाहिए और क्या नहीं"</strong>, क्रिएटिव डायरेक्शन और ऑथेंटिक स्टोरीटेलिंग की खुद देखरेख करती हैं।
+              <p style="font-size:0.92rem;color:var(--text-secondary);" data-hi="VanIndra Creations की फाउंडर और सक्रिय भारतीय इन्फ्लुएंसर — हर क्लाइंट के पेज पर 'क्या पोस्ट होना चाहिए और क्या नहीं', क्रिएटिव डायरेक्शन और ऑथेंटिक स्टोरीटेलिंग की खुद देखरेख करती हैं।">
+                Founder of VanIndra Creations and active Indian creator (<strong>@vandanay2012</strong>) — personally oversees every client's <strong>"What to Post vs. What NOT to Post"</strong> strategy, creative direction, and authentic audience storytelling.
               </p>
             </div>
 
@@ -3072,8 +3090,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="leader-role-tag">GROWTH, BRAND DEALS &amp; CLIENT RELATIONS LEAD</div>
               <h3 style="font-size:1.38rem;font-weight:800;">Smita Yadav</h3>
               <span class="leader-edu-pill">B.Com • Gargi College, University of Delhi</span>
-              <p style="font-size:0.92rem;color:var(--text-secondary);">
-                इंस्टाग्राम कंटेंट क्रिएटर (Portfolio #02) और दिल्ली यूनिवर्सिटी कॉमर्स स्ट्रैटेजिस्ट — 50K से 1M+ इन्फ्लुएंसर्स और बिज़नेस क्लाइंट्स की <strong>आधिकारिक WhatsApp ऑनबोर्डिंग, ब्रांड डील्स और ग्रोथ कॉल</strong> संभालती हैं।
+              <p style="font-size:0.92rem;color:var(--text-secondary);" data-hi="इंस्टाग्राम कंटेंट क्रिएटर (Portfolio #02) और दिल्ली यूनिवर्सिटी कॉमर्स स्ट्रैटेजिस्ट — 50K से 1M+ इन्फ्लुएंसर्स और बिज़नेस क्लाइंट्स की आधिकारिक WhatsApp ऑनबोर्डिंग, ब्रांड डील्स और ग्रोथ कॉल संभालती हैं।">
+                Instagram creator (Portfolio #02) and Delhi University Commerce strategist — leads <strong>official WhatsApp client onboarding, D2C brand deal negotiations, and monthly growth reviews</strong> for 50K–1M+ creators and businesses.
               </p>
             </div>
 
@@ -3108,8 +3126,8 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
               <div class="leader-role-tag">TECH, VIDEO EDITING &amp; SCIENTIFIC NICHE LEAD</div>
               <h3 style="font-size:1.38rem;font-weight:800;">Akarsh Yadav</h3>
               <span class="leader-edu-pill">B.Voc Food Tech • Univ. of Allahabad</span>
-              <p style="font-size:0.92rem;color:var(--text-secondary);">
-                टेक-ड्रिवन क्रिएटर और वीडियो एडिटर (इलाहाबाद यूनिवर्सिटी) — हाई-रिटेंशन रील्स, 15-सेकंड सैंपल एडिट्स और हेल्थ, फूड, न्यूट्रिशन व फिटनेस क्रिएटर्स के लिए साइंटिफिक हुक्स तैयार करते हैं।
+              <p style="font-size:0.92rem;color:var(--text-secondary);" data-hi="टेक-ड्रिवन क्रिएटर और वीडियो एडिटर (इलाहाबाद यूनिवर्सिटी) — हाई-रिटेंशन रील्स, 15-सेकंड सैंपल एडिट्स और हेल्थ, फूड, न्यूट्रिशन व फिटनेस क्रिएटर्स के लिए साइंटिफिक हुक्स तैयार करते हैं।">
+                Tech-driven video editor and University of Allahabad Food Technology specialist — heads <strong>high-retention Reel production, 15-second Before/After sample edits, and research-backed hooks</strong> for Food, Health, Fitness &amp; Doctor creators.
               </p>
             </div>
 
@@ -3148,19 +3166,19 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       <div class="container">
         <div class="sec-head">
           <span class="eyebrow">Transparent Investment &amp; ROI</span>
-          <h2 class="h2">छोटे ट्रायल से शुरू करें या <span class="hl-emerald">पूरा महीना हमारी टीम को सौंप दें</span></h2>
-          <p class="sec-sub">सिर्फ 1 ब्रांड डील या कुछ नए ग्राहकों से ही आपके पूरे महीने का खर्च आसानी से निकल आता है।</p>
+          <h2 class="h2" data-hi="छोटे ट्रायल से शुरू करें या &lt;span class='hl-emerald'&gt;पूरा महीना हमारी टीम को सौंप दें&lt;/span&gt;">Start with a 3-Reel Trial or <span class="hl-emerald">Hand Over Your Entire Monthly Pipeline</span></h2>
+          <p class="sec-sub" data-hi="सिर्फ 1 ब्रांड डील या कुछ नए ग्राहकों से ही आपके पूरे महीने का खर्च आसानी से निकल आता है।">Just a single brand sponsorship or a handful of inbound client leads easily covers your entire monthly studio retainer.</p>
         </div>
 
         <!-- Interactive ROI Calculator -->
         <div class="roi-split-card" style="margin-bottom:42px;">
           <div>
             <span class="eyebrow">Income &amp; Time Calculator</span>
-            <h3 style="font-size:1.45rem;font-weight:800;margin-bottom:14px;">देखें आपके फॉलोअर्स से हर महीने कितनी कमाई हो सकती है</h3>
+            <h3 style="font-size:1.45rem;font-weight:800;margin-bottom:14px;" data-hi="देखें आपके फॉलोअर्स से हर महीने कितनी कमाई हो सकती है">Estimate Your Monthly Reach, Time Saved &amp; Sponsorship Potential</h3>
 
             <div style="margin-bottom:20px;">
               <div style="display:flex;justify-content:space-between;font-weight:800;margin-bottom:6px;">
-                <span>1. आपके अभी कितने फॉलोअर्स हैं?</span>
+                <span data-hi="1. आपके अभी कितने फॉलोअर्स हैं?">1. Your Current Follower Base</span>
                 <span style="color:var(--emerald-rich);" id="lblFollowers">1,50,000 Followers</span>
               </div>
               <input type="range" id="rngFollowers" min="50000" max="1000000" step="25000" value="150000" oninput="updateROICalc()" style="width:100%;accent-color:var(--emerald-rich);">
@@ -3168,7 +3186,7 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
 
             <div style="margin-bottom:20px;">
               <div style="display:flex;justify-content:space-between;font-weight:800;margin-bottom:6px;">
-                <span>2. महीने में कितनी रील्स डालेंगे?</span>
+                <span data-hi="2. महीने में कितनी रील्स डालेंगे?">2. Studio Reels Published / Month</span>
                 <span style="color:var(--emerald-rich);" id="lblReels">20 Reels / Month</span>
               </div>
               <input type="range" id="rngReels" min="8" max="30" step="2" value="20" oninput="updateROICalc()" style="width:100%;accent-color:var(--emerald-rich);">
@@ -3177,19 +3195,19 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
 
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
             <div style="background:var(--bg-page);border:1px solid var(--border-line);border-radius:16px;padding:18px;">
-              <small style="font-weight:700;color:var(--text-muted);">अनुमानित मासिक व्यूज</small>
+              <small style="font-weight:700;color:var(--text-muted);" data-hi="अनुमानित मासिक व्यूज">Projected Monthly Reach</small>
               <div style="font-family:'Space Grotesk',sans-serif;font-size:1.75rem;font-weight:800;color:var(--emerald-rich);" id="outViews">14.4 Lakh+</div>
-              <span style="font-size:0.76rem;color:var(--text-secondary);">3-सेकंड वायरल हुक के साथ</span>
+              <span style="font-size:0.76rem;color:var(--text-secondary);" data-hi="3-सेकंड वायरल हुक के साथ">With 3-second retention hooks</span>
             </div>
             <div style="background:var(--bg-page);border:1px solid var(--border-line);border-radius:16px;padding:18px;">
-              <small style="font-weight:700;color:var(--text-muted);">एडिटिंग का समय बचेगा</small>
-              <div style="font-family:'Space Grotesk',sans-serif;font-size:1.75rem;font-weight:800;color:#B47D09;" id="outHours">70 घंटे/महीना</div>
-              <span style="font-size:0.76rem;color:var(--text-secondary);">सारी एडिटिंग हमारी टीम करेगी</span>
+              <small style="font-weight:700;color:var(--text-muted);" data-hi="एडिटिंग का समय बचेगा">Creator Time Saved</small>
+              <div style="font-family:'Space Grotesk',sans-serif;font-size:1.75rem;font-weight:800;color:#B47D09;" id="outHours">70 Hours/mo</div>
+              <span style="font-size:0.76rem;color:var(--text-secondary);" data-hi="सारी एडिटिंग हमारी टीम करेगी">100% editing handled by our pod</span>
             </div>
             <div style="grid-column:1/-1;background:var(--emerald-tint);border:1.5px solid var(--emerald-rich);border-radius:16px;padding:18px;">
-              <small style="font-weight:800;color:var(--emerald-rich);text-transform:uppercase;">हर महीने संभावित ब्रांड डील्स और बिज़नेस कमाई</small>
+              <small style="font-weight:800;color:var(--emerald-rich);text-transform:uppercase;" data-hi="हर महीने संभावित ब्रांड डील्स और बिज़नेस कमाई">Estimated Monthly Brand Deal &amp; Business Revenue Potential</small>
               <div style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:800;color:var(--text-primary);" id="outRevenue">₹76,500 – ₹1,41,500 / mo</div>
-              <span style="font-size:0.8rem;color:var(--text-secondary);">प्रोफेशनल प्रोफाइल और स्पॉन्सरशिप पैकेजिंग से</span>
+              <span style="font-size:0.8rem;color:var(--text-secondary);" data-hi="प्रोफेशनल प्रोफाइल और स्पॉन्सरशिप पैकेजिंग से">Powered by sponsor-ready profile positioning &amp; outbound brand pitching</span>
             </div>
           </div>
         </div>
@@ -3198,66 +3216,66 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
         <div class="pricing-4-grid">
           <article class="price-card">
             <div>
-              <span style="font-size:0.74rem;font-weight:800;color:var(--emerald-rich);text-transform:uppercase;">Test Drive (ट्रायल पैक)</span>
+              <span style="font-size:0.74rem;font-weight:800;color:var(--emerald-rich);text-transform:uppercase;" data-hi="Test Drive (ट्रायल पैक)">Test Drive (Trial Pack)</span>
               <h3 style="font-size:1.22rem;font-weight:800;margin-top:4px;">3-Reel Trial Pack</h3>
-              <div class="price-amount">₹2,999 <small>/ एक बार</small></div>
-              <p style="font-size:0.85rem;color:var(--text-secondary);">हमारा काम परखने के लिए सबसे पहले 3 शानदार रील्स बनवाकर देखें।</p>
+              <div class="price-amount">₹2,999 <small data-hi="/ एक बार">/ One-Time</small></div>
+              <p style="font-size:0.85rem;color:var(--text-secondary);" data-hi="हमारा काम परखने के लिए सबसे पहले 3 शानदार रील्स बनवाकर देखें।">Experience our scripting, hook engineering, and studio editing quality on 3 Reels before committing monthly.</p>
               <ul class="check-list">
-                <li>7-दिन का "क्या पोस्ट करें" प्लान</li>
-                <li>3 वायरल स्क्रिप्ट्स और हुक्स</li>
-                <li>3 प्रोफेशनल एडिटेड रील्स</li>
-                <li>कैप्शन और रील कवर फोटो</li>
+                <li data-hi="7-दिन का 'क्या पोस्ट करें' प्लान">7-Day "What to Post" Strategy Plan</li>
+                <li data-hi="3 वायरल स्क्रिप्ट्स और हुक्स">3 Viral Scripts &amp; 3-Sec Hooks</li>
+                <li data-hi="3 प्रोफेशनल एडिटेड रील्स">3 Studio-Edited High-Retention Reels</li>
+                <li data-hi="कैप्शन और रील कवर फोटो">Bilingual Captions &amp; 9:16 Reel Covers</li>
               </ul>
             </div>
-            <a href="#smart-ai-portal" onclick="selectPackageInForm('3-Reel Trial Pack (₹2,999 One-Time)')" class="btn btn-outline-ink" style="width:100%;margin-top:20px;">ट्रायल शुरू करें</a>
+            <a href="#smart-ai-portal" onclick="selectPackageInForm('3-Reel Trial Pack (₹2,999 One-Time)')" class="btn btn-outline-ink" style="width:100%;margin-top:20px;" data-hi="ट्रायल शुरू करें">Start 3-Reel Trial</a>
           </article>
 
           <article class="price-card">
             <div>
               <span style="font-size:0.74rem;font-weight:800;color:var(--emerald-rich);text-transform:uppercase;">3 Reels / Week</span>
               <h3 style="font-size:1.22rem;font-weight:800;margin-top:4px;">VanIndra Starter</h3>
-              <div class="price-amount">₹14,999 <small>/ महीना</small></div>
-              <p style="font-size:0.85rem;color:var(--text-secondary);">लगातार ग्रोथ और प्रोफेशनल एडिटिंग चाहने वाले क्रिएटर्स के लिए।</p>
+              <div class="price-amount">₹14,999 <small data-hi="/ महीना">/ month</small></div>
+              <p style="font-size:0.85rem;color:var(--text-secondary);" data-hi="लगातार ग्रोथ और प्रोफेशनल एडिटिंग चाहने वाले क्रिएटर्स के लिए।">Built for growing creators and professionals who want consistent weekly Reels and clean studio editing.</p>
               <ul class="check-list">
-                <li>पूरे महीने का कंटेंट कैलेंडर</li>
-                <li>12 वायरल स्क्रिप्ट्स</li>
-                <li>12 हाई-रिटेंशन एडिटेड रील्स</li>
-                <li>कैप्शन, हैशटैग और थंबनेल</li>
+                <li data-hi="पूरे महीने का कंटेंट कैलेंडर">Full 30-Day Content Calendar</li>
+                <li data-hi="12 वायरल स्क्रिप्ट्स">12 Research-Backed Viral Scripts</li>
+                <li data-hi="12 हाई-रिटेंशन एडिटेड रील्स">12 High-Retention Studio Edited Reels</li>
+                <li data-hi="कैप्शन, हैशटैग और थंबनेल">Captions, SEO Hashtags &amp; 9:16 Covers</li>
               </ul>
             </div>
-            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Starter - 12 Reels/Month (₹14,999)')" class="btn btn-outline-ink" style="width:100%;margin-top:20px;">Starter चुनें</a>
+            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Starter - 12 Reels/Month (₹14,999)')" class="btn btn-outline-ink" style="width:100%;margin-top:20px;" data-hi="Starter चुनें">Choose Starter</a>
           </article>
 
           <article class="price-card featured-plan">
             <div>
-              <span style="font-size:0.72rem;background:var(--gold-imperial);color:#081C15;padding:4px 10px;border-radius:999px;font-weight:800;">★ सबसे लोकप्रिय (5 REELS/WK)</span>
+              <span style="font-size:0.72rem;background:var(--gold-imperial);color:#081C15;padding:4px 10px;border-radius:999px;font-weight:800;" data-hi="★ सबसे लोकप्रिय (5 REELS/WK)">★ MOST POPULAR (5 REELS/WK)</span>
               <h3 style="font-size:1.22rem;font-weight:800;margin-top:10px;">VanIndra Pro Growth</h3>
-              <div class="price-amount">₹24,999 <small>/ महीना</small></div>
-              <p style="font-size:0.85rem;color:var(--text-secondary);">Founder Vandana Yadav (@vandanay2012) की देखरेख में 20 रील्स और ब्रांड डील तैयारी।</p>
+              <div class="price-amount">₹24,999 <small data-hi="/ महीना">/ month</small></div>
+              <p style="font-size:0.85rem;color:var(--text-secondary);" data-hi="Founder Vandana Yadav (@vandanay2012) की देखरेख में 20 रील्स और ब्रांड डील तैयारी।">20 studio Reels/month + full brand sponsorship positioning supervised by Founder Vandana Yadav (@vandanay2012).</p>
               <ul class="check-list">
-                <li>30-दिन का पूरा कंटेंट कैलेंडर</li>
-                <li>20 वायरल स्क्रिप्ट्स + शूटिंग गाइड</li>
-                <li>20 स्टूडियो एडिटेड रील्स + कवर्स</li>
-                <li>प्रोफाइल और बायो अपग्रेड (Brand Ready)</li>
+                <li data-hi="30-दिन का पूरा कंटेंट कैलेंडर">30-Day Viral Content &amp; Series Calendar</li>
+                <li data-hi="20 वायरल स्क्रिप्ट्स + शूटिंग गाइड">20 Viral Scripts + Easy Phone Shoot Guide</li>
+                <li data-hi="20 स्टूडियो एडिटेड रील्स + कवर्स">20 Studio-Edited Reels + 9:16 Grid Covers</li>
+                <li data-hi="प्रोफाइल और बायो अपग्रेड (Brand Ready)">Brand-Ready Bio, Media Kit &amp; Deal Pitching</li>
               </ul>
             </div>
-            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Month (₹24,999)')" class="btn btn-gold" style="width:100%;margin-top:20px;">Pro Growth चुनें →</a>
+            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Month (₹24,999)')" class="btn btn-gold" style="width:100%;margin-top:20px;" data-hi="Pro Growth चुनें →">Select Pro Growth →</a>
           </article>
 
           <article class="price-card">
             <div>
               <span style="font-size:0.74rem;font-weight:800;color:var(--emerald-rich);text-transform:uppercase;">Daily Reels (VIP Studio)</span>
               <h3 style="font-size:1.22rem;font-weight:800;margin-top:4px;">VanIndra 360° VIP</h3>
-              <div class="price-amount">₹39,999 <small>/ महीना</small></div>
-              <p style="font-size:0.85rem;color:var(--text-secondary);">डॉक्टर्स, बिज़नेस ओनर्स और बड़े क्रिएटर्स के लिए 100% हैंड्स-फ्री सर्विस।</p>
+              <div class="price-amount">₹39,999 <small data-hi="/ महीना">/ month</small></div>
+              <p style="font-size:0.85rem;color:var(--text-secondary);" data-hi="डॉक्टर्स, बिज़नेस ओनर्स और बड़े क्रिएटर्स के लिए 100% हैंड्स-फ्री सर्विस।">100% hands-free daily domination for 100K–1M+ influencers, doctors, clinics, and established businesses.</p>
               <ul class="check-list">
-                <li>30 डेली रील्स (स्क्रिप्ट + एडिटिंग)</li>
-                <li>अकाउंट पर पोस्टिंग और शेड्यूलिंग</li>
-                <li>ऑटोमैटिक DM रिप्लाई सेटअप</li>
-                <li>ब्रांड स्पॉन्सरशिप मीडिया किट</li>
+                <li data-hi="30 डेली रील्स (स्क्रिप्ट + एडिटिंग)">30 Daily Reels (Scripting + Studio Editing)</li>
+                <li data-hi="अकाउंट पर पोस्टिंग और शेड्यूलिंग">Done-For-You Publishing &amp; Scheduling</li>
+                <li data-hi="ऑटोमैटिक DM रिप्लाई सेटअप">Automated Comment-to-DM Funnel Setup</li>
+                <li data-hi="ब्रांड स्पॉन्सरशिप मीडिया किट">Dedicated Brand Sponsorship Representation</li>
               </ul>
             </div>
-            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Month (₹24,999)')" class="btn btn-emerald" style="width:100%;margin-top:20px;">360° VIP चुनें</a>
+            <a href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Month (₹24,999)')" class="btn btn-emerald" style="width:100%;margin-top:20px;" data-hi="360° VIP चुनें">Select 360° VIP</a>
           </article>
         </div>
       </div>
@@ -3270,25 +3288,25 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       <div class="container">
         <div class="sec-head">
           <span class="eyebrow">Frequently Asked Questions</span>
-          <h2 class="h2">सवाल जो क्रिएटर्स और बिज़नेस ओनर्स <span class="hl-emerald">सबसे पहले पूछते हैं</span></h2>
+          <h2 class="h2" data-hi="सवाल जो क्रिएटर्स और बिज़नेस ओनर्स &lt;span class='hl-emerald'&gt;सबसे पहले पूछते हैं&lt;/span&gt;">Questions Creators &amp; Business Owners <span class="hl-emerald">Ask Us First</span></h2>
         </div>
 
         <div class="faq-list">
           <details open>
-            <summary>1. मुझे वीडियो एडिटिंग या स्क्रिप्ट लिखना बिल्कुल नहीं आता—क्या मैं जुड़ सकता हूँ?</summary>
-            <p>बिल्कुल! हमारा सिस्टम खास तौर पर इसीलिए बनाया गया है। आपको सिर्फ अपने मोबाइल फोन से साधारण वीडियो रिकॉर्ड करके WhatsApp पर भेजना है। क्या बोलना है (स्क्रिप्ट), वीडियो की एडिटिंग, कैप्शन, थंबनेल और ब्रांड पोजिशनिंग का 100% काम हमारी टीम करती है।</p>
+            <summary data-hi="1. मुझे वीडियो एडिटिंग या स्क्रिप्ट लिखना बिल्कुल नहीं आता—क्या मैं जुड़ सकता हूँ?">1. I don't know video editing or scriptwriting at all — can I still work with you?</summary>
+            <p data-hi="बिल्कुल! हमारा सिस्टम खास तौर पर इसीलिए बनाया गया है। आपको सिर्फ अपने मोबाइल फोन से साधारण वीडियो रिकॉर्ड करके WhatsApp पर भेजना है। क्या बोलना है (स्क्रिप्ट), वीडियो की एडिटिंग, कैप्शन, थंबनेल और ब्रांड पोजिशनिंग का 100% काम हमारी टीम करती है।">Absolutely! Our studio system is built specifically for busy creators, doctors, educators, and business owners. You simply record raw talking videos on your smartphone and send them over WhatsApp. Our team handles 100% of your scripts, 3-second hooks, editing, bilingual captions, 9:16 covers, and brand positioning.</p>
           </details>
           <details>
-            <summary>2. पैकेज लेने से पहले क्या मैं आपका काम (Sample Edit) देख सकता हूँ?</summary>
-            <p>हाँ! ऊपर दिए गए WhatsApp Concierge बॉक्स में अपना विवरण भरें या सीधे हमारी Official WhatsApp Desk (Smita Yadav • +91 81128 59437) पर संदेश भेजें। हम आपके पेज का 7-दिन का कंटेंट प्लान और आपके किसी एक वीडियो का 15-सेकंड का Before/After सैंपल एडिट बिल्कुल मुफ्त दिखाएंगे।</p>
+            <summary data-hi="2. पैकेज लेने से पहले क्या मैं आपका काम (Sample Edit) देख सकता हूँ?">2. Can I see a custom Sample Edit of my own video before choosing a monthly plan?</summary>
+            <p data-hi="हाँ! ऊपर दिए गए WhatsApp Concierge बॉक्स में अपना विवरण भरें या सीधे हमारी Official WhatsApp Desk (Smita Yadav • +91 81128 59437) पर संदेश भेजें। हम आपके पेज का 7-दिन का कंटेंट प्लान और आपके किसी एक वीडियो का 15-सेकंड का Before/After सैंपल एडिट बिल्कुल मुफ्त दिखाएंगे।">Yes! Message our Official WhatsApp Concierge Desk (Smita Yadav • +91 81128 59437) using the composer at the top of the page. We provide a complimentary 7-Day Content Audit and a 15-second Before/After Studio Sample Edit on one of your existing videos before you commit.</p>
           </details>
           <details>
-            <summary>3. क्या आप नकली फॉलोअर्स (Fake Followers) बेचते हैं या असली ऑर्गेनिक ग्रोथ करते हैं?</summary>
-            <p>हम कभी भी नकली फॉलोअर्स या बॉट्स नहीं बेचते (उससे अकाउंट खराब हो जाता है)। हम मजबूत 3-सेकंड हुक्स, हाई-रिटेंशन एडिटिंग और स्ट्रैटेजिक कोलैबोरेशन से असली व्यूज, ब्रांड डील्स और ग्राहक लाते हैं।</p>
+            <summary data-hi="3. क्या आप नकली फॉलोअर्स (Fake Followers) बेचते हैं या असली ऑर्गेनिक ग्रोथ करते हैं?">3. Do you sell fake followers/bots, or is this 100% organic algorithmic growth?</summary>
+            <p data-hi="हम कभी भी नकली फॉलोअर्स या बॉट्स नहीं बेचते (उससे अकाउंट खराब हो जाता है)। हम मजबूत 3-सेकंड हुक्स, हाई-रिटेंशन एडिटिंग और स्ट्रैटेजिक कोलैबोरेशन से असली व्यूज, ब्रांड डील्स और ग्राहक लाते हैं।">We never use fake followers or bots (which permanently damage account reach). Every view, share, follower, and brand inquiry is generated organically through psychological 3-second hooks, high-retention studio editing, and strategic Collab posts.</p>
           </details>
           <details>
-            <summary>4. मुझे कैसे पता चलेगा कि मेरे अकाउंट पर क्या काम हो रहा है?</summary>
-            <p>जुड़ते ही आपका एक समर्पित WhatsApp ग्रुप और क्लाइंट पोर्टल अकाउंट बनता है जिसमें Founder Vandana Yadav, Smita Yadav और Akarsh Yadav रहते हैं। हर हफ्ते की स्क्रिप्ट, एडिटेड रील्स और मंथली ग्रोथ रिपोर्ट आपको समय पर मिलती है।</p>
+            <summary data-hi="4. मुझे कैसे पता चलेगा कि मेरे अकाउंट पर क्या काम हो रहा है?">4. How will I track my weekly scripts, edited Reels, and monthly growth?</summary>
+            <p data-hi="जुड़ते ही आपका एक समर्पित WhatsApp ग्रुप और क्लाइंट पोर्टल अकाउंट बनता है जिसमें Founder Vandana Yadav, Smita Yadav और Akarsh Yadav रहते हैं। हर हफ्ते की स्क्रिप्ट, एडिटेड रील्स और मंथली ग्रोथ रिपोर्ट आपको समय पर मिलती है।">The moment you onboard, you get a dedicated WhatsApp Studio Pod with Founder Vandana Yadav, Smita Yadav, and Akarsh Yadav, plus access to your Live Client Portal (`login.html`) where every script, Reel draft, and monthly analytics report is tracked transparently.</p>
           </details>
         </div>
       </div>
@@ -3342,14 +3360,33 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
   <script>
     /* ==========================================================================
        0. OFFICIAL SINGLE WHATSAPP CONCIERGE (+91 81128 59437 — SMITA YADAV)
-          ELEGANT & EDITABLE EXECUTIVE MESSAGE COMPOSER
+          ELEGANT & EDITABLE EXECUTIVE MESSAGE COMPOSER + SMART HEADER SCROLL
        ========================================================================== */
     const OFFICIAL_WHATSAPP_NUMBER = "918112859437"; // Smita Yadav ONLY
+    window.currentLangMode = 'en';
+    window.currentPhoneMode = 'after';
+
+    // Smart Sticky Header: sleek Emerald Glass bar that auto-hides on downward scroll
+    // and reappears immediately when scrolling up (fixes Akarsh's scroll complaint)
+    (function initSmartHeaderScroll() {
+      let lastScrollY = window.scrollY || 0;
+      const headerEl = document.getElementById('stickySiteHeader');
+      window.addEventListener('scroll', () => {
+        if (!headerEl) return;
+        const currentY = window.scrollY || 0;
+        if (currentY > 180 && currentY > lastScrollY + 6) {
+          headerEl.classList.add('header-hidden');
+        } else if (currentY < lastScrollY - 6 || currentY <= 120) {
+          headerEl.classList.remove('header-hidden');
+        }
+        lastScrollY = currentY;
+      }, { passive: true });
+    })();
 
     function openElegantWhatsAppDirect(sourceLabel) {
       const nameEl = document.getElementById('waQuickName');
       const tierEl = document.getElementById('waQuickTier');
-      const msgEl = document.getElementById('waQuickMessage');
+      const msgEl = document.getElementById('elegantWaMessage') || document.getElementById('waQuickMessage');
 
       const nameVal = (nameEl && nameEl.value.trim()) ? nameEl.value.trim() : "";
       const tierVal = (tierEl && tierEl.value) ? tierEl.value : "100K+ / Growing Creator or Brand";
@@ -3389,24 +3426,37 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
     }
 
     /* ==========================================================================
-       3. BILINGUAL SWITCHER (HINDI/HINGLISH <-> ENGLISH) & AUDIO VOICE GUIDE
+       3. FULL-PAGE BILINGUAL SWITCHER (ENGLISH DEFAULT <-> HINDI/HINGLISH)
        ========================================================================== */
     function setLanguageMode(lang) {
-      document.getElementById('btnLangHi').classList.toggle('active', lang === 'hi');
-      document.getElementById('btnLangEn').classList.toggle('active', lang === 'en');
-      const title = document.getElementById('heroMainTitle');
-      const sub = document.getElementById('heroSubTitle');
-      const tapPrompt = document.getElementById('tapPromptLabel');
+      window.currentLangMode = lang;
+      const btnEn = document.getElementById('btnLangEn');
+      const btnHi = document.getElementById('btnLangHi');
+      if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+      if (btnHi) btnHi.classList.toggle('active', lang === 'hi');
 
-      if (lang === 'en') {
-        title.innerHTML = 'Social media that builds <span class="gold-text">more than followers —</span><br>Reels, Brand Deals &amp; Business.';
-        sub.innerHTML = 'Founded by active influencer <strong>Vandana Yadav (@vandanay2012)</strong>. Whether you are a 50K–1M+ creator, doctor, educator, or business owner—<strong>you don\'t need to learn editing or marketing!</strong> Just record raw clips on your phone; our studio handles all your scripts, 3-second hooks, editing, and brand deal positioning.';
-        tapPrompt.textContent = '👇 What do you need the most help with right now? (Tap any card):';
-      } else {
-        title.innerHTML = 'Followers हैं पर <span class="gold-text">Business, Editing और Brand Deals</span> कैसे बढ़ाएं समझ नहीं आ रहा?';
-        sub.innerHTML = 'चाहे आप पढ़े-लिखे प्रोफेशनल हों (Doctor, Educator, Coach, Influencer) या अपने हुनर से आगे बढ़ने वाले क्रिएटर और व्यापारी — <strong>आपको एडिटिंग या मार्केटिंग सीखने की ज़रूरत नहीं है!</strong> बस फोन से वीडियो रिकॉर्ड करें; <strong>स्क्रिप्ट, 3-सेकंड हुक, रील एडिटिंग और ब्रांड डील्स</strong> का पूरा काम <strong>Founder Vandana Yadav</strong> और उनकी टीम संभालेगी।';
-        tapPrompt.textContent = '👇 आपको सबसे ज़्यादा किस चीज़ में मदद चाहिए? (अपनी ज़रूरत पर टैप करें):';
-      }
+      // 1. Toggle every element with [data-hi] across the entire page
+      document.querySelectorAll('[data-hi]').forEach((el) => {
+        if (!el.hasAttribute('data-en')) {
+          el.setAttribute('data-en', el.innerHTML);
+        }
+        el.innerHTML = (lang === 'hi') ? el.getAttribute('data-hi') : el.getAttribute('data-en');
+      });
+
+      // 2. Toggle input/textarea placeholders with [data-placeholder-hi]
+      document.querySelectorAll('[data-placeholder-hi]').forEach((inputEl) => {
+        if (!inputEl.hasAttribute('data-placeholder-en')) {
+          inputEl.setAttribute('data-placeholder-en', inputEl.getAttribute('placeholder') || '');
+        }
+        inputEl.setAttribute(
+          'placeholder',
+          (lang === 'hi') ? inputEl.getAttribute('data-placeholder-hi') : inputEl.getAttribute('data-placeholder-en')
+        );
+      });
+
+      // 3. Refresh 3D iPhone Simulator & ROI Calculator labels in the active language
+      switchPhoneSimulation(window.currentPhoneMode || 'after');
+      updateROICalc();
     }
 
     function speakTextInHindi(text) {
@@ -3451,32 +3501,42 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
       const notes = document.getElementById('ztVoiceNotes');
 
       if (!SpeechRecognition) {
-        alert("आपके ब्राउज़र में माइक सपोर्ट नहीं है, कृपया नीचे बॉक्स में लिखें या Chrome में खोलें।");
+        alert(window.currentLangMode === 'hi'
+          ? "आपके ब्राउज़र में माइक सपोर्ट नहीं है, कृपया नीचे बॉक्स में लिखें या Chrome में खोलें।"
+          : "Voice input is not supported in this browser. Please type in the box below or open in Google Chrome.");
         notes.focus();
         return;
       }
 
       const recognition = new SpeechRecognition();
-      recognition.lang = 'hi-IN';
+      recognition.lang = window.currentLangMode === 'hi' ? 'hi-IN' : 'en-IN';
       recognition.interimResults = false;
 
       btn.classList.add('listening');
-      btn.textContent = '🔴 अब बोलिए... (Listening...)';
-      status.textContent = 'माइक चालू है — अपनी बात आराम से हिंदी या अंग्रेजी में बोलें...';
+      btn.textContent = window.currentLangMode === 'hi' ? '🔴 अब बोलिए... (Listening...)' : '🔴 Listening... Speak Now';
+      status.textContent = window.currentLangMode === 'hi'
+        ? 'माइक चालू है — अपनी बात आराम से हिंदी या अंग्रेजी में बोलें...'
+        : 'Microphone active — speak naturally in English or Hindi...';
 
       recognition.onresult = (event) => {
         const transcript = event.results[0][0].transcript;
         notes.value = (notes.value ? notes.value + " " : "") + transcript;
-        status.textContent = '✅ आपकी आवाज़ रिकॉर्ड हो गई! अब नीचे पीला बटन दबाकर अपना AI प्लान बनाएं।';
+        status.textContent = window.currentLangMode === 'hi'
+          ? '✅ आपकी आवाज़ रिकॉर्ड हो गई! अब नीचे पीला बटन दबाकर अपना AI प्लान बनाएं।'
+          : '✅ Voice captured! Now click the gold button below to generate your custom AI growth plan.';
       };
 
       recognition.onerror = () => {
-        status.textContent = 'कृपया दोबारा माइक दबाएं या नीचे बॉक्स में लिखें।';
+        status.textContent = window.currentLangMode === 'hi'
+          ? 'कृपया दोबारा माइक दबाएं या नीचे बॉक्स में लिखें।'
+          : 'Please tap the microphone again or type your goal in the box below.';
       };
 
       recognition.onend = () => {
         btn.classList.remove('listening');
-        btn.textContent = '🎤 यहाँ दबाकर बोलें (Speak in Hindi/English)';
+        btn.textContent = window.currentLangMode === 'hi'
+          ? '🎤 यहाँ दबाकर बोलें (Speak in Hindi/English)'
+          : '🎤 Tap to Speak (English / Hindi)';
       };
 
       recognition.start();
@@ -3511,20 +3571,20 @@ I explored your live creator portfolio (@vandanay2012 & @smitayadav_0901) and wo
 ◆ VANINDRA CREATIONS — CUSTOM CLIENT GROWTH & SCRIPT PLAN
 ◆ Founded by Vandana Yadav (@vandanay2012)
 ============================================================
-👤 नाम (Name): ${name}
-📸 इंस्टाग्राम/पेज (Handle): ${handle}
+👤 Client Name: ${name}
+📸 Instagram Handle: ${handle}
 📱 WhatsApp: ${phone}
-🏷️ कैटेगरी (Niche): ${category}
-🗣️ भाषा (Language): ${lang}
-📦 चुना गया प्लान (Selected Plan): ${pkg}
-💬 मुख्य ज़रूरत (Requirement): "${notes}"
+🏷️ Niche / Category: ${category}
+🗣️ Preferred Language: ${lang}
+📦 Selected Tier: ${pkg}
+💬 Core Objective: "${notes}"
 ============================================================\n\n`;
 
-      const aiPrompt = `You are the AI Content Strategist for VanIndra Creations (Founded by Vandana Yadav @vandanay2012, with team Smita Yadav @smitayadav_0901 and Akarsh Yadav @yadavakarsh_07). Create a practical, high-converting growth roadmap in ${lang} (easy Hinglish/Hindi) for "${name}" (${handle}) in category "${category}" whose requirement is: "${notes}".
+      const aiPrompt = `You are the Chief AI Content Strategist for VanIndra Creations (Founded by Vandana Yadav @vandanay2012, with core leadership team Smita Yadav @smitayadav_0901 and Akarsh Yadav @yadavakarsh_07). Create a practical, high-converting growth roadmap in ${lang} for "${name}" (${handle}) in category "${category}" whose requirement is: "${notes}".
 Include:
-1. "Kya Post Karein vs Kya Nahi Post Karein" (3 simple rules)
+1. "What to Post vs. What NOT to Post" (3 high-retention rules)
 2. 3 Ready-to-Shoot Viral Reel Scripts (with 3-second Hook + Spoken Lines + Editing Note for Akarsh Yadav @yadavakarsh_07)
-3. Next step to get Brand Deals / Customers with Smita Yadav (@smitayadav_0901).`;
+3. Next step to secure Brand Deals / Inbound Customers with Smita Yadav (@smitayadav_0901).`;
 
       let aiResponseText = "";
       try {
@@ -3533,7 +3593,7 @@ Include:
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             messages: [
-              { role: "system", content: "You are a warm, expert Indian Instagram & Business Growth Strategist at VanIndra Creations founded by Vandana Yadav. Write clearly in easy Hinglish + Hindi." },
+              { role: "system", content: "You are a sharp, executive Indian Instagram & Business Growth Strategist at VanIndra Creations founded by Vandana Yadav. Write clearly in the user's requested language." },
               { role: "user", content: aiPrompt }
             ],
             model: "openai"
@@ -3547,19 +3607,19 @@ Include:
       }
 
       if (!aiResponseText || aiResponseText.length < 60) {
-        aiResponseText = `✅ 1. क्या पोस्ट करें vs क्या नहीं पोस्ट करें (WHAT TO POST RULES BY VANDANA YADAV):
-   • ✅ ज़रूर पोस्ट करें: 30-40 सेकंड के काम की जानकारी वाले वीडियो (जिनके शुरू के 3 सेकंड में बड़ा सवाल या समस्या हो)।
-   • ✅ ज़रूर पोस्ट करें: ग्राहक/ऑडियंस के सबसे बड़े 3 सवालों के जवाब और बिहाइंड-द-सीन्स भरोसा बढ़ाने वाली रील्स।
-   • ❌ बिल्कुल मत करें: बिना कैप्शन के लंबे बोरिंग वीडियो या शुरुआत में "हेलो दोस्तों कैसे हैं आप" बोलकर समय गंवाना।
+        aiResponseText = `✅ 1. WHAT TO POST vs. WHAT NOT TO POST (CURATED BY VANDANA YADAV @vandanay2012):
+   • ✅ POST MORE: 30–45 second high-retention Reels opening with a bold 3-second contrarian claim or visual proof.
+   • ✅ POST MORE: Repeatable 3-part signature series answering your audience's top buying/trust questions.
+   • ❌ STOP POSTING: Unscripted videos without top-banner headlines or slow "Hello friends, welcome back" intros.
 
-🎬 2. आपके पेज के लिए 3 तैयार वायरल रील आइडियाज (READY-TO-SHOOT SCRIPTS):
-   • रील #1 (3-Sec Hook): "90% लोग ${category} में यह सबसे बड़ी गलती करते हैं—रुकिए और यह सच जानिए!"
-     -> एडिटिंग नोट (Akarsh Yadav @yadavakarsh_07): ऊपर गोल्डन पट्टी में बोल्ड हेडलाइन + फास्ट ज़ूम कट्स + डायनामिक सबटाइटल्स।
-   • रील #2 (Trust & Authority): "लोग मुझसे रोज़ पूछते हैं कि सही तरीके से रिज़ल्ट कैसे पाएं? यह रहे 3 आसान स्टेप्स..."
-   • रील #3 (Brand/Customer Magnet): "अगर आप भी इस समस्या से परेशान हैं, तो इस रील को सेव कर लें और कमेंट में YES लिखें!"
+🎬 2. THREE READY-TO-SHOOT VIRAL REEL SCRIPTS FOR ${handle.toUpperCase()}:
+   • Reel #1 (Myth-Buster Hook): "90% of people in ${category} still make this expensive mistake — stop and watch this for 20 seconds!"
+     -> Studio Editing Note (Akarsh Yadav @yadavakarsh_07): Gold top hook strip + punch-in zoom cuts every 2.5s + bilingual kinetic captions.
+   • Reel #2 (Authority & Proof): "Here are the exact 3 steps I recommend to every client/follower who wants real results..."
+   • Reel #3 (Lead & Brand Magnet): "Save this checklist right now and comment 'PLAN' below so I can DM you the complete guide!"
 
-💰 3. ब्रांड डील्स और बिज़नेस बढ़ाने का अगला कदम:
-   • नीचे हरा WhatsApp बटन दबाकर यह फाइल सीधे हमारी Official WhatsApp Concierge (Smita Yadav • +91 81128 59437) को भेजें—हम आपके एक वीडियो का 15-सेकंड का फ्री सैंपल एडिट करके दिखाएंगे!`;
+💰 3. NEXT STEP FOR BRAND DEALS & SAMPLE EDIT:
+   • Click the green WhatsApp button below to send this brief directly to our Official WhatsApp Concierge (Smita Yadav • +91 81128 59437) and claim your complimentary 15-second Sample Reel Edit!`;
       }
 
       const fullCombinedOutput = instantHeader + aiResponseText + `\n\n————————————————\n✨ VanIndra Creations | Founder: Vandana Yadav (@vandanay2012) | Team: @smitayadav_0901 & @yadavakarsh_07`;
@@ -3596,9 +3656,11 @@ Include:
     }
 
     /* ==========================================================================
-       6. BEFORE/AFTER SIMULATOR & ROI CALCULATOR
+       6. BEFORE/AFTER SIMULATOR & ROI CALCULATOR (BILINGUAL AWARE)
        ========================================================================== */
     function switchPhoneSimulation(mode) {
+      window.currentPhoneMode = mode;
+      const isHi = (window.currentLangMode === 'hi');
       const btnBefore = document.getElementById('btnModeBefore');
       const btnAfter = document.getElementById('btnModeAfter');
       const banner = document.getElementById('phoneHookBanner');
@@ -3615,12 +3677,14 @@ Include:
         btnAfter.className = 'sim-btn';
         banner.style.background = 'rgba(225, 29, 72, 0.35)';
         banner.style.color = '#FFE4E6';
-        banner.textContent = '❌ कोई हेडलाइन नहीं • धीमी शुरुआत';
-        caption.innerHTML = '"हेलो दोस्तों, स्वागत है मेरे पेज पर..." <span style="color:#FDA4AF;">(68% लोग स्किप कर गए)</span>';
-        chipRet.innerHTML = '⚠️ 3-Sec Hold: <span style="color:#E11D48;">21.4%</span>';
-        chipViews.innerHTML = '📉 Reach: <span style="color:#E11D48;">4,210 Views</span>';
-        chipSponsor.innerHTML = '❌ Brand Deals: <span style="color:#E11D48;">0 Deals</span>';
-        graphLeft.textContent = '▼ लोग 5 सेकंड में छोड़ देते हैं';
+        banner.textContent = isHi ? '❌ कोई हेडलाइन नहीं • धीमी शुरुआत' : '❌ NO HOOK BANNER • SLOW INTRO';
+        caption.innerHTML = isHi
+          ? '"हेलो दोस्तों, स्वागत है मेरे पेज पर..." <span style="color:#FDA4AF;">(68% लोग स्किप कर गए)</span>'
+          : '"Hello guys, welcome back to my page..." <span style="color:#FDA4AF;">(68% viewers swiped away)</span>';
+        chipRet.innerHTML = '⚠️ 3-Sec Hold<br><span style="color:#E11D48;">21.4%</span>';
+        chipViews.innerHTML = '📉 Reach<br><span style="color:#E11D48;">4.2K Views</span>';
+        chipSponsor.innerHTML = '❌ Brand Deals<br><span style="color:#E11D48;">0 Deals</span>';
+        graphLeft.textContent = isHi ? '▼ लोग 3 सेकंड में स्किप कर देते हैं' : '▼ Viewers drop off in first 3 seconds';
         graphLeft.style.color = '#FDA4AF';
         graphRight.textContent = '-72% DROP';
         curve.setAttribute('d', 'M 0 12 Q 55 35, 130 38 T 260 40');
@@ -3630,14 +3694,18 @@ Include:
         btnAfter.className = 'sim-btn active-after';
         banner.style.background = 'linear-gradient(90deg, #F4C44E, #FFE89E)';
         banner.style.color = '#081C15';
-        banner.textContent = '⚠️ 1 LAKH+ KE BAAD YEH GALTI MAT KARNA!';
-        caption.innerHTML = '"अगर आपका <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">बिज़नेस या पेज</span> रुका हुआ है, तो बस <span style="color:#F4C44E;">यह 3 बदलाव</span> करें..."';
-        chipRet.innerHTML = '🎯 3-Sec Hold: <span style="color:#0E6B4E;">84.2%</span>';
-        chipViews.innerHTML = '🔥 Reach: <span style="color:#B47D09;">6,84,900 Views</span>';
-        chipSponsor.innerHTML = '💰 Brand Deal Ready: <span style="color:#0E6B4E;">₹65K/Reel</span>';
-        graphLeft.textContent = '▲ लोग पूरा वीडियो देखते हैं (84%)';
+        banner.textContent = isHi
+          ? '⚠️ 1 लाख+ फॉलोअर्स के बाद यह गलती मत करना!'
+          : '⚠️ STOP MAKING THIS MISTAKE AFTER 100K!';
+        caption.innerHTML = isHi
+          ? '"अगर आपका <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">बिज़नेस या पेज</span> रुका हुआ है, तो बस <span style="color:#F4C44E;">यह 3 बदलाव</span> करें..."'
+          : '"If your <span style="background:#10B981;color:#05140E;padding:2px 6px;border-radius:5px;">reach or income</span> has plateaued, fix these <span style="color:#F4C44E;">3 retention hooks</span>..."';
+        chipRet.innerHTML = '🎯 3-Sec Hold<br><span style="color:#0E6B4E;">84.2%</span>';
+        chipViews.innerHTML = '🔥 Reach<br><span style="color:#B47D09;">6.8L+ Views</span>';
+        chipSponsor.innerHTML = '💰 Brand Deal<br><span style="color:#0E6B4E;">₹65K/Reel</span>';
+        graphLeft.textContent = isHi ? '▲ 84% दर्शक वीडियो पर रुकते हैं' : '▲ 84.2% 3-Second Hold & Watch Time';
         graphLeft.style.color = '#34D399';
-        graphRight.textContent = '+410% ग्रोथ';
+        graphRight.textContent = isHi ? '+410% ग्रोथ' : '+410% LIFT';
         curve.setAttribute('d', 'M 0 8 Q 65 9, 130 12 T 260 16');
         curve.setAttribute('stroke', '#10B981');
       }
@@ -3646,6 +3714,7 @@ Include:
     function updateROICalc() {
       const followers = parseInt(document.getElementById('rngFollowers').value, 10);
       const reels = parseInt(document.getElementById('rngReels').value, 10);
+      const isHi = (window.currentLangMode === 'hi');
       document.getElementById('lblFollowers').textContent = followers.toLocaleString('en-IN') + ' Followers';
       document.getElementById('lblReels').textContent = reels + ' Reels / Month';
 
@@ -3655,7 +3724,7 @@ Include:
       const maxDeal = Math.round(minDeal * 1.85);
 
       document.getElementById('outViews').textContent = estViewsLakhs + ' Lakh+';
-      document.getElementById('outHours').textContent = hoursSaved + ' घंटे/महीना';
+      document.getElementById('outHours').textContent = isHi ? (hoursSaved + ' घंटे/महीना') : (hoursSaved + ' Hours/mo');
       document.getElementById('outRevenue').textContent = '₹' + minDeal.toLocaleString('en-IN') + ' – ₹' + maxDeal.toLocaleString('en-IN') + ' / mo';
     }
 
@@ -3667,7 +3736,7 @@ Include:
     function copyTextById(elementId) {
       const text = document.getElementById(elementId).textContent;
       navigator.clipboard.writeText(text).then(() => {
-        alert("कॉपी हो गया! (Copied to clipboard)");
+        alert(window.currentLangMode === 'hi' ? "कॉपी हो गया! (Copied to clipboard)" : "Copied to clipboard!");
       });
     }
 
