@@ -89,6 +89,8 @@ Top 3 votes ke baad final polish karke 2–3 options phir dikhaunga/dikhaungi. W
 | Smita Yadav | | | | | | | |
 | Akarsh Yadav | | | | | | | |
 
+**Check-in 15 Oct, 17:00 UTC:** no email replies yet from Smita Yadav or Akarsh Yadav on the logo (Round 2 options or the F1/F2 finalists), and no answer to the Hindi check. A WhatsApp nudge was suggested to the owner.
+
 ---
 
 ## Email log

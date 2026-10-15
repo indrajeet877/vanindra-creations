@@ -16,9 +16,11 @@ All judges: every variation beats Liquid Glass. Every variation passes the autom
 ## Feedback log
 | From | 1st | 2nd | Why / changes | Broken on phone? |
 | :--- | :--- | :--- | :--- | :--- |
-| Owner | | | | |
-| Smita Yadav | | | | |
-| Akarsh Yadav | | | | |
+| Owner | Focus Story (went live 15 Oct) | — | Then: "I don't like it… create 3D glass, stylish, elegant, cursor features, magic and motion effects… blow their clients' mind" | — |
+| Smita Yadav | — | — | No email reply by 15 Oct, 17:00 UTC | — |
+| Akarsh Yadav | **Liquid Glass** (style 3 of the first round) | — | Picked on WhatsApp, relayed by the owner on 15 Oct ("This?" with a screenshot of the Liquid Glass hero). Owner: the team wants that design with 3D glass, magic cursor and cinematic motion | — |
+
+**Decision (15 Oct):** build the final homepage on **Liquid Glass** with 3D glass, magic cursor and cinematic motion; redesign the client login page in the same style. Show the owner videos and a preview before it goes live.
 
 ## Email log
 | Sent (UTC) | To | Subject | Content |

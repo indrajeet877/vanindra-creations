@@ -1,0 +1,450 @@
+[
+ {
+  "judge": "I looked at every sheet, sizes, context and explore PNG, plus my own enlarged renders of the T1, T3 and T5 marks and of the T1, T3, T5 and T6 wordmarks. Before scoring I re-read the rejected crest and Round 1.\n\nThe verdict on the set is harsh. Six of the seven concepts are still \"a V\". All seven reuse Round 1's descriptor: CREATIONS in tracked gold Jost under the name. The owner rejected exactly that, and will notice it again. Most of the concepts depend on a story card. Without it, the emerald, the jaali, the hook/tick and Indra's Net cannot be seen in the drawing.\n\nOnly one concept carries an idea you can see without being told: T5 Shirorekha. A Devanagari headline bar runs over Latin letters, the mark reads as both V and व, and \"head-line\" doubles as the 3-second hook the business sells. That one idea serves both the India story and the business pun, it has a real wordmark system, and it has the strongest silhouette at 16 to 32 px. It is the only concept I would keep.\n\nT3 has the best-drawn letters, but it is a stock luxury-hotel VI monogram that reads as the Roman numeral six, and its canvas is a Louis Vuitton pastiche.\n\nT1, T4 and T7 are clean but generic V marks, and the T1 and T4 wordmarks are close to Round 1's.\n\nT2 has the richest meaning (Indra's Net), but the drawing reads as argyle or an ear of wheat, and its small mark reads as a verified tick.\n\nT6's mark reads as a cursive N, and its wordmark reads as \"VanJndra\".\n\nNothing here is a 9. T5 is a 6.5 that could reach 8 with a refinement pass and native-reader testing.",
+  "scores": [
+   {
+    "id": "t5_shirorekha",
+    "originality": 7.5,
+    "elegance_craft": 6,
+    "meaning": 8,
+    "small_size": 8,
+    "india_premium_fit": 8.5,
+    "global_fit": 6.5,
+    "overall": 6.5,
+    "verdict": "keep",
+    "what_works": "This is the only concept whose idea is visible without the story. The shirorekha bar, the leaf-and-danda structure and the triangular counter read as V to Latin readers and as a व-style glyph to Hindi readers. 'Every letter hangs from the headline' is a real business pun: the hook is the headline. The wordmark is a coherent drawn system rather than a stock font: danda verticals, wedge diagonals landing on feet, and superellipse bowls in D and R. At 16 to 32 px the bar + triangle + stem silhouette is the most distinctive in the round. The bilingual lockup is the most ownable asset across all seven concepts.",
+    "must_fix": [
+     "Mark weight sits top-right. The 14.5-unit danda and the 9.6-unit headline outweigh the 5-unit hairline and the tapering leaf, so the glyph leans right and leaves the bottom-left quadrant empty. In the 110 px circle it reads as a 'T' or a flag. Raise the hairline to about 7-8 units and re-centre optically to the left.",
+     "Headline overhang is unequal: about 86 units past the leaf on the left and about 48 past the danda on the right at 900 px. This reads as accidental. Make it deliberate (as in Devanagari) or balance it.",
+     "Where the leaf joins the bar, a thin acute white sliver forms between the leaf's concave edge and the bar. It clogs at 24-48 px. Either open it into a clear notch or close it fully.",
+     "Wordmark: N-I-N gives five vertical stems in a row (a picket fence). Each N's wedge diagonal also lands on a 16.5-unit foot that merges with the right stem, leaving a dark clot at the baseline of every N. Trim the foot or cut an ink trap, and open N–I and I–N by about 10%.",
+     "The V's curved leaf is the only curve among straight wedges. In the wordmark it looks like a letter from another typeface. Either echo the leaf curve once more (the A's thick arm) or straighten it slightly.",
+     "Drop the tracked gold Jost CREATIONS. It is Round 1's descriptor. Hang it from a hairline headline in the same system, or leave it out of the primary lockup.",
+     "The horizontal lockup reads 'VI VANINDRA'. Use the wordmark alone for horizontal uses and the mark only for the avatar and favicon.",
+     "Test with Hindi readers that the mark reads as व and not प or ब. Redraw वनिंद्रा in the same leaf/danda system instead of the heavier, different-contrast Tiro Devanagari, and have the team verify the द्र conjunct.",
+     "Guard against the 'Samarkan / Indian-restaurant font' reading: no ornaments, and keep the bar thickness and letter contrast exactly as specified."
+    ]
+   },
+   {
+    "id": "t3_maison_monogram",
+    "originality": 4,
+    "elegance_craft": 7,
+    "meaning": 4,
+    "small_size": 6,
+    "india_premium_fit": 4.5,
+    "global_fit": 7,
+    "overall": 5,
+    "verdict": "kill",
+    "what_works": "The best-drawn letterforms in the round. The custom Didone V has believable contrast and bracketed serifs, the over/under break is clean, and the slab-serif small cut is properly re-solved rather than just scaled. It looks expensive.",
+    "must_fix": [
+     "On its own it reads as the Roman numeral VI ('six'). Seen in an Instagram avatar without the name, that is the first read.",
+     "The I's foot serif almost touches the V's vertex at the baseline, creating a dark knot. Separate them by at least a hairline width or join them deliberately.",
+     "The V's thick arm and the I stem are near the same weight, so the hairline crossing the I reads as a strikethrough ('≠') rather than a link. At 24-48 px the 18-unit break gaps close and the threading is lost.",
+     "The I at 0.84 cap height looks like a letter from a smaller font size dropped in, not a designed partner to the V.",
+     "The half-drop monogram canvas reads as a Louis Vuitton/Goyard pastiche. Remove it.",
+     "Wordmark: CREATIONS is flush left and only about half the width of 'VanIndra', leaving a hole under 'Indra'. Otherwise it is stock Bodoni Moda, the same genre as Round 1.",
+     "Nothing in the design says India or creators. The 'forest and sky' story is invisible."
+    ]
+   },
+   {
+    "id": "t2_indras_net",
+    "originality": 5.5,
+    "elegance_craft": 4.5,
+    "meaning": 7,
+    "small_size": 4.5,
+    "india_premium_fit": 6,
+    "global_fit": 5,
+    "overall": 4.5,
+    "verdict": "kill",
+    "what_works": "The strongest public story in the set: Indra's Net, with a jewel at every knot, as creators amplifying each other through collabs. The single gold stone is a good restrained accent, and the rhombic grid is genuinely systematic, so it could drive a pattern.",
+    "must_fix": [
+     "The strap's outer edge is saw-toothed by the diamond tips. The silhouette reads as an ear of wheat, snakeskin or an argyle sock, not jewellery. Clip the outer edge to a straight line so the stones sit inside a clean V.",
+     "The strap ends at the top in two diamond points at different heights. There is no cap line, so the V's top is undefined.",
+     "The 12-unit thread against a two-stone strap is too extreme. The mark reads as a √ / tick, not a V.",
+     "The thread stops a light-line short of the gold stone, leaving an unexplained gap exactly at the focal point.",
+     "The small mark (solid parallelogram + detached slash) is a different drawing and reads as a 'verified' checkmark icon.",
+     "CREATIONS is justified across the full width with roughly 1 em between letters. It falls apart, and at 52 px header height it is unreadable.",
+     "On ivory the gold net pattern reads as a garden trellis or fence."
+    ]
+   },
+   {
+    "id": "t1_emerald_cut",
+    "originality": 4,
+    "elegance_craft": 6,
+    "meaning": 4,
+    "small_size": 5,
+    "india_premium_fit": 5,
+    "global_fit": 6,
+    "overall": 4.5,
+    "verdict": "kill",
+    "what_works": "Clean polygon construction, strong Didone contrast and a confident tall proportion. The 9:16 link to the Reel format is a smart internal rationale.",
+    "must_fix": [
+     "The crotch is stepped. At 900 px the thick stone's inner edge ends at a different point from where the thin stone's inner edge starts, so the seam enters through a visible elbow instead of a single point.",
+     "The 45° chamfers sit only on the two outer top corners. The thick stroke reads as a necktie or letter opener and the thin stroke as a blade. The emerald is not visible.",
+     "The thin stone's top is a sliver of about 15 units after the chamfer. It is fragile and disappears below 48 px.",
+     "At 16-32 px it is an ordinary solid V with nothing ownable, and the narrow 9:16 V leaves empty side space in the circle avatar.",
+     "The wordmark (Didone VANINDRA + centred tracked gold Jost CREATIONS) is almost identical to the rejected Round 1 'A maison' wordmark. The culet-cut apexes cannot be seen."
+    ]
+   },
+   {
+    "id": "t4_jaali",
+    "originality": 4,
+    "elegance_craft": 6,
+    "meaning": 5,
+    "small_size": 6,
+    "india_premium_fit": 5,
+    "global_fit": 6,
+    "overall": 4.5,
+    "verdict": "kill",
+    "what_works": "Rigorous derivation from a {8/3} star. The Hankin jaali pattern is the best secondary asset in the round: rich, flat and genuinely architectural.",
+    "must_fix": [
+     "Pointed shoulders + a split tip = chevron rank insignia, arrowhead or bird's tail. At 16-48 px the small mark is a plain 'scroll down' chevron.",
+     "The hairline split is too short and thin. At 50-90 px it looks like a rendering artefact, not a design decision.",
+     "The jaali origin is invisible in the mark. It needs the construction card to be understood.",
+     "The 8-point star seal carries Islamic geometric / Rub el Hizb associations (and a Christmas-star reading). That is risky against the brief's sensitive-symbol rule for an Indian family-creator brand.",
+     "Marcellus caps + gold tracked CREATIONS reads as spa or real estate. The horizontal lockup stutters 'V VANINDRA'."
+    ]
+   },
+   {
+    "id": "t7_hook_mark",
+    "originality": 3,
+    "elegance_craft": 6.5,
+    "meaning": 5,
+    "small_size": 7,
+    "india_premium_fit": 4,
+    "global_fit": 6,
+    "overall": 4,
+    "verdict": "kill",
+    "what_works": "Precise and economical geometry, a robust silhouette at every size, and a nice internal logic (9:16 diagonals, cut at 9/16 H). The hook/tick story fits the business.",
+    "must_fix": [
+     "'V with one arm cut off and coloured' is one of the most common stock-template moves. First read is a generic esports/fintech V.",
+     "A horizontal cut across a diagonal arm leaves an acute wedge at the gold piece's lower end. It reads as misregistration, not intent.",
+     "The tick below the cut is not perceived without the construction diagram.",
+     "Antique gold on ivory (about 3.2:1) makes the hook nearly vanish on light grounds, and the one-colour cut closes below 40 px.",
+     "The one-line two-colour VANINDRA CREATIONS in Jost caps looks corporate/proptech, not premium. N, I, D and R are stock."
+    ]
+   },
+   {
+    "id": "t6_signature",
+    "originality": 5,
+    "elegance_craft": 4,
+    "meaning": 5,
+    "small_size": 4.5,
+    "india_premium_fit": 5.5,
+    "global_fit": 5,
+    "overall": 4,
+    "verdict": "kill",
+    "what_works": "A signature suits a founder-fronted creator brand, and the idea of one pen gesture joining Van and Indra is warm and personal. Building it from a skeleton with a simulated nib is more ambitious than the other concepts.",
+    "must_fix": [
+     "The mark (thick down, hairline up, thick down) reads as a cursive 'N', not V+I.",
+     "The canopy capital I reads as 'J', so the wordmark reads 'VanJndra'.",
+     "mark_small is lumpy: blob ball terminals and an uneven, bulging right stroke make it look like a marker scribble, not a cut.",
+     "The canopy hairline over 'an' looks like an awning and disappears at the 52 px header height. Letter widths are uneven (the d's wedge ascender, the r).",
+     "'VI | VanIndra' repeats the V, and the result sits in the wedding-script genre."
+    ]
+   }
+  ],
+  "top3": [
+   "t5_shirorekha",
+   "t3_maison_monogram",
+   "t2_indras_net"
+  ],
+  "missing_idea": "Make the identity wordmark-led and bilingual, with one shared gold dot. In वनिंद्रा the anusvara (ं) sits over नि. In lowercase Latin \"vanindra\" the i-dot sits over \"ni\", the same position in the word. Design one custom bilingual wordmark, Latin and Devanagari, drawn as one system and hung from one shirorekha (T5's construction). Make that single dot the only gold element. It can carry three meanings at once: the bindu, the one jewel of Indra's Net (T2's best idea), and the focal point of the first 3 seconds. The avatar mark is then not another V. It is the headline plus the gold bindu (or the v/व glyph with it), and it is recognisable in both scripts. T5's explore sheet touched a lowercase version with a bindu (E4/E5) but never noticed the matching position across the two scripts. More broadly: stop defaulting to a lone V, and stop adding tracked-Jost CREATIONS to every lockup. A top studio would lead with drawn lettering of the name and derive the symbol from its most distinctive feature."
+ },
+ {
+  "judge": "I judged as two buyers: a lifestyle creator with 4 lakh followers deciding whether to pay Rs 25,000 a month, and a jewellery, saree or skincare brand manager deciding on a Rs 2 lakh campaign. I looked at every sheet, sizes, context and explore PNG, plus large wordmark renders and an upscaled 16-48 px strip. Each round-2 concept has a real construction, so none is as bad as round 1. But five of the seven are still 'a V drawn nicely' and need the construction drawing to explain the idea. The owner already rejected that once.\n\nOnly t5 (Shirorekha) looks Indian, modern and like nobody else in this category. Its idea is also the business itself: everything hangs from the headline, the first three seconds. It has the best small-size silhouette in the set, and as a creator I would be proud to put 'Edit by' with it on a Reel. It is not yet a 9: the lockup throws away its own continuous-line idea, the post-and-beam outline can read as a pennant, and the व reading needs native-reader testing.\n\nt3 is the best-drawn piece and the most 'maison'. For an Indian audience, though, a standalone 'VI' monogram reads as 'Vi', the Vodafone Idea consumer brand. It also sits in the same Bodoni genre as the round-1 work the owner hated. t7 is clean and survives every size, but it looks like a fintech or real-estate company, with no warmth and nothing Indian. The others fail at a glance:\n- t1 looks like a pen nib.\n- t2 reads as a tick or square-root sign, and the strap like a corn cob or argyle.\n- t4 is a generic chevron.\n- t6's script I reads as J ('VanJndra').\n\nCultural sensitivity:\n(1) 'VI' as initials (t3, t6, and partly t5 for Latin readers) clashes with India's 'Vi' telecom brand.\n(2) t4's eight-point star looks like the Rub el Hizb. Calling it 'Mughal' in the public story invites communal trolling in today's India. Keep it a secondary 'jaali' pattern only.\n(3) t5's Devanagari roots are authentic to a Hindi/Hinglish founder, but in Tamil Nadu and Karnataka they can read as Hindi-belt or 'Hindi imposition'. Abroad, a headline bar over Latin capitals sits close to the 'Indian restaurant menu' font trope. Keep it austere: no bindu, no curls, no foil. The designer was right to drop the वं bindu because of its bija-mantra (religious) meaning.\n(4) t2's Indra's Net story is philosophical and safe. t1 and t7 are culturally neutral.\n\nEvery horizontal lockup repeats the initial ('V VANINDRA', 'VI VanIndra'). That needs a system-wide fix.",
+  "scores": [
+   {
+    "id": "t5_shirorekha",
+    "originality": 8,
+    "elegance_craft": 7,
+    "meaning": 8,
+    "small_size": 8,
+    "india_premium_fit": 8,
+    "global_fit": 6,
+    "overall": 7,
+    "verdict": "keep",
+    "what_works": "The only concept with an ownable, rooted idea that is also the business: the shirorekha as 'the headline everything hangs from', which is the 3-second hook. The leaf-V plus danda plus headline glyph is a silhouette nobody else in Indian creator services has, and it fills the 110 px circle far better than the tall V's. At 16 px it still shows bar, V and stem as separate strokes. The wordmark's hanging, high-contrast caps feel like a modern Indian fashion label, not Bollywood kitsch, and they suit jewellery and saree brand partners. It has real Indian pride and a credible bilingual lockup.",
+    "must_fix": [
+     "Native-reader test at 32 px and 110 px. The pointed leaf bowl, with the 5-unit hairline meeting the danda at exactly half height, must read as व and not as प or 'V + I'. If it fails, round the lower third of the leaf so the bowl closes like a true व loop.",
+     "Horizontal lockup: the mark's headline and the wordmark's shirorekha sit on the same top line but are two separate bars with a gap of about half the cap height, and two near-identical leaf-V's sit side by side ('V VANINDRA'). Join them into one continuous line, which is the whole idea, or drop the mark from the horizontal lockup.",
+     "The mark's headline overhangs about 11 units past the leaf on the left, with a full-height danda on the right. That makes a post-and-beam outline with a triangle hanging from it, which reads as a pennant or bunting. Cut the left overhang to about 4 and rebalance so it reads as a letter, not a flag.",
+     "Wordmark: the 5.9-unit N verticals next to 14-unit I stems make the 'NIN' cluster look like a barcode. At the 52 px header, the A's 4.0 left hairlines and the V's right hairline ghost out, so the A's read as single wedges. Make a header cut with hairlines of about 5.5 and slightly more air around the I.",
+     "CREATIONS in Jost +0.44 em looks like a different brand under the dense, high-contrast caps. Draw it with the same wedge logic, or tighten the tracking and drop it in the compact header.",
+     "mark_small (headline 13, danda 18) is visibly heavier than the master. Set hard size rules (48 px and below only) so it never appears large.",
+     "Pan-India and global guardrail: no bindu, ornament, curl or foil ever. Make the Devanagari line optional (not mandatory) so South Indian clients don't read it as Hindi-centric."
+    ]
+   },
+   {
+    "id": "t3_maison_monogram",
+    "originality": 5,
+    "elegance_craft": 8,
+    "meaning": 5,
+    "small_size": 5,
+    "india_premium_fit": 5,
+    "global_fit": 7,
+    "overall": 6,
+    "verdict": "keep",
+    "what_works": "The most premium-looking drawing in the set. The custom Didone V has a real hairline, a solved over/under thread through the I stem, consistent contrast and careful spacing. A London or New York client would read it instantly as a serious studio monogram, and it carries 'maison' authority on letterheads and decks.",
+    "must_fix": [
+     "In India a standalone 'VI' monogram reads as 'Vi', Vodafone Idea's consumer brand. 'Edit by Vi' on Reels is a real misread. Never use the monogram as the solo Instagram profile picture for Indian audiences, or redraw it so the I is not a free-standing capital (for example, grow the stem out of the V's own hairline).",
+     "At 16-24 px the two 18-unit gaps in the I close up and it smudges into 'V/I'. mark_small's slab serifs look chunky and typewriter-like at 48 px.",
+     "The wordmark is stock Bodoni Moda with spacing only: the same Didone-caps genre as the round-1 maison option the owner called the worst. At least redraw the V and the camel-case I of 'VanIndra' to share the monogram's thread crossing.",
+     "In context.png the ivory header bar sets 'VanIndra' in antique gold (about 3.2:1 contrast). Use emerald on light grounds.",
+     "pattern_canvas is a plain half-drop of the monogram and reads as a pastiche of a Western monogram canvas (Louis Vuitton style). Drop it or give it an Indian secondary motif."
+    ]
+   },
+   {
+    "id": "t7_hook_mark",
+    "originality": 4,
+    "elegance_craft": 7,
+    "meaning": 6,
+    "small_size": 8,
+    "india_premium_fit": 4,
+    "global_fit": 6,
+    "overall": 5.5,
+    "verdict": "kill",
+    "what_works": "Precise, clean geometry on true 9:16 diagonals. It is the most robust mark at 16-32 px, and the cut stays visible. The hook-then-hold story is the most literally on-business, and it would look credible in a SaaS-style pitch deck abroad.",
+    "must_fix": [
+     "The 24-unit horizontal slice through the left arm reads as a 'glitch/slice' V from tech or esports logos. The tick only appears once explained, so first read is 'V with gold accent', a template move.",
+     "On ivory, the antique-gold hook is optically lighter than the emerald tick, so the left arm looks shorter and the V seems to lean right. Compensate the weight of the gold piece or use one colour.",
+     "The wordmark is Futura-like Jost caps with low A bars. The one-line 'VANINDRA CREATIONS' with gold CREATIONS at the same cap height reads like a bank or real-estate developer, with no lifestyle warmth and nothing Indian.",
+     "mark_small widens the cut to 70 units and looks broken if anyone uses it large."
+    ]
+   },
+   {
+    "id": "t2_indras_net",
+    "originality": 5,
+    "elegance_craft": 6,
+    "meaning": 6,
+    "small_size": 4,
+    "india_premium_fit": 5,
+    "global_fit": 5,
+    "overall": 5,
+    "verdict": "kill",
+    "what_works": "The richest story: Indra's Net, with a jewel at every knot, as a metaphor for collabs. The single gold stone is a nice restrained accent, and a jewellery brand manager may see pavé in the strap. The rhombic grid logic is consistent.",
+    "must_fix": [
+     "At 16-48 px, the slanted solid strap plus a detached thin bar reads as a check mark or square-root sign, not a V. That is fatal for an initial mark.",
+     "The thread stops a light-line short of the gold stone, so the right stroke floats and the V looks broken. The weight ratio of the 12-unit thread against the five-stone-wide strap is extreme and lopsided.",
+     "The 2×5 ivory rhombus strap on emerald reads as a corn cob, wheat ear or argyle, and pattern_on_emerald looks like an argyle sock knit.",
+     "CREATIONS is justified to full width with roughly 1 em tracking. It looks dated and is illegible in the 52 px header."
+    ]
+   },
+   {
+    "id": "t6_signature",
+    "originality": 5,
+    "elegance_craft": 5,
+    "meaning": 6,
+    "small_size": 4,
+    "india_premium_fit": 6,
+    "global_fit": 5,
+    "overall": 4.5,
+    "verdict": "kill",
+    "what_works": "It feels founder-led and personal, which lifestyle creators like. The canopy joining Van and Indra (sky over forest) is a genuinely unusual gesture, and the main mark's pen shading is mostly smooth.",
+    "must_fix": [
+     "The script capital I with a foot loop reads as J, so the wordmark reads 'VanJndra' at first glance. The brand name is misread.",
+     "The 'VI' monogram reads as 'vn' or 'N' at 16-32 px, and it carries the same 'Vi' telecom clash in India.",
+     "mark_small is a blobby, Sharpie-like scrawl with bulbous ends. It looks like a different tool from the fine pen of the master mark.",
+     "The canopy hairline ends in a hard corner at the top of the I (a visible kink in the large render) and fades to decoration in the 52 px header.",
+     "The left V downstroke swells unevenly near the base, and the ball terminal on the top hook looks like a tadpole.",
+     "The genre is Indian wedding-invitation or boutique-bakery script, not a premium content studio."
+    ]
+   },
+   {
+    "id": "t1_emerald_cut",
+    "originality": 4,
+    "elegance_craft": 6,
+    "meaning": 3,
+    "small_size": 5,
+    "india_premium_fit": 4,
+    "global_fit": 6,
+    "overall": 4.5,
+    "verdict": "kill",
+    "what_works": "A confident, sharp Didone V with clean straight-line geometry. The thick/thin stress gives it some fashion poise, and the construction drawing is handsome.",
+    "must_fix": [
+     "The seam from the crotch to the point reads as a fountain-pen nib slit. Below about 64 px the hairline stone tapers into a sliver that looks like a crack.",
+     "The 45° corner chamfers (10% of the width) look like clipping errors at 64-128 px. The emerald never reads without construction.svg.",
+     "The inside contour kinks at the crotch where the hairline stone meets the broad stone, so the V looks folded or broken there.",
+     "The wordmark (Bodoni caps plus Jost CREATIONS) is the round-1 maison wordmark again, and the owner already rejected it.",
+     "The tall, narrow 9:16 V leaves about 40% dead side space in the circular profile picture. mark_small is just a generic heavy V."
+    ]
+   },
+   {
+    "id": "t4_jaali",
+    "originality": 3,
+    "elegance_craft": 6,
+    "meaning": 4,
+    "small_size": 6,
+    "india_premium_fit": 5,
+    "global_fit": 5,
+    "overall": 4,
+    "verdict": "kill",
+    "what_works": "The jaali canvas pattern and the eight-point seal are beautiful secondary assets with real Indian architectural heritage, and the mark is clean and symmetric.",
+    "must_fix": [
+     "Alone, the mark is a generic split chevron (down-arrow or rank chevron). The flared terminals, cut on the star radii, add an arrow-fletching or tulip read.",
+     "The 0.85 hairline split from the crotch to the tip makes the point look broken at large sizes and shows only as a faint seam at 50-90 px.",
+     "The eight-point star seal resembles the Rub el Hizb. In the current Indian climate, 'Mughal' in a public story invites communal trolling. Describe it only as jaali and keep it secondary.",
+     "The wordmark is stock Marcellus, and the horizontal lockup repeats the V ('V VANINDRA')."
+    ]
+   }
+  ],
+  "top3": [
+   "t5_shirorekha",
+   "t3_maison_monogram",
+   "t7_hook_mark"
+  ],
+  "missing_idea": "Nobody built a bilingual, system-first identity in which the brand asset is a line, not a monogram. Take t5's shirorekha further: one continuous gold 'headline rule' that runs across every Reel cover, caption bar, deck title and the lockup itself. Hang a custom Latin VanIndra and a matching custom-drawn Devanagari वनिंद्रा from that same line, designed together with shared stems, contrast and wedge logic, the way Koto and Pentagram handle bilingual identities. That avoids a faux-Hindi Latin face. The 'Edit by' tag becomes the line with the name hanging from it: instantly recognisable on any Reel, monogram-free (no 'VI' or Vi clash), and stronger than any V symbol. A pan-India alternative none of them tried: a single unbroken kolam-style line woven around a 3×3 dot grid to form the V. It means interconnection like Indra's Net, it is South Indian and pan-Indian rather than Hindi-belt, and it is one stroke that stays legible at 16 px."
+ },
+ {
+  "judge": "Perspective: a US B2B founder deciding whether to wire $2,000 a month to an offshore studio, plus a production designer checking a 16 px favicon, a 110 px Instagram profile picture, a Reel watermark, one-colour print and embroidery. I looked at every sheet, sizes and context PNG, made my own 6x pixel zooms of the 16/24/32/48 px renders, and rendered every lockup and wordmark at 1200-1400 px.\n\nThe main problem: six of the seven concepts are a decorated V, and three of them (t1, t3, t4) are a high-contrast Didone or classical V next to a Bodoni, Marcellus or Didone wordmark with tracked CREATIONS underneath. That is the Round 1 'maison' formula with the arch taken away. The owner already called that the worst logo ever, and she will see it again here. Only t5 has a mark I could not find on a template site, and it is also the strongest at small sizes. Its weak point is the global wordmark.\n\nt7 is the most practical and the most credible in New York, but it is the most stock-looking. t3 is the most refined drawing, but the mark reads as 'VI': the Roman numeral six, and in India the Vi (Vodafone Idea) telecom brand. t1 and t4 are clean but generic Vs whose stories (emerald, jaali) only show up on the construction drawing. t2 shrinks to a check mark or square-root sign and looks like argyle at full size. t6 reads as a Cyrillic И with a J ('VanJndra'), and its wedding-script style tells a B2B buyer this is a lifestyle blogger, not a studio.\n\nProduction ranking:\n- **Embroidery and one-colour print:** t5 > t7 > t4 > t1 > t3 > t6 > t2. t3's 18-unit gaps, t2's light-lines and t6's canopy hairline cannot be stitched at chest-logo size.\n- **Reel watermark:** the solid silhouettes of t5 and t7 survive. t2's stones and t3's hairline turn to noise.\n- **110 px profile picture:** t1's 9:16 V fills only about 38% of the circle's width.\n\nNone of these is ready for a top client today. t5 is the only one worth taking to a final round, and its wordmark needs fixing first.",
+  "scores": [
+   {
+    "id": "t5_shirorekha",
+    "originality": 8,
+    "elegance_craft": 7,
+    "meaning": 8,
+    "small_size": 8,
+    "india_premium_fit": 8,
+    "global_fit": 5.5,
+    "overall": 7,
+    "verdict": "keep",
+    "what_works": "The only mark here that is not a template V. The headline bar, leaf-shaped bowl and danda read as व for Hindi readers and as a crafted V for everyone else, and the story (everything hangs from the headline, the first three seconds) is true to the business. It has the most solid silhouette in the set: at 16 px it is still a sharp shape, it fills the 110 px circle best (about 51% of the width), and it survives a semi-transparent watermark, embroidery and foil. The leaf V and the custom capitals are clean and confident. The bilingual lockup is an ownable asset no competitor has.",
+    "must_fix": [
+     "Make a global wordmark for the USD workspace: the same custom capitals without the full-width headline bar, or with the bar only over the V. Full-bar Latin capitals drift toward the 'faux-Devanagari' Samarkan / Indian-restaurant look for London or New York buyers.",
+     "'NIN' turns into a picket fence of thin, thick, thin, thick, thin, thick, thin verticals under one bar, and in the 52 px header it starts to read VAIIIIDRA or VAMNDRA. Open the N-I-N spacing by about 15% and thicken the N verticals.",
+     "Horizontal lockup: the mark's headline is about twice as thick as the wordmark's, yet their tops are aligned. The two bars read as one broken line. Match the weights or set them apart deliberately.",
+     "The horizontal lockup reads 'VI VANINDRA'. For headers, use the wordmark alone or the stacked lockup.",
+     "At 16 px, an inverted triangle under a bar with a stem can read as a UI filter/funnel icon or a hanging pennant. Trim the bar's left overhang and let the danda run further below the bowl tip so it reads as a letter.",
+     "The master mark's 5-unit right hairline drops to about 2 px at 48-64 px. Enforce a hard switch to mark_small at 64 px and below, and never use mark_small large (it is visibly heavier).",
+     "Have native Hindi readers confirm that the pointed leaf bowl reads as व, not प or ब, before anything is published."
+    ]
+   },
+   {
+    "id": "t7_hook_mark",
+    "originality": 4,
+    "elegance_craft": 7,
+    "meaning": 5.5,
+    "small_size": 7.5,
+    "india_premium_fit": 5.5,
+    "global_fit": 7.5,
+    "overall": 6,
+    "verdict": "keep",
+    "what_works": "The cleanest and most credible to a US B2B buyer. The monoline V on the 9:16 diagonals is precise, the Jost wordmark with the V and A redrawn on the brand angle is calm and legible, the one-line header lockup reads instantly at 52 px, and the V stays a crisp V at 16 px. The hook/tick story fits a retention-editing business.",
+    "must_fix": [
+     "A V with a gold slice cut off one arm is a common stock-logo pattern ('V letter logo, gold accent'). Make the cut ownable: put it on the 9:16 diagonal instead of horizontal, or lift and offset the hook so it reads as a deliberate hook rather than a colour split.",
+     "Antique gold on ivory is about 3.2:1. At 32-48 px on ivory the hook nearly disappears and the V looks as if it lost its top-left arm. Darken the gold for light grounds or give the hook more mass.",
+     "One-line lockup: the space between VANINDRA and CREATIONS is barely wider than the letter tracking, so the one-colour version reads 'VANINDRACREATIONS'. Use at least a full em space, or the two-line version.",
+     "'V VANINDRA' stutters. In horizontal lockups, drop the redundant V from either the mark or the wordmark.",
+     "The 24-unit cut fills in below about 40 px, and mark_small's 70-unit cut looks broken when used large. Write a hard size switch into the guidelines.",
+     "Only V and A are redrawn. N, D, R and CREATIONS are stock Jost, and the wide low-bar A sets VANINDRA very wide. Redraw the rest on the same 9:16 logic, or tighten the A.",
+     "The tick only shows up after you are told it is there. At a glance the mark reads 'V with a dash'."
+    ]
+   },
+   {
+    "id": "t3_maison_monogram",
+    "originality": 5,
+    "elegance_craft": 7,
+    "meaning": 5,
+    "small_size": 4.5,
+    "india_premium_fit": 5,
+    "global_fit": 6.5,
+    "overall": 5.5,
+    "verdict": "keep",
+    "what_works": "The best-drawn letterforms in the set. A proper custom Didone V with bracketed serifs, with the I genuinely threaded over/under the hairline arm. The bold mark fills the profile picture well. At 1000 px it looks like a real maison monogram, and the pattern canvas works.",
+    "must_fix": [
+     "It reads as 'VI': the Roman numeral six, and to an Indian audience the Vi (Vodafone Idea) telecom brand. Test with 10 Indian viewers before investing more. This may not be fixable.",
+     "The I's top-right serif sits about 1% of cap height from the hairline arm. At 32-64 px they fuse into a dark knot (visible in sizes.png). Trim the right half of the I's head serif or shift the I left.",
+     "At 16-24 px the two 18-unit gaps and the hairline turn into aliasing hash, and mark_small reads as a V plus a smudge. Draw a separate 16 px cut with no over/under: plain V, merged I stem.",
+     "The hairline crossing the I reads as a strikethrough or a slash through the I ('V/I'), especially in the gold one-colour version. Try the thick I passing over the thin arm instead.",
+     "The 18-unit gaps and the hairline cannot be embroidered or foiled below about 6 cm. A dedicated solid version is mandatory.",
+     "The 'VanIndra' Bodoni Moda wordmark with Jost CREATIONS echoes Round 1's B_editorial 'VanIndra Creations'. The capital I between two lowercase n's reads as 'Vanlndra' at small sizes.",
+     "CREATIONS is about 5 px tall in the 52 px header. Make a header lockup without it."
+    ]
+   },
+   {
+    "id": "t4_jaali",
+    "originality": 3.5,
+    "elegance_craft": 6.5,
+    "meaning": 4.5,
+    "small_size": 7,
+    "india_premium_fit": 5.5,
+    "global_fit": 6.5,
+    "overall": 5,
+    "verdict": "kill",
+    "what_works": "The jaali pattern and the eight-point seal are the richest secondary system in the round, and could serve as brand textures for any winner. The Marcellus wordmark is well spaced and classical. The V is clean and legible at every size.",
+    "must_fix": [
+     "The mark itself is a symmetric chevron V with a hairline split. It reads as a pen nib, a military chevron or a down arrow, and nothing about it is ownable. The jaali origin is invisible without construction.svg.",
+     "The 0.85-unit split vanishes below about 90 px, and at 48-64 px it looks like a rendering seam, not a design decision.",
+     "The outward-pointing terminals cut on the star radii make spurs at the top of each arm, so at 16 px the V reads as a heart bottom or an arrowhead.",
+     "The {8/3} star seal and pattern sit close to the Rub el Hizb and Moroccan zellige. In India this can read as religiously coded. Keep it as secondary texture only, and test it.",
+     "'V VANINDRA' stutters in the horizontal lockup, and CREATIONS is centred under the wordmark rather than on the lockup's axis."
+    ]
+   },
+   {
+    "id": "t1_emerald_cut",
+    "originality": 4,
+    "elegance_craft": 6.5,
+    "meaning": 4,
+    "small_size": 5,
+    "india_premium_fit": 5.5,
+    "global_fit": 6,
+    "overall": 4.5,
+    "verdict": "kill",
+    "what_works": "A crisp, well-constructed high-contrast V with exact geometry and a handsome construction drawing. It reads as a premium fashion house.",
+    "must_fix": [
+     "It is Round 1's A_maison Didone V (thick left stroke, hairline right) with the arch removed, set with the same Bodoni caps plus tracked CREATIONS wordmark. The owner will see a repeat.",
+     "The hairline stone ends about 2% of the height above the thick stone's tip, which leaves two offset points at the culet. At 128 px and up it reads as a split pen nib or a construction error.",
+     "The 45-degree chamfer on the hairline stone's outer top corner takes about 60% of that stroke's top width, so the right terminal reads as a bent, broken tip rather than a facet.",
+     "The 9:16 V fills only about 38% of the 110 px circle, and at 16 px it is a 6-px sliver. The small cut needs a wider stance.",
+     "mark_small is a plain bold chamfered V with no seam and no gem. From 16 to 32 px it is indistinguishable from a stock Didone V.",
+     "The emerald story is invisible without construction.svg, and the culet-cut V and A apexes in the wordmark cannot be seen below about 40 px."
+    ]
+   },
+   {
+    "id": "t2_indras_net",
+    "originality": 4.5,
+    "elegance_craft": 5,
+    "meaning": 6,
+    "small_size": 4,
+    "india_premium_fit": 5,
+    "global_fit": 4,
+    "overall": 4,
+    "verdict": "kill",
+    "what_works": "Indra's Net is the richest story in the brief, and the single gold stone is a smart restraint. The lattice construction is rigorous, and the pattern on emerald has some richness.",
+    "must_fix": [
+     "mark_small (parallelogram plus detached line) reads as a check mark or square-root sign from 16 to 48 px, not as a V.",
+     "The 10-diamond strap reads as argyle, snakeskin, a wheat ear or a crypto/pixel template. The 2g light-lines fill in below about 64 px and are under 0.6 mm at a 5 cm embroidery size.",
+     "The thread stops short of the vertex, so the V is open at the bottom right. With the gold stone at the inner corner, the join looks broken rather than tied.",
+     "At a 56 px profile picture the stones become a grey texture, and the left-heavy mass sits visibly off-centre in the circle.",
+     "CREATIONS is justified to VANINDRA's width, which leaves letter gaps about three times the letter width. It reads as nine loose letters and looks like a 2010 template. Stop justifying it and cut the tracking to about 0.3 em."
+    ]
+   },
+   {
+    "id": "t6_signature",
+    "originality": 5,
+    "elegance_craft": 5.5,
+    "meaning": 5.5,
+    "small_size": 3,
+    "india_premium_fit": 5,
+    "global_fit": 3.5,
+    "overall": 3.5,
+    "verdict": "kill",
+    "what_works": "A real pen model with pressure, shading and tangent connectives, not a script font. The 'VanIndra' signature has warmth that suits a family-run, founder-led studio.",
+    "must_fix": [
+     "The mark reads as a reversed N (Cyrillic И): a thin diagonal rising from bottom-left to top-right between two heavy downstrokes. 'VI' is a distant second reading.",
+     "The looped script capital I reads as a J, so the wordmark reads 'VanJndra'.",
+     "mark_small is a fat marker-brush И with blobby ball terminals. It looks like hand-lettering, not a premium studio, and at 16 px it is a squiggle.",
+     "The canopy hairline is about 1/12 of the downstroke weight. It disappears in the 52 px header and cannot be embroidered, foiled or watermarked.",
+     "The wedding-stationery / beauty-salon genre tells a $2,000-a-month B2B client 'lifestyle blogger', not 'production studio'.",
+     "The tapered downstrokes look like vanilla pods, and the right stroke's flat tail makes the mark look as if it is falling to the right."
+    ]
+   }
+  ],
+  "top3": [
+   "t5_shirorekha",
+   "t7_hook_mark",
+   "t3_maison_monogram"
+  ],
+  "missing_idea": "Every designer started from the V, so the round produced seven decorated Vs. None tried a wordmark-first identity built around the one thing that is unique about this name: the hinge between Van and Indra. A custom 'VanIndra' could make the n's right stem double as the capital I, with the I's head rising above the lowercase 'forest' as the 'sky' (Indra over Van). The name itself then becomes the ownable asset, the header lockup stops stuttering 'V VANINDRA', and the favicon is that hinge glyph, not yet another V. Pair it with t5's व/V monogram as the Indian seal and a clean, bar-free version for USD clients, so one system serves both markets."
+ }
+]

@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VanIndra Pitch Deck</title>
+<meta name="description" content="VanIndra Creations — a 2-minute read on why your views and business aren't growing, how we fix it, and how to start free. Presented by Smita Yadav.">
+<meta name="theme-color" content="#FAF8F3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2309241B'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='34' fill='%23FAF8F3'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   VanIndra Creations · Client pitch deck · "Focus Story" language
+   Ivory canvas, emerald ink, crystal panels, gold used once per slide.
+   Desktop: 1920×1080 slides scaled to fit. Phone: vertical scroll.
+   Print: one slide per 1920×1080 page.
+   ========================================================= */
+:root{
+  --bg:#FAF8F3; --bg-2:#F3F1EA; --surface:#FFFFFF;
+  --ink:#0A1E17; --ink-2:#2F3F38; --muted:#56665F; --soft:#617069;
+  --line:rgba(9,36,27,.08); --line-2:rgba(9,36,27,.14); --hair:rgba(9,36,27,.075); --edge:#fff;
+  --emerald:#0E6B4E; --emerald-deep:#09241B; --mint:#E8F2EC;
+  --gold:#D4A024; --gold-2:#F4C44E; --gold-ink:#7E5806; --gold-tint:#FBF2DA;
+  --glass:linear-gradient(180deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.80) 100%);
+  --shadow:0 1px 2px rgba(9,36,27,.04),0 22px 46px -32px rgba(9,36,27,.32);
+  --shadow-lg:0 2px 6px rgba(9,36,27,.04),0 46px 90px -52px rgba(9,36,27,.45);
+  --panel:#09241B;
+  --ff:'Inter','Noto Sans Devanagari',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--ff);color:var(--ink-2);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;font-optical-sizing:auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+h1,h2,h3,p{margin:0}
+ul,ol,dl,dd{margin:0;padding:0;list-style:none}
+.i{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.app{width:1em;height:1em;flex:none}
+.num{font-variant-numeric:tabular-nums}
+:focus-visible{outline:2px solid var(--emerald);outline-offset:3px;border-radius:10px}
+.sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+/* ---------- shared look ---------- */
+.slide{position:relative;background:var(--bg);color:var(--ink-2);isolation:isolate;overflow:hidden}
+.slide::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(var(--g1s,900px) var(--g1s,900px) at var(--g1x,78%) var(--g1y,40%),rgba(14,107,78,.075),transparent 68%),radial-gradient(var(--g2s,560px) var(--g2s,560px) at var(--g2x,70%) var(--g2y,30%),rgba(244,196,78,.085),transparent 70%)}
+.slide.dark{background:var(--panel);color:rgba(255,255,255,.76)}
+.slide.dark::before{background:radial-gradient(1000px 800px at var(--g1x,80%) var(--g1y,20%),rgba(94,211,164,.12),transparent 70%),radial-gradient(700px 600px at var(--g2x,10%) var(--g2y,100%),rgba(244,196,78,.06),transparent 70%)}
+.wm{display:inline-flex;flex-direction:column;line-height:1}
+.wm-name{font-weight:650;letter-spacing:-.035em;color:var(--ink)}
+.wm-sub{font-weight:600;letter-spacing:.42em;color:var(--muted);padding-left:1px}
+.dark .wm-name{color:#fff}.dark .wm-sub{color:rgba(255,255,255,.55)}
+.chrome{display:flex;align-items:center;justify-content:space-between}
+.pg{font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.pg b{color:var(--ink);font-weight:650}
+.dark .pg{color:rgba(255,255,255,.5)}.dark .pg b{color:#fff}
+
+.kicker{display:flex;align-items:center;font-weight:600;color:var(--emerald);letter-spacing:-.005em}
+.kicker::before{content:"";flex:none;border-radius:50%;background:var(--emerald);box-shadow:0 0 0 .3em var(--mint)}
+.dark .kicker{color:#7FE0B8}.dark .kicker::before{background:#5ED3A4;box-shadow:0 0 0 .3em rgba(94,211,164,.16)}
+.h{color:var(--ink);font-weight:650;letter-spacing:-.045em;line-height:1.02;text-wrap:balance}
+.dark .h{color:#fff}
+.soft{color:var(--soft)}
+.dark .soft{color:#8FA29A}
+.em{color:var(--emerald)}
+.lede{color:var(--muted);line-height:1.45;text-wrap:pretty}
+.dark .lede{color:rgba(255,255,255,.72)}
+
+.cr{position:relative;background:var(--glass);box-shadow:0 0 0 1px var(--hair),inset 0 1px 0 var(--edge),var(--shadow)}
+.cr::before{content:"";position:absolute;left:28px;right:28px;top:0;height:1px;background:linear-gradient(90deg,rgba(255,255,255,0),#fff 28%,#fff 72%,rgba(255,255,255,0));pointer-events:none}
+.cr-d{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.03));box-shadow:0 0 0 1px rgba(255,255,255,.10),inset 0 1px 0 rgba(255,255,255,.14)}
+.tag{display:inline-flex;align-items:center;gap:.45em;border-radius:999px;font-weight:600;color:var(--ink-2);background:var(--mint);white-space:nowrap;line-height:1.1}
+.tag-gold{color:var(--gold-ink);background:var(--gold-tint)}
+.tag-line{background:transparent;box-shadow:0 0 0 1px var(--line-2)}
+.illus{display:inline-flex;align-items:center;gap:.5em;color:var(--muted);font-weight:500}
+.dark .illus{color:rgba(255,255,255,.55)}
+.hl{background:linear-gradient(var(--gold-tint),var(--gold-tint)) no-repeat 0 92%/100% .36em;padding:0 .06em;color:inherit;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.ext{width:.78em;height:.78em;opacity:.65;stroke-width:2.2}
+a.sub:hover,.cv:hover .cv-meta small,.pc .ct a:hover,.s12-foot .handles a:hover{text-decoration:underline;text-underline-offset:3px}
+.cv{display:block;color:inherit}
+.mono{background:linear-gradient(145deg,#0E6B4E,#09241B)!important;color:var(--gold-2)!important;font-weight:650;letter-spacing:.02em}
+
+/* ---------- phone (scales with its own width) ---------- */
+.phone-wrap{position:relative;aspect-ratio:300/632;container-type:inline-size}
+.phone-wrap::after{content:"";position:absolute;left:12%;right:12%;bottom:-4%;height:5%;border-radius:50%;background:radial-gradient(closest-side,rgba(9,36,27,.22),transparent);filter:blur(6px);z-index:-1}
+.phone{--u:calc(100cqw / 300);position:absolute;inset:0;border-radius:calc(var(--u)*52);padding:calc(var(--u)*8);background:linear-gradient(145deg,#FFFFFF 0%,#E3E9E6 16%,#F8FAF9 38%,#D3DCD7 66%,#F4F7F5 100%);box-shadow:0 0 0 1px rgba(9,36,27,.14),inset 0 0 0 1px rgba(255,255,255,.95),inset 0 -2px 5px rgba(9,36,27,.10),0 50px 90px -48px rgba(9,36,27,.55),0 18px 34px -24px rgba(9,36,27,.35)}
+.phone::after{content:"";position:absolute;inset:calc(var(--u)*8);border-radius:calc(var(--u)*44);z-index:6;pointer-events:none;background:linear-gradient(118deg,rgba(255,255,255,.18) 0%,rgba(255,255,255,0) 24%,rgba(255,255,255,0) 76%,rgba(255,255,255,.06) 100%)}
+.screen{position:relative;width:100%;height:100%;border-radius:calc(var(--u)*44);overflow:hidden;background:#0b1410;isolation:isolate;color:#fff;font-size:calc(var(--u)*13);box-shadow:0 0 0 calc(var(--u)*2) #0A0F0D}
+.screen>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;z-index:0}
+.screen::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.40) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 50%,rgba(0,0,0,.70) 100%)}
+.screen>*:not(img){position:absolute;z-index:2}
+.island{top:calc(var(--u)*10);left:50%;transform:translateX(-50%);width:calc(var(--u)*86);height:calc(var(--u)*25);border-radius:99px;background:#000}
+.sbar{top:calc(var(--u)*14);left:calc(var(--u)*26);right:calc(var(--u)*24);display:flex;justify-content:space-between;align-items:center;font-size:calc(var(--u)*12);font-weight:600}
+.sbar .r{display:flex;gap:calc(var(--u)*5);align-items:center}
+.sbar .bars{display:flex;gap:1.5px;align-items:flex-end;height:calc(var(--u)*10)}
+.sbar .bars i{display:block;width:calc(var(--u)*3);background:#fff;border-radius:1px}
+.sbar .bat{width:calc(var(--u)*22);height:calc(var(--u)*11);border:1.4px solid rgba(255,255,255,.8);border-radius:3px;padding:1px}
+.sbar .bat i{display:block;height:100%;width:78%;background:#fff;border-radius:1.5px}
+.igtop{top:calc(var(--u)*48);left:calc(var(--u)*18);right:calc(var(--u)*18);display:flex;justify-content:space-between;align-items:center;font-size:calc(var(--u)*17);font-weight:700;letter-spacing:-.02em}
+.igtop .i{width:calc(var(--u)*21);height:calc(var(--u)*21);stroke-width:2}
+.hook{top:calc(var(--u)*92);left:calc(var(--u)*14);right:calc(var(--u)*14);padding:calc(var(--u)*9) calc(var(--u)*12);border-radius:calc(var(--u)*14);font-size:calc(var(--u)*13);line-height:1.28;font-weight:700;text-align:center;letter-spacing:.01em;text-transform:uppercase;background:linear-gradient(90deg,#F4C44E,#FFE39A);color:#1A1303;box-shadow:0 10px 24px -10px rgba(244,196,78,.75);transform:rotate(-1.2deg)}
+.rawpill{top:calc(var(--u)*92);left:50%;transform:translateX(-50%);white-space:nowrap;padding:calc(var(--u)*6) calc(var(--u)*12);border-radius:99px;background:rgba(12,14,13,.62);color:rgba(255,255,255,.85);font-size:calc(var(--u)*12.5);font-weight:600}
+.cap{left:calc(var(--u)*16);right:calc(var(--u)*58);bottom:calc(var(--u)*118);font-size:calc(var(--u)*16);line-height:1.38;font-weight:650;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.cap.plain{font-weight:500;font-size:calc(var(--u)*14);color:rgba(255,255,255,.85)}
+.cap mark{background:#10B981;color:#04140D;padding:1px 6px;border-radius:6px;text-shadow:none}
+.cap b{color:#F4C44E}
+.rail{right:calc(var(--u)*14);bottom:calc(var(--u)*120);display:flex;flex-direction:column;align-items:center;gap:calc(var(--u)*18)}
+.rail .i{width:calc(var(--u)*25);height:calc(var(--u)*25);stroke-width:1.9}
+.meta{left:calc(var(--u)*16);right:calc(var(--u)*16);bottom:calc(var(--u)*72);display:flex;align-items:center;gap:calc(var(--u)*8);font-size:calc(var(--u)*13.5);font-weight:600}
+.meta img{width:calc(var(--u)*30);height:calc(var(--u)*30);border-radius:50%;border:1.5px solid #fff;object-fit:cover}
+.meta .follow{border:1px solid rgba(255,255,255,.7);border-radius:8px;padding:2px 8px;font-size:calc(var(--u)*11.5)}
+.notif{top:calc(var(--u)*40);left:calc(var(--u)*9);right:calc(var(--u)*9);display:flex;align-items:center;gap:calc(var(--u)*9);padding:calc(var(--u)*9) calc(var(--u)*11);border-radius:calc(var(--u)*20);background:#FAFAF7;color:#0A1E17;box-shadow:0 10px 26px -12px rgba(0,0,0,.6),inset 0 1px 0 #fff;z-index:4!important}
+.notif .app{width:calc(var(--u)*30);height:calc(var(--u)*30)}
+.nf-t{display:flex;flex-direction:column;min-width:0;line-height:1.25}
+.nf-t b{font-size:calc(var(--u)*12.5);font-weight:700}
+.nf-m{font-size:calc(var(--u)*11.5);font-weight:500;color:#2F3F38}
+.nf-now{align-self:flex-start;margin-left:auto;font-size:calc(var(--u)*10);color:#56665F}
+.phone.withnotif .igtop{opacity:0}
+.phone.withnotif .hook{top:calc(var(--u)*112)}
+
+/* ---------- WhatsApp chat mock ---------- */
+.wa{overflow:hidden;display:flex;flex-direction:column}
+.wa-top{display:flex;align-items:center;gap:.8em;background:#F7F5EF;border-bottom:1px solid var(--line)}
+.wa-av{display:grid;place-items:center;border-radius:50%;background:var(--emerald-deep);color:#fff;font-weight:650;flex:none}
+.wa-top b{display:block;color:var(--ink);font-weight:650;letter-spacing:-.01em}
+.wa-top small{display:block;color:var(--muted)}
+.wa-body{flex:1;display:flex;flex-direction:column;background:#EFEAE2;background-image:radial-gradient(rgba(9,36,27,.05) 1px,transparent 1.4px);background-size:22px 22px}
+.msg{max-width:84%;border-radius:.7em;background:#fff;color:#111B21;box-shadow:0 1px 1px rgba(11,20,26,.10);line-height:1.38}
+.msg.out{align-self:flex-end;background:#D9FDD3}
+.msg .who{display:block;font-weight:650;color:var(--emerald)}
+.msg .who em{font-style:normal;font-weight:500;color:#667781}
+.msg .t{display:block;text-align:right;color:#667781}
+.msg .thumb{display:flex;align-items:center;gap:.7em}
+.msg .thumb img{object-fit:cover;border-radius:.4em;flex:none}
+.wa-input{margin-top:auto;display:flex;align-items:center;justify-content:space-between;border-radius:999px;background:#fff;color:#8696A0;box-shadow:0 1px 1px rgba(11,20,26,.08)}
+.wa-input .i{color:#54656F}
+.wa-day{align-self:center;background:#fff;color:#54656F;border-radius:.6em;font-weight:500;box-shadow:0 1px 1px rgba(11,20,26,.08)}
+
+/* =========================================================
+   DESK / PRINT GEOMETRY — every slide is a 1920×1080 canvas
+   ========================================================= */
+@media print, screen and (min-width:900px){
+  .slide{width:1920px;height:1080px;padding:156px 120px 80px;display:flex;flex-direction:column}
+  .chrome{position:absolute;left:120px;right:120px;top:56px}
+  .wm{gap:7px}.wm-name{font-size:30px}.wm-sub{font-size:11.5px}
+  .pg{font-size:19px}
+  .kicker{gap:16px;font-size:24px;margin-bottom:26px}
+  .kicker::before{width:10px;height:10px}
+  .h{font-size:82px}
+  .h-xl{font-size:116px;letter-spacing:-.05em;line-height:.98}
+  html[lang="hi-Latn"] .h-xl{font-size:100px;line-height:1.02}
+  .lede{font-size:28px}
+  .cr{border-radius:32px}.cr-d{border-radius:32px}
+  .tag{font-size:18px;padding:8px 15px}
+  .illus{font-size:18px}.illus .i{font-size:20px}
+  .foot{font-size:20px;color:var(--muted)}
+
+  /* S1 cover */
+  .s1{padding-top:0;padding-bottom:0}
+  .cover{display:grid;grid-template-columns:minmax(0,1fr) 620px;gap:40px;align-items:center;height:100%}
+  .cover-copy{padding-top:40px}
+  .cover .lede{margin-top:40px;max-width:900px}
+  .presenter{display:flex;align-items:center;gap:20px;margin-top:52px;padding-top:36px;border-top:1px solid var(--line-2);max-width:900px}
+  .presenter img,.presenter .mono{width:72px;height:72px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 1px var(--hair),0 0 0 5px #fff,0 10px 24px -12px rgba(9,36,27,.5)}
+  .presenter .mono{display:grid;place-items:center;font-size:24px}
+  .presenter b{display:block;font-size:24px;color:var(--ink);font-weight:650;letter-spacing:-.015em}
+  .presenter span{display:block;margin-top:5px;font-size:20px;color:var(--muted)}
+  .cover-visual{position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:40px}
+  .fan{position:relative;width:360px;isolation:isolate}
+  .fan .phone-wrap{width:360px;position:relative;z-index:2}
+  .fan-card{position:absolute;top:110px;width:236px;height:420px;object-fit:cover;border-radius:30px;z-index:1;box-shadow:0 0 0 6px #fff,0 0 0 7px rgba(9,36,27,.08),0 40px 70px -36px rgba(9,36,27,.5);filter:saturate(.9)}
+  .fan-card.l{left:-150px;transform:rotate(-8deg)}
+  .fan-card.r{right:-150px;transform:rotate(8deg)}
+  .chip{position:absolute;display:flex;align-items:center;gap:14px;padding:16px 22px 16px 16px;border-radius:22px;font-size:19px;line-height:1.3;z-index:3}
+  .chip .app,.chip .ci{width:40px;height:40px}
+  .chip .ci{display:grid;place-items:center;border-radius:12px;background:var(--mint);color:var(--emerald)}
+  .chip .ci .i{width:22px;height:22px;stroke-width:2}
+  .chip b{display:block;color:var(--ink);font-weight:650}
+  .chip small{display:block;color:var(--muted);font-size:16.5px;margin-top:2px}
+  .chip-proof{position:relative;margin-top:-44px;white-space:nowrap}
+  .chip-proof .tag{margin-left:8px;font-size:15px;padding:6px 11px}
+
+  /* S2 problem */
+  .s2 .head{max-width:1500px}
+  .s2 .lede{margin-top:22px;max-width:900px}
+  .quotes{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px;margin-top:auto}
+  .q{display:flex;flex-direction:column;padding:34px 30px 30px;min-height:400px}
+  .q-ic{display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:var(--mint);color:var(--emerald)}
+  .q-ic .i{width:28px;height:28px}
+  .q-text{margin-top:34px;font-size:32px;line-height:1.28;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+  .q-tag{margin-top:auto;padding-top:24px;font-size:18px;font-weight:600;color:var(--muted);letter-spacing:.02em;text-transform:uppercase}
+  .s2 .foot{margin-top:34px;display:flex;align-items:center;gap:12px;font-size:22px;color:var(--ink-2);font-weight:500}
+  .s2 .foot .i{font-size:24px;color:var(--emerald)}
+
+  /* S3 diagnosis: views */
+  .diag{display:grid;grid-template-columns:900px minmax(0,1fr);gap:72px;margin-top:44px;flex:1;min-height:0}
+  .chart{padding:34px 36px 26px;display:flex;flex-direction:column}
+  .chart-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+  .chart-title{font-size:22px;font-weight:650;color:var(--ink)}
+  .legend{display:flex;flex-direction:column;gap:8px;font-size:17px;color:var(--muted)}
+  .legend span{display:flex;align-items:center;gap:10px}
+  .legend i{display:block;width:30px;height:0;border-top:3.5px solid var(--emerald);border-radius:2px}
+  .legend i.dash{border-top:3px dashed #9AA8A1}
+  .plot{position:relative;flex:1;margin-top:14px}
+  .plot svg{position:absolute;inset:0;width:100%;height:100%}
+  .pl{position:absolute;transform:translate(-50%,0);font-size:16px;font-weight:600;color:var(--muted);white-space:nowrap}
+  .pin{position:absolute;display:flex;align-items:center;gap:10px;font-size:18px;font-weight:600;color:var(--ink);white-space:nowrap}
+  .pin em{font-style:normal;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--ink);color:#fff;font-size:15px;font-weight:700}
+  .pin.gold em{background:var(--gold);color:#1A1303}
+  .chart .illus{margin-top:10px}
+  .leaks{display:flex;flex-direction:column;justify-content:space-between;padding:6px 0}
+  .leak{display:grid;grid-template-columns:64px minmax(0,1fr);gap:8px 22px;padding:22px 0;border-top:1px solid var(--line-2)}
+  .leak:first-child{border-top:0;padding-top:0}
+  .leak .n{grid-row:span 2;font-size:22px;font-weight:650;color:var(--emerald);padding-top:6px;font-variant-numeric:tabular-nums}
+  .leak h3{font-size:30px;font-weight:650;color:var(--ink);letter-spacing:-.025em}
+  .leak p{font-size:22px;line-height:1.45;color:var(--muted)}
+
+  /* S4 diagnosis: business */
+  .flow{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));column-gap:26px;margin-top:auto;position:relative}
+  .node{position:relative;grid-row:1;padding:30px 32px 30px;border-radius:28px;min-height:196px;display:flex;flex-direction:column}
+  .n1{grid-column:1/span 2}.n2{grid-column:3/span 2}.n3{grid-column:5/span 2}.n4{grid-column:7/span 2}
+  .n2::after,.n3::after,.n4::after{content:"";position:absolute;left:-39px;top:50%;margin-top:-26px;width:52px;height:52px;border-radius:50%;z-index:2;background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239F2D2D' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M17 7 7 17M7 7l10 10'/%3E%3C/svg%3E") center/24px no-repeat;box-shadow:0 0 0 1px var(--line-2),0 8px 18px -10px rgba(9,36,27,.4)}
+  .node small{font-size:17px;font-weight:650;color:var(--muted);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+  .node b{display:block;margin-top:12px;font-size:40px;font-weight:650;letter-spacing:-.035em;color:var(--ink);line-height:1.05}
+  .node span{display:block;margin-top:auto;padding-top:14px;font-size:20px;line-height:1.4;color:var(--muted)}
+  .node.goal{background:linear-gradient(180deg,#FFFDF6,#FBF2DA);box-shadow:0 0 0 1.5px var(--gold),inset 0 1px 0 #fff,0 30px 60px -40px rgba(126,88,6,.45)}
+  .node.goal small{color:var(--gold-ink)}
+  .lk{grid-row:2;margin-top:44px;padding:26px 28px 28px;border-radius:24px;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1.5px rgba(9,36,27,.10);position:relative}
+  .lk::before{content:"";position:absolute;left:50%;top:-44px;height:44px;border-left:2px dashed rgba(9,36,27,.22)}
+  .lk.l1{grid-column:2/span 2}.lk.l2{grid-column:4/span 2}.lk.l3{grid-column:6/span 2}
+  .lk b{display:block;font-size:24px;font-weight:650;color:var(--ink);letter-spacing:-.02em;line-height:1.25}
+  .lk p{margin-top:10px;font-size:19.5px;line-height:1.45;color:var(--muted)}
+  .s4 .foot{margin-top:40px;display:flex;align-items:center;gap:14px;font-size:22px;color:var(--ink-2);font-weight:500}
+  .s4 .foot .i{font-size:26px;color:var(--emerald)}
+
+  /* S5 the fix */
+  .head-split{display:grid;grid-template-columns:minmax(0,1fr) 560px;gap:60px;align-items:end}
+  .head-split .lede{margin-bottom:8px}
+  .steps4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px;margin-top:auto}
+  .step{display:flex;flex-direction:column;align-items:flex-start}
+  .step .phone-wrap{width:212px;margin-left:6px}
+  .step-t{margin-top:34px;display:flex;align-items:baseline;gap:12px}
+  .step-t em{font-style:normal;font-size:19px;font-weight:650;color:var(--emerald);font-variant-numeric:tabular-nums}
+  .step-t b{font-size:30px;font-weight:650;color:var(--ink);letter-spacing:-.025em}
+  .step>p:not(.step-t){margin-top:10px;font-size:21px;line-height:1.45;color:var(--muted);max-width:370px}
+  .head-split .lede-wrap{margin-bottom:8px}
+  .head-split .lede-wrap .illus{margin-top:16px}
+  .step .cap{bottom:calc(var(--u)*44);right:calc(var(--u)*50)}
+  .step .rail{bottom:calc(var(--u)*48)}
+  .step .screen::after{background:linear-gradient(180deg,rgba(0,0,0,.40) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 40%,rgba(0,0,0,.82) 100%)}
+
+  /* S6 every leak fixed */
+  .fixes{margin-top:auto;padding:6px 40px}
+  .fx-row{display:grid;grid-template-columns:320px 470px minmax(0,1fr);gap:40px;align-items:center;padding:19px 0;border-top:1px solid var(--line)}
+  .fx-row:first-child{border-top:0}
+  .fx-head{padding:20px 0 14px;font-size:16.5px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .fx-where{display:flex;align-items:center;gap:16px;font-size:24px;font-weight:600;color:var(--ink-2)}
+  .fx-where .x{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;flex:none;color:#9F2D2D;box-shadow:inset 0 0 0 1.5px rgba(159,45,45,.25)}
+  .fx-where .x .i{width:16px;height:16px;stroke-width:2.4}
+  .fx-do{display:flex;align-items:center;gap:14px;font-size:26px;font-weight:650;color:var(--ink);letter-spacing:-.02em}
+  .fx-do .i{font-size:24px;color:var(--emerald)}
+  .fx-get{font-size:21px;line-height:1.45;color:var(--muted)}
+  .s6 .note{margin-top:26px;display:flex;align-items:center;gap:16px;font-size:21px;color:var(--ink-2)}
+  .s6 .note .tag{flex:none}
+
+  /* S7 proof (dark) */
+  .proof-head{display:grid;grid-template-columns:minmax(0,1fr) 760px;gap:60px;align-items:end}
+  .founder{display:flex;flex-direction:column;gap:22px}
+  .person{display:flex;align-items:center;gap:18px}
+  .person img,.mono{width:68px;height:68px;border-radius:50%;object-fit:cover;flex:none}
+  .dark .person img{box-shadow:0 0 0 2px rgba(255,255,255,.18)}
+  .person b{display:block;font-size:26px;color:#fff;font-weight:650;letter-spacing:-.02em}
+  .person .sub{display:flex;align-items:center;gap:8px;margin-top:4px;font-size:19px;color:rgba(255,255,255,.62)}
+  .person .sub .app{width:22px;height:22px}
+  .person .sub .dot{opacity:.5;margin:0 2px}
+  .reach{font-size:20px;line-height:1.45;color:rgba(255,255,255,.74);max-width:740px}
+  .reach::first-letter{color:var(--gold-2);font-weight:700}
+  .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.14)}
+  .stats>div{display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:8px;padding:20px 18px 0 0}
+  .stats>div+div{padding-left:22px;border-left:1px solid rgba(255,255,255,.14)}
+  .stats dd{font-size:52px;font-weight:650;letter-spacing:-.04em;color:#fff;line-height:1}
+  .stats dd.gold{color:var(--gold-2)}
+  .stats dt{font-size:18px;line-height:1.35;color:rgba(255,255,255,.62)}
+  .covers{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px;margin-top:auto}
+  .cv-media{position:relative;aspect-ratio:9/14;border-radius:22px;overflow:hidden;background:#0d1a15;box-shadow:0 0 0 1px rgba(255,255,255,.10)}
+  .cv-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .cv-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.42) 0%,rgba(0,0,0,0) 26%)}
+  .cv-tag{position:absolute;z-index:2;top:14px;left:14px;padding:7px 12px;border-radius:999px;font-size:15px;font-weight:650;color:#fff;background:rgba(0,0,0,.5);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+  .cv-meta{margin-top:14px;font-size:17px;line-height:1.35;color:rgba(255,255,255,.86);font-weight:600;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+  .cv-meta small{display:flex;align-items:center;gap:7px;margin-top:4px;font-size:15px;font-weight:500;color:rgba(255,255,255,.55)}
+  .cv-meta small .app{width:17px;height:17px}
+  .cv-meta{-webkit-line-clamp:unset;display:block}
+  .cv-meta .tt{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .split-lbl{grid-column:5/span 2}
+  .s7 .foot{margin-top:28px;font-size:19px;color:rgba(255,255,255,.6);display:flex;gap:12px;align-items:center}
+  .s7 .foot .i{font-size:22px;color:#7FE0B8}
+
+  /* S8 free start */
+  .free{display:grid;grid-template-columns:minmax(0,1fr) 860px;gap:80px;margin-top:auto;align-items:center}
+  .zero{display:flex;align-items:flex-end;gap:26px}
+  .zero b{font-size:190px;font-weight:650;letter-spacing:-.06em;line-height:.8;color:#B07F0E}
+  .zero span{font-size:24px;line-height:1.4;color:var(--muted);padding-bottom:6px;max-width:360px}
+  .offer{display:flex;flex-direction:column;gap:22px;padding-top:4px}
+  .of{padding:34px 38px 34px;display:grid;grid-template-columns:72px minmax(0,1fr);gap:4px 26px}
+  .of-ic{grid-row:span 3;display:grid;place-items:center;width:72px;height:72px;border-radius:22px;background:var(--mint);color:var(--emerald)}
+  .of-ic .i{width:34px;height:34px}
+  .of h3{font-size:34px;font-weight:650;color:var(--ink);letter-spacing:-.03em}
+  .of p{margin-top:8px;font-size:22px;line-height:1.45;color:var(--muted)}
+  .of .when{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:20px;font-weight:600;color:var(--emerald)}
+  .of .when .i{font-size:22px;flex:none}
+  .flow3{display:flex;flex-direction:column;gap:14px;margin-top:46px}
+  .f3{display:flex;align-items:center;gap:20px;padding:18px 26px 18px 18px;border-radius:22px;background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1.5px var(--line)}
+  .f3 em{font-style:normal;display:grid;place-items:center;flex:none;width:46px;height:46px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;font-size:19px}
+  .f3 span{font-size:22px;line-height:1.35;color:var(--ink-2);font-weight:500}
+  .s8 .foot{margin-top:28px;display:flex;align-items:center;gap:12px;font-size:19px}
+  .s8 .foot .i{font-size:22px;color:var(--emerald)}
+
+  /* S9 packages */
+  .s9 .h br{display:none}
+  .s9 .lede{margin-top:18px}
+  .s9 .plans{margin-top:auto;padding-top:34px}
+  .plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:auto;align-items:stretch}
+  .plan{position:relative;display:flex;flex-direction:column;padding:28px 30px 24px;border-radius:30px;box-shadow:inset 0 0 0 1.5px var(--line-2);background:rgba(255,255,255,.4)}
+  .plan.pro{background:var(--glass);box-shadow:0 0 0 2px var(--emerald),inset 0 1px 0 #fff,0 40px 80px -46px rgba(14,107,78,.6)}
+  .plan .tag-gold{position:absolute;top:-19px;left:32px;font-size:17px;padding:8px 15px;box-shadow:0 0 0 4px var(--bg)}
+  .plan-k{font-size:18px;font-weight:600;color:var(--muted)}
+  .plan h3{margin-top:10px;font-size:31px;font-weight:650;color:var(--ink);letter-spacing:-.03em}
+  .price{display:flex;align-items:baseline;gap:10px;margin-top:12px;padding-bottom:16px;border-bottom:1px solid var(--line-2)}
+  .price b{font-size:58px;font-weight:650;letter-spacing:-.045em;color:var(--ink);line-height:1}
+  .price small{font-size:20px;color:var(--muted)}
+  .ticks{display:flex;flex-direction:column;gap:9px;margin-top:18px}
+  .ticks li{display:flex;gap:12px;font-size:19px;line-height:1.4;color:var(--ink-2)}
+  .ticks li .i{font-size:22px;margin-top:2px;color:var(--emerald);stroke-width:2.2}
+  .ticks li.soon{color:var(--muted)}
+  .ticks li.soon .i{color:var(--muted)}
+  .plan .pnote{margin-top:auto;padding-top:22px;font-size:17px;line-height:1.4;color:var(--muted)}
+  .plan.pro .pnote{color:var(--emerald);font-weight:600}
+  .plan.vip{background:transparent;box-shadow:none;outline:1.5px dashed rgba(9,36,27,.24);outline-offset:-1.5px}
+  .excl{margin-top:20px;font-size:19px;line-height:1.45;color:var(--ink-2)}
+  .excl b{color:var(--ink);font-weight:650}
+  .s9 .foot{margin-top:8px;display:flex;justify-content:space-between;gap:30px;font-size:19px}
+  .s9 .foot b{color:var(--ink-2);font-weight:600}
+
+  /* S10 team + path */
+  .path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin-top:auto}
+  .pc{display:flex;flex-direction:column;padding:34px 36px 30px}
+  .pc-step{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .pc-step .tag{font-size:17px}
+  .pc-n{font-size:64px;font-weight:650;letter-spacing:-.05em;color:rgba(9,36,27,.13);line-height:.8;font-variant-numeric:tabular-nums}
+  .pc .person{margin-top:26px}
+  .pc .person img,.pc .mono{width:76px;height:76px;box-shadow:0 0 0 1px var(--hair),0 0 0 4px #fff,0 10px 22px -12px rgba(9,36,27,.5)}
+  .mono{display:grid;place-items:center;background:var(--emerald-deep);color:#fff;font-weight:650;font-size:24px;letter-spacing:.02em}
+  .pc .person b{color:var(--ink);font-size:30px}
+  .pc .person .sub{display:block;color:var(--muted);font-size:18px;line-height:1.35;margin-top:4px}
+  .pc .edu{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:17px;color:var(--muted)}
+  .pc .edu .i{font-size:20px}
+  .pc .what{margin-top:20px;padding-top:20px;border-top:1px solid var(--line-2);font-size:21.5px;line-height:1.48;color:var(--ink-2)}
+  .pc .ct{margin-top:auto;padding-top:22px;display:flex;flex-direction:column;gap:10px}
+  .pc .ct>*{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:600;color:var(--ink)}
+  .pc .ct>* .app{width:24px;height:24px}
+  .pc .ct>* .i{font-size:22px;color:var(--emerald)}
+  .pc.pc-opt{background:rgba(255,255,255,.38);box-shadow:none;outline:1.5px dashed rgba(9,36,27,.24);outline-offset:-1.5px}
+  .pc.pc-opt::before{display:none}
+  .then{margin-top:26px;display:flex;align-items:center;gap:18px;font-size:22px;color:var(--ink-2);font-weight:500}
+  .then .tag{font-size:18px}
+  .then .i{font-size:24px;color:var(--emerald)}
+
+  /* S11 after you join */
+  .join{display:grid;grid-template-columns:720px minmax(0,1fr);gap:96px;height:100%}
+  .s11{padding-top:146px}
+  .wa-wrap{display:flex;flex-direction:column;gap:14px;height:100%}
+  .wa{border-radius:32px;flex:1;min-height:0;font-size:18.5px}
+  .wa-top{padding:16px 24px}
+  .wa-av{width:54px;height:54px;font-size:20px}
+  .wa-top .app{width:30px;height:30px;margin-left:auto}
+  .wa-top b{font-size:22px}.wa-top small{font-size:16.5px;margin-top:3px}
+  .wa-body{padding:16px 22px;gap:8px}
+  .msg{padding:12px 16px 8px}
+  .msg .who{font-size:16px;margin-bottom:3px}
+  .msg .t{font-size:13.5px;margin-top:2px}
+  .msg .thumb img{width:52px;height:76px}
+  .wa-day{padding:6px 14px;font-size:15px}
+  .wa-input{padding:12px 22px;font-size:17px}.wa-input .i{font-size:24px}
+  .wa-wrap .illus{font-size:17px}
+  .join-copy{display:flex;flex-direction:column;padding-top:10px}
+  .s11 .h{font-size:74px}
+  .rows4{display:flex;flex-direction:column;margin-top:30px}
+  .r4{display:grid;grid-template-columns:62px minmax(0,1fr);gap:4px 22px;padding:13px 0;border-top:1px solid var(--line-2)}
+  .r4:first-child{border-top:0;padding-top:0}
+  .r4-ic{grid-row:span 2;display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:var(--mint);color:var(--emerald)}
+  .r4-ic .i{width:28px;height:28px}.r4-ic .app{width:32px;height:32px}
+  .r4 h3{display:flex;align-items:center;gap:12px;font-size:26px;font-weight:650;color:var(--ink);letter-spacing:-.02em}
+  .r4 h3 .tag{font-size:15px;padding:5px 11px}
+  .r4 p{font-size:19.5px;line-height:1.45;color:var(--muted)}
+  .boxes{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+  .yourpart{display:flex;align-items:center;gap:18px;padding:15px 24px;border-radius:22px;background:var(--mint);color:var(--ink-2);font-size:19px;line-height:1.4}
+  .yourpart.trust{background:transparent;box-shadow:inset 0 0 0 1.5px var(--line-2)}
+  .yourpart .i{font-size:30px;color:var(--emerald)}
+  .yourpart b{color:var(--ink)}
+
+  /* S12 CTA (dark) */
+  .cta{display:grid;grid-template-columns:minmax(0,1fr) 520px;gap:100px;align-items:center;flex:1}
+  .cta .h{font-size:96px}
+  .say{margin-top:40px;font-size:30px;line-height:1.45;color:rgba(255,255,255,.82)}
+  .say .kw{display:inline-block;padding:2px 14px;border-radius:12px;background:rgba(244,196,78,.14);color:var(--gold-2);font-weight:700;letter-spacing:.04em;box-shadow:inset 0 0 0 1px rgba(244,196,78,.35)}
+  .wa-btn{display:inline-flex;align-items:center;gap:22px;margin-top:44px;padding:20px 40px 20px 22px;border-radius:999px;background:#fff;color:var(--ink);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+  .wa-btn .app{width:64px;height:64px}
+  .wa-btn b{display:block;font-size:40px;font-weight:650;letter-spacing:-.03em;line-height:1.05}
+  .wa-btn small{display:block;margin-top:6px;font-size:20px;color:var(--muted)}
+  .qr{padding:44px 44px 36px;border-radius:36px;text-align:center}
+  .qr-box{background:#fff;border-radius:24px;padding:30px;box-shadow:0 0 0 1px rgba(255,255,255,.2)}
+  .qr-box svg{display:block;width:100%;height:auto;shape-rendering:crispEdges}
+  .qr p{margin-top:24px;font-size:22px;color:#fff;font-weight:600}
+  .qr p small{display:block;margin-top:6px;font-size:18px;font-weight:500;color:rgba(255,255,255,.6)}
+  .s12-foot{display:flex;justify-content:space-between;align-items:flex-end;padding-top:28px;border-top:1px solid rgba(255,255,255,.12)}
+  .s12-foot .handles{display:flex;gap:30px;font-size:19px;color:rgba(255,255,255,.75);font-weight:500}
+  .s12-foot .handles a{display:flex;align-items:center;gap:10px}
+  .s12-foot .handles .app{width:24px;height:24px}
+  .s12-foot .promise{font-size:18px;color:rgba(255,255,255,.55);text-align:right;max-width:640px;line-height:1.45}
+}
+
+/* =========================================================
+   DESKTOP VIEWER (screen ≥ 900px): one slide at a time
+   ========================================================= */
+@media screen and (min-width:900px){
+  html,body{height:100%;overflow:hidden}
+  body{background:#E8E5DC}
+  .m-top,.m-cta{display:none!important}
+  .stage{position:fixed;inset:0 0 84px 0}
+  body.fs .stage{inset:0}
+  .slide{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,.5));transform-origin:50% 50%;border-radius:22px;box-shadow:0 0 0 1px rgba(9,36,27,.08),0 40px 80px -40px rgba(9,36,27,.35);opacity:0;visibility:hidden;transition:opacity .38s var(--ease),visibility 0s linear .38s}
+  body.fs .slide{border-radius:0;box-shadow:none}
+  .slide.active{opacity:1;visibility:visible;transition:opacity .38s var(--ease),visibility 0s}
+  .ui{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:20;display:flex;align-items:center;gap:6px;padding:6px;border-radius:999px;background:rgba(250,248,243,.86);-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);box-shadow:0 0 0 1px rgba(9,36,27,.09),inset 0 1px 0 #fff,0 16px 34px -20px rgba(9,36,27,.45);transition:opacity .3s}
+  body.fs.idle .ui{opacity:0;pointer-events:none}
+  body.fs.idle{cursor:none}
+  .ui-btn{width:44px;height:44px;display:grid;place-items:center;border-radius:50%;color:var(--ink-2)}
+  .ui-btn:hover{background:rgba(9,36,27,.06);color:var(--ink)}
+  .ui-btn .i{font-size:20px}
+  .ui-count{min-width:84px;text-align:center;font-size:14.5px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+  .ui-count b{color:var(--ink)}
+  .ui-sep{width:1px;height:24px;background:var(--line-2);margin:0 4px}
+  .ui-prog{position:fixed;left:0;top:0;height:3px;background:var(--emerald);z-index:21;transition:width .38s var(--ease)}
+  body.fs .ui-prog{opacity:.0}
+}
+.lang{display:inline-flex;padding:2px;border-radius:999px;box-shadow:0 0 0 1px var(--line-2)}
+.lang button{height:40px;min-width:46px;padding:0 12px;border-radius:999px;font-size:14px;font-weight:600;color:var(--muted);transition:background-color .25s,color .25s}
+.lang button.active{background:var(--ink);color:var(--bg)}
+
+/* =========================================================
+   PHONE / NARROW SCREEN: vertical scroll, reflowed slides
+   ========================================================= */
+@media screen and (max-width:899.98px){
+  body{background:var(--bg)}
+  .ui,.ui-prog{display:none!important}
+  .m-top{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;background:rgba(250,248,243,.88);-webkit-backdrop-filter:blur(12px) saturate(160%);backdrop-filter:blur(12px) saturate(160%);box-shadow:0 1px 0 var(--line)}
+  .m-top .wm{gap:4px}.m-top .wm-name{font-size:19px}.m-top .wm-sub{font-size:8.5px}
+  .m-cta{position:fixed;left:16px;right:16px;bottom:max(12px,env(safe-area-inset-bottom));z-index:30;display:flex;align-items:center;justify-content:center;gap:10px;height:54px;border-radius:999px;background:#0B2A1F;color:#fff;font-weight:600;font-size:16px;box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 14px 30px -14px rgba(9,36,27,.8)}
+  .m-cta .app{width:24px;height:24px}
+  .m-cta{transition:opacity .3s,transform .3s}
+  .m-cta.away{opacity:0;transform:translateY(20px);pointer-events:none}
+  .slide{padding:44px 16px 48px;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+  .slide.dark{border-bottom:0}
+  .chrome{margin-bottom:18px}
+  .chrome .wm{display:none}
+  .pg{font-size:12.5px}
+  .kicker{gap:10px;font-size:14.5px;margin-bottom:14px}
+  .kicker::before{width:7px;height:7px}
+  .h{font-size:34px;letter-spacing:-.04em;line-height:1.06}
+  .h-xl{font-size:44px;letter-spacing:-.045em;line-height:1.02}
+  html[lang="hi-Latn"] .h-xl{font-size:40px}
+  .lede{font-size:17px;margin-top:14px}
+  .cr,.cr-d{border-radius:22px}
+  .cr::before{left:18px;right:18px}
+  .tag{font-size:12.5px;padding:5px 10px}
+  .illus{font-size:13px}.illus .i{font-size:14px}
+  .foot{font-size:14px;color:var(--muted);margin-top:18px;display:flex;gap:8px;align-items:flex-start;line-height:1.45}
+  .foot .i{font-size:17px;flex:none;margin-top:1px;color:var(--emerald)}
+  .head-split .lede{margin-top:12px}
+
+  /* S1 */
+  .cover-copy .lede{margin-top:16px}
+  .presenter{display:flex;align-items:center;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line-2)}
+  .presenter img,.presenter .mono{width:46px;height:46px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 1px var(--hair),0 0 0 3px #fff}
+  .presenter .mono{display:grid;place-items:center;font-size:15px}
+  .presenter b{display:block;font-size:15.5px;color:var(--ink);font-weight:650}
+  .presenter span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+  .cover-visual{position:relative;margin-top:28px;display:flex;flex-direction:column;align-items:center;gap:12px}
+  .fan-card{display:none}
+  .cover-visual .phone-wrap{width:min(250px,64vw)}
+  .chip{position:relative;display:flex;align-items:center;gap:10px;padding:10px 14px 10px 10px;border-radius:16px;font-size:13.5px;line-height:1.3;width:100%;max-width:340px}
+  .chip .app,.chip .ci{width:30px;height:30px;flex:none}
+  .chip .ci{display:grid;place-items:center;border-radius:9px;background:var(--mint);color:var(--emerald)}
+  .chip .ci .i{width:17px;height:17px}
+  .chip b{display:block;color:var(--ink);font-weight:650}
+  .chip small{display:block;color:var(--muted);font-size:12.5px}
+  .chip-proof{order:2;margin-top:10px}.chip-free{order:3}
+  .chip-proof .tag{margin-left:auto}
+
+  /* S2 */
+  .quotes{display:grid;grid-template-columns:1fr;gap:10px;margin-top:22px}
+  .q{display:grid;grid-template-columns:40px minmax(0,1fr);gap:4px 14px;padding:16px 16px 14px}
+  .q-ic{grid-column:1;grid-row:1/span 2;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--mint);color:var(--emerald)}
+  .q-ic .i{width:20px;height:20px}
+  .q-text{grid-column:2;grid-row:2;font-size:16.5px;line-height:1.38;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+  .q-tag{grid-column:2;grid-row:1;font-size:11.5px;font-weight:650;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+
+  /* S3 */
+  .diag{display:flex;flex-direction:column;gap:22px;margin-top:22px}
+  .chart{padding:16px 14px 12px}
+  .chart-top{display:flex;flex-direction:column;gap:8px}
+  .chart-title{font-size:15px;font-weight:650;color:var(--ink)}
+  .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted)}
+  .legend span{display:flex;align-items:center;gap:6px}
+  .legend i{display:block;width:20px;border-top:3px solid var(--emerald)}
+  .legend i.dash{border-top:2.5px dashed #9AA8A1}
+  .plot{position:relative;aspect-ratio:820/470;margin-top:8px}
+  .plot svg{position:absolute;inset:0;width:100%;height:100%}
+  .pl{position:absolute;transform:translate(-50%,0);font-size:10.5px;font-weight:600;color:var(--muted);white-space:nowrap}
+  .pin{position:absolute;display:flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--ink);white-space:nowrap}
+  .pin em{font-style:normal;display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--ink);color:#fff;font-size:10px;font-weight:700}
+  .pin.gold em{background:var(--gold);color:#1A1303}
+  .pin .pt{display:none}
+  .chart .illus{margin-top:6px}
+  .leak{display:grid;grid-template-columns:34px minmax(0,1fr);gap:2px 10px;padding:14px 0;border-top:1px solid var(--line-2)}
+  .leak:first-child{border-top:0;padding-top:0}
+  .leak .n{grid-row:span 2;font-size:14px;font-weight:650;color:var(--emerald);padding-top:2px}
+  .leak h3{font-size:18px;font-weight:650;color:var(--ink)}
+  .leak p{font-size:15px;line-height:1.5;color:var(--muted)}
+
+  /* S4 */
+  .flow{display:flex;flex-direction:column;gap:0;margin-top:22px}
+  .node{padding:16px 18px;border-radius:20px}
+  .node small{font-size:11.5px;font-weight:650;color:var(--muted);letter-spacing:.04em}
+  .node b{display:block;margin-top:4px;font-size:22px;font-weight:650;color:var(--ink);letter-spacing:-.025em}
+  .node span{display:block;margin-top:4px;font-size:14px;color:var(--muted);line-height:1.4}
+  .node.goal{background:linear-gradient(180deg,#FFFDF6,#FBF2DA);box-shadow:0 0 0 1.5px var(--gold)}
+  .node.goal small{color:var(--gold-ink)}
+  .n2::after,.n3::after,.n4::after{display:none}
+  .lk{position:relative;margin:10px 0 10px 22px;padding:12px 14px 12px 34px;border-left:2px dashed rgba(9,36,27,.2)}
+  .lk::before{content:"×";position:absolute;left:-12px;top:12px;width:22px;height:22px;border-radius:50%;background:var(--bg);box-shadow:0 0 0 1px var(--line-2);display:grid;place-items:center;font-size:15px;line-height:1;color:#9F2D2D;font-weight:700}
+  .lk b{display:block;font-size:15.5px;font-weight:650;color:var(--ink)}
+  .lk p{margin-top:4px;font-size:14px;line-height:1.45;color:var(--muted)}
+  .n1{order:1}.l1{order:2}.n2{order:3}.l2{order:4}.n3{order:5}.l3{order:6}.n4{order:7}
+
+  /* S5: one larger before/after pair, then the four steps as a list */
+  .steps4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px;margin-top:24px}
+  .step{display:contents}
+  .step .phone-wrap{width:100%;margin:0 0 34px;grid-row:1}
+  .step:nth-child(1) .phone-wrap{grid-column:1}
+  .step:nth-child(4) .phone-wrap{grid-column:2}
+  .step:nth-child(2) .phone-wrap,.step:nth-child(3) .phone-wrap{display:none}
+  .phone-wrap[data-ba]::before{content:attr(data-ba);position:absolute;left:0;right:0;bottom:-28px;text-align:center;font-size:12px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .step>.step-t,.step>p:not(.step-t){grid-column:1/-1}
+  .s5 .hook{font-size:calc(var(--u)*15.5)}
+  .s5 .cap{font-size:calc(var(--u)*18)}
+  .s5 .cap.plain{font-size:calc(var(--u)*16.5)}
+  .s5 .rawpill{font-size:calc(var(--u)*15)}
+  .s5 .nf-t b{font-size:calc(var(--u)*14)}
+  .s5 .nf-m{font-size:calc(var(--u)*13.5)}
+  .step-t{margin-top:16px;display:flex;align-items:baseline;gap:6px}
+  .step-t em{font-style:normal;font-size:12px;font-weight:650;color:var(--emerald)}
+  .step-t b{font-size:16.5px;font-weight:650;color:var(--ink)}
+  .step>p:not(.step-t){margin-top:4px;font-size:13.5px;line-height:1.45;color:var(--muted)}
+  .step .cap{bottom:calc(var(--u)*44);right:calc(var(--u)*50)}
+  .step .rail{bottom:calc(var(--u)*48)}
+  .head-split .lede-wrap .illus{margin-top:10px}
+
+  /* S6 */
+  .fixes{margin-top:22px;padding:4px 16px}
+  .fx-row.fx-head{display:none}
+  .fx-row{display:grid;grid-template-columns:1fr;gap:6px;padding:16px 0;border-top:1px solid var(--line)}
+  .fx-row.fx-head+.fx-row{border-top:0}
+  .fx-where{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:650;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .fx-where .x{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;color:#9F2D2D;box-shadow:inset 0 0 0 1.2px rgba(159,45,45,.3)}
+  .fx-where .x .i{width:10px;height:10px;stroke-width:2.6}
+  .fx-do{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:650;color:var(--ink)}
+  .fx-do .i{font-size:17px;color:var(--emerald)}
+  .fx-get{font-size:14.5px;line-height:1.5;color:var(--muted)}
+  .s6 .note{margin-top:16px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;font-size:14px;line-height:1.5}
+
+  /* S7 */
+  .proof-head{display:flex;flex-direction:column;gap:22px}
+  .founder{display:flex;flex-direction:column;gap:14px}
+  .person{display:flex;align-items:center;gap:12px}
+  .person img,.mono{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:none}
+  .person b{display:block;font-size:17px;color:#fff;font-weight:650}
+  .person .sub{display:flex;align-items:center;gap:6px;margin-top:2px;font-size:13px;color:rgba(255,255,255,.62)}
+  .person .sub .app{width:16px;height:16px}
+  .person .sub .dot{opacity:.5}
+  .reach{font-size:14px;line-height:1.5;color:rgba(255,255,255,.74)}
+  .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.14)}
+  .stats>div{display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:4px;padding:12px 8px 0 0}
+  .stats>div+div{padding-left:12px;border-left:1px solid rgba(255,255,255,.14)}
+  .stats dd{font-size:26px;font-weight:650;letter-spacing:-.03em;color:#fff;line-height:1}
+  .stats dd.gold{color:var(--gold-2)}
+  .stats dt{font-size:12px;line-height:1.35;color:rgba(255,255,255,.62)}
+  .covers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px;margin-top:24px}
+  .cv-media{position:relative;aspect-ratio:9/14;border-radius:16px;overflow:hidden;background:#0d1a15}
+  .cv-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .cv-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.42) 0%,rgba(0,0,0,0) 30%)}
+  .cv-tag{position:absolute;z-index:2;top:8px;left:8px;padding:4px 8px;border-radius:999px;font-size:11px;font-weight:650;color:#fff;background:rgba(0,0,0,.5)}
+  .cv-meta{margin-top:8px;font-size:12.5px;line-height:1.35;color:rgba(255,255,255,.86);font-weight:600}
+  .cv-meta .tt{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .cv-meta small{display:flex;align-items:center;gap:5px;margin-top:2px;font-size:11.5px;font-weight:500;color:rgba(255,255,255,.55)}
+  .cv-meta small .app{width:13px;height:13px}
+  .s7 .foot{color:rgba(255,255,255,.6)}
+  .s7 .foot .i{color:#7FE0B8}
+
+  /* S8 */
+  .zero{display:flex;align-items:flex-end;gap:12px;margin-top:20px}
+  .zero b{font-size:84px;font-weight:650;letter-spacing:-.05em;line-height:.82;color:#B07F0E}
+  .zero span{font-size:14.5px;line-height:1.4;color:var(--muted);padding-bottom:2px}
+  .offer{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+  .of{padding:18px;display:grid;grid-template-columns:44px minmax(0,1fr);gap:2px 14px}
+  .of-ic{grid-row:span 3;display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:var(--mint);color:var(--emerald)}
+  .of-ic .i{width:22px;height:22px}
+  .of h3{font-size:18px;font-weight:650;color:var(--ink)}
+  .of p{margin-top:4px;font-size:14.5px;line-height:1.5;color:var(--muted)}
+  .of .when{display:flex;align-items:flex-start;gap:6px;margin-top:8px;font-size:13.5px;font-weight:600;color:var(--emerald)}
+  .of .when .i{font-size:15px;flex:none;margin-top:2px}
+  .flow3{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+  .f3{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1.5px var(--line)}
+  .f3 em{font-style:normal;display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;font-size:13px}
+  .f3 span{font-size:14.5px;line-height:1.4;color:var(--ink-2);font-weight:500}
+
+  /* S9 */
+  .plans{display:flex;flex-direction:column;gap:22px;margin-top:26px}
+  .plan{position:relative;display:flex;flex-direction:column;padding:22px 18px 18px;border-radius:22px;box-shadow:inset 0 0 0 1.5px var(--line-2);background:rgba(255,255,255,.4)}
+  .plan.pro{background:var(--glass);box-shadow:0 0 0 2px var(--emerald),0 30px 60px -40px rgba(14,107,78,.55)}
+  .plan .tag-gold{position:absolute;top:-13px;left:16px;box-shadow:0 0 0 3px var(--bg)}
+  .plan-k{font-size:13px;font-weight:600;color:var(--muted)}
+  .plan h3{margin-top:4px;font-size:20px;font-weight:650;color:var(--ink);letter-spacing:-.02em}
+  .price{display:flex;align-items:baseline;gap:6px;margin-top:10px;padding-bottom:14px;border-bottom:1px solid var(--line-2)}
+  .price b{font-size:32px;font-weight:650;letter-spacing:-.04em;color:var(--ink);line-height:1}
+  .price small{font-size:14px;color:var(--muted)}
+  .ticks{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+  .ticks li{display:flex;gap:8px;font-size:14.5px;line-height:1.45;color:var(--ink-2)}
+  .ticks li .i{font-size:16px;margin-top:2px;color:var(--emerald);stroke-width:2.2}
+  .ticks li.soon,.ticks li.soon .i{color:var(--muted)}
+  .plan .pnote{margin-top:14px;font-size:13px;line-height:1.4;color:var(--muted)}
+  .plan.pro .pnote{color:var(--emerald);font-weight:600}
+  .plan.vip{background:transparent;box-shadow:none;outline:1.5px dashed rgba(9,36,27,.24);outline-offset:-1.5px}
+  .excl{margin-top:18px;font-size:14px;line-height:1.5;color:var(--ink-2)}
+  .excl b{color:var(--ink);font-weight:650}
+  .s9 .foot{flex-direction:column;margin-top:10px}
+
+  /* S10 */
+  .path{display:flex;flex-direction:column;gap:14px;margin-top:24px}
+  .pc{padding:18px 18px 16px;display:flex;flex-direction:column}
+  .pc-step{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .pc-step .tag{white-space:normal}
+  .pc-n{font-size:34px;font-weight:650;letter-spacing:-.04em;color:rgba(9,36,27,.13);line-height:.8}
+  .pc .person{margin-top:14px}
+  .pc .person img,.pc .mono{width:52px;height:52px;box-shadow:0 0 0 1px var(--hair),0 0 0 3px #fff}
+  .mono{display:grid;place-items:center;background:var(--emerald-deep);color:#fff;font-weight:650;font-size:17px}
+  .pc .person b{color:var(--ink);font-size:18px}
+  .pc .person .sub{display:block;color:var(--muted);font-size:13px;line-height:1.35}
+  .pc .edu{display:flex;align-items:center;gap:6px;margin-top:10px;font-size:12.5px;color:var(--muted)}
+  .pc .edu .i{font-size:15px}
+  .pc .what{margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2);font-size:15px;line-height:1.5;color:var(--ink-2)}
+  .pc .ct{margin-top:12px;display:flex;flex-direction:column;gap:6px}
+  .pc .ct>*{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--ink)}
+  .pc .ct>* .app{width:18px;height:18px}
+  .pc .ct>* .i{font-size:17px;color:var(--emerald)}
+  .pc.pc-opt{background:rgba(255,255,255,.38);box-shadow:none;outline:1.5px dashed rgba(9,36,27,.24);outline-offset:-1.5px}
+  .pc.pc-opt::before{display:none}
+  .then{margin-top:16px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14.5px;color:var(--ink-2)}
+  .then .i{font-size:17px;color:var(--emerald)}
+
+  /* S11 */
+  .join{display:flex;flex-direction:column-reverse;gap:24px}
+  .wa-wrap{display:flex;flex-direction:column;gap:8px}
+  .wa{border-radius:22px;font-size:14px}
+  .wa-top{padding:12px 14px}
+  .wa-av{width:38px;height:38px;font-size:14px}
+  .wa-top .app{width:22px;height:22px;margin-left:auto}
+  .wa-top b{font-size:15px}.wa-top small{font-size:12px}
+  .wa-body{padding:14px;gap:8px}
+  .msg{padding:8px 11px 6px}
+  .msg .who{font-size:12px}
+  .msg .t{font-size:10.5px}
+  .msg .thumb img{width:42px;height:62px}
+  .wa-day{padding:4px 10px;font-size:11.5px}
+  .wa-input{padding:9px 14px;font-size:13px;margin-top:6px}.wa-input .i{font-size:16px}
+  .rows4{display:flex;flex-direction:column;margin-top:20px}
+  .r4{display:grid;grid-template-columns:40px minmax(0,1fr);gap:2px 12px;padding:14px 0;border-top:1px solid var(--line-2)}
+  .r4:first-child{border-top:0;padding-top:0}
+  .r4-ic{grid-row:span 2;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--mint);color:var(--emerald)}
+  .r4-ic .i{width:20px;height:20px}.r4-ic .app{width:22px;height:22px}
+  .r4 h3{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:17px;font-weight:650;color:var(--ink)}
+  .r4 p{font-size:14.5px;line-height:1.5;color:var(--muted)}
+  .boxes{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+  .yourpart{display:flex;align-items:flex-start;gap:10px;padding:14px;border-radius:16px;background:var(--mint);font-size:14.5px;line-height:1.45}
+  .yourpart.trust{background:transparent;box-shadow:inset 0 0 0 1.5px var(--line-2)}
+  .yourpart .i{font-size:20px;color:var(--emerald);flex:none;margin-top:1px}
+  .yourpart b{color:var(--ink)}
+
+  /* S12 */
+  .slide.s12{padding-bottom:110px}
+  .say{margin-top:18px;font-size:17px;line-height:1.5;color:rgba(255,255,255,.82)}
+  .say .kw{display:inline-block;padding:0 8px;border-radius:8px;background:rgba(244,196,78,.14);color:var(--gold-2);font-weight:700;letter-spacing:.04em}
+  .wa-btn{display:flex;align-items:center;gap:12px;margin-top:22px;padding:12px 18px 12px 12px;border-radius:999px;background:#fff;color:var(--ink)}
+  .wa-btn .app{width:40px;height:40px}
+  .wa-btn b{display:block;font-size:20px;font-weight:650;letter-spacing:-.02em}
+  .wa-btn small{display:block;font-size:12.5px;color:var(--muted)}
+  .qr{display:none}
+  .qr-box{background:#fff;border-radius:14px;padding:10px;width:120px;flex:none}
+  .qr-box svg{display:block;width:100%;height:auto;shape-rendering:crispEdges}
+  .qr p{font-size:15px;color:#fff;font-weight:600}
+  .qr p small{display:block;margin-top:4px;font-size:13px;font-weight:500;color:rgba(255,255,255,.6)}
+  .s12-foot{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column;gap:12px}
+  .s12-foot .handles{display:flex;flex-wrap:wrap;gap:12px;font-size:13.5px;color:rgba(255,255,255,.75)}
+  .s12-foot .handles a{display:flex;align-items:center;gap:6px}
+  .s12-foot .handles .app{width:18px;height:18px}
+  .s12-foot .promise{font-size:13px;color:rgba(255,255,255,.55);line-height:1.5}
+}
+
+/* Phone PDF export (html.pdfphone, set by the render script) */
+html.pdfphone .m-top,html.pdfphone .m-cta{display:none!important}
+html.pdfphone .chrome .wm{display:inline-flex;gap:3px}
+html.pdfphone .chrome .wm-name{font-size:17px}
+html.pdfphone .chrome .wm-sub{font-size:7.5px}
+html.pdfphone .slide{border-bottom:0}
+html.pdfphone .slide.s12{padding-bottom:48px}
+
+/* =========================================================
+   PRINT: one 1920×1080 page per slide
+   ========================================================= */
+@page{size:1920px 1080px;margin:0}
+@media print{
+  html,body{width:1920px;background:var(--bg)}
+  .ui,.ui-prog,.m-top,.m-cta{display:none!important}
+  .stage{position:static}
+  .slide{position:relative!important;left:auto!important;top:auto!important;transform:none!important;opacity:1!important;visibility:visible!important;border-radius:0!important;box-shadow:none!important;break-after:page;page-break-after:always;break-inside:avoid}
+  .slide:last-child{break-after:auto;page-break-after:auto}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="igOfficialGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/>
+    </linearGradient>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#igOfficialGrad)"/>
+      <rect x="4.6" y="4.6" width="14.8" height="14.8" rx="4" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+      <circle cx="12" cy="12" r="3.6" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+      <circle cx="16.4" cy="7.6" r="1.1" fill="#ffffff"/>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10.5" fill="#25D366"/>
+      <path fill="#ffffff" d="M16.6 14.2c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.3.2-.4.6-1.2.1-.2 0-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3z"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.4-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7C3.42 8.3 7.36 5 12 5s8.58 3.3 9.94 6.65a1 1 0 0 1 0 .7C20.58 15.7 16.64 19 12 19s-8.58-3.3-9.94-6.65"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+    <symbol id="i-clapper" viewBox="0 0 24 24"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9.5 4.5 4h15L21 9.5"/><path d="M3 9.5a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12.4V20h14v-7.6"/><path d="M10 20v-4h4v4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-unlink" viewBox="0 0 24 24"><path d="m18.84 12.25 1.72-1.71a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="m5.17 11.75-1.71 1.71a5 5 0 0 0 7.07 7.07l1.71-1.71"/><path d="M8 2v3M2 8h3M16 22v-3M22 16h-3"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M14.54 21.69a.5.5 0 0 0 .94-.03l6.5-19a.5.5 0 0 0-.64-.63l-19 6.5a.5.5 0 0 0-.02.93l7.93 3.18a2 2 0 0 1 1.11 1.11z"/><path d="m21.85 2.15-10.94 10.94"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></symbol>
+    <symbol id="i-sheet" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><path d="m16 13 5.22 3.48a.5.5 0 0 0 .78-.42V7.87a.5.5 0 0 0-.76-.43L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></symbol>
+  </defs>
+</svg>
+
+<!-- Phone-only top bar -->
+<header class="m-top">
+  <span class="wm" aria-label="VanIndra Creations"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang-btn="en" class="active" onclick="setLanguageMode('en')" aria-label="English">EN</button>
+    <button type="button" data-lang-btn="hi" onclick="setLanguageMode('hi')" aria-label="Hinglish">Hinglish</button>
+  </div>
+</header>
+
+<main class="stage" id="stage" aria-roledescription="carousel" aria-label="VanIndra Creations pitch deck">
+
+<!-- Team avatars: Smita Yadav and Akarsh Yadav use initials until front-facing headshots are supplied.
+     To swap in a photo, replace <span class="mono" ...>SY</span> with <img src="assets/team/smita_yadav.jpg" alt="Smita Yadav" width="200" height="200"> (same for AY). -->
+
+<!-- ============================ 01 · COVER ============================ -->
+<section class="slide s1" id="s1" aria-roledescription="slide" aria-label="1 of 12" style="--g1x:76%;--g1y:52%;--g2x:72%;--g2y:38%">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>01</b> / 12</span></div>
+  <div class="cover">
+    <div class="cover-copy">
+      <p class="kicker"><span data-hi="AI + human content studio · Founder Vandana Yadav">AI + human content studio · Founded by Vandana Yadav</span></p>
+      <h1 class="h h-xl" data-hi="Aapke views<br>kyun nahi badh rahe?<br><span class='em'>Aur iska fix.</span>">Why your views<br>aren't growing.<br><span class="em">And how we fix it.</span></h1>
+      <p class="lede" data-hi="2 minute mein padhiye — 1 lakh+ followers wale creators, doctors, coaches aur brands ke liye: aapki Reels ko kya rok raha hai, hum kya badalte hain, aur free mein shuru kaise karein.">A 2-minute read for creators, doctors, coaches and brands with 1 lakh+ followers — what's holding your Reels back, what we change, and how to start free.</p>
+      <div class="presenter">
+        <span class="mono" role="img" aria-label="Smita Yadav">SY</span>
+        <div><b data-hi="Aapse baat kar rahi hain Smita Yadav">Presented by Smita Yadav</b><span>Growth, Brand Deals &amp; Client Relations Lead · VanIndra Creations</span></div>
+      </div>
+    </div>
+    <div class="cover-visual">
+      <div class="fan">
+      <img class="fan-card l" src="assets/portfolio/reel_Ddl3VLbu4P5.jpg" alt="" width="720" height="1280">
+      <img class="fan-card r" src="assets/portfolio/reel_Dds1foTyrQm.jpg" alt="" width="720" height="1280">
+      <div class="phone-wrap">
+        <div class="phone">
+          <div class="screen">
+            <img src="assets/portfolio/reel_DZSZW2ey529.jpg" alt="A real Reel by founder Vandana Yadav (@vandanay2012) with an on-screen Hindi hook" width="720" height="1280">
+            <span class="island" aria-hidden="true"></span>
+            <div class="sbar" aria-hidden="true"><span>9:41</span><span class="r"><span class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:78%"></i><i style="height:100%"></i></span><span class="bat"><i></i></span></span></div>
+            <div class="igtop" aria-hidden="true"><span>Reels</span><svg class="i"><use href="#i-camera"/></svg></div>
+            <div class="rail" aria-hidden="true"><svg class="i"><use href="#i-heart"/></svg><svg class="i"><use href="#i-message"/></svg><svg class="i"><use href="#i-send"/></svg></div>
+            <div class="meta"><img src="assets/portfolio/dp_vandanay2012.jpg" alt="" width="100" height="100"><span>vandanay2012</span><span class="follow">Follow</span></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <a class="chip cr chip-proof" href="https://www.instagram.com/vandanay2012/reel/DZSZW2ey529/" target="_blank" rel="noopener noreferrer">
+        <svg class="app"><use href="#icon-instagram"/></svg>
+        <div><b data-hi="Asli Reel · @vandanay2012">Real Reel · @vandanay2012</b><small>Founder Vandana Yadav</small></div>
+        <span class="tag tag-gold">1 lakh+ views</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 02 · SOUND FAMILIAR ============================ -->
+<section class="slide s2" id="s2" aria-roledescription="slide" aria-label="2 of 12" style="--g1x:88%;--g1y:8%;--g2x:12%;--g2y:-10%;--g2s:420px">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>02</b> / 12</span></div>
+  <div class="head">
+    <p class="kicker"><span data-hi="Problem">The problem</span></p>
+    <h2 class="h" data-hi="Kya ye aapki bhi <span class='hl'>kahani</span> hai?">Sound <span class="hl">familiar?</span></h2>
+    <p class="lede" data-hi="Creator aur business pages par hum sabse zyada yahi problems dekhte hain.">The most common problems we see on creator and business pages.</p>
+  </div>
+  <div class="quotes">
+    <article class="q cr"><span class="q-ic"><svg class="i"><use href="#i-eye"/></svg></span><p class="q-text" data-hi="1 lakh+ followers hain. Pehle 50K views aate the, ab 3–4K.">1 lakh+ followers. Views used to be 50K — now 3–4K.</p><span class="q-tag">Views</span></article>
+    <article class="q cr"><span class="q-ic"><svg class="i"><use href="#i-store"/></svg></span><p class="q-text" data-hi="Regular post karte hain, phir bhi enquiries aur sales nahi aati.">I post regularly. Enquiries and sales don't come.</p><span class="q-tag">Business</span></article>
+    <article class="q cr"><span class="q-ic"><svg class="i"><use href="#i-clock"/></svg></span><p class="q-text" data-hi="Ek Reel ki editing mein 3–4 ghante chale jaate hain.">One Reel eats 3–4 hours of editing.</p><span class="q-tag">Time</span></article>
+    <article class="q cr"><span class="q-ic"><svg class="i"><use href="#i-briefcase"/></svg></span><p class="q-text" data-hi="Brand deals kabhi-kabhi aati hain — kabhi steady nahi.">Brand deals come once in a while. Never steady.</p><span class="q-tag">Brand deals</span></article>
+    <article class="q cr"><span class="q-ic"><svg class="i"><use href="#i-compass"/></svg></span><p class="q-text" data-hi="Samajh nahi aata kya post karein — aur kya NAHI.">I don't know what to post — or what NOT to post.</p><span class="q-tag" data-hi="Clarity">Direction</span></article>
+  </div>
+  <p class="foot"><svg class="i"><use href="#i-arrow-right"/></svg><span data-hi="Inme se ek bhi baat aap par fit baithti hai? Agli 2 slides batati hain ki aisa kyun hota hai.">If even one of these is you, the next two slides show why it happens.</span></p>
+</section>
+
+<!-- ============================ 03 · WHY VIEWS STALL ============================ -->
+<section class="slide s3" id="s3" aria-roledescription="slide" aria-label="3 of 12" style="--g1x:20%;--g1y:70%;--g2x:8%;--g2y:50%;--g2s:420px">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>03</b> / 12</span></div>
+  <div class="head">
+    <p class="kicker"><span data-hi="Problem 1 · Views">Diagnosis 1 · Views</span></p>
+    <h2 class="h" data-hi="Views yun hi nahi rukte.<br><span class='soft'>Woh 4 jagah se leak hote hain.</span>">Views don't stall by accident.<br><span class="soft">They leak in four places.</span></h2>
+  </div>
+  <div class="diag">
+    <div class="chart cr">
+      <div class="chart-top">
+        <p class="chart-title" data-hi="Ek Reel ko kitne log dekhte rehte hain">How many people keep watching a Reel</p>
+        <div class="legend">
+          <span><i></i><span>Hook-first edit</span></span>
+          <span><i class="dash"></i><span data-hi="Bina hook wali Reel">Reel without a hook</span></span>
+        </div>
+      </div>
+      <div class="plot">
+        <svg viewBox="0 0 820 470" preserveAspectRatio="none" aria-hidden="true">
+          <rect x="40" y="20" width="96" height="400" fill="#FBF2DA"/>
+          <g stroke="rgba(9,36,27,.08)" stroke-width="1"><line x1="40" y1="20" x2="800" y2="20"/><line x1="40" y1="120" x2="800" y2="120"/><line x1="40" y1="220" x2="800" y2="220"/><line x1="40" y1="320" x2="800" y2="320"/></g>
+          <line x1="40" y1="420" x2="800" y2="420" stroke="rgba(9,36,27,.25)" stroke-width="1.5"/>
+          <line x1="40" y1="20" x2="40" y2="420" stroke="rgba(9,36,27,.25)" stroke-width="1.5"/>
+          <path d="M40 30 C 70 32, 100 210, 136 250 S 300 318, 420 336 S 700 362, 800 368" fill="none" stroke="#9AA8A1" stroke-width="4" stroke-dasharray="9 9" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          <path d="M40 30 C 80 34, 110 70, 136 84 S 300 132, 420 156 S 700 196, 800 206" fill="none" stroke="#0E6B4E" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          <circle cx="136" cy="250" r="7" fill="#fff" stroke="#9AA8A1" stroke-width="3"/>
+          <circle cx="136" cy="84" r="7" fill="#fff" stroke="#0E6B4E" stroke-width="3"/>
+        </svg>
+        <span class="pl" style="left:4.9%;top:91%">0s</span>
+        <span class="pl" style="left:16.6%;top:91%">3s</span>
+        <span class="pl" style="left:51.2%;top:91%">15s</span>
+        <span class="pl" style="left:97.6%;top:91%">30s</span>
+        <span class="pin gold" style="left:17.4%;top:34%"><em>1</em><span class="pt" data-hi="Scroll ya stay — yahin decide hota hai">The scroll-or-stay moment</span></span>
+        <span class="pin" style="left:46%;top:76%"><em>2</em><span class="pt" data-hi="Yahan log bore hone lagte hain">Attention drifts</span></span>
+      </div>
+      <p class="illus"><svg class="i"><use href="#i-info"/></svg><span data-hi="Sirf illustration — asli data nahi.">Illustration — not real data.</span></p>
+    </div>
+    <div class="leaks">
+      <div class="leak"><span class="n">01</span><h3 data-hi="Pehle 3 second">The first 3 seconds</h3><p data-hi="Screen par koi clear hook nahi — ya wahi purana hook style, jise aapki audience ab aadatan scroll kar deti hai.">No clear hook on screen — or the same old hook style your audience has learned to scroll past.</p></div>
+      <div class="leak"><span class="n">02</span><h3 data-hi="Beech ka hissa">The middle</h3><p data-hi="Slow intro, na captions, na cuts. Bahut log bina sound ke dekhte hain — dhyaan bhatak jaata hai.">Slow intros, no captions, no cuts. Many people watch on mute, so attention drifts.</p></div>
+      <div class="leak"><span class="n">03</span><h3 data-hi="Topic">The topic</h3><p data-hi="Random posts. “Kya post karna hai, kya NAHI” clear na ho, toh Instagram samajh nahi paata ki aapki Reels kiske liye hain.">Random posts. Without a clear “what to post vs. what NOT to post”, Instagram can't tell who your Reels are for.</p></div>
+      <div class="leak"><span class="n">04</span><h3 data-hi="Rhythm">The rhythm</h3><p data-hi="Editing mein ghante lagte hain, toh posting irregular ho jaati hai — aur audience door hone lagti hai.">Editing takes hours, so posting turns irregular and your audience drifts away.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 04 · WHY VIEWS DON'T BECOME BUSINESS ============================ -->
+<section class="slide s4" id="s4" aria-roledescription="slide" aria-label="4 of 12" style="--g1x:90%;--g1y:70%;--g2x:92%;--g2y:58%">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>04</b> / 12</span></div>
+  <div class="head">
+    <p class="kicker"><span data-hi="Problem 2 · Business">Diagnosis 2 · Business</span></p>
+    <h2 class="h" data-hi="Sirf views se kamai nahi hoti.<br><span class='soft'>Business tak ka raasta toota hua hai.</span>">Views alone don't pay.<br><span class="soft">The road to business is broken.</span></h2>
+  </div>
+  <div class="flow">
+    <div class="node cr n1"><small>01</small><b>Views</b><span data-hi="Log aapko dekhte hain.">People see you.</span></div>
+    <div class="node cr n2"><small>02</small><b>Trust</b><span data-hi="Woh follow, save karte hain aur wapas aate hain.">They follow, save and come back.</span></div>
+    <div class="node cr n3"><small>03</small><b>Action</b><span data-hi="Woh DM, comment, booking ya purchase karte hain.">They DM, comment, book or buy.</span></div>
+    <div class="node n4 goal"><small data-hi="GOAL">THE GOAL</small><b>Business</b><span data-hi="Enquiries, sales aur brand deals.">Enquiries, sales and brand deals.</span></div>
+    <div class="lk l1"><b data-hi="Aapka niche clear nahi">Your niche isn't clear</b><p data-hi="Bio aur Reels mein clear niche ya positioning nahi.">No clear niche or positioning in your bio and Reels.</p></div>
+    <div class="lk l2"><b data-hi="Agla step clear nahi">No clear next step</b><p data-hi="Reels bina ye bole khatam ho jaati hain ki comment, DM, booking ya purchase karein.">Reels end without asking people to comment, DM, book or buy.</p></div>
+    <div class="lk l3"><b data-hi="Brands ko aapki value nahi dikhti">Brands can't see your value</b><p data-hi="Na media kit, na rate card, na audience ki clear story.">No media kit, no rate card, no clear audience story.</p></div>
+  </div>
+  <p class="foot"><svg class="i"><use href="#i-arrow-right"/></svg><span data-hi="Creators ke liye goal hai steady brand deals; doctors, coaches aur brands ke liye — patients, students aur customers. Sirf views nahi.">For creators, the goal is steady brand deals; for doctors, coaches and brands — patients, students and customers. Not just views.</span></p>
+</section>
+
+<!-- ============================ 05 · THE FIX ============================ -->
+<section class="slide s5" id="s5" aria-roledescription="slide" aria-label="5 of 12" style="--g1x:50%;--g1y:72%;--g1s:1200px;--g2x:30%;--g2y:60%">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>05</b> / 12</span></div>
+  <div class="head head-split">
+    <div>
+      <p class="kicker"><span data-hi="Fix">The fix</span></p>
+      <h2 class="h" data-hi="Aap record karein. <span class='soft'>Baaki hum.</span>">You record. <span class="soft">We do the rest.</span></h2>
+    </div>
+    <div class="lede-wrap">
+      <p class="lede" data-hi="Script hum bhejte hain, aap ek clip record karte hain. 4 steps baad Reel post ke liye ready — Hindi, Hinglish ya English mein.">We send the script, you record one clip, and four steps later it's ready to post — in Hindi, Hinglish or English.</p>
+      <p class="illus"><svg class="i"><use href="#i-info"/></svg><span data-hi="Illustration — founder ki photo se bana mock-up, asli before/after nahi.">Illustration — a mock-up using a founder photo, not a real before/after.</span></p>
+    </div>
+  </div>
+  <div class="steps4">
+    <div class="step">
+      <div class="phone-wrap" data-ba="Before"><div class="phone raw"><div class="screen">
+        <img src="assets/portfolio/reel_DSfRlWikcvQ.jpg" alt="" width="640" height="1136">
+        <span class="island" aria-hidden="true"></span>
+        <div class="sbar" aria-hidden="true"><span>9:41</span><span class="r"><span class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:78%"></i><i style="height:100%"></i></span><span class="bat"><i></i></span></span></div>
+        <div class="rawpill" data-hi="Raw clip · koi hook nahi">Raw clip · no hook</div>
+        <p class="cap plain" data-hi="“Toh aaj main aapko batana chahti thi ki…”">“So today I wanted to tell you that…”</p>
+      </div></div></div>
+      <p class="step-t"><em>01</em><b>Record</b></p>
+      <p data-hi="Hamari bheji script apne phone par record karein — hafte mein lagbhag 30–60 minute. WhatsApp par bhej dijiye.">Record the script we send you — on your phone, about 30–60 minutes a week. Send it on WhatsApp.</p>
+    </div>
+    <div class="step">
+      <div class="phone-wrap"><div class="phone"><div class="screen">
+        <img src="assets/portfolio/reel_DSfRlWikcvQ.jpg" alt="" width="640" height="1136">
+        <span class="island" aria-hidden="true"></span>
+        <div class="sbar" aria-hidden="true"><span>9:41</span><span class="r"><span class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:78%"></i><i style="height:100%"></i></span><span class="bat"><i></i></span></span></div>
+        <div class="hook" data-hi="3-sec hook: 1 lakh+ par ye galti mat karna!">3-sec hook: don't make this mistake at 1 lakh+!</div>
+        <p class="cap plain" data-hi="“Toh aaj main aapko batana chahti thi ki…”">“So today I wanted to tell you that…”</p>
+      </div></div></div>
+      <p class="step-t"><em>02</em><b>Hook</b></p>
+      <p data-hi="Pehle 3 second mein screen par aisa hook jo scroll rok de.">We put a scroll-stopping hook on screen in the first 3 seconds.</p>
+    </div>
+    <div class="step">
+      <div class="phone-wrap"><div class="phone"><div class="screen">
+        <img src="assets/portfolio/reel_DSfRlWikcvQ.jpg" alt="" width="640" height="1136">
+        <span class="island" aria-hidden="true"></span>
+        <div class="sbar" aria-hidden="true"><span>9:41</span><span class="r"><span class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:78%"></i><i style="height:100%"></i></span><span class="bat"><i></i></span></span></div>
+        <div class="hook" data-hi="3-sec hook: 1 lakh+ par ye galti mat karna!">3-sec hook: don't make this mistake at 1 lakh+!</div>
+        <p class="cap" data-hi="“Agar aapki <mark>reach ya kamai</mark> ruk gayi hai, toh ye <b>3 hooks</b> fix karo…”">“If your <mark>reach or income</mark> has plateaued, fix these <b>3 hooks</b>…”</p>
+        <div class="rail" aria-hidden="true"><svg class="i"><use href="#i-heart"/></svg><svg class="i"><use href="#i-message"/></svg><svg class="i"><use href="#i-send"/></svg></div>
+      </div></div></div>
+      <p class="step-t"><em>03</em><b data-hi="Edit + captions">Edit &amp; captions</b></p>
+      <p data-hi="Fast cuts, Hindi-English captions, saaf audio aur 9:16 cover.">Fast cuts, bilingual captions, clean audio and a 9:16 cover.</p>
+    </div>
+    <div class="step">
+      <div class="phone-wrap" data-ba="After"><div class="phone withnotif"><div class="screen">
+        <img src="assets/portfolio/reel_DSfRlWikcvQ.jpg" alt="" width="640" height="1136">
+        <span class="island" aria-hidden="true"></span>
+        <div class="hook" data-hi="3-sec hook: 1 lakh+ par ye galti mat karna!">3-sec hook: don't make this mistake at 1 lakh+!</div>
+        <p class="cap" data-hi="“Agar aapki <mark>reach ya kamai</mark> ruk gayi hai, toh ye <b>3 hooks</b> fix karo…”">“If your <mark>reach or income</mark> has plateaued, fix these <b>3 hooks</b>…”</p>
+        <div class="rail" aria-hidden="true"><svg class="i"><use href="#i-heart"/></svg><svg class="i"><use href="#i-message"/></svg><svg class="i"><use href="#i-send"/></svg></div>
+        <div class="notif"><svg class="app"><use href="#icon-whatsapp"/></svg><span class="nf-t"><b>VanIndra Studio</b><span class="nf-m" data-hi="Aapki Reel + 9:16 cover ready hai ✓">Your Reel + 9:16 cover are ready ✓</span></span><span class="nf-now" data-hi="abhi">now</span></div>
+      </div></div></div>
+      <p class="step-t"><em>04</em><b data-hi="Post ke liye ready">Ready to post</b></p>
+      <p data-hi="Wapas WhatsApp par. Footage milne ke 48 working ghante mein pehla edit.">Back on WhatsApp. First edit within 48 working hours of receiving your footage.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 06 · EVERY LEAK, FIXED ============================ -->
+<section class="slide s6" id="s6" aria-roledescription="slide" aria-label="6 of 12" style="--g1x:85%;--g1y:12%;--g2x:94%;--g2y:6%;--g2s:380px">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>06</b> / 12</span></div>
+  <div class="head">
+    <p class="kicker"><span data-hi="Hum kya sambhalte hain">What we handle</span></p>
+    <h2 class="h" data-hi="Har leak ka fix hai.<br><span class='soft'>Aur hum bilkul yahi karte hain.</span>">Every leak has a fix.<br><span class="soft">Here's exactly what we do.</span></h2>
+  </div>
+  <div class="fixes cr">
+    <div class="fx-row fx-head"><span data-hi="Kahan leak hota hai">Where it leaks</span><span data-hi="Hum kya karte hain">What we do</span><span data-hi="Aapko kya milta hai">What you get</span></div>
+    <div class="fx-row">
+      <span class="fx-where"><span class="x"><svg class="i"><use href="#i-x"/></svg></span><span data-hi="Pehle 3 second">The first 3 seconds</span></span>
+      <span class="fx-do"><svg class="i"><use href="#i-pen"/></svg><span>Hook-first scripts</span></span>
+      <span class="fx-get" data-hi="Har script pehle frame se hook ke saath shuru — Hindi, Hinglish ya English mein.">Every script opens with a hook in the first frame — in Hindi, Hinglish or English.</span>
+    </div>
+    <div class="fx-row">
+      <span class="fx-where"><span class="x"><svg class="i"><use href="#i-x"/></svg></span><span data-hi="Beech ka hissa">The middle</span></span>
+      <span class="fx-do"><svg class="i"><use href="#i-scissors"/></svg><span>High-retention editing</span></span>
+      <span class="fx-get" data-hi="Har kuch second mein cut, Hindi-English captions, saaf audio aur 9:16 cover.">Cuts every few seconds, bilingual captions, clean audio and a 9:16 cover.</span>
+    </div>
+    <div class="fx-row">
+      <span class="fx-where"><span class="x"><svg class="i"><use href="#i-x"/></svg></span><span data-hi="Topic">The topic</span></span>
+      <span class="fx-do"><svg class="i"><use href="#i-compass"/></svg><span data-hi="Kya post karein, kya NAHI">What to post, what NOT to</span></span>
+      <span class="fx-get" data-hi="30-din ka content calendar, jise founder Vandana Yadav khud check karti hain.">A 30-day content calendar, reviewed by founder Vandana Yadav.</span>
+    </div>
+    <div class="fx-row">
+      <span class="fx-where"><span class="x"><svg class="i"><use href="#i-x"/></svg></span><span data-hi="Rhythm">The rhythm</span></span>
+      <span class="fx-do"><svg class="i"><use href="#i-clock"/></svg><span>Weekly scripts + edits</span></span>
+      <span class="fx-get" data-hi="Lagatar Reels — aur aapko hafte mein sirf 30–60 minute record karna hai.">Consistent Reels, while you record only about 30–60 minutes a week.</span>
+    </div>
+    <div class="fx-row">
+      <span class="fx-where"><span class="x"><svg class="i"><use href="#i-x"/></svg></span><span>Views → business</span></span>
+      <span class="fx-do"><svg class="i"><use href="#i-briefcase"/></svg><span>Clear CTAs + positioning</span></span>
+      <span class="fx-get" data-hi="Har Reel mein agla step; Pro Growth mein media kit, rate card aur brand pitching (deal ki guarantee nahi).">A next step in every Reel; media kit, rate card and brand pitching in Pro Growth (no guaranteed deals).</span>
+    </div>
+  </div>
+  <p class="note"><span class="tag tag-gold"><svg class="i"><use href="#i-shield"/></svg><span>Human-checked</span></span><span data-hi="AI research aur first draft mein madad karta hai; har Reel hamari team rewrite, edit aur approve karti hai. Health claims source se check hote hain, aur aapki approval ke bina kuch final nahi hota.">AI helps with research and first drafts; our team rewrites, edits and approves every Reel. Health claims are checked against a source, and nothing is final without your approval.</span></p>
+</section>
+
+<!-- ============================ 07 · PROOF (dark) ============================ -->
+<section class="slide s7 dark" id="s7" aria-roledescription="slide" aria-label="7 of 12">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>07</b> / 12</span></div>
+  <div class="proof-head">
+    <div>
+      <p class="kicker"><span>Proof</span></p>
+      <h2 class="h" data-hi="Asli accounts.<br><span class='soft'>Khud check kar lijiye.</span>">Real accounts.<br><span class="soft">Check them yourself.</span></h2>
+    </div>
+    <div class="founder">
+      <div class="person">
+        <img src="assets/portfolio/dp_vandanay2012.jpg" alt="Vandana Yadav" width="100" height="100">
+        <div><b>Vandana Yadav</b><a class="sub" href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012<svg class="i ext"><use href="#i-ext"/></svg><span class="dot">·</span>Founder · Portfolio #01</a></div>
+      </div>
+      <dl class="stats">
+        <div><dt data-hi="1 lakh+ views wali Reels">Reels with 1 lakh+ views</dt><dd class="num gold">4</dd></div>
+        <div><dt>Followers · Oct 2026</dt><dd class="num">50K+</dd></div>
+        <div><dt>Posts · Oct 2026</dt><dd class="num">467+</dd></div>
+      </dl>
+      <p class="reach" data-hi="4 Reels 1 lakh views se aage gayi — unke 50K+ followers se kahin zyada. Followers se aage tak pahunchna — isi par hum kaam karte hain.">4 Reels crossed 1 lakh views — far more than her 50K+ followers. Reaching people beyond your followers is exactly what we work on.</p>
+    </div>
+  </div>
+  <div class="covers">
+    <a class="cv" href="https://www.instagram.com/vandanay2012/reel/DZSZW2ey529/" target="_blank" rel="noopener noreferrer"><div class="cv-media"><img src="assets/portfolio/reel_DZSZW2ey529.jpg" alt="Reel cover: Ye 5 mins kaam karte hi haath mein mobile" width="720" height="1280"><span class="cv-tag">1 lakh+ views</span></div><div class="cv-meta"><span class="tt">“Ye 5 mins kaam karte hi…”</span><small><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012<svg class="i ext"><use href="#i-ext"/></svg></small></div></a>
+    <a class="cv" href="https://www.instagram.com/vandanay2012/reel/Ddl3VLbu4P5/" target="_blank" rel="noopener noreferrer"><div class="cv-media"><img src="assets/portfolio/reel_Ddl3VLbu4P5.jpg" alt="Reel cover: Arrey chahiye kya AURAT ko" width="720" height="1280"><span class="cv-tag">1 lakh+ views</span></div><div class="cv-meta"><span class="tt">“Arrey chahiye kya AURAT ko???”</span><small><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012<svg class="i ext"><use href="#i-ext"/></svg></small></div></a>
+    <a class="cv" href="https://www.instagram.com/vandanay2012/reel/Dds1foTyrQm/" target="_blank" rel="noopener noreferrer"><div class="cv-media"><img src="assets/portfolio/reel_Dds1foTyrQm.jpg" alt="Reel cover: Jab main apne pati ko unke gharwalon ki galti dikhaun" width="720" height="1280"><span class="cv-tag">1 lakh+ views</span></div><div class="cv-meta"><span class="tt">“Jab main apne pati ko…”</span><small><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012<svg class="i ext"><use href="#i-ext"/></svg></small></div></a>
+    <a class="cv" href="https://www.instagram.com/vandanay2012/reel/DSZ8VilkrA8/" target="_blank" rel="noopener noreferrer"><div class="cv-media"><img src="assets/portfolio/reel_DSZ8VilkrA8.jpg" alt="Reel cover: Naya saal, naya janam" width="640" height="1136"><span class="cv-tag">1 lakh+ views</span></div><div class="cv-meta"><span class="tt">“Naya saal ❌ Naya janam ✅”</span><small><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012<svg class="i ext"><use href="#i-ext"/></svg></small></div></a>
+    <a class="cv cv-2" href="https://www.instagram.com/smitayadav_0901/reel/DedHDrLgY43/" target="_blank" rel="noopener noreferrer"><div class="cv-media"><img src="assets/portfolio/reel_DedHDrLgY43.jpg" alt="Smita Yadav Reel cover: dandiya night" width="720" height="956"><span class="cv-tag">Portfolio #02</span></div><div class="cv-meta"><span class="tt">“Dandiya night &amp; desi vibes”</span><small><svg class="app"><use href="#icon-instagram"/></svg>@smitayadav_0901<svg class="i ext"><use href="#i-ext"/></svg></small></div></a>
+    <a class="cv cv-2" href="https://www.instagram.com/smitayadav_0901/reel/Da0liqXAemF/" target="_blank" rel="noopener noreferrer"><div class="cv-media"><img src="assets/portfolio/reel_Da0liqXAemF.jpg" alt="Smita Yadav Reel cover: coastal lifestyle" width="1080" height="1440"><span class="cv-tag">Portfolio #02</span></div><div class="cv-meta"><span class="tt" data-hi="“Ek alag hi therapy”">“A special kind of therapy”</span><small><svg class="app"><use href="#icon-instagram"/></svg>@smitayadav_0901<svg class="i ext"><use href="#i-ext"/></svg></small></div></a>
+  </div>
+  <p class="foot"><svg class="i"><use href="#i-info"/></svg><span data-hi="Ye hamare in-house creator accounts hain, paying clients nahi — kisi bhi Reel par tap karke uske views dekhiye. Client stories unki permission se, trial ke baad jodi jayengi.">Our own in-house creator accounts, not paying clients — tap any Reel to see its views on Instagram. Client stories will be added, with permission, after their trials.</span></p>
+</section>
+
+<!-- ============================ 08 · FREE START ============================ -->
+<section class="slide s8" id="s8" aria-roledescription="slide" aria-label="8 of 12" style="--g1x:22%;--g1y:62%;--g2x:16%;--g2y:58%;--g2s:520px">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>08</b> / 12</span></div>
+  <div class="head">
+    <p class="kicker"><span data-hi="Free shuruaat">Start free</span></p>
+    <h2 class="h" data-hi="Slides dekhkar decide mat kijiye.<br><span class='soft'>Apne video par fark dekhiye.</span>">Don't judge us by slides.<br><span class="soft">Judge us by your own video.</span></h2>
+  </div>
+  <div class="free">
+    <div class="free-left">
+      <div class="zero"><b class="num">₹0</b><span data-hi="shuru karne ke liye. Sample dekhne se pehle koi payment nahi.">to start. No payment before you've seen your sample.</span></div>
+      <div class="flow3">
+        <div class="f3"><em>1</em><span data-hi="WhatsApp par ek recent video aur apna Instagram handle bhejiye (video “Document” ki tarah bhejein, taaki quality saaf rahe).">Send one recent video and your Instagram handle on WhatsApp (send it as a Document so the quality stays sharp).</span></div>
+        <div class="f3"><em>2</em><span data-hi="Hum aapka page audit karte hain aur video ke 15 second edit karte hain — 2 working days mein wapas.">We audit your page and edit 15 seconds of your video — back within 2 working days.</span></div>
+        <div class="f3"><em>3</em><span data-hi="Faisla aapka. Na payment, na koi pressure.">You decide. No payment, no obligation.</span></div>
+      </div>
+    </div>
+    <div class="offer">
+      <article class="of cr">
+        <span class="of-ic"><svg class="i"><use href="#i-search"/></svg></span>
+        <h3>Free page audit</h3>
+        <p data-hi="Aapke page par kya chal raha hai, kya post karna band karein, aage kya post karein, aur aapke niche ke 3 hook ideas.">What's working on your page, what to stop posting, what to post next, and 3 hook ideas for your niche.</p>
+        <p class="when"><svg class="i"><use href="#i-clock"/></svg><span data-hi="Video milne ke 2 working days mein WhatsApp par.">Back on WhatsApp within 2 working days of your video.</span></p>
+      </article>
+      <article class="of cr">
+        <span class="of-ic"><svg class="i"><use href="#i-scissors"/></svg></span>
+        <h3>Free 15-second sample edit</h3>
+        <p data-hi="Aapke apne video ke 15 second hum dobara edit karte hain — hook, captions, pace — taaki pay karne se pehle aap fark dekh sakein.">We re-edit 15 seconds of your own video — hook, captions, pace — so you see the difference before you pay.</p>
+      </article>
+    </div>
+  </div>
+  <p class="foot"><svg class="i"><use href="#i-shield"/></svg><span data-hi="Hum sirf wahi videos edit karte hain jo aap khud bhejte hain, aur aapki likhit permission ke bina kahin post nahi karte.">We only edit videos you send us yourself, and we never post them anywhere without your written OK.</span></p>
+</section>
+
+<!-- ============================ 09 · PACKAGES ============================ -->
+<section class="slide s9" id="s9" aria-roledescription="slide" aria-label="9 of 12" style="--g1x:60%;--g1y:70%;--g2x:57%;--g2y:42%;--g2s:420px">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>09</b> / 12</span></div>
+  <div class="head">
+    <p class="kicker"><span>Packages</span></p>
+    <h2 class="h" data-hi="Trial se shuru karein. <br><span class='soft'>Pasand aaye, tab badhein.</span>">Start with a trial. <br><span class="soft">Scale when it works.</span></h2>
+    <p class="lede" data-hi="Har plan aapke free page audit aur 15-second sample edit se shuru hota hai.">Every plan starts with your free page audit and 15-second sample edit.</p>
+  </div>
+  <div class="plans">
+    <article class="plan">
+      <span class="plan-k">Test drive</span>
+      <h3>3-Reel Trial</h3>
+      <div class="price"><b class="num">₹2,999</b><small data-hi="ek baar">one-time</small></div>
+      <ul class="ticks">
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="7-din ka “kya post karein” plan">7-day “what to post” plan</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="3 scripts + 3-second hooks">3 scripts &amp; 3-second hooks</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span>3 studio-edited Reels</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="Hindi-English captions + 9:16 covers">Bilingual captions &amp; 9:16 covers</span></li>
+      </ul>
+      <p class="pnote" data-hi="Monthly plan se pehle hamara kaam parakh lijiye.">Try our work before any monthly plan.</p>
+    </article>
+    <article class="plan">
+      <span class="plan-k" data-hi="Har hafte 3 Reels">3 Reels / week</span>
+      <h3>VanIndra Starter</h3>
+      <div class="price"><b class="num">₹14,999</b><small data-hi="/ mahina">/ month</small></div>
+      <ul class="ticks">
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="Poore 30 din ka content calendar">Full 30-day content calendar</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span>12 research-backed scripts</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span>12 high-retention edited Reels</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="Captions, hashtags + 9:16 covers">Captions, hashtags &amp; 9:16 covers</span></li>
+      </ul>
+      <p class="pnote" data-hi="Har hafte steady Reels ke liye.">For steady weekly Reels.</p>
+    </article>
+    <article class="plan pro">
+      <span class="tag tag-gold">Recommended</span>
+      <span class="plan-k" data-hi="Har hafte 5 Reels">5 Reels / week</span>
+      <h3>VanIndra Pro Growth</h3>
+      <div class="price"><b class="num">₹24,999</b><small data-hi="/ mahina">/ month</small></div>
+      <ul class="ticks">
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="30-din ka content + series calendar">30-day content &amp; series calendar</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="20 scripts + aasaan phone shoot guide">20 scripts + easy phone shoot guide</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span>20 studio-edited Reels + grid covers</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="Media kit, rate card + brand pitching (deal ki guarantee nahi)">Media kit, rate card &amp; brand pitching (no guaranteed deals)</span></li>
+      </ul>
+      <p class="pnote" data-hi="Founder Vandana Yadav khud check karti hain.">Supervised by founder Vandana Yadav.</p>
+    </article>
+    <article class="plan vip">
+      <span class="plan-k" data-hi="Roz Reels · sirf application se · waitlist">Daily Reels · by application · waitlist</span>
+      <h3>VanIndra 360° VIP</h3>
+      <div class="price"><b class="num">₹39,999</b><small data-hi="/ mahina">/ month</small></div>
+      <ul class="ticks">
+        <li><svg class="i"><use href="#i-check"/></svg><span data-hi="30 daily Reels (script + editing)">30 daily Reels (scripting + editing)</span></li>
+        <li class="soon"><svg class="i"><use href="#i-clock"/></svg><span data-hi="Posting + scheduling support (planned)">Publishing &amp; scheduling support (planned)</span></li>
+        <li class="soon"><svg class="i"><use href="#i-clock"/></svg><span>Brand sponsorship support (planned)</span></li>
+        <li class="soon"><svg class="i"><use href="#i-clock"/></svg><span>Comment-to-DM funnel (planned)</span></li>
+      </ul>
+      <p class="pnote" data-hi="Abhi sirf waitlist — VIP ka payment abhi nahi le rahe. Waitlist ke liye Smita Yadav se baat karein.">Waitlist only — we aren't taking VIP payments yet. Ask Smita Yadav to join the waitlist.</p>
+    </article>
+  </div>
+  <p class="excl"><b data-hi="Shamil nahi:">Not included:</b> <span data-hi="views, followers ya brand deals ki guarantee · ads ka kharcha · hamari team ka shoot (recording aap apne phone par karte hain).">guaranteed views, followers or brand deals · paid ad spend · shoots by our team (you record on your own phone).</span></p>
+  <p class="foot"><span data-hi="Prices GST ke bina hain, agar lagu ho.">Prices exclusive of GST, if applicable.</span><b data-hi="Hum views, followers, kamai ya brand deals ka vaada nahi karte — hum kaam aur deadlines ka vaada karte hain.">We don't promise views, followers, income or brand deals. We promise deliverables and deadlines.</b></p>
+</section>
+
+<!-- ============================ 10 · TEAM + HOW JOINING WORKS ============================ -->
+<section class="slide s10" id="s10" aria-roledescription="slide" aria-label="10 of 12" style="--g1x:50%;--g1y:80%;--g1s:1300px;--g2x:85%;--g2y:12%;--g2s:400px">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>10</b> / 12</span></div>
+  <div class="head">
+    <p class="kicker"><span data-hi="Aapki team · Judne ka tareeka">Your team · How joining works</span></p>
+    <h2 class="h" data-hi="Aapki Reels ke peeche teen log.<br><span class='soft'>Baat utni hi, jitni zaroorat ho.</span>">Three people behind your Reels.<br><span class="soft">Only the conversations you need.</span></h2>
+  </div>
+  <div class="path">
+    <article class="pc cr">
+      <div class="pc-step"><span class="tag" data-hi="Step 1 · Aapka point of contact">Step 1 · Your point of contact</span><span class="pc-n">01</span></div>
+      <div class="person"><span class="mono" role="img" aria-label="Smita Yadav">SY</span><div><b>Smita Yadav</b><span class="sub">Growth, Brand Deals &amp; Client Relations Lead</span></div></div>
+      <p class="edu"><svg class="i"><use href="#i-briefcase"/></svg><span data-hi="Hamare in-house creators ki brand deals aur outreach sambhalti hain">Runs brand deals and outreach for our in-house creators</span></p>
+      <p class="what" data-hi="Aapke goals samajhti hain, dikhati hain ki aapke views aur business kahan leak ho rahe hain, aur aapka free audit aur sample edit shuru karwati hain.">Understands your goals, shows you where your views and business are leaking, and sets up your free audit and sample edit.</p>
+      <div class="ct">
+        <a href="https://wa.me/918112859437?text=AUDIT" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-whatsapp"/></svg>+91 81128 59437</a>
+        <a href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@smitayadav_0901</a>
+      </div>
+    </article>
+    <article class="pc cr">
+      <div class="pc-step"><span class="tag" data-hi="Step 2 · Process, plan aur payment">Step 2 · Process, plan &amp; payment</span><span class="pc-n">02</span></div>
+      <div class="person"><span class="mono" role="img" aria-label="Akarsh Yadav">AY</span><div><b>Akarsh Yadav</b><span class="sub">Tech, Video Editing &amp; Scientific Niche Lead</span></div></div>
+      <p class="edu"><svg class="i"><use href="#i-scissors"/></svg><span data-hi="Aapki Reels aur free sample edit karte hain · health topics fact-check karte hain">Edits your Reels and your free sample · fact-checks health topics</span></p>
+      <p class="what" data-hi="Aapka sample dikhate hain, poora process samjhate hain — scripts, hooks, editing, timelines — aur aapka plan aur payment confirm karte hain.">Shows you your sample, explains the process — scripts, hooks, editing, timelines — and confirms your plan and payment.</p>
+      <div class="ct">
+        <span><svg class="i"><use href="#i-video"/></svg><span data-hi="Google Meet par, ya hamari official WhatsApp desk se">On Google Meet, or via our official WhatsApp desk</span></span>
+        <a href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@yadavakarsh_07</a>
+      </div>
+    </article>
+    <article class="pc cr pc-opt">
+      <div class="pc-step"><span class="tag tag-line" data-hi="Step 3 · Founder call, zaroorat ho toh">Step 3 · Founder call, if needed</span><span class="pc-n">03</span></div>
+      <div class="person"><img src="assets/portfolio/dp_vandanay2012.jpg" alt="Vandana Yadav" width="100" height="100"><div><b>Vandana Yadav</b><span class="sub">Founder &amp; Chief Influencer Director</span></div></div>
+      <p class="edu"><svg class="i"><use href="#i-sparkles"/></svg><span data-hi="50K+ followers wali creator · Oct 2026">Creator with 50K+ followers · Oct 2026</span></p>
+      <p class="what" data-hi="Har client ka “kya post karein / kya NAHI” plan khud check karti hain, aur Pro Growth ke liye ya aapke kehne par call par judti hain.">Reviews every client's what-to-post / what-NOT-to-post plan, and joins a call for Pro Growth or whenever you'd like to speak to the founder.</p>
+      <div class="ct">
+        <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012</a>
+      </div>
+    </article>
+  </div>
+  <p class="then"><span class="tag tag-gold"><svg class="i"><use href="#i-check"/></svg><span data-hi="Phir">Then</span></span><span data-hi="Hum aapki pehli Reels par kaam shuru karte hain — zyaadatar creators step 1–2 ke baad hi shuru kar dete hain. Abhi shuru karna hai? Smita Yadav seedha set up kar dengi.">We start on your first Reels — most creators begin after steps 1–2. Ready now? Smita Yadav can set it up directly.</span></p>
+</section>
+
+<!-- ============================ 11 · AFTER YOU JOIN ============================ -->
+<section class="slide s11" id="s11" aria-roledescription="slide" aria-label="11 of 12" style="--g1x:22%;--g1y:50%;--g2x:30%;--g2y:20%;--g2s:420px">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>11</b> / 12</span></div>
+  <div class="join">
+    <div class="wa-wrap">
+      <div class="wa cr">
+        <div class="wa-top">
+          <span class="wa-av">VS</span>
+          <div><b data-hi="VanIndra Studio × Aap">VanIndra Studio × You</b><small data-hi="Official studio desk · Aap">Official studio desk · You</small></div>
+          <svg class="app"><use href="#icon-whatsapp"/></svg>
+        </div>
+        <div class="wa-body">
+          <span class="wa-day">Monday</span>
+          <p class="msg"><span class="who">VanIndra Studio <em>· Smita Yadav</em></span><span data-hi="Welcome! Aapka tracker aur Drive folder upar pin hai.">Welcome aboard! Your tracker and Drive folder are pinned above.</span><span class="t">10:02</span></p>
+          <p class="msg"><span class="who">VanIndra Studio <em>· Vandana Yadav</em></span><span data-hi="Is hafte ki 5 scripts ready hain. Approve karne ke liye APPROVED likhiye.">This week's 5 scripts are ready. Reply APPROVED to approve.</span><span class="t">16:40</span></p>
+          <p class="msg out"><span>APPROVED 1–5 ✓</span><span class="t">17:05</span></p>
+          <span class="wa-day">Wednesday</span>
+          <p class="msg"><span class="who">VanIndra Studio <em>· Akarsh Yadav</em></span><span data-hi="Footage mil gaya. 48 working ghante mein pehla cut.">Footage received. First cut within 48 working hours.</span><span class="t">11:18</span></p>
+          <div class="msg"><span class="who">VanIndra Studio <em>· Akarsh Yadav</em></span><span class="thumb"><img src="assets/portfolio/reel_DSfRlWikcvQ.jpg" alt="" width="640" height="1136"><span data-hi="Reel 1 review ke liye ready hai ✓">Reel 1 is ready for review ✓</span></span><span class="t">15:46</span></div>
+          <div class="wa-input"><span>Message</span><svg class="i"><use href="#i-mic"/></svg></div>
+        </div>
+      </div>
+      <p class="illus"><svg class="i"><use href="#i-info"/></svg><span data-hi="Illustration — client group aisa dikhta hai.">Illustration of a client group.</span></p>
+    </div>
+    <div class="join-copy">
+      <p class="kicker"><span data-hi="Judne ke baad">After you join</span></p>
+      <h2 class="h" data-hi="Judne ke baad,<br><span class='soft'>har step ki khabar aapko.</span>">Once you join,<br><span class="soft">we keep you posted.</span></h2>
+      <div class="rows4">
+        <div class="r4"><span class="r4-ic"><svg class="app"><use href="#icon-whatsapp"/></svg></span><h3><span data-hi="Aapka WhatsApp group">Your WhatsApp group</span><span class="tag tag-gold">Priority</span></h3><p data-hi="Hamari official studio desk ke saath private group. Clients ko pehle jawab — har message ka 3 working ghante mein acknowledgement.">A private group with our official studio desk. Clients are answered first — every message acknowledged within 3 working hours.</p></div>
+        <div class="r4"><span class="r4-ic"><svg class="i"><use href="#i-bell"/></svg></span><h3>Regular updates</h3><p data-hi="Scripts, edits, deadlines aur agle steps — jaise-jaise kaam hota hai. Aur har Saturday weekly summary.">Scripts, edits, deadlines and next steps as they happen — plus a weekly summary every Saturday.</p></div>
+        <div class="r4"><span class="r4-ic"><svg class="i"><use href="#i-sheet"/></svg></span><h3>Shared tracker</h3><p data-hi="Ek Google Sheet jismein har script, Reel draft aur report hoti hai.">One Google Sheet listing every script, Reel draft and report.</p></div>
+        <div class="r4"><span class="r4-ic"><svg class="i"><use href="#i-chart"/></svg></span><h3>Monthly review</h3><p data-hi="Kya chala, kya badalna hai, aur agle mahine ka plan.">What worked, what to change, and next month's plan.</p></div>
+      </div>
+      <div class="boxes">
+        <p class="yourpart"><svg class="i"><use href="#i-camera"/></svg><span data-hi="<b>Aapka kaam:</b> hafte mein lagbhag 30–60 minute recording, aur WhatsApp par jaldi approvals."><b>Your part:</b> about 30–60 minutes a week to record, plus quick approvals on WhatsApp.</span></p>
+        <p class="yourpart trust"><svg class="i"><use href="#i-shield"/></svg><span data-hi="<b>Control aapke paas:</b> post aap khud apne account se karte hain — hum kabhi aapka Instagram password nahi maangte. Har Reel par 2 baar chhote changes."><b>You stay in control:</b> you post from your own account — we never ask for your Instagram password. Up to 2 rounds of small changes on every Reel.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 12 · NEXT STEP (dark) ============================ -->
+<section class="slide s12 dark" id="s12" aria-roledescription="slide" aria-label="12 of 12" style="--g1x:78%;--g1y:40%">
+  <div class="chrome"><span class="wm"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></span><span class="pg"><b>12</b> / 12</span></div>
+  <div class="cta">
+    <div>
+      <p class="kicker"><span data-hi="Bas ek step">One next step</span></p>
+      <h2 class="h" data-hi="Humein ek video bhejiye.<br><span class='soft'>Free sample edit paaiye.</span>">Send us one video.<br><span class="soft">Get your free sample edit.</span></h2>
+      <p class="say" data-hi="Smita Yadav ko WhatsApp par <span class='kw'>AUDIT</span> likhiye — saath mein apna Instagram handle aur ek recent video.">WhatsApp <span class="kw">AUDIT</span> to Smita Yadav with your Instagram handle and one recent video.</p>
+      <a class="wa-btn" href="https://wa.me/918112859437?text=AUDIT" target="_blank" rel="noopener noreferrer">
+        <svg class="app"><use href="#icon-whatsapp"/></svg>
+        <span><b class="num">+91 81128 59437</b><small>Smita Yadav · Official studio desk</small></span>
+      </a>
+    </div>
+    <div class="qr cr-d">
+      <div class="qr-box" role="img" aria-label="QR code: WhatsApp AUDIT to VanIndra Creations">
+        <svg viewBox="-0.5 -0.5 30 30" aria-hidden="true"><path stroke="#0A1E17" d="M0 0.5h7m3 0h2m1 0h1m1 0h1m4 0h1m1 0h7m-29 1h1m5 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h3m2 0h1m4 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h4m2 0h5m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h2m1 0h1m2 0h2m2 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h3m10 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h1m1 0h1m1 0h1m3 0h1m1 0h1m-19 1h1m5 0h1m1 0h5m2 0h1m1 0h6m2 0h3m-27 1h4m3 0h1m1 0h2m1 0h2m4 0h2m2 0h2m1 0h2m-28 1h1m4 0h3m2 0h2m1 0h6m4 0h2m-22 1h1m1 0h1m1 0h1m2 0h2m1 0h1m2 0h1m2 0h1m1 0h1m1 0h1m1 0h1m-26 1h2m4 0h1m3 0h2m1 0h1m1 0h1m2 0h2m1 0h3m4 0h1m-29 1h2m5 0h3m1 0h1m4 0h1m2 0h1m2 0h3m2 0h2m-26 1h1m2 0h1m3 0h2m3 0h3m2 0h1m1 0h1m2 0h2m-26 1h4m3 0h2m2 0h1m3 0h1m3 0h2m1 0h1m2 0h1m1 0h1m-28 1h2m2 0h3m2 0h2m3 0h1m1 0h2m1 0h2m3 0h2m-27 1h1m1 0h1m1 0h1m2 0h2m2 0h1m1 0h2m1 0h2m1 0h1m1 0h2m1 0h1m1 0h3m-29 1h2m3 0h2m5 0h1m2 0h1m3 0h1m1 0h1m2 0h2m2 0h1m-29 1h1m1 0h1m2 0h1m7 0h1m2 0h1m4 0h1m2 0h1m-25 1h1m1 0h2m2 0h3m5 0h1m1 0h2m2 0h5m1 0h3m-21 1h2m2 0h1m1 0h3m2 0h2m3 0h2m-26 1h7m3 0h2m3 0h1m3 0h2m1 0h1m1 0h3m-27 1h1m5 0h1m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1m3 0h1m2 0h1m-28 1h1m1 0h3m1 0h1m3 0h2m1 0h3m3 0h7m2 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m3 0h4m1 0h1m6 0h2m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m2 0h1m2 0h1m4 0h1m1 0h6m-28 1h1m5 0h1m2 0h1m3 0h2m1 0h1m2 0h1m2 0h2m1 0h2m1 0h1m-29 1h7m1 0h2m1 0h2m1 0h1m1 0h2m5 0h4"/></svg>
+      </div>
+      <p><span data-hi="WhatsApp chat ke liye scan karein">Scan to chat on WhatsApp</span><small data-hi="Free page audit + 15-second sample edit · 2 working days mein">Free page audit + 15-second sample edit · back within 2 working days</small></p>
+    </div>
+  </div>
+  <div class="s12-foot">
+    <div class="handles">
+      <a href="https://www.instagram.com/vanindracreations/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@vanindracreations</a>
+      <a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012</a>
+    </div>
+    <p class="promise" data-hi="VanIndra Creations · Founder Vandana Yadav. Hum views ya kamai ka vaada nahi karte — hum kaam aur deadlines ka vaada karte hain.">VanIndra Creations · Founded by Vandana Yadav. We don't promise views or income — we promise deliverables and deadlines.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- Desktop controls -->
+<div class="ui-prog" id="uiProg" aria-hidden="true"></div>
+<nav class="ui" aria-label="Slide controls">
+  <button type="button" class="ui-btn" onclick="go(cur-1)" aria-label="Previous slide"><svg class="i"><use href="#i-arrow-left"/></svg></button>
+  <span class="ui-count" id="uiCount" aria-live="polite"><b>01</b> / 12</span>
+  <button type="button" class="ui-btn" onclick="go(cur+1)" aria-label="Next slide"><svg class="i"><use href="#i-arrow-right"/></svg></button>
+  <span class="ui-sep" aria-hidden="true"></span>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" id="btnLangEn" data-lang-btn="en" class="active" onclick="setLanguageMode('en')" aria-label="English">EN</button>
+    <button type="button" id="btnLangHi" data-lang-btn="hi" onclick="setLanguageMode('hi')" aria-label="Hinglish">Hinglish</button>
+  </div>
+  <span class="ui-sep" aria-hidden="true"></span>
+  <button type="button" class="ui-btn" onclick="toggleFullscreen()" aria-label="Full screen (F)"><svg class="i"><use href="#i-expand"/></svg></button>
+</nav>
+
+<!-- Phone CTA -->
+<a class="m-cta" href="https://wa.me/918112859437?text=AUDIT" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-whatsapp"/></svg><span data-hi="WhatsApp par free audit lijiye">Get a free audit on WhatsApp</span></a>
+
+<script>
+/* ---------- deck navigation (desktop) ---------- */
+const slides = Array.from(document.querySelectorAll('.slide'));
+let cur = 0;
+const deckMQ = window.matchMedia('screen and (min-width:900px)');
+const pad2 = (n) => String(n).padStart(2, '0');
+
+function fit() {
+  const fs = document.body.classList.contains('fs');
+  const W = window.innerWidth, H = window.innerHeight - (fs ? 0 : 84);
+  const s = Math.min((W - (fs ? 0 : 48)) / 1920, (H - (fs ? 0 : 36)) / 1080);
+  document.documentElement.style.setProperty('--s', Math.max(s, 0.1).toFixed(4));
+}
+function go(n, opts) {
+  cur = Math.max(0, Math.min(slides.length - 1, n));
+  slides.forEach((el, i) => { el.classList.toggle('active', i === cur); el.setAttribute('aria-hidden', deckMQ.matches && i !== cur ? 'true' : 'false'); });
+  const c = document.getElementById('uiCount');
+  if (c) c.innerHTML = '<b>' + pad2(cur + 1) + '</b> / ' + slides.length;
+  const p = document.getElementById('uiProg');
+  if (p) p.style.width = ((cur + 1) / slides.length * 100) + '%';
+  if (!(opts && opts.noHash)) { try { history.replaceState(null, '', '#' + (cur + 1)); } catch (e) {} }
+}
+function fromHash() {
+  const n = parseInt((location.hash || '').replace(/[^0-9]/g, ''), 10);
+  return Number.isFinite(n) && n >= 1 ? n - 1 : 0;
+}
+function toggleFullscreen() {
+  const d = document;
+  if (!d.fullscreenElement) { (d.documentElement.requestFullscreen || function(){}).call(d.documentElement); }
+  else { d.exitFullscreen && d.exitFullscreen(); }
+}
+document.addEventListener('fullscreenchange', () => { document.body.classList.toggle('fs', !!document.fullscreenElement); fit(); });
+let idleT;
+document.addEventListener('mousemove', () => { document.body.classList.remove('idle'); clearTimeout(idleT); idleT = setTimeout(() => document.body.classList.add('idle'), 2200); });
+
+document.addEventListener('keydown', (e) => {
+  if (!deckMQ.matches || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key;
+  if (['ArrowRight', 'ArrowDown', 'PageDown', ' ', 'Enter'].includes(k)) { e.preventDefault(); go(cur + 1); }
+  else if (['ArrowLeft', 'ArrowUp', 'PageUp', 'Backspace'].includes(k)) { e.preventDefault(); go(cur - 1); }
+  else if (k === 'Home') { e.preventDefault(); go(0); }
+  else if (k === 'End') { e.preventDefault(); go(slides.length - 1); }
+  else if (k === 'f' || k === 'F') { toggleFullscreen(); }
+  else if (k === 'h' || k === 'H') { setLanguageMode(window.currentLangMode === 'hi' ? 'en' : 'hi'); }
+});
+document.getElementById('stage').addEventListener('click', (e) => {
+  if (!deckMQ.matches || e.target.closest('a,button')) return;
+  if (window.getSelection && String(window.getSelection())) return;
+  go(e.clientX < window.innerWidth * 0.3 ? cur - 1 : cur + 1);
+});
+let tx = null;
+document.addEventListener('touchstart', (e) => { tx = e.touches[0].clientX; }, { passive: true });
+document.addEventListener('touchend', (e) => {
+  if (!deckMQ.matches || tx === null) return;
+  const dx = e.changedTouches[0].clientX - tx; tx = null;
+  if (Math.abs(dx) > 50) go(cur + (dx < 0 ? 1 : -1));
+}, { passive: true });
+window.addEventListener('resize', fit);
+function scrollToHashOnPhone() {
+  if (deckMQ.matches || !location.hash) return;
+  const el = slides[fromHash()];
+  if (el) el.scrollIntoView({ block: 'start' });
+}
+window.addEventListener('hashchange', () => { go(fromHash(), { noHash: true }); scrollToHashOnPhone(); });
+window.addEventListener('load', scrollToHashOnPhone);
+deckMQ.addEventListener && deckMQ.addEventListener('change', () => { fit(); go(cur, { noHash: true }); });
+
+/* ---------- language (same mechanism as the website) ---------- */
+function setLanguageMode(lang) {
+  window.currentLangMode = lang;
+  document.querySelectorAll('[data-lang-btn]').forEach((b) => {
+    const on = b.getAttribute('data-lang-btn') === lang;
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+  document.documentElement.setAttribute('lang', lang === 'hi' ? 'hi-Latn' : 'en');
+  document.querySelectorAll('[data-hi]').forEach((el) => {
+    if (!el.hasAttribute('data-en')) el.setAttribute('data-en', el.innerHTML);
+    el.innerHTML = (lang === 'hi') ? el.getAttribute('data-hi') : el.getAttribute('data-en');
+  });
+  try { localStorage.setItem('vanindra_deck_lang', lang); } catch (e) {}
+}
+
+fit();
+go(fromHash(), { noHash: true });
+(function () {
+  const cta = document.querySelector('.m-cta'); const last = document.getElementById('s12');
+  if (!cta || !last || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver((es) => es.forEach((e) => cta.classList.toggle('away', e.isIntersecting)), { threshold: 0.25 }).observe(last);
+})();
+try { if (localStorage.getItem('vanindra_deck_lang') === 'hi') setLanguageMode('hi'); } catch (e) {}
+</script>
+</body>
+</html>

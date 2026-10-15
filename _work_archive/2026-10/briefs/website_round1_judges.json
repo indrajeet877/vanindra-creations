@@ -1,0 +1,317 @@
+[
+ {
+  "judge": "x_design_tastemaker",
+  "scores": [
+   {
+    "id": "d2_editorial_ivory",
+    "visual_wow": 8.5,
+    "clarity_hierarchy": 8,
+    "mobile_quality": 8,
+    "brand_fit_premium": 9,
+    "conversion": 8,
+    "overall": 8,
+    "best_parts": [
+     "The hero type is the best moment across all three designs: 'You record. / We run the rest.' in Instrument Serif at about 120px, with the second line in emerald italic. It reads like a magazine cover, not a SaaS template, and it is the only one I would screenshot and repost.",
+     "It is the only design that matches the brand book exactly: warm ivory as the default surface, emerald used as ink, gold kept to rules and accents, and one bold dark emerald band (the AI plan). It feels premium and Indian-editorial rather than borrowed from Silicon Valley.",
+     "The photographic Reel bento puts the section intro inside the grid, with two tall covers and four small ones. This is real proof laid out like a lookbook.",
+     "The rhythm of serif numerals runs through the page: the 50K+ / 467+ / 24–48h / ₹0 stats strip, the italic step numbers 01–09, ₹24,999 in the pricing, and 1.4 Lakh+ in the ROI. Hairlines and gold gradient rules make it read as one system.",
+     "The formats accordion (mono label on the left, serif title on the right, round +/× button) and the hairline services grid are calm and easy to scan. On mobile the services collapse into an accordion, which saves height.",
+     "The giant cropped 'VanIndra' wordmark at the foot of the footer (emerald 'Van' with gold italic 'Indra') is a very current, X-friendly detail.",
+     "The pricing card is right: the dark emerald Pro plan with a gold CTA, the outline cards beside it, and the ROI strip attached as a split tile with a tinted results half.",
+     "The editable WhatsApp composer with goal chips sits above the fold, with a softer 'Or get a free AI growth plan' secondary link."
+    ],
+    "must_fix": [
+     "The hero right side has too many floating parts: the toggle, three stacked KPI chips, the retention card and a caption all around one phone. The chips overlap the phone's right edge, and in Hindi mode the 'Brand deals' chip covers the like icon. Cut it to two chips plus the toggle, and keep them off the Reel UI.",
+     "The hero left column is crowded: eyebrow pill, headline, paragraph, founder pill, then a composer with a header row, chips, textarea and two CTAs. Merge the founder pill into the eyebrow and shorten the textarea to 2 rows.",
+     "The founder tile has a dead gap between the stats row and the buttons. The B&W portrait still carries the baked caption 'Photo mast aayi hai / Post kar deti hu 😊' with an emoji, which cheapens the most important tile. Use a clean crop or fill the space.",
+     "On the small Reel tiles, the white @handle overlay sits on top of the baked Hindi caption text, making illegible type on type. Move the handle or add a darker bottom scrim.",
+     "Instrument Serif gets spindly at about 22–28px (service titles, format titles, 'Estimate reach…'). Keep the serif for 40px and up, or set small headings in Inter Tight 600.",
+     "Team cards use VY/SY/AY monograms even though real photos exist for Vandana Yadav and Smita Yadav. Use the photos (even at a small size) for the founder and Smita Yadav, and keep a monogram only for Akarsh Yadav.",
+     "Mobile: the KPI chips under the phone wrap ('6.8L+ / views', 'Brand- / ready'), so shorten the labels. The pricing scroller opens on the Trial card, so it should start on or snap to Pro Growth. The mobile hero runs to about 1,750px, and the founder team card has dead space.",
+     "The dark mode toggle was dropped, but the brand book requires a 1-click Dark Studio Mode.",
+     "The '1 LAKH+ VIEWS' badges on each Reel must be true for every one of those Reels, or be removed."
+    ]
+   },
+   {
+    "id": "d1_noir_bento",
+    "visual_wow": 8,
+    "clarity_hierarchy": 7.5,
+    "mobile_quality": 7.5,
+    "brand_fit_premium": 6,
+    "conversion": 8,
+    "overall": 7.5,
+    "best_parts": [
+     "It is the most fluent in the vocabulary of the moment: emerald and gold aurora, a masked grid, grain, 1px hairlines with an inset highlight, and Geist Mono eyebrows. It looks like it belongs on the Linear and Raycast timeline.",
+     "The product-as-hero phone is the most convincing of the three: dynamic island, side button, Reels UI, an audience-retention micro-chart in the phone, a Raw clip / Studio edit segmented toggle and the label 'ILLUSTRATIVE DEMO · TAP TO COMPARE'.",
+     "The composer feels like an AI prompt input: an EDITABLE tag, goal chips inline with a WhatsApp-green send button and a paper-plane icon. It is the cleanest WhatsApp concierge of the three.",
+     "Proof bento: big serif 50K+ / 467+ stat tiles beside a dashed 'SLOT #03 · NOW OPEN — Your profile, next.' tile that gives a strong scarcity/next-step feel.",
+     "The services micro-UIs (an editing timeline with a playhead and HOOK/V1/CAP tracks, and a 'Post more / Stop posting' card) show the work instead of describing it.",
+     "The browser-chrome client portal (URL bar, 'SAMPLE PREVIEW', KPI grid, activity rows with DELIVERED/APPROVED tags) is the most believable portal preview.",
+     "Colour discipline: WhatsApp green only for WhatsApp actions and one gold CTA per block. Mobile snap scrollers peek the next card well."
+    ],
+    "must_fix": [
+     "Brand mismatch: it is dark-only, but the brand book makes Warm Ivory the default surface with emerald/gold sections and dark as a toggle. As it stands it reads as a crypto or dev-tool site, not an Indian creator studio.",
+     "An em spacing bug: the italic em has padding-right .08em plus a normal space, so 'Human -accountable' shows a visible gap before the hyphen, and 'Scale  when', 'Get  a plan', 'ask  first' and 'We'll  make' all show double gaps.",
+     "The gold serif italic word in every H2 (11 times) turns into a tic. Keep it for the H1 and two or three key heads.",
+     "The founder photo tile is a soft, washed-out, low-res crop with a muddy left fade. In the founder chips, an inner pill sits inside an outer pill (icon in one, text in the other), so the borders double up.",
+     "Two hero KPI chips carry filler: 'HOOK BANNER — On' and 'BRAND-READY — Yes' say nothing. Use one real metric or none.",
+     "Services bento: the hooks tile is half empty below its list, and the strategy tile has a gap above its micro-UI. The second row has no micro-UIs at all, so the grid feels unfinished.",
+     "After the third section the dark tiles become monotonous: every section uses the same tile, border and radius with no change of surface or scale.",
+     "Mobile: the pricing scroller opens on Trial, not Pro, and the founder tile photo looks especially poor at phone width."
+    ]
+   },
+   {
+    "id": "d3_liquid_glass",
+    "visual_wow": 7,
+    "clarity_hierarchy": 6.5,
+    "mobile_quality": 7.5,
+    "brand_fit_premium": 7,
+    "conversion": 7.5,
+    "overall": 6.5,
+    "best_parts": [
+     "The dark emerald inset panel inside the ivory page, holding the six Reels plus a tabbed format engine (list on the left, large '01' detail card on the right), is the single best composition here and shows real craft.",
+     "The mobile fold works hardest: headline, 'Chat on WhatsApp', 'Get my free AI plan', 'Listen in Hindi' and the reassurance line 'Free 7-day audit + a 15-second sample edit… before you pay' all fit on the first screen.",
+     "The phone is the most realistic: 9:41 status bar, signal and battery, like/comment/share counts, a retention bar in the phone, and glass KPI chips that bob.",
+     "The founder tile's fanned Reel covers are a nice, tactile touch.",
+     "Honesty microcopy is the best of the three: 'Sample data' tags, 'no guaranteed deals', 'Comment-to-DM (coming soon)', VIP 'Waitlist' and the AI privacy note naming Pollinations.",
+     "The Slot #03 tile has 'Free / 15 sec / 48 hrs' mini-stats and '2 slots open · Oct 2026'."
+    ],
+    "must_fix": [
+     "The official WhatsApp logo disappears on the green buttons: the green logo sits on a green background, leaving only a tiny white phone glyph ('Send on WhatsApp', the footer 'Chat on WhatsApp'). This breaks the official-app-logo rule.",
+     "Every H2 uses a gradient from emerald through olive to gold. The olive middle is muddy and off-palette, and gradient text on every head felt dated by 2023. Keep it once, in the hero, if at all.",
+     "The centred hero pushes the product below a 1440×900 fold (the phone starts at about y=700), so the first screen is just text and buttons, like a stock Framer template.",
+     "The gradient 'Indra' in the wordmark cheapens the brand. Use one ink colour.",
+     "The founder tile has a large dead gap between the Post more / Stop posting lists and the stats row.",
+     "The services section is a generic 3×2 card grid with no micro-UI, the most template-like section on the page.",
+     "Section heads alternate between centred and left-aligned, so the eye has no steady axis.",
+     "About 30 backdrop-filter layers plus a full-page mesh: performance risk on the low-end Android phones that most of the audience uses."
+    ]
+   }
+  ],
+  "winner": "d2_editorial_ivory",
+  "grafts": [
+   "From d1: rebuild D2's Dark Studio Mode (required by the brand book) from D1's noir tokens: the #06130E base, hairline tiles with the inset top highlight, a faint aurora and grain. The toggle then flips from editorial ivory to noir.",
+   "From d1: the compact AI-prompt composer layout, with message plus goal chips and the send button on one row and an 'EDITABLE' mono tag. It shortens D2's crowded hero left column. Keep WhatsApp green only on the WhatsApp send action.",
+   "From d1: one or two micro-UIs in D2's hairline services grid: the editing timeline with a playhead (HOOK/V1/CAP) in the editing cell and the 'Post more / Stop posting' mini-card in the strategy cell, to break up the text-only cells.",
+   "From d1: the portal's activity rows (Reel #17 DELIVERED, Script #20 APPROVED) under D2's workspace KPI grid.",
+   "From d1: Geist Mono-style numbered eyebrows ('01 — Live portfolio') to add wayfinding to D2's gold-rule labels, and D1's 'ILLUSTRATIVE DEMO · TAP TO COMPARE' mono caption under the phone.",
+   "From d3: the reassurance line under the hero CTA, '✓ Free 7-day audit + a 15-second sample edit of your own video, before you pay.'",
+   "From d3: the realistic phone chrome (9:41 status bar, signal and battery, like/comment counts) in D2's hero phone, replacing two of the stacked KPI chips.",
+   "From d3: the fanned Reel-cover stack to fill the dead space in D2's founder tile in place of the baked-caption B&W crop.",
+   "From d3: the honesty microcopy: 'Sample data' tag on the portal, 'no guaranteed deals' on the brand-pitching bullets, 'Comment-to-DM (coming soon)', VIP 'Waitlist', and the Pollinations privacy note under the AI plan button.",
+   "From d3: the Slot #03 mini-stats ('Free 7-day audit / 15 sec sample / 48 hrs first edit') and '2 slots open · Oct 2026' in D2's portfolio #03 card.",
+   "From d3: the mobile sticky bar showing only after the hero CTAs scroll away, so it never covers the hero composer on the first screen."
+  ],
+  "beats_current_by": "It swaps the current emoji-heavy dark template, with its ribbons, shouting badges and a 29k-px mobile scroll, for a calm ivory magazine page: one serif headline, the phone demo and the WhatsApp composer above the fold, at under half the mobile length."
+ },
+ {
+  "judge": "Indian lifestyle creator with 3 lakh followers on a mid-range Android over 4G, budget Rs 15,000-25,000 a month",
+  "scores": [
+   {
+    "id": "d1_noir_bento",
+    "visual_wow": 8.5,
+    "clarity_hierarchy": 7.5,
+    "mobile_quality": 7,
+    "brand_fit_premium": 6.5,
+    "conversion": 8.5,
+    "overall": 7.6,
+    "best_parts": [
+     "Strongest 'design Twitter' hero. The 1440x900 fold holds a 2-line headline with one gold serif word ('unforgettable'), a realistic Reels phone with a sliding Raw clip / Studio edit toggle, and the editable WhatsApp composer with goal chips and 'Send on WhatsApp'.",
+     "The mobile fold already has the WhatsApp composer and send button, and the sticky WhatsApp / Free AI plan bar shows from first paint. It is the fastest path to WhatsApp of the three.",
+     "In Hindi mode the prefilled WhatsApp message also switches to natural Hinglish ('Namaste Smita Yadav ji, maine VanIndra Creations ka portfolio... dekha'). None of the other designs do this, and it matters most for a Hindi-first creator.",
+     "The services tiles carry small UIs (a 'Post more / Stop posting' card and an editing timeline) that show the work instead of only listing bullets.",
+     "The big serif 50K+ / 467+ stat tiles and the dashed 'Slot #03 · Now open' tile make the proof feel like something you can check.",
+     "The Reels filter tabs (All 6 / @vandanay2012 / @smitayadav_0901) and the numbered mono eyebrows give the page a clear order."
+    ],
+    "must_fix": [
+     "The dark-only page breaks the brand book (CLAUDE.md says the default is a light Warm Ivory surface, with dark as a toggle). Over 12,900 px it reads like a developer-tool SaaS (Linear / Vercel), not a lifestyle studio. Captions like 'ILLUSTRATIVE DEMO · TAP TO COMPARE' in mono caps feel techy to this audience.",
+     "The founder tile photo is the weakest image at the most important trust moment: a soft Reel crop with a white wall, another person's arm and a visible fade seam.",
+     "On the mobile phone simulator, the 'Follow' pill collides with the comment icon, and the 'reach or income' highlight wraps awkwardly.",
+     "Many labels are tiny grey-on-black text (mono eyebrows, KPI labels and the like, about 10-11 px). They will not be readable outdoors on a mid-range phone screen.",
+     "On mobile, pricing is a horizontal scroller, so Pro Growth (₹24,999, the plan this buyer wants) is the third card and off-screen. Starter and Pro should be visible without swiping.",
+     "The 'View pitch deck' button in Slot #03 sends a prospect to pitch-deck.html, whose title is 'Sales Playbook'.",
+     "In the mobile fold, the sticky bar covers the 'Founded by Vandana Yadav · 50K+ followers' proof line.",
+     "17 elements use blur, plus a drifting aurora and a fixed grain layer, on a 12.9k-px dark page. Scrolling needs testing on a real Rs 15k Android."
+    ]
+   },
+   {
+    "id": "d2_editorial_ivory",
+    "visual_wow": 8.5,
+    "clarity_hierarchy": 8.5,
+    "mobile_quality": 7,
+    "brand_fit_premium": 9,
+    "conversion": 8,
+    "overall": 8.3,
+    "best_parts": [
+     "'You record. / We run the rest.' in large Instrument Serif, with the second line in emerald italic, is the most premium headline of the three. It reads like a lifestyle magazine and names the creator's real pain in five words.",
+     "Exactly on brand: warm ivory surface, emerald used as ink, gold hairline rules, and one bold dark-emerald band for the Free AI Growth Plan. It feels like a studio, not a template.",
+     "The desktop fold has the real Reel phone with the Before/After control, KPI chips and a retention card, next to an editable WhatsApp composer with 'I need:' goal chips and 'Send on WhatsApp'.",
+     "The photographic Reels bento (two tall covers, four small) is the best showcase of the real work. The stats row (50K+ / 467+ / 24-48h / ₹0 first sample edit) is calm and believable.",
+     "The formats accordion, the services hairline grid and the 9 steps grouped into Diagnose / Produce / Scale keep long content easy to scan. The calm 'Sound familiar?' pain grid lands well.",
+     "It is the lightest on the device (8 blur elements, 3 animations), so it should scroll most smoothly on a mid-range Android over 4G.",
+     "The pricing card set has one clear dark highlighted Pro Growth plan with a gold CTA. The giant 'VanIndra' wordmark crop in the footer is a memorable, X-popular sign-off."
+    ],
+    "must_fix": [
+     "In the mobile fold, the sticky WhatsApp / Free AI plan bar sits on top of the composer's 'Send on WhatsApp' button. Hide the sticky bar while the hero composer is on screen.",
+     "The founder portrait is black-and-white with a baked-in 'Photo mast aayi hai / Post kar deti hu 😊' caption sticker. It reads as a screenshot and feels gloomy for a lifestyle brand. Use a clean colour frame (or a real portrait).",
+     "The founder tile lists '84.2% 3-sec hook hold' as a real stat, but that same number is labelled illustrative in the hero. Remove it there, or label it consistently. The '1 LAKH+ VIEWS' badges need to be verifiable.",
+     "The mobile hero is about 1,750 px long (composer first, phone after). Put the two big buttons right after the subhead and move the Before/After phone up, or collapse the composer to chips plus Send.",
+     "On the phone simulator, the 'Follow' chip collides with the comment icon (visible on mobile).",
+     "Hindi mode keeps the WhatsApp prefill in English, and the client-portal bullets stay half-English ('Your Only Job', 'Our Studio's Job', 'Enforced Quality Bar'). The Tiro Devanagari H1 is heavy.",
+     "Mobile pricing is a scroller that hides Pro Growth at card 3. The Trial card has a large empty gap above its button, and the Vandana team card has dead space.",
+     "The 'Client pitch deck' link in the Portfolio #03 tile opens the sales playbook. Keep it in the footer only.",
+     "The Dark Studio Mode toggle listed in CLAUDE.md was dropped."
+    ]
+   },
+   {
+    "id": "d3_liquid_glass",
+    "visual_wow": 7,
+    "clarity_hierarchy": 8,
+    "mobile_quality": 6.5,
+    "brand_fit_premium": 7.5,
+    "conversion": 8,
+    "overall": 7.4,
+    "best_parts": [
+     "The clearest CTA set: one dark 'Chat on WhatsApp' primary, 'Get my free AI plan' and 'Listen in Hindi', with the risk-reversal line 'Free 7-day audit + a 15-second sample edit of your own video, before you pay' directly underneath.",
+     "The 'Real people. Real accounts you can check today.' bento puts Vandana, Smita and Akarsh, with full Instagram / WhatsApp / Gmail contact rows, in one trust block. It is the most reassuring section of the three.",
+     "The most honest copy: dated stats ('Followers · Oct 2026'), 'Each crossed 100K+ views', '(no guaranteed deals)', '(coming soon)', a 'Sample data' label, and the portal note that today every client gets a private WhatsApp group plus a shared tracker.",
+     "The Slot #03 strip with Free / 15 sec / 48 hrs chips and the '*Within 48 working hours' footnote is a concrete, believable offer.",
+     "The 'Same clip. A different first 3 seconds.' list explains in plain words what the edit changes.",
+     "It keeps the Dark Studio Mode toggle the brand book asks for. The tabbed format engine on the dark emerald panel is tidy."
+    ],
+    "must_fix": [
+     "I measured 78 elements with backdrop-filter at 390 px, on top of the full-page mesh blobs. On a mid-range Android this is a real risk of janky scrolling. Cut blur to under about 10 elements on mobile and use solid translucent fills instead.",
+     "On mobile, the phone KPI chips (84.2%, 6.8L+ views, Brand-ready) sit on top of the Reel screen and cover the face and edges, which looks cluttered.",
+     "The WhatsApp glyph inside the green buttons ('Send on WhatsApp', footer 'Chat on WhatsApp') is tiny and white-on-green, so it is almost invisible.",
+     "The desktop fold shows no product: the phone and composer start below 900 px, so the fold is just a centred headline and buttons. It feels like a generic SaaS template.",
+     "Every section heading uses emerald-to-gold gradient text. It turns muddy olive ('One clear direction', 'monthly pipeline') and gets repetitive.",
+     "The Hindi H1 breaks into 4 lines with 'सब हम' orphaned, set in a synthesized oblique Devanagari that looks fake.",
+     "The mock Reel shows invented engagement counts (48.2K likes, 1,204 comments, 9.6K shares) next to the 'illustration' label.",
+     "The founder tile has empty space under the floating fan of Reel covers.",
+     "'360° VIP · Waitlist · limited to 1 client' tells a ₹40k buyer the studio is tiny. Reword it as 'by application'.",
+     "Mobile pricing is a scroller that hides Pro Growth."
+    ]
+   }
+  ],
+  "winner": "d2_editorial_ivory",
+  "grafts": [
+   "From D1: in Hindi mode, switch the prefilled WhatsApp message to Hinglish ('Namaste Smita Yadav ji, maine VanIndra Creations ka portfolio... dekha aur apna page grow karna chahta/chahti hoon'). D2 currently keeps it in English.",
+   "From D1: show the sticky WhatsApp / Free AI plan bar from first paint, but hide it while the hero composer's Send button is on screen, so it never covers the send button the way D2's bar does now.",
+   "From D3: put the risk-reversal line right under the hero CTA: 'Free 7-day audit + a 15-second sample edit of your own video, before you pay.'",
+   "From D3: mobile hero order. Big 'Chat on WhatsApp' and 'Get my free AI plan' buttons right after the subhead, then the Before/After phone, then the composer. This cuts D2's roughly 1,750 px mobile hero.",
+   "From D3: the 'Real people. Real accounts you can check today.' proof bento, with Smita Yadav and Akarsh Yadav contact rows (Instagram / WhatsApp / Gmail) beside the founder tile, so trust and team sit in one block.",
+   "From D3: honesty qualifiers. Dated stats ('Followers · Oct 2026'), 'Each crossed 100K+ views', '(no guaranteed deals)' in pricing bullets, a 'Sample data' tag on the portal, and the line 'Today, every client gets a private WhatsApp group and a shared tracker'. Also drop D2's unlabelled '84.2% hook hold' from the founder stats.",
+   "From D3: the Slot #03 offer strip with Free / 15 sec / 48 hrs chips and the '*Within 48 working hours of receiving your footage' footnote.",
+   "From D3: the pricing subhead 'For many creators, one paid collaboration a month can offset the cost — but results vary and we don't guarantee deals.'",
+   "From D3: keep a 1-click Dark Studio Mode toggle (required by CLAUDE.md). D1's noir palette and grain can serve as D2's dark theme.",
+   "From D1: the services micro-UIs (the 'Post more / Stop posting' card and the editing timeline with HOOK / V1 / CAP tracks) inside D2's hairline services grid.",
+   "From D1: the Reels filter tabs (All 6 / @vandanay2012 / @smitayadav_0901) above D2's photographic Reels bento.",
+   "From D3: link the pitch deck (a 'Sales Playbook' page) only from the footer. Remove 'Client pitch deck' from the Portfolio #03 tile.",
+   "For all three (not yet done in any): on mobile, open the pricing scroller on Pro Growth, or stack Starter and Pro vertically, so the ₹14,999 and ₹24,999 plans are visible without swiping."
+  ],
+  "beats_current_by": "The current page is a 29,000-px wall of emoji badges. D2 is a calm ivory-and-emerald magazine page about 13,000 px tall on mobile: one clear headline ('You record. We run the rest.'), the real Reel phone and an editable WhatsApp box at the top (side by side in the desktop fold), and the same features and prices, all of it feeling premium enough to justify ₹15-25K a month."
+ },
+ {
+  "judge": "CRO and mobile QA specialist: information hierarchy, CTAs, scannability, tap targets, contrast, honest claims (checked against 13_India_Delivery_and_Fulfillment_Backend/03_Risky_Claims_and_Fixes.md), performance and layout bugs",
+  "scores": [
+   {
+    "id": "d1_noir_bento",
+    "visual_wow": 8.5,
+    "clarity_hierarchy": 7,
+    "mobile_quality": 6.5,
+    "brand_fit_premium": 6.5,
+    "conversion": 7,
+    "overall": 7,
+    "best_parts": [
+     "Best desktop fold of the three. At 1440x900 the 2-line headline, the editable WhatsApp composer with its Send button and the phone Before/After simulator with its toggle are all visible without scrolling.",
+     "On mobile the first 844px holds the composer, a full-width 'Send on WhatsApp' button and the sticky WhatsApp + Free AI plan bar.",
+     "Disciplined CTA colours: WhatsApp green appears only on WhatsApp actions, and each block has at most one gold CTA.",
+     "The services micro-UIs (a Post more / Stop posting card and an edit timeline) and the browser-chrome portal dashboard make abstract services concrete.",
+     "Reels filter control (All 6 / @vandanay2012 / @smitayadav_0901). The proof bento has big serif 50K+ and 467+ tiles and the honest line 'No stock testimonials'.",
+     "Brand names, '₹65K/Reel', '6.8L views' and the multiplier claims were removed."
+    ],
+    "must_fix": [
+     "The page is dark-only. CLAUDE.md sets Warm Ivory as the default surface for daylight readability across India and asks for a 1-click Dark Studio toggle. Neither the ivory default nor the toggle exists.",
+     "Mobile phone-mockup bug at 390px: the comment icon sits on top of the 'Follow' button, so it reads 'Fol○ow'.",
+     "Seven horizontal snap scrollers on mobile (Reels, formats, services, steps, portal, team, pricing) hide most of the content. The highlighted Pro Growth plan is card 3 of 4 and off-screen, the portal dashboard sits behind a swipe, and the services tiles have large dead space.",
+     "Low-contrast text: --ink-4 (34% alpha) measures 2.84:1. It is used for the 11px mono 'ILLUSTRATIVE DEMO' honesty label, the footer base and the form placeholders.",
+     "The italic accent's padding-right:.08em leaves visible gaps: 'Human -accountable', 'Get  a plan', 'ask  first', 'Real  accounts', 'Scale  when'.",
+     "Honesty debt against the company's own risky-claims list: the VIP card still says 'Fully hands-free' and lists done-for-you publishing and a comment-to-DM funnel (R8); the AI form sends data to pollinations with no privacy note (R7); 'can cover a monthly studio retainer' (R13); '24–48h' turnaround (R16); the 'View pitch deck' button in Slot #03 links the deck that contains internal battlecards (R20); a 'Most popular' badge with no clients yet.",
+     "On desktop the six Reels render at about 185px wide in one row, and the Hindi captions baked into the covers collide with the play icons. The founder photo tile still shows a fade seam.",
+     "Goal chips are 34px and the language buttons 32px, under the 44px tap-target minimum. The login button in the sticky bar is a bare lock icon with no label."
+    ]
+   },
+   {
+    "id": "d2_editorial_ivory",
+    "visual_wow": 8,
+    "clarity_hierarchy": 8.5,
+    "mobile_quality": 7,
+    "brand_fit_premium": 8.5,
+    "conversion": 7,
+    "overall": 7.7,
+    "best_parts": [
+     "Strongest typographic voice: 'You record. / We run the rest.' in Instrument Serif with an emerald italic second line. It fits the brand's ivory, emerald and gold palette exactly.",
+     "The desktop fold keeps the composer, the goal chips and 'Send on WhatsApp' within 900px, next to the phone. A clear stats row (50K+ / 467+ / 24–48h / ₹0 first sample) sits just below.",
+     "On mobile, formats and services become vertical accordions. This is the most scannable mobile pattern of the three, and no key content is hidden in sideways scrollers.",
+     "The Reels bento (2 tall + 4 small, with the section intro inside the grid) is the most magazine-like use of the real covers.",
+     "One dark emerald band for the Free AI Growth Plan creates a single clear mid-page conversion moment.",
+     "Hindi mode in Tiro Devanagari reads cleanly at 390px. The footer bleed wordmark is a tasteful sign-off."
+    ],
+    "must_fix": [
+     "At first load (390x844) the sticky mobile bar covers the composer's 'Send on WhatsApp' button.",
+     "The same 'Follow' / comment-icon overlap appears in the mobile phone mockup.",
+     "Disclaimers use --faint #85908A on ivory, which measures 3.1:1 at about 12px ('Illustrative simulation — not a guaranteed result', the ROI disclaimer). The honesty labels are the least legible text on the page.",
+     "Most honesty debt of the three: '84.2% 3-sec hook hold' shown as a fact on Vandana's founder card (R2); '6.8L+ views' hero chip; 'Hooks 100K+ viewers in the first 4 seconds' (R18); 'Get a plan in seconds' and 'about 5 seconds' (R15); 'can cover the entire monthly studio retainer' (R13); VIP 'Fully hands-free daily publishing' (R8); '24–48h' (R16); no privacy note on the AI form (R7); a 'Client pitch deck' link in Slot #03 (R20); 'Brands: sponsor @vandanay2012 & @smitayadav_0901' before any media kit or agreement exists (F1); a 'Most popular' badge.",
+     "Team cards use monogram circles (VY / SY / AY) instead of photos, so human trust is weaker than in D1 and D3, even though dp_ photos exist for two of the three people.",
+     "Layout bugs on mobile: the founder photo crop cuts the face at the forehead, and the mic button's halo clips the left edge of the viewport in the AI section.",
+     "Pro Growth is card 3 in the mobile pricing scroller, so it is hidden. The mobile hero runs about 1,750px before the phone appears, and the retention card is hidden.",
+     "Footer link rows are about 34px apart, and the goal chips (36px) and language buttons (34px) are under the 44px tap-target minimum."
+    ]
+   },
+   {
+    "id": "d3_liquid_glass",
+    "visual_wow": 7.5,
+    "clarity_hierarchy": 8,
+    "mobile_quality": 8,
+    "brand_fit_premium": 8,
+    "conversion": 8.5,
+    "overall": 8.2,
+    "best_parts": [
+     "Best mobile fold for conversion. Above 844px: two full-width 56px CTAs (Chat on WhatsApp, Get my free AI plan), 'Listen in Hindi', and the risk-reversal line 'Free 7-day audit + a 15-second sample edit of your own video, before you pay.'",
+     "Smart sticky bar: it appears only after the hero CTAs scroll out of view, so it never duplicates them and never covers the composer.",
+     "The only design that applies the company's own 03_Risky_Claims fixes. It adds a privacy note to the AI form (R7). VIP becomes a waitlist, 'limited to 1 client' (R8). It says 'results vary and we don't guarantee deals' (R13), uses '30–60 minutes a week' (R14) and a '48 working hours' footnote (R16), and marks comment-to-DM 'coming soon' (R17). Brand pitching is marked '(no guaranteed deals)' (R22) and followers are dated '50K+ · Oct 2026' (R23). The portal is labelled 'Client portal (preview)' with the honest line 'Today every client gets a private WhatsApp group…' (R6). The pitch deck is gone from Slot #03.",
+     "Disclaimers are legible at 5.5:1 (--muted), including 'Illustration — not a client result' under the phone.",
+     "Defaults to Warm Ivory and keeps the Dark Studio toggle, which is exactly what CLAUDE.md asks for.",
+     "The formats tab panel inside the dark emerald inset is the clearest desktop treatment of the brand-deal engine. The proof bento uses real photos, dated stats ('4 Reels with 100K+ views') and contact rows with the official app logos.",
+     "No overlap bug in the phone mockup. Swipe hints ('Swipe to see all 6 services', 'compare all 4 plans') make the mobile scrollers discoverable."
+    ],
+    "must_fix": [
+     "Desktop fold at 1440x900: the phone and composer start at about 690px, so the product hero is barely visible. Tighten the hero's vertical rhythm or use a split hero so the composer's Send button and the phone sit above the fold.",
+     "Performance risk: about 30 backdrop-filter elements (blur 24px, saturate 180%) over a full-page mesh. On ≤768px and under prefers-reduced-transparency, switch to solid tinted fills and drop the blur to protect scroll smoothness on low-end Android.",
+     "The mock phone shows fake engagement counts (48.2K likes, 1,204 comments, 9.6K shares) plus the 6.8L+ and 84.2% chips. A label exists, but remove the counts or use one real, dated Reel with its real numbers.",
+     "Change the 'Most popular' badge on Pro Growth to 'Recommended'. There are no clients yet, so the popularity claim is false.",
+     "Pro Growth is card 3 in the mobile pricing scroller. Start the scroller on Pro Growth or stack the plans vertically.",
+     "Steps card: the grouping is uneven (Plan 3 / Create 4 / Grow 2), and on mobile it holds two separate nested horizontal scrollers inside one card.",
+     "Founder tile on desktop: dead gap between the Post more / Stop posting block and the stats row. The Smita card header wraps the 'Portfolio #02' pill awkwardly on mobile.",
+     "The pitch deck is still linked from the footer (R20). Remove the link until a clean client-facing deck exists.",
+     "The ROI ₹76,500–₹1,41,525 range is still an earnings projection (R5), even though it is labelled 'Illustrative'. Consider showing only reach and time saved.",
+     "Goal chips are 36px and the language buttons 30px, under the 44px minimum. On mobile the composer sits about 1,350px down, below the phone."
+    ]
+   }
+  ],
+  "winner": "d3_liquid_glass",
+  "grafts": [
+   "From D1, the desktop split hero: the 2-line headline and the composer with its Send button on the left, the phone with its Before/After toggle on the right, everything above the 900px fold.",
+   "From D1, on mobile put the KPI chips in a 3-up row under the phone instead of floating over it.",
+   "From D1, the Reels filter control (All 6 / @vandanay2012 / @smitayadav_0901).",
+   "From D1, the edit-timeline micro-UI in the 'High-retention studio Reel editing' tile, and its strict CTA colour rule: WhatsApp green only for WhatsApp actions, one gold CTA per block.",
+   "From D2, the vertical accordions for formats and services on mobile, replacing D3's sideways services scroller (and the nested scrollers in the steps card).",
+   "From D2, the 4-up stats row directly under the hero (50K+ · Oct 2026 / 467+ posts / 48 working hrs first edit / ₹0 first sample).",
+   "From D2, the desktop Reels bento: 2 tall + 4 small covers with the section intro inside the grid, so the Hindi captions are not crushed at 185px.",
+   "From D2, Instrument Serif editorial section headings used sparingly, for a more premium voice than all-grotesk.",
+   "From D2, the bleed wordmark footer sign-off.",
+   "Fix in all three: the highlighted Pro Growth plan must be visible first on mobile, and 'Most popular' becomes 'Recommended'."
+  ],
+  "beats_current_by": "On mobile the page drops from about 29,200px to about 12,800px. The noisy fold of emoji badges and ribbons becomes one calm headline with two big CTAs and a 'free audit + sample edit before you pay' line. The invented testimonials and promissory stats are replaced with dated, checkable proof written in the company's own safe-claims wording."
+ }
+]
