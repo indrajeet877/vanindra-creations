@@ -22,6 +22,19 @@ All judges: every variation beats Liquid Glass. Every variation passes the autom
 
 **Decision (15 Oct):** build the final homepage on **Liquid Glass** with 3D glass, magic cursor and cinematic motion; redesign the client login page in the same style. Show the owner videos and a preview before it goes live.
 
+**Status (15 Oct, 20:30 UTC):** the final build is ready for the owner's OK. It is not live yet.
+- Preview with videos: https://claude.ai/artifact/MgcLqYnXWBsWhgEpReD1jZ
+- Files: `previews/website_2026-10-15_final/`
+- What's in it:
+  - the homepage, with a 3D glass ring around the hero phone, the magic cursor, the cinematic intro and the phone polishing from raw clip to edit;
+  - the login page, redesigned and honest: no invented numbers, and it says it is a preview;
+  - the cover studio, restyled.
+- Checks: verify 56/1/0, pages 151/0/0, build script passes. All reviewer blocking findings are fixed.
+- Waiting on the owner for:
+  1. OK to go live;
+  2. no password field in the preview login;
+  3. a native Hindi check.
+
 ## Email log
 | Sent (UTC) | To | Subject | Content |
 | :--- | :--- | :--- | :--- |

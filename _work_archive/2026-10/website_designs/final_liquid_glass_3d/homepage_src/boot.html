@@ -1,0 +1,14 @@
+<script>
+/* FX boot (before first paint). The splash intro plays on desktop at most once a day; phones, Save-Data and slow
+   connections never get it (phones get a short shimmer on the nav wordmark). Reduced motion: nothing. */
+(function(){var d=document.documentElement;try{
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+d.classList.add('fx');
+var c=navigator.connection||{},seen=0,now=Date.now();
+try{seen=+localStorage.getItem('vi_intro')||0}catch(e){}
+if(now-seen<864e5||location.hash)return;
+var phone=matchMedia('(max-width: 768px)').matches||matchMedia('(pointer: coarse)').matches;
+if(phone||c.saveData||(c.effectiveType&&c.effectiveType!=='4g')){d.classList.add('wm-shimmer');try{localStorage.setItem('vi_intro',String(now))}catch(e){}return}
+d.classList.add('intro-on');try{if(localStorage.getItem('vanindra_theme')==='dark')d.classList.add('intro-dark')}catch(e){}
+}catch(e){}})();
+</script>
