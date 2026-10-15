@@ -1,0 +1,2480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VanIndra Creations — AI + Human Content Studio</title>
+<meta name="description" content="VanIndra Creations, founded by Vandana Yadav (@vandanay2012): an AI + human content studio for 1 lakh+ creators, doctors, coaches and brands in India — strategy, 3-second hooks and scripts, high-retention 9:16 Reel editing and brand-deal positioning, without the daily operations.">
+<meta name="theme-color" content="#EFE9E1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230B1F18'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='34' fill='%23FAF8F3'%3EV%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Noto+Sans+Devanagari:wght@400..700&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   VISION — spatial (visionOS-style) glass windows over one Reel cover,
+   blurred into soft ambient light. One window of content at a time.
+   ===================================================================== */
+:root{
+  --ink:#0B1F18;
+  --ink-2:#2B3E36;
+  --muted:#4F625A;
+  --line:rgba(11,31,24,.09);
+  --line-2:rgba(11,31,24,.16);
+  --emerald:#0E6B4E;
+  --emerald-deep:#09241B;
+  --mint:#E2F0E8;
+  --mint-ink:#0B5C42;
+  --gold:#D4A024;
+  --gold-2:#F4C44E;
+  --gold-ink:#7A5306;
+  --rose:#B42340;
+  --wa:#25D366;
+
+  /* materials: clear white glass on a warm-ivory canvas */
+  --canvas:#F4F1EA;
+  --win-a:rgba(255,255,255,.90);
+  --win-b:rgba(255,255,255,.80);
+  --win-bd:rgba(11,31,24,.075);
+  --rim:#FFFFFF;
+  --raised:rgba(255,255,255,.80);
+  --raised-bd:rgba(11,31,24,.075);
+  --recess:rgba(11,31,24,.045);
+  --sel:#FFFFFF;
+  --win-shadow:0 1px 2px rgba(14,30,24,.04),0 18px 40px -26px rgba(14,30,24,.16),0 56px 96px -60px rgba(14,30,24,.16);
+  --sm-shadow:0 1px 2px rgba(14,30,24,.06),0 8px 20px -12px rgba(14,30,24,.22);
+  --btn-bg:linear-gradient(180deg,#17392D 0%,#0A2219 100%);
+  --btn-ink:#FFFFFF;
+
+  --r-win:40px; --r-plat:24px;
+  --ff:'Inter','Noto Sans Devanagari',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:light;
+}
+body.dark-studio{
+  --ink:#EEF4F0;
+  --ink-2:#CAD6D0;
+  --muted:#A3B5AC;
+  --line:rgba(255,255,255,.09);
+  --line-2:rgba(255,255,255,.16);
+  --emerald:#6FDBAE;
+  --mint:rgba(111,219,174,.14);
+  --mint-ink:#9BE9C8;
+  --gold-ink:#F4C44E;
+  --rose:#FF8A9E;
+  --canvas:#08110E;
+  --win-a:rgba(30,46,40,.74);
+  --win-b:rgba(20,33,28,.70);
+  --win-bd:rgba(255,255,255,.09);
+  --rim:rgba(255,255,255,.16);
+  --raised:rgba(255,255,255,.07);
+  --raised-bd:rgba(255,255,255,.07);
+  --recess:rgba(0,0,0,.20);
+  --sel:rgba(255,255,255,.18);
+  --win-shadow:0 1px 2px rgba(0,0,0,.3),0 30px 60px -30px rgba(0,0,0,.7);
+  --sm-shadow:0 8px 20px -10px rgba(0,0,0,.6);
+  --btn-bg:linear-gradient(180deg,#FFFFFF 0%,#E4ECE7 100%);
+  --btn-ink:#06120E;
+  color-scheme:dark;
+}
+
+/* ---------- base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{position:relative;margin:0;font-family:var(--ff);font-size:16px;line-height:1.55;color:var(--ink-2);background:var(--canvas);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip;font-optical-sizing:auto}
+body.dark-studio{background:var(--canvas)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+h1,h2,h3,h4{margin:0;color:var(--ink);font-weight:600;letter-spacing:-.025em;line-height:1.1}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--emerald);outline-offset:3px;border-radius:12px}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.wrap{width:min(1240px,100% - 32px);margin-inline:auto}
+.anchor{display:block;height:0;scroll-margin-top:92px}
+section,footer{scroll-margin-top:84px}
+.i{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.app{width:18px;height:18px;flex:none}
+.num{font-variant-numeric:tabular-nums}
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] h3{letter-spacing:0;line-height:1.3}
+
+/* ---------- ambient light: one real Reel cover (@vandanay2012, reel DSZ8VilkrA8, the one on the hero phone), pre-blurred and lifted
+   into soft pastel light. It sits only behind the hero window and fades into the warm-ivory canvas; no live blur, no animation. ---------- */
+.ambient{position:absolute;left:0;right:0;top:0;height:var(--amb-h,1120px);z-index:-1;pointer-events:none;background:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbADADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEAgEH/8QAHhAAAgICAgMAAAAAAAAAAAAAAAIBAyExBBESIjL/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECEQMh/9oADAMBAAIRAxEAPwD3Z5Fxs67GVnIHJWPSquMBZGAScGLnwSz00Z4IbYxCZn9htbj4SqWZYE2DhXssxuUJFET1BPe+B06I+SBQjYuaYry7kck4JV+iqsDWMHSEj//Z") center top/100% 100% no-repeat;-webkit-mask-image:linear-gradient(180deg,#000 0,#000 56%,transparent 100%);mask-image:linear-gradient(180deg,#000 0,#000 56%,transparent 100%)}
+body.dark-studio .ambient{background-image:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbADADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQIDAAj/xAAbEAADAAMBAQAAAAAAAAAAAAAAAQIDESExQf/EABcBAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAYEQADAQEAAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A5/pir0NMWX0DQ+elpRqBL0C64TnTRJkR+jSSb6NLHhBoFGkNGkoxsZH2TyUU+EcgIaGuCb6PLJIpICTR/9k=");opacity:.6}
+@media (max-aspect-ratio:1/1){
+  .ambient{background-image:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAwABsDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAQIDAAf/xAAZEAEAAgMAAAAAAAAAAAAAAAAAAQIREiH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EABoRAAMBAQEBAAAAAAAAAAAAAAABAhEDIRP/2gAMAwEAAhEDEQA/AO52TlWYy2hNLJCVMOo4doGjRJs8SieDNuGqR+abQbWDdG9i7gkM+bLFtPD4JZt+WmuYUkZ7I6miD4SqMZK698P/2Q==")}
+  body.dark-studio .ambient{background-image:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAwABsDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECAwj/xAAYEAEBAQEBAAAAAAAAAAAAAAAAARECEv/EABgBAAMBAQAAAAAAAAAAAAAAAAACAwEE/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQARAhL/2gAMAwEAAhEDEQA/AOfqhpheS7OFMUMMbCQaJTtak3EWjWfVLRlrzWVXienR4rAFmeHh4mmU+m//2Q==")}
+}
+
+/* ---------- materials ---------- */
+/* Window: a clear pane with a crisp specular top edge. The light behind it is already blurred, so no backdrop-filter is needed. */
+.win{position:relative;border-radius:var(--r-win);background:linear-gradient(180deg,var(--win-a),var(--win-b));border:1px solid var(--win-bd);box-shadow:inset 0 1px 0 var(--rim),var(--win-shadow)}
+.win::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;pointer-events:none;background:linear-gradient(180deg,#fff,rgba(255,255,255,0) 34%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+body.dark-studio .win::before{background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,0) 34%)}
+.win-pad{padding:clamp(22px,3.4vw,48px)}
+/* The hero window is a little clearer, so the Reel light behind it reads through */
+.hero-win{--win-a:rgba(255,255,255,.66);--win-b:rgba(255,255,255,.56)}
+body.dark-studio .hero-win{--win-a:rgba(30,46,40,.62);--win-b:rgba(20,33,28,.58)}
+/* Window grabber (visionOS window bar) */
+.grab{display:block;width:72px;height:5px;margin:14px auto 0;border-radius:9px;background:rgba(11,31,24,.16)}
+body.dark-studio .grab{background:rgba(255,255,255,.18)}
+/* Platters inside windows */
+.plat{border-radius:var(--r-plat);background:var(--raised);border:1px solid var(--raised-bd);box-shadow:inset 0 1px 0 var(--rim)}
+.recess{border-radius:var(--r-plat);background:var(--recess)}
+
+/* ---------- buttons ---------- */
+.btn{--h:48px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:var(--h);padding:0 22px;border-radius:999px;font:600 15px/1.15 var(--ff);letter-spacing:-.01em;text-align:center;position:relative;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s;-webkit-tap-highlight-color:transparent}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:scale(.98)}
+.btn-lg{--h:56px;padding:0 26px;font-size:16px}
+.btn-sm{--h:44px;padding:0 16px;font-size:14px}
+.btn-block{width:100%}
+.btn-primary{background:var(--btn-bg);color:var(--btn-ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.20),0 12px 26px -14px rgba(9,36,27,.75)}
+body.dark-studio .btn-primary{box-shadow:inset 0 1px 0 #fff,0 12px 26px -14px rgba(0,0,0,.8)}
+/* WhatsApp mark sits in its own white disc so the official green logo always reads */
+.wa-disc{display:inline-grid;place-items:center;width:28px;height:28px;margin-left:-8px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.18)}
+.wa-disc .app{width:22px;height:22px}
+.btn-sm .wa-disc{width:24px;height:24px;margin-left:-6px}
+.btn-sm .wa-disc .app{width:19px;height:19px}
+.btn-glass{background:var(--raised);color:var(--ink);border:1px solid var(--line-2);box-shadow:inset 0 1px 0 var(--rim),var(--sm-shadow)}
+body.dark-studio .btn-glass{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12)}
+.btn-glass:hover{background:var(--sel)}
+.btn-onmedia{background:rgba(255,255,255,.10);color:#fff;border:1px solid rgba(255,255,255,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
+.btn-onmedia:hover{background:rgba(255,255,255,.16)}
+.btn-text{min-height:44px;padding:0 6px;white-space:nowrap;display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:var(--ink-2);border-radius:12px}
+.btn-text:hover{color:var(--ink)}
+
+/* ---------- labels ---------- */
+.label{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--emerald);letter-spacing:-.005em}
+.tag{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;background:var(--mint);color:var(--mint-ink);white-space:nowrap}
+.tag-gold{background:rgba(212,160,36,.16);color:var(--gold-ink)}
+body.dark-studio .tag-gold{background:rgba(244,196,78,.14)}
+.lede{font-size:clamp(16px,1.25vw,18px);color:var(--muted);line-height:1.55;max-width:600px;text-wrap:pretty}
+.foot-note{font-size:13px;color:var(--muted);line-height:1.5}
+
+/* ---------- segmented control / tab bar (ornament) ---------- */
+.seg{position:relative;display:inline-flex;align-items:center;padding:4px;border-radius:999px;background:var(--recess);border:1px solid var(--line);isolation:isolate}
+.seg>button{position:relative;z-index:1;min-height:44px;padding:0 18px;border-radius:999px;font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;display:inline-flex;align-items:center;gap:8px;transition:color .3s var(--ease)}
+.seg>button:hover{color:var(--ink)}
+.seg>button[aria-selected="true"],.seg>button.on{color:var(--ink)}
+.seg-thumb{position:absolute;z-index:0;top:4px;bottom:4px;left:0;width:0;border-radius:999px;background:var(--sel);box-shadow:0 1px 2px rgba(11,31,24,.10),0 6px 14px -8px rgba(11,31,24,.35),inset 0 1px 0 #fff;transition:transform .45s var(--ease),width .45s var(--ease);opacity:0}
+body.dark-studio .seg-thumb{box-shadow:inset 0 1px 0 rgba(255,255,255,.18)}
+.seg.ready .seg-thumb{opacity:1}
+.seg:not(.ready)>button[aria-selected="true"],.seg:not(.ready)>button.on{background:var(--sel)}
+.seg .av{width:22px;height:22px;border-radius:50%;object-fit:cover;flex:none}
+.seg .av-mono{display:inline-grid;place-items:center;font-size:9px;font-weight:700;color:#fff;background:radial-gradient(circle at 30% 25%,#2A9C74,#09241B 75%)}
+.seg .av-stack{display:inline-flex}
+.seg .av-stack>*{border:1.5px solid var(--sel)}
+.seg .av-stack>*+*{margin-left:-7px}
+.seg .av-plus{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1.5px dashed var(--gold);color:var(--gold-ink)}
+.seg .av-plus .i{width:12px;height:12px;stroke-width:2.4}
+/* pager: tells a scroll-only visitor there is more inside the window */
+.pager{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:clamp(20px,2.4vw,30px);padding-top:16px;border-top:1px solid var(--line)}
+.pg-dots{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
+.pg-dots i{width:6px;height:6px;border-radius:50%;background:var(--line-2);transition:background .3s,width .3s var(--ease)}
+.pg-dots i.on{width:18px;border-radius:9px;background:var(--emerald)}
+.pg-dots span{margin-left:4px}
+.pg-next{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px 0 12px;white-space:nowrap;border-radius:999px;font-size:14px;font-weight:600;color:var(--emerald)}
+.pg-next .i{width:16px;height:16px;transition:transform .25s var(--ease)}
+.pg-next:hover .i{transform:translateX(3px)}
+
+/* ---------- window header (one consistent left axis) ---------- */
+.wh{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:clamp(22px,2.6vw,34px)}
+.wh-t{display:flex;flex-direction:column;align-items:flex-start;gap:12px;max-width:680px}
+.wh h2{font-size:clamp(30px,3.3vw,48px);letter-spacing:-.04em;line-height:1.04;text-wrap:balance}
+.wh .seg{flex:none}
+
+/* ---------- reveal ---------- */
+html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+
+/* =====================================================================
+   NAV — a floating capsule ornament
+   ===================================================================== */
+.nav-shell{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;flex-direction:column;align-items:center;pointer-events:none}
+.nav{pointer-events:auto;width:min(1240px,100% - 32px);height:60px;display:flex;align-items:center;gap:10px;padding:0 8px 0 22px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(11,31,24,.07);box-shadow:inset 0 1px 0 #fff,0 10px 30px -18px rgba(14,30,24,.22);-webkit-backdrop-filter:blur(22px) saturate(170%);backdrop-filter:blur(22px) saturate(170%);transition:box-shadow .4s,background .4s}
+.nav-shell.scrolled .nav{background:rgba(255,255,255,.84);box-shadow:inset 0 1px 0 #fff,0 18px 40px -20px rgba(14,30,24,.28)}
+body.dark-studio .nav{background:rgba(22,36,31,.62);border-color:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 14px 34px -18px rgba(0,0,0,.7)}
+.wm{display:inline-flex;flex-direction:column;justify-content:center;line-height:1;gap:4px;min-height:44px;padding:6px 0;margin-right:6px}
+.wm-name{font-size:19px;font-weight:700;letter-spacing:-.035em;color:var(--ink)}
+.wm-sub{font-size:8.5px;font-weight:600;letter-spacing:.42em;color:var(--muted);padding-left:1px}
+.nav-links{display:flex;gap:2px;margin-inline:auto}
+.nav-links a{display:inline-flex;align-items:center;height:40px;padding:0 13px;border-radius:999px;font-size:14px;font-weight:500;color:var(--ink-2);transition:background .2s,color .2s}
+.nav-links a:hover{background:rgba(11,31,24,.05);color:var(--ink)}
+.nav-links a.active{background:var(--sel);color:var(--ink);box-shadow:0 1px 2px rgba(11,31,24,.08),inset 0 1px 0 #fff}
+body.dark-studio .nav-links a:hover{background:rgba(255,255,255,.06)}
+body.dark-studio .nav-links a.active{box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
+.nav-actions{display:flex;align-items:center;gap:6px}
+.lang{display:inline-flex;padding:3px;border-radius:999px;background:var(--recess);border:1px solid var(--line)}
+.lang button{height:34px;min-width:40px;padding:0 10px;border-radius:999px;font-size:13px;font-weight:600;color:var(--muted);transition:background .25s,color .25s}
+.lang button.active{background:var(--sel);color:var(--ink);box-shadow:0 1px 2px rgba(11,31,24,.12),inset 0 1px 0 #fff}
+body.dark-studio .lang button.active{box-shadow:inset 0 1px 0 rgba(255,255,255,.16)}
+.icon-btn{width:44px;height:44px;display:inline-grid;place-items:center;border-radius:50%;color:var(--ink-2);transition:background .2s}
+.icon-btn:hover{background:rgba(11,31,24,.06);color:var(--ink)}
+body.dark-studio .icon-btn:hover{background:rgba(255,255,255,.07)}
+.icon-btn .i-moon{display:none}
+body.dark-studio .icon-btn .i-sun{display:none}
+body.dark-studio .icon-btn .i-moon{display:block}
+.nav-login{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 10px;font-size:14px;font-weight:500;color:var(--ink-2);white-space:nowrap}
+.nav-login small{font-size:12.5px;font-weight:500;color:var(--muted)}
+.nav-login:hover{color:var(--ink)}
+.menu-btn{display:none}
+.nav-sheet{pointer-events:auto;width:min(560px,100% - 32px);margin-top:8px;padding:10px;border-radius:28px;background:rgba(255,255,255,.96);border:1px solid rgba(11,31,24,.07);box-shadow:inset 0 1px 0 #fff,0 30px 60px -30px rgba(14,30,24,.35)}
+body.dark-studio .nav-sheet{background:rgba(16,30,25,.97);border-color:rgba(255,255,255,.1)}
+.nav-sheet a,.nav-sheet button.sheet-row{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:50px;padding:0 16px;border-radius:18px;font-size:16px;font-weight:500;color:var(--ink)}
+.nav-sheet a:hover,.nav-sheet button.sheet-row:hover{background:rgba(11,31,24,.05)}
+.nav-sheet .i{color:var(--muted)}
+.sheet-sep{height:1px;background:var(--line);margin:6px 10px}
+
+/* =====================================================================
+   HERO WINDOW
+   ===================================================================== */
+.hero{position:relative;padding:94px 0 0}
+.hero-win{--hp-b:clamp(40px,3.4vw,48px);display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center;gap:clamp(24px,3vw,48px);padding:clamp(32px,3.4vw,48px) clamp(22px,3.4vw,48px) var(--hp-b)}
+.hero-copy{display:flex;flex-direction:column;align-items:flex-start}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:500;color:var(--ink-2)}
+.eb2{white-space:nowrap}
+.eb-s{display:none}
+.live{position:relative;width:8px;height:8px;border-radius:50%;background:#16A34A;flex:none}
+.live{box-shadow:0 0 0 3px rgba(22,163,74,.16)}
+.hero h1{margin-top:22px;font-size:clamp(42px,5.1vw,76px);font-weight:600;letter-spacing:-.05em;line-height:1.0;text-wrap:balance}
+.hero h1 .h1-2{color:var(--emerald)}
+html[lang="hi"] .hero h1{font-size:clamp(36px,4.2vw,60px);line-height:1.22;font-weight:600}
+.hero .lede{margin-top:22px;max-width:520px;font-size:clamp(16.5px,1.32vw,19px)}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:32px}
+.micro{display:flex;align-items:flex-start;gap:9px;margin-top:20px;font-size:14px;color:var(--muted);max-width:480px;line-height:1.45}
+.micro .i{width:17px;height:17px;color:var(--emerald);margin-top:1px;stroke-width:2.2}
+.hero-links{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:10px;margin-left:-6px}
+
+/* stage: phone + ornaments */
+.stage{position:relative;display:flex;justify-content:center;align-self:stretch;align-items:center}
+.stage-row{display:flex;align-items:center;gap:22px}
+.phone-col{display:flex;flex-direction:column;align-items:center}
+.illus{margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+.illus .i{width:14px;height:14px}
+/* Before / After: a segmented control directly above the phone, so it is always seen with it */
+.seg-ab{margin-bottom:16px;background:rgba(255,255,255,.82);border-color:rgba(11,31,24,.08);box-shadow:inset 0 1px 0 #fff,0 10px 24px -16px rgba(14,30,24,.35)}
+body.dark-studio .seg-ab{background:rgba(30,46,40,.9);border-color:rgba(255,255,255,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.seg-ab>button{padding:0 18px}
+.stage[data-mode="before"] .seg-ab>button.on{color:var(--rose)}
+
+/* layers ornament: what the edit adds */
+.layers{display:flex;flex-direction:column;gap:4px;padding:8px;border-radius:30px;background:rgba(255,255,255,.80);border:1px solid rgba(11,31,24,.07);box-shadow:inset 0 1px 0 #fff,0 18px 34px -22px rgba(14,30,24,.3);margin-top:36px}
+body.dark-studio .layers{background:rgba(30,46,40,.7);border-color:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.layers li{display:flex;align-items:center;gap:10px;padding:6px 14px 6px 6px;border-radius:22px;font-size:13.5px;font-weight:600;color:var(--ink);transition:color .4s}
+.lic{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--emerald);color:#fff;transition:background .4s,color .4s}
+body.dark-studio .lic{color:#06120E}
+.lic .i{width:16px;height:16px;stroke-width:2}
+.stage[data-mode="before"] .layers li{color:var(--muted)}
+.stage[data-mode="before"] .lic{background:var(--recess);color:var(--muted)}
+.layers .lst{display:block;font-size:11.5px;font-weight:500;color:var(--muted)}
+
+/* the phone */
+.phone-wrap{--s:.9;--u:calc(1px * var(--s));position:relative;width:calc(var(--u) * 300);height:calc(var(--u) * 632);perspective:1400px;flex:none}
+.phone{position:absolute;inset:0;border-radius:calc(var(--u) * 54);padding:calc(var(--u) * 9);background:linear-gradient(150deg,#EEECE8 0%,#C3C1BC 18%,#9A9893 50%,#D1CFCA 80%,#F5F4F1 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.7),inset 0 0 0 3px rgba(0,0,0,.25),0 50px 90px -44px rgba(14,30,24,.45),0 20px 40px -24px rgba(14,30,24,.35);transform-style:preserve-3d;transition:transform .6s var(--ease)}
+.phone::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(120deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,0) 28%);mix-blend-mode:screen}
+.screen{position:relative;width:100%;height:100%;border-radius:calc(var(--u) * 46);overflow:hidden;background:#0b1410;isolation:isolate;color:#fff;font-size:calc(var(--u) * 13);box-shadow:0 0 0 calc(var(--u)*3) #0A0D0C}
+.screen>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:filter .7s var(--ease),transform .9s var(--ease);z-index:0}
+.screen::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.42) 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 48%,rgba(0,0,0,.74) 100%);pointer-events:none}
+.stage[data-mode="before"] .screen>img{filter:grayscale(.65) brightness(.7) contrast(.88);transform:scale(1.02)}
+.stage[data-mode="after"] .screen>img{filter:saturate(1.12) contrast(1.05)}
+.screen>*:not(img){position:absolute;z-index:2}
+.island{top:calc(var(--u)*10);left:50%;transform:translateX(-50%);width:calc(var(--u)*88);height:calc(var(--u)*26);border-radius:99px;background:#000}
+.sbar{top:calc(var(--u)*15);left:calc(var(--u)*26);right:calc(var(--u)*24);display:flex;justify-content:space-between;align-items:center;font-size:calc(var(--u)*12);font-weight:600}
+.sbar .r{display:flex;gap:calc(var(--u)*5);align-items:center}
+.sbar .bars{display:flex;gap:1.5px;align-items:flex-end;height:calc(var(--u)*10)}
+.sbar .bars i{display:block;width:calc(var(--u)*3);background:#fff;border-radius:1px}
+.sbar .bat{width:calc(var(--u)*22);height:calc(var(--u)*11);border:1.4px solid rgba(255,255,255,.8);border-radius:3px;padding:1px}
+.sbar .bat i{display:block;height:100%;width:78%;background:#fff;border-radius:1.5px}
+.igtop{top:calc(var(--u)*48);left:calc(var(--u)*18);right:calc(var(--u)*18);display:flex;justify-content:space-between;align-items:center;font-size:calc(var(--u)*17);font-weight:700;letter-spacing:-.02em}
+.igtop .i{width:calc(var(--u)*21);height:calc(var(--u)*21);stroke-width:2}
+.hook{top:calc(var(--u)*88);left:calc(var(--u)*16);right:calc(var(--u)*16);padding:calc(var(--u)*9) calc(var(--u)*12);border-radius:calc(var(--u)*14);font-size:calc(var(--u)*12.5);line-height:1.28;font-weight:700;text-align:center;letter-spacing:.01em;text-transform:uppercase;transition:background .5s,color .5s,box-shadow .5s,transform .5s var(--ease),opacity .5s}
+.stage[data-mode="after"] .hook{background:#FFFFFF;color:#0B1F18;box-shadow:0 10px 24px -10px rgba(0,0,0,.6);transform:rotate(-1.2deg)}
+.stage[data-mode="before"] .hook{background:rgba(0,0,0,.35);color:rgba(255,255,255,.75);border:1px dashed rgba(255,255,255,.35)}
+.cap{left:calc(var(--u)*16);right:calc(var(--u)*64);bottom:calc(var(--u)*150);font-size:calc(var(--u)*15);line-height:1.38;font-weight:600;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.cap mark{background:#F4C44E;color:#1A1303;padding:1px 6px;border-radius:6px;text-shadow:none}
+.cap b{color:#9BE9C8}
+.cap .drop{color:#FDA4AF;font-weight:600}
+.rail{right:calc(var(--u)*14);bottom:calc(var(--u)*150);display:flex;flex-direction:column;align-items:center;gap:calc(var(--u)*18)}
+.rail .i{width:calc(var(--u)*25);height:calc(var(--u)*25);stroke-width:1.9}
+.rail .i{filter:drop-shadow(0 1px 3px rgba(0,0,0,.45))}
+.meta{left:calc(var(--u)*16);right:calc(var(--u)*64);bottom:calc(var(--u)*104);display:flex;align-items:center;gap:calc(var(--u)*8);font-size:calc(var(--u)*13);font-weight:600;white-space:nowrap}
+.meta img{width:calc(var(--u)*28);height:calc(var(--u)*28);border-radius:50%;border:1.5px solid #fff;object-fit:cover}
+.meta .follow{border:1px solid rgba(255,255,255,.7);border-radius:8px;padding:1px 8px;font-size:calc(var(--u)*11.5)}
+.ret{left:calc(var(--u)*12);right:calc(var(--u)*12);bottom:calc(var(--u)*12);padding:calc(var(--u)*10) calc(var(--u)*14) calc(var(--u)*8);border-radius:calc(var(--u)*34);background:rgba(20,24,22,.55);border:1px solid rgba(255,255,255,.16)}
+.ret-row{display:flex;justify-content:space-between;gap:8px;font-size:calc(var(--u)*10.5);font-weight:600;letter-spacing:.01em}
+.ret svg{display:block;width:100%;height:calc(var(--u)*30);margin-top:3px}
+#graphLabelRight{white-space:nowrap}
+
+/* =====================================================================
+   WINDOWS STACK
+   ===================================================================== */
+.space{display:flex;flex-direction:column;gap:clamp(40px,5vw,72px);padding:clamp(44px,5vw,72px) 0 0}
+
+/* ---------- portfolio & team ---------- */
+.pane{animation:paneIn .5s var(--ease)}
+@keyframes paneIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.founder{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.depth{position:relative;height:clamp(340px,30vw,420px)}
+.depth img{position:absolute;top:50%;aspect-ratio:9/16;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.7);box-shadow:0 30px 50px -28px rgba(40,26,14,.55)}
+.depth img:nth-child(1){left:4%;height:72%;transform:translateY(-50%);opacity:.9}
+.depth img:nth-child(2){right:4%;height:72%;transform:translateY(-50%);opacity:.9}
+.depth img:nth-child(3){left:50%;height:96%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 40px 70px -30px rgba(40,26,14,.6)}
+.depth .tag{position:absolute;z-index:3;left:50%;bottom:4%;transform:translateX(-50%);background:rgba(255,255,255,.92);color:#0B1F18;box-shadow:var(--sm-shadow);padding:6px 12px}
+.person{display:flex;align-items:center;gap:14px}
+.person img,.person .mono{width:60px;height:60px;border-radius:50%;object-fit:cover;flex:none;border:2px solid #fff;box-shadow:var(--sm-shadow)}
+.mono{display:grid;place-items:center;font-size:19px;font-weight:600;color:#fff;background:radial-gradient(circle at 30% 25%,#2A9C74,#09241B 75%)}
+.person h3{font-size:24px;letter-spacing:-.03em}
+.person h3 .tag{vertical-align:middle;margin-left:6px;position:relative;top:-2px;letter-spacing:0}
+.person p{font-size:14px;color:var(--muted);margin-top:3px}
+.edu{display:flex;align-items:center;gap:6px;font-size:13px!important;color:var(--ink-2)!important}
+.edu .i{width:15px;height:15px;color:var(--emerald)}
+.f-info{display:flex;flex-direction:column;gap:20px}
+.body{font-size:16px;line-height:1.6;color:var(--ink-2);max-width:560px}
+.stats3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:16px 16px 14px 0}
+.stat+.stat{padding-left:18px;border-left:1px solid var(--line)}
+.stat b{display:block;font-size:30px;font-weight:600;letter-spacing:-.045em;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1}
+.stat span{display:block;font-size:13px;color:var(--muted);margin-top:6px;line-height:1.3}
+.btn-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.peek{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-top:18px;border-top:1px solid var(--line)}
+.peek-t{grid-column:1/-1;font-size:13px;font-weight:600;color:var(--muted)}
+.peek button{display:flex;align-items:center;gap:12px;min-height:60px;padding:8px 12px 8px 8px;border-radius:18px;background:var(--recess);text-align:left;transition:background .2s}
+.peek button:hover{background:rgba(11,31,24,.075)}
+body.dark-studio .peek button:hover{background:rgba(255,255,255,.08)}
+.peek img,.peek .mono{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none;font-size:15px;border:2px solid #fff}
+.peek b{display:block;font-size:14.5px;font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1.25}
+.peek small{display:block;font-size:12.5px;color:var(--muted);line-height:1.3;margin-top:1px}
+.team2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.member{padding:24px;display:flex;flex-direction:column;gap:16px}
+.member .person{align-items:flex-start}
+.member .body{font-size:15px}
+.contacts{display:flex;flex-direction:column;gap:6px;margin-top:auto}
+.crow{display:flex;align-items:center;gap:12px;min-height:48px;padding:0 14px;border-radius:16px;background:var(--recess);font-size:14.5px;font-weight:500;color:var(--ink);transition:background .2s;text-align:left;width:100%}
+.crow:hover{background:rgba(11,31,24,.08)}
+body.dark-studio .crow:hover{background:rgba(255,255,255,.08)}
+.crow>span{flex:1;min-width:0;overflow-wrap:break-word;line-height:1.3;padding:6px 0}
+.crow .go{width:16px;height:16px;color:var(--muted)}
+.slot{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:center}
+.slot-copy{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.slot-copy h3{font-size:clamp(26px,2.4vw,34px);letter-spacing:-.04em}
+.ghost{padding:22px;display:flex;flex-direction:column;gap:16px;border:1.5px dashed rgba(212,160,36,.55);background:rgba(255,255,255,.42)}
+body.dark-studio .ghost{background:rgba(255,255,255,.03)}
+.ghost-top{display:flex;align-items:center;gap:12px}
+.ghost-av{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:1.5px dashed var(--gold);color:var(--gold-ink)}
+.ghost-top b{display:block;font-size:17px;color:var(--ink);letter-spacing:-.02em}
+.ghost-top span{font-size:13px;color:var(--muted)}
+.next3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.next3 div{padding:12px;border-radius:16px;background:var(--raised);border:1px solid var(--raised-bd)}
+.next3 b{display:block;font-size:19px;font-weight:600;letter-spacing:-.03em;color:var(--ink)}
+.next3 span{font-size:12.5px;color:var(--muted)}
+
+/* ---------- media window: Reels + formats ---------- */
+.reels-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.reels-top .lede{max-width:560px}
+.ig-btns{display:flex;flex-wrap:wrap;gap:8px}
+.reel-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.reel{display:flex;flex-direction:column;gap:10px;min-width:0}
+.poster{position:relative;aspect-ratio:9/16;border-radius:20px;overflow:hidden;background:#0d1a15;isolation:isolate;box-shadow:0 1px 2px rgba(14,30,24,.08),0 22px 40px -26px rgba(14,30,24,.45);transform:translateZ(0)}
+.poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.poster::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);pointer-events:none;z-index:3}
+.reel:hover .poster img{transform:scale(1.04)}
+.reel-play{position:absolute;inset:0;z-index:2;display:grid;place-items:center}
+.pbtn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.4);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 24px -10px rgba(0,0,0,.6);-webkit-backdrop-filter:blur(12px) saturate(160%);backdrop-filter:blur(12px) saturate(160%);transition:transform .35s var(--ease),background .3s}
+.pbtn .i{width:19px;height:19px;fill:#fff;stroke:none;margin-left:3px}
+.reel:hover .pbtn{transform:scale(1.08);background:rgba(255,255,255,.32)}
+.reel-tag{position:absolute;z-index:3;top:10px;left:10px;padding:4px 9px;border-radius:999px;font-size:11.5px;font-weight:600;color:#0B1F18;background:rgba(255,255,255,.88);pointer-events:none}
+.reel-tag.alt{background:rgba(155,233,200,.92)}
+.reel h3{font-size:13.5px;font-weight:600;line-height:1.35;letter-spacing:-.005em;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.reel-handle{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted)}
+.reel-handle .app{width:13px;height:13px}
+.swipe-hint{display:none;align-items:center;gap:6px;font-size:13px;color:var(--muted);margin-top:10px}
+.swipe-hint .i{width:15px;height:15px}
+
+.formats{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,3.4vw,48px);align-items:start}
+.fm-intro{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.fm-intro h3{font-size:clamp(24px,2.2vw,30px);letter-spacing:-.035em;line-height:1.12}
+.fm-intro .btn-row{flex-direction:column;align-items:stretch;width:100%;max-width:340px}
+.fm-note{font-size:13px;color:var(--muted)}
+.fm-ui{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:8px;padding:8px}
+.vtabs{display:flex;flex-direction:column;gap:2px}
+.vtab{display:flex;align-items:center;gap:12px;min-height:48px;padding:0 14px;border-radius:18px;text-align:left;font-size:14px;font-weight:500;color:var(--ink-2);transition:background .25s,color .25s}
+.vtab:hover{color:var(--ink);background:rgba(11,31,24,.04)}
+body.dark-studio .vtab:hover{background:rgba(255,255,255,.05)}
+.vtab[aria-selected="true"]{color:var(--ink);font-weight:600;background:var(--sel);box-shadow:0 1px 2px rgba(11,31,24,.08),inset 0 1px 0 #fff}
+body.dark-studio .vtab[aria-selected="true"]{box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
+.tn{font-size:12px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.vtab[aria-selected="true"] .tn{color:var(--emerald)}
+.tpanels{border-radius:20px;background:var(--sel);border:1px solid var(--raised-bd);box-shadow:inset 0 1px 0 var(--rim);padding:26px 28px;min-height:300px;display:flex}
+body.dark-studio .tpanels{background:rgba(0,0,0,.2)}
+.tp{display:flex;flex-direction:column;gap:14px}
+.tp-num{font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--emerald)}
+.tp h4{font-size:24px;letter-spacing:-.03em;line-height:1.18;font-weight:600}
+.tp p{font-size:15.5px;line-height:1.6;color:var(--ink-2)}
+.tp-tag{margin-top:auto;display:inline-flex;align-items:center;gap:8px;align-self:flex-start;padding:8px 13px;border-radius:999px;font-size:13px;font-weight:600;color:var(--mint-ink);background:var(--mint)}
+.tp-tag .i{width:15px;height:15px}
+
+/* ---------- studio window: services, process, portal ---------- */
+.svc{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:clamp(18px,2.4vw,32px);align-items:start}
+.slist{display:flex;flex-direction:column;gap:2px}
+.stab{display:flex;align-items:center;gap:12px;min-height:52px;padding:0 14px 0 8px;border-radius:18px;text-align:left;font-size:15px;font-weight:500;color:var(--ink-2);transition:background .25s,color .25s}
+.stab:hover{background:rgba(11,31,24,.04);color:var(--ink)}
+body.dark-studio .stab:hover{background:rgba(255,255,255,.05)}
+.stab[aria-selected="true"]{background:var(--sel);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(11,31,24,.08),inset 0 1px 0 #fff}
+body.dark-studio .stab[aria-selected="true"]{box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
+.sic{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;flex:none;background:var(--recess);color:var(--emerald)}
+.stab[aria-selected="true"] .sic{background:var(--emerald);color:#fff}
+body.dark-studio .stab[aria-selected="true"] .sic{color:#06120E}
+.sic .i{width:18px;height:18px}
+.sdetail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(20px,3vw,40px);align-items:center;padding:clamp(20px,2.4vw,30px);min-height:360px}
+.sd-copy{display:flex;flex-direction:column;gap:16px}
+.sd-copy h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.035em;line-height:1.15}
+.ticks{display:flex;flex-direction:column;gap:10px}
+.ticks li{position:relative;padding-left:28px;font-size:15px;line-height:1.45;color:var(--ink-2)}
+.ticks li::before{content:"";position:absolute;left:0;top:1px;width:19px;height:19px;border-radius:50%;background:var(--mint)}
+.ticks li::after{content:"";position:absolute;left:4.5px;top:5.5px;width:10px;height:10px;background:var(--emerald);-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5'/></svg>") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5'/></svg>") center/contain no-repeat}
+/* micro-UIs */
+.mu{padding:18px;border-radius:22px;background:var(--sel);border:1px solid var(--raised-bd);box-shadow:inset 0 1px 0 var(--rim),0 18px 36px -24px rgba(52,36,24,.4)}
+body.dark-studio .mu{background:rgba(0,0,0,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.mu-cap{display:flex;justify-content:space-between;gap:10px;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:14px;letter-spacing:.01em}
+.mono-l{font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.06em;color:var(--muted)}
+.ps2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ps{padding:12px 14px;border-radius:16px;background:var(--recess);display:flex;flex-direction:column;gap:7px}
+.ps-h{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.ps.yes .ps-h{color:var(--emerald)}
+.ps.no .ps-h{color:var(--rose)}
+.ps-h .i{width:14px;height:14px;stroke-width:2.6}
+.ps p{font-size:13.5px;line-height:1.4;color:var(--ink-2)}
+.sc-row{display:grid;grid-template-columns:54px 56px minmax(0,1fr);gap:10px;align-items:baseline;padding:11px 0;border-top:1px solid var(--line)}
+.sc-row:first-of-type{border-top:0;padding-top:0}
+.sc-t{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.sc-row p{font-size:14px;line-height:1.45;color:var(--ink)}
+.sc-k.hk{color:var(--gold-ink)}
+.tl{position:relative}
+.tl-ruler{display:grid;grid-template-columns:52px 1fr;gap:10px;margin-bottom:8px}
+.tl-ruler div{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tl-row{display:grid;grid-template-columns:52px 1fr;gap:10px;align-items:center;height:36px}
+.tl-lane{position:relative;height:26px;border-radius:9px;background:var(--recess)}
+.tl-lane i{position:absolute;top:3px;bottom:3px;border-radius:7px;background:rgba(14,107,78,.55)}
+.tl-hook i{background:#E9B949}
+.tl-cap i{background:rgba(14,107,78,.26)}
+body.dark-studio .tl-lane i{background:rgba(111,219,174,.5)}
+body.dark-studio .tl-cap i{background:rgba(111,219,174,.22)}
+body.dark-studio .tl-hook i{background:#E9B949}
+.tl-play{position:absolute;top:22px;bottom:-4px;left:calc(62px + 34%);width:2px;border-radius:2px;background:var(--rose);box-shadow:0 0 0 3px rgba(180,35,64,.12)}
+.tl-play::before{content:"";position:absolute;top:-5px;left:-4px;width:10px;height:10px;border-radius:3px;background:var(--rose)}
+.kit-head{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.kit-head img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.kit-head b{display:flex;align-items:center;gap:6px;font-size:15px;color:var(--ink)}
+.kit-head b .app{width:15px;height:15px}
+.kit-head span{font-size:12.5px;color:var(--muted)}
+.kit-rows div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kit-rows div:last-child{border-bottom:0;padding-bottom:0}
+.kit-rows span{color:var(--muted)}
+.kit-rows b{color:var(--ink);font-weight:600;text-align:right}
+.flow{display:flex;flex-direction:column;gap:6px}
+.fl{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;align-items:center;padding:10px 12px;border-radius:16px;background:var(--recess)}
+.fl .flc{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--sel);color:var(--emerald);box-shadow:var(--sm-shadow)}
+.fl .flc .app{width:24px;height:24px}
+.fl b{display:block;font-size:14px;color:var(--ink);font-weight:600}
+.fl span{display:block;font-size:13px;color:var(--muted)}
+.fl-arrow{display:flex;justify-content:center;color:var(--muted)}
+.fl-arrow .i{width:16px;height:16px}
+.qa-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink)}
+.qa-row .qc{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--emerald);color:#fff;flex:none}
+body.dark-studio .qa-row .qc{color:#06120E}
+.qa-row .qc .i{width:12px;height:12px;stroke-width:3}
+.qa-foot{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:13px;font-weight:600;color:var(--emerald)}
+.qa-bar{flex:1;height:6px;margin-left:12px;border-radius:9px;background:var(--emerald)}
+/* process */
+.phases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.phase{padding:22px}
+.ph-label{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:.1em;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.ph-label i{font-style:normal;width:26px;height:26px;border-radius:9px;display:grid;place-items:center;font-size:12px;letter-spacing:0;background:var(--emerald-deep);color:#fff}
+body.dark-studio .ph-label i{background:var(--emerald);color:#06120E}
+.phase ol{display:flex;flex-direction:column}
+.phase li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:8px;padding:13px 0;border-bottom:1px solid var(--line)}
+.phase li:last-child{border-bottom:0;padding-bottom:0}
+.sn{font-size:13px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:1px}
+.phase h4{font-size:15.5px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
+.phase p{font-size:13.5px;color:var(--muted);line-height:1.45;margin-top:3px}
+.phase li.goal .sn{color:var(--gold-ink)}
+.parts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:16px}
+.part{display:flex;gap:12px;align-items:flex-start;padding:4px 6px}
+.part .sic{width:34px;height:34px}
+.part h4{font-size:15px;letter-spacing:-.015em}
+.part p{font-size:13.5px;color:var(--muted);margin-top:3px;line-height:1.45}
+/* portal */
+.portal{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:center}
+.portal-copy{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.portal-copy h3{font-size:clamp(24px,2.2vw,30px);letter-spacing:-.035em;line-height:1.15}
+.pt-app{overflow:hidden;padding:0}
+.pt-bar{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--ink)}
+.pt-bar .dots{display:flex;gap:6px}
+.pt-bar .dots i{width:10px;height:10px;border-radius:50%;background:rgba(11,31,24,.14)}
+body.dark-studio .pt-bar .dots i{background:rgba(255,255,255,.18)}
+.pill-sample{white-space:nowrap;margin-left:auto}
+.pt-body{padding:16px}
+.pt-prog .row{display:flex;justify-content:space-between;font-size:13.5px;font-weight:500;color:var(--ink-2)}
+.pt-prog .row b{color:var(--emerald);font-weight:600}
+.track{height:8px;border-radius:99px;background:var(--recess);margin-top:8px;overflow:hidden}
+.track i{display:block;height:100%;border-radius:99px;background:var(--emerald)}
+.pt-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:14px}
+.pt-kpis div{padding:11px 12px;border-radius:14px;background:var(--recess)}
+.pt-kpis small{display:block;font-size:12px;color:var(--muted)}
+.pt-kpis b{display:block;font-size:17px;font-weight:600;color:var(--ink);letter-spacing:-.02em;margin-top:2px}
+.pt-kpis span{display:block;font-size:12px;color:var(--emerald);font-weight:500}
+.acts{margin-top:12px;border-top:1px solid var(--line)}
+.act{display:flex;align-items:center;gap:10px;padding:10px 2px;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--ink)}
+.act:last-child{border-bottom:0;padding-bottom:0}
+.act .dot{width:8px;height:8px;border-radius:50%;background:var(--emerald);flex:none}
+.act .dot.g{background:var(--gold)}
+.act time{margin-left:auto;font-size:12.5px;color:var(--muted)}
+
+/* ---------- AI plan window ---------- */
+.ai-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(20px,2.6vw,36px);align-items:stretch}
+.ai-goal,.ai-side{display:flex;flex-direction:column}
+.goal-group{flex:1;display:flex;flex-direction:column;margin-bottom:0}
+.goal-group .ftext{flex:1;display:flex;flex-direction:column}
+.goal-group textarea{flex:1}
+.ai-side .fgroup:last-child{margin-bottom:0}
+.ai-submit{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:16px 32px;margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+.consent{display:flex;align-items:flex-start;gap:12px;max-width:640px;font-size:13.5px;line-height:1.5;color:var(--ink-2);cursor:pointer}
+.consent input{-webkit-appearance:none;appearance:none;flex:none;width:44px;height:44px;margin:-11px -6px -11px -11px;border-radius:14px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'><rect x='.75' y='.75' width='20.5' height='20.5' rx='6' fill='white' stroke='%237C8F86' stroke-width='1.5'/></svg>") center/22px 22px no-repeat;cursor:pointer}
+.consent input:checked{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'><rect width='22' height='22' rx='6' fill='%230E6B4E'/><path d='M6 11.4l3.3 3.3L16.2 7.8' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>")}
+body.dark-studio .consent input{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'><rect x='.75' y='.75' width='20.5' height='20.5' rx='6' fill='none' stroke='%23A3B5AC' stroke-width='1.5'/></svg>")}
+body.dark-studio .consent input:checked{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'><rect width='22' height='22' rx='6' fill='%236FDBAE'/><path d='M6 11.4l3.3 3.3L16.2 7.8' fill='none' stroke='%2306120E' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>")}
+.consent input:focus-visible{outline:2px solid var(--emerald);outline-offset:-6px}
+.voice{display:flex;align-items:center;gap:14px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.mic-btn{position:relative;flex:none;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--btn-bg);color:var(--btn-ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 12px 24px -12px rgba(9,36,27,.7)}
+.mic-btn .i{width:24px;height:24px}
+.mic-btn.listening{background:linear-gradient(180deg,#F43F5E,#BE123C);color:#fff;animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(244,63,94,.18)}}
+.voice strong{display:block;font-size:15px;color:var(--ink);font-weight:600}
+.voice #voiceStatusText{display:block;font-size:13.5px;color:var(--muted);margin-top:2px;line-height:1.4}
+.voice #micLabel{display:block;font-size:13px;font-weight:600;color:var(--emerald);margin-top:2px}
+.fgroup-t{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 8px 6px}
+.fgroup{border-radius:20px;background:var(--sel);border:1px solid var(--raised-bd);box-shadow:inset 0 1px 0 var(--rim);overflow:hidden;margin-bottom:18px}
+body.dark-studio .fgroup{background:rgba(0,0,0,.2)}
+.frow{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);align-items:center;gap:12px;min-height:54px;padding:0 16px;border-top:1px solid var(--line);transition:background .2s}
+.frow:first-child{border-top:0}
+.frow:focus-within{background:rgba(14,107,78,.06);box-shadow:inset 3px 0 0 var(--emerald)}
+.frow label{font-size:14.5px;font-weight:500;color:var(--ink-2)}
+.frow input,.frow select{width:100%;min-height:52px;border:0;background:transparent;padding:0;font:15px/1.4 var(--ff);color:var(--ink);-webkit-appearance:none;appearance:none;outline:none}
+.frow input::placeholder,.ftext textarea::placeholder{color:#6F7E77;opacity:1}
+body.dark-studio .frow input::placeholder,body.dark-studio .ftext textarea::placeholder{color:#8FA39A}
+.frow select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234F625A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m7 10 5 5 5-5'/></svg>");background-repeat:no-repeat;background-position:right 0 center;background-size:16px;padding-right:24px;cursor:pointer}
+body.dark-studio .frow select option{background:#10201A;color:#EEF4F0}
+.ftext{padding:14px 16px 12px}
+.ftext label{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-bottom:10px}
+.ftext textarea{width:100%;min-height:92px;border:0;background:transparent;padding:0;font:15px/1.5 var(--ff);color:var(--ink);resize:vertical;outline:none}
+.ftext:focus-within{background:rgba(14,107,78,.04)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:500;color:var(--ink-2);background:var(--recess);border:1px solid transparent;transition:background .2s,border-color .2s,color .2s}
+.chip:hover{border-color:var(--line-2);color:var(--ink)}
+.chip.on{background:var(--emerald-deep);color:#fff}
+body.dark-studio .chip.on{background:var(--emerald);color:#06120E}
+.ftext .chips{margin-bottom:12px}
+.f-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+#aiLoadingIndicator{display:none;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--emerald)}
+.spin{width:16px;height:16px;border-radius:50%;border:2px solid rgba(14,107,78,.2);border-top-color:var(--emerald);animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ai-out{display:none;margin-top:24px;padding:24px}
+.ai-out.active{display:block;animation:paneIn .5s var(--ease)}
+.ai-out h3{font-size:19px;letter-spacing:-.02em}
+.ai-out-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+.ai-out p{font-size:14px;color:var(--muted)}
+.ai-src{margin-top:12px}
+.ai-pre{margin:12px 0 16px;max-height:340px;overflow:auto;white-space:pre-wrap;word-break:break-word;font:14px/1.6 var(--ff);background:var(--recess);border-radius:16px;padding:16px 18px;color:var(--ink)}
+.ai-out .btn-row .btn{--h:44px;font-size:14px}
+
+/* ---------- pricing window ---------- */
+.plan-pick{display:none}
+.plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:stretch}
+.plan{padding:24px;display:flex;flex-direction:column;gap:14px}
+.plan-kicker{font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.plan h3{font-size:19px;letter-spacing:-.025em}
+.price{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.price b{font-size:38px;font-weight:600;letter-spacing:-.05em;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1}
+.price small{font-size:14px;color:var(--muted)}
+.plan>p{font-size:14.5px;color:var(--muted);line-height:1.5}
+.plan .ticks li{font-size:14px}
+.plan .btn{margin-top:auto}
+.plan-pro{background:var(--sel);border-color:transparent;box-shadow:0 0 0 1.5px var(--emerald),inset 0 1px 0 var(--rim),0 30px 60px -34px rgba(14,30,24,.4)}
+body.dark-studio .plan-pro{background:rgba(255,255,255,.07)}
+.plan-pro .plan-kicker{color:var(--gold-ink)}
+.plan-vip{border-style:dashed;border-color:var(--line-2)}
+.price-note{margin-top:14px;font-size:13px;color:var(--muted)}
+.roi{margin-top:18px;padding:clamp(18px,2.2vw,28px);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(20px,3vw,40px);align-items:center}
+.roi h3{font-size:clamp(20px,1.8vw,24px);letter-spacing:-.03em;line-height:1.2;margin-top:10px}
+.rng{margin-top:10px}
+.rng-row{display:flex;justify-content:space-between;gap:10px;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-bottom:0}
+.rng-row b{color:var(--emerald);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;cursor:pointer;margin:0}
+input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:99px;background:linear-gradient(90deg,var(--emerald) var(--p,30%),var(--line-2) var(--p,30%))}
+input[type=range]::-moz-range-track{height:6px;border-radius:99px;background:var(--line-2)}
+input[type=range]::-moz-range-progress{height:6px;border-radius:99px;background:var(--emerald)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;margin-top:-11px;border-radius:50%;background:#fff;border:1px solid rgba(11,31,24,.12);box-shadow:0 4px 12px -2px rgba(11,31,24,.35)}
+input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:#fff;border:1px solid rgba(11,31,24,.12);box-shadow:0 4px 12px -2px rgba(11,31,24,.35)}
+.roi-out{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ro{padding:18px;border-radius:20px;background:var(--recess)}
+body.dark-studio .ro{background:rgba(0,0,0,.22)}
+.ro small{display:block;font-size:13px;font-weight:500;color:var(--muted);line-height:1.35}
+.ro b{display:block;font-size:30px;font-weight:600;letter-spacing:-.045em;color:var(--ink);margin:6px 0 2px;font-variant-numeric:tabular-nums;line-height:1.1}
+.ro span{font-size:13px;color:var(--muted)}
+.disclaimer{grid-column:1/-1;display:flex;gap:8px;font-size:13px;color:var(--ink-2);line-height:1.5}
+.disclaimer .i{width:15px;height:15px;margin-top:2px;color:var(--muted)}
+
+/* ---------- FAQ window ---------- */
+.faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,4vw,64px);align-items:start}
+.faq-intro{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.faq-intro h2{font-size:clamp(30px,3.3vw,48px);letter-spacing:-.04em;line-height:1.04}
+.faq-ask{margin-top:6px;font-size:14.5px;color:var(--ink-2);max-width:320px}
+.faq-list{padding:6px 0;overflow:hidden}
+.faq-list details{border-top:1px solid var(--line)}
+.faq-list details:first-child{border-top:0}
+.faq-list summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:14px 22px;font-size:16px;font-weight:600;color:var(--ink);letter-spacing:-.012em;cursor:pointer;line-height:1.35}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";flex:none;width:30px;height:30px;border-radius:50%;background:var(--recess) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230E6B4E' stroke-width='2.2' stroke-linecap='round'><path d='M12 5v14M5 12h14'/></svg>") center/14px no-repeat;transition:transform .35s var(--ease)}
+body.dark-studio .faq-list summary::after{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236FDBAE' stroke-width='2.2' stroke-linecap='round'><path d='M12 5v14M5 12h14'/></svg>")}
+.faq-list details[open] summary::after{transform:rotate(45deg)}
+.faq-list details p{padding:0 22px 20px;font-size:15px;line-height:1.65;color:var(--ink-2);max-width:720px}
+
+/* ---------- final window + footer ---------- */
+.final{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding:clamp(40px,5vw,72px) clamp(22px,4vw,56px)}
+.final h2{font-size:clamp(34px,4.4vw,60px);letter-spacing:-.045em;line-height:1.02;max-width:820px;text-wrap:balance}
+.final .lede{max-width:560px}
+.final .cta-row{justify-content:center;margin-top:10px}
+.final-contact{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px;margin-top:6px}
+.final-contact a{display:inline-flex;align-items:center;gap:8px;min-height:46px;font-size:14.5px;font-weight:500;color:var(--ink-2)}
+.final-contact a:hover{color:var(--ink)}
+.final .hero-links{justify-content:center;margin:0}
+.final-win{margin-bottom:0}
+.site-foot{margin:0 clamp(22px,3.4vw,48px);padding:clamp(28px,3vw,40px) 0 26px;border-top:1px solid var(--line)}
+footer#contact{padding-bottom:28px}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px}
+.foot-grid p{font-size:14px;color:var(--muted);max-width:340px;margin-top:12px;line-height:1.6}
+.foot-grid h4{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px;letter-spacing:0}
+.foot-grid ul a{display:inline-flex;align-items:center;gap:8px;min-height:46px;min-width:46px;font-size:14.5px;color:var(--ink-2)}
+.foot-grid ul a:hover{color:var(--ink)}
+.foot-grid .app{width:17px;height:17px}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;margin-top:24px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
+/* ---------- mobile bar ---------- */
+.mbar{display:none}
+
+/* ---------- sheets: composer + reel player ---------- */
+.overlay{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;visibility:hidden;opacity:0;transition:opacity .35s var(--ease),visibility 0s .35s}
+.overlay.active{visibility:visible;opacity:1;transition:opacity .35s var(--ease)}
+.overlay-bd{position:absolute;inset:0;background:rgba(14,22,18,.28);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%)}
+body.dark-studio .overlay-bd{background:rgba(0,0,0,.5)}
+.sheet-card{position:relative;width:min(540px,100%);max-height:calc(100dvh - 32px);overflow:auto;padding:24px;display:flex;flex-direction:column;gap:16px;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,255,255,.95));transform:translateY(18px) scale(.98);transition:transform .45s var(--ease)}
+body.dark-studio .sheet-card{background:linear-gradient(180deg,rgba(30,46,40,.97),rgba(18,32,27,.97))}
+.overlay.active .sheet-card{transform:none}
+.sheet-card:focus{outline:none}
+.cc-head{display:flex;align-items:center;gap:12px}
+.cc-logo{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:#fff;box-shadow:var(--sm-shadow);flex:none}
+.cc-logo .app{width:30px;height:30px}
+.cc-head strong{display:block;font-size:18px;color:var(--ink);letter-spacing:-.02em;font-weight:600}
+.cc-head small{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.sheet-x{margin-left:auto;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--recess);color:var(--ink-2);flex:none}
+.cc-label{font-size:14px;font-weight:500;color:var(--ink-2)}
+.sheet-card textarea{width:100%;min-height:204px;resize:vertical;border-radius:18px;border:1px solid var(--line-2);background:var(--recess);padding:14px 16px;font:14.5px/1.5 var(--ff);color:var(--ink)}
+.sheet-card textarea:focus{outline:none;border-color:var(--emerald);box-shadow:0 0 0 4px rgba(14,107,78,.14)}
+.cc-note{font-size:13px;color:var(--muted);text-align:center}
+.player-card{position:relative;display:grid;grid-template-columns:auto minmax(0,300px);gap:22px;padding:14px;border-radius:36px;background:rgba(14,28,23,.92);border:1px solid rgba(255,255,255,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 50px 100px -30px rgba(0,0,0,.8);color:rgba(255,255,255,.8);max-height:calc(100dvh - 32px);transform:translateY(16px) scale(.98);transition:transform .45s var(--ease)}
+.overlay.active .player-card{transform:none}
+.player-frame{width:340px;height:min(680px,calc(100dvh - 64px));border-radius:24px;overflow:hidden;background:#000}
+.player-frame iframe{width:100%;height:100%;border:0;display:block;background:#fff}
+.player-info{display:flex;flex-direction:column;gap:12px;padding:18px 10px 10px 0}
+.player-info .label{color:#9BE9C8}
+.player-info h3{font-size:20px;line-height:1.25;letter-spacing:-.02em;color:#fff}
+.player-info p{font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.74)}
+.player-info .btn{margin-top:4px;align-self:flex-start}
+.player-x{position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16)}
+.player-x:hover{background:rgba(255,255,255,.18)}
+
+/* =====================================================================
+   RESPONSIVE
+   ===================================================================== */
+@media (max-width:1180px){
+  .nav-links,.nav-login{display:none}
+  .menu-btn{display:inline-grid}
+  .nav-actions{margin-left:auto}
+  .reel-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .plans{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1020px){
+  .hero-win{grid-template-columns:minmax(0,1fr);--hp-b:52px}
+  .hero-copy{align-items:center;text-align:center}
+  .hero .lede,.micro{margin-inline:auto}
+  .cta-row{justify-content:center}
+  .stage{margin-top:8px}
+  .founder,.slot,.portal,.faq-grid,.formats,.roi{grid-template-columns:minmax(0,1fr)}
+  .svc{grid-template-columns:minmax(0,1fr)}
+  .slist{flex-direction:row;overflow-x:auto;scrollbar-width:none;gap:6px;margin:0 -4px;padding:2px 4px}
+  .slist::-webkit-scrollbar{display:none}
+  .stab{flex:none;min-height:48px;padding:0 16px 0 6px;white-space:nowrap}
+  .sdetail{grid-template-columns:minmax(0,1fr)}
+  .foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-brand{grid-column:1/-1}
+}
+@media (max-width:860px){
+  .ai-grid{grid-template-columns:minmax(0,1fr)}
+  .ai-goal{margin-bottom:18px}
+  .ai-submit{flex-direction:column;align-items:stretch}
+  .ai-submit .btn{width:100%}
+}
+@media (max-width:760px){
+  :root{--r-win:30px;--r-plat:20px}
+  body{--amb-h:1500px}
+  body{padding-bottom:96px}
+  .wrap{width:calc(100% - 32px)}
+  .nav{height:60px;padding:0 6px 0 18px}
+  .nav-shell{top:10px}
+  .nav-wa,#btnThemeSwitch{display:none}
+  .lang button{height:44px;min-width:44px}
+  .hero{padding-top:84px}
+  .hero-win{padding:28px 20px var(--hp-b);gap:28px}
+  .hero-copy{align-items:flex-start;text-align:left}
+  .cta-row{justify-content:flex-start}
+  .hero .lede,.micro{margin-inline:0}
+  .eyebrow{font-size:13.5px;line-height:1.4;align-items:flex-start}
+  .eyebrow .live{margin-top:6px}
+  .eb-l{display:none}
+  .eb-s{display:inline}
+  .hero h1{margin-top:18px;font-size:clamp(31px,10vw,52px)}
+  html[lang="hi"] .hero h1{font-size:clamp(28px,8.4vw,40px)}
+  .hero .lede{margin-top:16px;font-size:16.5px}
+  .cta-row{margin-top:24px;width:100%;flex-direction:column;gap:10px}
+  .cta-row .btn{width:100%}
+  .micro{font-size:14px}
+  .layers{display:none}
+  .phone-wrap{--s:.82}
+  .hero-win{--hp-b:28px}
+  .seg-ab>button{padding:0 16px;font-size:13.5px}
+  .space{gap:28px;padding-top:56px}
+  .wh{flex-direction:column;align-items:stretch;gap:18px}
+  .wh .seg{align-self:stretch}
+  .wh .seg>button{flex:1;justify-content:center;padding:0 10px;min-height:44px}
+  .seg>button{min-height:44px}
+  .depth{height:300px}
+  .peek{grid-template-columns:minmax(0,1fr)}
+  .stats3 b{font-size:26px}
+  .stat{padding:14px 10px 12px 0}
+  .stat+.stat{padding-left:12px}
+  .team2{grid-template-columns:minmax(0,1fr)}
+  .member{padding:16px}
+  .crow{font-size:14px;padding:0 12px;gap:10px}
+  .next3 b{font-size:17px}
+  .reels-top{margin-bottom:16px}
+  .ig-btns{display:none}
+  .reel-row{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:46%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:-20px;padding:2px 20px 4px;scroll-padding-inline:20px}
+  .reel-row::-webkit-scrollbar{display:none}
+  .reel-row>*{scroll-snap-align:start}
+  .swipe-hint{display:flex}
+  .pbtn{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(0,0,0,.38)}
+  .fm-ui{grid-template-columns:minmax(0,1fr);padding:6px}
+  .vtabs{flex-direction:row;overflow-x:auto;scrollbar-width:none;gap:4px;padding:2px}
+  .vtabs::-webkit-scrollbar{display:none}
+  .vtab{flex:none;white-space:nowrap;min-height:44px;font-size:13.5px}
+  .tpanels{padding:20px;min-height:0}
+  .tp h4{font-size:20px}
+  .fm-intro .btn-row{max-width:none}
+  .sdetail{padding:18px;min-height:0}
+  .mu{padding:14px}
+  .ps2{grid-template-columns:minmax(0,1fr)}
+  .phases,.parts{grid-template-columns:minmax(0,1fr)}
+  .phase{padding:18px}
+  .plan-pick{display:flex;margin-bottom:14px}
+  .plan-pick>button{flex:1;justify-content:center;padding:0 8px}
+  .plans{grid-template-columns:minmax(0,1fr)}
+  .plans[data-show="trial"] .plan:not([data-plan="trial"]),
+  .plans[data-show="starter"] .plan:not([data-plan="starter"]),
+  .plans[data-show="pro"] .plan:not([data-plan="pro"]),
+  .plans[data-show="vip"] .plan:not([data-plan="vip"]){display:none}
+  .roi-out{grid-template-columns:minmax(0,1fr)}
+  .ro{padding:14px 16px}
+  .ro b{font-size:26px;white-space:nowrap}
+  .frow{grid-template-columns:minmax(0,1fr);gap:0;padding:10px 16px 0;min-height:0}
+  .frow label{font-size:13px;color:var(--muted)}
+  .frow input,.frow select{min-height:44px;font-size:16px}
+  .ftext textarea,.sheet-card textarea{font-size:16px}
+  .f-actions .btn{width:100%}
+  .ftext{padding:14px 14px 12px}
+  .chip{padding:0 8px;font-size:13.5px}
+  .chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ftext .chips{display:grid}
+  .foot-grid>div:last-child{grid-column:1/-1}
+  .foot-grid>div:last-child a{white-space:nowrap}
+  .faq-list summary{font-size:15.5px;padding:14px 18px}
+  .faq-list details p{padding:0 18px 18px;font-size:15px}
+  .final .cta-row .btn{width:100%}
+  .foot-grid{gap:20px}
+  .mbar{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:70;display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);gap:6px;padding:6px;border-radius:28px;background:rgba(255,255,255,.82);border:1px solid rgba(11,31,24,.08);box-shadow:inset 0 1px 0 #fff,0 18px 40px -18px rgba(14,30,24,.4);-webkit-backdrop-filter:blur(20px) saturate(170%);backdrop-filter:blur(20px) saturate(170%);transform:translateY(calc(100% + 24px));opacity:0;transition:transform .5s var(--ease),opacity .4s}
+  body.dark-studio .mbar{background:rgba(22,36,31,.8);border-color:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 18px 40px -16px rgba(0,0,0,.7)}
+  body.show-mbar .mbar{transform:none;opacity:1}
+  .mbar a,.mbar button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:50px;padding:0 10px;border-radius:22px;font-size:15px;font-weight:600;white-space:nowrap}
+  .mbar .m-login{color:var(--ink-2);background:var(--recess);padding:0 14px;font-size:14px}
+  .mbar .m-login .i{width:16px;height:16px}
+  .mbar .m-wa{background:var(--btn-bg);color:var(--btn-ink)}
+  .mbar .m-wa .wa-disc{width:24px;height:24px;margin-left:0}
+  .mbar .m-wa .wa-disc .app{width:19px;height:19px}
+  .mbar .m-ai{background:var(--sel);color:var(--ink);border:1px solid var(--line-2)}
+  .overlay{padding:0;place-items:end center}
+  .sheet-card{width:100%;border-radius:30px 30px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));max-height:92dvh;transform:translateY(40px)}
+  .player-card{grid-template-columns:minmax(0,1fr);width:100%;gap:10px;border-radius:30px 30px 0 0;padding:12px 12px calc(16px + env(safe-area-inset-bottom));max-height:96dvh}
+  .player-frame{width:100%;height:min(560px,68dvh)}
+  .player-info{padding:4px 6px}
+  .player-info .label,.player-info p{display:none}
+  .player-info h3{font-size:16px;padding-right:52px}
+  .player-x{top:auto;bottom:calc(20px + env(safe-area-inset-bottom));right:18px}
+}
+@media (max-width:380px){
+  .phone-wrap{--s:.74}
+  .eyebrow{font-size:12.5px;letter-spacing:-.01em;white-space:nowrap}
+  .pg-dots span{display:none}
+  .frow{padding:10px 12px 0}
+  .ftext{padding:14px 12px 12px}
+  .frow select{padding-right:20px}
+  .hero-win{padding:26px 18px var(--hp-b)}
+  .mbar .m-login .i,.mbar .m-ai .i{display:none}
+  .mbar a,.mbar button{font-size:14px}
+  .wm-name{font-size:17px}
+  .seg-ab>button{padding:0 12px;font-size:13px}
+  .chip{font-size:13px;padding:0 6px}
+  .wh .seg>button{font-size:13px;padding:0 6px}
+  .seg .av,.seg .av-stack,.seg .av-plus{display:none}
+  .stats3 b{font-size:23px}
+  .stat span{font-size:12px}
+  .plan .btn,.f-actions .btn{padding:0 14px;font-size:15px}
+  .plan{padding:20px 18px}
+  .plan .btn .i{display:none}
+  .member{padding:14px}
+}
+@media (min-width:1021px) and (min-height:980px){
+  .phone-wrap{--s:.95}
+}
+@media (min-width:1021px) and (max-height:860px){
+  .phone-wrap{--s:.84}
+  .hero{padding-top:88px}
+}
+@media (min-width:1021px) and (max-height:700px){
+  .phone-wrap{--s:.74}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  html.js .rv{opacity:1;transform:none}
+}
+@media (prefers-reduced-transparency:reduce){
+  .nav,.mbar,.overlay-bd,.pbtn{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+  .nav,.mbar{background:#FBF9F5}
+  body.dark-studio .nav,body.dark-studio .mbar{background:#13231D}
+  .win{background:#FBF9F5}
+  body.dark-studio .win{background:#13231D}
+  .overlay-bd{background:rgba(20,16,12,.6)}
+}
+</style>
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true"></div>
+
+<!-- Official app logos + line icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="igOfficialGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/>
+    </linearGradient>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#igOfficialGrad)"/>
+      <rect x="4.6" y="4.6" width="14.8" height="14.8" rx="4" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+      <circle cx="12" cy="12" r="3.6" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+      <circle cx="16.4" cy="7.6" r="1.1" fill="#ffffff"/>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10.5" fill="#25D366"/>
+      <path fill="#ffffff" d="M16.6 14.2c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.3.2-.4.6-1.2.1-.2 0-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3z"/>
+    </symbol>
+    <symbol id="icon-gmail" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="16" rx="3" fill="#ffffff" stroke="#E2DDD1" stroke-width="1.5"/>
+      <path d="M3.5 6.5L12 13l8.5-6.5" fill="none" stroke="#EA4335" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3.5 17.5V7l8.5 6 8.5-6v10.5" fill="none" stroke="#4285F4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.4-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+    <symbol id="i-clapper" viewBox="0 0 24 24"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9.5 4.5 4h15L21 9.5"/><path d="M3 9.5a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12.4V20h14v-7.6"/><path d="M10 20v-4h4v4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.36 18.36a9 9 0 0 0 0-12.72"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-login" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M14.54 21.69a.5.5 0 0 0 .94-.03l6.5-19a.5.5 0 0 0-.64-.63l-19 6.5a.5.5 0 0 0-.02.93l7.93 3.18a2 2 0 0 1 1.11 1.11z"/><path d="m21.85 2.15-10.94 10.94"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="14" rx="1.5"/><rect width="7" height="7" x="3" y="14" rx="1.5"/></symbol>
+    <symbol id="i-captions" viewBox="0 0 24 24"><rect width="18" height="14" x="3" y="5" rx="2"/><path d="M7 15h4M15 15h2M7 11h2M13 11h4"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></symbol>
+    <symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2.5"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </defs>
+</svg>
+
+<!-- =========================== NAV =========================== -->
+<header class="nav-shell" id="stickySiteHeader">
+  <nav class="nav" aria-label="Primary">
+    <a class="wm" href="#top" aria-label="VanIndra Creations — home">
+      <span class="wm-name">VanIndra</span>
+      <span class="wm-sub">CREATIONS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#portfolio" data-hi="पोर्टफोलियो">Portfolio</a></li>
+      <li><a href="#reels" data-hi="रील्स">Reels</a></li>
+      <li><a href="#services" data-hi="सर्विसेज़">Services</a></li>
+      <li><a href="#process" data-hi="प्रोसेस">How it works</a></li>
+      <li><a href="#pricing" data-hi="प्राइसिंग">Pricing</a></li>
+      <li><a href="#team" data-hi="टीम">Team</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="btnLangEn" class="active" onclick="setLanguageMode('en')" aria-label="English">EN</button>
+        <button type="button" id="btnLangHi" onclick="setLanguageMode('hi')" aria-label="हिंदी / Hinglish">हिं</button>
+      </div>
+      <button type="button" class="icon-btn" id="btnThemeSwitch" onclick="toggleSurfaceTheme()" aria-label="Switch light or dark mode">
+        <svg class="i i-sun"><use href="#i-sun"/></svg><svg class="i i-moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="nav-login" href="../../login.html"><span data-hi="क्लाइंट लॉगिन">Client login</span><small data-hi="(प्रीव्यू)">(preview)</small></a>
+      <a class="btn btn-primary btn-sm nav-wa js-wa" href="https://wa.me/918112859437?text=Hello%20Smita%20%26%20VanIndra%20Creations%20Studio%2C%0A%0AI%20saw%20your%20portfolio%20(%40vandanay2012%20%26%20%40smitayadav_0901)%20and%20would%20like%20to%20talk%20about%20growing%20my%20Instagram.%0A%0A%E2%80%A2%20Name%20%2F%20brand%3A%20%0A%E2%80%A2%20Instagram%3A%20%40%0A%E2%80%A2%20Followers%3A%20%0A%E2%80%A2%20Looking%20for%3A%20Content%20strategy%2C%20high-retention%20Reels%20%26%20brand%20deals" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp our official desk, Smita Yadav, at +91 81128 59437">
+        <span class="wa-disc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><span>WhatsApp</span>
+      </a>
+      <button type="button" class="icon-btn menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navSheet" aria-label="Open menu">
+        <svg class="i"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-sheet" id="navSheet" hidden>
+    <a href="#portfolio"><span data-hi="पोर्टफोलियो">Portfolio</span><svg class="i"><use href="#i-arrow-right"/></svg></a>
+    <a href="#reels"><span data-hi="रील्स">Reels</span><svg class="i"><use href="#i-arrow-right"/></svg></a>
+    <a href="#services"><span data-hi="सर्विसेज़">Services</span><svg class="i"><use href="#i-arrow-right"/></svg></a>
+    <a href="#process"><span data-hi="यह कैसे काम करता है">How it works</span><svg class="i"><use href="#i-arrow-right"/></svg></a>
+    <a href="#pricing"><span data-hi="प्राइसिंग">Pricing</span><svg class="i"><use href="#i-arrow-right"/></svg></a>
+    <a href="#team"><span data-hi="टीम">Team</span><svg class="i"><use href="#i-arrow-right"/></svg></a>
+    <div class="sheet-sep"></div>
+    <a href="../../login.html" class="sheet-row"><span data-hi="क्लाइंट लॉगिन (प्रीव्यू)">Client login (preview)</span><svg class="i"><use href="#i-login"/></svg></a>
+    <button type="button" class="sheet-row" onclick="speakWelcomeGuide()"><span data-hi="हिंदी में सुनें">Listen in Hindi</span><svg class="i"><use href="#i-volume"/></svg></button>
+    <button type="button" class="sheet-row" onclick="toggleSurfaceTheme()"><span data-hi="लाइट / डार्क मोड">Light / dark mode</span><svg class="i"><use href="#i-moon"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- =========================== HERO WINDOW =========================== -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="win hero-win">
+      <div class="hero-copy">
+        <span class="eyebrow"><i class="live" aria-hidden="true"></i><span data-hi="<span class='eb-l'>AI + इंसानी कंटेंट स्टूडियो · फाउंडर वंदना यादव</span><span class='eb-s'>AI + इंसानी स्टूडियो · वंदना यादव</span>"><span class="eb-l">AI + human content studio · Founded by Vandana Yadav</span><span class="eb-s">AI + human studio · by Vandana Yadav</span></span></span>
+        <h1 id="heroMainTitle" data-hi="आप बस रिकॉर्ड करें।<br><span class='h1-2'>बाकी सब</span> हम संभालेंगे।">You just record.<br>We handle <span class="h1-2">everything else.</span></h1>
+        <p class="lede" id="heroSubTitle" data-hi="1&nbsp;लाख+ क्रिएटर्स, डॉक्टर्स, कोच और ब्रांड्स के लिए स्ट्रैटेजी, 3-सेकंड हुक, स्क्रिप्ट, 9:16 एडिटिंग और ब्रांड डील की तैयारी — बिना रोज़ के झंझट के।">Strategy, 3&#8209;second hooks, scripts, 9:16 editing and brand&#8209;deal positioning for 1&nbsp;lakh+ creators, doctors, coaches and brands — without the daily operations.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg js-wa" id="heroWaBtn" href="https://wa.me/918112859437?text=Hello%20Smita%20%26%20VanIndra%20Creations%20Studio%2C%0A%0AI%20saw%20your%20portfolio%20(%40vandanay2012%20%26%20%40smitayadav_0901)%20and%20would%20like%20to%20talk%20about%20growing%20my%20Instagram.%0A%0A%E2%80%A2%20Name%20%2F%20brand%3A%20%0A%E2%80%A2%20Instagram%3A%20%40%0A%E2%80%A2%20Followers%3A%20%0A%E2%80%A2%20Looking%20for%3A%20Content%20strategy%2C%20high-retention%20Reels%20%26%20brand%20deals" target="_blank" rel="noopener noreferrer">
+            <span class="wa-disc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><span data-hi="WhatsApp पर बात करें">Chat on WhatsApp</span>
+          </a>
+          <a class="btn btn-glass btn-lg" href="#smart-ai-portal">
+            <svg class="i"><use href="#i-sparkles"/></svg><span data-hi="मेरा फ्री AI प्लान बनाएं">Get my free AI plan</span>
+          </a>
+        </div>
+        <p class="micro"><svg class="i"><use href="#i-check"/></svg><span data-hi="पैसे देने से पहले: फ्री 7-दिन ऑडिट + आपके अपने वीडियो का 15-सेकंड सैंपल एडिट।">Free 7-day audit + a 15-second sample edit of your own video, before you pay.</span></p>
+        <div class="hero-links">
+          <button type="button" class="btn-text" onclick="openComposer()"><svg class="i"><use href="#i-pen"/></svg><span data-hi="मैसेज बदलें">Edit message</span></button>
+          <button type="button" class="btn-text" onclick="speakWelcomeGuide()"><svg class="i"><use href="#i-volume"/></svg><span data-hi="हिंदी में सुनें">Listen in Hindi</span></button>
+        </div>
+      </div>
+
+      <div class="stage" id="heroStage" data-mode="after">
+        <div class="stage-row">
+          <ul class="layers" aria-label="What our edit adds">
+            <li><span class="lic"><svg class="i"><use href="#i-target"/></svg></span><span><span data-hi="हुक">Hook</span><span class="lst" data-hi="पहला फ्रेम">First frame</span></span></li>
+            <li><span class="lic"><svg class="i"><use href="#i-captions"/></svg></span><span><span data-hi="कैप्शन">Captions</span><span class="lst" data-hi="हिंदी + अंग्रेज़ी">Bilingual</span></span></li>
+            <li><span class="lic"><svg class="i"><use href="#i-scissors"/></svg></span><span><span data-hi="कट्स">Cuts</span><span class="lst" data-hi="हर 2–3 सेकंड">Every 2–3 sec</span></span></li>
+            <li><span class="lic"><svg class="i"><use href="#i-grid"/></svg></span><span><span data-hi="कवर">Cover</span><span class="lst" data-hi="साफ 9:16">Clean 9:16</span></span></li>
+          </ul>
+          <div class="phone-col">
+          <div class="seg seg-ab" role="group" aria-label="Before and after comparison">
+            <span class="seg-thumb" aria-hidden="true"></span>
+            <button type="button" id="btnModeBefore" aria-pressed="false" onclick="switchPhoneSimulation('before')"><span data-hi="पहले (रॉ क्लिप)">Before · raw clip</span></button>
+            <button type="button" id="btnModeAfter" class="on" aria-pressed="true" onclick="switchPhoneSimulation('after')"><span data-hi="हमारे एडिट के बाद">After our edit</span></button>
+          </div>
+          <div class="phone-wrap" id="iphone3D">
+            <div class="phone" id="phoneBody">
+              <div class="screen" id="phoneScreen">
+                <img src="../../assets/portfolio/reel_DSZ8VilkrA8.jpg" alt="Vandana Yadav recording a Reel on her phone" width="640" height="1136">
+                <span class="island" aria-hidden="true"></span>
+                <div class="sbar" aria-hidden="true"><span>9:41</span><span class="r"><span class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:78%"></i><i style="height:100%"></i></span><span class="bat"><i></i></span></span></div>
+                <div class="igtop" aria-hidden="true"><span>Reels</span><svg class="i"><use href="#i-camera"/></svg></div>
+                <div class="hook" id="phoneHookBanner">3-sec hook: don't make this mistake at 1 lakh+!</div>
+                <p class="cap" id="kineticCaptionText">"If your <mark>reach</mark> has plateaued, fix these <b>3 hooks</b>…"</p>
+                <div class="rail" aria-hidden="true">
+                  <svg class="i i-heart"><use href="#i-heart"/></svg>
+                  <svg class="i"><use href="#i-message"/></svg>
+                  <svg class="i"><use href="#i-send"/></svg>
+                </div>
+                <div class="meta"><img src="../../assets/portfolio/dp_vandanay2012.jpg" alt="" width="100" height="100"><span>vandanay2012</span><span class="follow">Follow</span></div>
+                <div class="ret">
+                  <div class="ret-row"><span id="graphLabelLeft" style="color:#6EE7B7">▲ Viewers stay</span><span id="graphLabelRight" style="color:#F4C44E">Hook-first edit</span></div>
+                  <svg viewBox="0 0 260 36" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0 16 Q 60 32, 130 34 T 260 35" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="1.6" stroke-dasharray="3 4"/>
+                    <path id="retentionCurvePath" d="M 0 7 Q 65 8, 130 11 T 260 14" fill="none" stroke="#34D399" stroke-width="3.2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="illus"><svg class="i"><use href="#i-info"/></svg><span data-hi="उदाहरण — किसी क्लाइंट का असली रिज़ल्ट नहीं।">Illustration — not a client result.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="grab" aria-hidden="true"></span>
+  </div>
+</section>
+
+<div class="wrap space">
+
+<!-- =========================== PORTFOLIO & TEAM WINDOW =========================== -->
+<section class="win win-pad rv" id="portfolio">
+  <span class="anchor" id="vandana-story"></span><span class="anchor" id="team"></span><span class="anchor" id="our-team"></span>
+  <header class="wh">
+    <div class="wh-t">
+      <span class="label" data-hi="पोर्टफोलियो और टीम">Portfolio &amp; team</span>
+      <h2 data-hi="असली लोग। असली अकाउंट्स।">Real people. Real accounts.</h2>
+      <p class="lede" data-hi="हमारी टीम अपने खुद के क्रिएटर अकाउंट्स उन्हीं हुक्स और कवर्स के साथ चलाती है जो हम क्लाइंट्स के लिए बनाते हैं।">Our team runs its own creator accounts with the same hooks and covers we build for clients.</p>
+    </div>
+    <div class="seg" role="tablist" aria-label="Portfolio and team" data-pager="pgPortfolio">
+      <span class="seg-thumb" aria-hidden="true"></span>
+      <button type="button" role="tab" id="tabFounder" aria-controls="paneFounder" aria-selected="true"><img class="av" src="../../assets/portfolio/dp_vandanay2012.jpg" alt="" width="100" height="100"><span data-hi="फाउंडर">Founder</span></button>
+      <button type="button" role="tab" id="tabTeam" aria-controls="paneTeam" aria-selected="false" tabindex="-1"><span class="av-stack"><img class="av" src="../../assets/portfolio/dp_smitayadav_0901.jpg" alt="" width="100" height="100"><span class="av av-mono">AY</span></span><span data-hi="टीम">Team</span></button>
+      <button type="button" role="tab" id="tabSlot" aria-controls="paneSlot" aria-selected="false" tabindex="-1"><span class="av-plus"><svg class="i"><use href="#i-plus"/></svg></span><span data-hi="आपका स्लॉट">Your slot</span></button>
+    </div>
+  </header>
+
+  <!-- Founder -->
+  <div class="pane founder" id="paneFounder" role="tabpanel" aria-labelledby="tabFounder">
+    <div class="depth" aria-hidden="true">
+      <img src="../../assets/portfolio/reel_DbaynqrSiIo.jpg" alt="" loading="lazy">
+      <img src="../../assets/portfolio/reel_DTANmk8ERab.jpg" alt="" loading="lazy">
+      <img src="../../assets/portfolio/reel_DScFp3ZkYDW.jpg" alt="" loading="lazy">
+      <span class="tag" data-hi="पोर्टफोलियो #01">Portfolio #01</span>
+    </div>
+    <div class="f-info">
+      <div class="person">
+        <img src="../../assets/portfolio/dp_vandanay2012.jpg" alt="Vandana Yadav" width="100" height="100">
+        <div><h3>Vandana Yadav</h3><p data-hi="फाउंडर और चीफ इन्फ्लुएंसर डायरेक्टर">Founder &amp; Chief Influencer Director</p></div>
+      </div>
+      <p class="body" data-hi="0 से शुरू करके @vandanay2012 को 467+ टेस्टेड पोस्ट्स में 50,000+ ऑर्गेनिक फॉलोअर्स तक पहुँचाया — सख्त 'क्या पोस्ट करें, क्या नहीं' फिल्टर और 3-सेकंड विज़ुअल हुक के साथ। हर क्लाइंट की क्रिएटिव डायरेक्शन वे खुद देखती हैं।">Grew <strong>@vandanay2012</strong> from zero to 50,000+ organic followers across 467+ tested posts, with a strict “what to post, what not to post” filter and 3-second visual hooks. She reviews every client's creative direction herself.</p>
+      <div class="stats3">
+        <div class="stat"><b>50K+</b><span data-hi="फॉलोअर्स · अक्टूबर 2026">Followers · Oct 2026</span></div>
+        <div class="stat"><b>467+</b><span data-hi="पोस्ट्स · अक्टूबर 2026">Posts · Oct 2026</span></div>
+        <div class="stat"><b>4</b><span data-hi="100K+ व्यूज वाली रील्स">Reels with 100K+ views</span></div>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg><span>@vandanay2012</span><svg class="i" style="width:16px;height:16px"><use href="#i-arrow-up-right"/></svg></a>
+        <button type="button" class="btn-text" onclick="speakVandanaTestimonial()" aria-label="Listen to this story in Hindi"><svg class="i"><use href="#i-volume"/></svg><span data-hi="हिंदी में सुनें">Listen in Hindi</span></button>
+      </div>
+      <div class="peek">
+        <p class="peek-t" data-hi="उनके साथ काम करते हैं">Working with her</p>
+        <button type="button" onclick="activateTab(document.getElementById('tabTeam'))"><img src="../../assets/portfolio/dp_smitayadav_0901.jpg" alt="" width="100" height="100"><span><b>Smita Yadav</b><small data-hi="ग्रोथ और ब्रांड डील्स">Growth &amp; brand deals</small></span></button>
+        <button type="button" onclick="activateTab(document.getElementById('tabTeam'))"><span class="mono" aria-hidden="true">AY</span><span><b>Akarsh Yadav</b><small data-hi="एडिटिंग और साइंस हुक्स">Editing &amp; science hooks</small></span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <div class="pane team2" id="paneTeam" role="tabpanel" aria-labelledby="tabTeam" hidden>
+    <article class="plat member">
+      <div class="person">
+        <img src="../../assets/portfolio/dp_smitayadav_0901.jpg" alt="Smita Yadav" width="100" height="100">
+        <div><h3>Smita Yadav <span class="tag" data-hi="पोर्टफोलियो #02">Portfolio #02</span></h3><p data-hi="ग्रोथ, ब्रांड डील्स और क्लाइंट रिलेशंस लीड">Growth, Brand Deals &amp; Client Relations Lead</p><p class="edu"><svg class="i"><use href="#i-cap"/></svg><span data-hi="B.Com · गार्गी कॉलेज, दिल्ली यूनिवर्सिटी">B.Com · Gargi College, University of Delhi</span></p></div>
+      </div>
+      <p class="body" data-hi="आधिकारिक WhatsApp ऑनबोर्डिंग और ब्रांड डील्स संभालती हैं। उनका अपना पेज हमारा Gen-Z शोकेस है: स्पॉन्सर-रेडी बायो, एस्थेटिक 9:16 कवर्स और @vanindracreations कोलैब-टैग फ्लाईव्हील।">Leads official WhatsApp onboarding and brand deals. Her own grid is our Gen-Z showcase: a sponsor-ready bio, aesthetic 9:16 covers and the @vanindracreations collab-tag flywheel.</p>
+      <div class="contacts">
+        <a class="crow" href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg><span>@smitayadav_0901</span><svg class="i go"><use href="#i-arrow-up-right"/></svg></a>
+        <button type="button" class="crow" onclick="openElegantWhatsAppDirect('Smita Yadav — Official WhatsApp Desk')"><svg class="app"><use href="#icon-whatsapp"/></svg><span>+91 81128 59437 · <span data-hi="ऑफिशियल डेस्क">Official desk</span></span><svg class="i go"><use href="#i-arrow-up-right"/></svg></button>
+        <a class="crow" href="mailto:smitayadav497@gmail.com"><svg class="app"><use href="#icon-gmail"/></svg><span>smitayadav497<wbr>@gmail.com</span><svg class="i go"><use href="#i-arrow-up-right"/></svg></a>
+      </div>
+    </article>
+    <article class="plat member">
+      <div class="person">
+        <span class="mono" aria-hidden="true">AY</span>
+        <div><h3>Akarsh Yadav <span class="tag" data-hi="एडिटिंग डेस्क">Editing desk</span></h3><p data-hi="टेक, वीडियो एडिटिंग और साइंटिफिक निश लीड">Tech, Video Editing &amp; Scientific Niche Lead</p><p class="edu"><svg class="i"><use href="#i-cap"/></svg><span data-hi="B.Voc फूड टेक्नोलॉजी · इलाहाबाद यूनिवर्सिटी">B.Voc Food Technology · University of Allahabad</span></p></div>
+      </div>
+      <p class="body" data-hi="हाई-रिटेंशन रील्स और 15-सेकंड सैंपल एडिट्स बनाते हैं, और फूड, हेल्थ व डॉक्टर क्रिएटर्स के लिए रिसर्च-आधारित हुक्स लिखते हैं।">Edits high-retention Reels and 15-second sample edits, and writes research-backed hooks for food, health and doctor creators.</p>
+      <div class="contacts">
+        <a class="crow" href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg><span>@yadavakarsh_07</span><svg class="i go"><use href="#i-arrow-up-right"/></svg></a>
+        <button type="button" class="crow" onclick="openElegantWhatsAppDirect('15s Sample Reel Edit Request (Editing Desk)')"><svg class="app"><use href="#icon-whatsapp"/></svg><span data-hi="15s सैंपल एडिट माँगें (ऑफिशियल डेस्क)">Request a 15s sample edit (official desk)</span><svg class="i go"><use href="#i-arrow-up-right"/></svg></button>
+        <a class="crow" href="mailto:akarshgkp8756539282@gmail.com"><svg class="app"><use href="#icon-gmail"/></svg><span>akarshgkp8756539282<wbr>@gmail.com</span><svg class="i go"><use href="#i-arrow-up-right"/></svg></a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Slot #03 -->
+  <div class="pane slot" id="paneSlot" role="tabpanel" aria-labelledby="tabSlot" hidden>
+    <div class="slot-copy">
+      <span class="tag tag-gold" data-hi="पोर्टफोलियो #03">Portfolio #03</span>
+      <h3 data-hi="अगला प्रोफाइल — आपका।">Your profile, next.</h3>
+      <p class="body" data-hi="चाहे आप 1 लाख पर अटके हों या 10 लाख के पार जा रहे हों — हम पहले आपके किसी 1 वीडियो का 15-सेकंड का फ्री सैंपल एडिट और 7-दिन का कंटेंट व ब्रांड डील ऑडिट बनाकर दिखाते हैं, एक भी रुपया लेने से पहले।">Plateaued at 1 lakh or scaling past 10 lakh? We first deliver a free 15-second re-edit of one of your videos and a 7-day content &amp; brand-deal audit — before you pay a rupee.</p>
+      <button type="button" class="btn btn-primary" onclick="openElegantWhatsAppDirect('Free audit claim')"><span class="wa-disc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><span data-hi="WhatsApp पर फ्री ऑडिट पाएं">Claim your free audit</span></button>
+    </div>
+    <div class="plat ghost" aria-label="Your profile, as portfolio #03">
+      <div class="ghost-top"><span class="ghost-av"><svg class="i"><use href="#i-plus"/></svg></span><div><b>@your_handle</b><span data-hi="पोर्टफोलियो #03 · जल्द">Portfolio #03 · next</span></div></div>
+      <div class="next3">
+        <div><b data-hi="फ्री">Free</b><span data-hi="7-दिन ऑडिट">7-day audit</span></div>
+        <div><b data-hi="15 सेकंड">15 sec</b><span data-hi="सैंपल एडिट">Sample edit</span></div>
+        <div><b data-hi="48 घंटे*">48 hrs*</b><span data-hi="पहला एडिट">First edit</span></div>
+      </div>
+      <p class="foot-note" data-hi="*फुटेज मिलने के 48 वर्किंग घंटों में।">*Within 48 working hours of receiving your footage.</p>
+    </div>
+  </div>
+  <div class="pager" id="pgPortfolio"><span class="pg-dots" aria-hidden="true"></span><button type="button" class="pg-next"><span class="pg-lbl"></span><svg class="i"><use href="#i-arrow-right"/></svg></button></div>
+</section>
+
+<!-- =========================== MEDIA WINDOW: REELS + FORMATS =========================== -->
+<section class="win win-pad rv" id="reels">
+  <span class="anchor" id="viral-reels-showcase"></span><span class="anchor" id="formats"></span>
+  <header class="wh">
+    <div class="wh-t">
+      <span class="label" data-hi="रील्स और ब्रांड फॉर्मेट">Reels &amp; brand formats</span>
+      <h2 data-hi="6 रील्स। एक ही प्लेबुक।">Six Reels. One playbook.</h2>
+    </div>
+    <div class="seg" role="tablist" aria-label="Reels and formats" data-pager="pgReels">
+      <span class="seg-thumb" aria-hidden="true"></span>
+      <button type="button" role="tab" id="tabReels" aria-controls="paneReels" aria-selected="true"><span data-hi="रील्स">Reels</span></button>
+      <button type="button" role="tab" id="tabFormats" aria-controls="paneFormats" aria-selected="false" tabindex="-1"><span data-hi="ब्रांड फॉर्मेट">Brand formats</span></button>
+    </div>
+  </header>
+
+  <div class="pane" id="paneReels" role="tabpanel" aria-labelledby="tabReels">
+    <div class="reels-top">
+      <p class="lede" data-hi="@vandanay2012 की 100K+ व्यूज वाली 4 रील्स और @smitayadav_0901 की 2 रील्स। कवर पर टैप करें और यहीं देखें।">Four Reels with 100K+ views from @vandanay2012 and two from @smitayadav_0901. Tap a cover to watch it here.</p>
+      <div class="ig-btns">
+        <a class="btn btn-glass btn-sm" href="https://www.instagram.com/vandanay2012/reels/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg><span>@vandanay2012</span></a>
+        <a class="btn btn-glass btn-sm" href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg><span>@smitayadav_0901</span></a>
+      </div>
+    </div>
+    <div class="reel-row">
+      <article class="reel">
+        <div class="poster">
+          <img src="../../assets/portfolio/reel_DZSZW2ey529.jpg" alt="Vandana Yadav Reel cover: Ye 5 mins kaam karte hi mobile hook" loading="lazy">
+          <span class="reel-tag" data-hi="100K+ व्यूज">100K+ views</span>
+          <button type="button" class="reel-play" aria-label="Play Reel: Ye 5 mins kaam karte hi haath mein mobile" data-sc="DZSZW2ey529" data-handle="vandanay2012" data-title="“Ye 5 mins kaam karte hi haath mein mobile kahan se aa jaata hai??” — @vandanay2012" data-note-en="Relatable habit hook: a high-contrast bilingual hook banner in the first 1.5 seconds that viewers forward on WhatsApp and in DMs." data-note-hi="पहले 1.5 सेकंड में ऑन-स्क्रीन हुक पट्टी जो तुरंत WhatsApp और DM शेयर्स ट्रिगर करती है।" onclick="playReelCard(this)"><span class="pbtn"><svg class="i"><use href="#i-play"/></svg></span></button>
+        </div>
+        <h3 data-hi="“Ye 5 mins काम करते ही हाथ में mobile कहाँ से आ जाता है??”">“Ye 5 mins kaam karte hi haath mein mobile kahan se aa jaata hai??”</h3>
+        <span class="reel-handle"><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012</span>
+      </article>
+      <article class="reel">
+        <div class="poster">
+          <img src="../../assets/portfolio/reel_Ddl3VLbu4P5.jpg" alt="Vandana Yadav Reel cover: Arrey chahiye kya AURAT ko" loading="lazy">
+          <span class="reel-tag" data-hi="100K+ व्यूज">100K+ views</span>
+          <button type="button" class="reel-play" aria-label="Play Reel: Arrey chahiye kya AURAT ko" data-sc="Ddl3VLbu4P5" data-handle="vandanay2012" data-title="“Arrey chahiye kya AURAT ko???” — @vandanay2012" data-note-en="Question hook: a bold centre-screen question paired with expressive storytelling that drives saves and shares." data-note-hi="सीधा सवाल पूछने वाला हुक + एक्सप्रेसिव कहानी जो सेव और शेयर बढ़ाती है।" onclick="playReelCard(this)"><span class="pbtn"><svg class="i"><use href="#i-play"/></svg></span></button>
+        </div>
+        <h3 data-hi="“Arrey chahiye kya AURAT ko???” (मेरे छोटे-छोटे सपने)">“Arrey chahiye kya AURAT ko???” (Mere chhote chhote sapne)</h3>
+        <span class="reel-handle"><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012</span>
+      </article>
+      <article class="reel">
+        <div class="poster">
+          <img src="../../assets/portfolio/reel_Dds1foTyrQm.jpg" alt="Vandana Yadav Reel cover: relatable family humour" loading="lazy">
+          <span class="reel-tag" data-hi="100K+ व्यूज">100K+ views</span>
+          <button type="button" class="reel-play" aria-label="Play Reel: Jab main apne pati ko unke gharwalon ki galti dikhaun" data-sc="Dds1foTyrQm" data-handle="vandanay2012" data-title="“Jab main apne pati ko unke gharwalon ki galti dikhaun” — @vandanay2012" data-note-en="Family humour: relatable household moments built for partner DMs and comment tags." data-note-hi="भारतीय परिवारों की नोकझोंक पर बना ऑन-स्क्रीन हुक जिसे दर्शक अपने पार्टनर को तुरंत DM करते हैं।" onclick="playReelCard(this)"><span class="pbtn"><svg class="i"><use href="#i-play"/></svg></span></button>
+        </div>
+        <h3 data-hi="“जब मैं अपने पति को उनके घरवालों की गलती दिखाऊँ”">“Jab main apne pati ko unke gharwalon ki galti dikhaun”</h3>
+        <span class="reel-handle"><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012</span>
+      </article>
+      <article class="reel">
+        <div class="poster">
+          <img src="../../assets/portfolio/reel_DSZ8VilkrA8.jpg" alt="Vandana Yadav Reel cover: Naya saal, naya janam" loading="lazy">
+          <span class="reel-tag" data-hi="100K+ व्यूज">100K+ views</span>
+          <button type="button" class="reel-play" aria-label="Play Reel: Naya saal, naya janam" data-sc="DSZ8VilkrA8" data-handle="vandanay2012" data-title="“Naya saal ❌ Naya janam ✅” — @vandanay2012" data-note-en="Contrast hook: clear lapel-mic audio and a crisp ❌ vs ✅ pattern interrupt with zero wasted intro seconds." data-note-hi="वायरलेस माइक के साथ साफ आवाज़ और '❌ vs ✅' कॉन्ट्रास्ट हुक जो पहले 3 सेकंड में ध्यान खींचता है।" onclick="playReelCard(this)"><span class="pbtn"><svg class="i"><use href="#i-play"/></svg></span></button>
+        </div>
+        <h3 data-hi="“नया साल ❌ नया जन्म ✅”">“Naya saal ❌ Naya janam ✅”</h3>
+        <span class="reel-handle"><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012</span>
+      </article>
+      <article class="reel">
+        <div class="poster">
+          <img src="../../assets/portfolio/reel_DedHDrLgY43.jpg" alt="Smita Yadav Reel cover: festive dandiya night" loading="lazy">
+          <span class="reel-tag alt" data-hi="पोर्टफोलियो #02">Portfolio #02</span>
+          <button type="button" class="reel-play" aria-label="Play Reel: Dandiya night and desi vibes" data-sc="DedHDrLgY43" data-handle="smitayadav_0901" data-title="“Dandiya night &amp; desi vibes” — @smitayadav_0901" data-note-en="Portfolio #02: Delhi University campus and festive ethnic styling — a youth format fashion brands like to collaborate on." data-note-hi="दिल्ली यूनिवर्सिटी (गार्गी कॉलेज) कैंपस और एथनिक फैशन वाइब — युवा ऑडियंस और फैशन/ज्वेलरी ब्रांड्स के लिए।" onclick="playReelCard(this)"><span class="pbtn"><svg class="i"><use href="#i-play"/></svg></span></button>
+        </div>
+        <h3 data-hi="“डांडिया नाइट और देसी वाइब्स”">“Dandiya night &amp; desi vibes”</h3>
+        <span class="reel-handle"><svg class="app"><use href="#icon-instagram"/></svg>@smitayadav_0901</span>
+      </article>
+      <article class="reel">
+        <div class="poster">
+          <img src="../../assets/portfolio/reel_Da0liqXAemF.jpg" alt="Smita Yadav Reel cover: coastal lifestyle" loading="lazy">
+          <span class="reel-tag alt" data-hi="पोर्टफोलियो #02">Portfolio #02</span>
+          <button type="button" class="reel-play" aria-label="Play Reel: A special kind of therapy" data-sc="Da0lVfrAa47" data-handle="smitayadav_0901" data-title="“A special kind of therapy” — @smitayadav_0901" data-note-en="Portfolio #02: a clean coastal aesthetic with beat-synced visual storytelling, suited to skincare and lifestyle sponsors." data-note-hi="साफ कोस्टल एस्थेटिक और बीट-सिंक्ड स्टोरीटेलिंग — स्किनकेयर और लाइफस्टाइल ब्रांड्स के लिए।" onclick="playReelCard(this)"><span class="pbtn"><svg class="i"><use href="#i-play"/></svg></span></button>
+        </div>
+        <h3 data-hi="“एक खास तरह की थेरेपी”">“A special kind of therapy”</h3>
+        <span class="reel-handle"><svg class="app"><use href="#icon-instagram"/></svg>@smitayadav_0901</span>
+      </article>
+    </div>
+    <p class="swipe-hint"><svg class="i"><use href="#i-arrow-right"/></svg><span data-hi="सभी 6 रील्स देखने के लिए स्वाइप करें">Swipe to see all 6 Reels</span></p>
+  </div>
+
+  <div class="pane formats" id="paneFormats" role="tabpanel" aria-labelledby="tabFormats" hidden>
+    <div class="fm-intro">
+      <h3 data-hi="ब्रांड डील्स के लिए बने 6 फॉर्मेट।">Six formats built for brand deals.</h3>
+      <p class="lede" data-hi="सिर्फ व्यूज से पैसा नहीं आता। ये वो फॉर्मेट हैं जिन्हें हम स्क्रिप्ट और एडिट करते हैं ताकि प्रोफाइल स्पॉन्सर-रेडी बने।">Views alone don't pay the bills. These are the formats we script and edit to make a profile sponsor-ready.</p>
+      <div class="btn-row">
+        <button type="button" class="btn btn-primary" onclick="openElegantWhatsAppDirect('Creator formats inquiry')"><span class="wa-disc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><span data-hi="क्रिएटर्स: ये फॉर्मेट पाएं">Creators: get these formats</span></button>
+        <button type="button" class="btn btn-glass" onclick="openElegantWhatsAppDirect('Brand collaboration enquiry', BRAND_SPONSOR_MESSAGE)"><svg class="i"><use href="#i-briefcase"/></svg><span data-hi="ब्रांड्स: कोलैब के लिए संपर्क करें">Brands: enquire about a collaboration</span></button>
+      </div>
+      <p class="fm-note" data-hi="हमारे इन-हाउस क्रिएटर्स का रेट कार्ड — माँगने पर।">Rate card for our in-house creators — on request.</p>
+    </div>
+    <div class="plat fm-ui">
+      <div class="vtabs" role="tablist" aria-label="Viral formats">
+        <button type="button" class="vtab" role="tab" id="ft1" aria-controls="fp1" aria-selected="true"><span class="tn">01</span><span data-hi="कॉमेडी हुक → प्रोडक्ट">Comedy hook → product</span></button>
+        <button type="button" class="vtab" role="tab" id="ft2" aria-controls="fp2" aria-selected="false" tabindex="-1"><span class="tn">02</span><span data-hi="लुकबुक + कमेंट लिंक">Lookbook + comment link</span></button>
+        <button type="button" class="vtab" role="tab" id="ft3" aria-controls="fp3" aria-selected="false" tabindex="-1"><span class="tn">03</span><span data-hi="फैमिली + Gen-Z कोलैब">Family + Gen-Z collab</span></button>
+        <button type="button" class="vtab" role="tab" id="ft4" aria-controls="fp4" aria-selected="false" tabindex="-1"><span class="tn">04</span><span data-hi="फूड लेबल, आसान भाषा में">Food labels, explained</span></button>
+        <button type="button" class="vtab" role="tab" id="ft5" aria-controls="fp5" aria-selected="false" tabindex="-1"><span class="tn">05</span><span data-hi="D2C UGC ऐड पैक">D2C UGC ad pack</span></button>
+        <button type="button" class="vtab" role="tab" id="ft6" aria-controls="fp6" aria-selected="false" tabindex="-1"><span class="tn">06</span><span data-hi="1 रील → कई प्लेटफॉर्म">One Reel → 5 platforms</span></button>
+      </div>
+      <div class="tpanels">
+        <div class="tp" role="tabpanel" id="fp1" aria-labelledby="ft1">
+          <span class="tp-num" data-hi="फॉर्मेट 01">FORMAT 01</span>
+          <h4 data-hi="3-सेकंड कॉमेडी हुक + सहज ब्रांड इंटीग्रेशन">3-second comedy hook + seamless brand integration</h4>
+          <p data-hi="पहले 3–4 सेकंड रिलेटेबल कॉमेडी से दर्शकों को रोकते हैं और आखिरी 8 सेकंड में बिना बोरिंग ऐड लगे साड़ी, स्किनकेयर या किचन प्रोडक्ट दिखाते हैं।">Opens with a relatable comedy hook in the first 3–4 seconds, then brings in a saree, skincare or kitchen product naturally in the final 8 seconds.</p>
+          <span class="tp-tag"><svg class="i"><use href="#i-check"/></svg><span data-hi="किसके लिए: साड़ी, स्किनकेयर और किचन ब्रांड्स">Best for saree, skincare &amp; kitchen brands</span></span>
+        </div>
+        <div class="tp" role="tabpanel" id="fp2" aria-labelledby="ft2" hidden>
+          <span class="tp-num" data-hi="फॉर्मेट 02">FORMAT 02</span>
+          <h4 data-hi="स्प्लिट-स्क्रीन लुकबुक + कमेंट से लिंक">Split-screen lookbook + comment-to-link</h4>
+          <p data-hi="4-एंगल साड़ी/ज्वेलरी शोकेस + 'लिंक के लिए SAREE कमेंट करें' — कमेंट्स और एफिलिएट लिंक क्लिक बढ़ाने के लिए (कमीशन प्लेटफॉर्म और ब्रांड के हिसाब से अलग होता है)।">A 4-angle saree or jewellery showcase with “Comment SAREE for the link” — built to drive comments and affiliate link clicks (commission rates vary by platform and brand).</p>
+          <span class="tp-tag"><svg class="i"><use href="#i-check"/></svg><span data-hi="Wishlink, Hypd और Amazon स्टोरफ्रंट के लिए तैयार">Wishlink, Hypd &amp; Amazon storefront ready</span></span>
+        </div>
+        <div class="tp" role="tabpanel" id="fp3" aria-labelledby="ft3" hidden>
+          <span class="tp-num" data-hi="फॉर्मेट 03">FORMAT 03</span>
+          <h4 data-hi="एक कोलैब रील, दो ऑडियंस">One Collab Reel, two audiences</h4>
+          <p data-hi="एक ही रील में फैमिली ऑडियंस (वंदना यादव) + Gen-Z कॉलेज ऑडियंस (स्मिता यादव) — कई अकाउंट्स पर एक साथ Collab पोस्ट।">Combines a family audience (Vandana Yadav) with a Gen-Z college audience (Smita Yadav) in one Collab Reel posted across accounts.</p>
+          <span class="tp-tag"><svg class="i"><use href="#i-check"/></svg><span data-hi="Collab पोस्ट + Meta ऐड व्हाइटलिस्टिंग">Collab post + Meta ad whitelisting</span></span>
+        </div>
+        <div class="tp" role="tabpanel" id="fp4" aria-labelledby="ft4" hidden>
+          <span class="tp-num" data-hi="फॉर्मेट 04">FORMAT 04</span>
+          <h4 data-hi="रोज़ के फूड लेबल, आसान हिंदी में">Everyday food labels, explained in simple Hindi</h4>
+          <p data-hi="वंदना यादव और आकर्ष यादव (B.Voc फूड टेक्नोलॉजी) रोज़मर्रा के ग्रोसरी और न्यूट्रिशन लेबल कैमरे पर पढ़कर समझाते हैं — फैक्ट-चेक के साथ।">Vandana Yadav and Akarsh Yadav (B.Voc Food Technology) read everyday grocery and nutrition labels on camera — fact-checked and easy to share with family audiences.</p>
+          <span class="tp-tag"><svg class="i"><use href="#i-check"/></svg><span data-hi="हेल्थ, डॉक्टर और ऑर्गेनिक D2C ब्रांड्स के लिए">For health, doctor &amp; organic D2C brands</span></span>
+        </div>
+        <div class="tp" role="tabpanel" id="fp5" aria-labelledby="ft5" hidden>
+          <span class="tp-num" data-hi="फॉर्मेट 05">FORMAT 05</span>
+          <h4 data-hi="5 दिन में 3 ऐड-रेडी वीडियो">3 ad-ready video variations in 5 days</h4>
+          <p data-hi="3 अलग-अलग हुक वाले 3 ऐड वीडियो — ताकि आप Facebook और Instagram पर टेस्ट कर सकें कि क्या सबसे अच्छा चलता है।">We script, shoot and edit three ad-ready 9:16 videos with three different hooks, so your brand can test what works on Facebook and Instagram.</p>
+          <span class="tp-tag"><svg class="i"><use href="#i-check"/></svg><span data-hi="3 UGC वीडियो ऐड — ₹19,999">Flat ₹19,999 for 3 UGC video ads</span></span>
+        </div>
+        <div class="tp" role="tabpanel" id="fp6" aria-labelledby="ft6" hidden>
+          <span class="tp-num" data-hi="फॉर्मेट 06">FORMAT 06</span>
+          <h4 data-hi="हर रील को कई प्लेटफॉर्म पर इस्तेमाल करें">Repurpose every Reel across platforms</h4>
+          <p data-hi="हर रील को Instagram, Facebook, YouTube Shorts और Amazon इन्फ्लुएंसर स्टोरफ्रंट के लिए तैयार करते हैं (हर प्लेटफॉर्म के नियमों के अनुसार)।">Each Reel is adapted for Instagram, Facebook, YouTube Shorts and an Amazon influencer storefront (subject to each platform's eligibility rules).</p>
+          <span class="tp-tag"><svg class="i"><use href="#i-check"/></svg><span data-hi="467+ पुरानी पोस्ट्स का भी इस्तेमाल">Puts a 467+ post back-catalogue to work</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pager" id="pgReels"><span class="pg-dots" aria-hidden="true"></span><button type="button" class="pg-next"><span class="pg-lbl"></span><svg class="i"><use href="#i-arrow-right"/></svg></button></div>
+</section>
+
+<!-- =========================== STUDIO WINDOW: SERVICES / HOW IT WORKS / PORTAL =========================== -->
+<section class="win win-pad rv" id="services">
+  <span class="anchor" id="process"></span><span class="anchor" id="client-portal"></span>
+  <header class="wh">
+    <div class="wh-t">
+      <span class="label" data-hi="स्टूडियो">Studio</span>
+      <h2 data-hi="आपके पेज की हर ज़रूरत, एक ही स्टूडियो में।">Everything your page needs, in one studio.</h2>
+    </div>
+    <div class="seg" role="tablist" aria-label="Studio" data-pager="pgStudio">
+      <span class="seg-thumb" aria-hidden="true"></span>
+      <button type="button" role="tab" id="tabServices" aria-controls="paneServices" aria-selected="true"><span data-hi="सर्विसेज़">Services</span></button>
+      <button type="button" role="tab" id="tabProcess" aria-controls="paneProcess" aria-selected="false" tabindex="-1"><span data-hi="प्रोसेस">How it works</span></button>
+      <button type="button" role="tab" id="tabPortal" aria-controls="panePortal" aria-selected="false" tabindex="-1"><span data-hi="क्लाइंट पोर्टल">Client portal</span></button>
+    </div>
+  </header>
+
+  <!-- Services: list + detail with a micro-UI -->
+  <div class="pane svc" id="paneServices" role="tabpanel" aria-labelledby="tabServices">
+    <div class="slist" role="tablist" aria-label="Services">
+      <button type="button" class="stab" role="tab" id="st1" aria-controls="sp1" aria-selected="true"><span class="sic"><svg class="i"><use href="#i-compass"/></svg></span><span data-hi="स्ट्रैटेजी">Strategy</span></button>
+      <button type="button" class="stab" role="tab" id="st2" aria-controls="sp2" aria-selected="false" tabindex="-1"><span class="sic"><svg class="i"><use href="#i-pen"/></svg></span><span data-hi="हुक्स और स्क्रिप्ट्स">Hooks &amp; scripts</span></button>
+      <button type="button" class="stab" role="tab" id="st3" aria-controls="sp3" aria-selected="false" tabindex="-1"><span class="sic"><svg class="i"><use href="#i-clapper"/></svg></span><span data-hi="रील एडिटिंग">Reel editing</span></button>
+      <button type="button" class="stab" role="tab" id="st4" aria-controls="sp4" aria-selected="false" tabindex="-1"><span class="sic"><svg class="i"><use href="#i-briefcase"/></svg></span><span data-hi="ब्रांड डील्स">Brand deals</span></button>
+      <button type="button" class="stab" role="tab" id="st5" aria-controls="sp5" aria-selected="false" tabindex="-1"><span class="sic"><svg class="i"><use href="#i-store"/></svg></span><span data-hi="लोकल ग्राहक">Local leads</span></button>
+      <button type="button" class="stab" role="tab" id="st6" aria-controls="sp6" aria-selected="false" tabindex="-1"><span class="sic"><svg class="i"><use href="#i-shield"/></svg></span><span data-hi="क्वालिटी कंट्रोल">Quality control</span></button>
+    </div>
+
+    <div class="plat sdetail" id="sp1" role="tabpanel" aria-labelledby="st1">
+      <div class="sd-copy">
+        <h3 data-hi="'क्या पोस्ट करें' स्ट्रैटेजी और कैलेंडर">“What to post” strategy &amp; calendar</h3>
+        <ul class="ticks">
+          <li data-hi="अकाउंट ऑडिट और कॉम्पिटिटर हुक रिसर्च">Account audit &amp; competitor hook research</li>
+          <li data-hi="साफ 'क्या पोस्ट करें, क्या नहीं' फिल्टर">A clear “what to post, what not to post” filter</li>
+          <li data-hi="30-दिन का स्ट्रक्चर्ड कंटेंट कैलेंडर">30-day structured content calendar</li>
+          <li data-hi="वंदना यादव की देखरेख में ब्रांड वॉइस">Personal brand voice, led by Vandana Yadav</li>
+        </ul>
+      </div>
+      <div class="mu">
+        <div class="mu-cap"><span data-hi="उदाहरण फिल्टर">Example filter</span><span data-hi="वंदना यादव">Vandana Yadav</span></div>
+        <div class="ps2">
+          <div class="ps yes"><span class="ps-h"><svg class="i"><use href="#i-check"/></svg><span data-hi="ज़्यादा पोस्ट करें">Post more</span></span><p data-hi="पहले 3 सेकंड में बोल्ड दावा या विज़ुअल प्रूफ">A bold claim or visual proof in the first 3 seconds</p><p data-hi="दोहराई जा सकने वाली 3-पार्ट सीरीज़">A repeatable 3-part signature series</p></div>
+          <div class="ps no"><span class="ps-h"><svg class="i"><use href="#i-x"/></svg><span data-hi="पोस्ट करना बंद करें">Stop posting</span></span><p data-hi="धीमे 'हेलो दोस्तों' वाले इंट्रो">Slow “hello friends, welcome back” intros</p><p data-hi="बिना हेडलाइन वाले वीडियो">Videos with no on-screen headline</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="plat sdetail" id="sp2" role="tabpanel" aria-labelledby="st2" hidden>
+      <div class="sd-copy">
+        <h3 data-hi="वायरल 3-सेकंड हुक्स और स्क्रिप्ट्स">Viral 3-second hooks &amp; scripts</h3>
+        <ul class="ticks">
+          <li data-hi="हिंदी, हिंग्लिश या अंग्रेज़ी में पूरी स्क्रिप्ट">Word-for-word scripts in Hindi, Hinglish or English</li>
+          <li data-hi="स्क्रॉल रोकने वाले 3-सेकंड हुक">Scroll-stopping 3-second hooks</li>
+          <li data-hi="डॉक्टर्स और हेल्थ के लिए फैक्ट-चेक्ड हुक">Fact-checked hooks for doctors &amp; health</li>
+          <li data-hi="15 मिनट की आसान फोन शूट गाइड">A simple 15-minute phone shoot guide</li>
+        </ul>
+      </div>
+      <div class="mu">
+        <div class="mu-cap"><span data-hi="उदाहरण स्क्रिप्ट · 30 सेकंड">Example script · 30 sec</span><span data-hi="हिंग्लिश">Hinglish</span></div>
+        <div class="sc-row"><span class="sc-t">0–3s</span><span class="mono-l sc-k hk" data-hi="हुक">HOOK</span><p data-hi="“1 लाख+ फॉलोअर्स के बाद यह गलती मत करना।”">“Don't make this mistake at 1 lakh+ followers.”</p></div>
+        <div class="sc-row"><span class="sc-t">3–22s</span><span class="mono-l sc-k" data-hi="वैल्यू">VALUE</span><p data-hi="तीन आसान सुधार, हर कट में एक।">Three quick fixes, one per cut.</p></div>
+        <div class="sc-row"><span class="sc-t">22–30s</span><span class="mono-l sc-k" data-hi="CTA">CTA</span><p data-hi="“PLAN कमेंट करें, मैं चेकलिस्ट भेज दूँगी।”">“Comment PLAN and I'll send you the checklist.”</p></div>
+      </div>
+    </div>
+
+    <div class="plat sdetail" id="sp3" role="tabpanel" aria-labelledby="st3" hidden>
+      <div class="sd-copy">
+        <h3 data-hi="हाई-रिटेंशन स्टूडियो रील एडिटिंग">High-retention studio Reel editing</h3>
+        <ul class="ticks">
+          <li data-hi="हिंदी-अंग्रेज़ी कैप्शन और B-roll ज़ूम कट">Bilingual captions &amp; B-roll punch-ins</li>
+          <li data-hi="साउंड डिज़ाइन, कलर ग्रेडिंग और पैटर्न इंटरप्ट">Sound design, colour grading &amp; pattern interrupts</li>
+          <li data-hi="कस्टम 9:16 रील कवर">Custom 9:16 Reel covers</li>
+          <li data-hi="फुटेज मिलने के 48 वर्किंग घंटों में पहला एडिट — आकर्ष यादव">First edit within 48 working hours of receiving your footage, by Akarsh Yadav</li>
+        </ul>
+      </div>
+      <div class="mu">
+        <div class="mu-cap"><span data-hi="रील #17 · 0:30">Reel #17 · 0:30</span><span data-hi="एडिट: आकर्ष यादव">Edit: Akarsh Yadav</span></div>
+        <div class="tl" aria-hidden="true">
+          <div class="tl-ruler"><span></span><div><span>0s</span><span>10s</span><span>20s</span><span>30s</span></div></div>
+          <div class="tl-row tl-hook"><span class="mono-l">HOOK</span><div class="tl-lane"><i style="left:1%;width:11%"></i></div></div>
+          <div class="tl-row"><span class="mono-l">V1</span><div class="tl-lane"><i style="left:1%;width:20%"></i><i style="left:22%;width:15%"></i><i style="left:38%;width:18%"></i><i style="left:57%;width:13%"></i><i style="left:71%;width:28%"></i></div></div>
+          <div class="tl-row tl-cap"><span class="mono-l">CAP</span><div class="tl-lane"><i style="left:1%;width:30%"></i><i style="left:33%;width:30%"></i><i style="left:65%;width:34%"></i></div></div>
+          <span class="tl-play"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="plat sdetail" id="sp4" role="tabpanel" aria-labelledby="st4" hidden>
+      <div class="sd-copy">
+        <h3 data-hi="ब्रांड डील्स और मोनेटाइजेशन">Brand deals &amp; monetisation</h3>
+        <ul class="ticks">
+          <li data-hi="स्पॉन्सर-रेडी बायो और हाइलाइट कवर">Sponsor-ready bio &amp; highlight covers</li>
+          <li data-hi="मीडिया किट और रेट कार्ड">Media kit &amp; rate card</li>
+          <li data-hi="आपकी तरफ से ब्रांड्स को पिच (डील की गारंटी नहीं)">Brand pitching on your behalf (no guaranteed deals)</li>
+          <li data-hi="स्मिता यादव (B.Com, गार्गी कॉलेज, DU) के नेतृत्व में">Led by Smita Yadav (B.Com, Gargi College, DU)</li>
+        </ul>
+      </div>
+      <div class="mu">
+        <div class="kit-head"><img src="../../assets/portfolio/dp_vandanay2012.jpg" alt="" width="100" height="100"><div><b><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012</b><span data-hi="मीडिया किट · अक्टूबर 2026">Media kit · Oct 2026</span></div></div>
+        <div class="kit-rows">
+          <div><span data-hi="फॉलोअर्स">Followers</span><b>50K+</b></div>
+          <div><span data-hi="100K+ व्यूज वाली रील्स">Reels with 100K+ views</span><b>4</b></div>
+          <div><span data-hi="फॉर्मेट">Formats</span><b>Reel · Collab · UGC</b></div>
+          <div><span data-hi="रेट कार्ड">Rate card</span><b data-hi="माँगने पर">On request</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="plat sdetail" id="sp5" role="tabpanel" aria-labelledby="st5" hidden>
+      <div class="sd-copy">
+        <h3 data-hi="लोकल बिज़नेस और क्लिनिक लीड्स">Local business &amp; clinic leads</h3>
+        <ul class="ticks">
+          <li data-hi="रील व्यूज को WhatsApp इंक्वायरी में बदलें">Turn Reel views into WhatsApp enquiries</li>
+          <li data-hi="कमेंट-टू-DM कीवर्ड फ़नल (जल्द आ रहा है)">Comment-to-DM keyword funnels (coming soon)</li>
+          <li data-hi="भरोसा बनाने वाली कस्टमर और शोकेस रील्स">Trust-building customer &amp; showcase Reels</li>
+          <li data-hi="आपको कोई टेक्निकल जानकारी नहीं चाहिए">No technical knowledge needed from you</li>
+        </ul>
+      </div>
+      <div class="mu">
+        <div class="mu-cap"><span data-hi="उदाहरण फ़नल">Example funnel</span><span data-hi="क्लिनिक">Clinic</span></div>
+        <div class="flow">
+          <div class="fl"><span class="flc"><svg class="i"><use href="#i-clapper"/></svg></span><div><b data-hi="रील">Reel</b><span data-hi="डॉक्टर एक आम गलतफहमी दूर करते हैं">A doctor busts one common myth</span></div></div>
+          <span class="fl-arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow-down"/></svg></span>
+          <div class="fl"><span class="flc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><div><b data-hi="WhatsApp पूछताछ">WhatsApp enquiry</b><span data-hi="“नमस्ते, आपकी रील देखी…”">“Hi, I saw your Reel…”</span></div></div>
+          <span class="fl-arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow-down"/></svg></span>
+          <div class="fl"><span class="flc"><svg class="i"><use href="#i-calendar"/></svg></span><div><b data-hi="अपॉइंटमेंट">Appointment</b><span data-hi="आपकी टीम बुक करती है">Booked by your front desk</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="plat sdetail" id="sp6" role="tabpanel" aria-labelledby="st6" hidden>
+      <div class="sd-copy">
+        <h3 data-hi="AI + इंसानी क्वालिटी कंट्रोल">AI + human quality control</h3>
+        <ul class="ticks">
+          <li data-hi="हर वीडियो 4 रिटेंशन नियमों पर जाँचा जाता है">Every video checked against 4 retention rules</li>
+          <li data-hi="पहले 3 सेकंड में हुक + सेफ-ज़ोन कैप्शन">Hook in the first 3 seconds + safe-zone captions</li>
+          <li data-hi="@vanindracreations के साथ कोलैब-टैग फ्लाईव्हील">Collab-tag flywheel with @vanindracreations</li>
+          <li data-hi="मंथली रिपोर्ट और स्ट्रैटेजी कॉल">Monthly report &amp; strategy review call</li>
+        </ul>
+      </div>
+      <div class="mu">
+        <div class="mu-cap"><span data-hi="डिलीवरी से पहले चेक">Pre-delivery check</span><span data-hi="रील #17">Reel #17</span></div>
+        <div class="qa-row"><span class="qc"><svg class="i"><use href="#i-check"/></svg></span><span data-hi="पहले 3 सेकंड में हुक">Hook inside the first 3 seconds</span></div>
+        <div class="qa-row"><span class="qc"><svg class="i"><use href="#i-check"/></svg></span><span data-hi="कैप्शन सेफ-ज़ोन में">Captions inside the safe zone</span></div>
+        <div class="qa-row"><span class="qc"><svg class="i"><use href="#i-check"/></svg></span><span data-hi="हर 2–3 सेकंड में कट या ज़ूम">A cut or zoom every 2–3 seconds</span></div>
+        <div class="qa-row"><span class="qc"><svg class="i"><use href="#i-check"/></svg></span><span data-hi="साफ 9:16 कवर और CTA">A clean 9:16 cover and call to action</span></div>
+        <div class="qa-foot"><span data-hi="4 में से 4 नियम पास">4 of 4 rules passed</span><span class="qa-bar" aria-hidden="true"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="pane" id="paneProcess" role="tabpanel" aria-labelledby="tabProcess" hidden>
+    <div class="phases">
+      <div class="plat phase">
+        <p class="ph-label"><i>1</i><span data-hi="प्लान">Plan</span></p>
+        <ol>
+          <li><span class="sn">01</span><div><h4 data-hi="7-दिन पेज ऑडिट">7-day page audit</h4><p data-hi="आपके पिछले 15 पोस्ट और व्यूज ड्रॉप-ऑफ की जांच">Your last 15 posts &amp; where viewers drop off</p></div></li>
+          <li><span class="sn">02</span><div><h4 data-hi="'क्या पोस्ट करें' फिल्टर">What-to-post filter</h4><p data-hi="क्या बढ़ाएं और क्या तुरंत बंद करें">What to double down on, what to stop</p></div></li>
+          <li><span class="sn">03</span><div><h4 data-hi="30-दिन कंटेंट कैलेंडर">30-day content calendar</h4><p data-hi="पूरे महीने का टॉपिक प्लान, फॉर्मेट के साथ">A monthly topic plan mapped to formats</p></div></li>
+        </ol>
+      </div>
+      <div class="plat phase">
+        <p class="ph-label"><i>2</i><span data-hi="क्रिएट">Create</span></p>
+        <ol>
+          <li><span class="sn">04</span><div><h4 data-hi="3-सेकंड स्क्रिप्टिंग">3-sec scripting</h4><p data-hi="हिंदी/अंग्रेज़ी में बोलने के लिए तैयार लाइनें">Ready-to-speak lines in English, Hinglish or Hindi</p></div></li>
+          <li><span class="sn">05</span><div><h4 data-hi="आसान फोन शूट">Easy phone shoot</h4><p data-hi="बिना महंगे कैमरे के 15 मिनट में रिकॉर्डिंग">A simple 15-minute phone recording guide</p></div></li>
+          <li><span class="sn">06</span><div><h4 data-hi="स्टूडियो रील एडिटिंग">Studio Reel editing</h4><p data-hi="कैप्शन, ज़ूम कट्स, B-roll और साउंड डिज़ाइन">Captions, punch-ins, B-roll &amp; sound design</p></div></li>
+        </ol>
+      </div>
+      <div class="plat phase">
+        <p class="ph-label"><i>3</i><span data-hi="ग्रो">Grow</span></p>
+        <ol>
+          <li><span class="sn">07</span><div><h4 data-hi="9:16 कवर और ग्रिड">9:16 cover &amp; grid</h4><p data-hi="प्रोफाइल को प्रीमियम ब्रांड जैसा दिखाना">Magazine-style covers &amp; bio clean-up</p></div></li>
+          <li><span class="sn">08</span><div><h4 data-hi="कोलैब और रीच फ्लाईव्हील">Collab &amp; reach flywheel</h4><p data-hi="फॉलोअर्स से आगे नई ऑडियंस तक पहुँच">Reach beyond your current followers</p></div></li>
+          <li class="goal"><span class="sn">09</span><div><h4 data-hi="ब्रांड डील्स और ग्राहक">Brand deals &amp; customers</h4><p data-hi="ध्यान को स्पॉन्सरशिप और इंक्वायरी में बदलना">Turn attention into sponsorships &amp; enquiries</p></div></li>
+        </ol>
+      </div>
+    </div>
+    <div class="parts">
+      <div class="part"><span class="sic"><svg class="i"><use href="#i-smartphone"/></svg></span><div><h4 data-hi="आपका काम">Your part</h4><p data-hi="हफ्ते में लगभग 30–60 मिनट: फोन से रॉ वीडियो रिकॉर्ड करके WhatsApp पर भेजें।">About 30–60 minutes a week: record raw clips on your phone and send them on WhatsApp.</p></div></div>
+      <div class="part"><span class="sic"><svg class="i"><use href="#i-sparkles"/></svg></span><div><h4 data-hi="हमारा काम">Our part</h4><p data-hi="ट्रेंड रिसर्च, स्क्रिप्ट, एडिटिंग, कैप्शन, 9:16 कवर और ब्रांड पोजिशनिंग।">Trend research, scripts, editing, captions, 9:16 covers and brand positioning.</p></div></div>
+      <div class="part"><span class="sic"><svg class="i"><use href="#i-shield"/></svg></span><div><h4 data-hi="क्वालिटी का पैमाना">Quality bar</h4><p data-hi="हर रील पर 3-सेकंड हुक और ब्रांड-सेफ क्वालिटी चेक।">Every Reel passes a 3-second hook &amp; sponsor-safety check before delivery.</p></div></div>
+    </div>
+  </div>
+
+  <!-- Client portal (preview) -->
+  <div class="pane portal" id="panePortal" role="tabpanel" aria-labelledby="tabPortal" hidden>
+    <div class="portal-copy">
+      <span class="tag"><svg class="i" style="width:14px;height:14px"><use href="#i-lock"/></svg><span data-hi="क्लाइंट पोर्टल (प्रीव्यू)">Client portal (preview)</span></span>
+      <h3 data-hi="हर स्क्रिप्ट, एडिट और रिपोर्ट — एक जगह।">Every script, edit and report — in one place.</h3>
+      <p class="body" data-hi="आज हर क्लाइंट को हमारी स्टूडियो डेस्क के साथ एक प्राइवेट WhatsApp ग्रुप और स्क्रिप्ट, ड्राफ्ट और रिपोर्ट के लिए एक शेयर्ड ट्रैकर मिलता है।">Today every client gets a private WhatsApp group with our studio desk and a shared tracker for scripts, drafts and reports.</p>
+      <a class="btn btn-primary" href="../../login.html"><svg class="i"><use href="#i-login"/></svg><span data-hi="क्लाइंट पोर्टल खोलें (प्रीव्यू)">Open client portal (preview)</span></a>
+    </div>
+    <div class="mu pt-app" aria-label="Sample client workspace">
+      <div class="pt-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span data-hi="VanIndra क्लाइंट वर्कस्पेस">VanIndra client workspace</span><span class="tag tag-gold pill-sample" data-hi="सैंपल डेटा">Sample data</span></div>
+      <div class="pt-body">
+        <div class="pt-prog"><div class="row"><span data-hi="मासिक रील प्रोग्रेस">Monthly Reel progress</span><b class="num">17/20</b></div><div class="track"><i style="width:85%"></i></div></div>
+        <div class="pt-kpis">
+          <div><small data-hi="स्क्रिप्ट्स">Scripts</small><b class="num">20/20</b><span data-hi="अप्रूव्ड">Approved</span></div>
+          <div><small data-hi="स्टूडियो रील्स">Studio Reels</small><b class="num">17/20</b><span data-hi="डिलीवर्ड">Delivered</span></div>
+          <div><small data-hi="हुक QA">Hook QA</small><b class="num">17/17</b><span data-hi="पास">Passed</span></div>
+        </div>
+        <div class="acts">
+          <div class="act"><span class="dot"></span><span data-hi="रील #17 · डिलीवर्ड">Reel #17 · Delivered</span><time data-hi="आज">Today</time></div>
+          <div class="act"><span class="dot"></span><span data-hi="स्क्रिप्ट #20 · अप्रूव्ड">Script #20 · Approved</span><time data-hi="कल">Yesterday</time></div>
+          <div class="act"><span class="dot g"></span><span data-hi="मंथली रिपोर्ट · तैयार">Monthly report · Ready</span><time data-hi="सोमवार">Mon</time></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pager" id="pgStudio"><span class="pg-dots" aria-hidden="true"></span><button type="button" class="pg-next"><span class="pg-lbl"></span><svg class="i"><use href="#i-arrow-right"/></svg></button></div>
+</section>
+
+<!-- =========================== AI GROWTH PLAN WINDOW =========================== -->
+<section class="win win-pad rv" id="smart-ai-portal">
+  <header class="wh">
+    <div class="wh-t">
+      <span class="label" data-hi="फ्री AI ग्रोथ प्लान">Free AI growth plan</span>
+      <h2 data-hi="बोलकर या लिखकर बताएं। फ्री स्टार्टर प्लान पाएं।">Speak or type your goal. Get a free starter plan.</h2>
+      <p class="lede" data-hi="लगभग 1 मिनट में AI से बना फ्री स्टार्टर प्लान और 3 तैयार रील स्क्रिप्ट पाएं — फिर उसे WhatsApp पर भेजें, हमारी टीम आपके साथ रिव्यू करेगी।">Get a free AI-drafted starter plan with 3 ready-to-shoot Reel scripts in about a minute — then send it to us on WhatsApp and our team reviews it with you.</p>
+    </div>
+  </header>
+  <form id="zeroTouchForm" class="ai-grid" onsubmit="runZeroTouchBackgroundAI(event)">
+    <div class="ai-goal">
+      <p class="fgroup-t" data-hi="आपका लक्ष्य">Your goal</p>
+      <div class="fgroup goal-group">
+        <div class="voice">
+          <button type="button" id="btnVoiceMic" class="mic-btn" onclick="startHindiVoiceInput()" aria-label="Tap to speak your goal"><svg class="i"><use href="#i-mic"/></svg></button>
+          <div>
+            <strong data-hi="बोलकर बताएं">Speak your goal</strong>
+            <span id="voiceStatusText" data-hi="माइक दबाएं और अपना काम, फॉलोअर्स और ज़रूरत बताएं — हिंदी या अंग्रेज़ी में।">Tap the mic and tell us your niche, followers and the help you need — English or Hindi.</span>
+            <span id="micLabel" data-hi="दबाकर बोलें">Tap to speak</span>
+          </div>
+        </div>
+        <div class="ftext">
+          <label for="ztVoiceNotes" data-hi="या लिखें — या एक लक्ष्य चुनें *">Or type it — or pick a goal *</label>
+          <div class="chips" role="group" aria-label="Quick goals">
+            <button type="button" class="chip" data-goal="High-Retention Studio Reel Editing &amp; 9:16 Covers" onclick="quickSelectGoal(this.dataset.goal, true)"><span data-hi="रील एडिटिंग">Reel editing</span></button>
+            <button type="button" class="chip" data-goal="30-Day Content Strategy &amp; Viral 3-Second Hooks" onclick="quickSelectGoal(this.dataset.goal, true)"><span data-hi="कंटेंट प्लान">Content plan</span></button>
+            <button type="button" class="chip" data-goal="Brand Deals, Sponsorships &amp; Media Kit" onclick="quickSelectGoal(this.dataset.goal, true)"><span data-hi="ब्रांड डील्स">Brand deals</span></button>
+            <button type="button" class="chip" data-goal="Doctor, Clinic, Coaching or Business Lead Generation" onclick="quickSelectGoal(this.dataset.goal, true)"><span data-hi="बिज़नेस ग्राहक">Clinic leads</span></button>
+          </div>
+          <textarea id="ztVoiceNotes" rows="3" placeholder="e.g. I have 100K+ followers but views have plateaued. I need high-retention Reel editing, hooks and brand-deal positioning…" data-placeholder-hi="उदा. मेरे 1 लाख+ फॉलोअर्स हैं पर व्यूज कम आते हैं, मुझे रील एडिटिंग और ब्रांड डील्स चाहिए..." required></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-side">
+      <p class="fgroup-t" data-hi="आपके बारे में">About you</p>
+      <div class="fgroup">
+        <div class="frow"><label for="ztName" data-hi="आपका नाम *">Your full name *</label><input type="text" id="ztName" autocomplete="name" placeholder="e.g. Priya Sharma" data-placeholder-hi="उदा. प्रिया शर्मा" required></div>
+        <div class="frow"><label for="ztHandle" data-hi="इंस्टाग्राम आईडी या ब्रांड *">Instagram or brand *</label><input type="text" id="ztHandle" placeholder="e.g. @my_instagram_page" data-placeholder-hi="उदा. @my_instagram_page" required></div>
+        <div class="frow"><label for="ztPhone" data-hi="आपका WhatsApp नंबर *">WhatsApp number *</label><input type="tel" id="ztPhone" autocomplete="tel" placeholder="e.g. +91 98XXXXXXXX" data-placeholder-hi="उदा. +91 98XXXXXXXX" required></div>
+      </div>
+      <p class="fgroup-t" data-hi="आपका पेज">Your page</p>
+      <div class="fgroup">
+        <div class="frow"><label for="ztCategory" data-hi="काम / कैटेगरी">Niche</label>
+          <select id="ztCategory" required>
+              <option value="Lifestyle, Fashion, Beauty &amp; Vlogging" data-hi="लाइफस्टाइल और ब्यूटी">Lifestyle &amp; beauty</option>
+              <option value="Fitness, Food, Nutrition, Doctor &amp; Health" data-hi="फिटनेस, फूड और हेल्थ">Fitness, food &amp; health</option>
+              <option value="Local Business, Shop, Showroom or Service" data-hi="लोकल बिज़नेस या क्लिनिक">Local business or clinic</option>
+              <option value="Education, Teacher, Coaching &amp; Motivation" data-hi="एजुकेशन और कोचिंग">Education &amp; coaching</option>
+              <option value="Regional Creator, Comedy, Music &amp; Entertainment" data-hi="रीजनल और कॉमेडी">Regional &amp; comedy</option>
+            </select>
+        </div>
+        <div class="frow"><label for="ztLanguage" data-hi="वीडियो की भाषा">Language</label>
+          <select id="ztLanguage" required>
+              <option value="English" data-hi="अंग्रेज़ी">English</option>
+              <option value="Hindi / Hinglish" data-hi="हिंदी / हिंग्लिश">Hindi / Hinglish</option>
+              <option value="Bhojpuri / Regional Hindi" data-hi="क्षेत्रीय बोली / द्विभाषी">Regional / bilingual</option>
+            </select>
+        </div>
+        <div class="frow"><label for="ztPackage" data-hi="शुरुआत">Start with</label>
+          <select id="ztPackage" required>
+              <option value="Free 7-Day Content Plan + 15s Sample Reel Edit" data-hi="फ्री प्लान + सैंपल एडिट">Free plan + sample edit</option>
+              <option value="3-Reel Trial Pack (₹2,999 One-Time)" data-hi="ट्रायल — ₹2,999 एक बार">Trial — ₹2,999 one-time</option>
+              <option value="VanIndra Starter - 12 Reels/Month (₹14,999)" data-hi="स्टार्टर — ₹14,999/महीना">Starter — ₹14,999/month</option>
+              <option value="VanIndra Pro Growth - 20 Reels/Month (₹24,999)" data-hi="प्रो — ₹24,999/महीना">Pro — ₹24,999/month</option>
+              <option value="VanIndra 360 VIP - By application (₹39,999)" data-hi="VIP — आवेदन से">VIP — by application</option>
+            </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-submit">
+      <label class="consent" for="ztConsent"><input type="checkbox" id="ztConsent" required><span data-hi="मैं सहमत हूँ कि मेरे जवाब सिर्फ यह प्लान लिखने के लिए Pollinations (एक फ्री थर्ड-पार्टी AI सर्विस) को जाएं। जब तक मैं WhatsApp पर भेजें नहीं दबाता/दबाती, VanIndra तक कुछ नहीं पहुँचता। कोई संवेदनशील जानकारी न लिखें।">I agree my answers go to Pollinations, a free third-party AI service, only to write this plan. Nothing reaches VanIndra unless I tap Send on WhatsApp. Please don't share sensitive details.</span></label>
+      <div class="f-actions">
+        <span id="aiLoadingIndicator" aria-live="polite"><span class="spin" aria-hidden="true"></span><span data-hi="प्लान बन रहा है — 1 मिनट तक लग सकता है…">Drafting — this can take up to a minute…</span></span>
+        <button type="submit" id="btnRunAI" class="btn btn-primary btn-lg"><svg class="i"><use href="#i-sparkles"/></svg><span data-hi="मेरा फ्री प्लान बनाएं">Generate my free plan</span></button>
+      </div>
+    </div>
+  </form>
+
+  <div id="ztOutputPanel" class="plat ai-out" aria-live="polite">
+    <div class="ai-out-top">
+      <h3 data-hi="आपका स्टार्टर प्लान और 3 रील स्क्रिप्ट तैयार हैं">Your starter plan &amp; 3 Reel scripts are ready</h3>
+      <button type="button" class="btn btn-glass btn-sm" onclick="speakGeneratedPlan()"><svg class="i"><use href="#i-volume"/></svg><span data-hi="हिंदी में सुनें">Listen</span></button>
+    </div>
+    <p data-hi="इसे हमारी <strong>ऑफिशियल WhatsApp डेस्क (स्मिता यादव · +91 81128 59437)</strong> पर भेजें — हम आपके साथ रिव्यू करेंगे और आपका 15-सेकंड फ्री सैंपल एडिट शुरू करेंगे।">Send it to our <strong>official WhatsApp desk (Smita Yadav · +91 81128 59437)</strong> so we can review it with you and start your free 15-second sample edit.</p>
+    <span class="tag ai-src" id="ztOutputSource"></span>
+    <pre id="ztOutputText" class="ai-pre"></pre>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" onclick="sendZeroTouchWhatsApp('918112859437')"><span class="wa-disc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><span data-hi="WhatsApp डेस्क पर भेजें">Send to WhatsApp desk</span></button>
+      <button type="button" class="btn btn-glass" onclick="copyTextById('ztOutputText')"><svg class="i"><use href="#i-copy"/></svg><span data-hi="कॉपी करें">Copy plan</span></button>
+      <button type="button" class="btn btn-glass" onclick="downloadZeroTouchFile()"><svg class="i"><use href="#i-download"/></svg><span data-hi="फाइल डाउनलोड करें (.md)">Download (.md)</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== PRICING WINDOW =========================== -->
+<section class="win win-pad rv" id="pricing">
+  <span class="anchor" id="packages"></span>
+  <header class="wh">
+    <div class="wh-t">
+      <span class="label" data-hi="प्राइसिंग">Pricing</span>
+      <h2 data-hi="3 रील्स के ट्रायल से शुरू करें। पसंद आए तो आगे बढ़ें।">Start with a 3-Reel trial. Scale when it works.</h2>
+      <p class="lede" data-hi="कई क्रिएटर्स के लिए महीने की एक पेड कोलैब ही खर्च निकाल देती है — लेकिन नतीजे अलग-अलग होते हैं और हम डील्स की गारंटी नहीं देते।">For many creators, one paid collaboration a month can offset the cost — but results vary and we don't guarantee deals.</p>
+    </div>
+  </header>
+
+  <div class="seg plan-pick" role="group" aria-label="Choose a plan to view">
+    <span class="seg-thumb" aria-hidden="true"></span>
+    <button type="button" data-plan="trial" aria-pressed="false"><span data-hi="ट्रायल">Trial</span></button>
+    <button type="button" data-plan="starter" aria-pressed="false"><span data-hi="स्टार्टर">Starter</span></button>
+    <button type="button" data-plan="pro" class="on" aria-pressed="true"><span data-hi="प्रो">Pro</span></button>
+    <button type="button" data-plan="vip" aria-pressed="false"><span>VIP</span></button>
+  </div>
+
+  <div class="plans" id="plansGrid" data-show="pro">
+    <article class="plat plan" data-plan="trial">
+      <span class="plan-kicker" data-hi="टेस्ट ड्राइव">Test drive</span>
+      <h3>3-Reel Trial Pack</h3>
+      <div class="price"><b>₹2,999</b><small data-hi="/ एक बार">/ one-time</small></div>
+      <p data-hi="मंथली प्लान से पहले 3 रील्स पर हमारी स्क्रिप्टिंग, हुक और एडिटिंग परखें।">Try our scripting, hooks and studio editing on 3 Reels before committing monthly.</p>
+      <ul class="ticks">
+        <li data-hi="7-दिन का 'क्या पोस्ट करें' प्लान">7-day “what to post” plan</li>
+        <li data-hi="3 स्क्रिप्ट्स और 3-सेकंड हुक्स">3 scripts &amp; 3-sec hooks</li>
+        <li data-hi="3 स्टूडियो-एडिटेड रील्स">3 studio-edited Reels</li>
+        <li data-hi="कैप्शन और 9:16 कवर">Bilingual captions &amp; 9:16 covers</li>
+      </ul>
+      <a class="btn btn-glass btn-block" href="#smart-ai-portal" onclick="selectPackageInForm('3-Reel Trial Pack (₹2,999 One-Time)')"><span data-hi="ट्रायल शुरू करें">Start 3-Reel trial</span></a>
+    </article>
+    <article class="plat plan" data-plan="starter">
+      <span class="plan-kicker" data-hi="हर हफ्ते 3 रील्स">3 Reels / week</span>
+      <h3>VanIndra Starter</h3>
+      <div class="price"><b>₹14,999</b><small data-hi="/ महीना">/ month</small></div>
+      <p data-hi="लगातार हर हफ्ते रील्स चाहने वाले क्रिएटर्स और प्रोफेशनल्स के लिए।">For growing creators and professionals who want consistent weekly Reels.</p>
+      <ul class="ticks">
+        <li data-hi="पूरे महीने का कंटेंट कैलेंडर">Full 30-day content calendar</li>
+        <li data-hi="12 रिसर्च-आधारित स्क्रिप्ट्स">12 research-backed scripts</li>
+        <li data-hi="12 हाई-रिटेंशन एडिटेड रील्स">12 high-retention edited Reels</li>
+        <li data-hi="कैप्शन, हैशटैग और 9:16 कवर">Captions, hashtags &amp; 9:16 covers</li>
+      </ul>
+      <a class="btn btn-glass btn-block" href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Starter - 12 Reels/Month (₹14,999)')"><span data-hi="Starter चुनें">Choose Starter</span></a>
+    </article>
+    <article class="plat plan plan-pro" data-plan="pro">
+      <span class="plan-kicker" data-hi="सुझाया गया">Recommended</span>
+      <h3>VanIndra Pro Growth</h3>
+      <div class="price"><b>₹24,999</b><small data-hi="/ महीना">/ month</small></div>
+      <p data-hi="फाउंडर वंदना यादव की देखरेख में हर महीने 20 स्टूडियो रील्स (हर हफ्ते 5) और ब्रांड पोजिशनिंग।">20 studio Reels a month (5 a week) plus brand positioning, supervised by founder Vandana Yadav.</p>
+      <ul class="ticks">
+        <li data-hi="30-दिन कंटेंट और सीरीज़ कैलेंडर">30-day content &amp; series calendar</li>
+        <li data-hi="20 स्क्रिप्ट्स + आसान शूट गाइड">20 scripts + easy phone shoot guide</li>
+        <li data-hi="20 स्टूडियो-एडिटेड रील्स + ग्रिड कवर">20 studio-edited Reels + grid covers</li>
+        <li data-hi="मीडिया किट, रेट कार्ड और ब्रांड पिचिंग (डील की गारंटी नहीं)">Media kit, rate card &amp; brand pitching (no guaranteed deals)</li>
+      </ul>
+      <a class="btn btn-primary btn-block" href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra Pro Growth - 20 Reels/Month (₹24,999)')"><span data-hi="Pro Growth चुनें">Choose Pro Growth</span><svg class="i"><use href="#i-arrow-right"/></svg></a>
+    </article>
+    <article class="plat plan plan-vip" data-plan="vip">
+      <span class="plan-kicker" data-hi="आवेदन से">By application</span>
+      <h3>VanIndra 360° VIP</h3>
+      <div class="price"><b>₹39,999</b><small data-hi="/ महीना">/ month</small></div>
+      <p data-hi="रोज़ाना रील्स, और पोस्टिंग व शेड्यूलिंग हमारी तरफ से — आपको हफ्ते में लगभग 1 घंटा रिकॉर्ड करना है।">Daily Reels, with publishing and scheduling handled for you — you record about an hour a week.</p>
+      <ul class="ticks">
+        <li data-hi="30 डेली रील्स (स्क्रिप्ट + एडिटिंग)">30 daily Reels (scripting + editing)</li>
+        <li data-hi="पोस्टिंग और शेड्यूलिंग हमारी तरफ से">Publishing &amp; scheduling handled for you</li>
+        <li data-hi="कमेंट-टू-DM फ़नल (जल्द आ रहा है)">Comment-to-DM funnel (coming soon)</li>
+        <li data-hi="ब्रांड स्पॉन्सरशिप सपोर्ट">Dedicated brand sponsorship support</li>
+      </ul>
+      <a class="btn btn-glass btn-block" href="#smart-ai-portal" onclick="selectPackageInForm('VanIndra 360 VIP - By application (₹39,999)')"><span data-hi="VIP के लिए आवेदन करें">Apply for VIP</span></a>
+    </article>
+  </div>
+  <p class="price-note" data-hi="हर प्लान में: फुटेज मिलने के 48 वर्किंग घंटों में पहला एडिट। कीमतों में GST शामिल नहीं है (यदि लागू हो)।">First edit within 48 working hours of receiving your footage, on every plan. Prices exclude GST, if applicable.</p>
+
+  <div class="plat roi">
+    <div>
+      <span class="tag" data-hi="रीच और समय का अनुमान">Reach &amp; time estimator</span>
+      <h3 data-hi="अपनी मासिक रीच और एडिटिंग में बचा समय देखें।">Estimate your monthly reach and the editing time you hand over.</h3>
+      <div class="rng">
+        <div class="rng-row"><label for="rngFollowers" data-hi="आपके अभी कितने फॉलोअर्स हैं?">Your current followers</label><b id="lblFollowers">1,50,000 followers</b></div>
+        <input type="range" id="rngFollowers" min="50000" max="1000000" step="25000" value="150000" oninput="updateROICalc()">
+      </div>
+      <div class="rng">
+        <div class="rng-row"><label for="rngReels" data-hi="महीने में कितनी रील्स?">Studio Reels per month</label><b id="lblReels">20 Reels / month</b></div>
+        <input type="range" id="rngReels" min="8" max="30" step="2" value="20" oninput="updateROICalc()">
+      </div>
+    </div>
+    <div class="roi-out">
+      <div class="ro"><small data-hi="अनुमानित मासिक रीच">Projected monthly reach</small><b id="outViews">1.4 Lakh+</b><span data-hi="3-सेकंड हुक के साथ">With 3-second hooks</span></div>
+      <div class="ro"><small data-hi="एडिटिंग का समय जो आप सौंपते हैं">Editing time you hand over</small><b id="outHours">70 hrs/mo</b><span data-hi="हमारी टीम करेगी">Handled by our team</span></div>
+      <p class="disclaimer"><svg class="i"><use href="#i-info"/></svg><span data-hi="सिर्फ मोटा अनुमान, रीच या कमाई का वादा नहीं। असली नतीजे आपके niche, ऑडियंस और नियमितता पर निर्भर करते हैं।">Rough illustration, not a promise of reach or income. Real results depend on your niche, audience and consistency.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== FAQ WINDOW =========================== -->
+<section class="win win-pad rv" id="faq">
+  <div class="faq-grid">
+    <div class="faq-intro">
+      <span class="label" data-hi="सवाल-जवाब">FAQ</span>
+      <h2 data-hi="पहले पूछे जाने वाले सवाल।">Questions creators ask first.</h2>
+      <p class="faq-ask" data-hi="कोई और सवाल? सीधे हमारी ऑफिशियल WhatsApp डेस्क पर पूछें।">Something else? Ask our official WhatsApp desk directly.</p>
+      <button type="button" class="btn btn-glass" onclick="openElegantWhatsAppDirect('FAQ question')"><svg class="app"><use href="#icon-whatsapp"/></svg><span>+91 81128 59437</span></button>
+    </div>
+    <div class="plat faq-list">
+      <details open>
+        <summary data-hi="मुझे वीडियो एडिटिंग या स्क्रिप्ट लिखना बिल्कुल नहीं आता — क्या मैं जुड़ सकता हूँ?">I don't know editing or scriptwriting at all — can I still work with you?</summary>
+        <p data-hi="बिल्कुल! आपको हफ्ते में लगभग 30–60 मिनट अपने मोबाइल से साधारण वीडियो रिकॉर्ड करके WhatsApp पर भेजने हैं। स्क्रिप्ट, 3-सेकंड हुक, एडिटिंग, कैप्शन, 9:16 कवर और ब्रांड पोजिशनिंग का काम हमारी टीम करती है।">Absolutely. You record raw talking videos on your phone — about 30–60 minutes a week — and send them on WhatsApp. We handle the scripts, 3-second hooks, editing, bilingual captions, 9:16 covers and brand positioning.</p>
+      </details>
+      <details>
+        <summary data-hi="पैकेज लेने से पहले क्या मैं अपने वीडियो का सैंपल एडिट देख सकता हूँ?">Can I see a sample edit of my own video before choosing a plan?</summary>
+        <p data-hi="हाँ। हमारी ऑफिशियल WhatsApp डेस्क (स्मिता यादव · +91 81128 59437) पर संदेश भेजें। हम आपके पेज का फ्री 7-दिन ऑडिट और आपके किसी एक वीडियो का 15-सेकंड Before/After सैंपल एडिट दिखाएंगे।">Yes. Message our official WhatsApp desk (Smita Yadav · +91 81128 59437). We'll share a free 7-day content audit and a 15-second before/after sample edit of one of your existing videos before you commit.</p>
+      </details>
+      <details>
+        <summary data-hi="क्या आप फॉलोअर्स बेचते हैं, या व्यूज और डील्स की गारंटी देते हैं?">Do you sell followers, or guarantee views and deals?</summary>
+        <p data-hi="दोनों का जवाब नहीं। हम कभी नकली फॉलोअर्स, बॉट्स या एंगेजमेंट नहीं खरीदते — उससे रीच खराब होती है — और कोई भी ईमानदार एजेंसी व्यूज या डील्स की गारंटी नहीं दे सकती। हम डिलीवरेबल्स और डेडलाइन पर पक्के रहते हैं: हर रील हमारे 4 रिटेंशन नियमों पर जाँची जाती है और समय पर मिलती है।">No to both. We never buy followers, bots or engagement — they damage reach — and no honest agency can guarantee views or deals. We commit to deliverables and deadlines: every Reel is checked against our 4 retention rules and arrives on time.</p>
+      </details>
+      <details>
+        <summary data-hi="हम खुद ChatGPT या ₹500 वाले एडिटर से काम क्यों न करा लें?">Why not just use ChatGPT or a ₹500 freelance editor?</summary>
+        <p data-hi="सस्ते फ्रीलांस एडिटर को अक्सर पता नहीं होता कि 1 लाख+ ऑडियंस पर कौन सा हुक चलेगा या ब्रांड्स किस तरह की रील्स चाहते हैं। और खुद AI चलाने में भी आपके रोज़ के घंटे जाते हैं।">Cheap freelance editors rarely know which 3-second hook holds a 1 lakh+ audience, or what brands look for before sponsoring a creator. And prompting AI tools yourself still eats hours of your day.</p>
+      </details>
+      <details>
+        <summary data-hi="मुझे कैसे पता चलेगा कि मेरे अकाउंट पर क्या काम हो रहा है?">How will I track my scripts, edited Reels and monthly growth?</summary>
+        <p data-hi="जुड़ते ही आपको एक प्राइवेट WhatsApp ग्रुप मिलता है जिसमें फाउंडर वंदना यादव, स्मिता यादव और आकर्ष यादव रहते हैं, साथ ही एक शेयर्ड ट्रैकर जिसमें हर स्क्रिप्ट, रील ड्राफ्ट और मंथली रिपोर्ट दिखती है। हमारा क्लाइंट पोर्टल अभी प्रीव्यू में है।">You get a private WhatsApp group with founder Vandana Yadav, Smita Yadav and Akarsh Yadav, plus a shared tracker listing every script, Reel draft and monthly report. Our client portal is in preview.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<!-- =========================== FINAL WINDOW + FOOTER =========================== -->
+<footer id="contact">
+  <div class="wrap" style="padding-top:clamp(40px,5vw,72px)">
+    <div class="win final-win rv">
+    <section class="final" aria-labelledby="finalTitle">
+      <span class="label" data-hi="पोर्टफोलियो #03">Portfolio #03</span>
+      <h2 id="finalTitle" data-hi="पोर्टफोलियो #03 — आपका हो सकता है।">Your profile could be portfolio #03.</h2>
+      <p class="lede" data-hi="शुरुआत करें फ्री 7-दिन ऑडिट और आपके अपने वीडियो के 15-सेकंड सैंपल एडिट से।">Start with a free 7-day audit and a 15-second sample edit of your own video.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg js-wa" href="https://wa.me/918112859437?text=Hello%20Smita%20%26%20VanIndra%20Creations%20Studio%2C%0A%0AI%20saw%20your%20portfolio%20(%40vandanay2012%20%26%20%40smitayadav_0901)%20and%20would%20like%20to%20talk%20about%20growing%20my%20Instagram.%0A%0A%E2%80%A2%20Name%20%2F%20brand%3A%20%0A%E2%80%A2%20Instagram%3A%20%40%0A%E2%80%A2%20Followers%3A%20%0A%E2%80%A2%20Looking%20for%3A%20Content%20strategy%2C%20high-retention%20Reels%20%26%20brand%20deals" target="_blank" rel="noopener noreferrer"><span class="wa-disc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><span data-hi="WhatsApp पर बात करें">Chat on WhatsApp</span></a>
+        <a class="btn btn-glass btn-lg" href="#smart-ai-portal"><svg class="i"><use href="#i-sparkles"/></svg><span data-hi="मेरा फ्री AI प्लान बनाएं">Get my free AI plan</span></a>
+      </div>
+      <div class="hero-links"><button type="button" class="btn-text" onclick="openComposer()"><svg class="i"><use href="#i-pen"/></svg><span data-hi="मैसेज बदलें">Edit message</span></button></div>
+    </section>
+
+    <div class="site-foot">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="wm" href="#top" aria-label="VanIndra Creations — back to top"><span class="wm-name">VanIndra</span><span class="wm-sub">CREATIONS</span></a>
+          <p data-hi="फाउंडर वंदना यादव (@vandanay2012) द्वारा स्थापित। 1 लाख+ क्रिएटर्स और बिज़नेस के लिए AI + इंसानी कंटेंट स्टूडियो: स्ट्रैटेजी, स्क्रिप्ट और हाई-रिटेंशन रील एडिटिंग।">Founded by Vandana Yadav (@vandanay2012). An AI + human content studio for 1 lakh+ creators and businesses: strategy, scripts and high-retention Reel editing.</p>
+        </div>
+        <div>
+          <h4 data-hi="स्टूडियो">Studio</h4>
+          <ul>
+            <li><a href="#portfolio" data-hi="पोर्टफोलियो">Portfolio</a></li>
+            <li><a href="#reels" data-hi="रील्स">Reels</a></li>
+            <li><a href="#services" data-hi="सर्विसेज़">Services</a></li>
+            <li><a href="#pricing" data-hi="प्राइसिंग">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-hi="टूल्स">Tools</h4>
+          <ul>
+            <li><a href="../../login.html" data-hi="क्लाइंट लॉगिन (प्रीव्यू)">Client login (preview)</a></li>
+            <li><a href="../../thumbnail-studio.html" data-hi="9:16 कवर स्टूडियो">9:16 cover studio</a></li>
+            <li><a href="#smart-ai-portal" data-hi="फ्री AI प्लान">Free AI plan</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-hi="संपर्क">Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/918112859437" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-whatsapp"/></svg>+91 81128 59437</a></li>
+            <li><a href="mailto:smitayadav497@gmail.com"><svg class="app"><use href="#icon-gmail"/></svg>smitayadav497@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/vandanay2012/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@vandanay2012</a></li>
+            <li><a href="https://www.instagram.com/smitayadav_0901/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@smitayadav_0901</a></li>
+            <li><a href="https://www.instagram.com/yadavakarsh_07/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg>@yadavakarsh_07</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 VanIndra Creations · vanindracreations.in</span>
+        <span data-hi="भारत के 1 लाख+ क्रिएटर्स और ब्रांड्स के लिए।">Built for 1 lakh+ creators &amp; brands across India.</span>
+      </div>
+    </div>
+    </div>
+    <span class="grab" aria-hidden="true"></span>
+  </div>
+</footer>
+
+<!-- Mobile quick-action bar (appears once the hero buttons scroll away) -->
+<div class="mbar" aria-label="Quick actions">
+  <a class="m-login" href="../../login.html" aria-label="Client login (preview)"><svg class="i"><use href="#i-login"/></svg><span data-hi="लॉगिन">Login</span></a>
+  <a class="m-wa js-wa" href="https://wa.me/918112859437?text=Hello%20Smita%20%26%20VanIndra%20Creations%20Studio%2C%0A%0AI%20saw%20your%20portfolio%20(%40vandanay2012%20%26%20%40smitayadav_0901)%20and%20would%20like%20to%20talk%20about%20growing%20my%20Instagram.%0A%0A%E2%80%A2%20Name%20%2F%20brand%3A%20%0A%E2%80%A2%20Instagram%3A%20%40%0A%E2%80%A2%20Followers%3A%20%0A%E2%80%A2%20Looking%20for%3A%20Content%20strategy%2C%20high-retention%20Reels%20%26%20brand%20deals" target="_blank" rel="noopener noreferrer"><span class="wa-disc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><span>WhatsApp</span></a>
+  <a class="m-ai" href="#smart-ai-portal"><svg class="i"><use href="#i-sparkles"/></svg><span data-hi="फ्री AI प्लान">Free AI plan</span></a>
+</div>
+
+<!-- WhatsApp composer sheet (editable message → wa.me) -->
+<div id="waSheet" class="overlay" role="dialog" aria-modal="true" aria-labelledby="waSheetTitle" aria-hidden="true">
+  <div class="overlay-bd" onclick="closeComposer()"></div>
+  <div class="win sheet-card" id="wa-concierge-box" tabindex="-1">
+    <div class="cc-head">
+      <span class="cc-logo"><svg class="app"><use href="#icon-whatsapp"/></svg></span>
+      <div>
+        <strong id="waSheetTitle" data-hi="स्टूडियो को मैसेज करें">Message the studio</strong>
+        <small><span data-hi="स्मिता यादव · ऑफिशियल WhatsApp डेस्क">Smita Yadav · Official WhatsApp desk</span> · +91 81128 59437</small>
+      </div>
+      <button type="button" class="sheet-x" id="waSheetClose" onclick="closeComposer()" aria-label="Close"><svg class="i"><use href="#i-x"/></svg></button>
+    </div>
+    <p class="cc-label" data-hi="आपको क्या चाहिए? टैप करें — मैसेज अपने आप भर जाएगा।">What do you need? Tap to fill your message.</p>
+    <div class="chips" role="group" aria-label="Choose a goal">
+      <button type="button" class="chip" data-goal="High-Retention Studio Reel Editing &amp; 9:16 Covers" onclick="quickSelectGoal(this.dataset.goal)"><span data-hi="रील एडिटिंग">Reel editing</span></button>
+      <button type="button" class="chip" data-goal="30-Day Content Strategy &amp; Viral 3-Second Hooks" onclick="quickSelectGoal(this.dataset.goal)"><span data-hi="कंटेंट प्लान">Content plan</span></button>
+      <button type="button" class="chip" data-goal="Brand Deals, Sponsorships &amp; Media Kit" onclick="quickSelectGoal(this.dataset.goal)"><span data-hi="ब्रांड डील्स">Brand deals</span></button>
+      <button type="button" class="chip" data-goal="Doctor, Clinic, Coaching or Business Lead Generation" onclick="quickSelectGoal(this.dataset.goal)"><span data-hi="बिज़नेस ग्राहक">Clinic leads</span></button>
+    </div>
+    <label class="sr-only" for="elegantWaMessage">Your WhatsApp message (editable)</label>
+    <textarea id="elegantWaMessage" rows="7"></textarea>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="sendCustomHeroWhatsApp()">
+      <span class="wa-disc"><svg class="app"><use href="#icon-whatsapp"/></svg></span><span data-hi="WhatsApp पर भेजें">Send on WhatsApp</span><svg class="i"><use href="#i-arrow-right"/></svg>
+    </button>
+    <p class="cc-note" data-hi="आपका मैसेज WhatsApp में खुलेगा — भेजने से पहले वहाँ भी बदल सकते हैं।">Opens WhatsApp with your message — you can still change it there.</p>
+  </div>
+</div>
+
+<!-- Reel player -->
+<div id="liveReelPlayerDrawer" class="overlay player" role="dialog" aria-modal="true" aria-labelledby="liveReelPlayerTitle" aria-hidden="true">
+  <div class="overlay-bd" onclick="closeVandanaViralReel()"></div>
+  <div class="player-card">
+    <div class="player-frame"><iframe id="liveReelIframe" src="about:blank" title="VanIndra Creations Instagram Reel player" allow="encrypted-media; autoplay; clipboard-write" loading="lazy"></iframe></div>
+    <div class="player-info">
+      <span class="label" data-hi="अभी चल रहा है">Now playing</span>
+      <h3 id="liveReelPlayerTitle">@vandanay2012 Reel</h3>
+      <p id="liveReelPlayerHookNote">Notice how the on-screen hook appears in the very first frame, so viewers stop scrolling immediately.</p>
+      <a id="liveReelDirectLink" class="btn btn-onmedia" href="https://www.instagram.com/vandanay2012/reels/" target="_blank" rel="noopener noreferrer"><svg class="app"><use href="#icon-instagram"/></svg><span data-hi="Instagram पर खोलें">Open on Instagram</span></a>
+    </div>
+    <button type="button" class="player-x" id="playerClose" onclick="closeVandanaViralReel()" aria-label="Close player"><svg class="i"><use href="#i-x"/></svg></button>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   0. CORE: OFFICIAL WHATSAPP (+91 81128 59437 — Smita Yadav)
+   ========================================================= */
+const OFFICIAL_WHATSAPP_NUMBER = "918112859437"; // Smita Yadav ONLY
+const BRAND_SPONSOR_MESSAGE = "Hello Smita Yadav & VanIndra Creations Team,\n\nWe are a brand interested in a collaboration with your in-house creators (@vandanay2012 / @smitayadav_0901).\n\n• Brand name: \n• Product / campaign: \n• Timeline: \n• Budget range: \n\nPlease share your rate card and available formats.";
+window.currentLangMode = 'en';
+window.currentPhoneMode = 'after';
+const REDUCED_MOTION = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* Editable WhatsApp message: English by default, natural Hinglish in Hindi mode (until the visitor edits it). */
+let waGoal = "Content strategy, high-retention Reels & brand deals";
+let waEdited = false;
+const WA_GOAL_LINE = /^• (Looking for|Mujhe chahiye):.*$/m;
+function waTemplate(lang) {
+  if (lang === 'hi') {
+    return "Namaste Smita Yadav ji,\n\nMaine VanIndra Creations ka portfolio (@vandanay2012 & @smitayadav_0901) dekha aur apna Instagram grow karna chahta/chahti hoon.\n\n• Naam / brand: \n• Instagram: @\n• Followers: \n• Mujhe chahiye: " + waGoal;
+  }
+  return "Hello Smita & VanIndra Creations Studio,\n\nI saw your portfolio (@vandanay2012 & @smitayadav_0901) and would like to talk about growing my Instagram.\n\n• Name / brand: \n• Instagram: @\n• Followers: \n• Looking for: " + waGoal;
+}
+/* Every main "Chat on WhatsApp" button opens WhatsApp directly with this message; "Edit the message first" opens the sheet. */
+function currentWaMessage() {
+  const t = document.getElementById('elegantWaMessage');
+  return (t && t.value.trim()) ? t.value.trim() : waTemplate(window.currentLangMode);
+}
+function refreshWaLinks() {
+  const href = `https://wa.me/${OFFICIAL_WHATSAPP_NUMBER}?text=${encodeURIComponent(currentWaMessage())}`;
+  document.querySelectorAll('a.js-wa').forEach((a) => { a.href = href; });
+}
+
+function openElegantWhatsAppDirect(sourceLabel, presetMessage) {
+  const nameEl = document.getElementById('waQuickName');
+  const tierEl = document.getElementById('waQuickTier');
+  const msgEl = document.getElementById('elegantWaMessage') || document.getElementById('waQuickMessage');
+  const nameVal = (nameEl && nameEl.value.trim()) ? nameEl.value.trim() : "";
+  const tierVal = (tierEl && tierEl.value) ? tierEl.value : "100K+ / Growing Creator or Brand";
+  let customBody = (msgEl && msgEl.value.trim())
+    ? msgEl.value.trim()
+    : "Hello Smita Yadav & VanIndra Creations Team!\n\nI explored your studio portfolio (@vandanay2012 & @smitayadav_0901) and would love to discuss scaling my Instagram/business with your Viral Scripting, High-Retention Reel Editing & Brand Deal Positioning.\n\n• My Brand / Instagram Handle: \n• What I'm Looking For: Content Strategy Audit + 15s Sample Reel Edit\n\nLooking forward to connecting with you!";
+  if (presetMessage) customBody = presetMessage;
+  let finalMessage = customBody;
+  if (nameVal) finalMessage += `\n\n— ${nameVal} (${tierVal})`;
+  window.open(`https://wa.me/${OFFICIAL_WHATSAPP_NUMBER}?text=${encodeURIComponent(finalMessage)}`, "_blank", "noopener");
+}
+function sendCustomHeroWhatsApp() { openElegantWhatsAppDirect("Hero Editable WhatsApp Composer"); }
+
+/* =========================================================
+   1. SHEETS: composer + focus handling
+   ========================================================= */
+let lastSheetTrigger = null;
+function openComposer() {
+  const sheet = document.getElementById('waSheet');
+  if (!sheet) return;
+  lastSheetTrigger = document.activeElement;
+  sheet.classList.add('active');
+  sheet.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  const t = document.getElementById('elegantWaMessage');
+  setTimeout(() => { const c = document.getElementById('wa-concierge-box'); if (c) c.focus({ preventScroll: true }); }, 60);
+  return t;
+}
+function closeComposer() {
+  const sheet = document.getElementById('waSheet');
+  if (!sheet) return;
+  sheet.classList.remove('active');
+  sheet.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  if (lastSheetTrigger && lastSheetTrigger.focus) lastSheetTrigger.focus({ preventScroll: true });
+  lastSheetTrigger = null;
+}
+
+/* =========================================================
+   2. SEGMENTED CONTROLS + TABS (one window of content at a time)
+   ========================================================= */
+function syncThumb(seg) {
+  if (!seg) return;
+  const thumb = seg.querySelector(':scope > .seg-thumb');
+  if (!thumb) return;
+  const sel = seg.querySelector(':scope > button[aria-selected="true"], :scope > button.on');
+  if (!sel || !sel.offsetWidth) return;
+  thumb.style.width = sel.offsetWidth + 'px';
+  thumb.style.transform = `translateX(${sel.offsetLeft}px)`;
+  seg.classList.add('ready');
+}
+function syncAllThumbs() { document.querySelectorAll('.seg').forEach(syncThumb); }
+
+function activateTab(tab, focus) {
+  const list = tab.closest('[role="tablist"]');
+  if (!list) return;
+  const tabs = Array.from(list.querySelectorAll('[role="tab"]'));
+  tabs.forEach((t) => {
+    const on = t === tab;
+    t.setAttribute('aria-selected', on ? 'true' : 'false');
+    t.tabIndex = on ? 0 : -1;
+    const p = document.getElementById(t.getAttribute('aria-controls'));
+    if (p) p.hidden = !on;
+  });
+  if (focus) tab.focus({ preventScroll: true });
+  if (list.scrollWidth > list.clientWidth + 2) {
+    const left = tab.offsetLeft - list.offsetLeft - (list.clientWidth - tab.offsetWidth) / 2;
+    list.scrollTo({ left: Math.max(0, left), behavior: REDUCED_MOTION ? 'auto' : 'smooth' });
+  }
+  syncThumb(list);
+  updatePager(list);
+  updateActiveNav();
+}
+function tabLabel(t) { const l = t.querySelector('[data-hi]'); return ((l || t).textContent || '').trim(); }
+function updatePager(list) {
+  const id = list && list.dataset && list.dataset.pager;
+  const pg = id && document.getElementById(id);
+  if (!pg) return;
+  const tabs = Array.from(list.querySelectorAll('[role="tab"]'));
+  const i = Math.max(0, tabs.findIndex((t) => t.getAttribute('aria-selected') === 'true'));
+  const n = tabs.length;
+  const last = i === n - 1;
+  const next = tabs[(i + 1) % n];
+  const hi = window.currentLangMode === 'hi';
+  pg.querySelector('.pg-dots').innerHTML = tabs.map((t, k) => `<i class="${k === i ? 'on' : ''}"></i>`).join('') + `<span>${i + 1} ${hi ? '/' : 'of'} ${n}</span>`;
+  pg.querySelector('.pg-lbl').textContent = (last ? (hi ? 'वापस: ' : 'Back to ') : (hi ? 'अगला: ' : 'Next: ')) + tabLabel(next);
+  pg.querySelector('.pg-next').onclick = () => {
+    activateTab(next);
+    const win = list.closest('section');
+    if (win && win.getBoundingClientRect().top < 0) win.scrollIntoView({ behavior: REDUCED_MOTION ? 'auto' : 'smooth', block: 'start' });
+  };
+}
+function updateAllPagers() { document.querySelectorAll('[data-pager]').forEach(updatePager); }
+(function initTabs() {
+  document.querySelectorAll('[role="tablist"]').forEach((list) => {
+    const tabs = Array.from(list.querySelectorAll('[role="tab"]'));
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => activateTab(t));
+      t.addEventListener('keydown', (e) => {
+        let n = null;
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+        if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+        if (e.key === 'Home') n = tabs[0];
+        if (e.key === 'End') n = tabs[tabs.length - 1];
+        if (n) { e.preventDefault(); activateTab(n, true); }
+      });
+    });
+  });
+  /* mobile plan picker: Pro Growth shows first */
+  const pick = document.querySelector('.plan-pick');
+  const grid = document.getElementById('plansGrid');
+  if (pick && grid) {
+    pick.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+      pick.querySelectorAll('button').forEach((x) => { const on = x === b; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+      grid.dataset.show = b.dataset.plan;
+      syncThumb(pick);
+    }));
+  }
+  syncAllThumbs();
+  updateAllPagers();
+  window.addEventListener('resize', syncAllThumbs, { passive: true });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncAllThumbs);
+  window.addEventListener('load', syncAllThumbs);
+})();
+
+/* Links that point into a tabbed window open the right pane first */
+const PANE_LINKS = { 'team': 'tabTeam', 'our-team': 'tabTeam', 'vandana-story': 'tabFounder', 'process': 'tabProcess', 'client-portal': 'tabPortal', 'services': 'tabServices', 'formats': 'tabFormats', 'reels': 'tabReels', 'viral-reels-showcase': 'tabReels' };
+function openPaneForHash(id) {
+  const tabId = PANE_LINKS[id];
+  if (!tabId) return;
+  const tab = document.getElementById(tabId);
+  if (tab) activateTab(tab);
+}
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  openPaneForHash(a.getAttribute('href').slice(1));
+});
+if (location.hash) openPaneForHash(location.hash.slice(1));
+
+/* =========================================================
+   3. NAV: condense on scroll, mobile sheet, active link, mobile bar
+   ========================================================= */
+let currentWindowId = null;
+function updateActiveNav() {
+  const links = Array.from(document.querySelectorAll('.nav-links a'));
+  links.forEach((l) => l.classList.remove('active'));
+  if (!currentWindowId) return;
+  let target = currentWindowId;
+  if (currentWindowId === 'portfolio') { const t = document.getElementById('tabTeam'); if (t && t.getAttribute('aria-selected') === 'true') target = 'team'; }
+  if (currentWindowId === 'services') { const t = document.getElementById('tabProcess'); if (t && t.getAttribute('aria-selected') === 'true') target = 'process'; }
+  const l = links.find((x) => x.getAttribute('href') === '#' + target);
+  if (l) l.classList.add('active');
+}
+(function initNav() {
+  const shell = document.getElementById('stickySiteHeader');
+  const onScroll = () => shell.classList.toggle('scrolled', (window.scrollY || 0) > 24);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  const btn = document.getElementById('menuBtn');
+  const sheet = document.getElementById('navSheet');
+  const close = () => { sheet.setAttribute('hidden', ''); btn.setAttribute('aria-expanded', 'false'); };
+  btn.addEventListener('click', () => {
+    const willOpen = sheet.hasAttribute('hidden');
+    if (willOpen) { sheet.removeAttribute('hidden'); btn.setAttribute('aria-expanded', 'true'); } else close();
+  });
+  sheet.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    close();
+    const w = document.getElementById('waSheet');
+    if (w && w.classList.contains('active')) closeComposer();
+  });
+
+  if ('IntersectionObserver' in window) {
+    const ids = ['hero', 'portfolio', 'reels', 'services', 'smart-ai-portal', 'pricing', 'faq'];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => { if (en.isIntersecting) { currentWindowId = en.target.id === 'hero' ? null : en.target.id; updateActiveNav(); } });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ids.forEach((id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+    const ctaRow = document.querySelector('.hero .cta-row');
+    if (ctaRow) new IntersectionObserver((en) => { document.body.classList.toggle('show-mbar', !en[0].isIntersecting && en[0].boundingClientRect.top < 0); }).observe(ctaRow);
+  }
+})();
+
+/* =========================================================
+   4. REVEAL ON SCROLL (windows only)
+   ========================================================= */
+(function initReveal() {
+  const els = document.querySelectorAll('.rv');
+  if (REDUCED_MOTION || !('IntersectionObserver' in window)) { els.forEach((el) => el.classList.add('in')); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { rootMargin: '0px 0px -6% 0px', threshold: 0.04 });
+  els.forEach((el) => io.observe(el));
+})();
+
+/* =========================================================
+   5. PHONE LOOK-AROUND (desktop pointer only, subtle)
+   ========================================================= */
+(function initParallax() {
+  const phone = document.getElementById('phoneBody');
+  if (!phone || REDUCED_MOTION) return;
+  let raf = 0;
+  document.addEventListener('mousemove', (e) => {
+    if (window.innerWidth < 1021) return;
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => {
+      const x = (e.clientX / window.innerWidth - 0.5);
+      const y = (e.clientY / window.innerHeight - 0.5);
+      phone.style.transform = `rotateY(${(x * 7).toFixed(2)}deg) rotateX(${(-y * 5).toFixed(2)}deg)`;
+    });
+  });
+})();
+
+/* =========================================================
+   6. THEME (Warm Ivory default, 1-click Dark Studio Mode)
+   ========================================================= */
+function toggleSurfaceTheme() {
+  document.body.classList.toggle('dark-studio');
+  try { localStorage.setItem('vanindra_theme', document.body.classList.contains('dark-studio') ? 'dark' : 'light'); } catch (e) {}
+  syncAllThumbs();
+}
+(function initTheme() {
+  let stored = null;
+  try { stored = localStorage.getItem('vanindra_theme'); } catch (e) {}
+  if (stored === 'dark') document.body.classList.add('dark-studio');
+})();
+
+/* =========================================================
+   7. LANGUAGE (English default <-> Hindi/Hinglish)
+   ========================================================= */
+function setLanguageMode(lang) {
+  window.currentLangMode = lang;
+  const btnEn = document.getElementById('btnLangEn');
+  const btnHi = document.getElementById('btnLangHi');
+  if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+  if (btnHi) btnHi.classList.toggle('active', lang === 'hi');
+  document.documentElement.setAttribute('lang', lang === 'hi' ? 'hi' : 'en');
+
+  document.querySelectorAll('[data-hi]').forEach((el) => {
+    if (!el.hasAttribute('data-en')) el.setAttribute('data-en', el.innerHTML);
+    el.innerHTML = (lang === 'hi') ? el.getAttribute('data-hi') : el.getAttribute('data-en');
+  });
+  document.querySelectorAll('[data-placeholder-hi]').forEach((inputEl) => {
+    if (!inputEl.hasAttribute('data-placeholder-en')) inputEl.setAttribute('data-placeholder-en', inputEl.getAttribute('placeholder') || '');
+    inputEl.setAttribute('placeholder', (lang === 'hi') ? inputEl.getAttribute('data-placeholder-hi') : inputEl.getAttribute('data-placeholder-en'));
+  });
+  const wa = document.getElementById('elegantWaMessage');
+  if (wa && !waEdited) wa.value = waTemplate(lang);
+  refreshWaLinks();
+  switchPhoneSimulation(window.currentPhoneMode || 'after');
+  updateROICalc();
+  updateAllPagers();
+  syncAllThumbs();
+}
+
+/* =========================================================
+   8. AUDIO GUIDES (Hindi text-to-speech)
+   ========================================================= */
+function speakTextInHindi(text) {
+  if (!('speechSynthesis' in window)) { alert(text); return; }
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'hi-IN';
+  utter.rate = 0.98;
+  window.speechSynthesis.speak(utter);
+}
+function speakWelcomeGuide() {
+  speakTextInHindi("नमस्ते! वंदना यादव जी के वनिन्द्रा क्रिएशन्स स्टूडियो में आपका स्वागत है। अगर आप अपना बिज़नेस और इंस्टाग्राम पेज बढ़ाना चाहते हैं, पर आपको वीडियो एडिटिंग, स्क्रिप्ट लिखना या ब्रांड डील्स लाना नहीं आता—तो चिंता मत कीजिए। आप सिर्फ अपने फोन से वीडियो रिकॉर्ड करें, बाकी एडिटिंग और ग्रोथ का काम हमारी टीम करेगी। व्हाट्सएप बटन से सीधे स्मिता यादव जी को संदेश भेजें या माइक बटन दबाकर अपनी ज़रूरत बोलकर बताएं!");
+}
+function speakVandanaTestimonial() {
+  speakTextInHindi("हमारा इन-हाउस पोर्टफोलियो देखिए: पोर्टफोलियो नंबर एक, फाउंडर वंदना यादव का पेज, शून्य से पचास हज़ार से ज़्यादा ऑर्गेनिक फॉलोअर्स तक पहुँचा है। पोर्टफोलियो नंबर दो स्मिता यादव का पेज है। अगला पोर्टफोलियो आपका हो सकता है!");
+}
+function speakGeneratedPlan() {
+  const txt = document.getElementById('ztOutputText').textContent;
+  speakTextInHindi("आपका ग्रोथ प्लान और तीन वायरल स्क्रिप्ट तैयार हो गए हैं! नीचे व्हाट्सएप बटन दबाकर इसे हमारी टीम की स्मिता यादव जी को भेजें। " + txt.slice(0, 320));
+}
+
+/* =========================================================
+   9. GOAL CHIPS + VOICE INPUT
+   ========================================================= */
+function quickSelectGoal(goalText, focusForm) {
+  const notes = document.getElementById('ztVoiceNotes');
+  if (focusForm && notes) notes.value = goalText;
+  const wa = document.getElementById('elegantWaMessage');
+  waGoal = goalText;
+  if (wa) {
+    if (!waEdited) wa.value = waTemplate(window.currentLangMode);
+    else {
+      const line = (window.currentLangMode === 'hi' ? "• Mujhe chahiye: " : "• Looking for: ") + goalText;
+      wa.value = WA_GOAL_LINE.test(wa.value) ? wa.value.replace(WA_GOAL_LINE, line) : (wa.value.trim() + "\n" + line);
+    }
+    refreshWaLinks();
+  }
+  const scope = focusForm ? document.getElementById('zeroTouchForm') : document.getElementById('wa-concierge-box');
+  (scope || document).querySelectorAll('.chip[data-goal]').forEach((b) => {
+    const on = b.dataset.goal === goalText;
+    b.classList.toggle('on', on);
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+  if (focusForm && notes && !(window.matchMedia && window.matchMedia('(pointer: coarse)').matches)) notes.focus({ preventScroll: true });
+}
+
+function startHindiVoiceInput() {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const btn = document.getElementById('btnVoiceMic');
+  const label = document.getElementById('micLabel');
+  const status = document.getElementById('voiceStatusText');
+  const notes = document.getElementById('ztVoiceNotes');
+  const isHi = () => window.currentLangMode === 'hi';
+  if (!SpeechRecognition) {
+    alert(isHi() ? "आपके ब्राउज़र में माइक सपोर्ट नहीं है, कृपया बॉक्स में लिखें या Chrome में खोलें।" : "Voice input is not supported in this browser. Please type in the goal box or open this page in Google Chrome.");
+    notes.focus();
+    return;
+  }
+  const recognition = new SpeechRecognition();
+  recognition.lang = isHi() ? 'hi-IN' : 'en-IN';
+  recognition.interimResults = false;
+  btn.classList.add('listening');
+  label.textContent = isHi() ? 'अब बोलिए…' : 'Listening… speak now';
+  status.textContent = isHi() ? 'माइक चालू है — अपनी बात आराम से हिंदी या अंग्रेज़ी में बोलें...' : 'Microphone on — speak naturally in English or Hindi…';
+  recognition.onresult = (event) => {
+    const transcript = event.results[0][0].transcript;
+    notes.value = (notes.value ? notes.value + " " : "") + transcript;
+    status.textContent = isHi() ? 'आपकी आवाज़ रिकॉर्ड हो गई! अब प्लान बनाने वाला बटन दबाएं।' : 'Voice captured. Now tap “Generate my free plan”.';
+  };
+  recognition.onerror = () => {
+    status.textContent = isHi() ? 'कृपया दोबारा माइक दबाएं या बॉक्स में लिखें।' : 'Please tap the mic again or type your goal in the box.';
+  };
+  recognition.onend = () => {
+    btn.classList.remove('listening');
+    label.textContent = isHi() ? 'दबाकर बोलें' : 'Tap to speak';
+  };
+  recognition.start();
+}
+
+/* =========================================================
+   10. FREE AI GROWTH PLAN (Pollinations free LLM + instant fallback)
+   ========================================================= */
+let lastGeneratedHandle = "creator";
+async function runZeroTouchBackgroundAI(event) {
+  event.preventDefault();
+  const name = document.getElementById('ztName').value.trim();
+  const handle = document.getElementById('ztHandle').value.trim();
+  const phone = document.getElementById('ztPhone').value.trim();
+  const category = document.getElementById('ztCategory').value;
+  const lang = document.getElementById('ztLanguage').value;
+  const pkg = document.getElementById('ztPackage').value;
+  const notes = document.getElementById('ztVoiceNotes').value.trim();
+  lastGeneratedHandle = handle.replace(/[^a-zA-Z0-9_]/g, '') || "creator";
+
+  const btn = document.getElementById('btnRunAI');
+  const loader = document.getElementById('aiLoadingIndicator');
+  const outputPanel = document.getElementById('ztOutputPanel');
+  const outputEl = document.getElementById('ztOutputText');
+  btn.disabled = true;
+  btn.style.opacity = '.6';
+  loader.style.display = 'inline-flex';
+
+  const instantHeader = [
+    'VanIndra Creations · starter growth plan',
+    'Founded by Vandana Yadav (@vandanay2012)',
+    '',
+    'Name: ' + name,
+    'Instagram: ' + handle,
+    'WhatsApp: ' + phone,
+    'Niche: ' + category,
+    'Language: ' + lang,
+    'Starting with: ' + pkg,
+    'Goal: “' + notes + '”',
+    '', ''
+  ].join('\n');
+
+  const aiPrompt = `You are the Chief AI Content Strategist for VanIndra Creations (Founded by Vandana Yadav @vandanay2012, with core leadership team Smita Yadav @smitayadav_0901 and Akarsh Yadav @yadavakarsh_07). Create a practical growth roadmap in ${lang} for "${name}" (${handle}) in category "${category}" whose requirement is: "${notes}".
+Include:
+1. "What to Post vs. What NOT to Post" (3 high-retention rules)
+2. 3 Ready-to-Shoot Reel Scripts (with 3-second Hook + Spoken Lines + Editing Note for Akarsh Yadav @yadavakarsh_07)
+3. A simple 7-day posting roadmap
+4. Next step to discuss Brand Deals / Inbound Customers with Smita Yadav (@smitayadav_0901).
+Do not promise specific views, followers or income. Write plain text with short numbered headings; no tables, no decorative rule lines.`;
+
+  let aiResponseText = "";
+  try {
+    const res = await fetch("https://text.pollinations.ai/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        messages: [
+          { role: "system", content: "You are a sharp, practical Indian Instagram & Business Growth Strategist at VanIndra Creations founded by Vandana Yadav. Write clearly in the user's requested language." },
+          { role: "user", content: aiPrompt }
+        ],
+        model: "openai"
+      })
+    });
+    if (res.ok) aiResponseText = await res.text();
+  } catch (err) { aiResponseText = ""; }
+
+  const usedTemplate = !aiResponseText || aiResponseText.length < 60;
+  if (usedTemplate) {
+    aiResponseText = `Note: our AI service didn't respond, so this is our standard starter template. Our team will tailor it to you on WhatsApp.
+
+1. What to post, and what to stop posting (Vandana Yadav's filter)
+   • Post more: 30–45 second Reels that open with a bold 3-second claim or visual proof.
+   • Post more: a repeatable 3-part series that answers your audience's top questions.
+   • Stop posting: videos with no on-screen headline, or slow "hello friends, welcome back" intros.
+
+2. Three ready-to-shoot Reel scripts for ${handle}
+   • Reel 1 — myth-buster: "Most people in ${category} still make this mistake. Give me 20 seconds."
+     Editing note (Akarsh Yadav): hook strip on top, a punch-in cut every 2–3 seconds, bilingual captions.
+   • Reel 2 — proof: "These are the 3 steps I recommend to everyone who asks me about this."
+   • Reel 3 — lead magnet: "Comment PLAN and I'll send you the full checklist."
+
+3. A simple 7-day plan
+   • Day 1 myth-buster Reel · Day 2 Story with a poll · Day 3 proof Reel · Day 4 carousel of 3 tips
+   • Day 5 lead-magnet Reel · Day 6 behind-the-scenes Story · Day 7 check which Reel held viewers longest
+
+4. Next step
+   • Send this plan to our official WhatsApp desk (Smita Yadav · +91 81128 59437) to claim your free 15-second sample edit.`;
+  }
+  aiResponseText = aiResponseText.replace(/^[ \t]*[=—_\-*#]{5,}[ \t]*$/gm, '').replace(/\n{3,}/g, '\n\n').trim();
+
+  const isHiOut = window.currentLangMode === 'hi';
+  const src = document.getElementById('ztOutputSource');
+  if (src) src.textContent = usedTemplate
+    ? (isHiOut ? 'स्टैंडर्ड स्टार्टर टेम्पलेट — AI सर्विस ने जवाब नहीं दिया' : "Standard starter template — the AI service didn't respond")
+    : (isHiOut ? 'AI ड्राफ्ट — हमारी टीम आपके साथ रिव्यू करेगी' : 'AI draft — our team reviews it with you');
+  outputEl.textContent = instantHeader + aiResponseText + `\n\nVanIndra Creations · Founder Vandana Yadav (@vandanay2012) · Team @smitayadav_0901 & @yadavakarsh_07`;
+  outputPanel.classList.add('active');
+  btn.disabled = false;
+  btn.style.opacity = '';
+  loader.style.display = 'none';
+  outputPanel.scrollIntoView({ behavior: REDUCED_MOTION ? 'auto' : 'smooth', block: 'nearest' });
+
+  try {
+    const existing = JSON.parse(localStorage.getItem('vanindra_leads_crm') || '[]');
+    existing.unshift({ date: new Date().toISOString(), name, handle, phone, category, pkg, notes });
+    localStorage.setItem('vanindra_leads_crm', JSON.stringify(existing.slice(0, 50)));
+  } catch (e) {}
+}
+function sendZeroTouchWhatsApp(phoneNum) {
+  const text = document.getElementById('ztOutputText').textContent;
+  const encoded = encodeURIComponent("Hello Smita Yadav & VanIndra Creations Team!\nI generated my AI Content & Reel Growth Plan on your website and would love to discuss my 7-Day Content Audit + 15s Sample Reel Edit:\n\n" + text);
+  window.open("https://wa.me/" + OFFICIAL_WHATSAPP_NUMBER + "?text=" + encoded, "_blank", "noopener");
+}
+function downloadZeroTouchFile() {
+  const text = document.getElementById('ztOutputText').textContent;
+  const blob = new Blob([text], { type: "text/markdown;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `VanIndra_GrowthPlan_${lastGeneratedHandle}.md`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+function copyTextById(elementId) {
+  const text = document.getElementById(elementId).textContent;
+  const done = () => alert(window.currentLangMode === 'hi' ? "कॉपी हो गया! (Copied to clipboard)" : "Copied to clipboard!");
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done).catch(() => {});
+}
+
+/* =========================================================
+   11. BEFORE / AFTER SIMULATOR (illustration) + REACH ESTIMATOR
+   ========================================================= */
+function switchPhoneSimulation(mode) {
+  window.currentPhoneMode = mode;
+  const isHi = (window.currentLangMode === 'hi');
+  const stage = document.getElementById('heroStage');
+  const btnBefore = document.getElementById('btnModeBefore');
+  const btnAfter = document.getElementById('btnModeAfter');
+  const banner = document.getElementById('phoneHookBanner');
+  const caption = document.getElementById('kineticCaptionText');
+  const graphLeft = document.getElementById('graphLabelLeft');
+  const graphRight = document.getElementById('graphLabelRight');
+  const curve = document.getElementById('retentionCurvePath');
+  if (!stage) return;
+  stage.dataset.mode = mode;
+  btnBefore.classList.toggle('on', mode === 'before');
+  btnAfter.classList.toggle('on', mode === 'after');
+  btnBefore.setAttribute('aria-pressed', mode === 'before' ? 'true' : 'false');
+  btnAfter.setAttribute('aria-pressed', mode === 'after' ? 'true' : 'false');
+
+  if (mode === 'before') {
+    banner.textContent = isHi ? 'कोई हेडलाइन नहीं · धीमी शुरुआत' : 'No headline · slow intro';
+    caption.innerHTML = isHi
+      ? '"हेलो दोस्तों, स्वागत है मेरे पेज पर..." <span class="drop">(लोग स्क्रॉल कर जाते हैं)</span>'
+      : '"Hello guys, welcome back to my page..." <span class="drop">(viewers scroll away)</span>';
+    graphLeft.textContent = isHi ? '▼ 3 सेकंड में लोग चले जाते हैं' : '▼ Viewers drop in 3 sec';
+    graphLeft.style.color = '#FDA4AF';
+    graphRight.textContent = isHi ? 'रॉ क्लिप' : 'Raw clip';
+    graphRight.style.color = '#FDA4AF';
+    curve.setAttribute('d', 'M 0 10 Q 55 31, 130 33 T 260 35');
+    curve.setAttribute('stroke', '#FB7185');
+  } else {
+    banner.textContent = isHi ? '1 लाख+ के बाद यह गलती मत करना!' : "3-sec hook: don't make this mistake at 1 lakh+!";
+    caption.innerHTML = isHi
+      ? '"अगर आपकी <mark>रीच</mark> रुकी हुई है, तो बस <b>ये 3 हुक</b> बदलें..."'
+      : '"If your <mark>reach</mark> has plateaued, fix these <b>3 hooks</b>…"';
+    graphLeft.textContent = isHi ? '▲ दर्शक रुकते हैं' : '▲ Viewers stay';
+    graphLeft.style.color = '#6EE7B7';
+    graphRight.textContent = isHi ? 'हुक-फर्स्ट एडिट' : 'Hook-first edit';
+    graphRight.style.color = '#F4C44E';
+    curve.setAttribute('d', 'M 0 7 Q 65 8, 130 11 T 260 14');
+    curve.setAttribute('stroke', '#34D399');
+  }
+  syncThumb(document.querySelector('.seg-ab'));
+}
+
+function paintRange(el) {
+  const p = ((el.value - el.min) / (el.max - el.min)) * 100;
+  el.style.setProperty('--p', p + '%');
+}
+function updateROICalc() {
+  const fEl = document.getElementById('rngFollowers');
+  const rEl = document.getElementById('rngReels');
+  const followers = parseInt(fEl.value, 10);
+  const reels = parseInt(rEl.value, 10);
+  const isHi = (window.currentLangMode === 'hi');
+  paintRange(fEl); paintRange(rEl);
+  document.getElementById('lblFollowers').textContent = followers.toLocaleString('en-IN') + (isHi ? ' फॉलोअर्स' : ' followers');
+  document.getElementById('lblReels').textContent = reels + (isHi ? ' रील्स / महीना' : ' Reels / month');
+  const estViewsLakhs = ((followers * 0.48 * (reels / 10)) / 100000).toFixed(1);
+  const hoursSaved = Math.round(reels * 3.5);
+  document.getElementById('outViews').textContent = estViewsLakhs + (isHi ? ' लाख+' : ' Lakh+');
+  document.getElementById('outHours').textContent = isHi ? (hoursSaved + ' घंटे/महीना') : (hoursSaved + ' hrs/mo');
+}
+function selectPackageInForm(pkgName) {
+  const select = document.getElementById('ztPackage');
+  if (select) select.value = pkgName;
+}
+
+/* =========================================================
+   12. INSTAGRAM REEL PLAYER (inline embed)
+   ========================================================= */
+let lastPlayerTrigger = null;
+function playReelCard(btn) {
+  lastPlayerTrigger = btn;
+  const note = (window.currentLangMode === 'hi' ? btn.dataset.noteHi : btn.dataset.noteEn) || btn.dataset.noteEn;
+  playVandanaViralReel(btn.dataset.sc, btn.dataset.title, note, btn.dataset.handle);
+}
+function playVandanaViralReel(shortcode, title, hookNote, handle) {
+  const creatorHandle = handle || 'vandanay2012';
+  const drawer = document.getElementById('liveReelPlayerDrawer');
+  const iframe = document.getElementById('liveReelIframe');
+  const titleEl = document.getElementById('liveReelPlayerTitle');
+  const noteEl = document.getElementById('liveReelPlayerHookNote');
+  const linkEl = document.getElementById('liveReelDirectLink');
+  if (titleEl && title) titleEl.textContent = title;
+  if (noteEl && hookNote) noteEl.textContent = hookNote;
+  if (linkEl) linkEl.href = `https://www.instagram.com/${creatorHandle}/reel/${shortcode}/`;
+  if (iframe) iframe.src = `https://www.instagram.com/reel/${shortcode}/embed/`;
+  if (drawer) {
+    drawer.classList.add('active');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    const x = document.getElementById('playerClose'); if (x) x.focus({ preventScroll: true });
+  }
+}
+function closeVandanaViralReel() {
+  const drawer = document.getElementById('liveReelPlayerDrawer');
+  const iframe = document.getElementById('liveReelIframe');
+  if (iframe) iframe.src = 'about:blank';
+  if (drawer) { drawer.classList.remove('active'); drawer.setAttribute('aria-hidden', 'true'); }
+  document.body.style.overflow = '';
+  if (lastPlayerTrigger) { lastPlayerTrigger.focus({ preventScroll: true }); lastPlayerTrigger = null; }
+}
+document.addEventListener('keydown', (e) => {
+  const d = document.getElementById('liveReelPlayerDrawer');
+  if (e.key === 'Escape' && d && d.classList.contains('active')) closeVandanaViralReel();
+});
+
+/* init */
+(function initComposer() {
+  const wa = document.getElementById('elegantWaMessage');
+  if (!wa) return;
+  wa.value = waTemplate('en');
+  wa.addEventListener('input', () => { waEdited = true; refreshWaLinks(); });
+  refreshWaLinks();
+})();
+switchPhoneSimulation('after');
+updateROICalc();
+</script>
+</body>
+</html>

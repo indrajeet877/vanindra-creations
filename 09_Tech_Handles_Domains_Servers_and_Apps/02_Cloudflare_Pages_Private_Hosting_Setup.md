@@ -1,6 +1,7 @@
 # Private Repo + Public Website on Cloudflare Pages (Free)
 
-> **Status (Oct 2026):** the GitHub repository is **private**. GitHub Pages is now off, so the old `indrajeet877.github.io` address no longer works (and must never be used again). The website moves to **Cloudflare Pages**: free, unlimited bandwidth, fast in India, free HTTPS, and it works with private repos.
+> **Status (14 Oct 2026):** the owner made the repository **public again**, and the live site runs on **GitHub Pages** (the `github.io` address) for now. Cloudflare Pages has **not been set up yet**, so `vanindracreations.pages.dev` links in the docs will not open until Step 1 below is done.
+> **Why still move:** the `github.io` address contains a background team member's name, so it should not go into client pitches or Instagram bios. Either do Step 1 (Cloudflare, free) or connect `vanindracreations.in` to GitHub Pages (Settings → Pages → Custom domain). Cloudflare is free, has unlimited bandwidth, is fast in India, includes HTTPS and also works if the repo goes private later.
 > **Who does this:** the repository owner (needs to log in to GitHub). Time: about 10 minutes, plus about a day for a new domain to go live.
 
 ## What gets published (and what never does)

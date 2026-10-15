@@ -1,7 +1,8 @@
 # Logo Vote — Round 2 (14 Oct 2026)
 
 > **Where to see the options:** the Magnific Space "VanIndra Logo Options — Team Vote (Oct 2026)". The owner has the view-only invite link. Opening it needs a free Magnific sign-in. The link is not stored here because this repository is public.
-> **Status:** 50 AI-generated options are ready now. 7 hand-built geometry ("maths") concepts are still being drawn and judged; they will be added as **M1–M7**.
+> **Update 15 Oct:** Round 3 is done. Final 2: **F1 Shirorekha** (recommended by all 3 judges, 7.8) and **F2 The Hinge** (6.8). See `01_Brand_and_Team/Brand_Assets/Logo_Proposals_2026-10/Round3_Finalists/`.
+> **Status (14 Oct):** 50 AI-generated options are ready now. The 7 hand-built geometry ("maths") concepts **M1–M7 are ready too**: see `01_Brand_and_Team/Brand_Assets/Logo_Proposals_2026-10/Round2_Geometry_M1-M7/` (start with `00_Overview_M1-M7.jpg`). All 3 judges picked **M5 Shirorekha**; a Round 3 polish of M5 plus 3 new directions is running, and the best 2 will join this vote.
 > **Note:** AI images can misspell words. Check the spelling "VanIndra" / "VANINDRA" / "Creations" on every option before voting.
 
 ## Which AI model made what (and why that model)
@@ -25,7 +26,7 @@
 | 45–48 | **Mughal-arch emblem** (palace doorway = 9:16 frame) with VI | **Flux 2 Max** | Detailed emblems |
 | 49 | Interlocking **VI monogram**: true vector file | **Recraft Vector** | Native SVG, ready to use |
 | 50 | **Emerald-cut V**: true vector file | **Recraft Vector** | Native SVG, ready to use |
-| M1–M7 | Hand-built **geometry** concepts (coming): Emerald Cut, Indra's Net, Maison Monogram, Jaali, Shirorekha, Founder Signature, Hook Mark | Drawn with maths (grids, golden ratio, exact curves) by 7 AI design agents and scored by 3 judges | Exact, crisp vectors that work from favicon to billboard |
+| M1–M7 | Hand-built **geometry** concepts: M1 Emerald Cut, M2 Indra's Net, M3 Threaded VI, M4 Jaali, **M5 Shirorekha (judges' winner, 6.5 / 7 / 7)**, M6 Signature, M7 Hook + Tick | Drawn with maths (grids, exact angles, measured strokes) by 7 AI design agents and scored by 3 AI judges | Exact, crisp vectors that work from favicon to billboard |
 
 Meta's image model is not available through Magnific, so it was not used.
 
@@ -82,11 +83,11 @@ Top 3 votes ke baad final polish karke 2–3 options phir dikhaunga/dikhaungi. W
 
 ## Feedback log
 
-| From | 1st | 2nd | 3rd | Why / changes |
-| :--- | :--- | :--- | :--- | :--- |
-| Vandana Yadav | | | | |
-| Smita Yadav | | | | |
-| Akarsh Yadav | | | | |
+| From | 1st | 2nd | 3rd | Why / changes | Final pick (F1/F2) | व check | Instagram picture |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Vandana Yadav | | | | | | | |
+| Smita Yadav | | | | | | | |
+| Akarsh Yadav | | | | | | | |
 
 ---
 
@@ -95,5 +96,7 @@ Top 3 votes ke baad final polish karke 2–3 options phir dikhaunga/dikhaungi. W
 | :--- | :--- | :--- | :--- |
 | 2026-10-14 18:36 | Smita Yadav, Akarsh Yadav | VanIndra logo — 50 new options, please vote your top 3 by 10 PM tonight | Model-by-option list, checklist, reply format, Magnific invite link |
 | 2026-10-14 (follow-up, same thread) | Smita Yadav, Akarsh Yadav | Re: same | How to sign in and open the logos; what each person must reply (votes; Smita's US-call availability and exam dates; Akarsh's phone check of the new site); full recap of the day: logo rounds, website fixes, repo now private + move to Cloudflare (old github.io link off), leads & delivery readiness (VIP not sellable yet, hire 2 editors), global USD plan ($500/$1,000/$2,000 + $149 trial), client rules |
+| 2026-10-14 21:00 | Smita Yadav, Akarsh Yadav | Re: same | Correction: website live again at the github.io link (not for Instagram bios); M1–M7 overview image + judges' scores (M5 Shirorekha wins); Hindi check: does the M5 symbol read as व?; vote deadline moved to 15 Oct, 10 PM; Round 3 and website redesign coming |
+| 2026-10-15 00:25 | Smita Yadav, Akarsh Yadav | VanIndra logo — final 2 options, please vote + one Hindi check | F1 Shirorekha (7.8 from all 3 judges, recommended) and F2 The Hinge (6.8) boards; asks: pick + why, does the F1 symbol read as व (not प/ब), is वनिंद्रा spelled right, OK to use the gold व as the one Instagram picture |
 
 Replies come to the connected Gmail inbox; a check-in is scheduled for 15 Oct, 10:30 PM IST to tally votes into the feedback log above.
