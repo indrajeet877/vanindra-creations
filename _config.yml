@@ -28,3 +28,4 @@ exclude:
   - site_config
   - netlify.toml
   - dist
+  - previews
