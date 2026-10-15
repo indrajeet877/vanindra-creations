@@ -1,0 +1,238 @@
+/* =========================================================
+   FX LAYER · 3D glass halo, glass thickness, magic cursor, cinematic motion.
+   Everything here is an enhancement: the page reads and works without it.
+   ========================================================= */
+:root{--out:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.34,1.45,.64,1)}
+html.lenis,html.lenis body{height:auto}
+html.lenis{scroll-behavior:auto}
+.lenis.lenis-stopped{overflow:hidden}
+
+/* ---------- Intro (desktop, once a day): the wordmark rises over three ivory glass panes, a gold hairline draws,
+   then the mark flies into the nav while the veil fades separately (≤ 1.3 s, never blocks input).
+   Phones get no splash: a 420 ms gold shimmer runs over the nav wordmark on an already painted hero. ---------- */
+.intro{display:none}
+html.intro-on .intro{position:fixed;inset:0;z-index:300;display:grid;place-items:center;pointer-events:none;animation:introOut .3s ease 2.2s forwards}
+@keyframes introOut{to{opacity:0;visibility:hidden}}
+.intro-veil{position:absolute;inset:0;background:var(--bg)}
+html.intro-dark .intro-veil{background:#06120E}
+html.intro-dark .intro-wm{color:#EEF4F0}
+html.intro-dark .intro-sub{color:#93A69D}
+/* the nav wordmark waits for the flying mark (with its own fail-safe if JS never runs) */
+html.intro-on .nav .wm{opacity:0;animation:wmBack .3s ease 2.2s forwards}
+@keyframes wmBack{to{opacity:1}}
+.intro-panes{position:absolute;inset:0}
+.intro-panes i{position:absolute;left:50%;top:50%;width:min(300px,23vw);height:min(340px,42vh);transform:translate3d(-50%,-50%,0);border-radius:30px;opacity:0;
+  background:linear-gradient(160deg,rgba(255,255,255,.92),rgba(255,255,255,.42) 55%,rgba(244,236,214,.5));box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(255,255,255,.7),0 0 0 1px rgba(9,36,27,.05),0 40px 70px -40px rgba(9,36,27,.3);
+  animation:paneIn .5s var(--out) forwards;animation-delay:var(--pd)}
+.intro-panes i:nth-child(1){--px:-108%;--pr:-5deg;--pd:.02s}
+.intro-panes i:nth-child(2){--px:-50%;--pr:0deg;--pd:.07s;background:linear-gradient(160deg,rgba(255,255,255,.95),rgba(236,244,239,.55) 60%,rgba(212,160,36,.12))}
+.intro-panes i:nth-child(3){--px:8%;--pr:5deg;--pd:.12s}
+@keyframes paneIn{from{opacity:0;transform:translate3d(calc(var(--px) * 1.9 + 25%),-50%,0) rotate(calc(var(--pr) * 3))}to{opacity:1;transform:translate3d(var(--px),-50%,0) rotate(var(--pr))}}
+html.intro-dark .intro-panes i{background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03));box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 0 0 1px rgba(255,255,255,.08),0 40px 70px -40px rgba(0,0,0,.7)}
+.intro-c{position:relative;display:flex;flex-direction:column;align-items:center;gap:12px}
+.intro-wm{display:flex;font:700 clamp(54px,8.6vw,112px)/1 var(--ff);letter-spacing:-.055em;color:var(--ink);overflow:hidden;padding:0 .06em .08em;transform-origin:50% 50%}
+.intro-wm i{display:block;font-style:normal;transform:translate3d(0,110%,0);animation:ltrUp .66s var(--out) forwards;animation-delay:calc(.04s + var(--i) * .04s)}
+.intro-wm i::before{content:attr(data-l)}
+@keyframes ltrUp{to{transform:none}}
+.intro-line{width:min(320px,58vw);height:1px;background:linear-gradient(90deg,transparent,var(--gold) 28%,#F4C44E 50%,var(--gold) 72%,transparent);transform:scaleX(0);animation:lineIn .7s var(--out) .2s forwards}
+@keyframes lineIn{to{transform:scaleX(1)}}
+.intro-sub{font:600 11.5px/1 var(--ff);letter-spacing:.62em;padding-left:.62em;color:var(--muted);opacity:0;animation:subIn .6s var(--out) .3s forwards}
+.intro-sub::before{content:"CREATIONS"}
+@keyframes subIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.intro-glint{position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(244,196,78,.14) 49%,rgba(255,255,255,.22) 51%,transparent 60%);transform:translate3d(-70%,0,0);animation:glint .9s ease .2s forwards}
+@keyframes glint{to{transform:translate3d(70%,0,0)}}
+/* phones: a short gold shimmer across the nav wordmark instead of a splash */
+html.wm-shimmer .nav .wm-name{background:linear-gradient(100deg,currentColor 0 38%,#E9B949 47%,#FFF1C4 50%,#E9B949 53%,currentColor 62% 100%) 100% 0/280% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:wmShim .42s cubic-bezier(.4,0,.2,1) .15s both}
+@keyframes wmShim{from{background-position:100% 0}to{background-position:0 0}}
+
+/* ---------- Hero head: JS plays the entrance (fill: backwards), so with any failure the hero is simply visible ---------- */
+html.fx #hero .rv{opacity:1;transform:none;transition:none}
+.fxw{display:inline-block}
+html.fx .rv.fx-split:not(.in) .fxw{opacity:0;transform:translate3d(0,.52em,0)}
+html.fx .rv.fx-split.in .fxw{opacity:1;transform:none;transition:opacity .7s var(--ease),transform 1s var(--out);transition-delay:calc(var(--d,0s) + var(--i,0) * 42ms)}
+
+/* ---------- Hero: a 3D glass orbit round the phone (the far half passes behind it, the near half in front of its lower screen) ---------- */
+.phone-wrap{isolation:isolate}
+.stage-center .seg{z-index:3}
+.stage-center .illus{position:relative;z-index:2}
+/* CSS places the orbit (so the no-JS still sits exactly where the live glass will be): centre at 30 % of the phone height */
+.gl3d,.gl3d-back{--gw:calc(var(--u) * 716);--gc:calc(var(--u) * 189.6);position:absolute;left:50%;top:calc(var(--gc) - var(--gw) * .3934);width:var(--gw);height:calc(var(--gw) / 1.1294);transform:translateX(-50%);pointer-events:none}
+.gl3d-back{z-index:-1}
+.gl3d{z-index:2}
+/* the pre-rendered stills (back half / front half) are set by a small style block at the end of <body>, off the critical path */
+.gl3d::before,.gl3d-back::before{content:"";position:absolute;inset:0;background:center/100% 100% no-repeat;transition:opacity .5s ease}
+.gl3d canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .6s ease}
+.gl3d.on canvas{opacity:1}
+.gl3d.on::before,.gl3d-back.on::before{opacity:0}
+/* phones: the orbit is narrower (it fits the screen), so it sits a little lower to keep its near half under the face */
+@media (max-width:720px){.gl3d,.gl3d-back{--gw:min(calc(var(--u) * 716),calc((100vw - 8px) * 1.159));--gc:calc(var(--u) * 246)}}
+/* the phone: real side thickness that grows as it turns, a polish sweep on every Before/After change */
+.phone{box-shadow:calc(var(--pe,0) * 1px) 0 0 -.5px #3F4E47,inset 0 0 0 1.5px rgba(255,255,255,.22),inset 0 0 0 4px rgba(0,0,0,.6),0 60px 100px -40px rgba(9,36,27,.6),0 24px 50px -24px rgba(9,36,27,.45)}
+.screen>.fx-sheen{position:absolute;z-index:6;top:-10%;bottom:-10%;left:-30%;width:62%;pointer-events:none;background:linear-gradient(105deg,transparent 0,rgba(255,255,255,.5) 44%,rgba(255,236,190,.34) 56%,transparent 100%);transform:translate3d(-130%,0,0) skewX(-12deg);opacity:0}
+.phone.fx-polish .fx-sheen{animation:polish .7s cubic-bezier(.65,0,.35,1)}
+@keyframes polish{0%{opacity:1;transform:translate3d(-80%,0,0) skewX(-12deg)}100%{opacity:1;transform:translate3d(270%,0,0) skewX(-12deg)}}
+/* raw clip -> polished edit (a one-time demo; visual only, the page text never changes) */
+.stage.fx-raw .screen>img{filter:grayscale(.6) brightness(.72) contrast(.88)}
+.stage .hook,.stage .cap{transition:background .5s,color .5s,box-shadow .5s,transform .7s var(--out),opacity .6s var(--ease)}
+.stage.fx-raw .hook{opacity:0;transform:translate3d(0,-14px,0) scale(.94)}
+.stage.fx-raw .cap{opacity:0;transform:translate3d(0,12px,0)}
+.stage.fx-raw .rail .i-heart{fill:none;stroke:currentColor}
+.kchip{transition:opacity .6s var(--ease),scale .8s var(--spring)}
+.stage.fx-raw .kchip{opacity:0;scale:.9}
+
+/* ---------- Glass with true thickness: a crisp under-lip, an inner light, an edge that catches the pointer, a glare ---------- */
+main .glass:not(.kchip):not(.seg):not(.fan-note),.plan-pro{--mx:-999px;--my:-999px}
+main .glass:not(.kchip):not(.seg):not(.fan-note){box-shadow:inset 0 1px 0 var(--rim-a),inset 0 -1px 0 rgba(9,36,27,.035),inset 0 0 22px -12px rgba(255,255,255,.9),0 1.5px 0 rgba(255,255,255,.85),0 3px 0 -.5px rgba(9,36,27,.07),var(--shadow)}
+body.dark-studio main .glass:not(.kchip):not(.seg):not(.fan-note){box-shadow:inset 0 1px 0 var(--rim-a),inset 0 -1px 0 rgba(0,0,0,.25),0 1.5px 0 rgba(255,255,255,.05),0 3px 0 -.5px rgba(0,0,0,.4),var(--shadow)}
+@media (hover:hover) and (pointer:fine) and (min-width:769px){
+  main .glass:not(.kchip):not(.seg):not(.fan-note)::before{background:radial-gradient(280px circle at var(--mx) var(--my),rgba(212,160,36,.95),rgba(14,107,78,.42) 40%,rgba(14,107,78,0) 70%),linear-gradient(140deg,var(--rim-a),rgba(255,255,255,0) 32%,rgba(255,255,255,0) 64%,var(--rim-b))}
+  body.dark-studio main .glass:not(.kchip):not(.seg):not(.fan-note)::before{background:radial-gradient(280px circle at var(--mx) var(--my),rgba(244,196,78,.9),rgba(94,211,164,.4) 40%,rgba(94,211,164,0) 70%),linear-gradient(140deg,var(--rim-a),rgba(255,255,255,0) 32%,rgba(255,255,255,0) 64%,var(--rim-b))}
+  main .glass:not(.kchip):not(.seg):not(.fan-note)::after,.plan-pro::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;opacity:0;transition:opacity .6s ease;
+    background:radial-gradient(440px circle at var(--mx) var(--my),rgba(255,255,255,.62),rgba(255,255,255,.16) 24%,rgba(244,196,78,.06) 38%,transparent 58%)}
+  body.dark-studio main .glass:not(.kchip):not(.seg):not(.fan-note)::after,.plan-pro::after{background:radial-gradient(440px circle at var(--mx) var(--my),rgba(255,255,255,.10),rgba(244,196,78,.05) 30%,transparent 56%)}
+  main .glass.fx-on::after,.plan-pro.fx-on::after{opacity:1}
+  .plan-pro{isolation:isolate}
+  .plans,.people,.bento{perspective:1600px}
+  .plan,.plan-pro,.t-person{transition:rotate .9s var(--out),translate .5s var(--out)}
+  .plan.fx-tilt,.plan-pro.fx-tilt,.t-person.fx-tilt{transition:rotate .16s linear}
+}
+/* panels arrive from depth (desktop); the base reveal still owns the timing and its safety net */
+html.fx .rv:not(.in){transition:none}
+@media (min-width:900px){
+  html.fx .glass.rv:not(.in),html.fx .plan-pro.rv:not(.in),html.fx .fm-ui.rv:not(.in){transform:perspective(1400px) translate3d(0,56px,0) rotateX(9deg) scale(.97);transform-origin:50% 100%}
+  html.fx .glass.rv.in,html.fx .plan-pro.rv.in,html.fx .fm-ui.rv.in{transition:opacity .9s var(--ease),transform 1.25s var(--out);transition-delay:var(--d,0s)}
+}
+
+/* ---------- Scroll progress, dark panel light, Reels ---------- */
+::selection{background:rgba(244,196,78,.38);color:inherit}
+/* the nav pill turns to dark glass while it floats over the emerald panels */
+.nav-shell .nav{transition:width .5s var(--ease),height .5s var(--ease),box-shadow .4s,background .45s,border-color .45s}
+.nav-shell.on-dark .nav{background:linear-gradient(165deg,rgba(14,42,32,.78),rgba(7,26,19,.66));border-color:rgba(255,255,255,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 18px 40px -18px rgba(0,0,0,.6)}
+.nav-shell.on-dark .nav::before{opacity:.25}
+.nav-shell.on-dark :is(.wm-name,.nav-links a,.nav-login,.icon-btn){color:#EEF4F0}
+.nav-shell.on-dark .wm-sub{color:rgba(238,244,240,.6)}
+.nav-shell.on-dark .lang{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12)}
+.nav-shell.on-dark .lang button{color:rgba(238,244,240,.7)}
+.nav-shell.on-dark .lang button.active{background:rgba(255,255,255,.16);color:#fff}
+.nav-shell.on-dark .nav-links a:hover,.nav-shell.on-dark .nav-links a.active{background:rgba(255,255,255,.08)}
+.nav-shell .nav-wa{transition:color .2s,box-shadow .2s,translate .6s var(--spring)}
+.nav-shell.on-dark .nav-wa{background:linear-gradient(180deg,#FAF8F3 0%,#E9EFEB 100%);color:#06120E;box-shadow:inset 0 1px 0 #fff,0 10px 24px -12px rgba(0,0,0,.6)}
+.nav-shell.on-dark .nav-wa::after{opacity:0}
+.nav{position:relative}
+.nav-prog{position:absolute;left:30px;right:30px;bottom:-.5px;height:1.5px;border-radius:2px;background:linear-gradient(90deg,rgba(14,107,78,0),var(--emerald) 18%,var(--gold) 82%,var(--gold-2));transform-origin:0 50%;transform:scaleX(0);pointer-events:none;opacity:.9}
+.panel>.fx-sweep{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;border-radius:inherit}
+.panel>.fx-sweep::before{content:"";position:absolute;top:-20%;bottom:-20%;left:0;width:38%;background:linear-gradient(100deg,transparent,rgba(244,196,78,.10) 42%,rgba(255,255,255,.07) 50%,rgba(94,211,164,.06) 58%,transparent);transform:translate3d(-110%,0,0) skewX(-14deg);opacity:0}
+.panel.fx-lit>.fx-sweep::before{animation:panelSweep 2.2s var(--out) .15s}
+@keyframes panelSweep{0%{opacity:1;transform:translate3d(-110%,0,0) skewX(-14deg)}100%{opacity:1;transform:translate3d(330%,0,0) skewX(-14deg)}}
+.panel>.wrap{position:relative;z-index:1}
+@media (hover:hover) and (pointer:fine){
+  /* a light coverflow: the hovered Reel lifts and breathes, its neighbours turn towards it (transform only) */
+  .reel-row{perspective:1200px}
+  .reel{transition:box-shadow .6s var(--out),transform .42s cubic-bezier(.2,.8,.2,1)}
+  .reel:hover{box-shadow:0 0 0 1px rgba(244,196,78,.55),0 34px 60px -34px rgba(0,0,0,.9),0 0 40px -14px rgba(94,211,164,.35);transform:translate3d(0,-8px,0) scale(1.04);animation:breathe 2.4s ease-in-out .45s infinite alternate}
+  .reel:has(+ .reel:hover){transform:translate3d(0,0,-40px) rotateY(10deg)}
+  .reel:hover + .reel{transform:translate3d(0,0,-40px) rotateY(-10deg)}
+  @keyframes breathe{from{scale:1}to{scale:1.015}}
+}
+
+/* ---------- Magic cursor (fine pointers only; inputs keep the native cursor and caret) ---------- */
+.cur{display:none}
+html.has-cur .cur{display:block;position:fixed;inset:0;z-index:9990;pointer-events:none;overflow:hidden}
+html.has-cur.cur-live,html.has-cur.cur-live body,html.has-cur.cur-live *{cursor:none}
+html.has-cur.cur-live :is(input,textarea,select,iframe,[contenteditable]),html.has-cur.cur-live .player,html.has-cur.cur-live .player *{cursor:auto}
+html.has-cur.cur-live :is(p,figcaption,blockquote,dd,.ai-pre),html.has-cur.cur-live :is(p,figcaption,blockquote,dd,.ai-pre) :is(span,b,strong,em,i,mark,small,code){cursor:text}
+html.has-cur.cur-live .screen :is(p,span,b,mark){cursor:none}
+html.has-cur.cur-live :is(input[type=range],input[type=checkbox],input[type=radio],select){cursor:pointer}
+.cur-dust{position:absolute;left:0;top:0;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;background:#D4A024;clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%);will-change:transform,opacity}
+.cur-dust.m{background:#F4C44E}
+.cur-dust.l{background:#B9860F}
+body.dark-studio .cur-dust.l,.cur.dark .cur-dust.l{background:#FFF6DA}
+.cur-lens,.cur-dot{position:absolute;left:0;top:0;will-change:transform;transition:opacity .25s}
+.cur-lens{width:20px;height:20px;translate:-50% -50%;border-radius:999px;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(60% 50% at 34% 24%,rgba(255,255,255,.3),rgba(255,255,255,0) 70%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.7),0 0 0 1px rgba(9,36,27,.22);
+  transition:width .42s var(--spring),height .42s var(--spring),border-radius .42s var(--out),background-color .3s,box-shadow .3s,opacity .16s}
+.cur.down[data-s=idle] .cur-lens,.cur.down[data-s=link] .cur-lens{box-shadow:inset 0 0 0 1px rgba(255,255,255,.8),inset 0 -5px 8px -5px rgba(212,160,36,.7),0 0 0 1px rgba(212,160,36,.6)}
+.cur[data-s=link] .cur-lens{box-shadow:inset 0 0 0 1px rgba(255,255,255,.8),inset 0 -6px 10px -6px rgba(212,160,36,.5),0 0 0 1px rgba(212,160,36,.45),0 10px 22px -12px rgba(9,36,27,.3)}
+.cur.dark .cur-lens{box-shadow:inset 0 0 0 1px rgba(255,255,255,.55),0 0 0 1px rgba(0,0,0,.3)}
+.cur-dot{width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 1.5px rgba(255,255,255,.85)}
+.cur.dark .cur-dot,body.dark-studio .cur-dot{background:#F3F6F4;box-shadow:0 0 0 1.5px rgba(6,19,14,.7)}
+.cur-label{display:flex;align-items:center;gap:7px;font:600 12.5px/1 var(--ff);letter-spacing:.01em;color:#fff;white-space:nowrap;opacity:0;transform:scale(.6);transition:opacity .16s cubic-bezier(0,0,.2,1),transform .45s var(--spring)}
+.cur-label::after{content:attr(data-t)}
+.cur:is([data-s=play],[data-s=drag],[data-s=chat]) .cur-label{opacity:1;transform:none}
+.cur[data-s=play] .cur-label::before{content:"";border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #fff}
+.cur[data-s=drag] .cur-label::before{content:"\2039";font-size:17px;margin-top:-2px}
+.cur[data-s=drag] .cur-label::after{content:attr(data-t) "\2002\203A"}
+.cur[data-s=play] .cur-lens{background:radial-gradient(closest-side,rgba(4,14,10,.36),rgba(4,14,10,.08) 72%,rgba(255,255,255,0)),radial-gradient(50% 40% at 32% 18%,rgba(255,255,255,.3),rgba(255,255,255,0) 70%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),inset 0 1px 0 rgba(255,255,255,.8),0 0 0 1px rgba(244,196,78,.55),0 16px 30px -12px rgba(0,0,0,.55)}
+.cur[data-s=drag] .cur-lens{background:rgba(11,42,31,.9);box-shadow:inset 0 0 0 1px rgba(244,196,78,.55),inset 0 1px 0 rgba(255,255,255,.25),0 16px 30px -12px rgba(9,36,27,.55);-webkit-backdrop-filter:none;backdrop-filter:none}
+.cur[data-s=chat] .cur-lens{background:#0B2A1F;box-shadow:inset 0 0 0 1px rgba(244,196,78,.5),inset 0 1px 0 rgba(255,255,255,.22),0 14px 28px -12px rgba(9,36,27,.7);-webkit-backdrop-filter:none;backdrop-filter:none}
+.cur[data-s=chat] .cur-label::before{content:"";width:16px;height:16px;border-radius:50%;background:#25D366 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M16.6 14.2c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.3.2-.4.6-1.2.1-.2 0-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3z'/%3E%3C/svg%3E") center/13px no-repeat}
+body.dark-studio .cur[data-s=chat] .cur-lens{background:#F5F3EC;box-shadow:inset 0 0 0 1px rgba(212,160,36,.6),0 14px 28px -12px rgba(0,0,0,.8)}
+body.dark-studio .cur[data-s=chat] .cur-label{color:#06130E}
+.cur[data-s=morph].wa .cur-lens{box-shadow:inset 0 0 0 1px rgba(37,211,102,.75),inset 0 1px 0 rgba(255,255,255,.9),0 0 0 4px rgba(37,211,102,.10),0 10px 24px -14px rgba(9,36,27,.45)}
+.cur[data-s=morph] .cur-lens{background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(212,160,36,.6),inset 0 1px 0 rgba(255,255,255,.9),0 0 0 4px rgba(244,196,78,.09),0 10px 24px -14px rgba(9,36,27,.45);-webkit-backdrop-filter:none;backdrop-filter:none}
+.cur.dark[data-s=morph] .cur-lens{background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1px rgba(244,196,78,.65),inset 0 1px 0 rgba(255,255,255,.3),0 0 0 4px rgba(244,196,78,.10)}
+.cur:is([data-s=play],[data-s=drag],[data-s=chat],[data-s=morph]) .cur-dot{opacity:0}
+.cur:is([data-s=native],[data-s=out]) :is(.cur-lens,.cur-dot){opacity:0}
+html.has-cur .btn,html.has-cur .chip,html.has-cur .icon-btn,html.has-cur .lang button,html.has-cur .nav-links a{transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s,filter .25s,color .2s,translate .6s var(--spring)}
+html.has-cur .fx-mag{transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s,filter .25s,color .2s,translate .16s linear}
+html.has-cur .reel-play .pbtn{transition:transform .3s var(--ease),background .3s,opacity .3s}
+html.has-cur .reel:hover .pbtn{opacity:0;transform:scale(.7)}
+html.has-cur .reel-play:focus-visible .pbtn{opacity:1;transform:none}
+.marquee.fx-drag-on{touch-action:pan-y}
+.marquee.fx-dragging .mq-track{animation-play-state:paused}
+
+/* ---------- Taps, ripples, sparkle bursts ---------- */
+html.js a,html.js button,html.js summary,html.js label{-webkit-tap-highlight-color:transparent}
+.fx-ripple{position:fixed;left:0;top:0;width:96px;height:96px;margin:-48px 0 0 -48px;border-radius:50%;pointer-events:none;z-index:9991;border:1.5px solid rgba(212,160,36,.85);box-shadow:0 0 18px rgba(244,196,78,.32),inset 0 0 14px rgba(244,196,78,.2)}
+.fx-spark{position:fixed;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;pointer-events:none;z-index:9992;background:radial-gradient(circle,#FFF6DA 0 18%,#F4C44E 32%,rgba(244,196,78,0) 68%);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+.ai-out{position:relative}
+.ai-out::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:0 0 0 2px rgba(244,196,78,.85),0 0 30px rgba(244,196,78,.45);opacity:0}
+.ai-out.fx-glow::after{animation:outGlow 1.6s var(--out)}
+@keyframes outGlow{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.035)}}
+
+/* ---------- Theme switch: circular reveal (View Transitions) ---------- */
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+
+/* ---------- Phones and coarse pointers: lighter glass (blur only on the nav and the sticky bar) ---------- */
+@media (pointer:coarse){
+  *,*::before,*::after{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+}
+@media (pointer:coarse) and (prefers-reduced-transparency:no-preference){
+  .nav.glass,.mbar.glass{-webkit-backdrop-filter:blur(14px) saturate(150%)!important;backdrop-filter:blur(14px) saturate(150%)!important}
+}
+@media (pointer:coarse){
+  body{--glass-1:rgba(255,255,255,.92);--glass-2:rgba(255,255,255,.80)}
+  body.dark-studio{--glass-1:rgba(30,52,44,.94);--glass-2:rgba(18,34,28,.90)}
+}
+
+/* ---------- Preferences ---------- */
+@media (prefers-reduced-motion:reduce){
+  .intro,html.intro-on .intro{display:none!important}
+  .fxw{opacity:1!important;transform:none!important}
+  .stage.fx-raw .screen>img{filter:none}
+  .stage.fx-raw .hook,.stage.fx-raw .cap,.stage.fx-raw .kchip{opacity:1;transform:none;scale:none}
+  .fx-sheen,.fx-sweep{display:none}
+  .reel:hover{animation:none}
+}
+@media (prefers-reduced-transparency:reduce){
+  *,*::before,*::after,.nav.glass,.mbar.glass,.cur-lens{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+}
+@media print{.intro,.cur,.gl3d,.gl3d-back{display:none!important}}
+
+/* ---------- Review fixes on the base layout ---------- */
+/* the condensed nav fits its labels on one line (it widens instead of wrapping) */
+.nav-links a,.nav-login{white-space:nowrap}
+.nav-shell.scrolled .nav{width:min(1180px,100% - 24px)}
+@media (max-width:1300px){.nav-links a{padding:0 10px}.nav{gap:8px}}
+/* tap targets: the wordmark links are at least 44 px tall */
+a.wm{min-height:44px;justify-content:center}
+/* the pricing carousel moves one card per swipe, so the Rs 2,999 trial is never skipped */
+#plansRow>*{scroll-snap-stop:always}
+/* the official Gmail address never runs past the dark footer panel */
+.foot-grid>div{min-width:0}
+.foot-grid ul a{overflow-wrap:anywhere}
+@media (max-width:420px){.foot-grid>.foot-brand,.foot-grid>div:last-child{grid-column:1/-1}}
+/* a clear focus ring on form fields, matching the buttons */
+:is(.field input,.field select,.field textarea,.concierge textarea):focus-visible{outline:2px solid var(--emerald);outline-offset:2px}
+body.dark-studio :is(.field input,.field select,.field textarea,.concierge textarea):focus-visible{outline-color:#5ED3A4}
