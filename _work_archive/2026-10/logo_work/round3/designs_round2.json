@@ -1,0 +1,163 @@
+[
+ {
+  "id": "t1_emerald_cut",
+  "concept_name": "The Emerald Cut: two stones, one V",
+  "story": "A V cut from a 9:16 emerald (the shape of every Reel we make): a broad stone and a hairline stone set together at one culet, because we cut content the way a lapidary cuts an emerald, with precision, clarity and nothing wasted.",
+  "construction": "The V is a window cut from a true emerald-cut girdle on a 90×160 (exactly 9:16) grid. Its outer edges are pavilion lines from the girdle's top corners to the culet, and its two outer top corners are the girdle's own 45° corner cuts (10% of the width, the same on both stones). The two strokes are separate stones (perpendicular widths 30 and 12, Didone stress), mitred on a single hairline seam from the crotch to the culet. The seam starts in the open counter so it flows cleanly, and the hairline stone tapers out just before the point. Everything is computed with exact line intersections into two 5-vertex polygons. The mark is optically centred, has a solid small-size version (thicker hairline, blunted culet) and a custom-spaced Bodoni Moda wordmark whose acute vertices are cut flat like a culet.",
+  "folder": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t1_emerald_cut",
+  "sheet_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t1_emerald_cut/sheet.png",
+  "sizes_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t1_emerald_cut/sizes.png",
+  "context_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t1_emerald_cut/context.png",
+  "explore_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t1_emerald_cut/explore.png",
+  "variations_explored": 36,
+  "refinement_loops": 11,
+  "self_score": 6,
+  "weaknesses": [
+   "At a glance it reads as a beautifully cut Didone V rather than unmistakably a gem; the emerald depends on the 45-degree girdle corners, the two-stone mitre and the construction story (construction.svg).",
+   "The octagonal 9:16 gem silhouette the territory asked for is used only as the cutting grid; every version that showed the octagon became a letter-in-a-container, a tuxedo lapel/collar, or a beveled 3D crystal.",
+   "The fine details die early: the hairline mitre is invisible below about 64 px and the 45-degree corners below about 32 px, so small sizes are just a strong Didone V.",
+   "The wordmark is only lightly customised (Bodoni Moda with culet-cut apexes and optical pair spacing, Jost subline); it is in the same genre as the rejected round-1 maison wordmark, though set much better.",
+   "A tall pointed V can read as a pen nib or arrowhead to some viewers, and the narrow 9:16 V leaves empty side space in square and circle avatars.",
+   "mark_small.svg is rendered in antique gold so it shows on both grounds in sizes.png; the primary light-ground small mark is mark_small_emerald.svg."
+  ]
+ },
+ {
+  "id": "t2_indras_net",
+  "concept_name": "Indra's Net: One Thread, Many Jewels",
+  "story": "The VanIndra V is cut straight from Indra's endless net of jewels: a strap of stones and a single thread, drawn the way one creator's work, tied to another's, makes both of them shine.",
+  "construction": "Everything sits on a rhombic grid where s = 0.40 is the tangent of the V's half-angle, so each of the 10 stones is exactly one cell of the net. The thick stroke is a strap of 2×5 stones, each inset by g on every side, which leaves light-lines 2g wide between them (the net's threads drawn in negative). The thin stroke is one positive thread: its outer edge lies on the same line as the bottom stones' lower facets, so the V's right contour is one straight line to the vertex. It stops exactly one light-line short of the single gold stone it meets. All top terminals are cut on the net's two directions and solved to the same cap line; placement blends the area centroid with the bounding box; the Tenor Sans wordmark is outlined and hand-kerned, and a smaller version for 48 px and below merges the stones into one solid strap.",
+  "folder": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t2_indras_net",
+  "sheet_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t2_indras_net/sheet.png",
+  "sizes_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t2_indras_net/sizes.png",
+  "context_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t2_indras_net/context.png",
+  "explore_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t2_indras_net/explore.png",
+  "variations_explored": 60,
+  "refinement_loops": 8,
+  "self_score": 7,
+  "weaknesses": [
+   "The V is asymmetric, like a Didone, with a hairline right stroke, so at a glance some may read it as a tick or a root sign rather than a V.",
+   "A strap of rhombic stones can tip toward argyle, snakeskin or a sports chevron; it only stays jewellery-like through restraint (one gold stone, generous space).",
+   "The small version (48 px and below) keeps the silhouette but loses the individual jewels; at 16-32 px it is a fairly plain bold-thin V whose only distinctive cues are the slanted, stone-shaped strap and the separated thread.",
+   "In the full mark the 12-unit thread gets faint below about 40 px (for example in a 52 px header lockup), and the CREATIONS line becomes unreadable there.",
+   "The wordmark is a well-spaced Tenor Sans, not custom-drawn, and the justified, tracked-out CREATIONS line is a common luxury convention that echoes Round 1's descriptor treatment.",
+   "sizes.png combines two render.js 'sizes' runs (emerald small mark on ivory, ivory small mark on emerald) using my own helper script, because a single one-colour transparent file cannot show on both grounds.",
+   "The repeat pattern follows the monogram-canvas convention; on ivory the gold net could read as a trellis or fence if printed too dark or too dense."
+  ]
+ },
+ {
+  "id": "t3_maison_monogram",
+  "concept_name": "The Threaded VI",
+  "story": "The two capitals of the name, the V of Van (forest) and the I of Indra (sky), are threaded through one another, so neither can be pulled away from the other.",
+  "construction": "The V is a custom Didone (cap 1000, symmetric 27.1° outer arms, thick arm 186, hairline 31, 1.6% vertex overshoot, bracketed hairline serifs). A small-capital I (stem 150) is threaded through its hairline arm: the hairline passes over the stem, which is cut by two 18-unit perpendicular gaps, so the I's head sits inside the counter and its foot stands outside, a true over/under link. The I's position and height are solved analytically inside the slanted channel between the V's point and the hairline (58 and 44 units clearance, measured perpendicular), which gives I height 0.84 H and a crossing at mid-stem. The wordmark is Bodoni Moda at opsz 11, chosen so its hairline matches the mark's contrast, with hand-set optical kerning, the camel-case I echoing the monogram, and CREATIONS in Jost +0.30 em. A separately solved small cut (heavier hairline, wider V, slab serifs) covers 16–48 px.",
+  "folder": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t3_maison_monogram",
+  "sheet_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t3_maison_monogram/sheet.png",
+  "sizes_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t3_maison_monogram/sizes.png",
+  "context_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t3_maison_monogram/context.png",
+  "explore_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t3_maison_monogram/explore.png",
+  "variations_explored": 45,
+  "refinement_loops": 4,
+  "self_score": 7,
+  "weaknesses": [
+   "Seen without the wordmark, 'VI' can still be read as the Roman numeral six; the overlap reduces but does not remove this.",
+   "The letterforms are recognisably Didone/Bodoni in spirit; what's ownable is the threading geometry and solved placement, not distinctive letter shapes, so a harsh critic may call it 'a well-made VI ligature'.",
+   "The wordmark uses Bodoni Moda glyphs with custom spacing only; no glyphs are redrawn.",
+   "At 16 px the hairline cut disappears and the mark reads as V plus a stem; the threading only shows from about 24 px.",
+   "The long acute wedges either side of the crossing are fragile for foil or emboss at very small physical sizes (use mark_small there).",
+   "In the context render, CREATIONS is barely legible at the 52 px header lockup height; a compact header version without the sub-line would be better in production.",
+   "The monogram canvas is a plain half-drop repeat with no secondary motif, so it is less rich than heritage maison canvases."
+  ]
+ },
+ {
+  "id": "t4_jaali",
+  "concept_name": "The Jaali Stroke",
+  "story": "Our V is one point of a Mughal eight-point jaali star: on its own it is our initial, eight of them lock together into the star, and a screen of stars becomes the jaali, the way creators grow stronger together.",
+  "construction": "The mark starts from a Mughal {8/3} star with radius R=100. Its 45-degree point is a V. The mark is one point drawn as a band (t=9) inside the star outline, with its terminals cut on the two radii through the star's notches (247.5° and 292.5°). A 0.85 hairline split runs on the tip radius (270°), so every cut in the mark points to the jaali's centre. The same unit makes the rest of the system: eight units with radial slits form the seal, and Hankin octagon-square stars at a 67.5° contact angle form the jaali canvas, where every point is the brand V. The wordmark is Marcellus caps, outlined and optically spaced (scanline profiles give each pair an equal mean gap, plus pair corrections). In the lockups the mark has computed overshoots.",
+  "folder": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t4_jaali",
+  "sheet_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t4_jaali/sheet.png",
+  "sizes_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t4_jaali/sizes.png",
+  "context_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t4_jaali/context.png",
+  "explore_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t4_jaali/explore.png",
+  "variations_explored": 90,
+  "refinement_loops": 6,
+  "self_score": 6,
+  "weaknesses": [
+   "On its own the mark reads mainly as a refined, sharp V; the jaali idea only lands when it is shown next to the construction drawing, seal or pattern.",
+   "It departs from the territory as written: instead of a jaali motif carving through a bold V, the V is derived from the jaali. Pattern-filled V versions were built and rejected as ornamental and template-like.",
+   "The hairline split can read as a pen nib or two leaves, and split-V monograms are a known move. At mid sizes (about 50-90 px) it shows only as a faint seam.",
+   "The supporting seal is an eight-point star, which may read as a generic star or as Islamic-pattern specific. It should stay secondary and not be used as the profile picture.",
+   "The wordmark is a free Google font (Marcellus) customised only by optical spacing and pair kerning; it is not custom drawn.",
+   "The horizontal lockup repeats the V (the mark plus the wordmark's initial).",
+   "In the Instagram profile picture it is still a V inside a circle, which the owner may associate with the rejected round."
+  ]
+ },
+ {
+  "id": "t5_shirorekha",
+  "concept_name": "Shirorekha: The Headline",
+  "story": "In Devanagari every letter hangs from one line, the shirorekha (literally \"head-line\"); VanIndra hangs its English letters from that same line, because every piece of content we make hangs from the headline, the first three seconds.",
+  "construction": "VANINDRA is drawn as custom capitals on a 100-unit body, hanging from an 8.8-unit shirorekha. The verticals are 14-unit dandas. Every diagonal is a straight wedge that leaves the headline 3.6 units wide and lands on a 16.5-unit foot. The D and R bowls are k=0.60 superellipses. The V's thick stroke is the one signature exception: a single leaf (two quadratic Béziers). The व/V monogram uses that same leaf, ending at a tip at (37, 90), plus a 5-unit hairline that rises at the V's mirrored angle into a 14.5-unit danda at x=62, all under a 9.6-unit headline. The bowl tip sits above the danda foot, as in a real व. Everything is parametric (build.py) and boolean-unioned in skia-pathops, coordinates are rounded to 0.01, and the mark is optically centred by area centroid. A separate heavier cut covers sizes of 48 px and below.",
+  "folder": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t5_shirorekha",
+  "sheet_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t5_shirorekha/sheet.png",
+  "sizes_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t5_shirorekha/sizes.png",
+  "context_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t5_shirorekha/context.png",
+  "explore_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t5_shirorekha/explore.png",
+  "variations_explored": 81,
+  "refinement_loops": 12,
+  "self_score": 7,
+  "weaknesses": [
+   "Latin readers see 'VI'. That is VanIndra's initials, but it can also read as the Roman numeral six, and the horizontal lockup reads 'VI VANINDRA'.",
+   "The व reading is stylised (a pointed leaf bowl, not a round one). Native Hindi readers need to confirm it reads as व at a glance. A curved-sweep variant read as प and was rejected.",
+   "The monogram is a letter-derived glyph, not an abstract symbol. It is ownable through its leaf/danda construction, but it is less iconic than a pure symbol.",
+   "The hairlines (V right arm, A left arm, crossbars) get fragile below about 14 px cap height, so very small uses need the mark alone or mark_small.",
+   "The V's curved leaf is the only curved diagonal in the wordmark. That is a deliberate signature, but a purist could call it inconsistent.",
+   "Latin capitals under a headline bar have kitschy 'faux-Hindi' precedents. The identity depends on strict restraint in use: no ornaments, foil or 3D.",
+   "CREATIONS is typeset in Jost 500, not custom-drawn. The optional bilingual lockup uses Tiro Devanagari Hindi with its headline normalised, and it must be verified by the team.",
+   "mark_small is noticeably heavier than the master mark, so the two cuts must be kept strictly separated by size."
+  ]
+ },
+ {
+  "id": "t6_signature",
+  "concept_name": "Canopy Signature",
+  "story": "One unbroken pen stroke joins Van and Indra: the hairline that rises out of the V becomes the canopy over the name, the sky over the forest, and comes down as the I.",
+  "construction": "There is no font in it. Every letter of the 'VanIndra' signature is a centre-line skeleton built on a grid (x-height 100, caps 252, stem unit 70, fixed turn radii 12/11, true-ellipse bowls), with connectives computed as exact tangent lines between turn circles. The whole skeleton is sheared to a single 18° slant, then drawn with a simulated pointed nib: it shades only on downstrokes, uses C1-smooth pressure ramps and tapers, and blends ball terminals in as filleted drops. The outlines are curve-fitted and unioned. The mark (V–I ligature) and the wordmark call the same V and canopy-I functions, so the mark is the signature's own gesture with 'an' removed. The wordmark, mark and small mark are three optical sizes of one pen, and CREATIONS is Jost 400 tracked +0.44 em with optical pair kerning.",
+  "folder": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t6_signature",
+  "sheet_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t6_signature/sheet.png",
+  "sizes_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t6_signature/sizes.png",
+  "context_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t6_signature/context.png",
+  "explore_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t6_signature/explore.png",
+  "variations_explored": 40,
+  "refinement_loops": 6,
+  "self_score": 7,
+  "weaknesses": [
+   "The mark reads as 'VI', which some people may take as the Roman numeral six; it relies on being introduced alongside the signature.",
+   "The script capital I (roundhand form with a foot loop) can be misread as 'J' by people who don't read scripts. The tapered alternative read worse (as '/' or 'l'), so the loop was kept.",
+   "The canopy is a bold, somewhat divisive gesture: at large sizes it can feel like an awning over 'an', and below about 40 px wordmark height the hairline canopy fades to decoration.",
+   "Any script signature sits close to the 'wedding script' genre. Its distinctiveness rests on the canopy ligature and the construction craft, not on a symbol, and a harsh viewer could still call it a calligraphic monogram.",
+   "In the 52 px header lockup CREATIONS is only about 6 to 7 px tall, readable but marginal; the horizontal lockup also repeats the V (mark plus signature), separated only by a hairline rule.",
+   "explore.png is the honest early sheet: it was rendered with the first pen engine (crude joins, one fill glitch in the 'd' of variant 6), so it looks rougher than the final work.",
+   "This is a designed brand signature, not Vandana Yadav's real autograph, and must never be used as her legal signature. No Devanagari companion has been drawn yet."
+  ]
+ },
+ {
+  "id": "t7_hook_mark",
+  "concept_name": "Hook + Tick",
+  "story": "Our V is cut once: the gold piece above the cut is the hook, the first thing your eye lands on, and what stays below it is a tick, the approval it earns, because every Reel we make works the same way: hook first, then the hold.",
+  "construction": "A Swiss monoline V (perpendicular stroke 125 on a cap height of 1000) whose outer edges run exactly on the diagonals of a 9:16 frame (dx:dy = 9:16) and meet at a sharp point that overshoots the baseline by 3%. One horizontal 24-unit cut crosses only the left arm, centred at 9/16 of the height. Below the cut, the emerald strokes stand 9:16 as a complete tick; above it is an exact 4-point gold parallelogram, the hook. Everything is computed from straight-line intersections, with one contour per piece and no curves. The wordmark is Jost 500 with the V and both A's redrawn on the same 9:16 angle using Jost's stem, a VA pair nested on a parallel channel equal in area to a stem gap, and hand-set optical kerning; CREATIONS uses the brand A and is set flush left (Swiss).",
+  "folder": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t7_hook_mark",
+  "sheet_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t7_hook_mark/sheet.png",
+  "sizes_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t7_hook_mark/sizes.png",
+  "context_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t7_hook_mark/context.png",
+  "explore_png": "/tmp/claude-0/-home-user-vanindra-creations/704148cb-74ad-5713-93e9-04b0ce97a9f0/scratchpad/logo2/t7_hook_mark/explore.png",
+  "variations_explored": 53,
+  "refinement_loops": 5,
+  "self_score": 6.5,
+  "weaknesses": [
+   "First read is 'a geometric V with a gold piece'. The tick only appears on a second look, so without the hook/tick story it could pass for a template 'V with accent'.",
+   "The horizontal lockups stutter: 'V VANINDRA' repeats the initial.",
+   "The wordmark is only partly custom: V and A are redrawn on the brand angle, but N, I, D, R and the CREATIONS letters are stock Jost.",
+   "Antique gold on ivory has modest contrast (about 3.2:1), so the hook is weaker on light grounds than on emerald.",
+   "One-colour versions rely on a 24-unit cut that closes below about 40 px. mark_small widens the cut to 70, which looks visibly broken if someone uses it large.",
+   "The brand-angle A's are wide, so VANINDRA sets wide, and the A bar sits low (Futura-like).",
+   "The strongest story found in exploration (watch hands at 10:10: time, Swiss precision) was dropped because it failed at small sizes, so the final mark's idea is more modest."
+  ]
+ }
+]

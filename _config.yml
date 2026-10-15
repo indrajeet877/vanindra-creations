@@ -29,3 +29,4 @@ exclude:
   - netlify.toml
   - dist
   - previews
+  - _work_archive
