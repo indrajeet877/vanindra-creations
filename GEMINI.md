@@ -42,7 +42,7 @@ Inspired by **IDigitalAKKi Media (Warm Ivory + Emerald + Gold)**, **LexiConn (AI
 ---
 
 ## 4. Workspace Map
-- `index.html` — Live Public Agency Funnel (`https://vanindracreations.pages.dev/`) featuring Warm Ivory + Emerald/Gold theme, 3D iPhone Before/After Simulator, Founder Vandana Yadav Case Study, Live Client Portal Preview, 9-Step Framework, Voice + Free Background AI (`text.pollinations.ai`) Strategy Generator, and 3-Card Public Leadership Directory with Official App Logos.
+- `index.html` — Live Public Agency Funnel, **"Focus Story" design approved by the owner on 15 Oct 2026** (live on GitHub Pages; the client-facing address will be `vanindracreations.in`), featuring Warm Ivory + Emerald crystal theme with Dark Studio Mode, a pinned-phone Before/After story, Founder Vandana Yadav Case Study, Live Client Portal Preview, 9-Step Framework, Voice + Free Background AI (`text.pollinations.ai`) Strategy Generator, and 3-Card Public Leadership Directory with Official App Logos.
 - `thumbnail-studio.html` — Live Interactive 9:16 Instagram Reel Cover Designer (`<canvas>` PNG exporter).
 - `00_MASTER_BLUEPRINT.md` — Executive summary & step-by-step operating pipeline.
 - `01_Brand_and_Team/` — Brand bible, logo suite (`Brand_Assets/`), team roles, WhatsApp group setup, and resumes.
