@@ -609,6 +609,17 @@ body.dark-studio .field input,body.dark-studio .field select,body.dark-studio .f
 @keyframes spin{to{transform:rotate(360deg)}}
 .privacy{font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.5;display:flex;gap:8px}
 .privacy .i{width:15px;height:15px;margin-top:2px;color:var(--muted)}
+.consent{position:relative;display:flex;align-items:flex-start;gap:12px;min-height:44px;margin:4px 0 14px;padding:4px 0;font-size:13.5px;line-height:1.5;color:var(--muted);cursor:pointer}
+.consent input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;z-index:1}
+.consent .box{flex:none;display:grid;place-items:center;width:22px;height:22px;margin-top:1px;border-radius:7px;background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--line-2);transition:background-color .2s,box-shadow .2s}
+.consent .box .i{width:14px;height:14px;stroke-width:3;color:#fff;opacity:0}
+.consent input:checked+.box{background:var(--emerald);box-shadow:none}
+body.dark-studio .consent input:checked+.box .i{color:#06130E}
+.consent input:checked+.box .i{opacity:1}
+.consent input:focus-visible+.box{outline:2px solid var(--emerald);outline-offset:2px}
+.consent a{position:relative;z-index:2;color:var(--emerald);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.foot-privacy{margin-top:24px;max-width:760px;font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.7);scroll-margin-top:120px}
+.foot-privacy strong{color:#fff;font-weight:600}
 .ai-out{display:none;margin-top:20px;padding:22px;border-radius:24px;background:#071A13;color:rgba(255,255,255,.82)}
 .ai-out.active{display:block;animation:fade .5s var(--ease)}
 .ai-out h3{color:#fff;font-size:20px;letter-spacing:-.025em}
@@ -1865,6 +1876,7 @@ I explored your creator portfolio (@vandanay2012 &amp; @smitayadav_0901) and wou
             <textarea id="ztVoiceNotes" rows="3" placeholder="e.g. I have 100K+ followers but views have plateaued. I need high-retention Reel editing, viral hooks and brand-deal positioning…" data-placeholder-hi="उदा. मेरे 1 लाख+ फॉलोअर्स हैं पर व्यूज कम आते हैं, मुझे रील एडिटिंग और ब्रांड डील्स चाहिए..." required></textarea>
           </div>
         </div>
+        <label class="consent" for="ztConsent"><input type="checkbox" id="ztConsent" required><span class="box" aria-hidden="true"><svg class="i"><use href="#i-check"/></svg></span><span data-hi="मैं सहमत हूँ कि मेरे जवाब सिर्फ यह प्लान लिखने के लिए Pollinations (एक फ्री थर्ड-पार्टी AI सर्विस) को जाएंगे। मैं कोई संवेदनशील निजी जानकारी नहीं डालूँगा/डालूँगी। <a href='#privacy'>प्राइवेसी नोट</a>">I agree that my answers go to Pollinations, a free third-party AI service, only to draft this plan. I won't enter sensitive personal details. <a href="#privacy">Privacy note</a></span></label>
         <div class="f-actions">
           <button type="submit" id="btnRunAI" class="btn btn-gold btn-lg"><svg class="i"><use href="#i-sparkles"/></svg><span data-hi="मेरा फ्री प्लान और 3 स्क्रिप्ट बनाएं">Generate my free plan &amp; 3 scripts</span></button>
           <span id="aiLoadingIndicator" aria-live="polite"><span class="spin" aria-hidden="true"></span><span data-hi="आपका प्लान और 3 स्क्रिप्ट तैयार हो रहे हैं — इसमें 1 मिनट तक लग सकता है…">Drafting your plan and 3 scripts — this can take up to a minute…</span></span>
@@ -2067,6 +2079,7 @@ I explored your creator portfolio (@vandanay2012 &amp; @smitayadav_0901) and wou
           </ul>
         </div>
       </div>
+      <p class="foot-privacy" id="privacy" data-hi="<strong>प्राइवेसी:</strong> फ्री AI प्लान आपके जवाब सिर्फ प्लान लिखने के लिए Pollinations (एक थर्ड-पार्टी AI सर्विस) को भेजता है, और एक कॉपी सिर्फ आपके अपने ब्राउज़र में रहती है। आपकी जानकारी हम तक तभी पहुँचती है जब आप उसे WhatsApp पर भेजते हैं। हम आपका नंबर किसी को नहीं बेचते।"><strong>Privacy:</strong> the free AI plan sends your answers to Pollinations, a third-party AI service, only to draft your plan, and a copy stays only in your own browser. Your details reach us only when you send them on WhatsApp. We never sell your number.</p>
       <div class="foot-bottom">
         <span>© 2026 VanIndra Creations · vanindracreations.in</span>
         <span data-hi="भारत के 1 लाख+ क्रिएटर्स और ब्रांड्स के लिए।">Built for 1&nbsp;lakh+ creators &amp; brands across India.</span>
