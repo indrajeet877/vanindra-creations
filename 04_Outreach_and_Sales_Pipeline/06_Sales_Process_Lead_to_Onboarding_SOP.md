@@ -148,7 +148,7 @@ Smita Yadav **owns the Lead Sheet and the Payment Log** at every stage, even whe
 
 **Still open for the owner:** approve the deck, and decide whether the Trial card says "One per creator" (§10).
 
-**Until the deck is approved:** walk through the problems using the prospect's own Instagram page and audit, on a call or in voice notes. The new homepage (Focus Story, live since commit `53311b0`) tells the same raw clip → Reel story, but send its link only once the owner confirms a client-safe address (`pages.dev` or `.in`). Never send the `github.io` address (`AGENTS.md` §4).
+**Until the deck is approved:** walk through the problems using the prospect's own Instagram page and audit, on a call or in voice notes. The new homepage (Liquid Glass 3D, live since 16 Oct 2026) tells the same raw clip → Reel story, but send its link only once the owner confirms a client-safe address (`pages.dev` or `.in`). Never send the `github.io` address (`AGENTS.md` §4).
 
 ### 3.3 Proof we are allowed to show
 

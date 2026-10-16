@@ -1,6 +1,6 @@
 # Final website: Liquid Glass + 3D glass, magic cursor, cinematic motion (15 Oct 2026)
 
-> **Status:** waiting for the owner's OK. **Not live yet.** The live website is still Focus Story.
+> **Status:** **live since 16 Oct 2026**, after the owner said "kindly deploy the changes". The root `index.html`, `login.html` and `thumbnail-studio.html` are these pages, with normal `assets/` paths. The login page keeps `noindex`; the homepage and the studio are indexable, as before. The owner deployed without changing the password and Hindi points below.
 > **Private preview, with videos:** https://claude.ai/artifact/MgcLqYnXWBsWhgEpReD1jZ
 
 ## What the team asked
