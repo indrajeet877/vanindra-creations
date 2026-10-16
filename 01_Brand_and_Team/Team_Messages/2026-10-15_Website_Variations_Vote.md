@@ -35,6 +35,8 @@ All judges: every variation beats Liquid Glass. Every variation passes the autom
   2. no password field in the preview login;
   3. a native Hindi check.
 
+**Deployed (16 Oct 2026):** the owner said "kindly deploy the changes". The homepage, the client login (preview) and the cover studio went live together on GitHub Pages. Points 2 and 3 above are still open: the login preview goes live without a password field, and the Hindi text still needs a native check.
+
 ## Email log
 | Sent (UTC) | To | Subject | Content |
 | :--- | :--- | :--- | :--- |
