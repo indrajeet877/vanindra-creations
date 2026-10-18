@@ -43,9 +43,10 @@ if grep -inE "indrajeet|guggy|sahil|9415259408" "$OUT"/*.html; then
   fail "a public page mentions a background team member, a nickname or a second number (see lines above)"
 fi
 # Normalise every Indian mobile number (with or without the 91 country code) to its last 10 digits.
-# Allowed: 8112859437 (official WhatsApp) and 8756539282 (part of the official team email address).
+# Allowed: 8112859437 (official WhatsApp) only. Akarsh Yadav's email (which contains his mobile digits) was removed
+# from the public pages on 18 Oct 2026, so those digits now fail the build if they ever come back.
 other_numbers="$(grep -ohE '(\+?91[ -]?)?[6-9][0-9]{4}[ -]?[0-9]{5}' "$OUT"/*.html | tr -d ' +-' | grep -oE '[0-9]{10}$' \
-  | sort -u | grep -vE '^(8112859437|8756539282)$' || true)"
+  | sort -u | grep -vE '^(8112859437)$' || true)"
 [ -z "$other_numbers" ] || fail "unexpected phone number(s) on public pages: $other_numbers"
 
 # 3. Every local link and image on the public pages must exist in dist/.

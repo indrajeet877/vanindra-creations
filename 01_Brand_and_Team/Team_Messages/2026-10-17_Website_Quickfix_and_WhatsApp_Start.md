@@ -31,3 +31,11 @@ Gemini prompts for the owner's Mac: `08_Agent_and_LLM_Instructions/07_Gemini_Mac
 ## Still with the 10x rebuild and the logo
 - Logo: the final round (polish and judging) did not finish because of the session limit. No logo is final, so the profile picture is blank until the owner decides.
 - 10x rebuild: waits for the logo decision. It is not part of today's fix.
+
+## Update, 18 Oct (owner's answers)
+- The screen recording shows lag only; the quick fix covers it.
+- +91 81128 59437 is the official desk number, not personal; it moves to the WhatsApp Business app.
+- Akarsh Yadav's public email removed from the homepage and login page; the build script now blocks those digits.
+- Profile picture chosen: the "nI" monogram from the F1 logo (`01_Brand_and_Team/Brand_Assets/Logo_2026-10-18_F1_Matched_Hinge/profile_picture/dp_ivory_640.png`).
+- Phone check (390×844, CPU slowed 4×): already 60 fps before and after; endless animations 2 → 0.
+- Owner wants bulk work done by Gemini or Grok through a CLI. This session has no API key for either; Grok's API is also blocked by the network here. Prompts for the Mac: `08_Agent_and_LLM_Instructions/07_Gemini_Mac_Task_Prompts_2026-10-17.md`.

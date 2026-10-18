@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="VanIndra">
+<defs><linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9D7A0"/><stop offset="1" stop-color="#C9A646"/></linearGradient></defs>
+<rect width="32" height="32" rx="8" fill="#09241B"/>
+<path d="M9,5 H23 V7 H18 V25 H23 V27 H9 V25 H14 V7 H9 Z" fill="url(#fg)"/>
+</svg>

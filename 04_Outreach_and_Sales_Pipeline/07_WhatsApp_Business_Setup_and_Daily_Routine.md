@@ -12,10 +12,10 @@
 | Category | Marketing agency | Owner confirms |
 | About (max 139 characters) | AI + human Reel studio for creators with 1 lakh+ followers, doctors and brands. Free page audit + 15-second sample edit. | Draft, no guarantees, no invented numbers |
 | Address | India + city | Owner adds city |
-| Email | Blank until owner chooses | See section 5 (Akarsh's public email) |
+| Email | smitayadav497@gmail.com (the desk lead's official email, already on the website) | Owner may leave it blank instead |
 | Website | **Blank** until vanindracreations.in or a pages.dev address is live | Never the github.io address |
 | Hours | Not shown until Smita confirms the reply window | Hours are "not decided" in the launch checklist |
-| Profile picture | Blank until the logo vote | See section 5 |
+| Profile picture | `01_Brand_and_Team/Brand_Assets/Logo_2026-10-18_F1_Matched_Hinge/profile_picture/dp_ivory_640.png` (the "nI" monogram: emerald n, gold I) | Chosen 18 Oct on the owner's go-ahead ("find from somewhere and fix it"); swap if the team votes differently. Use the same picture on Instagram |
 
 ## 2. Greeting, away and quick replies (Hinglish, gender-neutral, no hours promised)
 
@@ -50,10 +50,10 @@ New lead · Audit sent · Sample requested · Sample sent · Plan chosen · Paid
 
 GST line and invoice wording stay pending (launch checklist P5).
 
-## 5. Owner decisions (block some steps)
-1. **Official number:** is +91 81128 59437 Smita's personal WhatsApp? If yes, use a dedicated SIM for the desk, or let Smita run the desk from her phone after the number is moved. Moving a number to the Business app logs out the personal chat on that phone.
-2. **Akarsh's public email** (`akarshgkp8756539282@gmail.com`, on the homepage and login page): the digits 8756539282 match the private-mobile format in CLAUDE.md. Keep it, or switch to a team address?
-3. **Profile picture:** no logo is final. The round-3 polish did not finish (session limit). The gold crest was rejected by the team in round 1, so do not reuse it without the owner's OK. Options: the steel VI+Play mark (`vanindra_creation_instagram_dp.jpg`), a plain text picture, or wait for the logo vote.
+## 5. Owner decisions
+1. **Official number (decided 18 Oct):** +91 81128 59437 is the studio's official desk number, not a personal WhatsApp. Move it to the WhatsApp Business app.
+2. **Akarsh's public email (decided 18 Oct):** removed from the homepage and the login page. The build script now blocks those digits.
+3. **Profile picture (decided 18 Oct):** the "nI" monogram from the F1 "Matched hinge" logo (see section 1). The logo files are in `01_Brand_and_Team/Brand_Assets/Logo_2026-10-18_F1_Matched_Hinge/`. The website still uses the text wordmark until the owner approves the logo swap there.
 4. **Domain:** is vanindracreations.in bought? Until it is live, the website field stays blank.
 5. **Ads:** Rs 0 to start (owner's choice, 17 Oct).
 
