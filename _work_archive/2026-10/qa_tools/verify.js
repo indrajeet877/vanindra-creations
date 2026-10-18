@@ -25,8 +25,10 @@ for (const l of ['login.html', 'thumbnail-studio.html']) check(html.includes(l),
 check(!/href=["']pitch-deck\.html/.test(html), 'no public link to the internal pitch-deck playbook');
 const bf = (html.match(/backdrop-filter\s*:/g) || []).length;
 check(true, `backdrop-filter rules in CSS: ${bf}`);
-for (const h of ['@vandanay2012', '@smitayadav_0901', '@yadavakarsh_07', 'smitayadav497@gmail.com', 'akarshgkp8756539282@gmail.com', 'Vandana Yadav', 'Smita Yadav', 'Akarsh Yadav', 'Gargi', 'Allahabad'])
+for (const h of ['@vandanay2012', '@smitayadav_0901', '@yadavakarsh_07', 'smitayadav497@gmail.com', 'Vandana Yadav', 'Smita Yadav', 'Akarsh Yadav', 'Gargi', 'Allahabad'])
   check(html.includes(h), `mentions ${h}`);
+// Akarsh Yadav's email contains his private mobile digits: removed from public pages on 18 Oct 2026 and must stay off.
+check(!html.includes('akarshgkp8756539282'), "Akarsh Yadav's private email is not on the page");
 for (const p of ['2,999', '14,999', '24,999', '39,999']) check(html.includes(p), `price ₹${p} present`);
 for (const r of ['DZSZW2ey529', 'Ddl3VLbu4P5', 'Dds1foTyrQm', 'DSZ8VilkrA8', 'DedHDrLgY43', 'Da0lVfrAa47']) check(html.includes(r), `reel ${r} present`);
 check(!/★★★★★|5-star|five-star/i.test(html), 'no fake 5-star testimonial markup', true);

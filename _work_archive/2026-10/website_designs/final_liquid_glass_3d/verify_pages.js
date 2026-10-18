@@ -50,7 +50,7 @@ for (const [k, html] of Object.entries(src)) {
   for (const f of ['approveReel', 'demoLogin', 'handleLogin', 'handleSignup', 'logoutClient', 'openDashboardForUser', 'submitClientBrief', 'switchAuthTab', 'setLanguageMode', 'toggleSurfaceTheme'])
     check(new RegExp('function\\s+' + f + '\\s*\\(').test(L), `${P} function ${f} defined`);
   for (const key of ['vanindra_active_client', 'vanindra_client_accounts']) check(L.includes(`'${key}'`), `${P} localStorage key ${key}`);
-  for (const t of ['Free page audit + a 15-second sample edit', '₹2,999', '₹14,999', '₹24,999', '12 Reels/month', '20 Reels/month', 'Recommended', 'by application', 'Sample workspace — illustration, not a client result', 'only in this browser', 'thumbnail-studio.html', 'index.html', 'Akarsh Yadav', 'Smita Yadav', 'akarshgkp8756539282@gmail.com'])
+  for (const t of ['Free page audit + a 15-second sample edit', '₹2,999', '₹14,999', '₹24,999', '12 Reels/month', '20 Reels/month', 'Recommended', 'by application', 'Sample workspace — illustration, not a client result', 'only in this browser', 'thumbnail-studio.html', 'index.html', 'Akarsh Yadav', 'Smita Yadav'])
     check(L.includes(t), `${P} contains "${t}"`);
   check(!/vip[^<]{0,80}₹39,999[^<]{0,40}(pay|buy|checkout)/i.test(L), `${P} VIP is not sold here (application / waitlist only)`);
   const S = src.studio, Q = '[studio]';
