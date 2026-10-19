@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VanIndra Creations — Master Client Pitch Deck &amp; 100K–1M+ Sales Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-ivory: #FAF8F3;
+      --bg-card: #FFFFFF;
+      --emerald-deep: #071F17;
+      --emerald-rich: #0E6B4E;
+      --emerald-tint: #E9F6F0;
+      --gold-imperial: #D4A024;
+      --gold-bright: #F4C44E;
+      --gold-tint: #FDF6E4;
+      --text-primary: #10211B;
+      --text-secondary: #3E544C;
+      --text-muted: #6C8279;
+      --border-line: rgba(14, 107, 78, 0.16);
+      --shadow-card: 0 20px 50px rgba(7, 31, 23, 0.09);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg-ivory);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    /* Top Control Bar */
+    .deck-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: linear-gradient(90deg, #04130E, #0A2E22, #04130E);
+      color: #FFFFFF;
+      padding: 12px 24px;
+      border-bottom: 1.5px solid rgba(244, 196, 78, 0.35);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 10px 30px rgba(4, 19, 14, 0.25);
+    }
+
+    .brand-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-emblem {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #F4C44E, #B8860B);
+      color: #051610;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+    }
+
+    .deck-nav-pills {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .slide-pill {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(244, 196, 78, 0.28);
+      color: rgba(255, 255, 255, 0.88);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .slide-pill:hover, .slide-pill.active {
+      background: linear-gradient(135deg, #F4C44E, #D4A024);
+      color: #061A12;
+      border-color: transparent;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.8rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: 0.2s ease;
+    }
+
+    .btn-wa {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: #FFFFFF;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #F4C44E, #D4A024);
+      color: #061A12;
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    /* Slide Container */
+    .deck-container {
+      max-width: 1240px;
+      margin: 28px auto;
+      padding: 0 20px;
+      display: grid;
+      gap: 32px;
+    }
+
+    .ppt-slide {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-line);
+      border-radius: 26px;
+      padding: 38px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ppt-slide.dark-hero {
+      background: radial-gradient(circle at 85% 15%, rgba(244, 196, 78, 0.16), transparent 40%),
+                  linear-gradient(140deg, #061B14 0%, #0C3326 60%, #072018 100%);
+      color: #FFFFFF;
+      border: 1.5px solid rgba(244, 196, 78, 0.35);
+    }
+
+    .slide-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--emerald-tint);
+      color: var(--emerald-rich);
+      margin-bottom: 14px;
+    }
+
+    .dark-hero .slide-badge {
+      background: rgba(244, 196, 78, 0.14);
+      color: #F4C44E;
+      border: 1px solid rgba(244, 196, 78, 0.35);
+    }
+
+    .slide-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2rem, 3.6vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .slide-sub {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 820px;
+      margin-bottom: 26px;
+    }
+
+    .dark-hero .slide-sub {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+
+    .card-box {
+      background: var(--bg-ivory);
+      border: 1px solid var(--border-line);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .dark-hero .card-box {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(244, 196, 78, 0.24);
+      color: #FFFFFF;
+    }
+
+    .tier-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-line);
+      border-radius: 20px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+
+    .tier-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-imperial);
+    }
+
+    .tier-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .qa-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .qa-card {
+      background: var(--bg-ivory);
+      border-left: 4px solid var(--emerald-rich);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .qa-card h4 {
+      font-size: 0.96rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .qa-card p {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+    }
+
+    table.pitch-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.88rem;
+    }
+
+    table.pitch-table th, table.pitch-table td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--border-line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    table.pitch-table th {
+      background: var(--emerald-deep);
+      color: #F4C44E;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    @media (max-width: 980px) {
+      .grid-2, .grid-3, .grid-4, .qa-grid { grid-template-columns: 1fr; }
+      .ppt-slide { padding: 24px; }
+    }
+
+    @media print {
+      .deck-topbar { display: none; }
+      .ppt-slide { page-break-after: always; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP STICKY PRESENTATION BAR -->
+  <header class="deck-topbar">
+    <div class="brand-title">
+      <div class="brand-emblem">V</div>
+      <div>
+        <div style="font-family:'Cinzel',serif;font-weight:800;letter-spacing:0.12em;font-size:0.95rem;">VANINDRA CREATIONS — MASTER PITCH &amp; SALES DECK</div>
+        <div style="font-size:0.74rem;color:rgba(255,255,255,0.75);">Founder: Vandana Yadav (@vandanay2012) • Official WhatsApp Desk: Smita Yadav (+91 81128 59437)</div>
+      </div>
+    </div>
+
+    <div class="deck-nav-pills">
+      <a href="#slide-1" class="slide-pill active">01 • Cover</a>
+      <a href="#slide-2" class="slide-pill">02 • Live Portfolios (0→50K)</a>
+      <a href="#slide-3" class="slide-pill">03 • 100K to 1M+ Pitch</a>
+      <a href="#slide-4" class="slide-pill">04 • Service Packages</a>
+      <a href="#slide-5" class="slide-pill">05 • Top 10 Client Q&amp;A</a>
+      <a href="#slide-6" class="slide-pill">06 • Free Daily Outreach</a>
+      <a href="#slide-7" class="slide-pill">07 • Team 10 Questions</a>
+      <a href="#slide-8" class="slide-pill">08 • 6 Revenue Streams &amp; Brand Deals</a>
+    </div>
+
+    <div style="display:flex;gap:8px;align-items:center;">
+      <button onclick="window.print()" class="btn btn-outline">🖨️ Save PDF / PPT</button>
+      <a href="index.html" class="btn btn-gold">← Back to Website</a>
+    </div>
+  </header>
+
+  <main class="deck-container">
+
+    <!-- ======================================================================
+         SLIDE 01: EXECUTIVE COVER SLIDE
+         ====================================================================== -->
+    <section id="slide-1" class="ppt-slide dark-hero">
+      <span class="slide-badge">SLIDE 01 • EXECUTIVE PRESENTATION &amp; TEAM PLAYBOOK</span>
+      <h1 class="slide-title">
+        Building India's Most Trusted <span style="color:#F4C44E;font-style:italic;">AI + Human Content Studio</span> for 50K to 1M+ Creators &amp; Brands.
+      </h1>
+      <p class="slide-sub">
+        Use this presentation during discovery calls, WhatsApp screen-shares, and daily team outreach. Everything is structured so <strong>Founder Vandana Yadav</strong>, <strong>Smita Yadav</strong>, and <strong>Akarsh Yadav</strong> can confidently explain our services, prove live results, and close retainers effortlessly.
+      </p>
+
+      <div class="grid-3">
+        <div class="card-box">
+          <div style="font-size:0.74rem;font-weight:800;color:#F4C44E;letter-spacing:0.1em;margin-bottom:6px;">👑 FOUNDER &amp; CLIENT PORTFOLIO #01</div>
+          <h3 style="font-size:1.25rem;margin-bottom:6px;">Vandana Yadav (@vandanay2012)</h3>
+          <p style="font-size:0.86rem;color:rgba(255,255,255,0.82);">
+            Sole Public Founder &amp; Chief Influencer Director. Oversees "What to Post vs. What NOT to Post" creative quality and anchors our 0 → 50K+ Flagship Portfolio #01.
+          </p>
+        </div>
+
+        <div class="card-box">
+          <div style="font-size:0.74rem;font-weight:800;color:#6EE7B7;letter-spacing:0.1em;margin-bottom:6px;">📈 OFFICIAL WHATSAPP CONCIERGE &amp; PORTFOLIO #02</div>
+          <h3 style="font-size:1.25rem;margin-bottom:6px;">Smita Yadav (@smitayadav_0901)</h3>
+          <p style="font-size:0.86rem;color:rgba(255,255,255,0.82);">
+            B.Com (Gargi College, DU). Single Official WhatsApp Concierge (<strong>+91 81128 59437</strong>), Discovery Call Closer, Brand Deal Strategist &amp; Live Client Portfolio #02.
+          </p>
+        </div>
+
+        <div class="card-box">
+          <div style="font-size:0.74rem;font-weight:800;color:#F4C44E;letter-spacing:0.1em;margin-bottom:6px;">🎬 TECH, VIDEO EDITING &amp; SCIENTIFIC HOOK LEAD</div>
+          <h3 style="font-size:1.25rem;margin-bottom:6px;">Akarsh Yadav (@yadavakarsh_07)</h3>
+          <p style="font-size:0.86rem;color:rgba(255,255,255,0.82);">
+            B.Voc Food Tech (Univ. of Allahabad). Leads High-Retention 9:16 Reel Editing, 15-Second Before/After Sample Edits, and Doctor/Fitness/Food Scientific Hooks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SLIDE 02: LIVE CLIENT PORTFOLIOS #01 & #02 (0 -> 50K+ TRAJECTORY)
+         ====================================================================== -->
+    <section id="slide-2" class="ppt-slide">
+      <span class="slide-badge">SLIDE 02 • PROOF BEFORE PITCHING</span>
+      <h2 class="slide-title">How We Present Our First 2 Live Client Portfolios (`0 → 50K+` Growth System)</h2>
+      <p class="slide-sub">
+        When any prospect asks <em>"Show me whose accounts you manage right now"</em>, we immediately showcase <strong>Client Portfolio #01 (`@vandanay2012`)</strong> and <strong>Client Portfolio #02 (`@smitayadav_0901`)</strong> as live studio-managed accounts before inviting them to claim <strong>Client Portfolio Slot #03</strong>.
+      </p>
+
+      <div class="grid-3">
+        <div class="card-box" style="border-top:4px solid var(--emerald-rich);">
+          <span class="tier-badge" style="background:var(--emerald-tint);color:var(--emerald-rich);">LIVE CLIENT PORTFOLIO #01</span>
+          <h3 style="font-size:1.3rem;margin-bottom:6px;">Vandana Yadav (`@vandanay2012`)</h3>
+          <p style="font-size:0.86rem;color:var(--text-secondary);margin-bottom:12px;">
+            <strong>Niche:</strong> Family, Lifestyle &amp; Relatable Indian Storytelling.<br>
+            <strong>Studio Execution:</strong> Built from scratch (`0 → 50K+` growth trajectory) using 3-second emotional hooks, clean Hinglish kinetic captions, and zero-fluff storytelling.
+          </p>
+          <div style="font-size:0.82rem;font-weight:800;color:var(--emerald-rich);">✅ 84.2% 3-Sec Hold • 3.8x Organic Reach</div>
+        </div>
+
+        <div class="card-box" style="border-top:4px solid var(--gold-imperial);">
+          <span class="tier-badge" style="background:var(--gold-tint);color:#9A6B07;">LIVE CLIENT PORTFOLIO #02</span>
+          <h3 style="font-size:1.3rem;margin-bottom:6px;">Smita Yadav (`@smitayadav_0901`)</h3>
+          <p style="font-size:0.86rem;color:var(--text-secondary);margin-bottom:12px;">
+            <strong>Niche:</strong> Gen-Z Fashion, DU Campus Lifestyle &amp; Brand Aesthetics.<br>
+            <strong>Studio Execution:</strong> Scaled on our `0 → 50K+` trajectory with fast-cut transition Reels, aesthetic 9:16 covers, and D2C sponsor-ready profile positioning.
+          </p>
+          <div style="font-size:0.82rem;font-weight:800;color:#9A6B07;">✅ Sponsor-Ready Grid • High Save/Share Velocity</div>
+        </div>
+
+        <div class="card-box" style="background:var(--emerald-deep);color:#FFFFFF;border-top:4px solid #F4C44E;">
+          <span class="tier-badge" style="background:rgba(244,196,78,0.2);color:#F4C44E;">CLIENT SLOT #03 • OPEN NOW</span>
+          <h3 style="font-size:1.3rem;margin-bottom:6px;color:#FFFFFF;">Prospect's Profile Next (`50K → 1M+`)</h3>
+          <p style="font-size:0.86rem;color:rgba(255,255,255,0.82);margin-bottom:12px;">
+            <strong>How Smita Pitches Slot #03:</strong> <em>"We don't take 50 random clients at once. We build dedicated boutique portfolios like `@vandanay2012` and `@smitayadav_0901`, and we are currently onboarding Client Portfolio #03 with a Free 15s Sample Edit."</em>
+          </p>
+          <a href="https://wa.me/918112859437?text=Hello%20Smita%20Yadav!%20I%20would%20like%20to%20claim%20Client%20Portfolio%20Slot%20%2303." target="_blank" class="btn btn-wa" style="width:100%;justify-content:center;">💬 Claim Slot #03 on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 8 Live Viral Reels & Audience Trust Proof Strip from @vandanay2012 (50K Followers) -->
+      <div style="margin-top:24px;background:var(--emerald-deep);border-radius:20px;padding:22px;color:#FFFFFF;border:1px solid rgba(244,196,78,0.35);">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+          <div>
+            <span style="font-size:0.72rem;font-weight:800;color:#F4C44E;letter-spacing:0.08em;">🔥 ESTABLISHED MARKET AUTHORITY: @VANDANAY2012 (50,000+ FOLLOWERS • 467 POSTS • REAL FAN TRIBUTES)</span>
+            <h4 style="font-size:1.12rem;margin-top:3px;">Click Any Real Viral Reel During a Client Call to Prove Our 3-Second Hook &amp; Audience Trust System:</h4>
+          </div>
+          <a href="index.html#viral-reels-showcase" class="btn btn-gold" style="padding:8px 14px;font-size:0.78rem;">▶ Open the 6-Reel Flagship Showcase on Website</a>
+        </div>
+
+        <div class="grid-4" style="gap:14px;">
+          <a href="https://www.instagram.com/vandanay2012/reel/DZSZW2ey529/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.3);border-radius:14px;overflow:hidden;display:block;">
+            <img src="assets/portfolio/reel_DZSZW2ey529.jpg" alt="Viral Reel 1" style="width:100%;height:200px;object-fit:cover;">
+            <div style="padding:10px;font-size:0.76rem;">
+              <strong style="color:#F4C44E;display:block;">🔥 Relatable Share Hook</strong>
+              "Ye 5 mins kaam karte hi haath mein mobile kahan se aa jaata hai?? 🤔" ↗
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/vandanay2012/reel/DScFp3ZkYDW/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.3);border-radius:14px;overflow:hidden;display:block;">
+            <img src="assets/portfolio/reel_DScFp3ZkYDW.jpg" alt="Viral Reel 2" style="width:100%;height:200px;object-fit:cover;">
+            <div style="padding:10px;font-size:0.76rem;">
+              <strong style="color:#F4C44E;display:block;">⚡ Pattern-Interrupt Hook</strong>
+              "Moon ❌. Jalta hua Suraj 🔥🔥😂" ↗
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/vandanay2012/reel/DSZ8VilkrA8/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.3);border-radius:14px;overflow:hidden;display:block;">
+            <img src="assets/portfolio/reel_DSZ8VilkrA8.jpg" alt="Viral Reel 3" style="width:100%;height:200px;object-fit:cover;">
+            <div style="padding:10px;font-size:0.76rem;">
+              <strong style="color:#F4C44E;display:block;">🎙️ Studio Lapel-Mic Hook</strong>
+              "Naya saal ❌. Naya janam ✅" ↗
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/vandanay2012/reel/DT5JApbkVB1/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.3);border-radius:14px;overflow:hidden;display:block;">
+            <img src="assets/portfolio/reel_DT5JApbkVB1.jpg" alt="Viral Reel 4" style="width:100%;height:200px;object-fit:cover;">
+            <div style="padding:10px;font-size:0.76rem;">
+              <strong style="color:#F4C44E;display:block;">✨ Aesthetic + Text Hook</strong>
+              "Photo mast aayi hai — Post kar deti hu 😊" ↗
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/vandanay2012/reel/DbaynqrSiIo/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.3);border-radius:14px;overflow:hidden;display:block;">
+            <img src="assets/portfolio/reel_DbaynqrSiIo.jpg" alt="Viral Reel 5" style="width:100%;height:200px;object-fit:cover;">
+            <div style="padding:10px;font-size:0.76rem;">
+              <strong style="color:#F4C44E;display:block;">👗 4-Grid Brand Showcase</strong>
+              Royal Silk Saree Multi-Angle Split-Grid Edit ↗
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/vandanay2012/reel/DTANmk8ERab/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.3);border-radius:14px;overflow:hidden;display:block;">
+            <img src="assets/portfolio/reel_DTANmk8ERab.jpg" alt="Viral Reel 6" style="width:100%;height:200px;object-fit:cover;">
+            <div style="padding:10px;font-size:0.76rem;">
+              <strong style="color:#F4C44E;display:block;">🪞 English Lifestyle Hook</strong>
+              "Whenever I look myself into the mirror ❤️🙈" ↗
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/vandanay2012/reel/DSuwzgrEiwt/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);border:1px solid rgba(244,196,78,0.3);border-radius:14px;overflow:hidden;display:block;">
+            <img src="assets/portfolio/reel_DSuwzgrEiwt.jpg" alt="Viral Reel 7" style="width:100%;height:200px;object-fit:cover;">
+            <div style="padding:10px;font-size:0.76rem;">
+              <strong style="color:#F4C44E;display:block;">👨‍👩‍👧 Episodic Family Series</strong>
+              "Banku bhaiya 🥰🥰" • Repeat-Viewer Recall ↗
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/vandanay2012/p/DSZot76kly5/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#fff;background:rgba(244,196,78,0.12);border:1.5px solid #F4C44E;border-radius:14px;overflow:hidden;display:block;">
+            <img src="assets/portfolio/reel_DSZot76kly5.jpg" alt="Real Fan Sketch Tribute" style="width:100%;height:200px;object-fit:cover;">
+            <div style="padding:10px;font-size:0.76rem;">
+              <strong style="color:#F4C44E;display:block;">🎨 Real Fan Art Tribute ❤️</strong>
+              Hand-Drawn Portrait by @sketch_art__001_ ↗
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SLIDE 03: MARKET RESEARCH — HOW TO CONVINCE 100K, 200K, 500K & 1M+ CREATORS
+         ====================================================================== -->
+    <section id="slide-3" class="ppt-slide">
+      <span class="slide-badge">SLIDE 03 • MARKET RESEARCH &amp; PERSUASION MATRIX (100K TO 1M+ FOLLOWERS)</span>
+      <h2 class="slide-title">How to Convince `100K`, `200K`, `500K (0.5M)`, and `1M+` Influencers to Pay Us</h2>
+      <p class="slide-sub">
+        A creator with 100K followers has a completely different pain point than a creator with 500K or 1 Million followers. Here is the exact psychology, problem diagnosis, and winning pitch script for each follower tier:
+      </p>
+
+      <div class="grid-4">
+        <!-- 100K Tier -->
+        <div class="tier-card">
+          <div>
+            <span class="tier-badge" style="background:#E9F6F0;color:#0E6B4E;">TIER 1 • 50K – 100K (1 LAKH)</span>
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">The "Stuck Reach &amp; Zero Brand Deals" Creator</h3>
+            <p style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:10px;">
+              <strong>Their Pain:</strong> Hit 100K from 1–2 viral videos, but now average views dropped to 3K–8K. No brand deals or only barter deals.
+            </p>
+            <p style="font-size:0.83rem;color:var(--text-primary);margin-bottom:10px;">
+              <strong>Why They Pay Us:</strong> Even <strong>1 paid brand deal (₹25K–₹40K)</strong> recovers our entire monthly retainer (`₹14,999–₹24,999`).
+            </p>
+            <div style="background:var(--bg-ivory);padding:10px;border-radius:10px;font-size:0.78rem;">
+              <strong>🗣️ Smita's Pitch Line:</strong><br>
+              <em>"Aapke 1 Lakh followers hain, par bina 3-second hook aur media-kit bio ke brands barter offer karte hain. Hum aapki 1 Reel ka 15s Free Edit karke dikhate hain—sirf 1 paid brand deal se hamari poore mahine ki fees nikal aayegi!"</em>
+            </div>
+          </div>
+          <div style="margin-top:12px;font-weight:800;font-size:0.8rem;color:var(--emerald-rich);">Recommended Plan: ₹2,999 Trial → ₹14,999 Starter</div>
+        </div>
+
+        <!-- 200K Tier -->
+        <div class="tier-card">
+          <div>
+            <span class="tier-badge" style="background:#FDF6E4;color:#9A6B07;">TIER 2 • 200K (2 LAKH+)</span>
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">The "4-Hour Editing Burnout" Creator</h3>
+            <p style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:10px;">
+              <strong>Their Pain:</strong> Getting some inquiries, but spending 3–4 hours daily editing on phone apps (CapCut/VN) and running out of fresh script topics.
+            </p>
+            <p style="font-size:0.83rem;color:var(--text-primary);margin-bottom:10px;">
+              <strong>Why They Pay Us:</strong> We save them <strong>70+ hours/month</strong> and double their posting consistency from 2x/week to 5x/week.
+            </p>
+            <div style="background:var(--bg-ivory);padding:10px;border-radius:10px;font-size:0.78rem;">
+              <strong>🗣️ Smita's Pitch Line:</strong><br>
+              <em>"2 Lakh+ par aapka kaam editing mein 4 ghante lagana nahi, balki camera par bolna aur brand calls lena hai. Aap sirf 20 minute raw video shoot karein—baaki 20 Reels ki scripting aur editing hamari team sambhalegi."</em>
+            </div>
+          </div>
+          <div style="margin-top:12px;font-weight:800;font-size:0.8rem;color:#9A6B07;">Recommended Plan: ₹24,999 Pro Growth (20 Reels/Mo)</div>
+        </div>
+
+        <!-- 500K (Half Million) Tier -->
+        <div class="tier-card">
+          <div>
+            <span class="tier-badge" style="background:#EEF2FF;color:#3730A3;">TIER 3 • 500K (HALF MILLION)</span>
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">The "Authority &amp; Multi-Platform Scale" Creator</h3>
+            <p style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:10px;">
+              <strong>Their Pain:</strong> Has 500K on Instagram, but losing ₹1L–₹3L/month because they aren't repurposing to YouTube Shorts, LinkedIn, or running automated DM funnels.
+            </p>
+            <p style="font-size:0.83rem;color:var(--text-primary);margin-bottom:10px;">
+              <strong>Why They Pay Us:</strong> Freelance editors miss deadlines; our studio gives them a <strong>3-person dedicated content department</strong> for less than 1 junior hire.
+            </p>
+            <div style="background:var(--bg-ivory);padding:10px;border-radius:10px;font-size:0.78rem;">
+              <strong>🗣️ Smita's Pitch Line:</strong><br>
+              <em>"Half-Million page ko ek freelance editor nahi, balki ek bharosemand content operations team chahiye. Hum aapke Instagram Reels + YouTube Shorts + Brand Media Kit teeno ko ek saath scale karenge."</em>
+            </div>
+          </div>
+          <div style="margin-top:12px;font-weight:800;font-size:0.8rem;color:#3730A3;">Recommended Plan: ₹24,999 Pro / ₹39,999 360° VIP</div>
+        </div>
+
+        <!-- 1M+ (10 Lakh+) Tier -->
+        <div class="tier-card">
+          <div>
+            <span class="tier-badge" style="background:#FEF2F2;color:#991B1B;">TIER 4 • 1M+ (10 LAKH+ / CELEBRITY)</span>
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">The "Zero-Operations Executive &amp; IP" Creator</h3>
+            <p style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:10px;">
+              <strong>Their Pain:</strong> High-profile creator, celebrity doctor, or founder with zero time. Needs strict brand-safety QA ("what NOT to post"), daily output, and VIP privacy.
+            </p>
+            <p style="font-size:0.83rem;color:var(--text-primary);margin-bottom:10px;">
+              <strong>Why They Pay Us:</strong> 1 sponsored Reel for a 1M+ creator pays ₹1.5L–₹5L. Paying ₹39,999/mo for a white-glove studio is a <strong>10x ROI no-brainer</strong>.
+            </p>
+            <div style="background:var(--bg-ivory);padding:10px;border-radius:10px;font-size:0.78rem;">
+              <strong>🗣️ Smita's Pitch Line:</strong><br>
+              <em>"1 Million+ par aapki sabse badi poonji aapka time aur brand image hai. Founder Vandana Yadav khud aapke content ki creative QA dekhti hain aur hamari team 30 daily Reels va brand calls 100% hands-free chalati hai."</em>
+            </div>
+          </div>
+          <div style="margin-top:12px;font-weight:800;font-size:0.8rem;color:#991B1B;">Recommended Plan: ₹39,999+ VanIndra 360° VIP Studio</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SLIDE 04: SERVICE ARCHITECTURE & PACKAGE DELIVERABLES TABLE
+         ====================================================================== -->
+    <section id="slide-4" class="ppt-slide">
+      <span class="slide-badge">SLIDE 04 • SERVICE ARCHITECTURE &amp; PRICING MATRIX</span>
+      <h2 class="slide-title">What Is Inside Every Package (So the Team Can Explain Clearly)</h2>
+      <p class="slide-sub">
+        Always pitch the <strong>Free 7-Day Content Audit + 15-Second Sample Edit</strong> first. If a client is hesitant on a monthly retainer, close them on the <strong>₹2,999 3-Reel Trial Pack</strong>—80% of trial clients upgrade to ₹14,999 or ₹24,999 within 7 days!
+      </p>
+
+      <table class="pitch-table">
+        <thead>
+          <tr>
+            <th>Deliverable / Service</th>
+            <th>3-Reel Trial Pack<br><span style="color:#FFFFFF;">₹2,999 (One-Time)</span></th>
+            <th>VanIndra Starter<br><span style="color:#FFFFFF;">₹14,999 / Month</span></th>
+            <th>VanIndra Pro Growth ★<br><span style="color:#FFFFFF;">₹24,999 / Month</span></th>
+            <th>VanIndra 360° VIP<br><span style="color:#FFFFFF;">₹39,999 / Month</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. "What to Post vs. NOT Post" Calendar</strong></td>
+            <td>7-Day Custom Plan</td>
+            <td>30-Day Monthly Calendar</td>
+            <td>30-Day Viral + Brand Calendar</td>
+            <td>30-Day Multi-Platform Calendar</td>
+          </tr>
+          <tr>
+            <td><strong>2. Ready-to-Speak Viral Scripts &amp; 3s Hooks</strong></td>
+            <td>3 Hinglish/English Scripts</td>
+            <td>12 Scripts (3/Week)</td>
+            <td>20 Scripts (5/Week)</td>
+            <td>30 Daily Scripts + Shoot Prompts</td>
+          </tr>
+          <tr>
+            <td><strong>3. High-Retention Studio Reel Editing</strong></td>
+            <td>3 Edited Reels + Captions</td>
+            <td>12 Studio Edited Reels</td>
+            <td>20 Studio Edited Reels</td>
+            <td>30 Daily Reels + Shorts Repurpose</td>
+          </tr>
+          <tr>
+            <td><strong>4. Custom 9:16 Luxury Cover Thumbnails</strong></td>
+            <td>3 Custom Reel Covers</td>
+            <td>12 Custom Reel Covers</td>
+            <td>20 Magnific/Studio Covers</td>
+            <td>30 Covers + Grid Aesthetic Redesign</td>
+          </tr>
+          <tr>
+            <td><strong>5. Brand Deal &amp; Business Positioning</strong></td>
+            <td>Bio &amp; Profile Audit</td>
+            <td>Bio Upgrade + Link Setup</td>
+            <td>Brand-Ready Bio + Media Kit</td>
+            <td>Full Brand Deal Pitching + DM Funnel</td>
+          </tr>
+          <tr>
+            <td><strong>6. Dedicated Client Portal &amp; WhatsApp Desk</strong></td>
+            <td>WhatsApp Delivery</td>
+            <td>Client Login + Weekly Sync</td>
+            <td>Priority Portal + Founder QA</td>
+            <td>VIP Concierge + Auto-Posting</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ======================================================================
+         SLIDE 05: TOP 10 QUESTIONS CLIENTS ASK & WORD-FOR-WORD TEAM ANSWERS
+         ====================================================================== -->
+    <section id="slide-5" class="ppt-slide">
+      <span class="slide-badge">SLIDE 05 • CLIENT OBJECTION BATTLECARDS FOR SMITA &amp; AKARSH</span>
+      <h2 class="slide-title">Top 10 Questions Clients Ask on Calls &amp; Exact Winning Answers</h2>
+      <p class="slide-sub">
+        Before any client pays, they will ask 3 to 5 of these exact questions. Read these word-for-word during WhatsApp chats or discovery calls:
+      </p>
+
+      <div class="qa-grid">
+        <div class="qa-card">
+          <h4>Q1: "Show me your current clients and past work first."</h4>
+          <p><strong>Team Answer:</strong> "Bilkul! Dekhiye humara Live Client Portfolio #01 (<code>@vandanay2012</code>) aur Portfolio #02 (<code>@smitayadav_0901</code>) jinhe humne 0 se 50K+ trajectory par build kiya hai. Iske alawa hum aapke khud ke ek raw video ka <strong>15-second Before/After Sample Edit bilkul FREE</strong> karke dikhate hain taaki aap apne page par humari quality dekh sakein!"</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q2: "I already have a cheap ₹500/reel freelance editor. Why pay ₹14,999–₹24,999?"</h4>
+          <p><strong>Team Answer:</strong> "Freelance editor sirf video jodta hai—woh aapko yeh nahi batata ki <em>'Kya post karein, shuru ke 3 second mein kya bolein, aur brand deals kaise laayein'</em>. Hum sirf editing nahi, aapka poora <strong>Content Strategy + Viral Scripting + Editing + Brand Positioning Studio</strong> hain."</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q3: "Can you guarantee Follower Growth or Viral Views?"</h4>
+          <p><strong>Team Answer:</strong> "Jo agency fake followers ya guaranteed views bechti hai woh bots lagakar account dead kar deti hai. Hum <strong>80%+ 3-Second Hold Retention, Consistent Viral Hooks, aur Brand-Ready Positioning</strong> ki 100% guarantee dete hain—jisse organic algorithm reach 3x–5x badhti hai."</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q4: "I am a busy Doctor / Business Owner / Non-Tech Creator—how much time do I need to give?"</h4>
+          <p><strong>Team Answer:</strong> "Poore hafte mein sirf <strong>30 se 45 minute</strong>! Hum aapko pehle se likhi hui aasan Hinglish lines bhejte hain. Aap bas apne phone se bolkar raw video WhatsApp ya Drive par bhej dein—baaki 100% kaam humari team karti hai."</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q5: "Do I have to give you my Instagram password?"</h4>
+          <p><strong>Team Answer:</strong> "Bilkul nahi! Starter aur Pro plan mein aapko password dene ki koi zaroorat nahi hai. Hum aapko Client Portal (<code>login.html</code>) aur WhatsApp par ready-to-post Reel + Cover + Caption + Best Posting Time dete hain—aap 1 click mein khud post kar sakte hain."</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q6: "How will this help me get Paid Brand Deals or Business Customers?"</h4>
+          <p><strong>Team Answer:</strong> "Brands sirf followers nahi dekhte—woh aapka Bio, Pinned Reels, Grid Thumbnail Aesthetic aur Engagement dekhte hain. Smita Yadav aapke page ko <strong>Sponsor-Ready</strong> banati hain aur aapko custom Brand Media Kit deti hain."</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q7: "What if I don't like the editing style or want changes?"</h4>
+          <p><strong>Team Answer:</strong> "Har client ke liye hum pehle 15-second sample edit se aapka pasandida font aur colour lock karte hain, aur hamare Client Portal mein aapko har Reel par aasaan Revision aur Approval button milta hai."</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q8: "₹24,999 feels expensive right now—can I start smaller?"</h4>
+          <p><strong>Team Answer:</strong> "100%! Isiliye humne <strong>₹2,999 ka 3-Reel Trial Pack</strong> rakha hai. Aap pehle 7 din humare saath 3 viral scripts + 3 studio edited reels + 3 custom covers banwakar dekhein. Jab aapko result pasand aaye, tab monthly plan mein upgrade karein!"</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q9: "How do payments and contracts work?"</h4>
+          <p><strong>Team Answer:</strong> "Koi lamba lock-in contract nahi hai. Trial pack (₹2,999) 100% advance UPI/Razorpay se shuru hota hai, aur Monthly Retainers mein aap <strong>50% Onboarding + 50% Mid-Month Milestone</strong> par pay kar sakte hain."</p>
+        </div>
+
+        <div class="qa-card">
+          <h4>Q10: "How fast will I receive my edited Reels after sending raw footage?"</h4>
+          <p><strong>Team Answer:</strong> "Raw video milne ke <strong>24 se 48 hours</strong> ke andar aapko pehla edited cut humare Client Portal aur WhatsApp group mein mil jaata hai."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SLIDE 06: 100% FREE AGGRESSIVE DAILY OUTREACH ENGINE (ZERO AD SPEND)
+         ====================================================================== -->
+    <section id="slide-6" class="ppt-slide">
+      <span class="slide-badge">SLIDE 06 • FREE AGGRESSIVE MARKETING &amp; DAILY OUTREACH ENGINE</span>
+      <h2 class="slide-title">How to Freely Reach &amp; Close 100K–1M+ Influencers Daily (₹0 Ad Spend)</h2>
+      <p class="slide-sub">
+        We don't need paid ads to get our first 10–20 paying clients. Here are the <strong>6 Free Daily Outreach Channels</strong> Smita &amp; Akarsh will execute every day:
+      </p>
+
+      <div class="grid-3">
+        <div class="card-box">
+          <h4 style="color:var(--emerald-rich);margin-bottom:6px;">1. The "15s Unsolicited Before/After Gift" Method</h4>
+          <p style="font-size:0.84rem;color:var(--text-secondary);">
+            Download 1 recent low-view Reel from a 100K–500K creator. Akarsh re-edits ONLY the first 15 seconds with a bold Golden Hook Banner &amp; kinetic captions. Smita sends it on Instagram DM + Email: <em>"Hi [Name], we re-edited the first 15s of your latest Reel as a free gift—want the full file?"</em> (40%+ reply rate!).
+          </p>
+        </div>
+
+        <div class="card-box">
+          <h4 style="color:var(--emerald-rich);margin-bottom:6px;">2. Business Email + Instagram Story Reaction Combo</h4>
+          <p style="font-size:0.84rem;color:var(--text-secondary);">
+            100K–1M+ creators have crowded DM Requests, but their <strong>Instagram Bio Business Email</strong> is wide open! Send the Free 7-Day Audit via Email AND reply to their latest Story saying: <em>"Just emailed your custom 7-Day Content &amp; Brand Deal Audit—check your inbox!"</em>
+          </p>
+        </div>
+
+        <div class="card-box">
+          <h4 style="color:var(--emerald-rich);margin-bottom:6px;">3. In-House Collab Flywheel (`@vanindracreations`)</h4>
+          <p style="font-size:0.84rem;color:var(--text-secondary);">
+            Every Reel posted on `@vandanay2012`, `@smitayadav_0901`, and `@yadavakarsh_07` adds `@vanindracreations` as an Instagram Collaborator. Every viral view automatically funnels creators to our agency bio and website link!
+          </p>
+        </div>
+
+        <div class="card-box">
+          <h4 style="color:var(--emerald-rich);margin-bottom:6px;">4. Doctor, Clinic, Coach &amp; Local Brand Direct WhatsApp</h4>
+          <p style="font-size:0.84rem;color:var(--text-secondary);">
+            High-earning Doctors, Dermatologists, Nutritionists, Fitness Coaches, and Boutique Owners list their WhatsApp numbers publicly on Google Maps &amp; Instagram bios. Reach out directly with our Free AI Growth Plan link!
+          </p>
+        </div>
+
+        <div class="card-box">
+          <h4 style="color:var(--emerald-rich);margin-bottom:6px;">5. YouTube Shorts &amp; LinkedIn "Missing Platform" Pitch</h4>
+          <p style="font-size:0.84rem;color:var(--text-secondary);">
+            Find creators with 200K–1M on Instagram whose YouTube Shorts channel is inactive (or vice versa). Pitch our zero-effort Repurposing + Editing engine so they double their reach without shooting extra videos.
+          </p>
+        </div>
+
+        <div class="card-box">
+          <h4 style="color:var(--emerald-rich);margin-bottom:6px;">6. Magnific AI Ultra-Luxury Thumbnail Teasers</h4>
+          <p style="font-size:0.84rem;color:var(--text-secondary);">
+            Use our Magnific AI credits to upscale a prospect's blurry Reel cover into a breathtaking 4K magazine-style 9:16 thumbnail and send it to them for free as a conversation starter!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SLIDE 07: 10 QUESTIONS FOR THE VANINDRA CREATION TEAM + 10 SOLUTIONS
+         ====================================================================== -->
+    <section id="slide-7" class="ppt-slide dark-hero">
+      <span class="slide-badge">SLIDE 07 • TEAM ALIGNMENT POLL &amp; 10 CREATIVE GROWTH SOLUTIONS</span>
+      <h2 class="slide-title">10 Questions for the `Vanindra Creation Team` &amp; 10 World-Class Solutions</h2>
+      <p class="slide-sub">
+        Review these 10 rapid alignment questions with Smita &amp; Akarsh in the WhatsApp group so every visual asset, slogan, social handle, and workflow rule is 100% locked for daily aggressive marketing:
+      </p>
+
+      <div class="grid-2">
+        <div class="card-box">
+          <h3 style="color:#F4C44E;font-size:1.15rem;margin-bottom:12px;">📋 10 Questions to Ask the Team Today</h3>
+          <ol style="padding-left:18px;font-size:0.84rem;display:grid;gap:8px;color:rgba(255,255,255,0.9);">
+            <li><strong>Color Palette Lock:</strong> Are you happy with the <em>Warm Ivory + Deep Emerald + Imperial Gold</em> luxury theme as our default look?</li>
+            <li><strong>Logo &amp; Instagram DP:</strong> Which V-Wing Crest variation from <code>01_Brand_and_Team/Brand_Assets/</code> should be our official DP across all platforms today?</li>
+            <li><strong>Hero Background &amp; Visual Assets:</strong> Should we feature real studio/portrait photos of Vandana, Smita &amp; Akarsh in the Hero &amp; Portfolio cards (upscaled via Magnific AI)?</li>
+            <li><strong>Official Brand Slogan / Tagline:</strong> Which tagline wins—<em>"More Than Followers: Reels, Brand Deals &amp; Business"</em> OR <em>"Zero-Effort Viral Reels &amp; Brand Growth Studio"</em>?</li>
+            <li><strong>Client Portfolio #01 &amp; #02 Metrics:</strong> What exact highlight Reels from <code>@vandanay2012</code> and <code>@smitayadav_0901</code> should we pin as our top 3 showcase samples?</li>
+            <li><strong>15s Sample Edit Turnaround:</strong> What daily time slot works best for Akarsh to cut 3–5 free 15-second sample hooks for prospects?</li>
+            <li><strong>Smita's WhatsApp Concierge SLA:</strong> What are Smita's official active hours on <code>+91 81128 59437</code> for instant discovery calls &amp; voice-note replies?</li>
+            <li><strong>Daily Social Media Automation Pages:</strong> Who will hold login access on phone for <code>@vanindracreations</code> (Instagram, YouTube Shorts, LinkedIn, Facebook) starting today?</li>
+            <li><strong>Post-Login Client Rules:</strong> Are we aligned on 48-hour first-draft delivery and 2 free revision rounds inside <code>login.html</code>?</li>
+            <li><strong>Payment &amp; Lightweight CRM Storage:</strong> For our first 10 clients, should we collect payments via direct UPI QR / Razorpay link and log leads in our shared Google Sheet + WhatsApp group?</li>
+          </ol>
+        </div>
+
+        <div class="card-box">
+          <h3 style="color:#6EE7B7;font-size:1.15rem;margin-bottom:12px;">🚀 10 World-Class Solutions Built for the Team</h3>
+          <ol style="padding-left:18px;font-size:0.84rem;display:grid;gap:8px;color:rgba(255,255,255,0.9);">
+            <li><strong>Single Official WhatsApp Concierge (`+91 81128 59437`):</strong> Zero confusion—every CTA routes to Smita Yadav with an editable executive message composer.</li>
+            <li><strong>Dual Live Client Portfolio Showcase (`0 → 50K+`):</strong> Positions <code>@vandanay2012</code> (Client #01) &amp; <code>@smitayadav_0901</code> (Client #02) as live proof + "Slot #03 Open" scarcity.</li>
+            <li><strong>Magnific AI 4K Thumbnail &amp; Portrait Pipeline:</strong> Uses your Magnific AI credits + MCP workflow to create jaw-dropping 9:16 covers that beat any Indian agency.</li>
+            <li><strong>15-Second "Unsolicited Gift" Outreach Hook:</strong> Instead of begging for meetings, we send a 15s re-edited hook of the creator's own video.</li>
+            <li><strong>₹2,999 3-Reel Trial Pack Foot-in-the-Door:</strong> Converts skeptical 100K–500K creators immediately before upselling them to ₹24,999/mo.</li>
+            <li><strong>Voice-to-Text + Hindi Audio Concierge:</strong> Lets both busy doctors/CEOs and non-literate regional business owners submit briefs in 30 seconds by speaking.</li>
+            <li><strong>Free Background AI (`text.pollinations.ai`) Script Engine:</strong> Generates instant 7-day plans + 3 Hinglish hooks on the website with zero manual typing for Smita/Akarsh.</li>
+            <li><strong>Interactive 100K–1M+ Pitch Deck (`pitch-deck.html`):</strong> Gives the team live battlecards on phone/laptop during every client call.</li>
+            <li><strong>Daily Collab-Tag Flywheel (`@vanindracreations`):</strong> Turns every Reel posted by Vandana, Smita &amp; Akarsh into an organic lead magnet.</li>
+            <li><strong>Zero-Cost Lightweight Data &amp; Post-Login Portal (`login.html`):</strong> Stores client briefs cleanly in browser + WhatsApp + Google Sheet now, ready to scale to Firebase/Supabase when we cross 25+ clients.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SLIDE 08: AGGRESSIVE 6-STREAM MONETIZATION & OFFICIAL BRAND DEAL ENGINE
+         ====================================================================== -->
+    <section id="slide-8" class="ppt-slide">
+      <span class="slide-badge">SLIDE 08 • AGGRESSIVE 6-STREAM MONETIZATION &amp; BRAND SPONSORSHIP RATE CARD</span>
+      <h2 class="slide-title">How `@vandanay2012` (50K+), `@smitayadav_0901` &amp; `@vanindracreations` Earn From 6 Streams Simultaneously</h2>
+      <p class="slide-sub">
+        Don't wait only for agency retainers or only for comedy views. By flipping the <strong>"70/30 Viral-to-Commercial" switch</strong> and activating <strong>Auto-DM Affiliate + Brand Sponsorships + 467-Video Multi-Platform Syndication</strong>, we monetize every single day:
+      </p>
+
+      <table class="pitch-table" style="margin-bottom:24px;">
+        <thead>
+          <tr>
+            <th>Revenue Stream</th>
+            <th>Owner</th>
+            <th>Monthly Target (90-Day Ramp)</th>
+            <th>Exact Daily Execution &amp; Viral Format</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01 • Paid Brand Sponsorships (`@vandanay2012` &amp; `@smitayadav_0901`)</strong></td>
+            <td>Vandana + Smita (Closer)</td>
+            <td><strong>₹60,000 – ₹2,00,000/mo</strong><br><em>(₹15K–₹35K per Reel / Combo)</em></td>
+            <td>Shoot 2 <strong>"Trojan-Horse Comedy → Product Hero"</strong> Reels &amp; <strong>4-Grid Saree/Jewellery Showcases</strong> weekly. Pitch 15 D2C brands daily (Karagiri, Suta, GIVA, Nykaa, Myntra, Mamaearth, Plum, Wonderchef).</td>
+          </tr>
+          <tr>
+            <td><strong>02 • "Comment LINK / SAREE" Auto-DM Affiliate Cash</strong></td>
+            <td>Vandana + Smita</td>
+            <td><strong>₹25,000 – ₹90,000/mo</strong><br><em>(15%–25% Passive Commission)</em></td>
+            <td>Connect <strong>Wishlink + Hypd + Amazon Influencer Storefront + Meesho Creator Club</strong>. Every viewer commenting <code>"SAREE"</code> or <code>"LINK"</code> gets an instant DM link and boosts Instagram Explore reach!</td>
+          </tr>
+          <tr>
+            <td><strong>03 • 467-Video Back-Catalog Syndication (`FB Reels` + `YT Shorts`)</strong></td>
+            <td>Akarsh Yadav</td>
+            <td><strong>₹30,000 – ₹1,50,000/mo</strong><br><em>(FB In-Stream &amp; Reels Bonus)</em></td>
+            <td>Upload 3 existing Reels/day from <code>@vandanay2012</code>'s <strong>467+ posts</strong> onto <strong>Facebook Professional Page (`Vandana Yadav Official`)</strong> &amp; <strong>YouTube Shorts</strong>. Indian family/saree Reels explode 3x–5x faster on Facebook!</td>
+          </tr>
+          <tr>
+            <td><strong>04 • D2C Performance UGC Video Ad Packs (`3 Ads = ₹19,999`)</strong></td>
+            <td>Vandana + Smita + Akarsh</td>
+            <td><strong>₹45,000 – ₹1,50,000/mo</strong><br><em>(3–8 D2C Brands/mo)</em></td>
+            <td>Deliver 3 studio-edited 9:16 Meta Ad videos (Indian Family ICP <code>@vandanay2012</code> + Gen-Z ICP <code>@smitayadav_0901</code> + Food-Tech <code>@yadavakarsh_07</code>) for D2C brands running Facebook/IG ads.</td>
+          </tr>
+          <tr>
+            <td><strong>05 • VanIndra Creations Monthly Agency Retainers (`100K–1M+`)</strong></td>
+            <td>Smita (`+91 81128 59437`) + Akarsh</td>
+            <td><strong>₹1,50,000 – ₹5,00,000/mo</strong><br><em>(6–15 Retainer Clients)</em></td>
+            <td>Send 15–20 daily <strong>"Free 15-Second Sample Re-Edits"</strong> to 100K–1M+ Creators, Doctors, Jewellery Showrooms, Boutiques &amp; Coaches.</td>
+          </tr>
+          <tr>
+            <td><strong>06 • 7-Day Viral Trial Pack (`₹2,999 for 3 Reels`)</strong></td>
+            <td>Whole Team</td>
+            <td><strong>₹30,000 – ₹90,000/mo</strong><br><em>(10–30 Paid Trials/mo)</em></td>
+            <td>Close hesitant prospects on a zero-risk ₹2,999 3-Reel trial via Smita's Official WhatsApp (<code>+91 81128 59437</code>), then upsell 50%+ into ₹24,999/mo Pro Growth.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="grid-3">
+        <div class="card-box" style="border-top:4px solid var(--emerald-rich);">
+          <h4 style="color:var(--emerald-rich);margin-bottom:6px;">💎 Official Brand Rate Card (`@vandanay2012` 50K+)</h4>
+          <ul style="padding-left:16px;font-size:0.83rem;color:var(--text-secondary);display:grid;gap:5px;">
+            <li><strong>Dedicated 9:16 Brand Reel:</strong> ₹15,000 – ₹22,000</li>
+            <li><strong>4-Grid Saree/Jewellery + Auto-DM Link:</strong> ₹18,000</li>
+            <li><strong>Mother-Daughter 3-Account Collab (`@vandanay2012` + `@smitayadav_0901` + `@vanindracreations`):</strong> ₹24,999</li>
+            <li><strong>3-Video D2C Meta UGC Ad Pack:</strong> ₹19,999</li>
+          </ul>
+        </div>
+
+        <div class="card-box" style="border-top:4px solid var(--gold-imperial);">
+          <h4 style="color:#9A6B07;margin-bottom:6px;">🛍️ Top 10 Platforms to Register Today</h4>
+          <p style="font-size:0.83rem;color:var(--text-secondary);">
+            With <strong>50,000+ followers</strong> on <code>@vandanay2012</code>, register immediately on:<br>
+            <strong>1. Wishlink</strong> • <strong>2. HYPD</strong> • <strong>3. Amazon Influencer India</strong> • <strong>4. Meesho Creator Club</strong> • <strong>5. Myntra Studio</strong> • <strong>6. GoodCreator Co (Plixxo/Winkl)</strong> • <strong>7. Kofluence</strong> • <strong>8. OPA</strong> • <strong>9. Grynow/Confluencr</strong> • <strong>10. Freeskout</strong>.
+          </p>
+        </div>
+
+        <div class="card-box" style="background:var(--emerald-deep);color:#FFFFFF;border-top:4px solid #F4C44E;">
+          <h4 style="color:#F4C44E;margin-bottom:6px;">⚡ The "Reverse-Spec Ad" Deal Hack</h4>
+          <p style="font-size:0.83rem;color:rgba(255,255,255,0.85);margin-bottom:10px;">
+            Shoot a 15s luxury Reel featuring a Saree/Jewellery/Skincare product already at home, upscale cover via Magnific AI, Collab-post on all 3 accounts, and have Smita WhatsApp the live link to the brand's Marketing Head!
+          </p>
+          <a href="https://wa.me/918112859437?text=Hello%20Smita%20Yadav!%20We%20want%20to%20book%20a%20Brand%20Sponsorship%20/%20Viral%20Reel%20Campaign%20with%20VanIndra%20Creations." target="_blank" class="btn btn-wa" style="width:100%;justify-content:center;">💬 Book Brand Collab on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

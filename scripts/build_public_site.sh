@@ -15,7 +15,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 OUT="$ROOT/dist"
 
-PUBLIC_PAGES=(index.html login.html pitch-deck.html thumbnail-studio.html)
+PUBLIC_PAGES=(index.html login.html pitch-deck.html thumbnail-studio.html privacy.html terms.html refunds.html)
 PUBLIC_DIRS=(assets)
 
 rm -rf "$OUT"
@@ -29,12 +29,13 @@ for dir in "${PUBLIC_DIRS[@]}"; do
 done
 cp "$ROOT/site_config/_headers" "$OUT/_headers"
 cp "$ROOT/site_config/robots.txt" "$OUT/robots.txt"
+cp "$ROOT/sitemap.xml" "$OUT/sitemap.xml"
 
 fail() { echo "BUILD BLOCKED: $1" >&2; exit 1; }
 
 # 1. Only website file types may be published.
 unexpected="$(find "$OUT" -type f ! \( -name '*.html' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \
-  -o -name '*.webp' -o -name '*.svg' -o -name '*.ico' -o -name '_headers' -o -name 'robots.txt' \) -print)"
+  -o -name '*.webp' -o -name '*.svg' -o -name '*.ico' -o -name '_headers' -o -name 'robots.txt' -o -name 'sitemap.xml' \) -print)"
 [ -z "$unexpected" ] || fail "non-website files in dist/:
 $unexpected"
 

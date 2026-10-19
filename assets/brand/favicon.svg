@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="VanIndra Creations">
+  <rect width="32" height="32" rx="8" fill="#09241B"/>
+  <path d="M8 9.5 L12.2 22.5 L16.2 9.5" fill="none" stroke="#F4C44E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 9.5 V22.5" fill="none" stroke="#F4C44E" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M23.2 14.2 L26.2 16.2 L23.2 18.2 Z" fill="#F4C44E"/>
+</svg>
