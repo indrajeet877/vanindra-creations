@@ -35,7 +35,7 @@ fail() { echo "BUILD BLOCKED: $1" >&2; exit 1; }
 
 # 1. Only website file types may be published.
 unexpected="$(find "$OUT" -type f ! \( -name '*.html' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \
-  -o -name '*.webp' -o -name '*.svg' -o -name '*.ico' -o -name '_headers' -o -name 'robots.txt' -o -name 'sitemap.xml' \) -print)"
+  -o -name '*.webp' -o -name '*.svg' -o -name '*.ico' -o -name '*.mp4' -o -name '_headers' -o -name 'robots.txt' -o -name 'sitemap.xml' \) -print)"
 [ -z "$unexpected" ] || fail "non-website files in dist/:
 $unexpected"
 

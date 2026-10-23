@@ -241,6 +241,13 @@
       border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 8px 12px; font-size: .92rem;
     }
     .work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .demo-grid { display: grid; gap: 16px; }
+    .demo-card { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; margin: 0; }
+    .demo-card img, .demo-card video { width: 100%; height: auto; background: #111; display: block; }
+    .demo-card video { aspect-ratio: 1080 / 960; }
+    .demo-card figcaption { padding: 12px 14px 16px; }
+    .demo-card p { margin: 6px 0 0; color: var(--soft); font-size: .92rem; }
+    .demo-flag { color: #9B1C1C; font-weight: 700; letter-spacing: .06em; font-size: .78rem; }
     .card {
       background: var(--paper); border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
     }
@@ -352,6 +359,7 @@
     }
     @media (min-width: 980px) {
       .nav-links, .nav-cta { display: flex; }
+      .demo-grid { grid-template-columns: repeat(3, 1fr); }
       .nav-more, .dock { display: none; }
       body { padding-bottom: 0; }
       .outcomes { grid-template-columns: repeat(4, 1fr); }
@@ -401,6 +409,7 @@
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#work">Work</a>
+        <a href="#demos">Demo edits</a>
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
         <a href="#team">Team</a>
@@ -411,6 +420,7 @@
         <summary>Menu</summary>
         <div class="nav-panel">
           <a href="#work">Work</a>
+          <a href="#demos">Demo edits</a>
           <a href="#how">How it works</a>
           <a href="#pricing">Pricing</a>
           <a href="#team">Team</a>
@@ -514,7 +524,7 @@
         <div class="sec-head">
           <p class="eyebrow" style="color:var(--emerald-2)">Work</p>
           <h2>Same footage. A tighter video.</h2>
-          <p>Every edit starts on the strongest moment, adds captions, and keeps the pace up. Below is real in-house work from our own creators, plus empty slots for English samples. These are not client case studies, and there are no made-up results.</p>
+          <p>Every edit starts on the strongest moment, adds captions, and keeps the pace up. Below is real in-house work from our own creators. The English before/after pieces in the next section are demo edits on licensed stock footage. None of this is a client case study, and there are no made-up results.</p>
         </div>
         <div class="work-grid">
           <figure class="card">
@@ -534,10 +544,49 @@
             <figcaption><span class="tag">Studio sample</span><h3>Smita Yadav</h3><p>In-house coastal lifestyle cover. Not a client result.</p></figcaption>
           </figure>
           <figure class="card">
-            <div class="ph-card"><div><span class="tag">Placeholder</span><h3>English coach or course sample</h3><p>Add a before/after only with written permission. No name goes here until it is real.</p></div></div>
+            <div class="ph-card"><div><span class="tag">Placeholder</span><h3>Client before/after</h3><p>Not added. A real client pair goes here only with written permission. The stock demo edits are not a substitute.</p></div></div>
           </figure>
           <figure class="card">
-            <div class="ph-card"><div><span class="tag">Placeholder</span><h3>Doctor, finance, or fitness sample</h3><p>Add a before/after only with written permission. No result goes here until it is real.</p></div></div>
+            <div class="ph-card"><div><span class="tag">Placeholder</span><h3>Client result</h3><p>Not added. No name and no number goes here until it is real.</p></div></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="demos">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow" style="color:var(--emerald-2)">Demo edits</p>
+          <h2>The same footage, cut tighter.</h2>
+          <p>These are demo edits made on licensed stock footage, not client work. The red DEMO EDIT label stays on every cover and every video. No client names. No testimonials. No results.</p>
+        </div>
+        <div class="demo-grid">
+          <figure class="demo-card">
+            <img src="assets/demo-edits/fitness-cover.jpg" width="1400" height="1298" alt="Before and after cover of a fitness demo edit. The edited side has a red DEMO EDIT label. Licensed stock footage, not a client." loading="lazy" decoding="async">
+            <video controls playsinline preload="none" poster="assets/demo-edits/fitness-cover.jpg" width="1080" height="960" data-src="assets/demo-edits/fitness.mp4" aria-label="Fitness demo edit video, before beside after, with a red DEMO EDIT label"></video>
+            <figcaption>
+              <span class="demo-flag">DEMO EDIT</span>
+              <h3>Fitness</h3>
+              <p>Demo edit on licensed stock footage, not client work. The red DEMO EDIT label is part of the picture.</p>
+            </figcaption>
+          </figure>
+          <figure class="demo-card">
+            <img src="assets/demo-edits/beauty-lifestyle-cover.jpg" width="1400" height="1298" alt="Before and after cover of a beauty and lifestyle demo edit. The edited side has a red DEMO EDIT label. Licensed stock footage, not a client." loading="lazy" decoding="async">
+            <video controls playsinline preload="none" poster="assets/demo-edits/beauty-lifestyle-cover.jpg" width="1080" height="960" data-src="assets/demo-edits/beauty-lifestyle.mp4" aria-label="Beauty and lifestyle demo edit video, before beside after, with a red DEMO EDIT label"></video>
+            <figcaption>
+              <span class="demo-flag">DEMO EDIT</span>
+              <h3>Beauty and lifestyle</h3>
+              <p>Demo edit on licensed stock footage, not client work. The red DEMO EDIT label is part of the picture.</p>
+            </figcaption>
+          </figure>
+          <figure class="demo-card">
+            <img src="assets/demo-edits/business-coach-cover.jpg" width="1400" height="1298" alt="Before and after cover of a business coach demo edit. The edited side has a red DEMO EDIT label. Licensed stock footage, not a client." loading="lazy" decoding="async">
+            <video controls playsinline preload="none" poster="assets/demo-edits/business-coach-cover.jpg" width="1080" height="960" data-src="assets/demo-edits/business-coach.mp4" aria-label="Business coach demo edit video, before beside after, with a red DEMO EDIT label"></video>
+            <figcaption>
+              <span class="demo-flag">DEMO EDIT</span>
+              <h3>Business coach</h3>
+              <p>Demo edit on licensed stock footage, not client work. The red DEMO EDIT label is part of the picture.</p>
+            </figcaption>
           </figure>
         </div>
       </div>
@@ -906,6 +955,7 @@
         <strong>On this page</strong>
         <ul>
           <li><a href="#work">Work</a></li>
+          <li><a href="#demos">Demo edits</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -1043,6 +1093,24 @@
         submitBtn.disabled = false;
       });
     });
+
+    var demoVideos = document.querySelectorAll("video[data-src]");
+    function attachDemo(video) {
+      if (video.getAttribute("src")) return;
+      video.src = video.getAttribute("data-src");
+    }
+    if ("IntersectionObserver" in window) {
+      var videoObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          attachDemo(entry.target);
+          videoObserver.unobserve(entry.target);
+        });
+      }, { rootMargin: "300px" });
+      demoVideos.forEach(function (video) { videoObserver.observe(video); });
+    } else {
+      demoVideos.forEach(attachDemo);
+    }
   </script>
 </body>
 </html>
