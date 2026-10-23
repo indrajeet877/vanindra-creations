@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TEMPORARY: these addresses are the live GitHub Pages site because
+  vanindracreations.com does not resolve yet. When the domain is live,
+  point each loc back at https://vanindracreations.com/ (and /privacy.html,
+  /terms.html, /refunds.html).
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://vanindracreations.com/</loc></url>
-  <url><loc>https://vanindracreations.com/privacy.html</loc></url>
-  <url><loc>https://vanindracreations.com/terms.html</loc></url>
-  <url><loc>https://vanindracreations.com/refunds.html</loc></url>
+  <url><loc>https://indrajeet877.github.io/vanindra-creations/</loc></url>
+  <url><loc>https://indrajeet877.github.io/vanindra-creations/privacy.html</loc></url>
+  <url><loc>https://indrajeet877.github.io/vanindra-creations/terms.html</loc></url>
+  <url><loc>https://indrajeet877.github.io/vanindra-creations/refunds.html</loc></url>
 </urlset>

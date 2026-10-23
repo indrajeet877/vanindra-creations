@@ -40,7 +40,10 @@ unexpected="$(find "$OUT" -type f ! \( -name '*.html' -o -name '*.jpg' -o -name 
 $unexpected"
 
 # 2. Golden Rules on every public page.
-if grep -inE "indrajeet|guggy|sahil|9415259408" "$OUT"/*.html; then
+# The live site is temporarily on GitHub Pages. That hostname is allowed in
+# canonical and social URLs until vanindracreations.com resolves. The name is
+# still blocked everywhere else.
+if grep -inE "indrajeet|guggy|sahil|9415259408" "$OUT"/*.html | grep -viE "indrajeet877\.github\.io"; then
   fail "a public page mentions a background team member, a nickname or a second number (see lines above)"
 fi
 # Normalise every Indian mobile number (with or without the 91 country code) to its last 10 digits.
