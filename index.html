@@ -236,6 +236,17 @@
     }
     .is-playing .play-glyph { opacity: 0; }
     .phone-hit:focus-visible .play-glyph { opacity: 1; }
+    .sound-btn {
+      position: absolute; right: 10px; bottom: 10px; z-index: 3;
+      width: 44px; height: 44px; border: 0; border-radius: 50%; padding: 0;
+      display: grid; place-items: center; cursor: pointer;
+      background: rgba(9, 36, 27, .82); color: #fff;
+      box-shadow: 0 8px 18px rgba(0,0,0,.28);
+    }
+    .sound-btn svg { width: 22px; height: 22px; display: block; }
+    .sound-btn[aria-pressed="false"] .sound-wave { display: none; }
+    .sound-btn[aria-pressed="true"] { background: var(--gold-2); color: var(--ink); }
+    .sound-btn[aria-pressed="true"] .sound-slash { display: none; }
     .clock {
       margin-top: 14px; border: 1px solid rgba(244,196,78,.45); border-radius: 14px;
       padding: 12px 14px; color: #F6F1E6; font-size: .92rem;
@@ -392,7 +403,6 @@
       .hero-demo { justify-items: end; }
       .hero-demo .phone { width: 270px; }
       .hero-demo-cap { width: 270px; text-align: right; }
-      .demo-grid { grid-template-columns: 1fr 1fr; }
       .work-grid { grid-template-columns: repeat(3, 1fr); }
       .price-grid { grid-template-columns: 1fr 1fr 1fr; align-items: stretch; }
       .book-grid { grid-template-columns: .9fr 1.1fr; align-items: start; }
@@ -401,13 +411,21 @@
     }
     @media (min-width: 980px) {
       .nav-links, .nav-cta { display: flex; }
-      .demo-grid { grid-template-columns: repeat(3, 1fr); }
       .nav-more, .dock { display: none; }
       body { padding-bottom: 0; }
       .outcomes { grid-template-columns: repeat(4, 1fr); }
       .who { grid-template-columns: repeat(3, 1fr); }
       .team, .promises { grid-template-columns: repeat(3, 1fr); }
       .foot { grid-template-columns: 1.4fr .8fr .8fr; }
+    }
+    @media (min-width: 760px) and (max-width: 999px) {
+      .demo-grid { grid-template-columns: 1fr 1fr; }
+      .demo-grid .demo-card:nth-child(3) {
+        grid-column: 1 / -1; justify-self: center; width: calc(50% - 8px);
+      }
+    }
+    @media (min-width: 1000px) {
+      .demo-grid { grid-template-columns: repeat(3, 1fr); }
     }
     @media (max-width: 979px) {
       body { padding-bottom: 78px; }
@@ -495,6 +513,13 @@
                 <button type="button" class="phone-hit" data-label-after="Play the fitness coach demo edit" data-label-before="Play the fitness coach before and after" aria-label="Play the fitness coach demo edit">
                   <span class="play-glyph" aria-hidden="true"></span>
                 </button>
+                <button type="button" class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M4 9.5h3.2L11 6.2v11.6l-3.8-3.3H4z"/>
+                    <path class="sound-wave" d="M14.2 9.2a4 4 0 0 1 0 5.6M16.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path class="sound-slash" d="M15.2 9.4l5 5.2M20.2 9.4l-5 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </button>
               </div>
             </div>
             <p class="hero-demo-cap">Fitness coach · demo edit on licensed stock</p>
@@ -573,6 +598,13 @@
                 <button type="button" class="phone-hit" data-label-after="Play the fitness coach demo edit" data-label-before="Play the fitness coach raw clip beside the edit" aria-label="Play the fitness coach demo edit">
                   <span class="play-glyph" aria-hidden="true"></span>
                 </button>
+                <button type="button" class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M4 9.5h3.2L11 6.2v11.6l-3.8-3.3H4z"/>
+                    <path class="sound-wave" d="M14.2 9.2a4 4 0 0 1 0 5.6M16.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path class="sound-slash" d="M15.2 9.4l5 5.2M20.2 9.4l-5 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="demo-switch" role="group" aria-label="Fitness coach, before or after">
@@ -595,6 +627,13 @@
                 <button type="button" class="phone-hit" data-label-after="Play the business coach demo edit" data-label-before="Play the business coach raw clip beside the edit" aria-label="Play the business coach demo edit">
                   <span class="play-glyph" aria-hidden="true"></span>
                 </button>
+                <button type="button" class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M4 9.5h3.2L11 6.2v11.6l-3.8-3.3H4z"/>
+                    <path class="sound-wave" d="M14.2 9.2a4 4 0 0 1 0 5.6M16.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path class="sound-slash" d="M15.2 9.4l5 5.2M20.2 9.4l-5 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="demo-switch" role="group" aria-label="Business coach, before or after">
@@ -616,6 +655,13 @@
                 <video muted loop playsinline preload="none" width="720" height="1280" data-mode="before" data-src="assets/demo-edits/beauty-before-after.mp4" aria-hidden="true" hidden></video>
                 <button type="button" class="phone-hit" data-label-after="Play the beauty creator demo edit" data-label-before="Play the beauty creator raw clip beside the edit" aria-label="Play the beauty creator demo edit">
                   <span class="play-glyph" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M4 9.5h3.2L11 6.2v11.6l-3.8-3.3H4z"/>
+                    <path class="sound-wave" d="M14.2 9.2a4 4 0 0 1 0 5.6M16.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path class="sound-slash" d="M15.2 9.4l5 5.2M20.2 9.4l-5 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -1158,26 +1204,70 @@
       video.src = video.getAttribute("data-src");
     }
 
-    function pauseCard(card) {
-      card.querySelectorAll("video").forEach(function (video) { video.pause(); });
-      card.classList.remove("is-playing");
+    function syncChrome(card) {
+      var audible = card.classList.contains("is-audible");
+      var sound = card.querySelector(".sound-btn");
+      if (sound) {
+        sound.setAttribute("aria-pressed", audible ? "true" : "false");
+        sound.setAttribute("aria-label", audible ? "Turn sound off" : "Turn sound on");
+      }
+      var hit = card.querySelector(".phone-hit");
+      if (hit) {
+        var mode = card.getAttribute("data-mode") || "after";
+        var base = hit.getAttribute(mode === "before" ? "data-label-before" : "data-label-after");
+        if (base) hit.setAttribute("aria-label", card.classList.contains("is-playing") ? base.replace(/^Play/, "Pause") : base);
+      }
     }
 
-    function playCard(card) {
-      demoCards.forEach(function (other) {
-        if (other !== card) pauseCard(other);
+    function pauseCard(card) {
+      card.querySelectorAll("video").forEach(function (video) {
+        video.pause();
+        video.muted = true;
       });
+      card.classList.remove("is-playing");
+      syncChrome(card);
+    }
+
+    function silenceOthers(card) {
+      demoCards.forEach(function (other) {
+        if (other === card) return;
+        other.classList.remove("is-audible");
+        delete other.dataset.pinned;
+        pauseCard(other);
+      });
+    }
+
+    function playCard(card, fromHover) {
+      silenceOthers(card);
+      if (fromHover) {
+        card.classList.remove("is-audible");
+        delete card.dataset.pinned;
+      } else {
+        card.dataset.pinned = "1";
+      }
       var video = activeVideo(card);
       if (!video) return;
       video.hidden = false;
-      video.muted = true;
       video.playsInline = true;
+      video.muted = !!(fromHover || !card.classList.contains("is-audible"));
       attachVideo(video);
       if (video.readyState >= 2) video.classList.add("is-ready");
       card.classList.add("is-playing");
+      syncChrome(card);
       var pending = video.play();
       if (pending && pending.catch) {
-        pending.catch(function () { card.classList.remove("is-playing"); });
+        pending.catch(function () {
+          if (!video.muted) {
+            video.muted = true;
+            card.classList.remove("is-audible");
+            syncChrome(card);
+            var retry = video.play();
+            if (retry && retry.catch) retry.catch(function () { card.classList.remove("is-playing"); syncChrome(card); });
+            return;
+          }
+          card.classList.remove("is-playing");
+          syncChrome(card);
+        });
       }
     }
 
@@ -1195,6 +1285,7 @@
         var on = video.getAttribute("data-mode") === mode;
         if (!on) {
           video.pause();
+          video.muted = true;
           video.classList.remove("is-ready");
           video.hidden = true;
         } else {
@@ -1202,11 +1293,7 @@
           if (video.readyState >= 2 && card.classList.contains("is-playing")) video.classList.add("is-ready");
         }
       });
-      var hit = card.querySelector(".phone-hit");
-      if (hit) {
-        var label = hit.getAttribute(mode === "before" ? "data-label-before" : "data-label-after");
-        if (label) hit.setAttribute("aria-label", label);
-      }
+      syncChrome(card);
     }
 
     demoCards.forEach(function (card) {
@@ -1216,24 +1303,75 @@
           if (!video.hidden) video.classList.add("is-ready");
         });
       });
+      var hoverTimer = 0;
+      function cancelHover() { clearTimeout(hoverTimer); }
       var hit = card.querySelector(".phone-hit");
       if (hit) {
-        hit.addEventListener("click", function (event) {
-          if (fineHover && !reduceMotion && event.detail !== 0) return;
-          if (card.classList.contains("is-playing")) pauseCard(card);
-          else playCard(card);
+        hit.addEventListener("click", function () {
+          cancelHover();
+          if (card.classList.contains("is-playing")) {
+            pauseCard(card);
+            delete card.dataset.pinned;
+            return;
+          }
+          playCard(card, false);
+        });
+      }
+      var sound = card.querySelector(".sound-btn");
+      if (sound) {
+        sound.addEventListener("click", function (event) {
+          event.stopPropagation();
+          cancelHover();
+          if (card.classList.contains("is-audible")) {
+            card.classList.remove("is-audible");
+            card.querySelectorAll("video").forEach(function (video) { video.muted = true; });
+            syncChrome(card);
+            return;
+          }
+          card.classList.add("is-audible");
+          card.dataset.pinned = "1";
+          if (card.classList.contains("is-playing")) {
+            silenceOthers(card);
+            var video = activeVideo(card);
+            if (video) {
+              video.muted = false;
+              var pending = video.play();
+              if (pending && pending.catch) pending.catch(function () {});
+            }
+            syncChrome(card);
+            return;
+          }
+          playCard(card, false);
         });
       }
       if (fineHover && !reduceMotion) {
-        card.addEventListener("mouseenter", function () { playCard(card); });
-        card.addEventListener("mouseleave", function () { pauseCard(card); });
+        card.addEventListener("mouseenter", function () {
+          cancelHover();
+          hoverTimer = setTimeout(function () {
+            if (!card.matches(":hover") || card.classList.contains("is-playing")) return;
+            var busy = false;
+            demoCards.forEach(function (other) {
+              if (other.dataset.pinned && other.classList.contains("is-playing")) busy = true;
+            });
+            if (busy) return;
+            playCard(card, true);
+          }, 280);
+        });
+        card.addEventListener("mouseleave", function () {
+          cancelHover();
+          if (card.dataset.pinned) return;
+          pauseCard(card);
+          card.classList.remove("is-audible");
+          syncChrome(card);
+        });
       }
       card.querySelectorAll("[data-demo-mode]").forEach(function (button) {
         button.addEventListener("click", function () {
           var mode = button.getAttribute("data-demo-mode");
           var keepPlaying = card.classList.contains("is-playing");
+          var hoverOnly = !keepPlaying && fineHover && !reduceMotion && card.matches(":hover") && !card.dataset.pinned;
           showMode(card, mode);
-          if (keepPlaying || (fineHover && !reduceMotion && card.matches(":hover"))) playCard(card);
+          if (keepPlaying || hoverOnly) playCard(card, hoverOnly);
         });
       });
     });
