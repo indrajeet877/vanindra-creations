@@ -204,34 +204,49 @@
     .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
     .hero-actions .btn { max-width: 100%; min-width: 0; white-space: normal; }
     .micro { margin: 0; color: #C9C2B4; font-size: .95rem; }
-    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .frame { margin: 0; }
-    .shot {
-      aspect-ratio: 9 / 16; border-radius: 18px; overflow: hidden; position: relative;
-      background: #06150f; border: 1px solid rgba(255,255,255,.12);
+    .hero-side { display: grid; gap: 14px; align-content: center; }
+    .hero-demo { display: grid; justify-items: center; gap: 10px; }
+    .hero-demo .phone { width: min(230px, 72vw); }
+    .hero-demo-cap { margin: 0; color: #C9C2B4; font-size: .82rem; text-align: center; }
+    .phone {
+      background: #0c0c0c; border-radius: 32px; padding: 8px;
+      border: 1px solid rgba(255,255,255,.16); box-shadow: 0 22px 48px rgba(0,0,0,.28);
     }
-    .shot img { width: 100%; height: 100%; object-fit: cover; }
-    .chip {
-      position: absolute; left: 10px; top: 10px; z-index: 1; background: var(--gold-2); color: var(--ink);
-      font-family: var(--display); font-size: .75rem; font-weight: 700; letter-spacing: .04em;
-      text-transform: uppercase; border-radius: 999px; padding: 4px 8px;
+    .hero .phone { border-color: rgba(244,196,78,.5); }
+    .phone-screen {
+      position: relative; aspect-ratio: 9 / 16; border-radius: 24px; overflow: hidden; background: #06150f;
     }
-    .chip-raw { background: rgba(255,255,255,.92); }
-    .ph {
-      height: 100%; display: flex; flex-direction: column; justify-content: flex-end;
-      padding: 14px; color: #E7E0D2;
-      background:
-        linear-gradient(180deg, rgba(9,36,27,.2), rgba(9,36,27,.82)),
-        repeating-linear-gradient(-45deg, #123328 0 8px, #0d281f 8px 16px);
+    .phone-screen .demo-still, .phone-screen video {
+      position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; background: #06150f;
     }
-    .ph strong { font-family: var(--display); font-size: 1.05rem; color: #fff; }
-    .ph p { margin: 6px 0 0; font-size: .86rem; }
-    .frame figcaption { margin-top: 8px; color: #C9C2B4; font-size: .82rem; }
-    .shot img.split {
-      position: absolute; top: 0; height: 100%; width: 200%; max-width: none; object-fit: fill;
+    .phone-screen video { z-index: 1; opacity: 0; }
+    .phone-screen video.is-ready { opacity: 1; }
+    .phone-hit {
+      position: absolute; inset: 0; z-index: 2; border: 0; padding: 0; margin: 0;
+      background: transparent; cursor: pointer; display: grid; place-items: center;
     }
-    .split-before { left: 0; }
-    .split-after { left: -100%; }
+    .play-glyph {
+      width: 58px; height: 58px; border-radius: 50%; background: rgba(250,248,243,.94);
+      display: grid; place-items: center; box-shadow: 0 10px 24px rgba(0,0,0,.28);
+    }
+    .play-glyph::before {
+      content: ""; display: block; margin-left: 4px;
+      border-style: solid; border-width: 9px 0 9px 15px;
+      border-color: transparent transparent transparent var(--emerald);
+    }
+    .is-playing .play-glyph { opacity: 0; }
+    .phone-hit:focus-visible .play-glyph { opacity: 1; }
+    .sound-btn {
+      position: absolute; right: 10px; bottom: 10px; z-index: 3;
+      width: 44px; height: 44px; border: 0; border-radius: 50%; padding: 0;
+      display: grid; place-items: center; cursor: pointer;
+      background: rgba(9, 36, 27, .82); color: #fff;
+      box-shadow: 0 8px 18px rgba(0,0,0,.28);
+    }
+    .sound-btn svg { width: 22px; height: 22px; display: block; }
+    .sound-btn[aria-pressed="false"] .sound-wave { display: none; }
+    .sound-btn[aria-pressed="true"] { background: var(--gold-2); color: var(--ink); }
+    .sound-btn[aria-pressed="true"] .sound-slash { display: none; }
     .clock {
       margin-top: 14px; border: 1px solid rgba(244,196,78,.45); border-radius: 14px;
       padding: 12px 14px; color: #F6F1E6; font-size: .92rem;
@@ -256,13 +271,29 @@
       border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 8px 12px; font-size: .92rem;
     }
     .work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .demo-grid { display: grid; gap: 16px; }
-    .demo-card { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; margin: 0; }
-    .demo-card img, .demo-card video { width: 100%; height: auto; background: #111; display: block; }
-    .demo-card video { aspect-ratio: 1080 / 960; }
-    .demo-card figcaption { padding: 12px 14px 16px; }
-    .demo-card p { margin: 6px 0 0; color: var(--soft); font-size: .92rem; }
-    .demo-flag { color: #9B1C1C; font-weight: 700; letter-spacing: .06em; font-size: .78rem; }
+    .demo-grid { display: grid; grid-template-columns: minmax(0, 340px); justify-content: center; gap: 16px; }
+    .demo-card {
+      background: var(--paper); border: 1px solid var(--line); border-radius: 28px; margin: 0;
+      padding: 12px 12px 16px; display: grid; gap: 12px; box-shadow: var(--shadow);
+    }
+    .demo-card .phone { border-color: var(--line); box-shadow: none; background: #111; }
+    .demo-switch {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px;
+      border-radius: 999px; background: var(--ivory); border: 1px solid var(--line);
+    }
+    .demo-switch button {
+      min-height: 44px; border: 0; border-radius: 999px; background: transparent;
+      font-weight: 600; cursor: pointer; color: var(--muted);
+    }
+    .demo-switch button[aria-pressed="true"] { background: var(--emerald); color: var(--gold-2); }
+    .demo-copy { display: grid; gap: 4px; padding: 0 4px; }
+    .demo-copy h3 { font-size: 1.2rem; margin: 0; }
+    .demo-copy p { margin: 0; color: var(--soft); font-size: .95rem; }
+    .demo-flag { color: #9B1C1C; font-weight: 700; letter-spacing: .06em; font-size: .75rem; text-transform: uppercase; }
+    .demo-note { margin: 16px 0 0; color: var(--soft); font-size: .92rem; text-align: center; }
+    .demo-cta { display: flex; justify-content: center; margin-top: 14px; }
+    .demo-cta .btn { max-width: 100%; white-space: normal; }
+    #demos { scroll-margin-top: 84px; }
     .card {
       background: var(--paper); border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
     }
@@ -369,6 +400,9 @@
     @media (min-width: 760px) {
       .trial { grid-template-columns: 1fr auto; align-items: center; }
       .outcomes, .steps, .who, .include, .promises, .team { grid-template-columns: 1fr 1fr; }
+      .hero-demo { justify-items: end; }
+      .hero-demo .phone { width: 270px; }
+      .hero-demo-cap { width: 270px; text-align: right; }
       .work-grid { grid-template-columns: repeat(3, 1fr); }
       .price-grid { grid-template-columns: 1fr 1fr 1fr; align-items: stretch; }
       .book-grid { grid-template-columns: .9fr 1.1fr; align-items: start; }
@@ -377,13 +411,21 @@
     }
     @media (min-width: 980px) {
       .nav-links, .nav-cta { display: flex; }
-      .demo-grid { grid-template-columns: repeat(3, 1fr); }
       .nav-more, .dock { display: none; }
       body { padding-bottom: 0; }
       .outcomes { grid-template-columns: repeat(4, 1fr); }
       .who { grid-template-columns: repeat(3, 1fr); }
       .team, .promises { grid-template-columns: repeat(3, 1fr); }
       .foot { grid-template-columns: 1.4fr .8fr .8fr; }
+    }
+    @media (min-width: 760px) and (max-width: 999px) {
+      .demo-grid { grid-template-columns: 1fr 1fr; }
+      .demo-grid .demo-card:nth-child(3) {
+        grid-column: 1 / -1; justify-self: center; width: calc(50% - 8px);
+      }
+    }
+    @media (min-width: 1000px) {
+      .demo-grid { grid-template-columns: repeat(3, 1fr); }
     }
     @media (max-width: 979px) {
       body { padding-bottom: 78px; }
@@ -462,20 +504,25 @@
           </div>
           <p class="micro">Month-to-month · Cancel with 15 days’ notice · We never ask for your passwords</p>
         </div>
-        <div>
-          <div class="pair">
-            <figure class="frame">
-              <div class="shot">
-                <img class="split split-before" src="assets/demo-edits/fitness-cover.jpg" width="1400" height="1222" alt="Before side of a fitness demo edit on licensed stock footage." fetchpriority="high">
+        <div class="hero-side">
+          <div class="hero-demo" data-demo>
+            <div class="phone">
+              <div class="phone-screen">
+                <img class="demo-still" data-still="after" src="assets/demo-edits/fitness-poster.jpg" width="1080" height="1920" alt="Finished fitness coach demo edit on licensed stock footage. The frame is labelled demo edit." fetchpriority="high">
+                <video muted loop playsinline preload="none" width="720" height="1280" data-mode="after" data-src="assets/demo-edits/fitness-after.mp4" aria-hidden="true"></video>
+                <button type="button" class="phone-hit" data-label-after="Play the fitness coach demo edit" data-label-before="Play the fitness coach before and after" aria-label="Play the fitness coach demo edit">
+                  <span class="play-glyph" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M4 9.5h3.2L11 6.2v11.6l-3.8-3.3H4z"/>
+                    <path class="sound-wave" d="M14.2 9.2a4 4 0 0 1 0 5.6M16.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path class="sound-slash" d="M15.2 9.4l5 5.2M20.2 9.4l-5 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </button>
               </div>
-              <figcaption>Before · demo edit</figcaption>
-            </figure>
-            <figure class="frame">
-              <div class="shot">
-                <img class="split split-after" src="assets/demo-edits/fitness-cover.jpg" width="1400" height="1222" alt="After side of the same fitness demo edit. The picture carries a red DEMO EDIT label. Licensed stock footage, not a client.">
-              </div>
-              <figcaption>After · DEMO EDIT</figcaption>
-            </figure>
+            </div>
+            <p class="hero-demo-cap">Fitness coach · demo edit on licensed stock</p>
           </div>
           <p class="clock"><b>Momentum and Full Studio, New York.</b> Upload by 6:00 pm ET and drafts are usually ready around 7:00 am ET. Spark is 2 business days. The $149 trial is delivered within 5 working days of receiving the footage.</p>
         </div>
@@ -538,33 +585,100 @@
         <div class="sec-head">
           <p class="eyebrow" style="color:var(--emerald-2)">Work</p>
           <h2>The same footage, cut tighter.</h2>
-          <p>Three English demo edits on licensed stock footage, each labelled DEMO EDIT. These are not client results. No names, no testimonials, and no numbers.</p>
+          <p>Three demo edits. Play one, then switch to Before to see the raw clip beside the edit. The changes are the hook, the captions, and the pacing.</p>
         </div>
         <div class="demo-grid" id="demos">
-          <figure class="demo-card">
-            <video controls playsinline preload="none" poster="assets/demo-edits/fitness-cover.jpg" width="1080" height="960" data-src="assets/demo-edits/fitness.mp4" aria-label="Fitness demo edit video, before beside after, with a red DEMO EDIT label"></video>
-            <figcaption>
-              <span class="demo-flag">DEMO EDIT</span>
-              <h3>Fitness</h3>
-              <p>Demo edit on licensed stock footage, not client work. The red DEMO EDIT label is part of the picture.</p>
-            </figcaption>
-          </figure>
-          <figure class="demo-card">
-            <video controls playsinline preload="none" poster="assets/demo-edits/beauty-lifestyle-cover.jpg" width="1080" height="960" data-src="assets/demo-edits/beauty-lifestyle.mp4" aria-label="Beauty and lifestyle demo edit video, before beside after, with a red DEMO EDIT label"></video>
-            <figcaption>
-              <span class="demo-flag">DEMO EDIT</span>
-              <h3>Beauty and lifestyle</h3>
-              <p>Demo edit on licensed stock footage, not client work. The red DEMO EDIT label is part of the picture.</p>
-            </figcaption>
-          </figure>
-          <figure class="demo-card">
-            <video controls playsinline preload="none" poster="assets/demo-edits/business-coach-cover.jpg" width="1080" height="960" data-src="assets/demo-edits/business-coach.mp4" aria-label="Business demo edit video, before beside after, with a red DEMO EDIT label"></video>
-            <figcaption>
-              <span class="demo-flag">DEMO EDIT</span>
-              <h3>Business</h3>
-              <p>Demo edit on licensed stock footage, not client work. The red DEMO EDIT label is part of the picture.</p>
-            </figcaption>
-          </figure>
+          <article class="demo-card" data-demo>
+            <div class="phone">
+              <div class="phone-screen">
+                <img class="demo-still" data-still="after" src="assets/demo-edits/fitness-poster.jpg" width="1080" height="1920" alt="Finished fitness coach demo edit on licensed stock footage." loading="lazy">
+                <img class="demo-still" data-still="before" data-src="assets/demo-edits/fitness-before-poster.jpg" width="720" height="1280" alt="Raw fitness clip beside the demo edit, on licensed stock footage." hidden>
+                <video muted loop playsinline preload="none" width="720" height="1280" data-mode="after" data-src="assets/demo-edits/fitness-after.mp4" aria-hidden="true"></video>
+                <video muted loop playsinline preload="none" width="720" height="1280" data-mode="before" data-src="assets/demo-edits/fitness-before-after.mp4" aria-hidden="true" hidden></video>
+                <button type="button" class="phone-hit" data-label-after="Play the fitness coach demo edit" data-label-before="Play the fitness coach raw clip beside the edit" aria-label="Play the fitness coach demo edit">
+                  <span class="play-glyph" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M4 9.5h3.2L11 6.2v11.6l-3.8-3.3H4z"/>
+                    <path class="sound-wave" d="M14.2 9.2a4 4 0 0 1 0 5.6M16.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path class="sound-slash" d="M15.2 9.4l5 5.2M20.2 9.4l-5 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="demo-switch" role="group" aria-label="Fitness coach, before or after">
+              <button type="button" data-demo-mode="before" aria-pressed="false">Before</button>
+              <button type="button" data-demo-mode="after" aria-pressed="true">After</button>
+            </div>
+            <div class="demo-copy">
+              <p class="demo-flag">Demo edit · licensed stock</p>
+              <h3>Fitness coach</h3>
+              <p>A hook in the first second, captions on the movement, and cuts that stay with the rep.</p>
+            </div>
+          </article>
+          <article class="demo-card" data-demo>
+            <div class="phone">
+              <div class="phone-screen">
+                <img class="demo-still" data-still="after" src="assets/demo-edits/business-poster.jpg" width="1080" height="1920" alt="Finished business coach demo edit on licensed stock footage." loading="lazy">
+                <img class="demo-still" data-still="before" data-src="assets/demo-edits/business-before-poster.jpg" width="720" height="1280" alt="Raw business clip beside the demo edit, on licensed stock footage." hidden>
+                <video muted loop playsinline preload="none" width="720" height="1280" data-mode="after" data-src="assets/demo-edits/business-after.mp4" aria-hidden="true"></video>
+                <video muted loop playsinline preload="none" width="720" height="1280" data-mode="before" data-src="assets/demo-edits/business-before-after.mp4" aria-hidden="true" hidden></video>
+                <button type="button" class="phone-hit" data-label-after="Play the business coach demo edit" data-label-before="Play the business coach raw clip beside the edit" aria-label="Play the business coach demo edit">
+                  <span class="play-glyph" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M4 9.5h3.2L11 6.2v11.6l-3.8-3.3H4z"/>
+                    <path class="sound-wave" d="M14.2 9.2a4 4 0 0 1 0 5.6M16.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path class="sound-slash" d="M15.2 9.4l5 5.2M20.2 9.4l-5 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="demo-switch" role="group" aria-label="Business coach, before or after">
+              <button type="button" data-demo-mode="before" aria-pressed="false">Before</button>
+              <button type="button" data-demo-mode="after" aria-pressed="true">After</button>
+            </div>
+            <div class="demo-copy">
+              <p class="demo-flag">Demo edit · licensed stock</p>
+              <h3>Business coach</h3>
+              <p>The opening line states the point, captions follow the voice, and the pauses are cut.</p>
+            </div>
+          </article>
+          <article class="demo-card" data-demo>
+            <div class="phone">
+              <div class="phone-screen">
+                <img class="demo-still" data-still="after" src="assets/demo-edits/beauty-poster.jpg" width="1080" height="1920" alt="Finished beauty creator demo edit on licensed stock footage." loading="lazy">
+                <img class="demo-still" data-still="before" data-src="assets/demo-edits/beauty-before-poster.jpg" width="720" height="1280" alt="Raw beauty clip beside the demo edit, on licensed stock footage." hidden>
+                <video muted loop playsinline preload="none" width="720" height="1280" data-mode="after" data-src="assets/demo-edits/beauty-after.mp4" aria-hidden="true"></video>
+                <video muted loop playsinline preload="none" width="720" height="1280" data-mode="before" data-src="assets/demo-edits/beauty-before-after.mp4" aria-hidden="true" hidden></video>
+                <button type="button" class="phone-hit" data-label-after="Play the beauty creator demo edit" data-label-before="Play the beauty creator raw clip beside the edit" aria-label="Play the beauty creator demo edit">
+                  <span class="play-glyph" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M4 9.5h3.2L11 6.2v11.6l-3.8-3.3H4z"/>
+                    <path class="sound-wave" d="M14.2 9.2a4 4 0 0 1 0 5.6M16.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path class="sound-slash" d="M15.2 9.4l5 5.2M20.2 9.4l-5 5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="demo-switch" role="group" aria-label="Beauty creator, before or after">
+              <button type="button" data-demo-mode="before" aria-pressed="false">Before</button>
+              <button type="button" data-demo-mode="after" aria-pressed="true">After</button>
+            </div>
+            <div class="demo-copy">
+              <p class="demo-flag">Demo edit · licensed stock</p>
+              <h3>Beauty creator</h3>
+              <p>The product opens the clip, step captions sit on the application, and the pace stays close.</p>
+            </div>
+          </article>
+        </div>
+        <p class="demo-note">Demo edits made from licensed stock footage, not client work.</p>
+        <div class="demo-cta">
+          <a class="btn btn-gold" href="#book" data-cta="primary" data-intent="recut" data-label-checkout="Start with 3 Reels, $149">Get a free 15-sec recut of your last Reel</a>
         </div>
       </div>
     </section>
@@ -1075,22 +1189,200 @@
       });
     });
 
-    var demoVideos = document.querySelectorAll("video[data-src]");
-    function attachDemo(video) {
+    var demoCards = document.querySelectorAll("[data-demo]");
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var fineHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+    function activeVideo(card) {
+      var mode = card.getAttribute("data-mode") || "after";
+      return card.querySelector("video[data-mode='" + mode + "']");
+    }
+
+    function attachVideo(video) {
       if (video.getAttribute("src")) return;
+      video.preload = "metadata";
       video.src = video.getAttribute("data-src");
     }
-    if ("IntersectionObserver" in window) {
-      var videoObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          attachDemo(entry.target);
-          videoObserver.unobserve(entry.target);
+
+    function syncChrome(card) {
+      var audible = card.classList.contains("is-audible");
+      var sound = card.querySelector(".sound-btn");
+      if (sound) {
+        sound.setAttribute("aria-pressed", audible ? "true" : "false");
+        sound.setAttribute("aria-label", audible ? "Turn sound off" : "Turn sound on");
+      }
+      var hit = card.querySelector(".phone-hit");
+      if (hit) {
+        var mode = card.getAttribute("data-mode") || "after";
+        var base = hit.getAttribute(mode === "before" ? "data-label-before" : "data-label-after");
+        if (base) hit.setAttribute("aria-label", card.classList.contains("is-playing") ? base.replace(/^Play/, "Pause") : base);
+      }
+    }
+
+    function pauseCard(card) {
+      card.querySelectorAll("video").forEach(function (video) {
+        video.pause();
+        video.muted = true;
+      });
+      card.classList.remove("is-playing");
+      syncChrome(card);
+    }
+
+    function silenceOthers(card) {
+      demoCards.forEach(function (other) {
+        if (other === card) return;
+        other.classList.remove("is-audible");
+        delete other.dataset.pinned;
+        pauseCard(other);
+      });
+    }
+
+    function playCard(card, fromHover) {
+      silenceOthers(card);
+      if (fromHover) {
+        card.classList.remove("is-audible");
+        delete card.dataset.pinned;
+      } else {
+        card.dataset.pinned = "1";
+      }
+      var video = activeVideo(card);
+      if (!video) return;
+      video.hidden = false;
+      video.playsInline = true;
+      video.muted = !!(fromHover || !card.classList.contains("is-audible"));
+      attachVideo(video);
+      if (video.readyState >= 2) video.classList.add("is-ready");
+      card.classList.add("is-playing");
+      syncChrome(card);
+      var pending = video.play();
+      if (pending && pending.catch) {
+        pending.catch(function () {
+          if (!video.muted) {
+            video.muted = true;
+            card.classList.remove("is-audible");
+            syncChrome(card);
+            var retry = video.play();
+            if (retry && retry.catch) retry.catch(function () { card.classList.remove("is-playing"); syncChrome(card); });
+            return;
+          }
+          card.classList.remove("is-playing");
+          syncChrome(card);
         });
-      }, { rootMargin: "300px" });
-      demoVideos.forEach(function (video) { videoObserver.observe(video); });
-    } else {
-      demoVideos.forEach(attachDemo);
+      }
+    }
+
+    function showMode(card, mode) {
+      card.setAttribute("data-mode", mode);
+      card.querySelectorAll("[data-demo-mode]").forEach(function (button) {
+        button.setAttribute("aria-pressed", button.getAttribute("data-demo-mode") === mode ? "true" : "false");
+      });
+      card.querySelectorAll("[data-still]").forEach(function (img) {
+        var on = img.getAttribute("data-still") === mode;
+        if (on && !img.getAttribute("src")) img.src = img.getAttribute("data-src");
+        img.hidden = !on;
+      });
+      card.querySelectorAll("video").forEach(function (video) {
+        var on = video.getAttribute("data-mode") === mode;
+        if (!on) {
+          video.pause();
+          video.muted = true;
+          video.classList.remove("is-ready");
+          video.hidden = true;
+        } else {
+          video.hidden = false;
+          if (video.readyState >= 2 && card.classList.contains("is-playing")) video.classList.add("is-ready");
+        }
+      });
+      syncChrome(card);
+    }
+
+    demoCards.forEach(function (card) {
+      card.setAttribute("data-mode", "after");
+      card.querySelectorAll("video").forEach(function (video) {
+        video.addEventListener("playing", function () {
+          if (!video.hidden) video.classList.add("is-ready");
+        });
+      });
+      var hoverTimer = 0;
+      function cancelHover() { clearTimeout(hoverTimer); }
+      var hit = card.querySelector(".phone-hit");
+      if (hit) {
+        hit.addEventListener("click", function () {
+          cancelHover();
+          if (card.classList.contains("is-playing")) {
+            pauseCard(card);
+            delete card.dataset.pinned;
+            return;
+          }
+          playCard(card, false);
+        });
+      }
+      var sound = card.querySelector(".sound-btn");
+      if (sound) {
+        sound.addEventListener("click", function (event) {
+          event.stopPropagation();
+          cancelHover();
+          if (card.classList.contains("is-audible")) {
+            card.classList.remove("is-audible");
+            card.querySelectorAll("video").forEach(function (video) { video.muted = true; });
+            syncChrome(card);
+            return;
+          }
+          card.classList.add("is-audible");
+          card.dataset.pinned = "1";
+          if (card.classList.contains("is-playing")) {
+            silenceOthers(card);
+            var video = activeVideo(card);
+            if (video) {
+              video.muted = false;
+              var pending = video.play();
+              if (pending && pending.catch) pending.catch(function () {});
+            }
+            syncChrome(card);
+            return;
+          }
+          playCard(card, false);
+        });
+      }
+      if (fineHover && !reduceMotion) {
+        card.addEventListener("mouseenter", function () {
+          cancelHover();
+          hoverTimer = setTimeout(function () {
+            if (!card.matches(":hover") || card.classList.contains("is-playing")) return;
+            var busy = false;
+            demoCards.forEach(function (other) {
+              if (other.dataset.pinned && other.classList.contains("is-playing")) busy = true;
+            });
+            if (busy) return;
+            playCard(card, true);
+          }, 280);
+        });
+        card.addEventListener("mouseleave", function () {
+          cancelHover();
+          if (card.dataset.pinned) return;
+          pauseCard(card);
+          card.classList.remove("is-audible");
+          syncChrome(card);
+        });
+      }
+      card.querySelectorAll("[data-demo-mode]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          var mode = button.getAttribute("data-demo-mode");
+          var keepPlaying = card.classList.contains("is-playing");
+          var hoverOnly = !keepPlaying && fineHover && !reduceMotion && card.matches(":hover") && !card.dataset.pinned;
+          showMode(card, mode);
+          if (keepPlaying || hoverOnly) playCard(card, hoverOnly);
+        });
+      });
+    });
+
+    if ("IntersectionObserver" in window) {
+      var demoObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) pauseCard(entry.target);
+        });
+      }, { threshold: 0.25 });
+      demoCards.forEach(function (card) { demoObserver.observe(card); });
     }
   </script>
 </body>
